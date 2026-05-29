@@ -1,1 +1,784 @@
-<b>test2</b>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NUUK — Financial AI Infrastructure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Schibsted+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:        oklch(0.17 0.015 245);
+    --bg-2:      oklch(0.205 0.018 245);
+    --bg-3:      oklch(0.245 0.02 245);
+    --line:      oklch(0.30 0.02 245);
+    --line-soft: oklch(0.26 0.018 245);
+    --ink:       oklch(0.97 0.005 245);
+    --muted:     oklch(0.72 0.012 245);
+    --faint:     oklch(0.56 0.012 245);
+    --mint:      oklch(0.84 0.13 174);
+    --mint-deep: oklch(0.70 0.12 174);
+    --blue:      oklch(0.70 0.12 245);
+    --up:        oklch(0.82 0.15 158);
+    --down:      oklch(0.72 0.16 25);
+    --amber:     oklch(0.84 0.12 78);
+    --r:         16px;
+    --maxw:      1240px;
+    --ease:      cubic-bezier(.2,.7,.2,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Schibsted Grotesk",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+    overflow-x:hidden;
+  }
+  .mono{font-family:"JetBrains Mono",monospace;font-feature-settings:"tnum"}
+  .serif{font-family:"Instrument Serif",serif;font-weight:400}
+  ::selection{background:var(--mint);color:var(--bg)}
+  a{color:inherit;text-decoration:none}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+
+  /* ---------- atmosphere ---------- */
+  .aurora{
+    position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(60vw 50vh at 78% -8%, oklch(0.84 0.13 174 / .14), transparent 60%),
+      radial-gradient(50vw 40vh at 8% 8%, oklch(0.70 0.10 245 / .12), transparent 60%);
+  }
+  .grain{
+    position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.035;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  main{position:relative;z-index:1}
+
+  /* ---------- nav ---------- */
+  nav{
+    position:sticky;top:0;z-index:50;
+    backdrop-filter:blur(14px);
+    background:oklch(0.17 0.015 245 / .72);
+    border-bottom:1px solid transparent;
+    transition:border-color .3s,background .3s;
+  }
+  nav.scrolled{border-color:var(--line-soft)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .brand{display:flex;align-items:center;gap:11px;font-weight:700;letter-spacing:.14em;font-size:15px}
+  .mark{
+    width:26px;height:26px;border-radius:8px;position:relative;
+    background:conic-gradient(from 220deg, var(--mint), var(--mint-deep), oklch(0.70 0.10 245));
+    box-shadow:0 0 0 1px oklch(0.84 0.13 174 / .3), 0 6px 22px oklch(0.84 0.13 174 / .25);
+  }
+  .mark::after{content:"";position:absolute;inset:7px;border-radius:3px;background:var(--bg)}
+  .nav-links{display:flex;gap:38px;font-size:14.5px;color:var(--muted)}
+  .nav-links a{transition:color .2s}
+  .nav-links a:hover{color:var(--ink)}
+  .nav-cta{display:flex;align-items:center;gap:20px}
+  .ghost{font-size:14.5px;color:var(--muted);transition:color .2s}
+  .ghost:hover{color:var(--ink)}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-weight:600;font-size:14.5px;border-radius:11px;
+    padding:11px 19px;border:1px solid transparent;cursor:pointer;
+    transition:transform .15s var(--ease),box-shadow .25s,background .25s;
+  }
+  .btn-primary{background:var(--mint);color:oklch(0.17 0.015 245);box-shadow:0 8px 26px oklch(0.84 0.13 174 / .26)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 36px oklch(0.84 0.13 174 / .4)}
+  .btn-quiet{background:var(--bg-3);color:var(--ink);border-color:var(--line)}
+  .btn-quiet:hover{background:var(--bg-2);transform:translateY(-2px)}
+  @media(max-width:880px){.nav-links{display:none}}
+
+  /* ---------- hero ---------- */
+  .hero{padding:86px 0 70px;display:grid;grid-template-columns:1.04fr .96fr;gap:54px;align-items:center}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--mint);
+    border:1px solid var(--line);border-radius:100px;padding:7px 14px;background:var(--bg-2);
+  }
+  .pulse{width:7px;height:7px;border-radius:50%;background:var(--up);box-shadow:0 0 0 0 oklch(0.82 0.15 158 / .6);animation:pulse 2.2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 oklch(0.82 0.15 158 / .55)}70%{box-shadow:0 0 0 9px oklch(0.82 0.15 158 / 0)}100%{box-shadow:0 0 0 0 oklch(0.82 0.15 158 / 0)}}
+  h1.display{
+    font-family:"Instrument Serif",serif;font-weight:400;
+    font-size:clamp(46px,5.6vw,82px);line-height:.98;letter-spacing:-.01em;
+    margin:24px 0 0;text-wrap:balance;
+  }
+  h1.display em{font-style:italic;color:var(--mint)}
+  .lead{font-size:clamp(16px,1.3vw,19px);color:var(--muted);max-width:32em;margin-top:22px;text-wrap:pretty}
+  .hero-cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+
+  /* reveal */
+  .rv{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .rv.in{opacity:1;transform:none}
+
+  /* ---------- live card ---------- */
+  .card{
+    background:linear-gradient(180deg, var(--bg-2), oklch(0.19 0.016 245));
+    border:1px solid var(--line-soft);border-radius:22px;
+    box-shadow:0 30px 70px -30px oklch(0.10 0.02 245 / .9);
+    overflow:hidden;
+  }
+  .pf-top{display:flex;align-items:flex-start;justify-content:space-between;padding:22px 24px 6px}
+  .pf-label{font-size:12.5px;color:var(--faint);letter-spacing:.04em}
+  .pf-val{font-family:"JetBrains Mono",monospace;font-size:34px;font-weight:600;margin-top:4px;letter-spacing:-.01em}
+  .pf-chg{display:inline-flex;align-items:center;gap:6px;font-family:"JetBrains Mono",monospace;font-size:13.5px;color:var(--up);background:oklch(0.82 0.15 158 / .12);padding:5px 9px;border-radius:8px;margin-top:8px}
+  .seg{display:flex;gap:2px;background:var(--bg);border:1px solid var(--line-soft);border-radius:10px;padding:3px}
+  .seg button{font-family:"JetBrains Mono",monospace;font-size:11.5px;color:var(--faint);background:none;border:none;padding:5px 9px;border-radius:7px;cursor:pointer;transition:.2s}
+  .seg button.on{background:var(--bg-3);color:var(--ink)}
+  .chart-box{position:relative;height:208px;margin-top:6px}
+  .chart-box svg{display:block;width:100%;height:100%}
+  .glowdot{filter:drop-shadow(0 0 6px var(--mint))}
+  .pf-holdings{border-top:1px solid var(--line-soft);display:grid;grid-template-columns:1fr 1fr}
+  .hold{display:flex;align-items:center;gap:12px;padding:16px 24px}
+  .hold:nth-child(odd){border-right:1px solid var(--line-soft)}
+  .hold:nth-child(-n+2){border-bottom:0}
+  .tkr{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-family:"JetBrains Mono",monospace;font-weight:600;font-size:12px;color:var(--bg);flex:none}
+  .hold .nm{font-size:13.5px;font-weight:600}
+  .hold .sub{font-size:11.5px;color:var(--faint);font-family:"JetBrains Mono",monospace}
+  .hold .pct{margin-left:auto;font-family:"JetBrains Mono",monospace;font-size:13px}
+
+  /* ---------- ticker ---------- */
+  .ticker{border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);background:var(--bg-2);overflow:hidden;white-space:nowrap}
+  .ticker-track{display:inline-flex;gap:42px;padding:13px 0;animation:scroll 38s linear infinite;will-change:transform}
+  .ticker:hover .ticker-track{animation-play-state:paused}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+  .tk{display:inline-flex;align-items:center;gap:10px;font-family:"JetBrains Mono",monospace;font-size:13.5px;color:var(--muted)}
+  .tk b{color:var(--ink);font-weight:600}
+
+  /* ---------- section frame ---------- */
+  section.block{padding:104px 0}
+  .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mint);font-weight:600}
+  h2.sec{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(34px,4vw,56px);line-height:1.02;letter-spacing:-.01em;margin-top:16px;text-wrap:balance}
+  h2.sec em{font-style:italic;color:var(--mint)}
+  .sec-sub{color:var(--muted);max-width:40em;margin-top:18px;font-size:17px;text-wrap:pretty}
+  .sec-head{max-width:46em}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-head.center .sec-sub{margin-left:auto;margin-right:auto}
+
+  /* ---------- stats strip ---------- */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:var(--r);overflow:hidden}
+  .stat{background:var(--bg-2);padding:28px 28px}
+  .stat .lbl{font-size:12px;color:var(--faint);letter-spacing:.04em;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+  .stat .lbl i{width:6px;height:6px;border-radius:50%;background:var(--mint);flex:none}
+  .stat .n{font-family:"JetBrains Mono",monospace;font-size:clamp(28px,3vw,38px);font-weight:600;letter-spacing:-.02em}
+  .stat .d{color:var(--faint);font-size:13px;margin-top:8px}
+  @media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+  /* ---------- AI intelligence ---------- */
+  .ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:54px}
+  .ai-card{background:linear-gradient(180deg,var(--bg-2),oklch(0.19 0.016 245));border:1px solid var(--line-soft);border-radius:20px;padding:34px;transition:transform .25s var(--ease),border-color .25s}
+  .ai-card:hover{transform:translateY(-4px);border-color:var(--line)}
+  .ai-card .ic{width:52px;height:52px;border-radius:14px;background:oklch(0.84 0.13 174 / .12);border:1px solid oklch(0.84 0.13 174 / .25);display:grid;place-items:center;margin-bottom:22px}
+  .ai-card .ic svg{width:26px;height:26px;stroke:var(--mint);fill:none;stroke-width:1.5}
+  .ai-card h3{font-size:22px;font-weight:600;letter-spacing:-.01em}
+  .ai-card p{color:var(--muted);font-size:15px;margin-top:12px;text-wrap:pretty}
+  .tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
+  .tag{font-size:12.5px;font-family:"JetBrains Mono",monospace;color:var(--mint);background:oklch(0.84 0.13 174 / .1);border:1px solid oklch(0.84 0.13 174 / .22);padding:5px 11px;border-radius:100px}
+  @media(max-width:880px){.ai-grid{grid-template-columns:1fr}}
+
+  /* ---------- stat line ---------- */
+  .statline{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:var(--r);overflow:hidden;margin-top:18px}
+  .statline > div{background:var(--bg-2);padding:34px 28px;text-align:center}
+  .statline .n{font-family:"JetBrains Mono",monospace;font-size:clamp(30px,3.4vw,44px);font-weight:600;color:var(--mint);letter-spacing:-.02em}
+  .statline .d{color:var(--faint);font-size:13.5px;margin-top:8px}
+  @media(max-width:760px){.statline{grid-template-columns:1fr}}
+
+  /* ---------- features ---------- */
+  .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:54px}
+  .feat{background:var(--bg-2);border:1px solid var(--line-soft);border-radius:var(--r);padding:28px;transition:transform .25s var(--ease),border-color .25s,background .25s}
+  .feat:hover{transform:translateY(-4px);border-color:var(--line);background:var(--bg-3)}
+  .feat .ic{width:46px;height:46px;border-radius:12px;background:var(--bg-3);border:1px solid var(--line);display:grid;place-items:center;margin-bottom:20px}
+  .feat .ic svg{width:22px;height:22px;stroke:var(--mint);fill:none;stroke-width:1.6}
+  .feat h3{font-size:18.5px;font-weight:600;letter-spacing:-.01em}
+  .feat p{color:var(--muted);font-size:14.5px;margin-top:10px;text-wrap:pretty}
+  .feat-bullets{list-style:none;margin-top:16px;display:flex;flex-direction:column;gap:9px}
+  .feat-bullets li{display:flex;gap:10px;align-items:center;font-size:13.5px;color:var(--muted)}
+  .feat-bullets li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--mint);flex:none}
+  @media(max-width:880px){.feat-grid{grid-template-columns:1fr}}
+
+  /* ---------- infrastructure ---------- */
+  .sec-band{background:var(--bg-2);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+  .infra-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;margin-top:54px}
+  .infra-list{display:flex;flex-direction:column;gap:26px}
+  .infra-item{display:flex;gap:16px;align-items:flex-start}
+  .infra-item .ic{width:44px;height:44px;border-radius:12px;background:var(--bg-3);border:1px solid var(--line);display:grid;place-items:center;flex:none}
+  .infra-item .ic svg{width:20px;height:20px;stroke:var(--mint);fill:none;stroke-width:1.6}
+  .infra-item h3{font-size:16.5px;font-weight:600}
+  .infra-item p{color:var(--muted);font-size:14px;margin-top:6px;text-wrap:pretty}
+  .cov-row{display:flex;flex-direction:column;gap:9px;padding:15px 0;border-top:1px solid var(--line-soft)}
+  .cov-row:first-of-type{border-top:0;padding-top:2px}
+  .cov-top{display:flex;justify-content:space-between;align-items:center}
+  .cov-top .nm{font-weight:600;font-size:14.5px}
+  .cov-top .st{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--up);display:inline-flex;align-items:center;gap:7px}
+  @media(max-width:880px){.infra-grid{grid-template-columns:1fr;gap:36px}}
+
+  /* ---------- showcase tabs ---------- */
+  .showcase{display:grid;grid-template-columns:.82fr 1.18fr;gap:54px;align-items:center;margin-top:54px}
+  .tabs{display:flex;flex-direction:column;gap:8px}
+  .tab{
+    text-align:left;background:none;border:1px solid transparent;border-radius:14px;
+    padding:20px 22px;cursor:pointer;transition:.25s var(--ease);color:var(--muted);
+  }
+  .tab:hover{background:var(--bg-2)}
+  .tab.on{background:var(--bg-2);border-color:var(--line);color:var(--ink)}
+  .tab .t{font-size:17.5px;font-weight:600;display:flex;align-items:center;gap:10px}
+  .tab .t i{width:8px;height:8px;border-radius:50%;background:var(--line);transition:.25s}
+  .tab.on .t i{background:var(--mint);box-shadow:0 0 10px var(--mint)}
+  .tab p{font-size:14px;margin-top:8px;max-height:0;overflow:hidden;opacity:0;transition:.35s var(--ease)}
+  .tab.on p{max-height:90px;opacity:1;margin-top:10px}
+  .panel{position:relative;min-height:380px}
+  .pane{position:absolute;inset:0;opacity:0;transform:translateY(14px) scale(.99);transition:.45s var(--ease);pointer-events:none}
+  .pane.on{opacity:1;transform:none;pointer-events:auto}
+  @media(max-width:880px){.showcase{grid-template-columns:1fr}.panel{position:static;min-height:0}.pane{position:static;display:none}.pane.on{display:block}}
+
+  /* mock surfaces */
+  .mock{background:linear-gradient(180deg,var(--bg-2),oklch(0.19 0.016 245));border:1px solid var(--line-soft);border-radius:18px;padding:24px;height:100%;box-shadow:0 30px 70px -34px oklch(0.10 0.02 245 / .9)}
+  .mock-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+  .mock-h .ttl{font-weight:600;font-size:15px}
+  .row{display:flex;align-items:center;gap:14px;padding:14px 0;border-top:1px solid var(--line-soft)}
+  .row:first-of-type{border-top:0}
+  .bar{height:8px;border-radius:5px;background:var(--bg-3);overflow:hidden;flex:1}
+  .bar i{display:block;height:100%;border-radius:5px;background:linear-gradient(90deg,var(--mint-deep),var(--mint))}
+  .alloc{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+  .chip{font-family:"JetBrains Mono",monospace;font-size:12px;padding:6px 11px;border-radius:8px;background:var(--bg-3);border:1px solid var(--line-soft);color:var(--muted)}
+
+  /* ---------- cta ---------- */
+  .cta{position:relative;border:1px solid var(--line);border-radius:28px;padding:74px 40px;text-align:center;overflow:hidden;background:linear-gradient(180deg,var(--bg-2),var(--bg))}
+  .cta::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 80% at 50% -10%, oklch(0.84 0.13 174 / .18), transparent 60%);pointer-events:none}
+  .cta h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(36px,5vw,64px);line-height:1;position:relative}
+  .cta h2 em{font-style:italic;color:var(--mint)}
+  .cta p{color:var(--muted);margin-top:18px;font-size:17px;position:relative}
+  .cta .hero-cta{justify-content:center;position:relative}
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--line-soft);padding:60px 0 40px}
+  .foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}
+  .foot-col h4{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin-bottom:16px}
+  .foot-col a{display:block;color:var(--muted);font-size:14.5px;padding:6px 0;transition:color .2s}
+  .foot-col a:hover{color:var(--ink)}
+  .foot-blurb{color:var(--muted);font-size:14px;margin-top:16px;max-width:26em}
+  .foot-bot{display:flex;justify-content:space-between;align-items:center;margin-top:48px;padding-top:26px;border-top:1px solid var(--line-soft);color:var(--faint);font-size:13px;flex-wrap:wrap;gap:14px}
+  .disclaimer{font-size:11.5px;color:var(--faint);margin-top:18px;line-height:1.6;max-width:74em}
+  @media(max-width:880px){.foot-top{grid-template-columns:1fr 1fr}}
+
+  @media(max-width:880px){.hero{grid-template-columns:1fr;gap:40px;padding:56px 0 50px}}
+</style>
+</head>
+<body>
+<div class="aurora"></div>
+<div class="grain"></div>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <div class="brand"><span class="mark"></span>NUUK<span style="color:var(--mint)">.</span></div>
+    <div class="nav-links">
+      <a href="#technology">Technology</a>
+      <a href="#intelligence">AI Intelligence</a>
+      <a href="#infrastructure">Infrastructure</a>
+      <a href="#performance">Performance</a>
+    </div>
+    <div class="nav-cta">
+      <a href="#contact" class="ghost">Contact</a>
+      <a href="#contact" class="btn btn-primary">Get Free Access</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section class="wrap hero">
+    <div>
+      <span class="eyebrow rv"><span class="pulse"></span> Live trading · 24/7 · global markets</span>
+      <h1 class="display rv">The next generation of<br><em>AI trading</em> investments.</h1>
+      <p class="lead rv">Where capital meets machine intelligence. NUUK is AI-engineered quantitative trading, operating exclusively in global financial markets — FX, commodities, indices, and digital assets.</p>
+      <div class="hero-cta rv">
+        <a href="#contact" class="btn btn-primary">Get free access →</a>
+        <a href="#technology" class="btn btn-quiet">Explore our systems</a>
+      </div>
+    </div>
+
+    <!-- live market card -->
+    <div class="card rv" id="pfcard">
+      <div class="pf-top">
+        <div>
+          <div class="pf-label" id="pfasset"><span class="pulse" style="display:inline-block;vertical-align:middle;margin-right:6px"></span>Live market · BTC/USD</div>
+          <div class="pf-val" id="pfval">$—</div>
+          <div class="pf-chg" id="pfchgwrap">▲ <span id="pfchg">loading…</span></div>
+        </div>
+        <div class="seg" id="seg">
+          <button data-i="0">1D</button>
+          <button data-i="1">1W</button>
+          <button class="on" data-i="2">1M</button>
+          <button data-i="3">1Y</button>
+        </div>
+      </div>
+      <div class="chart-box">
+        <svg id="chart" viewBox="0 0 600 208" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="oklch(0.84 0.13 174)" stop-opacity="0.28"/>
+              <stop offset="100%" stop-color="oklch(0.84 0.13 174)" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path id="area" fill="url(#fill)"></path>
+          <path id="line" fill="none" stroke="var(--mint)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+          <circle id="dot" class="glowdot" r="4.5" fill="var(--mint)"></circle>
+        </svg>
+      </div>
+      <div class="pf-holdings" id="holds">
+        <div class="hold" data-coin="bitcoin"><span class="tkr" style="background:var(--amber)">BT</span><div><div class="nm">Bitcoin</div><div class="sub">BTC · $—</div></div><span class="pct">—</span></div>
+        <div class="hold" data-coin="ethereum"><span class="tkr" style="background:var(--blue)">ET</span><div><div class="nm">Ethereum</div><div class="sub">ETH · $—</div></div><span class="pct">—</span></div>
+        <div class="hold" data-coin="solana"><span class="tkr" style="background:var(--mint)">SO</span><div><div class="nm">Solana</div><div class="sub">SOL · $—</div></div><span class="pct">—</span></div>
+        <div class="hold" data-coin="ripple"><span class="tkr" style="background:var(--down)">XR</span><div><div class="nm">XRP</div><div class="sub">XRP · $—</div></div><span class="pct">—</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-track" id="ticker"></div>
+  </div>
+
+  <!-- STATS -->
+  <section class="wrap" style="padding-top:84px">
+    <div class="stats">
+      <div class="stat rv"><div class="lbl"><i></i>Live trading</div><div class="n">24/7</div><div class="d">Global markets</div></div>
+      <div class="stat rv"><div class="lbl"><i></i>AI models</div><div class="n" data-count="150" data-suffix="+">0</div><div class="d">Active algorithms</div></div>
+      <div class="stat rv"><div class="lbl"><i></i>Execution</div><div class="n">&lt;5ms</div><div class="d">Average latency</div></div>
+      <div class="stat rv"><div class="lbl"><i></i>Risk control</div><div class="n" data-count="99.9" data-suffix="%">0</div><div class="d">System uptime</div></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="wrap block" id="about">
+    <div class="sec-head center">
+      <div class="kicker rv">Institutional-grade trading infrastructure</div>
+      <h2 class="sec rv">Precision-engineered for<br><em>maximum performance.</em></h2>
+    </div>
+    <div style="max-width:50em;margin:30px auto 0;text-align:center">
+      <p class="lead rv" style="max-width:none;margin:0 auto">NUUK is an AI-engineered quantitative trading company operating exclusively in global financial markets. We build proprietary algorithms, machine-learning models, and institutional execution systems designed for disciplined, risk-controlled trading across FX, commodities, indices, and digital assets.</p>
+      <p class="rv" style="color:var(--faint);font-size:15.5px;margin-top:22px;text-wrap:pretty">Our infrastructure connects to a diversified network of regulated global brokerages and liquidity providers — enabling automated, multi-venue execution with data integrity, latency efficiency, and complete systematic governance.</p>
+    </div>
+  </section>
+
+  <!-- AI INTELLIGENCE -->
+  <section class="wrap block" id="intelligence" style="padding-top:20px">
+    <div class="sec-head center">
+      <div class="kicker rv">AI intelligence</div>
+      <h2 class="sec rv">Next-generation AI intelligence.</h2>
+      <p class="sec-sub rv">Powered by advanced machine learning, neural networks, and deep learning architectures.</p>
+    </div>
+    <div class="ai-grid">
+      <div class="ai-card rv">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.6"/><path d="M12 5V2.5M12 21.5V19M5 12H2.5M21.5 12H19M6.8 6.8L5 5M19 5l-1.8 1.8M6.8 17.2L5 19M19 19l-1.8-1.8"/></svg></div>
+        <h3>Deep Learning Networks</h3>
+        <p>Multi-layered neural networks trained on billions of data points, capable of identifying complex market patterns invisible to traditional analysis. Our proprietary architectures combine LSTM, transformer models, and reinforcement learning for adaptive decision-making.</p>
+        <div class="tags"><span class="tag">Neural networks</span><span class="tag">Pattern recognition</span><span class="tag">Real-time learning</span></div>
+      </div>
+      <div class="ai-card rv">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 19V5M9 19v-7M14 19v-4M19 19V9"/><path d="M3 13l5-5 4 3 8-8"/></svg></div>
+        <h3>Predictive Analytics Engine</h3>
+        <p>Advanced forecasting models that analyze market sentiment, order flow, volatility patterns, and macroeconomic indicators to predict price movements with unprecedented accuracy. Continuously validated against real-world outcomes.</p>
+        <div class="tags"><span class="tag">Market prediction</span><span class="tag">Sentiment analysis</span><span class="tag">Risk modeling</span></div>
+      </div>
+    </div>
+    <div class="statline">
+      <div class="rv"><div class="n" data-count="10" data-suffix="B+">0</div><div class="d">Data points analyzed daily</div></div>
+      <div class="rv"><div class="n" data-count="99.7" data-suffix="%">0</div><div class="d">Model accuracy rate</div></div>
+      <div class="rv"><div class="n" data-count="0.3" data-dec="1" data-suffix="ms">0</div><div class="d">Decision latency</div></div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY -->
+  <section class="wrap block" id="technology" style="padding-top:20px">
+    <div class="sec-head center">
+      <div class="kicker rv">Technology</div>
+      <h2 class="sec rv">Advanced technology stack.</h2>
+      <p class="sec-sub rv">Enterprise-grade systems engineered for speed, reliability, and performance.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat rv">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></div>
+        <h3>Proprietary ML Models</h3>
+        <p>Custom-built machine learning algorithms trained on decades of market data, continuously adapting to evolving conditions with real-time pattern recognition and automated strategy optimization.</p>
+        <ul class="feat-bullets"><li>Adaptive learning systems</li><li>Multi-strategy frameworks</li><li>Real-time model validation</li></ul>
+      </div>
+      <div class="feat rv">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>Ultra-Low Latency Execution</h3>
+        <p>High-frequency trading infrastructure with microsecond precision. Co-located servers at major exchanges ensure optimal trade timing, minimal slippage, and maximum execution quality.</p>
+        <ul class="feat-bullets"><li>Sub-millisecond response times</li><li>Direct market access</li><li>Smart order routing</li></ul>
+      </div>
+      <div class="feat rv">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Advanced Risk Management</h3>
+        <p>Multi-layered risk controls with real-time monitoring. Automated position sizing, dynamic stop-loss systems, and portfolio diversification ensure capital protection at all times.</p>
+        <ul class="feat-bullets"><li>Real-time risk analytics</li><li>Automated circuit breakers</li><li>Stress testing systems</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFRASTRUCTURE -->
+  <div class="sec-band">
+    <section class="wrap block" id="infrastructure">
+      <div class="sec-head center">
+        <div class="kicker rv">Infrastructure</div>
+        <h2 class="sec rv">Global trading infrastructure.</h2>
+        <p class="sec-sub rv">Connected to the world's most liquid markets with institutional-grade connectivity.</p>
+      </div>
+      <div class="infra-grid">
+        <div class="infra-list">
+          <div class="infra-item rv"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M6 8v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8M12 13v3"/></svg></div><div><h3>Multi-Venue Connectivity</h3><p>Direct connections to 50+ regulated global exchanges and liquidity providers across FX, commodities, equity indices, and digital assets. Redundant network architecture ensures zero downtime.</p></div></div>
+          <div class="infra-item rv"><div class="ic"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div><div><h3>Real-Time Data Aggregation</h3><p>Processing millions of market data points per second from multiple sources. Advanced normalization and validation ensure data accuracy for optimal decision-making.</p></div></div>
+          <div class="infra-item rv"><div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div><div><h3>Bank-Grade Security</h3><p>Military-grade encryption, multi-factor authentication, and hardware security modules. Full compliance with international financial regulations and audit standards.</p></div></div>
+        </div>
+        <div class="mock rv">
+          <div class="mock-h"><span class="ttl">Global market coverage</span><span class="chip" style="color:var(--up)">All systems live</span></div>
+          <div class="cov-row"><div class="cov-top"><span class="nm">Foreign Exchange (FX)</span><span class="st"><span class="pulse"></span>Active</span></div><div class="bar"><i style="width:94%;background:var(--blue)"></i></div></div>
+          <div class="cov-row"><div class="cov-top"><span class="nm">Commodities</span><span class="st"><span class="pulse"></span>Active</span></div><div class="bar"><i style="width:88%;background:var(--amber)"></i></div></div>
+          <div class="cov-row"><div class="cov-top"><span class="nm">Equity Indices</span><span class="st"><span class="pulse"></span>Active</span></div><div class="bar"><i style="width:91%;background:var(--up)"></i></div></div>
+          <div class="cov-row"><div class="cov-top"><span class="nm">Digital Assets</span><span class="st"><span class="pulse"></span>Active</span></div><div class="bar"><i style="width:97%;background:var(--mint)"></i></div></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- PERFORMANCE / SYSTEM IN MOTION -->
+  <section class="wrap block" id="performance">
+    <div class="sec-head">
+      <div class="kicker rv">Performance</div>
+      <h2 class="sec rv">The system, <em>in motion.</em></h2>
+      <p class="sec-sub rv">A live look at how NUUK turns raw market data into disciplined, risk-controlled execution.</p>
+    </div>
+    <div class="showcase">
+      <div class="tabs" id="tabs">
+        <button class="tab on" data-i="0">
+          <span class="t"><i></i>Signal generation</span>
+          <p>Neural models score thousands of instruments in real time, surfacing only the highest-conviction setups.</p>
+        </button>
+        <button class="tab" data-i="1">
+          <span class="t"><i></i>Execution</span>
+          <p>Smart order routing splits and places orders across venues with sub-millisecond precision.</p>
+        </button>
+        <button class="tab" data-i="2">
+          <span class="t"><i></i>Risk governance</span>
+          <p>Real-time exposure limits, circuit breakers, and stress tests guard capital around the clock.</p>
+        </button>
+      </div>
+      <div class="panel" id="panel">
+        <!-- pane 0: signals -->
+        <div class="pane on">
+          <div class="mock">
+            <div class="mock-h"><span class="ttl">Signal feed · live models</span><span class="chip" style="color:var(--mint)">150 algorithms</span></div>
+            <div class="row"><span class="tkr" style="background:var(--blue)">FX</span><div style="flex:1"><div class="nm" style="font-size:14px;font-weight:600">EUR/USD · momentum</div></div><div class="bar"><i style="width:86%"></i></div><span class="mono" style="font-size:12px;width:46px;text-align:right">0.86</span></div>
+            <div class="row"><span class="tkr" style="background:var(--amber)">XAU</span><div style="flex:1"><div class="nm" style="font-size:14px;font-weight:600">Gold · mean-reversion</div></div><div class="bar"><i style="width:79%"></i></div><span class="mono" style="font-size:12px;width:46px;text-align:right">0.79</span></div>
+            <div class="row"><span class="tkr" style="background:var(--mint)">BTC</span><div style="flex:1"><div class="nm" style="font-size:14px;font-weight:600">BTC/USD · trend</div></div><div class="bar"><i style="width:92%"></i></div><span class="mono" style="font-size:12px;width:46px;text-align:right">0.92</span></div>
+            <div class="row"><span class="tkr" style="background:var(--up)">IDX</span><div style="flex:1"><div class="nm" style="font-size:14px;font-weight:600">US500 · breakout</div></div><div class="bar"><i style="width:71%"></i></div><span class="mono" style="font-size:12px;width:46px;text-align:right">0.71</span></div>
+            <div class="alloc"><span class="chip">Conviction &gt; 0.80</span><span class="chip">Refresh · 0.3ms</span><span class="chip" style="color:var(--mint)">Auto-execute on</span></div>
+          </div>
+        </div>
+        <!-- pane 1: execution -->
+        <div class="pane">
+          <div class="mock">
+            <div class="mock-h"><span class="ttl">Order routing · last 1,000 fills</span><span class="chip" style="color:var(--mint)">&lt;5ms avg</span></div>
+            <div class="row"><span class="tkr" style="background:var(--blue)">V1</span><div style="flex:1"><div class="nm" style="font-size:14px;font-weight:600">Tier-1 FX ECN</div></div><div class="bar"><i style="width:38%"></i></div><span class="mono" style="font-size:12px;width:42px;text-align:right">38%</span></div>
+            <div class="row"><span class="tkr" style="background:var(--amber)">V2</span><div style="flex:1"><div class="nm" style="font-size:14px;font-weight:600">Futures exchange</div></div><div class="bar"><i style="width:27%"></i></div><span class="mono" style="font-size:12px;width:42px;text-align:right">27%</span></div>
+            <div class="row"><span class="tkr" style="background:var(--mint)">V3</span><div style="flex:1"><div class="nm" style="font-size:14px;font-weight:600">Digital asset venue</div></div><div class="bar"><i style="width:21%"></i></div><span class="mono" style="font-size:12px;width:42px;text-align:right">21%</span></div>
+            <div class="row"><span class="tkr" style="background:var(--up)">V4</span><div style="flex:1"><div class="nm" style="font-size:14px;font-weight:600">Equity index pool</div></div><div class="bar"><i style="width:14%"></i></div><span class="mono" style="font-size:12px;width:42px;text-align:right">14%</span></div>
+            <div class="alloc"><span class="chip">Avg slippage · 0.4 bps</span><span class="chip">Fill rate · 99.6%</span><span class="chip" style="color:var(--mint)">Direct market access</span></div>
+          </div>
+        </div>
+        <!-- pane 2: risk -->
+        <div class="pane">
+          <div class="mock">
+            <div class="mock-h"><span class="ttl">Risk monitor · real-time</span><span class="chip" style="color:var(--up)">Within limits</span></div>
+            <div class="row"><div style="flex:1"><div class="nm" style="font-size:14px;font-weight:600">Gross exposure</div><div class="sub mono">62% of limit</div></div><div class="bar"><i style="width:62%"></i></div></div>
+            <div class="row"><div style="flex:1"><div class="nm" style="font-size:14px;font-weight:600">Drawdown guard</div><div class="sub mono">30% of budget used</div></div><div class="bar"><i style="width:30%;background:var(--amber)"></i></div></div>
+            <div class="row"><div style="flex:1"><div class="nm" style="font-size:14px;font-weight:600">Value-at-Risk (95%)</div><div class="sub mono">41% of ceiling</div></div><div class="bar"><i style="width:41%;background:var(--blue)"></i></div></div>
+            <div class="alloc"><span class="chip" style="color:var(--up)">● Circuit breakers armed</span><span class="chip">Stress test · passed</span><span class="chip">Auto position sizing</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="wrap block" style="padding-top:20px">
+    <div class="cta rv">
+      <h2>Where capital meets<br><em>machine intelligence.</em></h2>
+      <p>Disciplined, risk-controlled trading powered by the most advanced AI systems in quantitative finance.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Partner with NUUK →</a>
+        <a href="#technology" class="btn btn-quiet">Explore our systems</a>
+      </div>
+      <p style="position:relative;color:var(--faint);font-size:13px;margin-top:18px">Institutional inquiries only</p>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-col">
+        <div class="brand"><span class="mark"></span>NUUK<span style="color:var(--mint)">.</span></div>
+        <p class="foot-blurb">Institutional-grade quantitative trading infrastructure powered by artificial intelligence.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="mailto:info@nuukquant.com">info@nuukquant.com</a>
+        <a href="tel:+971586884464">+971 58 688 4464</a>
+        <a href="#" style="cursor:default">Dubai Financial Centre (DIFC) · Dubai, UAE</a>
+      </div>
+      <div class="foot-col">
+        <h4>Quick links</h4>
+        <a href="#technology">Technology</a>
+        <a href="#intelligence">AI Intelligence</a>
+        <a href="#infrastructure">Infrastructure</a>
+        <a href="#performance">Performance</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2024 NUUK. All rights reserved.</span>
+      <span class="mono">Operating globally with institutional discipline</span>
+    </div>
+    <p class="disclaimer">Trading involves substantial risk. Live market figures shown (crypto via CoinGecko, FX via Frankfurter) are third-party data provided for informational purposes and may be delayed; system telemetry panels are illustrative. This page is a design demonstration and does not constitute financial advice or an offer of services.</p>
+  </div>
+</footer>
+
+<script>
+  // nav border on scroll
+  const nav = document.getElementById('nav');
+  addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 12), {passive:true});
+
+  // reveal on scroll
+  const io = new IntersectionObserver((es)=>{
+    es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.16});
+  document.querySelectorAll('.rv').forEach((el,i)=>{ el.style.transitionDelay = (i%6*55)+'ms'; io.observe(el); });
+  // safety net: never leave content permanently hidden if IO doesn't fire
+  if(!('IntersectionObserver' in window)){
+    document.querySelectorAll('.rv').forEach(el=>el.classList.add('in'));
+  }
+  setTimeout(()=>document.querySelectorAll('.rv:not(.in)').forEach(el=>el.classList.add('in')),1600);
+
+  // count-up
+  function countUp(el){
+    const target = parseFloat(el.dataset.count);
+    const pre = el.dataset.prefix||'', suf = el.dataset.suffix||'';
+    const dec = el.dataset.dec!=null ? +el.dataset.dec : ((target % 1 !== 0) ? (target<1?2:1) : 0);
+    let t0=null; const dur=1400;
+    function step(t){
+      if(!t0)t0=t; const p=Math.min((t-t0)/dur,1);
+      const e = 1-Math.pow(1-p,3);
+      const v = target*e;
+      el.textContent = pre + v.toFixed(dec) + suf;
+      if(p<1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  const cio = new IntersectionObserver((es)=>{
+    es.forEach(e=>{ if(e.isIntersecting){ countUp(e.target); cio.unobserve(e.target);} });
+  },{threshold:.6});
+  document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+  if(!('IntersectionObserver' in window)) document.querySelectorAll('[data-count]').forEach(countUp);
+  setTimeout(()=>document.querySelectorAll('[data-count]').forEach(el=>{ if(el.textContent.replace(/[^0-9]/g,'')==='0'){ cio.unobserve(el); countUp(el);} }),1700);
+
+  // ----- chart + live data -----
+  const W=600,H=208,PAD=14;
+  function gen(seed,n,vol,trend){
+    let v=50, out=[]; let s=seed;
+    const rnd=()=>{ s=(s*9301+49297)%233280; return s/233280; };
+    for(let i=0;i<n;i++){ v += (rnd()-0.5)*vol + trend; out.push(v); }
+    return out;
+  }
+  const line=document.getElementById('line'), area=document.getElementById('area'), dot=document.getElementById('dot');
+  let chartData = gen(99,48,7,0.55); // fallback curve until real data loads
+  function pathFor(data){
+    const mn=Math.min(...data), mx=Math.max(...data), rng=(mx-mn)||1;
+    const pts=data.map((d,i)=>{
+      const x=PAD + (i/(data.length-1))*(W-PAD*2);
+      const y=PAD + (1-(d-mn)/rng)*(H-PAD*2);
+      return [x,y];
+    });
+    let dd=`M${pts[0][0]},${pts[0][1]}`;
+    for(let i=1;i<pts.length;i++){
+      const [px,py]=pts[i-1],[x,y]=pts[i];
+      const cx=(px+x)/2;
+      dd+=` C${cx},${py} ${cx},${y} ${x},${y}`;
+    }
+    return {d:dd, last:pts[pts.length-1]};
+  }
+  function draw(animate){
+    if(!chartData||chartData.length<2) return;
+    const {d,last}=pathFor(chartData);
+    line.setAttribute('d',d);
+    area.setAttribute('d', d + ` L${last[0]},${H} L${PAD},${H} Z`);
+    dot.setAttribute('cx',last[0]); dot.setAttribute('cy',last[1]);
+    const up = chartData[chartData.length-1] >= chartData[0];
+    line.setAttribute('stroke', up ? 'var(--up)' : 'var(--down)');
+    if(animate){
+      const len=line.getTotalLength();
+      line.style.transition='none';
+      line.style.strokeDasharray=len; line.style.strokeDashoffset=len;
+      area.style.opacity=0; dot.style.opacity=0;
+      line.getBoundingClientRect();
+      line.style.transition='stroke-dashoffset 1.5s cubic-bezier(.3,.7,.2,1)';
+      line.style.strokeDashoffset=0;
+      setTimeout(()=>{ area.style.transition='opacity .8s'; area.style.opacity=1; dot.style.transition='opacity .4s'; dot.style.opacity=1; },650);
+    }
+  }
+
+  // ---- formatting helpers ----
+  const fmtUSD = (n)=> '$'+ Number(n).toLocaleString('en-US',{maximumFractionDigits: Math.abs(n)>=100?2:4, minimumFractionDigits:2});
+  const fmtPct = (p)=> (p>=0?'+':'−')+Math.abs(p).toFixed(2)+'%';
+
+  // ---- live data (CoinGecko crypto + Frankfurter FX, no API key, CORS-enabled) ----
+  const COINS = { bitcoin:'BTC', ethereum:'ETH', solana:'SOL', ripple:'XRP' };
+  const DAYS = [1,7,30,365];
+  const currentCoin = 'bitcoin';
+  let curRange = 2;
+
+  const LS = {
+    get(k){ try{ return JSON.parse(localStorage.getItem('nuuk_'+k)); }catch(e){ return null; } },
+    set(k,v){ try{ localStorage.setItem('nuuk_'+k, JSON.stringify(v)); }catch(e){} }
+  };
+
+  async function jget(url, tries){
+    tries = tries==null?2:tries;
+    for(let i=0;i<=tries;i++){
+      try{
+        const r = await fetch(url, {cache:'no-store'});
+        if(r.status===429){ await new Promise(s=>setTimeout(s, 1500*(i+1))); continue; }
+        if(!r.ok) throw new Error('HTTP '+r.status);
+        return r.json();
+      }catch(e){ if(i===tries) throw e; await new Promise(s=>setTimeout(s, 800*(i+1))); }
+    }
+    throw new Error('failed');
+  }
+
+  // ---- hero chart ----
+  function renderChart(c, animate){
+    chartData = c.prices; draw(animate);
+    document.getElementById('pfval').textContent = c.val;
+    const wrap=document.getElementById('pfchgwrap');
+    wrap.firstChild.textContent = c.pct>=0 ? '▲ ' : '▼ ';
+    wrap.style.color = c.pct>=0 ? 'var(--up)' : 'var(--down)';
+    wrap.style.background = c.pct>=0 ? 'oklch(0.82 0.15 158 / .12)' : 'oklch(0.72 0.16 25 / .12)';
+    document.getElementById('pfchg').textContent = c.diff+' · '+fmtPct(c.pct);
+  }
+  async function loadChart(rangeIndex, animate){
+    const days = DAYS[rangeIndex];
+    const cached = LS.get('chart'+days);
+    if(cached){ renderChart(cached, animate); animate=false; } // show cache instantly, then refresh quietly
+    try{
+      const j = await jget(`https://api.coingecko.com/api/v3/coins/${currentCoin}/market_chart?vs_currency=usd&days=${days}`);
+      let prices = (j.prices||[]).map(p=>p[1]).filter(Number.isFinite);
+      if(prices.length<2) throw new Error('no data');
+      const N=60;
+      if(prices.length>N){ const step=prices.length/N; const ds=Array.from({length:N},(_,i)=>prices[Math.floor(i*step)]); ds.push(prices[prices.length-1]); prices=ds; }
+      const first=prices[0], last=prices[prices.length-1], pct=(last-first)/first*100;
+      const c={prices, val:fmtUSD(last), diff:fmtUSD(Math.abs(last-first)), pct};
+      LS.set('chart'+days, c);
+      renderChart(c, animate);
+    }catch(err){
+      if(!cached){
+        draw(animate);
+        document.getElementById('pfval').textContent='—';
+        document.getElementById('pfchg').textContent='live data unavailable';
+        document.getElementById('pfchgwrap').firstChild.textContent='· ';
+      }
+    }
+  }
+
+  // ---- holdings ----
+  function renderHoldings(j){
+    document.querySelectorAll('#holds .hold').forEach(h=>{
+      const id=h.dataset.coin, d=j[id]; if(!d)return;
+      h.querySelector('.sub').textContent = COINS[id]+' · '+fmtUSD(d.usd);
+      const pct=h.querySelector('.pct'), chg=d.usd_24h_change||0;
+      pct.textContent=fmtPct(chg);
+      pct.style.color = chg>=0 ? 'var(--up)' : 'var(--down)';
+    });
+  }
+
+  // ---- ticker ----
+  function renderTicker(items){
+    const tk=document.getElementById('ticker');
+    const mk=()=>items.map(([s,p,c])=>`<span class="tk"><b>${s}</b> ${p} <span style="color:${c>=0?'var(--up)':'var(--down)'}">${fmtPct(c)}</span></span>`).join('');
+    tk.innerHTML = mk()+mk();
+  }
+
+  // ---- combined markets fetch: ONE CoinGecko price call feeds both holdings + ticker, plus FX ----
+  const ALLCOINS={bitcoin:'BTC',ethereum:'ETH',solana:'SOL',ripple:'XRP',dogecoin:'DOGE',cardano:'ADA'};
+  async function loadMarkets(){
+    const cachedH=LS.get('holds'); if(cachedH) renderHoldings(cachedH);
+    const cachedT=LS.get('ticker'); if(cachedT&&cachedT.length) renderTicker(cachedT);
+    let crypto={};
+    try{
+      const ids=Object.keys(ALLCOINS).join(',');
+      crypto=await jget(`https://api.coingecko.com/api/v3/simple/price?ids=${ids}&vs_currencies=usd&include_24hr_change=true`);
+      LS.set('holds', crypto); renderHoldings(crypto);
+    }catch(e){}
+    const fxItems=[];
+    try{
+      const today=await jget('https://api.frankfurter.app/latest?from=USD&to=EUR,GBP,JPY,TRY');
+      const dt=new Date(Date.now()-86400000).toISOString().slice(0,10);
+      let prev=null; try{ prev=await jget(`https://api.frankfurter.app/${dt}?from=USD&to=EUR,GBP,JPY,TRY`,1);}catch(e){}
+      const fx=[['EUR','EUR/USD',true],['GBP','GBP/USD',true],['JPY','USD/JPY',false],['TRY','USD/TRY',false]];
+      for(const [k,label,inv] of fx){
+        const r=today.rates&&today.rates[k]; if(r==null)continue;
+        const val=inv?1/r:r;
+        let chg=0; if(prev&&prev.rates&&prev.rates[k]){ const pv=inv?1/prev.rates[k]:prev.rates[k]; chg=(val-pv)/pv*100; }
+        fxItems.push([label, val>=100?val.toFixed(1):val.toFixed(3), chg]);
+      }
+    }catch(e){}
+    const items=[];
+    for(const id in ALLCOINS){ const d=crypto[id]; if(d) items.push([ALLCOINS[id], d.usd>=100?Math.round(d.usd).toLocaleString('en-US'):d.usd.toFixed(3), d.usd_24h_change||0]); }
+    items.push(...fxItems);
+    if(items.length){ LS.set('ticker', items); renderTicker(items); }
+    else if(!cachedT){ renderTicker([['BTC','—',0],['ETH','—',0],['EUR/USD','—',0],['USD/JPY','—',0]]); }
+  }
+
+  // segmented control -> reload real chart for that range
+  const seg=document.getElementById('seg');
+  seg.addEventListener('click',e=>{
+    const b=e.target.closest('button'); if(!b)return;
+    [...seg.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+    curRange=+b.dataset.i; loadChart(curRange,true);
+  });
+
+  // kick off when card visible (+ safety net); stagger the two API hits + refresh every 2 min to respect rate limits
+  let started=false;
+  function startData(){
+    if(started)return; started=true;
+    loadChart(curRange,true);
+    setTimeout(loadMarkets, 1200);
+  }
+  const card=document.getElementById('pfcard');
+  const dio=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){startData();dio.unobserve(e.target);}})},{threshold:.3});
+  dio.observe(card);
+  setTimeout(startData,1600);
+  setInterval(()=>{ loadMarkets(); setTimeout(()=>loadChart(curRange,false),1500); }, 120000);
+
+  // ----- showcase tabs -----
+  const tabs=document.getElementById('tabs'), panes=document.querySelectorAll('#panel .pane');
+  tabs.addEventListener('click',e=>{
+    const b=e.target.closest('.tab'); if(!b)return;
+    [...tabs.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+    const i=+b.dataset.i;
+    panes.forEach((p,j)=>p.classList.toggle('on',j===i));
+  });
+  // auto-advance tabs
+  let ti=0; const auto=setInterval(()=>{
+    ti=(ti+1)%3;
+    [...tabs.children].forEach((x,j)=>x.classList.toggle('on',j===ti));
+    panes.forEach((p,j)=>p.classList.toggle('on',j===ti));
+  },5200);
+  tabs.addEventListener('click',()=>clearInterval(auto));
+</script>
+<script src="i18n.js"></script>
+</body>
+</html>

@@ -16,7 +16,7 @@ export default function Pulse() {
   const posts = pulse.posts.filter((p) => tab === "All Posts" || p.category === tab);
 
   return (
-    <section id="pulse" className="section-pad" aria-labelledby="pulse-heading">
+    <section id="insights" className="section-pad" aria-labelledby="pulse-heading">
       <div className="container-x">
         <h2 id="pulse-heading" className="h2-section rv">
           {pulse.title}

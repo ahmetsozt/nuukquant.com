@@ -1,6 +1,6 @@
 # nuukquant.com
 
-Marketing site for NUUK, rebuilt on the EXANTE prime-broker layout system.
+Marketing site for NUUK, an AI-engineered quantitative trading and infrastructure company.
 Next.js 16 (App Router, static export) + Tailwind CSS v4, deployed to GitHub Pages.
 
 ## Develop
@@ -17,7 +17,7 @@ pnpm build      # static export into ./out
 ```
 src/
 ├── app/                 # routes (static export, trailing slashes)
-│   ├── page.tsx         # home: hero → audiences → core → servicing → network → platforms → exchanges → broker → pulse
+│   ├── page.tsx         # home: hero → audiences → core → servicing → network → platform → venues → governance → insights
 │   ├── clients/         # /clients and /clients/[slug] (6 audience pages)
 │   ├── markets/         # /markets and /markets/pricing-overview
 │   ├── technology/      # /technology (#api, #ai, #white-label)
@@ -35,7 +35,7 @@ legacy/                  # previous single-file site (index.html + i18n.js)
 
 ## Design tokens
 
-Brand colours (NUUK) applied to the EXANTE layout rhythm. Edit `@theme` in `src/app/globals.css`:
+Edit `@theme` in `src/app/globals.css`:
 
 | Token | Value | Use |
 |---|---|---|

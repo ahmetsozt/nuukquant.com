@@ -6,21 +6,21 @@ import CtaBand from "@/components/sections/CtaBand";
 import { toneBg, assetClasses } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Global Markets Access | 50+ Markets",
-  description: "Stocks, ETFs, bonds, futures, options, metals, FX and digital assets from one multi-currency account.",
+  title: "Markets: Multi-Asset Coverage Across 50+ Venues",
+  description: "FX, commodities, equity indices, equities, fixed income, metals and digital assets from one multi-currency account.",
 };
 
 const kpis = [
-  ["50+", "global markets"],
-  ["8", "asset classes"],
-  ["24/7", "digital assets"],
+  ["50+", "regulated venues"],
+  ["150+", "active AI models"],
+  ["<5ms", "average execution latency"],
 ];
 
 const features = [
-  { title: "Global Market Access", body: "One account for exchanges in the US, Europe, Middle East and Asia." },
+  { title: "Global Venue Access", body: "One account for venues in the Americas, Europe, the Middle East and Asia." },
   { title: "Safe Asset Custody", body: "Segregated client assets with established custodians." },
   { title: "Cross-Margining", body: "Portfolio-level margin across asset classes." },
-  { title: "Proprietary Technology", body: "Desktop and web platforms, FIX/HTTP API and AI analytics." },
+  { title: "Proprietary Technology", body: "Web platform, FIX/HTTP API and AI-driven analytics." },
 ];
 
 export default function MarketsPage() {
@@ -28,7 +28,7 @@ export default function MarketsPage() {
     <>
       <PageIntro
         title="Markets"
-        kicker="Trading"
+        kicker="Markets"
         body="Trade the world's most liquid markets from a single, multi-currency account."
         cta={{ label: "Get Started", href: "/contact-us/" }}
       >
@@ -44,7 +44,7 @@ export default function MarketsPage() {
 
       <section className="section-pad">
         <div className="container-x">
-          <h2 className="h2-section rv">Transparent Pricing</h2>
+          <h2 className="h2-section rv">Asset Classes</h2>
           <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {assetClasses.map((a) => (
               <li key={a.id} id={a.id} className="scroll-mt-24 rounded-md bg-white p-6 shadow-card ring-1 ring-black/5 rv">

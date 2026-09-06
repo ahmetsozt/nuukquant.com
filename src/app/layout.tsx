@@ -22,11 +22,11 @@ const plex = IBM_Plex_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.nuukquant.com"),
   title: {
-    default: "NUUK Prime Broker: Multi-Asset Trading Platform | 50+ Markets",
+    default: "NUUK — Financial AI Infrastructure",
     template: "%s | NUUK",
   },
   description:
-    "Trade global stocks, ETFs, bonds, futures, options, FX, metals and digital assets across 50+ markets. Fast onboarding, transparent pricing, free API and dedicated support.",
+    "AI-engineered quantitative trading and execution infrastructure for institutions and professional investors. FX, commodities, indices, equities and digital assets across 50+ venues.",
   openGraph: {
     siteName: "NUUK",
     type: "website",

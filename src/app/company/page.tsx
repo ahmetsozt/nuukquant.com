@@ -5,8 +5,8 @@ import Broker from "@/components/home/Broker";
 import CtaBand from "@/components/sections/CtaBand";
 
 export const metadata: Metadata = {
-  title: "About NUUK: Global Prime Broker & Trading Technology",
-  description: "NUUK is an AI-engineered multi-asset broker and trading infrastructure company headquartered in DIFC, Dubai.",
+  title: "About NUUK: AI-Engineered Trading Infrastructure",
+  description: "NUUK is an AI-engineered quantitative trading and infrastructure company headquartered in DIFC, Dubai.",
 };
 
 const principles = [
@@ -22,7 +22,7 @@ export default function CompanyPage() {
       <PageIntro
         title="Our Story"
         kicker="About Us"
-        body="NUUK is an AI-engineered quantitative trading and brokerage infrastructure company. We combine proprietary algorithms, institutional execution systems and a global venue network to give professionals disciplined access to world markets."
+        body="NUUK is an AI-engineered quantitative trading and infrastructure company. We combine proprietary algorithms, institutional execution systems and a global venue network to give professionals disciplined access to world markets."
       />
       <section className="section-pad">
         <div className="container-x">

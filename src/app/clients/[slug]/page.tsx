@@ -40,7 +40,7 @@ export default async function AudiencePage({ params }: { params: Promise<{ slug:
           ))}
         </div>
       </section>
-      <CtaBand title="Dedicated Support" body="A relationship manager, trade desk and technology team in your timezone." />
+      <CtaBand title="Dedicated Support" body="A relationship manager, execution desk and engineering team in your time zone." />
     </>
   );
 }

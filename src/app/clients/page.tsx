@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 
 const reasons = [
   { title: "Institutional discipline", body: "Systematic governance across execution, risk and reporting." },
-  { title: "Trusted by professionals", body: "Built for institutions and professional investors worldwide." },
-  { title: "Access across 50+ markets", body: "One multi-currency account, all major asset classes." },
-  { title: "Audited institutional technology", body: "Proprietary platforms, FIX/HTTP APIs and AI analytics." },
-  { title: "Always available", body: "A global team and trade desk in your timezone." },
+  { title: "Trusted by professionals", body: "Built for institutions and professional investors, from DIFC to the world." },
+  { title: "Access across 50+ venues", body: "One multi-currency account, all major asset classes." },
+  { title: "Institutional technology", body: "Proprietary platform, FIX/HTTP APIs and AI-driven analytics." },
+  { title: "Always available", body: "A global team and execution desk in your time zone." },
 ];
 
 export default function ClientsPage() {

@@ -26,7 +26,7 @@ export default function ContactPage() {
                 {brand.phone}
               </a>
             </p>
-            <h2 className="h2-section mt-10">Talk to a local account manager</h2>
+            <h2 className="h2-section mt-10">Talk to our team in Dubai</h2>
             <p className="mt-4 text-[15px] leading-6">{brand.office}</p>
           </div>
           <div className="lg:col-span-7">

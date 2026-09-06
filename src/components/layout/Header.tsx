@@ -80,8 +80,8 @@ export default function Header() {
             >
               <Icon name="globe-small" size={18} />
             </button>
-            <Link href={brand.loginHref} className="flex items-center px-5 text-[15px] font-medium text-body hover:text-ink">
-              Log In
+            <Link href={brand.contactHref} className="flex items-center px-5 text-[15px] font-medium text-body hover:text-ink">
+              Contact
             </Link>
             <Button href={brand.getStartedHref} variant="header" arrow={false}>
               Get Started
@@ -143,8 +143,8 @@ export default function Header() {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-3 border-t border-fog p-6">
-          <Button href={brand.loginHref} variant="ghost" arrow={false} className="justify-center border border-fog rounded-md">
-            Log In
+          <Button href={brand.contactHref} variant="ghost" arrow={false} className="justify-center border border-fog rounded-md">
+            Contact
           </Button>
           <Button href={brand.getStartedHref} arrow={false} className="py-3">
             Get Started

@@ -4,7 +4,7 @@
   --font-sans: var(--font-inter), Inter, system-ui, sans-serif;
   --font-display: var(--font-plex), "IBM Plex Sans", Inter, system-ui, sans-serif;
 
-  /* NUUK brand on the EXANTE layout system */
+  /* NUUK brand tokens */
   --color-primary: #12a37f;
   --color-primary-dark: #0d8465;
   --color-mint: #7fe8c8;
@@ -87,7 +87,7 @@ h2,
   @apply text-[32px] leading-[1.2] lg:text-[40px] lg:leading-[50px] 2xl:text-[48px] 2xl:leading-[58px];
 }
 
-/* Button text-swap hover (EXANTE style) */
+/* Button text-swap hover */
 .swap {
   display: inline-grid;
   overflow: hidden;

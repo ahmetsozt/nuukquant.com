@@ -1,8 +1,8 @@
 import Button from "@/components/ui/Button";
 
 export default function CtaBand({
-  title = "Created by professionals. For professionals.",
-  body = "Talk to a local account manager about onboarding, pricing and integration.",
+  title = "Where capital meets machine intelligence.",
+  body = "Talk to our team about onboarding, fees and integration.",
   cta = { label: "Contact Us", href: "/contact-us/" },
 }: {
   title?: string;

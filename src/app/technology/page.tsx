@@ -7,7 +7,7 @@ import { technologyFeatures } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Trading Technology: Platforms, APIs & AI",
-  description: "Proprietary desktop and web platforms, FIX and HTTP APIs, white label and AI-powered market intelligence.",
+  description: "Proprietary web platform, FIX and HTTP APIs, white label and AI-driven market intelligence.",
 };
 
 const ai = [
@@ -22,12 +22,12 @@ export default function TechnologyPage() {
       <PageIntro
         title="Proprietary Technology"
         kicker="Technology"
-        body="Built by professionals for professionals: synchronised platforms, low-latency connectivity and AI intelligence in one stack."
+        body="Enterprise-grade systems engineered for speed, reliability and performance: machine learning, low-latency execution and risk control in one stack."
         cta={{ label: "Request Demo", href: "/contact-us/" }}
       />
       <section className="section-pad">
         <div className="container-x">
-          <h2 className="h2-section rv">Built by professionals for professionals</h2>
+          <h2 className="h2-section rv">Advanced technology stack</h2>
           <ul className="mt-10 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
             {technologyFeatures.map((f) => (
               <li key={f.title} className="rv">
@@ -59,7 +59,7 @@ export default function TechnologyPage() {
       </section>
       <section id="ai" className="scroll-mt-20 bg-fog py-20 lg:py-22">
         <div className="container-x">
-          <h2 className="h2-section rv">AI-Powered Pulse</h2>
+          <h2 className="h2-section rv">Next-generation AI intelligence</h2>
           <ul className="mt-10 grid gap-8 lg:grid-cols-3">
             {ai.map((a) => (
               <li key={a.title} className="rounded-md bg-white p-6 shadow-card ring-1 ring-black/5 rv">
@@ -70,17 +70,17 @@ export default function TechnologyPage() {
           </ul>
         </div>
       </section>
-      <section id="white-label" className="scroll-mt-20 section-pad">
+      <section id="infrastructure" className="scroll-mt-20 section-pad">
         <div className="container-x grid gap-8 lg:grid-cols-2 lg:items-center">
           <div className="rv">
-            <h2 className="h2-section">White Label Solutions</h2>
+            <h2 className="h2-section">Global Trading Infrastructure</h2>
             <p className="mt-4 text-[15px] leading-6">
-              Your brand on our infrastructure. Bespoke instruments, permissions and end-client setups, with
-              our back office, trade desk and technology teams behind you.
+              Direct connections to 50+ regulated venues and liquidity providers with redundant network architecture,
+              real-time data aggregation and bank-grade security. White-label deployments available for partners.
             </p>
           </div>
           <div className="rv lg:justify-self-end">
-            <Button href="/contact-us/">Start the process</Button>
+            <Button href="/contact-us/">Talk to our engineers</Button>
           </div>
         </div>
       </section>

@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const { c } = await resolve(params);
   const { slug } = await params;
   const a = c.audiences[slug as keyof typeof c.audiences];
-  return a ? { title: `NUUK — ${a.title}`, description: a.intro } : {};
+  return a ? { title: a.title, description: a.intro } : {};
 }
 
 export default async function AudiencePage({ params }: { params: Params }) {

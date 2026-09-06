@@ -76,6 +76,16 @@ h2,
 }
 }
 
+/* Arabic: use the Plex Arabic face for body and display text */
+[dir="rtl"],
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] .display,
+[dir="rtl"] .font-display {
+  font-family: var(--font-arabic), var(--font-sans);
+  letter-spacing: 0;
+}
+
 /* Layout */
 .container-x {
   @apply mx-auto w-full max-w-[1680px] px-6 md:px-10 lg:px-12;

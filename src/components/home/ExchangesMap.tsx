@@ -1,4 +1,4 @@
-import { home } from "@/content/site";
+import type { SiteContent } from "@/content/en";
 import { optionalImage } from "@/lib/images";
 
 function Spikes() {
@@ -26,8 +26,8 @@ function Spikes() {
   );
 }
 
-export default function ExchangesMap() {
-  const { exchanges } = home;
+export default function ExchangesMap({ c }: { c: SiteContent }) {
+  const { exchanges } = c.home;
   const photo = optionalImage("map");
   return (
     <section

@@ -1,25 +1,12 @@
-import Hero from "@/components/home/Hero";
-import AudienceCards from "@/components/home/AudienceCards";
-import CoreValues from "@/components/home/CoreValues";
-import Servicing from "@/components/home/Servicing";
-import Network from "@/components/home/Network";
-import Experts from "@/components/home/Experts";
-import ExchangesMap from "@/components/home/ExchangesMap";
-import Broker from "@/components/home/Broker";
-import Pulse from "@/components/home/Pulse";
+import Shell from "@/components/layout/Shell";
+import HomeSections from "@/components/home/HomeSections";
+import { getContent } from "@/i18n";
 
-export default function HomePage() {
+/** English home served at the site root. Other locales live under /{locale}/. */
+export default function RootHomePage() {
   return (
-    <>
-      <Hero />
-      <AudienceCards />
-      <CoreValues />
-      <Servicing />
-      <Network />
-      <Experts />
-      <ExchangesMap />
-      <Broker />
-      <Pulse />
-    </>
+    <Shell locale="en">
+      <HomeSections c={getContent("en")} />
+    </Shell>
   );
 }

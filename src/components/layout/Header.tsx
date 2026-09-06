@@ -1,15 +1,52 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { brand, nav } from "@/content/site";
+import type { SiteContent } from "@/content/en";
+import { localeNames, locales, switchLocale, type Locale } from "@/i18n";
 import Logo from "@/components/ui/Logo";
 import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
 
-export default function Header() {
+function LanguageMenu({ locale }: { locale: Locale }) {
+  const pathname = usePathname() || "/";
+  return (
+    <div className="group/lang relative flex h-full items-stretch">
+      <button
+        type="button"
+        className="flex items-center gap-1 px-3 text-[15px] text-body hover:text-ink"
+        aria-haspopup="true"
+        aria-label={localeNames[locale]}
+      >
+        <Icon name="globe-small" size={18} />
+        <span className="uppercase">{locale}</span>
+      </button>
+      <ul className="pointer-events-none absolute top-full end-0 z-50 min-w-40 -translate-y-1 rounded-b bg-white py-1 opacity-0 shadow-menu transition duration-150 group-hover/lang:pointer-events-auto group-hover/lang:translate-y-0 group-hover/lang:opacity-100 group-focus-within/lang:pointer-events-auto group-focus-within/lang:translate-y-0 group-focus-within/lang:opacity-100">
+        {locales.map((l) => (
+          <li key={l}>
+            <Link
+              href={switchLocale(pathname, l)}
+              hrefLang={l}
+              className={`block px-4 py-2 text-[15px] whitespace-nowrap hover:bg-fog hover:text-ink ${
+                l === locale ? "text-ink" : "text-body"
+              }`}
+            >
+              {localeNames[l]}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default function Header({ c, locale }: { c: SiteContent; locale: Locale }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname() || "/";
+  const contactHref = c.pages.ctaBand.cta.href;
+  const homeHref = locale === "en" ? "/" : `/${locale}/`;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -41,11 +78,11 @@ export default function Header() {
         }`}
       >
         <div className="container-x flex h-full items-center justify-between">
-          <Logo />
+          <Logo href={homeHref} label={c.ui.home} />
 
           <nav aria-label="Main navigation" className="hidden h-full lg:block">
             <ul className="flex h-full items-stretch">
-              {nav.map((group) => (
+              {c.nav.map((group) => (
                 <li key={group.label} className="group/menu relative flex h-full items-stretch">
                   <Link
                     href={group.href}
@@ -53,7 +90,7 @@ export default function Header() {
                   >
                     {group.label}
                   </Link>
-                  <div className="pointer-events-none absolute top-full left-0 z-50 min-w-48 -translate-y-1 rounded-b bg-white pb-2 opacity-0 shadow-menu transition duration-150 group-hover/menu:pointer-events-auto group-hover/menu:translate-y-0 group-hover/menu:opacity-100 group-focus-within/menu:pointer-events-auto group-focus-within/menu:translate-y-0 group-focus-within/menu:opacity-100">
+                  <div className="pointer-events-none absolute top-full start-0 z-50 min-w-48 -translate-y-1 rounded-b bg-white pb-2 opacity-0 shadow-menu transition duration-150 group-hover/menu:pointer-events-auto group-hover/menu:translate-y-0 group-hover/menu:opacity-100 group-focus-within/menu:pointer-events-auto group-focus-within/menu:translate-y-0 group-focus-within/menu:opacity-100">
                     <ul className="py-1">
                       {group.items.map((item) => (
                         <li key={item.label}>
@@ -73,25 +110,19 @@ export default function Header() {
           </nav>
 
           <div className="hidden h-full items-stretch lg:flex">
-            <button
-              type="button"
-              className="flex items-center px-3 text-body hover:text-ink"
-              aria-label="Language: English"
-            >
-              <Icon name="globe-small" size={18} />
-            </button>
-            <Link href={brand.contactHref} className="flex items-center px-5 text-[15px] font-medium text-body hover:text-ink">
-              Contact
+            <LanguageMenu locale={locale} />
+            <Link href={contactHref} className="flex items-center px-5 text-[15px] font-medium text-body hover:text-ink">
+              {c.ui.contact}
             </Link>
-            <Button href={brand.getStartedHref} variant="header" arrow={false}>
-              Get Started
+            <Button href={contactHref} variant="header" arrow={false}>
+              {c.ui.getStarted}
             </Button>
           </div>
 
           <button
             type="button"
             className="flex size-9 items-center justify-center text-ink lg:hidden"
-            aria-label={open ? "Close menu" : "Open menu"}
+            aria-label={open ? c.ui.closeMenu : c.ui.openMenu}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
           >
@@ -100,7 +131,6 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Mobile sheet */}
       <div
         className={`fixed inset-0 z-40 bg-navy/80 transition-opacity duration-150 lg:hidden ${
           open ? "opacity-100" : "pointer-events-none opacity-0"
@@ -109,15 +139,15 @@ export default function Header() {
         aria-hidden="true"
       />
       <div
-        className={`fixed inset-y-0 right-0 z-50 flex w-full max-w-md flex-col bg-white pt-14 transition-transform duration-200 ease-out-expo lg:hidden ${
-          open ? "translate-x-0" : "translate-x-full"
+        className={`fixed inset-y-0 end-0 z-50 flex w-full max-w-md flex-col bg-white pt-14 transition-transform duration-200 ease-out-expo lg:hidden ${
+          open ? "translate-x-0" : "translate-x-full rtl:-translate-x-full"
         }`}
         role="dialog"
         aria-modal="true"
         aria-label="Menu"
       >
         <div className="flex-1 overflow-y-auto px-6 py-4">
-          {nav.map((group) => (
+          {c.nav.map((group) => (
             <details key={group.label} className="group border-b border-fog">
               <summary className="flex cursor-pointer list-none items-center justify-between py-4 text-[17px] text-ink">
                 {group.label}
@@ -126,11 +156,7 @@ export default function Header() {
               <ul className="pb-3">
                 {group.items.map((item) => (
                   <li key={item.label}>
-                    <Link
-                      href={item.href}
-                      onClick={() => setOpen(false)}
-                      className="block py-2 pl-3 text-[15px] text-body"
-                    >
+                    <Link href={item.href} onClick={() => setOpen(false)} className="block py-2 ps-3 text-[15px] text-body">
                       {item.label}
                     </Link>
                   </li>
@@ -138,16 +164,32 @@ export default function Header() {
               </ul>
             </details>
           ))}
-          <div className="flex items-center gap-2 py-4 text-[15px] text-body">
-            <Icon name="globe-small" size={18} /> English
+          <div className="py-4">
+            <p className="mb-2 flex items-center gap-2 text-[13px] text-muted">
+              <Icon name="globe-small" size={16} /> {c.ui.language}
+            </p>
+            <ul className="flex flex-wrap gap-x-4 gap-y-2 text-[15px]">
+              {locales.map((l) => (
+                <li key={l}>
+                  <Link
+                    href={switchLocale(pathname, l)}
+                    hrefLang={l}
+                    onClick={() => setOpen(false)}
+                    className={l === locale ? "text-ink underline underline-offset-4" : "text-body"}
+                  >
+                    {localeNames[l]}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-3 border-t border-fog p-6">
-          <Button href={brand.contactHref} variant="ghost" arrow={false} className="justify-center border border-fog rounded-md">
-            Contact
+          <Button href={contactHref} variant="ghost" arrow={false} className="justify-center rounded-md border border-fog">
+            {c.ui.contact}
           </Button>
-          <Button href={brand.getStartedHref} arrow={false} className="py-3">
-            Get Started
+          <Button href={contactHref} arrow={false} className="py-3">
+            {c.ui.getStarted}
           </Button>
         </div>
       </div>

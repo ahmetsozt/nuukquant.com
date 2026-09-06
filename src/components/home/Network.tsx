@@ -1,7 +1,7 @@
-import { home } from "@/content/site";
+import type { SiteContent } from "@/content/en";
 
-export default function Network() {
-  const { network } = home;
+export default function Network({ c }: { c: SiteContent }) {
+  const { network } = c.home;
   return (
     <section id="our-network" className="bg-navy py-12 text-center lg:py-14" aria-label={network.title}>
       <div className="container-x flex flex-col items-center gap-6 lg:flex-row lg:justify-between">

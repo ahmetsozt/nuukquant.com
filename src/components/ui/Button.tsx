@@ -18,7 +18,7 @@ const variants: Record<Variant, string> = {
 function Arrow({ className = "" }: { className?: string }) {
   return (
     <svg
-      className={className}
+      className={`rtl:rotate-180 ${className}`}
       width="8"
       height="13"
       viewBox="0 0 8 13"

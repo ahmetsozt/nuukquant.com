@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { home } from "@/content/site";
+import { en, type SiteContent } from "@/content/en";
 
 const tones: Record<string, string> = {
   stocks: "from-stocks/60 to-primary/40",
@@ -10,10 +10,11 @@ const tones: Record<string, string> = {
   crypto: "from-crypto/60 to-options/40",
 };
 
-export default function Pulse() {
-  const { pulse } = home;
-  const [tab, setTab] = useState(pulse.tabs[0]);
-  const posts = pulse.posts.filter((p) => tab === "All Posts" || p.category === tab);
+export default function Pulse({ c }: { c: SiteContent }) {
+  const { pulse } = c.home;
+  const [tab, setTab] = useState(0);
+  // Categories are matched against the English tab names so translated labels keep working.
+  const posts = pulse.posts.filter((p) => tab === 0 || p.category === en.home.pulse.tabs[tab]);
 
   return (
     <section id="insights" className="section-pad" aria-labelledby="pulse-heading">
@@ -22,27 +23,27 @@ export default function Pulse() {
           {pulse.title}
         </h2>
         <div role="tablist" aria-label="Post categories" className="mt-6 flex gap-6 overflow-x-auto border-b border-fog scroll-row">
-          {pulse.tabs.map((t) => (
+          {pulse.tabs.map((t, i) => (
             <button
               key={t}
               role="tab"
-              aria-selected={tab === t}
-              onClick={() => setTab(t)}
+              aria-selected={tab === i}
+              onClick={() => setTab(i)}
               className={`relative py-4 text-[15px] whitespace-nowrap transition-colors ${
-                tab === t ? "text-ink" : "text-body hover:text-ink"
+                tab === i ? "text-ink" : "text-body hover:text-ink"
               }`}
             >
               {t}
               <span
                 className={`absolute inset-x-0 -bottom-px h-0.5 bg-primary transition-transform ${
-                  tab === t ? "scale-x-100" : "scale-x-0"
+                  tab === i ? "scale-x-100" : "scale-x-0"
                 }`}
               />
             </button>
           ))}
         </div>
         {posts.length === 0 ? (
-          <p className="py-16 text-center text-muted">No posts in this category yet.</p>
+          <p className="py-16 text-center text-muted">{c.ui.noPosts}</p>
         ) : (
           <ul className="mt-8 flex snap-x gap-6 overflow-x-auto pb-2 scroll-row lg:grid lg:grid-cols-4 lg:overflow-visible">
             {posts.map((p) => (

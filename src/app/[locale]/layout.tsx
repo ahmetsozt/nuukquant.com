@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!isLocale(locale)) return {};
   const c = getContent(locale);
   return {
-    title: { default: c.meta.title, template: "%s | NUUK" },
+    title: { absolute: c.meta.title, template: "%s | NUUK" },
     description: c.meta.description,
     alternates: {
       canonical: `/${locale}/`,

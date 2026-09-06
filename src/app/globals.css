@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), Inter, system-ui, sans-serif;
+  --font-display: var(--font-plex), "IBM Plex Sans", Inter, system-ui, sans-serif;
+
+  /* NUUK brand on the EXANTE layout system */
+  --color-primary: #12a37f;
+  --color-primary-dark: #0d8465;
+  --color-mint: #7fe8c8;
+  --color-navy: #1d242c;
+  --color-navy-2: #252d36;
+  --color-navy-3: #2f3841;
+  --color-line: #3b444e;
+  --color-hero: #0d1117;
+
+  --color-ink: #1d242c;
+  --color-body: #4a5661;
+  --color-muted: #8e9aa3;
+  --color-soft: #c4ced0;
+  --color-fog: #f2f4f5;
+  --color-fog-2: #fafbfb;
+  --color-beige: #caa566;
+
+  --color-stocks: #76faaf;
+  --color-currencies: #42c9f4;
+  --color-metals: #1c68ff;
+  --color-futures: #e649f4;
+  --color-options: #f1486e;
+  --color-bonds: #b1f845;
+  --color-crypto: #f39520;
+
+  --shadow-card: 0 40px 80px rgba(0, 0, 0, 0.04), 0 20px 40px rgba(0, 0, 0, 0.04);
+  --shadow-hover: 0 6px 8px rgba(0, 0, 0, 0.15);
+  --shadow-menu: 0 1px 2px rgba(0, 0, 0, 0.06), 0 12px 32px rgba(0, 0, 0, 0.08);
+
+  --breakpoint-lg: 60rem;
+  --breakpoint-xl: 77.5rem;
+  --breakpoint-2xl: 105rem;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  --header-h: 4.5rem;
+  --header-h-fixed: 3.5rem;
+}
+
+@layer base {
+html {
+  scroll-padding-top: var(--header-h);
+}
+
+body {
+  background: #fff;
+  color: var(--color-body);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+.display {
+  font-family: var(--font-display);
+  font-weight: 200;
+  letter-spacing: -0.005em;
+  color: var(--color-ink);
+}
+
+::selection {
+  background: var(--color-mint);
+  color: var(--color-navy);
+}
+}
+
+/* Layout */
+.container-x {
+  @apply mx-auto w-full max-w-[1680px] px-6 md:px-10 lg:px-12;
+}
+.section-pad {
+  @apply py-20 lg:py-22 2xl:py-30;
+}
+.h2-section {
+  @apply text-[32px] leading-[1.2] lg:text-[40px] lg:leading-[50px] 2xl:text-[48px] 2xl:leading-[58px];
+}
+
+/* Button text-swap hover (EXANTE style) */
+.swap {
+  display: inline-grid;
+  overflow: hidden;
+  line-height: 1.2;
+}
+.swap > span {
+  grid-area: 1 / 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.35s var(--ease-out-expo), opacity 0.35s var(--ease-out-expo);
+}
+.swap > span:last-child {
+  transform: translateY(110%);
+  opacity: 0;
+}
+.btn:hover .swap > span:first-child,
+.btn:focus-visible .swap > span:first-child {
+  transform: translateY(-110%);
+  opacity: 0;
+}
+.btn:hover .swap > span:last-child,
+.btn:focus-visible .swap > span:last-child {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Audience card hover (scale-up green pseudo layer) */
+.aud-card {
+  position: relative;
+  isolation: isolate;
+}
+.aud-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 6px;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.2s ease-in-out,
+    background 0.2s ease-in-out;
+}
+.aud-card:hover::after,
+.aud-card:focus-visible::after {
+  opacity: 1;
+  visibility: visible;
+  background: var(--color-primary);
+  transform: scale(1.16);
+  box-shadow: var(--shadow-hover);
+}
+@media (max-width: 959px) {
+  .aud-card:hover::after {
+    transform: scale(1.06);
+  }
+}
+.aud-card:hover,
+.aud-card:focus-visible {
+  color: #fff;
+}
+
+/* Scroll reveal */
+.rv {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s var(--ease-out-expo), transform 0.6s var(--ease-out-expo);
+}
+.rv.in {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .rv {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .swap > span {
+    transition: none;
+  }
+}
+
+/* Dotted-grid background for the exchanges section */
+.dot-grid {
+  background-image: radial-gradient(rgba(29, 36, 44, 0.09) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* Horizontal scroll rows */
+.scroll-row {
+  scrollbar-width: none;
+}
+.scroll-row::-webkit-scrollbar {
+  display: none;
+}

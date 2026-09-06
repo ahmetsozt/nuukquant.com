@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { home } from "@/content/site";
+import type { SiteContent } from "@/content/en";
 
-export default function AudienceCards() {
+export default function AudienceCards({ c }: { c: SiteContent }) {
   return (
     <section className="relative z-10 -mt-10 pb-20 lg:pb-22 2xl:pb-30" aria-label="Who we serve">
       <div className="container-x">
         <ul className="grid auto-rows-fr grid-cols-2 shadow-card lg:grid-cols-3 xl:grid-cols-6">
-          {home.audiences.map((a, i, arr) => {
+          {c.home.audiences.map((a, i, arr) => {
             const first = i === 0;
             const last = i === arr.length - 1;
             return (

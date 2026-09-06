@@ -12,23 +12,26 @@ pnpm lint
 pnpm build      # static export into ./out
 ```
 
+## Languages and analytics
+
+- Locales: `en` (served at `/` and `/en/`), `tr`, `ar` (RTL), `ru`, `fr`, `es` under `/{locale}/`.
+- All copy lives in `src/content/en.ts`; each other language is a partial override in `src/content/{locale}.ts` and falls back to English for anything missing. Internal links are locale-prefixed automatically by `getContent()` in `src/i18n.ts`.
+- Google Analytics 4 loads only when `NEXT_PUBLIC_GA_ID` is set at build time (see `.env.example`).
+
 ## Structure
 
 ```
 src/
 ├── app/                 # routes (static export, trailing slashes)
-│   ├── page.tsx         # home: hero → audiences → core → servicing → network → platform → venues → governance → insights
-│   ├── clients/         # /clients and /clients/[slug] (6 audience pages)
-│   ├── markets/         # /markets and /markets/pricing-overview
-│   ├── technology/      # /technology (#api, #ai, #white-label)
-│   ├── company/         # /company
-│   └── contact-us/      # /contact-us (mailto-backed form)
+│   ├── page.tsx         # English home at /
+│   └── [locale]/        # per-language routes: home, clients(+6), markets, pricing-overview, technology, company, contact-us
 ├── components/
 │   ├── layout/          # Header (dropdowns, shrink-on-scroll, mobile sheet), Footer
 │   ├── home/            # home sections
 │   ├── sections/        # PageIntro, CtaBand (shared by sub-pages)
 │   └── ui/              # Button (text-swap hover), Logo, Icon, Reveal
-├── content/site.ts      # ALL copy, navigation and data live here
+├── content/             # en.ts (source of truth) + tr/ar/ru/fr/es overrides
+├── i18n.ts              # locales, direction, link prefixing, content merge
 └── app/globals.css      # design tokens (@theme) and component CSS
 legacy/                  # previous single-file site (index.html + i18n.js)
 ```

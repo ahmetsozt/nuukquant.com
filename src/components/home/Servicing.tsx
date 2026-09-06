@@ -1,6 +1,6 @@
 import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
-import { home } from "@/content/site";
+import type { SiteContent } from "@/content/en";
 import { optionalImage } from "@/lib/images";
 
 const icons = ["onboarding", "globe", "desk", "posttrade"] as const;
@@ -36,8 +36,8 @@ function HexCollage() {
   );
 }
 
-export default function Servicing() {
-  const { servicing } = home;
+export default function Servicing({ c }: { c: SiteContent }) {
+  const { servicing } = c.home;
   const photo = optionalImage("team");
   return (
     <section className="pb-20 lg:pb-14 2xl:pb-30" aria-labelledby="servicing-heading">
@@ -64,7 +64,7 @@ export default function Servicing() {
           <div className="lg:col-span-6 rv">
             {photo ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={photo} alt="NUUK team" loading="lazy" className="h-auto w-full" />
+              <img src={photo} alt={c.brand.name} loading="lazy" className="h-auto w-full" />
             ) : (
               <HexCollage />
             )}

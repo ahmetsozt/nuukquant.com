@@ -1,6 +1,6 @@
 import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
-import { home } from "@/content/site";
+import type { SiteContent } from "@/content/en";
 import { optionalImage } from "@/lib/images";
 
 const icons = ["shield", "handshake", "vault", "segregation"] as const;
@@ -47,8 +47,8 @@ function Columns() {
   );
 }
 
-export default function Broker() {
-  const { broker } = home;
+export default function Broker({ c }: { c: SiteContent }) {
+  const { broker } = c.home;
   const photo = optionalImage("broker-bg");
   return (
     <section

@@ -1,15 +1,15 @@
 import Link from "next/link";
 import Icon from "@/components/ui/Icon";
-import { home } from "@/content/site";
+import type { SiteContent } from "@/content/en";
 
 type IconName = "diversification" | "technology" | "pricing" | "service";
 
-export default function CoreValues() {
+export default function CoreValues({ c }: { c: SiteContent }) {
   return (
     <section className="pb-20 lg:pb-22 2xl:pb-30" aria-label="Why NUUK">
       <div className="container-x">
         <ul className="grid grid-cols-6 gap-8 sm:grid-cols-12 lg:gap-10">
-          {home.core.map((c) => (
+          {c.home.core.map((c) => (
             <li key={c.title.join(" ")} className="col-span-6 sm:col-span-6 xl:col-span-3">
               <Link href={c.href} className="group block rv">
                 <div className="mb-3 flex items-center gap-4 2xl:mb-4 2xl:flex-col 2xl:items-start">

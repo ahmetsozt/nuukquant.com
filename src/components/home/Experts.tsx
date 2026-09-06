@@ -1,10 +1,10 @@
 import Button from "@/components/ui/Button";
 import PlatformMock from "@/components/home/PlatformMock";
-import { home } from "@/content/site";
+import type { SiteContent } from "@/content/en";
 import { optionalImage } from "@/lib/images";
 
-export default function Experts() {
-  const { experts } = home;
+export default function Experts({ c }: { c: SiteContent }) {
+  const { experts } = c.home;
   const photo = optionalImage("devices");
   return (
     <section
@@ -35,7 +35,7 @@ export default function Experts() {
         <div className="xl:col-span-7 xl:translate-x-6 rv">
           {photo ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={photo} alt="NUUK trading platform on desktop, laptop and phone" loading="lazy" className="h-auto w-full max-w-[1100px]" />
+            <img src={photo} alt={experts.imageAlt} loading="lazy" className="h-auto w-full max-w-[1100px]" />
           ) : (
             <PlatformMock />
           )}

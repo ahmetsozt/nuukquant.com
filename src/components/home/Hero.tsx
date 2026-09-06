@@ -1,5 +1,5 @@
 import Button from "@/components/ui/Button";
-import { home } from "@/content/site";
+import type { SiteContent } from "@/content/en";
 import { optionalImage } from "@/lib/images";
 
 function Skyline() {
@@ -56,8 +56,8 @@ function Skyline() {
   );
 }
 
-export default function Hero() {
-  const { hero } = home;
+export default function Hero({ c }: { c: SiteContent }) {
+  const { hero } = c.home;
   const photo = optionalImage("hero");
   return (
     <section className="relative overflow-hidden bg-hero text-white" aria-labelledby="hero-heading">

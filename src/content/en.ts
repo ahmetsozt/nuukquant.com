@@ -170,7 +170,7 @@ export const en = {
       trustLine: ["Partner brokers regulated by FCA, ASIC, CySEC and DFSA", "Track record under independent verification", "Based in DIFC, Dubai"],
       trust: [
         { value: "17", label: "years in markets, since an FX desk in London in 2009" },
-        { value: "87", label: "strategies running live across FX, metals, indices and crypto" },
+        { value: "87", label: "strategy variants back-tested since 2026; three in production, documented on the AI trading page" },
         { value: "3,000+", label: "investors trained in webinars and seminars" },
         { value: "10+", label: "broker partnerships, six listed on this site" },
       ],
@@ -343,20 +343,61 @@ export const en = {
       { step: "03", title: "Risk mandate", body: "A written mandate sets maximum exposure, daily loss limit and instruments. It cannot be exceeded by the system." },
       { step: "04", title: "Reporting", body: "You see every trade in real time in your own account, plus a monthly report and a quarterly review call." },
     ],
+    tiersTitle: "Two ways to allocate",
+    tiers: [
+      {
+        "name": "Pooled MAM",
+        "tagline": "The systems, inside your own account",
+        "minimum": "USD 1,000",
+        "managementFee": "None",
+        "performanceFee": "25% of profits above the high-water mark",
+        "lockup": "30 days, then withdraw any time",
+        "structure": "MAM / copy-trading pool at Tickmill or Darwinex",
+        "forWhom": "Self-directed investors who want the systems without running them"
+      },
+      {
+        "name": "Dedicated account",
+        "tagline": "Your own mandate, your own risk limits",
+        "minimum": "USD 250,000",
+        "managementFee": "USD 1,000 per month (about 4.8% p.a. at the minimum, proportionally lower above it)",
+        "performanceFee": "25% of profits above the high-water mark",
+        "lockup": "30 days' notice",
+        "structure": "PAMM or separately managed account at Saxo Bank, Tickmill or Midas",
+        "forWhom": "Family offices, business treasuries and professional investors"
+      }
+    ],
+    tierLabels: {
+      "minimum": "Minimum allocation",
+      "managementFee": "Management fee",
+      "performanceFee": "Performance fee",
+      "lockup": "Lock-up",
+      "structure": "Structure",
+      "forWhom": "Designed for"
+    },
     termsTitle: "Terms at a glance",
     terms: [
-      { label: "Minimum allocation", value: "USD 25,000" },
-      { label: "Performance fee", value: "25% of profits above the high-water mark" },
-      { label: "Management fee", value: "USD 1,000 per month" },
-      { label: "Lock-up", value: "30 days, then withdraw any time" },
-      { label: "Reporting", value: "Real time in your account; monthly statement" },
-      { label: "Structure", value: "MAM / PAMM inside your own account at Tickmill, Saxo Bank or Midas" },
+      {
+        "label": "Custody",
+        "value": "Always in your own name at the broker; NUUK holds trading permission only"
+      },
+      {
+        "label": "Reporting",
+        "value": "Real time in your account; monthly statement; quarterly review call"
+      },
+      {
+        "label": "Risk mandate",
+        "value": "Written per account: maximum exposure, daily loss limit, permitted instruments"
+      },
+      {
+        "label": "Withdrawal rights",
+        "value": "Yours alone; NUUK never holds withdrawal or transfer rights"
+      }
     ],
     fitTitle: "Who it is for",
     fit: ["Investors who want professional execution without giving up custody", "Family offices seeking a satellite allocation to systematic strategies", "Business owners with idle treasury balances"],
     notFitTitle: "Who it is not for",
     notFit: ["Anyone who cannot tolerate a 20% drawdown", "Capital needed within 3 months", "Anyone expecting fixed or guaranteed returns"],
-    compliance: "NUUK Quant operates from the Dubai International Financial Centre. Managed accounts run through the partner broker's own MAM/PAMM structure under that broker's regulatory framework: NUUK holds trading permission only, never custody or withdrawal rights. More than 300 accounts are managed this way today.",
+    compliance: "NUUK Quant operates from the Dubai International Financial Centre. Managed accounts run through the partner broker's own MAM/PAMM structure under that broker's regulatory framework: NUUK holds trading permission only, never custody or withdrawal rights. The 300+ accounts managed today sit in the pooled MAM structure; dedicated mandates are opened individually.",
   },
 
   brokers: {
@@ -367,6 +408,20 @@ export const en = {
     lead: "I refer clients only to brokers I trade with or have audited. Six partners today: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas and Darwinex. Each card shows who regulates them, what they really charge and how fast money moves.",
     disclosure: "Links on this page are referral links. If you open and fund an account through them I earn a commission from the broker. This does not change the spreads or commissions you pay.",
     compareTitle: "Side by side",
+    partner: {
+      "kicker": "Partner programme",
+      "title": "For introducing partners and educators",
+      "body": "If you already bring clients to these brokers, NUUK can act as your master introducing partner: a transparent rebate split paid monthly, onboarding and KYC guidance in Turkish, Arabic and English, and the same broker comparison material for your own audience. Sub-partner terms are agreed in writing per broker.",
+      "points": [
+        "Transparent rebate split, paid monthly",
+        "Client onboarding and KYC guidance in three languages",
+        "Broker comparison material you can reuse"
+      ],
+      "cta": {
+        "label": "Discuss a partnership",
+        "href": "mailto:info@nuukquant.com?subject=Partner%20programme"
+      }
+    },
     cardLabels: {
       regulator: "Regulator",
       licence: "Licence",
@@ -809,7 +864,7 @@ export const en = {
     steps: [
       { title: "Book a call", body: "30 minutes to decide which service fits: broker, signals, managed account or education." },
       { title: "Open a broker account", body: "In your own name, through a partner broker. Verification takes about 10 minutes with ID and proof of address." },
-      { title: "Fund and connect", body: "Deposit from $10 by card. Connect the account to the managed structure or signal channel if you chose one." },
+      { title: "Fund and connect", body: "Fund your broker account: from USD 1,000 for the pooled MAM or a signal plan, USD 250,000 for a dedicated mandate. Connect it to the structure you chose." },
       { title: "Start trading", body: "Follow the plan, review results monthly, and never take a trade you cannot explain." },
     ],
     cta: { label: "Book a call", href: "/contact-us/" },
@@ -1023,7 +1078,7 @@ export const en = {
       "updated": "2026-07",
       "stats": [
         {
-          "label": "Net return, test period",
+          "label": "Net return, annualised",
           "value": "+10.9%",
           "tone": "up"
         },

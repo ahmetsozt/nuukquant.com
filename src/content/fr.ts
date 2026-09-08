@@ -102,7 +102,7 @@ export const fr: ContentOverride = {
       trustLine: ["Courtiers partenaires régulés par la FCA, l'ASIC, la CySEC et la DFSA", "Track record en cours de vérification indépendante", "Basé au DIFC, à Dubaï"],
       trust: [
         { label: "années sur les marchés, depuis un desk FX à Londres en 2009" },
-        { label: "stratégies en direct sur le forex, les métaux, les indices et les cryptos" },
+        {"label": "variantes de stratégies back-testées depuis 2026 ; trois en production, documentées sur la page trading IA"},
         { label: "investisseurs formés lors de webinaires et de séminaires" },
         { label: "partenariats avec des courtiers, dont six présentés sur ce site" },
       ],
@@ -271,20 +271,61 @@ export const fr: ContentOverride = {
       { title: "Mandat de risque", body: "Un mandat écrit fixe l'exposition maximale, la limite de perte quotidienne et les instruments. Le système ne peut pas le dépasser." },
       { title: "Reporting", body: "Vous voyez chaque trade en temps réel sur votre propre compte, plus un rapport mensuel et un appel de revue trimestriel." },
     ],
+    tiersTitle: "Deux façons d'allouer",
+    tiers: [
+      {
+        "name": "Pool MAM",
+        "tagline": "Les systèmes, dans votre propre compte",
+        "minimum": "1 000 USD",
+        "managementFee": "Aucuns",
+        "performanceFee": "25 % des profits au-dessus du high-water mark",
+        "lockup": "30 jours, puis retrait à tout moment",
+        "structure": "Pool MAM / copy trading chez Tickmill ou Darwinex",
+        "forWhom": "Investisseurs autonomes qui veulent les systèmes sans les piloter"
+      },
+      {
+        "name": "Compte dédié",
+        "tagline": "Votre mandat, vos limites de risque",
+        "minimum": "250 000 USD",
+        "managementFee": "1 000 USD par mois (environ 4,8 % par an au minimum, proportionnellement moins au-delà)",
+        "performanceFee": "25 % des profits au-dessus du high-water mark",
+        "lockup": "Préavis de 30 jours",
+        "structure": "PAMM ou compte géré séparément chez Saxo Bank, Tickmill ou Midas",
+        "forWhom": "Family offices, trésoreries d'entreprise et investisseurs professionnels"
+      }
+    ],
+    tierLabels: {
+      "minimum": "Allocation minimale",
+      "managementFee": "Frais de gestion",
+      "performanceFee": "Commission de performance",
+      "lockup": "Période de blocage",
+      "structure": "Structure",
+      "forWhom": "Conçu pour"
+    },
     termsTitle: "Les conditions en bref",
     terms: [
-      { label: "Allocation minimale" },
-      { label: "Commission de performance", value: "25 % des profits au-delà du high-water mark" },
-      { label: "Frais de gestion", value: "USD 1,000 par mois" },
-      { label: "Période de blocage", value: "30 jours, puis retrait à tout moment" },
-      { label: "Reporting", value: "En temps réel sur votre compte ; relevé mensuel" },
-      { label: "Structure", value: "MAM / PAMM dans votre propre compte chez Tickmill, Saxo Bank ou Midas" },
+      {
+        "label": "Conservation",
+        "value": "Toujours à votre nom chez le courtier ; NUUK ne détient que le droit de trader"
+      },
+      {
+        "label": "Reporting",
+        "value": "En temps réel sur votre compte ; relevé mensuel ; point trimestriel"
+      },
+      {
+        "label": "Mandat de risque",
+        "value": "Écrit par compte : exposition maximale, limite de perte journalière, instruments autorisés"
+      },
+      {
+        "label": "Droits de retrait",
+        "value": "Les vôtres uniquement ; NUUK ne détient jamais de droit de retrait ou de transfert"
+      }
     ],
     fitTitle: "À qui cela s'adresse",
     fit: ["Investisseurs qui veulent une exécution professionnelle sans renoncer à la garde de leurs fonds", "Family offices à la recherche d'une allocation satellite vers des stratégies systématiques", "Chefs d'entreprise disposant de trésorerie inutilisée"],
     notFitTitle: "À qui cela ne s'adresse pas",
     notFit: ["Quiconque ne peut pas supporter un drawdown de 20 %", "Capital nécessaire dans les 3 mois", "Quiconque attend des rendements fixes ou garantis"],
-    compliance: "NUUK Quant opère depuis le Dubai International Financial Centre. Les comptes gérés fonctionnent via la structure MAM/PAMM propre au courtier partenaire, dans le cadre réglementaire de ce courtier : NUUK détient uniquement une autorisation de trading, jamais la garde des fonds ni de droit de retrait. Plus de 300 comptes sont gérés de cette manière aujourd'hui.",
+    compliance: "NUUK Quant opère depuis le Dubai International Financial Centre. Les comptes gérés fonctionnent via la structure MAM/PAMM du courtier partenaire, dans son cadre réglementaire : NUUK ne détient que le droit de trader, jamais la conservation ni le droit de retrait. Les 300+ comptes gérés aujourd'hui sont dans le pool MAM ; les mandats dédiés sont ouverts individuellement.",
   },
 
   brokers: {
@@ -295,6 +336,19 @@ export const fr: ContentOverride = {
     lead: "Je n'oriente mes clients que vers des courtiers avec lesquels je trade ou que j'ai audités. Six partenaires aujourd'hui : Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas et Darwinex. Chaque fiche indique qui les régule, ce qu'ils facturent réellement et à quelle vitesse l'argent circule.",
     disclosure: "Les liens de cette page sont des liens d'affiliation. Si vous ouvrez et approvisionnez un compte via ces liens, je perçois une commission du courtier. Cela ne modifie pas les spreads ni les commissions que vous payez.",
     compareTitle: "Côte à côte",
+    partner: {
+      "kicker": "Programme partenaires",
+      "title": "Pour les apporteurs d'affaires et les formateurs",
+      "body": "Si vous amenez déjà des clients à ces courtiers, NUUK peut être votre apporteur principal : un partage de rétrocessions transparent versé chaque mois, un accompagnement à l'ouverture de compte et au KYC en turc, en arabe et en anglais, et les mêmes fiches comparatives pour votre propre audience. Les conditions de sous-partenariat sont fixées par écrit, courtier par courtier.",
+      "points": [
+        "Partage de rétrocessions transparent, versé mensuellement",
+        "Accompagnement à l'ouverture de compte et au KYC en trois langues",
+        "Fiches comparatives de courtiers réutilisables"
+      ],
+      "cta": {
+        "label": "Discuter d'un partenariat"
+      }
+    },
     cardLabels: {
       regulator: "Régulateur",
       licence: "Licence",
@@ -834,7 +888,7 @@ export const fr: ContentOverride = {
     steps: [
       { title: "Réserver un appel", body: "30 minutes pour décider quel service vous convient : courtier, signaux, compte géré ou formation." },
       { title: "Ouvrir un compte de courtage", body: "À votre nom, chez un courtier partenaire. La vérification prend environ 10 minutes avec une pièce d'identité et un justificatif de domicile." },
-      { title: "Approvisionner et connecter", body: "Déposez dès $10 par carte. Reliez le compte à la structure gérée ou au canal de signaux si vous en avez choisi un." },
+      {"title": "Financer et connecter", "body": "Financez votre compte courtier : à partir de 1 000 USD pour le pool MAM ou un plan de signaux, 250 000 USD pour un mandat dédié. Connectez-le à la structure choisie."},
       { title: "Commencer à trader", body: "Suivez le plan, examinez les résultats chaque mois et ne prenez jamais un trade que vous ne pouvez pas expliquer." },
     ],
     cta: { label: "Réserver un appel" },
@@ -993,7 +1047,7 @@ export const fr: ContentOverride = {
       "updated": "2026-07",
       "stats": [
         {
-          "label": "Rendement net, période de test",
+          "label": "Rendement net, annualisé",
           "value": "+10.9%"
         },
         {

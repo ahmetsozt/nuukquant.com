@@ -100,7 +100,7 @@ export const es: ContentOverride = {
       trustLine: ["Brókeres asociados regulados por la FCA, ASIC, CySEC y DFSA", "Historial en proceso de verificación independiente", "Con sede en el DIFC, Dubái"],
       trust: [
         { label: "años en los mercados, desde una mesa de FX en Londres en 2009" },
-        { label: "estrategias operando en vivo en FX, metales, índices y cripto" },
+        {"label": "variantes de estrategia sometidas a backtest desde 2026; tres en producción, documentadas en la página de trading con IA"},
         { label: "inversores formados en webinars y seminarios" },
         { label: "alianzas con brókeres, seis de ellas publicadas en este sitio" },
       ],
@@ -269,20 +269,61 @@ export const es: ContentOverride = {
       { title: "Mandato de riesgo", body: "Un mandato escrito fija la exposición máxima, el límite de pérdida diaria y los instrumentos. El sistema no puede superarlo." },
       { title: "Informes", body: "Usted ve cada operación en tiempo real en su propia cuenta, además de un informe mensual y una llamada de revisión trimestral." },
     ],
+    tiersTitle: "Dos formas de asignar",
+    tiers: [
+      {
+        "name": "Pool MAM",
+        "tagline": "Los sistemas, dentro de su propia cuenta",
+        "minimum": "1.000 USD",
+        "managementFee": "Ninguna",
+        "performanceFee": "25% de los beneficios por encima del high-water mark",
+        "lockup": "30 días; después, retiro en cualquier momento",
+        "structure": "Pool MAM / copy trading en Tickmill o Darwinex",
+        "forWhom": "Inversores autónomos que quieren los sistemas sin operarlos"
+      },
+      {
+        "name": "Cuenta dedicada",
+        "tagline": "Su propio mandato, sus propios límites de riesgo",
+        "minimum": "250.000 USD",
+        "managementFee": "1.000 USD al mes (cerca del 4,8% anual en el mínimo; proporcionalmente menos por encima)",
+        "performanceFee": "25% de los beneficios por encima del high-water mark",
+        "lockup": "Preaviso de 30 días",
+        "structure": "PAMM o cuenta gestionada por separado en Saxo Bank, Tickmill o Midas",
+        "forWhom": "Family offices, tesorerías corporativas e inversores profesionales"
+      }
+    ],
+    tierLabels: {
+      "minimum": "Asignación mínima",
+      "managementFee": "Comisión de gestión",
+      "performanceFee": "Comisión de éxito",
+      "lockup": "Periodo de bloqueo",
+      "structure": "Estructura",
+      "forWhom": "Diseñado para"
+    },
     termsTitle: "Condiciones de un vistazo",
     terms: [
-      { label: "Asignación mínima", value: "25.000 USD" },
-      { label: "Comisión de éxito", value: "25% de los beneficios por encima del high-water mark (marca de agua)" },
-      { label: "Comisión de gestión", value: "1.000 USD al mes" },
-      { label: "Periodo de permanencia", value: "30 días; después, retiros en cualquier momento" },
-      { label: "Informes", value: "En tiempo real en su cuenta; extracto mensual" },
-      { label: "Estructura", value: "MAM / PAMM dentro de su propia cuenta en Tickmill, Saxo Bank o Midas" },
+      {
+        "label": "Custodia",
+        "value": "Siempre a su nombre en el bróker; NUUK solo tiene permiso de trading"
+      },
+      {
+        "label": "Informes",
+        "value": "En tiempo real en su cuenta; extracto mensual; llamada de revisión trimestral"
+      },
+      {
+        "label": "Mandato de riesgo",
+        "value": "Por escrito para cada cuenta: exposición máxima, límite de pérdida diaria, instrumentos permitidos"
+      },
+      {
+        "label": "Derechos de retiro",
+        "value": "Solo suyos; NUUK nunca tiene derechos de retiro ni de transferencia"
+      }
     ],
     fitTitle: "Para quién es",
     fit: ["Inversores que quieren ejecución profesional sin renunciar a la custodia", "Family offices que buscan una asignación satélite a estrategias sistemáticas", "Empresarios con saldos de tesorería inactivos"],
     notFitTitle: "Para quién no es",
     notFit: ["Quien no pueda tolerar un drawdown del 20%", "Capital que se necesite en menos de 3 meses", "Quien espere rentabilidades fijas o garantizadas"],
-    compliance: "NUUK Quant opera desde el Dubai International Financial Centre. Las cuentas gestionadas funcionan a través de la propia estructura MAM/PAMM del bróker asociado bajo el marco regulatorio de dicho bróker: NUUK dispone únicamente de permiso de negociación, nunca de custodia ni de derechos de retiro. Hoy se gestionan de esta forma más de 300 cuentas.",
+    compliance: "NUUK Quant opera desde el Dubai International Financial Centre. Las cuentas gestionadas funcionan a través de la estructura MAM/PAMM del bróker asociado y bajo su marco regulatorio: NUUK solo tiene permiso de trading, nunca custodia ni derechos de retiro. Las más de 300 cuentas gestionadas hoy están en el pool MAM; los mandatos dedicados se abren individualmente.",
   },
 
   brokers: {
@@ -293,6 +334,19 @@ export const es: ContentOverride = {
     lead: "Solo refiero clientes a brókeres con los que opero o que he auditado. Seis socios a día de hoy: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas y Darwinex. Cada tarjeta muestra quién los regula, qué cobran realmente y con qué rapidez se mueve el dinero.",
     disclosure: "Los enlaces de esta página son enlaces de referido. Si abre y financia una cuenta a través de ellos, recibo una comisión del bróker. Esto no modifica los spreads ni las comisiones que usted paga.",
     compareTitle: "Comparativa",
+    partner: {
+      "kicker": "Programa de socios",
+      "title": "Para introductores y formadores",
+      "body": "Si ya lleva clientes a estos brókers, NUUK puede actuar como su introductor principal: un reparto de rebates transparente pagado cada mes, apoyo en la apertura de cuenta y el KYC en turco, árabe e inglés, y el mismo material comparativo de brókers para su propia audiencia. Las condiciones de subsocio se acuerdan por escrito para cada bróker.",
+      "points": [
+        "Reparto de rebates transparente, pagado mensualmente",
+        "Apoyo en apertura de cuenta y KYC en tres idiomas",
+        "Material comparativo de brókers reutilizable"
+      ],
+      "cta": {
+        "label": "Hablar de una alianza"
+      }
+    },
     cardLabels: {
       regulator: "Regulador",
       licence: "Licencia",
@@ -646,7 +700,7 @@ export const es: ContentOverride = {
     steps: [
       { title: "Reserve una llamada", body: "30 minutos para decidir qué servicio encaja: bróker, señales, cuenta gestionada o formación." },
       { title: "Abra una cuenta de bróker", body: "A su propio nombre, a través de un bróker asociado. La verificación tarda unos 10 minutos con documento de identidad y comprobante de domicilio." },
-      { title: "Deposite y conecte", body: "Deposite desde $10 con tarjeta. Conecte la cuenta a la estructura gestionada o al canal de señales si ha elegido uno." },
+      {"title": "Financiar y conectar", "body": "Financie su cuenta de bróker: desde 1.000 USD para el pool MAM o un plan de señales, 250.000 USD para un mandato dedicado. Conéctela a la estructura elegida."},
       { title: "Empiece a operar", body: "Siga el plan, revise los resultados cada mes y nunca abra una operación que no pueda explicar." },
     ],
     cta: { label: "Reservar una llamada" },
@@ -810,7 +864,7 @@ export const es: ContentOverride = {
       "updated": "2026-07",
       "stats": [
         {
-          "label": "Rentabilidad neta, periodo de prueba",
+          "label": "Rentabilidad neta, anualizada",
           "value": "+10.9%"
         },
         {

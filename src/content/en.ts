@@ -43,6 +43,7 @@ export type TradingSystem = {
   since: string;
   summary: string;
   stats: { label: string; value: string }[];
+  series: number[];
 };
 
 export type PerformanceCard = {
@@ -174,6 +175,8 @@ export const en = {
       kicker: "Track record",
       title: "Numbers you can check yourself",
       lead: "Every figure below is pulled from an independent verification service, not typed in by hand.",
+      featuredLabel: "Equity curve",
+      featuredNote: "Cumulative return, net of trading costs. Rebased to 100 at inception.",
       cta: { label: "See the full track record", href: "/track-record/" },
     },
     brokers: {
@@ -579,6 +582,7 @@ export const en = {
         { label: "Max drawdown", value: "[FILL]" },
         { label: "Trades / month", value: "[FILL]" },
       ],
+      series: [100, 102, 101, 105, 108, 107, 112, 115, 113, 119, 124, 122, 128, 133],
     },
     {
       slug: "system-two",
@@ -595,6 +599,7 @@ export const en = {
         { label: "Max drawdown", value: "[FILL]" },
         { label: "Trades / month", value: "[FILL]" },
       ],
+      series: [100, 103, 99, 104, 109, 106, 111, 110, 116, 114, 120, 118, 123, 127],
     },
     {
       slug: "system-three",
@@ -611,6 +616,7 @@ export const en = {
         { label: "Target launch", value: "[FILL]" },
         { label: "Venue", value: "[FILL]" },
       ],
+      series: [100, 100, 101, 101, 102, 102, 103, 103, 104, 104, 105, 105, 106, 106],
     },
   ] as TradingSystem[],
 

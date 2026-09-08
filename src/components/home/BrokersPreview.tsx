@@ -15,7 +15,7 @@ export default function BrokersPreview({ c }: { c: SiteContent }) {
           </Button>
         </div>
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {c.brokers.list.slice(0, 3).map((broker) => (
+          {c.brokers.list.slice(0, 6).map((broker) => (
             <BrokerCardCompact key={broker.slug} b={broker} c={c} />
           ))}
         </div>

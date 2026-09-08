@@ -6,6 +6,7 @@ const styles: Record<Status, string> = {
   test: "bg-[#fff4d6] text-[#8a5b00]",
   paused: "bg-fog text-body",
   soon: "bg-fog text-muted",
+  pending: "bg-[#fff4d6] text-[#8a5b00]",
 };
 
 export default function Badge({ status, c, className = "" }: { status: Status; c: SiteContent; className?: string }) {

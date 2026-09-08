@@ -226,3 +226,31 @@ h4 {
 .scroll-row::-webkit-scrollbar {
   display: none;
 }
+
+/* Market tape */
+@keyframes ticker-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.ticker-track {
+  animation: ticker-scroll 42s linear infinite;
+  will-change: transform;
+}
+.ticker:hover .ticker-track {
+  animation-play-state: paused;
+}
+[dir="rtl"] .ticker-track {
+  animation-direction: reverse;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation: none;
+  }
+}
+
+/* Paper grain for warm sections */
+.bg-paper {
+  background-image: radial-gradient(rgba(16, 20, 31, 0.035) 0.6px, transparent 0.6px);
+  background-size: 6px 6px;
+}

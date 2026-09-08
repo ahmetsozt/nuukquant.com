@@ -8,108 +8,160 @@ import type { ContentOverride } from "@/i18n";
  */
 export const tr: ContentOverride = {
   meta: {
-    title: "Ahmet S. Öztürk — Ekonomist, Yatırımcı, NUUK Kurucusu",
-    description:
-      "DIFC, Dubai merkezli ekonomist ve yatırımcı. Yapay zekâ destekli işlem sistemleri, yönetilen hesaplar, aracı kurum ortaklıkları, piyasa sinyalleri ve yatırımcı eğitimi.",
+    "title": "Ahmet S. Öztürk | Ekonomist, Yatırımcı, NUUK Kurucusu",
+    "description": "DIFC (Dubai) merkezli ekonomist ve yatırımcı. Yapay zekâ destekli sistematik işlem stratejileri, portföy yönetimi, aracı kurum ortaklıkları, araştırma ve sinyal hizmetleri, yatırımcı eğitimi."
   },
   brand: {
-    role: "Ekonomist · Yatırımcı · Kurucu",
-    office: "Dubai Uluslararası Finans Merkezi (DIFC), Dubai, BAE",
+    "role": "Ekonomist · Yatırımcı · Kurucu",
+    "office": "Dubai Uluslararası Finans Merkezi (DIFC), Dubai, BAE"
   },
   ui: {
-    contact: "İletişim",
-    getStarted: "Görüşme planlayın",
-    contactUs: "İletişim",
-    learnMore: "Daha fazla bilgi",
-    language: "Dil",
-    openMenu: "Menüyü aç",
-    closeMenu: "Menüyü kapat",
-    home: "Ana sayfa",
-    noPosts: "Bu kategoride henüz yazı yok.",
-    riskDisclosure: "Risk bildirimi",
-    verified: "Doğrulanmış",
-    live: "Canlı",
-    test: "Test aşamasında",
-    paused: "Durduruldu",
-    soon: "Yakında",
-    pending: "Doğrulama bekliyor",
-    verificationInProgress: "Doğrulama sürüyor",
-    updated: "Güncelleme",
-    since: "Başlangıç",
-    source: "Kaynak",
-    openAccount: "Hesap açın",
-    compare: "Aracı kurumları karşılaştırın",
-    subscribe: "Abone olun",
-    register: "Kayıt olun",
-    requestDemo: "Demo talep edin",
-    viewAll: "Tümünü görün",
-    readMore: "Devamını okuyun",
-    fill: "",
-    telegram: "Telegram",
-    whatsapp: "WhatsApp",
-    legal: "Yasal",
-    followUs: "Takip edin",
-    riskBar: {
-      pre: "CFD ve forex gibi kaldıraçlı ürünlerde işlem yapmak, hızla para kaybetme açısından yüksek risk taşır.",
-      strong: "Geçmiş performans gelecekteki sonuçların garantisi değildir.",
-      post: "Bu sitedeki hiçbir içerik kişisel yatırım tavsiyesi değildir.",
-    },
+    "contact": "İletişim",
+    "getStarted": "Görüşme Talep Edin",
+    "contactUs": "İletişim",
+    "learnMore": "Ayrıntılı bilgi",
+    "language": "Dil",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "home": "Ana Sayfa",
+    "noPosts": "Bu kategoride henüz yayın bulunmuyor.",
+    "riskDisclosure": "Risk Bildirimi",
+    "verified": "Doğrulanmış",
+    "live": "Canlı",
+    "test": "Test aşamasında",
+    "paused": "Askıda",
+    "soon": "Yakında",
+    "pending": "Doğrulama sürecinde",
+    "verificationInProgress": "Doğrulama sürecinde",
+    "updated": "Güncelleme",
+    "since": "Başlangıç",
+    "source": "Kaynak",
+    "openAccount": "Hesap Açın",
+    "compare": "Aracı kurumları karşılaştırın",
+    "subscribe": "Abone Olun",
+    "register": "Kayıt Olun",
+    "requestDemo": "Demo Talep Edin",
+    "viewAll": "Tümünü Görüntüle",
+    "readMore": "Devamını okuyun",
+    "fill": "",
+    "telegram": "Telegram",
+    "whatsapp": "WhatsApp",
+    "legal": "Yasal",
+    "followUs": "Takip edin",
+    "riskBar": {
+      "pre": "CFD ve forex gibi kaldıraçlı ürünlerde işlem yapmak yüksek risk içerir; sermayenizin tamamını hızla kaybedebilirsiniz.",
+      "strong": "Geçmiş performans gelecekteki sonuçların göstergesi değildir.",
+      "post": "Bu sitedeki hiçbir içerik kişisel yatırım tavsiyesi niteliği taşımaz."
+    }
   },
   nav: [
     {
-      label: "Hizmetler",
-      items: [
-        { label: "Yapay zekâ işlem sistemleri" },
-        { label: "Performans geçmişi" },
-        { label: "Yönetilen hesaplar" },
-        { label: "Aracı kurum ortakları" },
-        { label: "Sinyaller ve raporlar" },
-        { label: "Eğitim" },
-      ],
+      "label": "Hizmetler",
+      "items": [
+        {
+          "label": "Algoritmik İşlem Sistemleri"
+        },
+        {
+          "label": "Performans Kaydı"
+        },
+        {
+          "label": "Portföy Yönetimi"
+        },
+        {
+          "label": "Aracı Kurum Ortaklıkları"
+        },
+        {
+          "label": "Araştırma ve Sinyaller"
+        },
+        {
+          "label": "Yatırımcı Eğitimi"
+        }
+      ]
     },
-    { label: "Aracı kurumlar" },
-    { label: "Performans geçmişi" },
-    { label: "Analizler" },
     {
-      label: "Hakkımda",
-      items: [
-        { label: "Hikâye" },
-        { label: "İletişim" },
-        { label: "Risk bildirimi" },
-        { label: "IB bildirimi" },
-      ],
+      "label": "Aracı Kurumlar"
     },
+    {
+      "label": "Performans"
+    },
+    {
+      "label": "Analizler"
+    },
+    {
+      "label": "Kurumsal",
+      "items": [
+        {
+          "label": "Hakkında"
+        },
+        {
+          "label": "İletişim"
+        },
+        {
+          "label": "Risk Bildirimi"
+        },
+        {
+          "label": "Tanıtım Aracısı (IB) Bildirimi"
+        }
+      ]
+    }
   ],
   legalLinks: [
-    { label: "Risk bildirimi" },
-    { label: "IB bildirimi" },
-    { label: "Gizlilik" },
-    { label: "Kullanım koşulları" },
+    {
+      "label": "Risk Bildirimi"
+    },
+    {
+      "label": "IB Bildirimi"
+    },
+    {
+      "label": "Gizlilik Politikası"
+    },
+    {
+      "label": "Kullanım Koşulları"
+    }
   ],
   socials: [{ label: "LinkedIn" }, { label: "X" }, { label: "Instagram" }],
 
   home: {
-    hero: {
-      kicker: "Ekonomist · Yatırımcı · NUUK Kurucusu",
-      title: "Piyasaları disiplinle okumak.",
-      lead:
-        "Yapay zekâ destekli işlem sistemleri geliştiriyor, kendi sermayemi yönetiyor, yatırımcı hesaplarını işletiyor ve insanlara kendi başlarına işlem yapmayı öğretiyorum. Buradaki her şey doğrulanabilir bir performans geçmişine dayanır.",
-      primary: { label: "Aracı kurum seçin" },
-      secondary: { label: "Görüşme planlayın" },
-      portraitAlt: "Ahmet S. Öztürk",
-      trustLine: ["FCA, ASIC, CySEC ve DFSA tarafından düzenlenen ortak aracı kurumlar", "Bağımsız doğrulama sürecindeki performans geçmişi", "DIFC, Dubai merkezli"],
-      trust: [
-        { value: "17", label: "yıllık piyasa deneyimi; 2009'da Londra'da bir FX masasında başladı" },
-        { value: "87", label: "FX, kıymetli madenler, endeksler ve kripto varlıklarda canlı çalışan strateji" },
-        { value: "3,000+", label: "webinar ve seminerlerde eğitim verilen yatırımcı" },
-        { value: "10+", label: "aracı kurum ortaklığı; altısı bu sitede listeleniyor" },
+    "hero": {
+      "kicker": "Ekonomist · Yatırımcı · NUUK Kurucusu",
+      "title": "Piyasalarda disiplinli, sistematik yaklaşım.",
+      "lead": "NUUK, yapay zekâ destekli sistematik işlem stratejileri geliştiren, kurucusunun kendi sermayesini ve yatırımcı portföylerini yazılı risk limitleri dâhilinde yöneten, düzenlemeye tabi aracı kurumlarla çalışan bir yatırım kuruluşudur. Sunulan her rakam doğrulanabilir kaynaklara dayanır.",
+      "primary": {
+        "label": "Aracı Kurum Seçin"
+      },
+      "secondary": {
+        "label": "Görüşme Talep Edin"
+      },
+      "portraitAlt": "Ahmet S. Öztürk",
+      "trustLine": [
+        "FCA, ASIC, CySEC ve DFSA denetimindeki ortak aracı kurumlar",
+        "Bağımsız doğrulama sürecindeki performans kaydı",
+        "DIFC, Dubai merkezli"
       ],
-      pressTitle: "Partner aracı kurumlar",
+      "trust": [
+        {
+          "value": "17",
+          "label": "yıllık piyasa deneyimi; 2009'da Londra'da bir FX işlem masasında başladı"
+        },
+        {
+          "value": "87",
+          "label": "2026'dan bu yana geriye dönük testten geçirilen strateji varyantı; üçü üretimde ve algoritmik sistemler sayfasında belgelenmiş durumda"
+        },
+        {
+          "value": "3,000+",
+          "label": "webinar ve seminerlerde eğitim verilen yatırımcı"
+        },
+        {
+          "value": "10+",
+          "label": "aracı kurum ortaklığı; altısı bu sitede listelenmektedir"
+        }
+      ],
+      "pressTitle": "Partner Aracı Kurumlar"
     },
-    markets: {
+    "markets": {
       "kicker": "Canlı fiyatlar",
       "title": "Piyasalar, şu anda",
-      "lead": "TradingView'dan canlı akan kotasyonlar: forex, emtia, endeksler, kripto ve izlediğim hisseler. Grafiği açmak için satıra tıklayın.",
+      "lead": "TradingView üzerinden canlı akan kotasyonlar: forex, emtia, endeksler, kripto varlıklar ve takip edilen hisseler.",
       "tabs": [
         "Forex",
         "Emtia",
@@ -117,211 +169,399 @@ export const tr: ContentOverride = {
         "Kripto",
         "Hisseler"
       ],
-      "note": "Kotasyonlar TradingView ve veri ortakları tarafından sağlanır; bazı borsa verileri gecikmelidir. İşlem koşulları, spread'ler ve emir gerçekleştirme, işlem yaptığınız aracı kuruma aittir."
+      "note": "Kotasyonlar TradingView ve veri ortakları tarafından sağlanır; bazı borsa verileri gecikmeli olabilir. İşlem koşulları, spread'ler ve emir gerçekleştirme, işlem yaptığınız aracı kuruma aittir."
     },
-    numbersTitle: "Doğrulayabileceğiniz rakamlar*",
-    numbersNote: "*Rakamlar Eylül 2026 itibarıyla. Doğrulama linkleri, her salt okunur bağlantı devreye girdikçe performans geçmişi sayfasına eklenir.",
-    promo: {
-      kicker: "Yönetilen hesaplar",
-      title: "Sizin hesabınız. Benim emir gerçekleştirmem. Yazılı risk limitleri.",
-      body: "Sermaye hiçbir zaman sizin adınızdan çıkmaz. Ortak bir aracı kurumda hesap açarsınız, ben yalnızca işlem yetkisi alırım ve yazılı bir yetki belgesi (mandate) toplam pozisyonu ve günlük zararı sınırlar.",
-      figure: "300+",
-      figureLabel: "yönetilen hesap; her biri müşterinin kendi aracı kurum hesabında. Saklama (custody) hiçbir zaman el değiştirmez.",
-      cta: { label: "Nasıl çalışır?" },
+    "numbersTitle": "Doğrulanabilir rakamlar*",
+    "numbersNote": "*Rakamlar Eylül 2026 itibarıyladır. Doğrulama bağlantıları, her salt okunur hesap bağlantısı devreye alındıkça performans kaydı sayfasına eklenir.",
+    "promo": {
+      "kicker": "Portföy yönetimi",
+      "title": "Hesap sizin adınıza. İşlem yetkisi NUUK'ta. Limitler yazılı.",
+      "body": "Sermaye hiçbir aşamada müşterinin adından çıkmaz. Ortak aracı kurumda kendi adınıza hesap açarsınız; NUUK yalnızca işlem yetkisi alır ve yazılı risk mandası toplam pozisyon ile günlük zarar limitini belirler.",
+      "figure": "300+",
+      "figureLabel": "yönetilen hesap; her biri müşterinin kendi aracı kurum hesabında. Saklama hiçbir zaman el değiştirmez.",
+      "cta": {
+        "label": "Nasıl çalışır?"
+      }
     },
-    postsLead: "Makro, FX, emtia, endeksler, kripto ve işlemlerde yapay zekâ. Beş dakikada okunacak şekilde yazıldı.",
-    pillarsTitle: "Birlikte çalışmanın beş yolu",
-    pillarsLead: "Tek kişi, beş kapı. Bugün bulunduğunuz noktaya uyanı seçin.",
-    pillars: [
-      { title: "Yapay zekâ işlem sistemleri", body: "FX, endeksler, emtia ve dijital varlıklarda kodlanmış, test edilmiş ve canlı çalışan özel algoritmalar.", who: "Fon yöneticileri ve teknik yatırımcılar için" },
-      { title: "Doğrulanmış performans geçmişi", body: "Kendi portföyüm ve yönetilen stratejiler, bağımsız doğrulama üzerinden raporlanır.", who: "Bana güvenip güvenmemeye karar verecek herkes için" },
-      { title: "Yönetilen hesaplar", body: "Sermayeniz kendi aracı kurum hesabınızda kalır. Üzerinde anlaşılan risk limitleri ve performans ücreti karşılığında ben işlem yaparım.", who: "İşin kendileri adına yapılmasını isteyen yatırımcılar için" },
-      { title: "Aracı kurum ortakları", body: "Birlikte çalıştığım aracı kurumların bağımsız karşılaştırması; her biri için adım adım hesap açma rehberi.", who: "Aracı kurum seçen, kendi işlemini yapan yatırımcılar için" },
-      { title: "Sinyaller, raporlar ve eğitim", body: "Günlük notlar, haftalık raporlar, gerekçesiyle birlikte işlem fikirleri ve yöntemi öğreten canlı webinarlar.", who: "Öğrenmek ve piyasayı takip etmek isteyen yatırımcılar için" },
+    "postsLead": "Makro, FX, emtia, endeksler, kripto varlıklar ve algoritmik işlem. Beş dakikada okunacak biçimde hazırlanır.",
+    "pillarsTitle": "Hizmet alanları",
+    "pillarsLead": "Beş hizmet alanı, tek ilke: sermaye her zaman müşterinin kendi hesabında kalır.",
+    "pillars": [
+      {
+        "title": "Algoritmik İşlem Sistemleri",
+        "body": "FX, endeksler, kıymetli madenler ve dijital varlıklarda geliştirilen, geriye ve ileriye dönük testlerden geçirilen ve canlı çalıştırılan özel algoritmalar.",
+        "who": "Fon yöneticileri ve nicel yatırımcılar için"
+      },
+      {
+        "title": "Doğrulanmış Performans Kaydı",
+        "body": "Kurucunun kendi portföyü ve yönetilen stratejiler, bağımsız doğrulama servisleri üzerinden raporlanır.",
+        "who": "Karar öncesi kanıt görmek isteyen yatırımcılar için"
+      },
+      {
+        "title": "Portföy Yönetimi",
+        "body": "Sermaye müşterinin kendi aracı kurum hesabında kalır; işlemler yazılı risk mandası ve performans ücreti esasıyla yürütülür.",
+        "who": "Profesyonel yönetim isteyen yatırımcılar için"
+      },
+      {
+        "title": "Aracı Kurum Ortaklıkları",
+        "body": "Birlikte çalışılan aracı kurumların bağımsız karşılaştırması ve her biri için adım adım hesap açma rehberi.",
+        "who": "Aracı kurum seçen, işlemini kendisi yapan yatırımcılar için"
+      },
+      {
+        "title": "Araştırma, Sinyal ve Eğitim",
+        "body": "Günlük piyasa notları, haftalık raporlar, gerekçeli işlem fikirleri ve yöntemi öğreten canlı eğitimler.",
+        "who": "Bilgi ve yöntem edinmek isteyen yatırımcılar için"
+      }
     ],
-    record: {
-      kicker: "Performans geçmişi",
-      title: "Kendiniz kontrol edebileceğiniz rakamlar",
-      lead: "Aşağıdaki her rakam elle yazılmaz; bağımsız bir doğrulama servisinden çekilir.",
-      featuredLabel: "Özkaynak eğrisi",
-      featuredNote: "Salt okunur doğrulama bağlantısı devreye alınana kadar temsili eğri. İşlem maliyetleri düşülmüş, 100'e endekslenmiş kümülatif getiri.",
-      cta: { label: "Tüm performans geçmişini görün" },
+    "record": {
+      "kicker": "Performans kaydı",
+      "title": "Bağımsız olarak doğrulanabilir sonuçlar",
+      "lead": "Aşağıdaki rakamlar elle girilmez; bağımsız doğrulama servislerinden alınır.",
+      "featuredLabel": "Özkaynak eğrisi",
+      "featuredNote": "Salt okunur doğrulama bağlantısı devreye alınana kadar temsili eğri. İşlem maliyetleri düşülmüş, 100'e endekslenmiş kümülatif getiri.",
+      "cta": {
+        "label": "Performans kaydının tamamı"
+      }
     },
-    brokers: {
-      kicker: "Aracı kurum ortakları",
-      title: "Nerede işlem yapıyorum ve neden",
-      lead: "Yalnızca kullandığım veya bizzat denetlediğim aracı kurumları listeliyorum. Her kartta düzenleyici otorite, gerçek spread'ler ve para yatırma/çekme ayrıntıları yer alır.",
-      cta: { label: "Tüm aracı kurumları karşılaştırın" },
+    "brokers": {
+      "kicker": "Aracı kurum ortaklıkları",
+      "title": "Birlikte çalışılan aracı kurumlar",
+      "lead": "Yalnızca fiilen işlem yapılan veya incelenen aracı kurumlar listelenir. Her kartta düzenleyici otorite, gerçek spread'ler ve para yatırma/çekme koşulları yer alır.",
+      "cta": {
+        "label": "Tüm aracı kurumları karşılaştırın"
+      }
     },
-    systems: {
-      kicker: "Yapay zekâ ile işlem",
-      title: "Kendi bünyemizde geliştirilen sistemler",
-      lead: "Her sistem belgelenmiştir: veri, model, risk kuralları, emir gerçekleştirme ve canlı mı yoksa hâlâ test aşamasında mı olduğu.",
-      cta: { label: "Sistemleri inceleyin" },
+    "systems": {
+      "kicker": "Algoritmik işlem",
+      "title": "Kurum içinde geliştirilen sistemler",
+      "lead": "Her sistem belgelenmiştir: veri, model, risk kuralları, emir gerçekleştirme ve güncel durum (canlı veya test aşamasında).",
+      "cta": {
+        "label": "Sistemleri inceleyin"
+      }
     },
-    signals: {
-      kicker: "Sinyaller ve raporlar",
-      title: "Gerekçesi eklenmiş işlem fikirleri",
-      lead: "Enstrüman, yön, giriş, stop, hedef ve gerekçe. Telegram ve e-posta ile iletilir.",
-      sample: {
+    "signals": {
+      "kicker": "Araştırma ve sinyaller",
+      "title": "Gerekçesi ile sunulan işlem fikirleri",
+      "lead": "Enstrüman, yön, giriş, zarar durdur, hedef ve gerekçe. Telegram ve e-posta ile iletilir.",
+      "sample": {
         "entry": "4,392",
         "stop": "4,368",
         "target": "4,464",
         "rr": "1:3",
-        "note": "Altın, güçlü tarım dışı istihdam verisine rağmen 4.380–4.400 talep bölgesini korudu; reel getiriler yeni zirve yapamadı. 4.392 üzerinde alım, stop bölgenin altında 4.368; hedef önceki tepe olan 4.464. Risk öz sermayenin %0,5'i; ABD TÜFE %3,4'ün üzerinde gelirse pozisyon yarıya indirilir.",
-        "date": "8 Eyl 2026 · örnek fikir"
+        "note": "Altın, güçlü tarım dışı istihdam verisine rağmen 4.380–4.400 talep bölgesini korudu; reel getiriler yeni zirve yapmadı. 4.392 üzerinde alım, zarar durdur bölgenin altında 4.368; hedef önceki tepe olan 4.464. Risk özkaynağın %0,5'i; ABD TÜFE %3,4'ün üzerinde gelirse pozisyon yarıya indirilir.",
+        "date": "8 Eyl 2026 · temsili örnek"
       },
-      cta: { label: "Planları görün" },
+      "cta": {
+        "label": "Planları inceleyin"
+      }
     },
-    education: {
-      kicker: "Eğitim",
-      title: "Sıradaki canlı oturum",
-      cta: { label: "Tüm etkinlikler" },
+    "education": {
+      "kicker": "Yatırımcı eğitimi",
+      "title": "Yaklaşan canlı oturum",
+      "cta": {
+        "label": "Tüm etkinlikler"
+      }
     },
-    testimonialsTitle: "Yatırımcılar ne diyor?",
-    postsTitle: "Son analizler",
+    "testimonialsTitle": "Yatırımcı görüşleri",
+    "postsTitle": "Güncel analizler"
   },
 
   about: {
-    metaTitle: "Ahmet S. Öztürk Hakkında",
-    metaDescription: "Ekonomist, yatırımcı ve NUUK kurucusu. FX ve CFD piyasalarında on yedi yıl: Londra'da bir işlem masasından Dubai'de yapay zekâ destekli bir işlem şirketine.",
-    kicker: "Hakkımda",
-    title: "Önce ekonomist, sonra trader, zorunluluktan mühendis.",
-    lead: "2009'da Londra'da bir FX aracı kurum masasında başladım ve sonraki yedi yılı Londra ile İstanbul'daki aracı kurumlarda geçirdim; IKON Finance'te Uluslararası FX Başkanı olarak tamamladım. 2016'da, 700'den fazla müşteriye ve 26 milyon USD'nin üzerinde müşteri hacmine ulaşan bir tanıtım aracısı (IB) ve müşteri ilişkileri şirketi olan İşlem Odası'nı kurdum. 2025'te Dubai'ye taşındım ve NUUK'u kurdum: FX, altın, endeksler ve dijital varlıklarda sistematik stratejiler geliştirip çalıştıran, yöntemini yönetilen hesaplar, sinyaller ve eğitim yoluyla paylaşan, yapay zekâ ile tasarlanmış bir işlem şirketi.",
-    portraitAlt: "Ahmet S. Öztürk",
-    timelineTitle: "Zaman çizelgesi",
-    timeline: [
-      { year: "2005–2008", title: "Seneca College, Toronto", body: "Uluslararası İşletme Yönetimi (co-op). Her şeyi rakam olarak okuma alışkanlığının başladığı yer." },
-      { year: "2009–2011", title: "FXCM, Londra", body: "Bir FX aracı kurum masasındaki ilk koltuk. Emir gerçekleştirme, likidite ve müşteri riski, içeriden öğrenildi." },
-      { year: "2011–2014", title: "Tacirler ve ALB, İstanbul", body: "Yurt içi piyasa kaldıraçlı işlemlere açılırken iki Türk aracı kurumunda FX uzmanı rolleri." },
-      { year: "2014–2016", title: "IKON Finance", body: "Uluslararası FX Başkanı. Uluslararası müşteri portföyünü %27 büyüttü." },
-      { year: "2016–2025", title: "İşlem Odası, İstanbul", body: "Bir tanıtım aracısı (IB) ve müşteri ilişkileri şirketi kurdu: 700'den fazla müşteri, 26 milyon USD'nin üzerinde müşteri hacmi, 2,5 milyon USD kümülatif ortaklık geliri." },
-      { year: "2025", title: "NUUK, Dubai", body: "Dubai Uluslararası Finans Merkezi'nde NUUK'u kurdu: yapay zekâ destekli işlem sistemleri, yönetilen hesaplar, aracı kurum ortaklıkları, sinyaller ve eğitim." },
+    "metaTitle": "Ahmet S. Öztürk Hakkında",
+    "metaDescription": "Ekonomist, yatırımcı ve NUUK kurucusu. FX ve CFD piyasalarında on yedi yıl: Londra'daki bir işlem masasından Dubai'de yapay zekâ destekli bir yatırım kuruluşuna.",
+    "kicker": "Hakkında",
+    "title": "Ekonomist bakışı, işlemci disiplini, mühendis titizliği.",
+    "lead": "Kariyerime 2009'da Londra'da bir FX aracı kurumunun işlem masasında başladım; sonraki yedi yılı Londra ve İstanbul'daki aracı kurumlarda geçirdim ve IKON Finance'te Uluslararası FX Bölüm Başkanı olarak tamamladım. 2016'da kurduğum İşlem Odası, 700'ün üzerinde müşteriye ve 26 milyon USD'yi aşan müşteri hacmine ulaşan bir tanıtım aracısı (IB) ve müşteri ilişkileri kuruluşudur. 2025'te Dubai'ye taşınarak NUUK'u kurdum: FX, altın, endeksler ve dijital varlıklarda sistematik stratejiler geliştiren ve bunları portföy yönetimi, araştırma hizmetleri ve eğitim yoluyla yatırımcılara sunan bir yatırım kuruluşu.",
+    "portraitAlt": "Ahmet S. Öztürk",
+    "timelineTitle": "Kariyer",
+    "timeline": [
+      {
+        "year": "2005–2008",
+        "title": "Seneca College, Toronto",
+        "body": "Uluslararası İşletme Yönetimi (co-op programı)."
+      },
+      {
+        "year": "2009–2011",
+        "title": "FXCM, Londra",
+        "body": "FX aracı kurum işlem masası: emir gerçekleştirme, likidite ve müşteri riski yönetimi."
+      },
+      {
+        "year": "2011–2014",
+        "title": "Tacirler Yatırım ve ALB Menkul, İstanbul",
+        "body": "Yurt içi piyasanın kaldıraçlı işlemlere açıldığı dönemde iki aracı kurumda FX uzmanlığı."
+      },
+      {
+        "year": "2014–2016",
+        "title": "IKON Finance",
+        "body": "Uluslararası FX Bölüm Başkanı; uluslararası müşteri portföyü %27 büyütüldü."
+      },
+      {
+        "year": "2016–2025",
+        "title": "İşlem Odası, İstanbul",
+        "body": "Tanıtım aracısı (IB) ve müşteri ilişkileri kuruluşu: 700'ün üzerinde müşteri, 26 milyon USD'yi aşan müşteri hacmi, 2,5 milyon USD kümülatif ortaklık geliri."
+      },
+      {
+        "year": "2025",
+        "title": "NUUK, Dubai",
+        "body": "Dubai Uluslararası Finans Merkezi'nde kuruluş: algoritmik işlem sistemleri, portföy yönetimi, aracı kurum ortaklıkları, araştırma ve eğitim."
+      }
     ],
-    principlesTitle: "Nasıl çalışıyorum?",
-    principles: [
-      { title: "Görüş değil, kanıt", body: "Bu sitedeki her iddia doğrulanabilir bir kaynağa bağlanır; bağlanamıyorsa dile getirilmez." },
-      { title: "Getiriden önce risk", body: "Pozisyon büyüklüğü, maksimum düşüş (drawdown) limitleri ve stop kuralları her işlemden önce belirlenir." },
-      { title: "Paranız sizde kalır", body: "Yönetilen hesaplar kendi aracı kurum hesabınızın içinde çalışır. Hiçbir zaman saklama (custody) üstlenmem." },
-      { title: "Yöntemi öğretmek", body: "Eğitimin amacı, artık bana ihtiyaç duymamanızdır." },
+    "principlesTitle": "Çalışma ilkeleri",
+    "principles": [
+      {
+        "title": "Kanıt esası",
+        "body": "Bu sitedeki her iddia doğrulanabilir bir kaynağa dayanır; dayanmıyorsa yayımlanmaz."
+      },
+      {
+        "title": "Önce risk, sonra getiri",
+        "body": "Pozisyon büyüklüğü, maksimum düşüş limitleri ve zarar durdur kuralları her işlemden önce belirlenir."
+      },
+      {
+        "title": "Saklama müşteride kalır",
+        "body": "Yönetilen hesaplar müşterinin kendi aracı kurum hesabında çalışır. NUUK hiçbir zaman saklama yetkisi üstlenmez."
+      },
+      {
+        "title": "Yöntem aktarımı",
+        "body": "Eğitimin amacı, yatırımcının kendi kararlarını bağımsız olarak verebilmesidir."
+      }
     ],
-    focusTitle: "Takip ettiğim piyasalar",
-    focus: ["BIST", "NYSE", "Forex", "Kripto", "Fonlar", "Emtia", "Gayrimenkul", "Köklü servet"],
-    speakingTitle: "Nerede yayınlıyorum?",
-    speaking: [
+    "focusTitle": "Takip edilen piyasalar",
+    "focus": [
+      "BIST",
+      "NYSE",
+      "Forex",
+      "Kripto varlıklar",
+      "Fonlar",
+      "Emtia",
+      "Gayrimenkul",
+      "Aile servetleri"
+    ],
+    "speakingTitle": "Yayın kanalları",
+    "speaking": [
       "Telegram · @NUUKQuant: günlük piyasa notları, işlem fikirleri ve aylık sistem raporu",
-      "X · @AhmetSTurk: piyasa yorumları ve araştırma dizileri",
-      "LinkedIn · NUUK.: şirket güncellemeleri ve uzun soluklu araştırmalar",
-      "Instagram · @ahmetsturk: masanın arkası",
-    ],
+      "X · @AhmetSTurk: piyasa değerlendirmeleri ve araştırma dizileri",
+      "LinkedIn · NUUK.: kurumsal duyurular ve kapsamlı araştırmalar",
+      "Instagram · @ahmetsturk: işlem masasından notlar"
+    ]
   },
 
   aiTrading: {
-    metaTitle: "Yapay Zekâ İşlem Sistemleri",
-    metaDescription: "Özel algoritmik işlem sistemleri: metodoloji, risk kuralları ve canlı durum.",
-    kicker: "Yapay zekâ ile işlem",
-    title: "Kara kutudan gelen sinyaller değil, sistemler",
-    lead: "Her sistem gerçek sermayeye dokunmadan önce geliştirilir, geriye dönük test edilir ve ileriye dönük test edilir. Aşağıda her birinin ne yaptığı, riski nasıl yönettiği ve bugün canlı olup olmadığı yer alıyor.",
-    cta: { label: "Demo talep edin" },
-    systemsTitle: "Sistemler",
-    methodTitle: "Metodoloji",
-    method: [
-      { title: "Veri", body: "Birincil piyasalardan tick ve bar verisi; temizlenmiş ve zaman ekseninde hizalanmış. Yerini hak ettiği ölçüde alternatif veri." },
-      { title: "Model", body: "Kural tabanlı sinyaller ile makine öğrenimi filtrelerinin birleşimi. Tek paragrafta açıklanamayan hiçbir şey işlem yapmaz." },
-      { title: "Risk", body: "Volatiliteye göre ölçeklenen pozisyon büyüklüğü, katı günlük zarar limitleri ve tüm pozisyonları kapatan devre kesiciler." },
-      { title: "Emir gerçekleştirme", body: "Aracı kurum API'leri ve mümkün olduğunda FIX; kayma (slippage) ve gerçekleşme kalitesi piyasa bazında izlenir." },
-      { title: "Gözden geçirme", body: "Canlı ve beklenen performansın haftalık karşılaştırması. Sapma gösteren sistemler durdurulur; işlem sırasında ayar yapılmaz." },
+    "metaTitle": "Algoritmik İşlem Sistemleri",
+    "metaDescription": "Özel algoritmik işlem sistemleri: metodoloji, risk kuralları ve canlı durum.",
+    "kicker": "Algoritmik işlem",
+    "title": "Kara kutu değil, belgelenmiş sistemler",
+    "lead": "Her sistem gerçek sermayeye alınmadan önce geliştirilir, geriye dönük ve ileriye dönük testlerden geçirilir. Aşağıda her sistemin işlem evreni, risk yönetimi ve güncel durumu yer almaktadır.",
+    "cta": {
+      "label": "Demo Talep Edin"
+    },
+    "systemsTitle": "Sistemler",
+    "methodTitle": "Metodoloji",
+    "method": [
+      {
+        "title": "Veri",
+        "body": "Birincil piyasalardan tick ve bar verisi; temizlenmiş ve zaman ekseninde hizalanmış. Katma değer sağladığı ölçüde alternatif veri."
+      },
+      {
+        "title": "Model",
+        "body": "Kural tabanlı sinyaller ile makine öğrenimi filtrelerinin bileşimi. Tek paragrafta açıklanamayan hiçbir mantık işleme alınmaz."
+      },
+      {
+        "title": "Risk",
+        "body": "Volatiliteye göre ölçeklenen pozisyon büyüklüğü, katı günlük zarar limitleri ve tüm pozisyonları kapatan devre kesiciler."
+      },
+      {
+        "title": "Emir gerçekleştirme",
+        "body": "Aracı kurum API'leri ve mümkün olduğunda FIX bağlantısı; kayma ve gerçekleşme kalitesi piyasa bazında izlenir."
+      },
+      {
+        "title": "Gözden geçirme",
+        "body": "Canlı ve beklenen performansın haftalık karşılaştırması. Sapma gösteren sistemler askıya alınır; işlem sırasında parametre değiştirilmez."
+      }
     ],
-    faqTitle: "Sık sorulan sorular",
-    faq: [
-      { q: "Bir sistemi kendi hesabımda çalıştırabilir miyim?", a: "Evet. Aracı kuruma bağlı olarak kopya işlem yapabilir, Tickmill, Saxo Bank veya Midas'ta bir MAM/PAMM yapısına katılabilir ya da sinyal kanalını takip edip işlemleri kendiniz gerçekleştirebilirsiniz. Her durumda hesap kendi adınızda kalır." },
-      { q: "Minimum sermaye ne kadar?", a: "Kopya işlem veya sinyaller için 1.000 USD. Yönetilen MAM/PAMM hesapları, yönetilen hesaplar sayfasında belirtilen minimum tahsis tutarından başlar." },
-      { q: "Kodu paylaşıyor musunuz?", a: "Hayır. Kod özel mülkiyet olarak kalır. Yayımladığım şey metodoloji, risk kuralları ve doğrulanmış sonuçlardır." },
-    ],
+    "faqTitle": "Sık sorulan sorular",
+    "faq": [
+      {
+        "q": "Sistemleri kendi hesabımda çalıştırabilir miyim?",
+        "a": "Evet. Aracı kuruma bağlı olarak kopya işlem yapabilir, Tickmill, Saxo Bank veya Midas'taki MAM/PAMM yapısına katılabilir ya da sinyal kanalını takip ederek işlemleri kendiniz gerçekleştirebilirsiniz. Her durumda hesap sizin adınıza kalır."
+      },
+      {
+        "q": "Minimum sermaye ne kadardır?",
+        "a": "Kopya işlem ve sinyal hizmetleri için 1.000 USD. Portföy yönetimi kapsamındaki MAM/PAMM hesapları, portföy yönetimi sayfasında belirtilen minimum tahsis tutarından başlar."
+      },
+      {
+        "q": "Kaynak kod paylaşılıyor mu?",
+        "a": "Hayır. Kod NUUK'un fikrî mülkiyetidir. Yayımlanan unsurlar metodoloji, risk kuralları ve doğrulanmış sonuçlardır."
+      }
+    ]
   },
 
   trackRecord: {
-    metaTitle: "Performans Geçmişi",
-    metaDescription: "Ahmet S. Öztürk'ün kendi portföyünün ve yönetilen stratejilerinin bağımsız olarak doğrulanmış performansı.",
-    kicker: "Performans geçmişi",
-    title: "Doğrulanmış olan gösterilir, olmayan gösterilmez",
-    lead: "Hesaplar Tickmill, Saxo Bank, Scope Markets, Dukascopy, Midas ve Capital.com'da tutuluyor. Her biri salt okunur bir doğrulama servisine bağlanıyor ve her bağlantı devreye girdikçe rakamlar burada otomatik olarak görünüyor. Bir rakam doğrulanamıyorsa bu sayfada yer almaz.",
-    disclaimer: "Geçmiş performans gelecekteki sonuçların garantisi değildir. Aksi belirtilmedikçe rakamlar işlem maliyetleri düşülmüş, performans ücreti düşülmemiş hâldedir.",
-    methodologyTitle: "Bu rakamlar nasıl okunmalı?",
-    methodology: [
-      { title: "Doğrulanmış", body: "Aracı kurum hesabına salt okunur bir bağlantıyla bağlıdır. Rakamları bu site değil, doğrulama servisi hesaplar." },
-      { title: "Maksimum düşüş (drawdown)", body: "Açık pozisyonlar dâhil, hesap özkaynağındaki en yüksek zirve-dip düşüşü." },
-      { title: "Kâr faktörü", body: "Brüt kârın brüt zarara bölümü. 1,0'ın üzeri, stratejinin dönem boyunca para kazandığı anlamına gelir." },
+    "metaTitle": "Performans Kaydı",
+    "metaDescription": "Ahmet S. Öztürk'ün kendi portföyüne ve yönetilen stratejilere ait, bağımsız doğrulamaya tabi performans kaydı.",
+    "kicker": "Performans kaydı",
+    "title": "Yalnızca doğrulanabilir sonuçlar yayımlanır",
+    "lead": "Hesaplar Tickmill, Saxo Bank, Scope Markets, Dukascopy, Midas ve Capital.com nezdinde tutulmaktadır. Her hesap salt okunur bir doğrulama servisine bağlanmaktadır; bağlantı devreye alındıkça rakamlar bu sayfada otomatik olarak yayımlanır. Doğrulanamayan hiçbir rakam bu sayfada yer almaz.",
+    "disclaimer": "Geçmiş performans gelecekteki sonuçların göstergesi değildir. Aksi belirtilmedikçe rakamlar işlem maliyetleri düşülmüş, performans ücreti düşülmemiş hâldedir.",
+    "methodologyTitle": "Rakamların okunması",
+    "methodology": [
+      {
+        "title": "Doğrulanmış",
+        "body": "Aracı kurum hesabına salt okunur bağlantıyla bağlıdır. Rakamlar bu site tarafından değil, doğrulama servisi tarafından hesaplanır."
+      },
+      {
+        "title": "Maksimum düşüş (drawdown)",
+        "body": "Açık pozisyonlar dâhil, hesap özkaynağındaki en büyük zirve-dip düşüşü."
+      },
+      {
+        "title": "Kâr faktörü",
+        "body": "Brüt kârın brüt zarara oranı. 1,0'ın üzeri, stratejinin dönem boyunca net kazanç sağladığını gösterir."
+      }
     ],
-    pending: "Bu hesaplar için bağımsız doğrulama bağlantıları kuruluyor; her salt okunur bağlantı devreye girdikçe burada görünecek. %87 sinyal kazanma oranı iç kayıttan gelir ve henüz bağımsız olarak doğrulanmamıştır.",
+    "pending": "Bu hesaplar için bağımsız doğrulama bağlantıları kurulmaktadır; her salt okunur bağlantı devreye alındıkça rakamlar burada yayımlanacaktır. %87 sinyal başarı oranı kurum içi kayda dayanır ve henüz bağımsız olarak doğrulanmamıştır."
   },
 
   managed: {
-    metaTitle: "Yönetilen Hesaplar",
-    metaDescription: "Yönetilen hesaplar nasıl çalışır: sermayeniz kendi aracı kurum hesabınızda kalır ve üzerinde anlaşılan risk limitleri dâhilinde işlem görür.",
-    kicker: "Yönetilen hesaplar",
-    title: "Sizin hesabınız. Benim emir gerçekleştirmem. Anlaşılmış limitler.",
-    lead: "Sermaye hiçbir zaman sizin adınızdan çıkmaz. Ortak bir aracı kurumda hesap açar, yönetilen yapıya bağlarsınız; ben de yazılı bir risk yetki belgesi dâhilinde işlem yaparım.",
-    cta: { label: "Tanışma görüşmesi talep edin" },
-    howTitle: "Nasıl çalışır?",
-    how: [
-      { title: "Tanışma görüşmesi", body: "Hedefleri, vadeyi, likidite ihtiyacını ve gerçekten ne kadar maksimum düşüşe (drawdown) tahammül edebileceğinizi konuşuruz." },
-      { title: "Hesap kurulumu", body: "Ortak bir aracı kurumda kendi adınıza hesap açar ve fonlarsınız. Ben yalnızca işlem yetkisi alırım; para çekme yetkisi asla." },
-      { title: "Risk yetki belgesi", body: "Yazılı bir yetki belgesi maksimum pozisyonu, günlük zarar limitini ve enstrümanları belirler. Sistem bunu aşamaz." },
-      { title: "Raporlama", body: "Her işlemi kendi hesabınızda gerçek zamanlı görürsünüz; ayrıca aylık rapor ve üç ayda bir değerlendirme görüşmesi." },
+    "metaTitle": "Portföy Yönetimi",
+    "metaDescription": "Portföy yönetimi nasıl çalışır: sermaye müşterinin kendi aracı kurum hesabında kalır ve yazılı risk limitleri dâhilinde yönetilir.",
+    "kicker": "Portföy yönetimi",
+    "title": "Hesap sizin adınıza. İşlem yetkisi NUUK'ta. Limitler yazılı.",
+    "lead": "Sermaye hiçbir aşamada müşterinin adından çıkmaz. Ortak aracı kurumda kendi adınıza hesap açar ve yönetilen yapıya bağlarsınız; NUUK işlemleri yazılı risk mandası dâhilinde yürütür.",
+    "cta": {
+      "label": "Tanışma Görüşmesi Talep Edin"
+    },
+    "howTitle": "Süreç",
+    "how": [
+      {
+        "title": "Tanışma görüşmesi",
+        "body": "Hedefler, vade, likidite ihtiyacı ve gerçekçi olarak tahammül edilebilecek maksimum düşüş belirlenir."
+      },
+      {
+        "title": "Hesap kurulumu",
+        "body": "Ortak aracı kurumda kendi adınıza hesap açar ve fonlarsınız. NUUK yalnızca işlem yetkisi alır; para çekme yetkisi hiçbir zaman devredilmez."
+      },
+      {
+        "title": "Risk mandası",
+        "body": "Yazılı manda; maksimum pozisyon, günlük zarar limiti ve izin verilen enstrümanları belirler. Sistem bu sınırları aşamaz."
+      },
+      {
+        "title": "Raporlama",
+        "body": "Her işlem kendi hesabınızda gerçek zamanlı görüntülenir; ayrıca aylık rapor ve üç ayda bir değerlendirme görüşmesi yapılır."
+      }
     ],
-    termsTitle: "Koşullara genel bakış",
-    terms: [
-      { label: "Minimum tahsis", value: "25.000 USD" },
-      { label: "Performans ücreti", value: "Yüksek su işaretinin (high-water mark) üzerindeki kârın %25'i" },
-      { label: "Yönetim ücreti", value: "Aylık 1.000 USD" },
-      { label: "Kilit süresi", value: "30 gün, ardından dilediğiniz zaman çekebilirsiniz" },
-      { label: "Raporlama", value: "Hesabınızda gerçek zamanlı; aylık ekstre" },
-      { label: "Yapı", value: "Tickmill, Saxo Bank veya Midas'ta kendi hesabınızın içinde MAM / PAMM" },
+    "tiersTitle": "İki tahsis modeli",
+    "tiers": [
+      {
+        "name": "Havuz MAM",
+        "tagline": "Sistemler, kendi hesabınızın içinde",
+        "minimum": "1.000 USD",
+        "managementFee": "Yok",
+        "performanceFee": "Yüksek su işaretinin (high-water mark) üzerindeki kârın %25'i",
+        "lockup": "30 gün; ardından dilediğiniz zaman çekebilirsiniz",
+        "structure": "Tickmill veya Darwinex'te MAM / kopya işlem havuzu",
+        "forWhom": "Sistemleri kendisi çalıştırmak istemeyen bireysel yatırımcılar"
+      },
+      {
+        "name": "Özel Hesap",
+        "tagline": "Size özel manda ve risk limitleri",
+        "minimum": "250.000 USD",
+        "managementFee": "Aylık 1.000 USD (minimum tutarda yıllık yaklaşık %4,8; üzerinde oransal olarak düşer)",
+        "performanceFee": "Yüksek su işaretinin (high-water mark) üzerindeki kârın %25'i",
+        "lockup": "30 gün önceden bildirim",
+        "structure": "Saxo Bank, Tickmill veya Midas'ta PAMM ya da ayrı yönetilen hesap",
+        "forWhom": "Aile ofisleri, kurumsal hazineler ve profesyonel yatırımcılar"
+      }
     ],
-    fitTitle: "Kimler için?",
-    fit: ["Saklamadan (custody) vazgeçmeden profesyonel emir gerçekleştirme isteyen yatırımcılar", "Sistematik stratejilere uydu tahsis arayan aile ofisleri", "Atıl hazine bakiyesi bulunan iş sahipleri"],
-    notFitTitle: "Kimler için değil?",
-    notFit: ["%20 maksimum düşüşe (drawdown) tahammül edemeyenler", "3 ay içinde ihtiyaç duyulacak sermaye", "Sabit veya garantili getiri bekleyenler"],
-    compliance: "NUUK Quant, Dubai Uluslararası Finans Merkezi'nden faaliyet gösterir. Yönetilen hesaplar, ortak aracı kurumun kendi MAM/PAMM yapısı üzerinden ve o aracı kurumun düzenleyici çerçevesi altında çalışır: NUUK yalnızca işlem yetkisine sahiptir; saklama veya para çekme yetkisi hiçbir zaman yoktur. Bugün 300'den fazla hesap bu şekilde yönetilmektedir.",
+    "tierLabels": {
+      "minimum": "Minimum tahsis",
+      "managementFee": "Yönetim ücreti",
+      "performanceFee": "Performans ücreti",
+      "lockup": "Kilit süresi",
+      "structure": "Yapı",
+      "forWhom": "Hedef kitle"
+    },
+    "termsTitle": "Genel koşullar",
+    "terms": [
+      {
+        "label": "Saklama",
+        "value": "Her zaman aracı kurumda ve müşterinin adına; NUUK yalnızca işlem yetkisine sahiptir"
+      },
+      {
+        "label": "Raporlama",
+        "value": "Hesabınızda gerçek zamanlı; aylık ekstre; üç ayda bir değerlendirme görüşmesi"
+      },
+      {
+        "label": "Risk mandası",
+        "value": "Her hesap için yazılı: maksimum pozisyon, günlük zarar limiti, izin verilen enstrümanlar"
+      },
+      {
+        "label": "Para çekme yetkisi",
+        "value": "Yalnızca müşteride; NUUK hiçbir zaman para çekme veya transfer yetkisine sahip değildir"
+      }
+    ],
+    "fitTitle": "Uygun yatırımcı profili",
+    "fit": [
+      "Saklamayı devretmeden profesyonel emir gerçekleştirme isteyen yatırımcılar",
+      "Sistematik stratejilere uydu tahsis arayan aile ofisleri",
+      "Atıl hazine bakiyesi bulunan işletme sahipleri"
+    ],
+    "notFitTitle": "Uygun olmayan profil",
+    "notFit": [
+      "%20 düzeyinde maksimum düşüşe tahammül edemeyen yatırımcılar",
+      "Önümüzdeki 3 ay içinde ihtiyaç duyulacak sermaye",
+      "Sabit veya garantili getiri bekleyen yatırımcılar"
+    ],
+    "compliance": "NUUK Quant, Dubai Uluslararası Finans Merkezi'nde faaliyet göstermektedir. Yönetilen hesaplar, ortak aracı kurumun kendi MAM/PAMM yapısı üzerinden ve o kurumun düzenleyici çerçevesi dâhilinde çalışır: NUUK yalnızca işlem yetkisine sahiptir; saklama veya para çekme yetkisi hiçbir zaman NUUK'a geçmez. Bugün yönetilen 300'ün üzerindeki hesap havuz MAM yapısındadır; özel mandalar bireysel olarak açılır."
   },
 
   brokers: {
-    metaTitle: "Aracı Kurum Ortakları",
+    metaTitle: "Aracı Kurum Ortaklıkları",
     metaDescription: "Ortak aracı kurumların bağımsız karşılaştırması: düzenleyici otorite, spread'ler, para yatırma, platformlar ve adım adım hesap açma.",
-    kicker: "Aracı kurum ortakları",
-    title: "Birlikte çalıştığım aracı kurumlar",
-    lead: "Müşterileri yalnızca işlem yaptığım veya denetlediğim aracı kurumlara yönlendiriyorum. Bugün altı ortak: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas ve Darwinex. Her kartta kimin düzenlediği, gerçekte ne ücret aldıkları ve paranın ne kadar hızlı hareket ettiği yer alır.",
-    disclosure: "Bu sayfadaki bağlantılar yönlendirme (referral) bağlantılarıdır. Bunlar üzerinden hesap açıp fonlarsanız aracı kurumdan komisyon kazanırım. Bu durum ödediğiniz spread'leri veya komisyonları değiştirmez.",
-    compareTitle: "Yan yana",
+    kicker: "Aracı kurum ortaklıkları",
+    title: "Birlikte çalışılan aracı kurumlar",
+    lead: "Yatırımcılar yalnızca fiilen işlem yapılan veya incelenen aracı kurumlara yönlendirilir. Güncel ortaklar: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas ve Darwinex. Her kartta düzenleyici otorite, gerçek işlem maliyetleri ve para yatırma/çekme koşulları yer alır.",
+    disclosure: "Bu sayfadaki bağlantılar yönlendirme (referral) bağlantılarıdır. Bu bağlantılar üzerinden hesap açıp fonlamanız hâlinde NUUK aracı kurumdan komisyon elde eder. Bu durum ödediğiniz spread veya komisyonları değiştirmez.",
+    compareTitle: "Karşılaştırma tablosu",
+    partner: {
+      "kicker": "Ortaklık programı",
+      "title": "Tanıtım aracıları ve eğitmenler için",
+      "body": "Bu aracı kurumlara hâlihazırda müşteri yönlendiriyorsanız NUUK ana tanıtım aracınız (master IB) olarak çalışabilir: aylık ödenen şeffaf komisyon paylaşımı, Türkçe, Arapça ve İngilizce hesap açma ve KYC desteği ve kendi kitleniz için kullanabileceğiniz aracı kurum karşılaştırma materyalleri. Alt ortaklık koşulları her aracı kurum için yazılı olarak belirlenir.",
+      "points": [
+        "Aylık ödenen şeffaf komisyon paylaşımı",
+        "Üç dilde hesap açma ve KYC desteği",
+        "Yeniden kullanılabilir aracı kurum karşılaştırma materyalleri"
+      ],
+      "cta": {
+        "label": "Ortaklık görüşmesi talep edin"
+      }
+    },
     cardLabels: {
-      regulator: "Düzenleyici otorite",
-      licence: "Lisans",
-      founded: "Kuruluş",
-      minDeposit: "Minimum yatırım",
-      platforms: "Platformlar",
-      spreads: "Tipik spread'ler",
-      commission: "Komisyon",
-      leverage: "Maksimum kaldıraç",
-      funding: "Para yatırma",
-      withdrawal: "Para çekme süresi",
-      islamic: "İslami hesap",
-      languages: "Destek",
-      bestFor: "En uygun olduğu kitle",
-      pros: "Güçlü yönler",
-      cons: "Dikkat edilmesi gerekenler",
-      steps: "Hesap nasıl açılır?",
-      yes: "Evet",
-      no: "Hayır",
-      profile: "Tam profil",
-      allBrokers: "Tüm aracı kurumlar",
-      atAGlance: "Bir bakışta",
-      conditions: "İşlem koşulları",
-      about: "Aracı kurum hakkında",
-      website: "Resmî web sitesi",
-      faq: "Sık sorulan sorular",
-      openWith: "Fonlanmış bir hesaba beş adımda:",
-      verifyNote: "Koşullar 8 Eylül 2026 tarihinde aracı kurumun web sitesinden doğrulanmıştır. Fonlamadan önce güncel rakamları mutlaka kontrol edin.",
+      "regulator": "Düzenleyici otorite",
+      "licence": "Lisans",
+      "founded": "Kuruluş",
+      "minDeposit": "Minimum yatırım",
+      "platforms": "Platformlar",
+      "spreads": "Tipik spread'ler",
+      "commission": "Komisyon",
+      "leverage": "Maksimum kaldıraç",
+      "funding": "Para yatırma",
+      "withdrawal": "Para çekme süresi",
+      "islamic": "Swap-free (İslami) hesap",
+      "languages": "Müşteri desteği",
+      "bestFor": "Uygun profil",
+      "pros": "Güçlü yönler",
+      "cons": "Dikkat edilmesi gerekenler",
+      "steps": "Hesap açma adımları",
+      "yes": "Evet",
+      "no": "Hayır",
+      "profile": "Tam profil",
+      "allBrokers": "Tüm aracı kurumlar",
+      "atAGlance": "Özet",
+      "conditions": "İşlem koşulları",
+      "about": "Aracı kurum hakkında",
+      "website": "Resmî web sitesi",
+      "faq": "Sık sorulan sorular",
+      "openWith": "Fonlanmış bir hesaba beş adımda:",
+      "verifyNote": "Koşullar 8 Eylül 2026 tarihinde aracı kurumun web sitesinden doğrulanmıştır. Fonlama öncesinde güncel değerleri kontrol ediniz."
     },
     list: [
       {
@@ -484,36 +724,80 @@ export const tr: ContentOverride = {
   },
 
   signals: {
-    metaTitle: "Sinyaller ve Raporlar",
-    metaDescription: "Günlük piyasa notları, haftalık raporlar ve tam gerekçeli işlem fikirleri; Telegram ve e-posta ile iletilir.",
-    kicker: "Sinyaller ve raporlar",
-    title: "Gerekçesi eklenmiş fikirler",
-    lead: "Kör uyarılar yok. Her fikir enstrüman, yön, giriş, stop, hedef, risk/getiri oranı ve nedenini açıklayan bir paragrafla gelir. İşlem yaparken öğrenirsiniz.",
-    whatTitle: "Ne alırsınız?",
-    what: [
-      { title: "Günlük makro notu", body: "Londra açılışından önce tek sayfa: bugün ne önemli, kilit seviyeler, takvimdeki riskler." },
-      { title: "Haftalık rapor", body: "FX, endeksler, kıymetli madenler ve dijital varlıklarda pozisyonlanma, temalar ve gelecek hafta." },
-      { title: "İşlem fikirleri", body: "Ayda ortalama 100'den fazla fikir; her biri giriş, stop, hedef ve gerekçeyle." },
-      { title: "Canlı güncellemeler", body: "Açık fikirlerin yönetimi: kısmi çıkışlar, stop taşımaları, geçersizleşme." },
+    "metaTitle": "Araştırma ve Sinyal Hizmetleri",
+    "metaDescription": "Günlük piyasa notları, haftalık raporlar ve gerekçeli işlem fikirleri; Telegram ve e-posta ile iletilir.",
+    "kicker": "Araştırma ve sinyaller",
+    "title": "Gerekçesi ile sunulan işlem fikirleri",
+    "lead": "Gerekçesiz uyarı gönderilmez. Her fikir enstrüman, yön, giriş, zarar durdur, hedef, risk/getiri oranı ve gerekçeyi açıklayan bir paragrafla iletilir.",
+    "whatTitle": "Hizmet kapsamı",
+    "what": [
+      {
+        "title": "Günlük makro notu",
+        "body": "Londra açılışından önce tek sayfa: günün gündemi, kilit seviyeler, takvimdeki riskler."
+      },
+      {
+        "title": "Haftalık rapor",
+        "body": "FX, endeksler, kıymetli madenler ve dijital varlıklarda pozisyonlanma, temalar ve gelecek haftanın görünümü."
+      },
+      {
+        "title": "İşlem fikirleri",
+        "body": "Ayda ortalama 100'ün üzerinde fikir; her biri giriş, zarar durdur, hedef ve gerekçe ile."
+      },
+      {
+        "title": "Canlı güncellemeler",
+        "body": "Açık fikirlerin yönetimi: kısmi çıkışlar, zarar durdur güncellemeleri, geçersizleşme koşulları."
+      }
     ],
-    formatTitle: "Fikir formatı",
-    plansTitle: "Planlar",
-    plans: [
-      { name: "Raporlar", price: "$750", period: "aylık", features: ["Günlük makro notu", "Haftalık rapor", "Arşiv erişimi"], cta: "Abone olun" },
-      { name: "Sinyaller", price: "$1,000", period: "aylık", features: ["Raporlar planındaki her şey", "Gerekçeli işlem fikirleri", "Telegram'da canlı güncellemeler", "Aylık performans tablosu"], cta: "Abone olun" },
-      { name: "Mentorluk", price: "$5,000", period: "üç aylık", features: ["Sinyaller planındaki her şey", "İki haftada bir birebir değerlendirme", "Portföy geri bildirimi", "Webinarlara öncelikli erişim"], cta: "Başvurun" },
+    "formatTitle": "Fikir formatı",
+    "plansTitle": "Abonelik planları",
+    "plans": [
+      {
+        "name": "Raporlar",
+        "price": "$750",
+        "period": "aylık",
+        "features": [
+          "Günlük makro notu",
+          "Haftalık rapor",
+          "Arşiv erişimi"
+        ],
+        "cta": "Abone Olun"
+      },
+      {
+        "name": "Sinyaller",
+        "price": "$1,000",
+        "period": "aylık",
+        "features": [
+          "Raporlar planının tamamı",
+          "Gerekçeli işlem fikirleri",
+          "Telegram üzerinden canlı güncellemeler",
+          "Aylık performans tablosu"
+        ],
+        "cta": "Abone Olun"
+      },
+      {
+        "name": "Mentorluk",
+        "price": "$5,000",
+        "period": "üç aylık",
+        "features": [
+          "Sinyaller planının tamamı",
+          "İki haftada bir birebir değerlendirme",
+          "Portföy geri bildirimi",
+          "Eğitimlere öncelikli erişim"
+        ],
+        "cta": "Başvurun"
+      }
     ],
-    performanceTitle: "Sinyal performansı",
-    performanceNote: "Kapanan fikirler her ay giriş, çıkış ve sonuçla birlikte Telegram kanalında kaydedilir. Bugüne kadarki dâhili kayıt: kapanan fikirlerin %87'si stop'tan önce hedefe ulaştı. Kaydın bağımsız doğrulaması sürüyor.",
-    disclaimer: "Sinyaller eğitim içeriği ve genel piyasa yorumudur. Kişisel yatırım tavsiyesi değildir ve kişisel koşullarınızı dikkate almaz.",
+    "performanceTitle": "Sinyal performansı",
+    "performanceNote": "Kapanan fikirler her ay giriş, çıkış ve sonuç bilgisiyle Telegram kanalında kayıt altına alınır. Bugüne kadarki kurum içi kayıt: kapanan fikirlerin %87'si zarar durdur seviyesinden önce hedefe ulaşmıştır. Kaydın bağımsız doğrulaması sürmektedir.",
+    "disclaimer": "Sinyaller eğitim içeriği ve genel piyasa yorumu niteliğindedir. Kişisel yatırım tavsiyesi değildir ve bireysel koşullarınızı dikkate almaz."
   },
 
   education: {
     metaTitle: "Webinarlar ve Seminerler",
-    metaDescription: "Yatırımcılara kendi başlarına işlem yapmayı öğreten canlı webinarlar ve yüz yüze seminerler.",
-    kicker: "Eğitim",
-    title: "Yöntemi öğrenin, sonra kendiniz uygulayın",
-    lead: "Otomatik pilotta satılan kayıtlı kurslar değil, canlı oturumlar. Küçük gruplar, gerçek grafikler, gerçek risk kuralları.",
+    metaDescription: "Yatırımcılara yöntemi öğreten canlı webinarlar ve yüz yüze seminerler.",
+    kicker: "Yatırımcı eğitimi",
+    title: "Yöntemi öğrenin, kararlarınızı kendiniz verin",
+    lead: "Otomatik satılan kayıtlı kurslar değil, canlı oturumlar. Küçük gruplar, gerçek grafikler, gerçek risk kuralları.",
     upcomingTitle: "Yaklaşan oturumlar",
     events: [
       {
@@ -531,16 +815,51 @@ export const tr: ContentOverride = {
         "seats": "25"
       }
     ],
-    eventLabels: { format: "Format", language: "Dil", price: "Ücret", seats: "Kontenjan", register: "Kayıt olun" },
+    eventLabels: {
+      "format": "Format",
+      "language": "Dil",
+      "price": "Ücret",
+      "seats": "Kontenjan",
+      "register": "Kayıt Olun"
+    },
     curriculumTitle: "Müfredat",
     curriculum: [
-      { level: "Temel", title: "Önce risk", topics: ["Pozisyon büyüklüğü", "Stop yerleşimi", "Beklenen değer", "İşlem günlüğü"] },
-      { level: "Orta", title: "Piyasayı okumak", topics: ["Makro sürücüler", "Teknik yapı", "Korelasyonlar", "Seans zamanlaması"] },
-      { level: "İleri", title: "Sistematik işlem", topics: ["Strateji tasarımı", "Geriye dönük test tuzakları", "Otomasyonun temelleri", "Strateji portföyü"] },
+      {
+        "level": "Temel",
+        "title": "Önce risk",
+        "topics": [
+          "Pozisyon büyüklüğü",
+          "Zarar durdur yerleşimi",
+          "Beklenen değer",
+          "İşlem günlüğü"
+        ]
+      },
+      {
+        "level": "Orta",
+        "title": "Piyasayı okumak",
+        "topics": [
+          "Makro sürücüler",
+          "Teknik yapı",
+          "Korelasyonlar",
+          "Seans zamanlaması"
+        ]
+      },
+      {
+        "level": "İleri",
+        "title": "Sistematik işlem",
+        "topics": [
+          "Strateji tasarımı",
+          "Geriye dönük test tuzakları",
+          "Otomasyonun temelleri",
+          "Strateji portföyü"
+        ]
+      }
     ],
     corporateTitle: "Kurumsal eğitim",
-    corporateBody: "Aracı kurumlar, aile ofisleri ve hazine ekipleri için özel programlar. Yarım günlük veya iki günlük format; Dubai'de, İstanbul'da yerinde ya da online; kendi enstrümanlarınız ve risk politikanız üzerine kurulur.",
-    corporateCta: { label: "Bilgi alın" },
+    corporateBody: "Aracı kurumlar, aile ofisleri ve hazine ekipleri için özel programlar. Yarım günlük veya iki günlük format; Dubai veya İstanbul'da yerinde ya da çevrimiçi; kurumun kendi enstrümanları ve risk politikası üzerine kurgulanır.",
+    corporateCta: {
+      "label": "Bilgi Alın"
+    },
     archiveTitle: "Oturum arşivi",
   },
 
@@ -548,37 +867,56 @@ export const tr: ContentOverride = {
     metaTitle: "Analizler",
     metaDescription: "Makro, FX, emtia, endeksler, kripto ve işlemlerde yapay zekâ üzerine piyasa yorumları.",
     kicker: "Analizler",
-    title: "Masadan notlar",
+    title: "İşlem masasından notlar",
     tabs: ["Tümü", "Makro", "FX", "Emtia", "Endeksler", "Kripto", "Yapay zekâ"],
   },
 
   contact: {
-    metaTitle: "İletişim",
-    metaDescription: "Görüşme planlayın, WhatsApp veya Telegram'dan yazın ya da bir talep gönderin.",
-    kicker: "İletişim",
-    title: "Konuşalım",
-    lead: "Size uygun kanalı seçin. Kurumsal ve profesyonel talepler bir iş günü içinde yanıtlanır.",
-    channels: [
-      { title: "Görüşme planlayın", body: "30 dakika, görüntülü veya telefonla. Bir iş günü içinde yanıt.", cta: "Görüşme talep edin" },
-      { title: "WhatsApp", body: "Kısa sorular ve belge paylaşımı.", cta: "Mesaj gönderin" },
-      { title: "Telegram", body: "Sinyal kanalı ve topluluk.", cta: "Katılın" },
+    "metaTitle": "İletişim",
+    "metaDescription": "Görüşme talep edin, WhatsApp veya Telegram üzerinden ulaşın ya da bilgi talebi gönderin.",
+    "kicker": "İletişim",
+    "title": "Bize ulaşın",
+    "lead": "Size uygun kanalı seçin. Kurumsal ve profesyonel talepler bir iş günü içinde yanıtlanır.",
+    "channels": [
+      {
+        "title": "Görüşme talep edin",
+        "body": "30 dakika, görüntülü veya telefonla. Bir iş günü içinde dönüş.",
+        "cta": "Görüşme Talep Edin"
+      },
+      {
+        "title": "WhatsApp",
+        "body": "Kısa sorular ve belge paylaşımı.",
+        "cta": "Mesaj Gönderin"
+      },
+      {
+        "title": "Telegram",
+        "body": "Sinyal kanalı ve topluluk.",
+        "cta": "Katılın"
+      }
     ],
-    formTitle: "Talep gönderin",
-    form: {
-      name: "Ad Soyad",
-      namePlaceholder: "Adınız",
-      email: "E-posta",
-      emailPlaceholder: "siz@sirket.com",
-      topic: "Konu",
-      topics: ["Yönetilen hesap", "Aracı kurum seçimi", "Sinyaller ve raporlar", "Eğitim", "Yapay zekâ sistemleri", "Diğer"],
-      message: "Mesaj",
-      messagePlaceholder: "Size nasıl yardımcı olabilirim?",
-      submit: "Gönder",
-      note: "Bu işlem, mesaj önceden doldurulmuş olarak e-posta istemcinizi açar. Bu sitede hiçbir veri saklanmaz.",
-      errorRequired: "Lütfen adınızı, e-postanızı ve mesajınızı girin.",
-      errorEmail: "Lütfen geçerli bir e-posta adresi girin.",
-      subject: "Bilgi talebi",
-    },
+    "formTitle": "Bilgi talebi",
+    "form": {
+      "name": "Ad Soyad",
+      "namePlaceholder": "Adınız",
+      "email": "E-posta",
+      "emailPlaceholder": "ad@sirket.com",
+      "topic": "Konu",
+      "topics": [
+        "Portföy yönetimi",
+        "Aracı kurum seçimi",
+        "Araştırma ve sinyaller",
+        "Eğitim",
+        "Algoritmik sistemler",
+        "Diğer"
+      ],
+      "message": "Mesaj",
+      "messagePlaceholder": "Size nasıl yardımcı olabiliriz?",
+      "submit": "Gönder",
+      "note": "Bu işlem, mesaj önceden doldurulmuş olarak e-posta istemcinizi açar. Bu sitede hiçbir veri saklanmaz.",
+      "errorRequired": "Lütfen adınızı, e-posta adresinizi ve mesajınızı giriniz.",
+      "errorEmail": "Lütfen geçerli bir e-posta adresi giriniz.",
+      "subject": "Bilgi talebi"
+    }
   },
 
   legal: {
@@ -632,26 +970,38 @@ export const tr: ContentOverride = {
   },
 
   ctaBand: {
-    title: "Başlamaya hazır mısınız?",
-    body: "İlk görüşmeden ilk işleme dört adım. Çoğu kişi bir hafta içinde kurulumu tamamlar.",
-    steps: [
-      { title: "Görüşme planlayın", body: "Hangi hizmetin uyduğuna karar vermek için 30 dakika: aracı kurum, sinyaller, yönetilen hesap veya eğitim." },
-      { title: "Aracı kurum hesabı açın", body: "Ortak bir aracı kurumda, kendi adınıza. Kimlik ve ikametgâh belgesiyle doğrulama yaklaşık 10 dakika sürer." },
-      { title: "Fonlayın ve bağlayın", body: "Kartla $10'dan itibaren yatırın. Seçtiyseniz hesabı yönetilen yapıya veya sinyal kanalına bağlayın." },
-      { title: "İşleme başlayın", body: "Planı takip edin, sonuçları aylık gözden geçirin ve açıklayamadığınız hiçbir işleme girmeyin." },
+    "title": "Başlamaya hazır mısınız?",
+    "body": "İlk görüşmeden ilk işleme dört adım. Kurulum çoğunlukla bir hafta içinde tamamlanır.",
+    "steps": [
+      {
+        "title": "Görüşme talep edin",
+        "body": "Uygun hizmetin belirlenmesi için 30 dakika: aracı kurum, sinyaller, portföy yönetimi veya eğitim."
+      },
+      {
+        "title": "Aracı kurum hesabı açın",
+        "body": "Ortak aracı kurumda, kendi adınıza. Kimlik ve ikametgâh belgesiyle doğrulama yaklaşık 10 dakika sürer."
+      },
+      {
+        "title": "Fonlayın ve bağlayın",
+        "body": "Aracı kurum hesabınızı fonlayın: havuz MAM veya sinyal planı için 1.000 USD'den, özel manda için 250.000 USD'den itibaren. Ardından seçtiğiniz yapıya bağlayın."
+      },
+      {
+        "title": "İşleme başlayın",
+        "body": "Planı uygulayın, sonuçları aylık değerlendirin ve gerekçesini açıklayamadığınız hiçbir işleme girmeyin."
+      }
     ],
-    cta: { label: "Görüşme planlayın" },
+    "cta": {
+      "label": "Görüşme Talep Edin"
+    }
   },
 
   footer: {
-    copyright: "Tüm hakları saklıdır.",
-    riskTitle: "Risk uyarısı",
-    legal1:
-      "ekonomist ve yatırımcı Ahmet S. Öztürk'ün kişisel markası ve Dubai Uluslararası Finans Merkezi merkezli NUUK Quant'ın ticari adıdır. Hizmetler, izin verilen yerlerde profesyonel ve kurumsal müşterilere sunulur; erişilebilirlik bulunduğunuz yargı bölgesine ve geçerli düzenlemelere bağlıdır.",
-    legal2:
-      "Bu web sitesindeki içerik genel piyasa yorumu ve eğitim amaçlıdır. Kişisel yatırım tavsiyesi değildir; herhangi bir finansal aracı veya hizmeti alma ya da satma teklifi veya daveti değildir.",
-    ib: "Bu web sitesindeki aracı kurum bağlantıları yönlendirme (referral) bağlantılarıdır. Bunlar üzerinden hesap açıp fonladığınızda komisyon kazanabilirim; bu durum ödediğiniz ücretleri değiştirmez.",
-    risk: "İşlem yapmak önemli ölçüde risk içerir ve başlangıç yatırımınızı aşan zararlarla sonuçlanabilir. Geçmiş performans gelecekteki sonuçların garantisi değildir.",
+    "copyright": "Tüm hakları saklıdır.",
+    "riskTitle": "Risk uyarısı",
+    "legal1": "ekonomist ve yatırımcı Ahmet S. Öztürk'ün kişisel markası ve Dubai Uluslararası Finans Merkezi merkezli NUUK Quant'ın ticari unvanıdır. Hizmetler, mevzuatın izin verdiği ülkelerde profesyonel ve kurumsal müşterilere sunulur; erişilebilirlik bulunduğunuz ülkeye ve ilgili düzenlemelere bağlıdır.",
+    "legal2": "Bu web sitesindeki içerik genel piyasa yorumu ve eğitim amaçlıdır. Kişisel yatırım tavsiyesi değildir; herhangi bir finansal araç veya hizmetin alım ya da satımına yönelik teklif veya davet niteliği taşımaz.",
+    "ib": "Bu web sitesindeki aracı kurum bağlantıları yönlendirme (referral) bağlantılarıdır. Bu bağlantılar üzerinden hesap açıp fonlamanız hâlinde NUUK komisyon elde edebilir; bu durum ödediğiniz ücretleri değiştirmez.",
+    "risk": "İşlem yapmak önemli ölçüde risk içerir ve başlangıç sermayenizi aşan zararlarla sonuçlanabilir. Geçmiş performans gelecekteki sonuçların göstergesi değildir."
   },
 
   systems: [

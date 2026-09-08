@@ -6,6 +6,7 @@ import SectionHead from "@/components/ui/SectionHead";
 import Fill from "@/components/ui/Fill";
 import Badge from "@/components/ui/Badge";
 import BrokerLogo from "@/components/ui/BrokerLogo";
+import Button from "@/components/ui/Button";
 import { BrokerCardFull, brokerHref } from "@/components/home/BrokerCard";
 import { resolve, type LocaleParams } from "@/lib/page";
 
@@ -96,6 +97,30 @@ export default async function BrokersPage({ params }: { params: LocaleParams }) 
           {p.list.map((b) => (
             <BrokerCardFull key={b.slug} b={b} c={c} />
           ))}
+        </div>
+      </section>
+      <section className="section-pad bg-white" aria-labelledby="partner-heading">
+        <div className="container-x grid gap-10 lg:grid-cols-12 lg:items-center">
+          <div className="lg:col-span-6">
+            <p className="kicker">{p.partner.kicker}</p>
+            <h2 id="partner-heading" className="h2-section mt-4">
+              {p.partner.title}
+            </h2>
+            <p className="mt-5 max-w-[560px] text-[16px] leading-7 text-body">{p.partner.body}</p>
+            <div className="mt-8">
+              <Button href={p.partner.cta.href} event="cta_click" eventLabel="partner_programme">
+                {p.partner.cta.label}
+              </Button>
+            </div>
+          </div>
+          <ul className="grid gap-4 lg:col-span-6">
+            {p.partner.points.map((pt, i) => (
+              <li key={pt} className="rv flex items-start gap-4 rounded-card bg-fog p-6">
+                <span className="flex size-8 flex-none items-center justify-center rounded-full bg-primary text-[13px] font-bold text-white">{i + 1}</span>
+                <span className="text-[15px] leading-6 text-ink">{pt}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
       <CtaBand c={c} />

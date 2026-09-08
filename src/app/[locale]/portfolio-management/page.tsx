@@ -35,6 +35,28 @@ export default async function ManagedPage({ params }: { params: LocaleParams }) 
       </section>
 
       <section className="section-pad bg-fog">
+        <div className="container-x">
+          <SectionHead title={p.tiersTitle} />
+          <div className="mt-10 grid gap-5 lg:grid-cols-2">
+            {p.tiers.map((t, i) => (
+              <article key={t.name} className={`rv rounded-card p-8 ${i === 1 ? "bg-ink text-white" : "bg-white shadow-card ring-1 ring-black/5"}`}>
+                <p className={`kicker ${i === 1 ? "text-cyan" : ""}`}>{t.tagline}</p>
+                <h3 className={`mt-2 text-[26px] ${i === 1 ? "text-white" : ""}`}>{t.name}</h3>
+                <dl className={`mt-6 divide-y text-[14px] ${i === 1 ? "divide-white/10" : "divide-black/5"}`}>
+                  {(["minimum", "managementFee", "performanceFee", "lockup", "structure", "forWhom"] as const).map((k) => (
+                    <div key={k} className="grid grid-cols-[minmax(0,11rem)_1fr] gap-4 py-3">
+                      <dt className={i === 1 ? "text-white/60" : "text-muted"}>{p.tierLabels[k]}</dt>
+                      <dd className={`font-medium ${i === 1 ? "text-white" : "text-ink"}`}>{t[k]}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-pad bg-white">
         <div className="container-x grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <SectionHead title={p.termsTitle} />
@@ -50,7 +72,7 @@ export default async function ManagedPage({ params }: { params: LocaleParams }) 
             </dl>
           </div>
           <div className="grid gap-5 lg:col-span-7 lg:grid-cols-2">
-            <div className="rv rounded-card bg-white p-7 shadow-card ring-1 ring-black/5">
+            <div className="rv rounded-card bg-fog p-7">
               <h3 className="text-[18px]">{p.fitTitle}</h3>
               <ul className="mt-4 space-y-2 text-[14.5px] text-body">
                 {p.fit.map((f) => (
@@ -61,7 +83,7 @@ export default async function ManagedPage({ params }: { params: LocaleParams }) 
                 ))}
               </ul>
             </div>
-            <div className="rv rounded-card bg-white p-7 shadow-card ring-1 ring-black/5">
+            <div className="rv rounded-card bg-fog p-7">
               <h3 className="text-[18px]">{p.notFitTitle}</h3>
               <ul className="mt-4 space-y-2 text-[14.5px] text-body">
                 {p.notFit.map((f) => (
@@ -76,9 +98,9 @@ export default async function ManagedPage({ params }: { params: LocaleParams }) 
         </div>
       </section>
 
-      <section className="bg-white py-10">
+      <section className="bg-fog py-10">
         <div className="container-x">
-          <p className="rounded-card bg-fog p-6 text-[13px] leading-6 text-body">
+          <p className="rounded-card bg-white p-6 text-[13px] leading-6 text-body ring-1 ring-black/5">
             <Fill text={p.compliance} />
           </p>
         </div>

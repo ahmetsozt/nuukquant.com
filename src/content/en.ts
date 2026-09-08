@@ -176,6 +176,19 @@ export const en = {
       ],
       pressTitle: "Partner brokers",
     },
+    markets: {
+      "kicker": "Live prices",
+      "title": "Markets, right now",
+      "lead": "Live quotes streamed from TradingView: forex, commodities, indices, crypto and the stocks I watch. Click any row to open the chart.",
+      "tabs": [
+        "Forex",
+        "Commodities",
+        "Indices",
+        "Crypto",
+        "Stocks"
+      ],
+      "note": "Quotes are provided by TradingView and its data partners; some exchange feeds are delayed. Trading conditions, spreads and execution are those of the broker you trade with."
+    },
     numbersTitle: "Numbers you can verify*",
     numbersNote: "*Figures as of September 2026. Verification links are added to the track record page as each read-only connection goes live.",
     promo: {
@@ -768,7 +781,7 @@ export const en = {
         "This policy explains what personal data NUUK Quant (\"NUUK\", \"we\") collects through nuukquant.com, why, and what rights you have. Last updated 8 September 2026.",
         "Data you give us. When you contact us by email, WhatsApp, Telegram or the enquiry form, we receive the details you send: name, email address, phone number and the content of your message. The enquiry form opens your own email client; nothing you type is stored on this website.",
         "Data collected automatically. We use Google Analytics 4 with IP anonymisation to understand how the site is used: pages viewed, approximate location, device type and which buttons are clicked (for example a broker link or a plan). This data is aggregated and does not identify you by name. You can block it with a browser setting or an ad blocker.",
-        "Cookies. The site itself sets no cookies. Google Analytics may set cookies to distinguish sessions; third-party sites you open from our links (brokers, Telegram, Calendly, social networks) apply their own policies.",
+        "Cookies. The site itself sets no cookies. Google Analytics may set cookies to distinguish sessions; third-party sites you open from our links (brokers, Telegram, Calendly, social networks) apply their own policies. Live market quotes on this site are embedded TradingView widgets, which load from TradingView's servers and may set their own cookies under TradingView's privacy policy.",
         "Why we process data. To answer your enquiry, to provide services you have asked for (managed accounts, signals, education), to meet legal and regulatory obligations, and to improve the website. The legal basis is your consent, the performance of an agreement with you, or our legitimate interest in running the business.",
         "Sharing. We do not sell personal data. We share it only with service providers needed to run the website and communications (hosting, email, analytics), with partner brokers when you ask us to introduce you, and with authorities where the law requires it.",
         "Retention and security. Enquiry data is kept for as long as needed to handle the request and for up to five years where a business relationship follows, in line with regulatory record-keeping. Data is stored on access-controlled systems.",

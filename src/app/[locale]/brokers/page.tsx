@@ -46,16 +46,12 @@ export default async function BrokersPage({ params }: { params: LocaleParams }) 
                   <th className="px-5 py-4 text-start font-medium text-muted"></th>
                   {p.list.map((b) => (
                     <th key={b.slug} className="px-5 py-4 text-start font-medium">
-                      <div className="flex items-center gap-3">
-                        <BrokerLogo slug={b.slug} name={b.name} />
-                        <div>
-                          <Link href={brokerHref(c, b)} className="text-[15px] font-bold text-ink hover:text-primary">
-                            <Fill text={b.name} />
-                          </Link>
-                          <div className="mt-1">
-                            <Badge status={b.status} c={c} />
-                          </div>
-                        </div>
+                      <div className="flex min-w-[180px] flex-col items-start gap-2">
+                        <BrokerLogo slug={b.slug} name={b.name} height={28} className="max-w-[140px]" />
+                        <Link href={brokerHref(c, b)} className="text-[14px] font-bold text-ink hover:text-primary">
+                          <Fill text={b.name} />
+                        </Link>
+                        <Badge status={b.status} c={c} />
                       </div>
                     </th>
                   ))}

@@ -40,7 +40,7 @@ export default async function BrokersPage({ params }: { params: LocaleParams }) 
         <div className="container-x">
           <SectionHead title={p.compareTitle} />
           <div className="mt-8 overflow-x-auto rounded-card shadow-card ring-1 ring-black/5 scroll-row">
-            <table className="w-full min-w-[860px] border-collapse text-[13.5px]">
+            <table className="w-full min-w-[1360px] border-collapse text-[13px]">
               <thead>
                 <tr className="bg-fog">
                   <th className="px-5 py-4 text-start font-medium text-muted"></th>

@@ -10,7 +10,7 @@ export default function Footer({ c, locale }: { c: SiteContent; locale: Locale }
   const columns = c.nav.filter((g) => g.items.length);
   return (
     <footer className="relative overflow-hidden bg-ink pt-16 pb-10 text-soft">
-      <LogoMark className="pointer-events-none absolute -end-28 -bottom-32 text-white opacity-[0.04]" size={640} />
+      <LogoMark className="pointer-events-none absolute -end-16 -bottom-20 text-white opacity-[0.05]" size={460} />
       <div className="container-x relative">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {columns.map((group) => (

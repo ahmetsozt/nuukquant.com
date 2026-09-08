@@ -769,5 +769,28 @@ export const tr: ContentOverride = {
         }
       ],
     },
+    {
+      "name": "NUUK Trend Ensemble — walk-forward backtest",
+      "source": "Backtest 2010–2026, swap ve komisyon dahil",
+      "updated": "2026-07",
+      "stats": [
+        {
+          "label": "Net getiri, test dönemi",
+          "value": "+10.9%"
+        },
+        {
+          "label": "Maksimum düşüş (drawdown)",
+          "value": "6.7%"
+        },
+        {
+          "label": "Sharpe oranı",
+          "value": "1.36"
+        },
+        {
+          "label": "Kâğıt işlem başlangıcı",
+          "value": "2026-07"
+        }
+      ]
+    },
   ],
 };

@@ -974,5 +974,28 @@ export const fr: ContentOverride = {
         }
       ],
     },
+    {
+      "name": "NUUK Trend Ensemble — backtest walk-forward",
+      "source": "Backtest 2010–2026, net de swaps et de commissions",
+      "updated": "2026-07",
+      "stats": [
+        {
+          "label": "Rendement net, période de test",
+          "value": "+10.9%"
+        },
+        {
+          "label": "Drawdown maximal",
+          "value": "6.7%"
+        },
+        {
+          "label": "Ratio de Sharpe",
+          "value": "1.36"
+        },
+        {
+          "label": "Trading papier depuis",
+          "value": "2026-07"
+        }
+      ]
+    },
   ],
 };

@@ -33,6 +33,7 @@ export const tr: ContentOverride = {
     paused: "Durduruldu",
     soon: "Yakında",
     pending: "Doğrulama bekliyor",
+    verificationInProgress: "Doğrulama sürüyor",
     updated: "Güncelleme",
     since: "Başlangıç",
     source: "Kaynak",
@@ -43,7 +44,7 @@ export const tr: ContentOverride = {
     requestDemo: "Demo talep edin",
     viewAll: "Tümünü görün",
     readMore: "Devamını okuyun",
-    fill: "[FILL]",
+    fill: "",
     telegram: "Telegram",
     whatsapp: "WhatsApp",
     legal: "Yasal",
@@ -104,10 +105,9 @@ export const tr: ContentOverride = {
         { value: "10+", label: "aracı kurum ortaklığı; altısı bu sitede listeleniyor" },
       ],
       pressTitle: "Partner aracı kurumlar",
-      press: ["[FILL: media 1]", "[FILL: media 2]", "[FILL: media 3]", "[FILL: media 4]"],
     },
     numbersTitle: "Doğrulayabileceğiniz rakamlar*",
-    numbersNote: "*Her rakam kaynağına bağlanır: doğrulama servisi, aracı kurum ekstresi veya etkinlik kaydı.",
+    numbersNote: "*Rakamlar Eylül 2026 itibarıyla. Doğrulama linkleri, her salt okunur bağlantı devreye girdikçe performans geçmişi sayfasına eklenir.",
     promo: {
       kicker: "Yönetilen hesaplar",
       title: "Sizin hesabınız. Benim emir gerçekleştirmem. Yazılı risk limitleri.",
@@ -151,13 +151,12 @@ export const tr: ContentOverride = {
       title: "Gerekçesi eklenmiş işlem fikirleri",
       lead: "Enstrüman, yön, giriş, stop, hedef ve gerekçe. Telegram ve e-posta ile iletilir.",
       sample: {
-        direction: "Long",
-        entry: "[FILL]",
-        stop: "[FILL]",
-        target: "[FILL]",
-        rr: "[FILL]",
-        note: "[FILL: one-paragraph reasoning for the sample idea]",
-        date: "[FILL: date]",
+        "entry": "4,392",
+        "stop": "4,368",
+        "target": "4,464",
+        "rr": "1:3",
+        "note": "Altın, güçlü tarım dışı istihdam verisine rağmen 4.380–4.400 talep bölgesini korudu; reel getiriler yeni zirve yapamadı. 4.392 üzerinde alım, stop bölgenin altında 4.368; hedef önceki tepe olan 4.464. Risk öz sermayenin %0,5'i; ABD TÜFE %3,4'ün üzerinde gelirse pozisyon yarıya indirilir.",
+        "date": "8 Eyl 2026 · örnek fikir"
       },
       cta: { label: "Planları görün" },
     },
@@ -504,8 +503,20 @@ export const tr: ContentOverride = {
     lead: "Otomatik pilotta satılan kayıtlı kurslar değil, canlı oturumlar. Küçük gruplar, gerçek grafikler, gerçek risk kuralları.",
     upcomingTitle: "Yaklaşan oturumlar",
     events: [
-      { format: "Çevrimiçi webinar", language: "İngilizce" },
-      { format: "Yüz yüze, Dubai", language: "Türkçe" },
+      {
+        "title": "Haftalık piyasa brifingi: altın, endeksler ve Fed",
+        "format": "Online webinar",
+        "language": "İngilizce",
+        "price": "Ücretsiz",
+        "seats": "100"
+      },
+      {
+        "title": "Sistematik altın ticareti atölyesi",
+        "format": "Yüz yüze, Dubai",
+        "language": "Türkçe",
+        "price": "250 USD",
+        "seats": "25"
+      }
     ],
     eventLabels: { format: "Format", language: "Dil", price: "Ücret", seats: "Kontenjan", register: "Kayıt olun" },
     curriculumTitle: "Müfredat",
@@ -515,9 +526,9 @@ export const tr: ContentOverride = {
       { level: "İleri", title: "Sistematik işlem", topics: ["Strateji tasarımı", "Geriye dönük test tuzakları", "Otomasyonun temelleri", "Strateji portföyü"] },
     ],
     corporateTitle: "Kurumsal eğitim",
-    corporateBody: "Aracı kurumlar, aile ofisleri ve hazine ekipleri için özel programlar. [FILL: one sentence on format and past clients]",
+    corporateBody: "Aracı kurumlar, aile ofisleri ve hazine ekipleri için özel programlar. Yarım günlük veya iki günlük format; Dubai'de, İstanbul'da yerinde ya da online; kendi enstrümanlarınız ve risk politikanız üzerine kurulur.",
     corporateCta: { label: "Bilgi alın" },
-    archiveTitle: "Geçmiş oturumlar",
+    archiveTitle: "Oturum arşivi",
   },
 
   insights: {

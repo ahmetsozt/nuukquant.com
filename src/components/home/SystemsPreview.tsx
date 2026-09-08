@@ -6,7 +6,7 @@ import type { SiteContent } from "@/content/en";
 export default function SystemsPreview({ c }: { c: SiteContent }) {
   const s = c.home.systems;
   return (
-    <section className="bg-hero py-20 text-white lg:py-24" aria-labelledby="systems-heading">
+    <section className="section-pad bg-hero text-white" aria-labelledby="systems-heading">
       <div className="container-x">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <SectionHead kicker={s.kicker} title={s.title} lead={s.lead} dark />

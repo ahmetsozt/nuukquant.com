@@ -6,7 +6,7 @@ import type { SiteContent } from "@/content/en";
 export default function EducationPreview({ c }: { c: SiteContent }) {
   const e = c.home.education;
   return (
-    <section className="bg-paper py-20 lg:py-24" aria-labelledby="education-heading">
+    <section className="section-pad bg-fog" aria-labelledby="education-heading">
       <div className="container-x">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <SectionHead kicker={e.kicker} title={e.title} />

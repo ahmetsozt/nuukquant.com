@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageIntro from "@/components/sections/PageIntro";
 import CtaBand from "@/components/sections/CtaBand";
 import SectionHead from "@/components/ui/SectionHead";
 import Fill from "@/components/ui/Fill";
 import Badge from "@/components/ui/Badge";
 import BrokerLogo from "@/components/ui/BrokerLogo";
-import { BrokerCardFull } from "@/components/home/BrokerCard";
+import { BrokerCardFull, brokerHref } from "@/components/home/BrokerCard";
 import { resolve, type LocaleParams } from "@/lib/page";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
@@ -14,9 +15,10 @@ export async function generateMetadata({ params }: { params: LocaleParams }): Pr
 }
 
 export default async function BrokersPage({ params }: { params: LocaleParams }) {
-  const { c } = await resolve(params);
+  const { locale, c } = await resolve(params);
   const p = c.brokers;
   const L = p.cardLabels;
+  const home = locale === "en" ? "/" : `/${locale}/`;
   const cols: [string, (b: (typeof p.list)[number]) => string][] = [
     [L.regulator, (b) => b.regulator],
     [L.minDeposit, (b) => b.minDeposit],
@@ -30,26 +32,26 @@ export default async function BrokersPage({ params }: { params: LocaleParams }) 
   ];
   return (
     <>
-      <PageIntro kicker={p.kicker} title={p.title} body={p.lead}>
-        <p className="mt-8 max-w-[720px] rounded-md bg-white p-4 text-[13px] leading-5 text-body ring-1 ring-black/5">{p.disclosure}</p>
+      <PageIntro tone="dark" kicker={p.kicker} title={p.title} body={p.lead} crumbs={[{ label: c.ui.home, href: home }, { label: p.kicker }]}>
+        <p className="mt-8 max-w-[560px] rounded-card-sm bg-white/10 p-4 text-[13px] leading-5 text-white/80 ring-1 ring-white/10">{p.disclosure}</p>
       </PageIntro>
 
-      <section className="section-pad">
+      <section className="section-pad bg-white">
         <div className="container-x">
           <SectionHead title={p.compareTitle} />
-          <div className="mt-8 overflow-x-auto rounded-xl ring-1 ring-black/5 scroll-row">
-            <table className="w-full min-w-[820px] border-collapse text-[13.5px]">
+          <div className="mt-8 overflow-x-auto rounded-card shadow-card ring-1 ring-black/5 scroll-row">
+            <table className="w-full min-w-[860px] border-collapse text-[13.5px]">
               <thead>
-                <tr className="bg-paper text-start">
-                  <th className="px-4 py-3 text-start font-medium text-muted"></th>
+                <tr className="bg-fog">
+                  <th className="px-5 py-4 text-start font-medium text-muted"></th>
                   {p.list.map((b) => (
-                    <th key={b.slug} className="px-4 py-3 text-start font-medium">
+                    <th key={b.slug} className="px-5 py-4 text-start font-medium">
                       <div className="flex items-center gap-3">
                         <BrokerLogo slug={b.slug} name={b.name} />
                         <div>
-                          <a href={`#${b.slug}`} className="text-ink hover:text-primary">
+                          <Link href={brokerHref(c, b)} className="text-[15px] font-bold text-ink hover:text-primary">
                             <Fill text={b.name} />
-                          </a>
+                          </Link>
                           <div className="mt-1">
                             <Badge status={b.status} c={c} />
                           </div>
@@ -62,19 +64,26 @@ export default async function BrokersPage({ params }: { params: LocaleParams }) 
               <tbody className="divide-y divide-black/5">
                 {cols.map(([label, get]) => (
                   <tr key={label}>
-                    <th className="px-4 py-3 text-start font-normal text-muted">{label}</th>
+                    <th className="px-5 py-3.5 text-start font-normal text-muted">{label}</th>
                     {p.list.map((b) => (
-                      <td key={b.slug} className="num px-4 py-3 text-ink">
+                      <td key={b.slug} className="num px-5 py-3.5 font-medium text-ink">
                         <Fill text={get(b)} />
                       </td>
                     ))}
                   </tr>
                 ))}
                 <tr>
-                  <th className="px-4 py-3"></th>
+                  <th className="px-5 py-4"></th>
                   {p.list.map((b) => (
-                    <td key={b.slug} className="px-4 py-3">
-                      <a href={b.referralHref} className="inline-flex rounded-md bg-primary px-4 py-2 text-[13px] font-medium text-white hover:bg-primary-dark">
+                    <td key={b.slug} className="px-5 py-4">
+                      <a
+                        href={b.referralHref.startsWith("[") ? "#" : b.referralHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-event="broker_cta_click"
+                        data-label={b.slug}
+                        className="inline-flex rounded-pill bg-primary px-5 py-3 text-[14px] font-semibold text-white hover:bg-primary-dark"
+                      >
                         {c.ui.openAccount}
                       </a>
                     </td>
@@ -86,7 +95,7 @@ export default async function BrokersPage({ params }: { params: LocaleParams }) 
         </div>
       </section>
 
-      <section className="bg-paper py-20 lg:py-24">
+      <section className="section-pad bg-fog">
         <div className="container-x space-y-8">
           {p.list.map((b) => (
             <BrokerCardFull key={b.slug} b={b} c={c} />

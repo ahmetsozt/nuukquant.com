@@ -4,14 +4,14 @@ import Sparkline from "@/components/ui/Sparkline";
 import Icon from "@/components/ui/Icon";
 import type { PerformanceCard, SiteContent } from "@/content/en";
 
-const toneClass = { up: "text-primary", down: "text-down", neutral: "text-ink" } as const;
+const toneClass = { up: "text-up", down: "text-down", neutral: "text-ink" } as const;
 
 export function PerformanceCardView({ card, c }: { card: PerformanceCard; c: SiteContent }) {
   return (
-    <article className="rv flex flex-col rounded-xl bg-white p-6 ring-1 ring-black/5 shadow-card">
+    <article className="rv flex flex-col rounded-card bg-white p-7 shadow-card ring-1 ring-black/5">
       <div className="flex items-start justify-between gap-3">
         <div>
-          <h3 className="text-[17px] leading-snug">
+          <h3 className="text-[18px] leading-snug">
             <Fill text={card.name} />
           </h3>
           <p className="mt-1 text-[12.5px] text-muted">
@@ -20,14 +20,14 @@ export function PerformanceCardView({ card, c }: { card: PerformanceCard; c: Sit
         </div>
         <Badge status={card.status} c={c} />
       </div>
-      <div className="mt-5 h-16 text-primary">
-        <Sparkline data={card.series} className="h-full w-full" stroke="#12a37f" />
+      <div className="mt-5 h-16">
+        <Sparkline data={card.series} className="h-full w-full" stroke="#0165fa" />
       </div>
       <dl className="mt-5 grid grid-cols-2 gap-x-4 gap-y-4 border-t border-black/5 pt-5">
         {card.stats.map((s) => (
           <div key={s.label}>
             <dt className="text-[12px] text-muted">{s.label}</dt>
-            <dd className={`num mt-1 text-[20px] ${toneClass[s.tone ?? "neutral"]}`}>
+            <dd className={`num mt-1 text-[20px] font-bold ${toneClass[s.tone ?? "neutral"]}`}>
               <Fill text={s.value} />
             </dd>
           </div>
@@ -37,7 +37,7 @@ export function PerformanceCardView({ card, c }: { card: PerformanceCard; c: Sit
         <span>
           {c.ui.updated}: <Fill text={card.updated} />
         </span>
-        <a href={card.verifiedHref} className="inline-flex items-center gap-1 text-primary hover:underline">
+        <a href={card.verifiedHref.startsWith("[") ? "#" : card.verifiedHref} className="inline-flex items-center gap-1 font-semibold text-primary hover:underline">
           {c.ui.verified} <Icon name="arrow-up-right" size={13} />
         </a>
       </div>

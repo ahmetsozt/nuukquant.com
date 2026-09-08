@@ -18,17 +18,17 @@ const items: [string, string, string][] = [
 export default function Ticker({ label = "Illustrative" }: { label?: string }) {
   const track = [...items, ...items];
   return (
-    <div className="ticker relative border-y border-white/10 bg-black/30 text-[13px]" aria-hidden="true">
-      <div className="ticker-track flex w-max items-center gap-10 py-3">
+    <div className="ticker relative border-t border-white/10 bg-white/[0.04] text-[13px]" aria-hidden="true">
+      <div className="ticker-track flex w-max items-center gap-10 py-3.5">
         {track.map(([s, p, c], i) => (
           <span key={i} className="num inline-flex items-center gap-2.5 whitespace-nowrap">
-            <span className="text-white/90">{s}</span>
-            <span className="text-soft/80">{p}</span>
-            <span className={c.startsWith("-") ? "text-down" : "text-mint"}>{c}</span>
+            <span className="font-semibold text-white/90">{s}</span>
+            <span className="text-white/60">{p}</span>
+            <span className={`font-semibold ${c.startsWith("-") ? "text-down" : "text-cyan"}`}>{c}</span>
           </span>
         ))}
       </div>
-      <span className="absolute end-4 top-1/2 hidden -translate-y-1/2 rounded-full bg-white/10 px-2 py-0.5 text-[10px] tracking-wider text-soft/70 uppercase backdrop-blur sm:inline">{label}</span>
+      <span className="absolute end-4 top-1/2 hidden -translate-y-1/2 rounded-pill bg-white/10 px-2.5 py-0.5 text-[10px] font-semibold tracking-wider text-white/60 uppercase backdrop-blur sm:inline">{label}</span>
     </div>
   );
 }

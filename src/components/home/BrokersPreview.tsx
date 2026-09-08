@@ -6,7 +6,7 @@ import type { SiteContent } from "@/content/en";
 export default function BrokersPreview({ c }: { c: SiteContent }) {
   const b = c.home.brokers;
   return (
-    <section className="section-pad" aria-labelledby="brokers-heading">
+    <section className="section-pad bg-fog" aria-labelledby="brokers-heading">
       <div className="container-x">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <SectionHead kicker={b.kicker} title={b.title} lead={b.lead} />
@@ -19,7 +19,7 @@ export default function BrokersPreview({ c }: { c: SiteContent }) {
             <BrokerCardCompact key={broker.slug} b={broker} c={c} />
           ))}
         </div>
-        <p className="mt-6 text-[12px] text-muted">{c.brokers.disclosure}</p>
+        <p className="mt-6 text-[12.5px] text-muted">{c.brokers.disclosure}</p>
       </div>
     </section>
   );

@@ -9,7 +9,7 @@ export default function BrokerLogo({ slug, name, className = "" }: { slug: strin
   }
   const initials = name.replace(/\[FILL:?\s*/i, "").replace("]", "").split(/\s+/).slice(0, 2).map((w) => w[0]?.toUpperCase() ?? "").join("") || "BR";
   return (
-    <span className={`inline-flex h-9 min-w-9 items-center justify-center rounded-md bg-navy px-2 font-mono text-[12px] font-semibold tracking-wider text-white ${className}`} aria-label={name}>
+    <span className={`inline-flex h-9 min-w-9 items-center justify-center rounded-xl bg-ink px-2.5 text-[13px] font-bold tracking-wider text-white ${className}`} aria-label={name}>
       {initials}
     </span>
   );

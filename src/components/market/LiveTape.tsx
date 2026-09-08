@@ -11,7 +11,7 @@ const symbols = [
   { proName: "CAPITALCOM:US100", title: "NAS100" },
   { proName: "CAPITALCOM:DE40", title: "GER40" },
   { proName: "TVC:UKOIL", title: "Brent" },
-  { proName: "TVC:DXY", title: "DXY" },
+  { proName: "CAPITALCOM:DXY", title: "DXY" },
   { proName: "BITSTAMP:BTCUSD", title: "BTC/USD" },
   { proName: "BITSTAMP:ETHUSD", title: "ETH/USD" },
 ];
@@ -19,11 +19,11 @@ const symbols = [
 /** Live market tape under the hero (TradingView ticker-tape widget). */
 export default function LiveTape({ locale }: { locale: Locale }) {
   return (
-    <div className="border-t border-white/10 bg-white/[0.04]" aria-label="Live market tape">
+    <div className="relative z-10 border-t border-black/5 bg-fog" aria-label="Live market tape">
       <TvWidget
         locale={locale}
         src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
-        config={{ symbols, showSymbolLogo: false, isTransparent: true, displayMode: "adaptive", colorTheme: "dark" }}
+        config={{ symbols, showSymbolLogo: false, isTransparent: true, displayMode: "adaptive", colorTheme: "light" }}
         className="h-[46px]"
       />
     </div>

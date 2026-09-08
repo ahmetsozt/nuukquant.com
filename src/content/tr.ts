@@ -103,7 +103,7 @@ export const tr: ContentOverride = {
         { value: "3,000+", label: "webinar ve seminerlerde eğitim verilen yatırımcı" },
         { value: "10+", label: "aracı kurum ortaklığı; altısı bu sitede listeleniyor" },
       ],
-      pressTitle: "Basında",
+      pressTitle: "Partner aracı kurumlar",
       press: ["[FILL: media 1]", "[FILL: media 2]", "[FILL: media 3]", "[FILL: media 4]"],
     },
     numbersTitle: "Doğrulayabileceğiniz rakamlar*",

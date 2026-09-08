@@ -173,7 +173,7 @@ export const en = {
         { value: "3,000+", label: "investors trained in webinars and seminars" },
         { value: "10+", label: "broker partnerships, six listed on this site" },
       ],
-      pressTitle: "Featured in",
+      pressTitle: "Partner brokers",
       press: ["[FILL: media 1]", "[FILL: media 2]", "[FILL: media 3]", "[FILL: media 4]"],
     },
     numbersTitle: "Numbers you can verify*",

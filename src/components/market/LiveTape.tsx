@@ -16,16 +16,21 @@ const symbols = [
   { proName: "BITSTAMP:ETHUSD", title: "ETH/USD" },
 ];
 
+/** Scale factor for the widget: its font size is not configurable, so the iframe is scaled down. */
+const SCALE = 0.85;
+
 /** Live market tape under the hero (TradingView ticker-tape widget). */
 export default function LiveTape({ locale }: { locale: Locale }) {
   return (
-    <div className="relative z-10 border-t border-black/5 bg-fog" aria-label="Live market tape">
-      <TvWidget
-        locale={locale}
-        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
-        config={{ symbols, showSymbolLogo: false, isTransparent: true, displayMode: "adaptive", colorTheme: "light" }}
-        className="h-[46px]"
-      />
+    <div dir="ltr" className="relative z-10 overflow-hidden border-t border-black/5 bg-[#e6e8ec]" aria-label="Live market tape" style={{ height: Math.round(46 * SCALE) }}>
+      <div style={{ width: `${100 / SCALE}%`, transform: `scale(${SCALE})`, transformOrigin: "top left" }}>
+        <TvWidget
+          locale={locale}
+          src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+          config={{ symbols, showSymbolLogo: false, isTransparent: true, displayMode: "adaptive", colorTheme: "light" }}
+          className="h-[46px]"
+        />
+      </div>
     </div>
   );
 }

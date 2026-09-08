@@ -16,7 +16,7 @@ export function BrokerCardCompact({ b, c }: { b: Broker; c: SiteContent }) {
   return (
     <article className="rv group flex flex-col overflow-hidden rounded-card bg-white shadow-card ring-1 ring-black/5 transition hover:-translate-y-1 hover:shadow-hover">
       <div className="relative flex h-28 items-center justify-center bg-fog">
-        <BrokerLogo slug={b.slug} name={b.name} className="h-12 scale-125" />
+        <BrokerLogo slug={b.slug} name={b.name} height={44} className="max-w-[60%]" />
         <div className="absolute top-4 end-4">
           <Badge status={b.status} c={c} />
         </div>

@@ -75,7 +75,7 @@ export default async function BrokerLandingPage({ params }: { params: Params }) 
           <Blob className="h-full w-full">
             <div className="flex h-full w-full items-center justify-center">
               <div className="rounded-card bg-white px-10 py-8 shadow-card">
-                <BrokerLogo slug={b.slug} name={b.name} className="h-14 scale-150" />
+                <BrokerLogo slug={b.slug} name={b.name} height={56} />
               </div>
             </div>
           </Blob>

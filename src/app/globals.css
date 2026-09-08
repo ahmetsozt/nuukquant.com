@@ -130,7 +130,7 @@
 
 /* Organic blob mask used for hero and page visuals */
 .blob {
-  border-radius: 58% 42% 48% 52% / 50% 38% 62% 50%;
+  border-radius: 66% 34% 56% 44% / 54% 42% 58% 46%;
 }
 .blob-alt {
   border-radius: 60% 40% 45% 55% / 40% 55% 45% 60%;

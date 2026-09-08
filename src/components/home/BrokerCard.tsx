@@ -9,12 +9,15 @@ import type { Broker, SiteContent } from "@/content/en";
 export function BrokerCardCompact({ b, c }: { b: Broker; c: SiteContent }) {
   const L = c.brokers.cardLabels;
   return (
-    <article className="rv flex flex-col rounded-xl bg-white p-6 ring-1 ring-black/5 shadow-card">
-      <div className="flex items-center justify-between gap-3">
-        <BrokerLogo slug={b.slug} name={b.name} />
-        <Badge status={b.status} c={c} />
+    <article className="rv group flex flex-col overflow-hidden rounded-xl bg-white ring-1 ring-black/5 shadow-card transition hover:-translate-y-0.5 hover:shadow-hover">
+      <div className="relative flex h-24 items-center justify-center bg-paper">
+        <BrokerLogo slug={b.slug} name={b.name} className="h-12 scale-125" />
+        <div className="absolute top-3 end-3">
+          <Badge status={b.status} c={c} />
+        </div>
       </div>
-      <h3 className="mt-5 text-[19px] leading-snug">
+      <div className="flex flex-1 flex-col p-6">
+      <h3 className="text-[19px] leading-snug">
         <Fill text={b.name} />
       </h3>
       <p className="mt-1 text-[14px] text-body">
@@ -57,6 +60,7 @@ export function BrokerCardCompact({ b, c }: { b: Broker; c: SiteContent }) {
         <Link href={`${c.nav[1].href}#${b.slug}`} className="inline-flex items-center gap-1 text-[13px] text-body hover:text-ink">
           {c.ui.learnMore} <Icon name="arrow-up-right" size={13} />
         </Link>
+      </div>
       </div>
     </article>
   );

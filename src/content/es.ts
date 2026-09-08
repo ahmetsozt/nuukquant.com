@@ -103,7 +103,7 @@ export const es: ContentOverride = {
         { label: "inversores formados en webinars y seminarios" },
         { label: "alianzas con brókeres, seis de ellas publicadas en este sitio" },
       ],
-      pressTitle: "Han hablado de mí",
+      pressTitle: "Brókers asociados",
     },
     numbersTitle: "Cifras que puede verificar*",
     numbersNote: "*Cada cifra enlaza a su fuente: servicio de verificación, extracto del bróker o registro del evento.",

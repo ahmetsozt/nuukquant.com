@@ -105,7 +105,7 @@ export const fr: ContentOverride = {
         { label: "investisseurs formés lors de webinaires et de séminaires" },
         { label: "partenariats avec des courtiers, dont six présentés sur ce site" },
       ],
-      pressTitle: "Vu dans",
+      pressTitle: "Courtiers partenaires",
     },
     numbersTitle: "Des chiffres que vous pouvez vérifier*",
     numbersNote: "*Chaque chiffre renvoie à sa source : service de vérification, relevé de courtier ou registre d'événements.",

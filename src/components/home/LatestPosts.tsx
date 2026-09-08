@@ -14,8 +14,8 @@ export default function LatestPosts({ c }: { c: SiteContent }) {
           </Button>
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {c.insights.posts.slice(0, 3).map((p) => (
-            <PostCard key={p.title + p.date} p={p} c={c} />
+          {c.insights.posts.slice(0, 3).map((p, i) => (
+            <PostCard key={i} p={p} c={c} />
           ))}
         </div>
       </div>

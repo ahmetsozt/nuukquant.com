@@ -1,486 +1,666 @@
+/**
+ * Single source of truth for all site copy. Other locales override parts of this
+ * object (see src/i18n.ts). Anything marked "[FILL]" is a placeholder waiting for
+ * real data from Ahmet.
+ */
 export type NavLink = { label: string; href: string };
 export type NavGroup = { label: string; href: string; items: NavLink[] };
+export type Cta = { label: string; href: string };
+export type Status = "live" | "verified" | "test" | "paused" | "soon";
+
+export type Broker = {
+  slug: string;
+  name: string;
+  tagline: string;
+  regulator: string;
+  licence: string;
+  founded: string;
+  minDeposit: string;
+  platforms: string[];
+  spreads: { pair: string; value: string }[];
+  commission: string;
+  leverage: string;
+  funding: string[];
+  withdrawalTime: string;
+  islamic: boolean;
+  languages: string;
+  bestFor: string;
+  pros: string[];
+  cons: string[];
+  referralHref: string;
+  steps: string[];
+  status: Status;
+};
+
+export type TradingSystem = {
+  slug: string;
+  name: string;
+  assetClass: string;
+  timeframe: string;
+  method: string;
+  riskProfile: string;
+  status: Status;
+  since: string;
+  summary: string;
+  stats: { label: string; value: string }[];
+};
+
+export type PerformanceCard = {
+  name: string;
+  source: string;
+  verifiedHref: string;
+  status: Status;
+  since: string;
+  updated: string;
+  stats: { label: string; value: string; tone?: "up" | "down" | "neutral" }[];
+  series: number[];
+};
 
 export const en = {
   meta: {
-    title: "NUUK — Financial AI Infrastructure",
+    title: "Ahmet S. Öztürk — Economist, Investor, Founder of NUUK",
     description:
-      "AI-engineered quantitative trading and execution infrastructure for institutions and professional investors. FX, commodities, indices, equities and digital assets across 50+ venues.",
+      "Economist and investor based in DIFC, Dubai. AI-driven trading systems, managed accounts, broker partnerships, market signals and investor education.",
   },
   brand: {
     name: "NUUK",
+    person: "Ahmet S. Öztürk",
+    role: "Economist · Investor · Founder",
     legalName: "NUUK Quant",
     email: "info@nuukquant.com",
     phone: "+971 58 688 4464",
     phoneHref: "tel:+971586884464",
+    whatsapp: "https://wa.me/971586884464",
+    telegram: "[FILL: Telegram channel link]",
+    calendly: "[FILL: Calendly link]",
     office: "Dubai International Financial Centre (DIFC), Dubai, UAE",
   },
   ui: {
     contact: "Contact",
-    getStarted: "Get Started",
-    contactUs: "Contact Us",
-    learnMore: "Learn More",
+    getStarted: "Book a call",
+    contactUs: "Contact",
+    learnMore: "Learn more",
     language: "Language",
     openMenu: "Open menu",
     closeMenu: "Close menu",
-    home: "NUUK home",
+    home: "Home",
     noPosts: "No posts in this category yet.",
     riskDisclosure: "Risk disclosure",
+    verified: "Verified",
+    live: "Live",
+    test: "Testing",
+    paused: "Paused",
+    soon: "Coming soon",
+    updated: "Updated",
+    since: "Since",
+    source: "Source",
+    openAccount: "Open account",
+    compare: "Compare brokers",
+    subscribe: "Subscribe",
+    register: "Register",
+    requestDemo: "Request a demo",
+    viewAll: "View all",
+    readMore: "Read more",
+    fill: "[FILL]",
   },
   nav: [
     {
-      label: "Clients",
-      href: "/clients/",
+      label: "Services",
+      href: "/#services",
       items: [
-        { label: "Banks", href: "/clients/banks/" },
-        { label: "Brokerages", href: "/clients/brokerages/" },
-        { label: "Asset Managers", href: "/clients/asset-managers/" },
-        { label: "Family Offices", href: "/clients/family-offices/" },
-        { label: "Professional Traders", href: "/clients/professional-traders/" },
-        { label: "Individual Investors", href: "/clients/individual-investors/" },
+        { label: "AI trading systems", href: "/ai-trading/" },
+        { label: "Track record", href: "/track-record/" },
+        { label: "Managed accounts", href: "/portfolio-management/" },
+        { label: "Broker partners", href: "/brokers/" },
+        { label: "Signals & reports", href: "/signals/" },
+        { label: "Education", href: "/education/" },
       ],
     },
+    { label: "Brokers", href: "/brokers/", items: [] },
+    { label: "Track record", href: "/track-record/", items: [] },
+    { label: "Insights", href: "/insights/", items: [] },
     {
-      label: "Markets",
-      href: "/markets/",
+      label: "About",
+      href: "/about/",
       items: [
-        { label: "All Markets", href: "/markets/" },
-        { label: "Foreign Exchange", href: "/markets/#fx" },
-        { label: "Commodities", href: "/markets/#commodities" },
-        { label: "Equity Indices", href: "/markets/#indices" },
-        { label: "Equities & ETFs", href: "/markets/#equities" },
-        { label: "Fixed Income", href: "/markets/#bonds" },
-        { label: "Metals", href: "/markets/#metals" },
-        { label: "Digital Assets", href: "/markets/#crypto" },
-        { label: "Fee Structure", href: "/markets/pricing-overview/" },
-      ],
-    },
-    {
-      label: "Technology",
-      href: "/technology/",
-      items: [
-        { label: "Platform", href: "/technology/" },
-        { label: "API Integration", href: "/technology/#api" },
-        { label: "AI Intelligence", href: "/technology/#ai" },
-        { label: "Infrastructure", href: "/technology/#infrastructure" },
-      ],
-    },
-    {
-      label: "Insights",
-      href: "/#insights",
-      items: [
-        { label: "Market Insights", href: "/#insights" },
-        { label: "Press", href: "/#insights" },
-        { label: "Events", href: "/#insights" },
-      ],
-    },
-    {
-      label: "About Us",
-      href: "/company/",
-      items: [
-        { label: "Our Story", href: "/company/" },
-        { label: "Contact Us", href: "/contact-us/" },
-        { label: "Careers", href: "mailto:info@nuukquant.com?subject=Careers" },
+        { label: "Story", href: "/about/" },
+        { label: "Contact", href: "/contact-us/" },
+        { label: "Risk disclosure", href: "/legal/risk-disclosure/" },
+        { label: "IB disclosure", href: "/legal/ib-disclosure/" },
       ],
     },
   ] as NavGroup[],
   legalLinks: [
-    { label: "Risk Disclosure", href: "#risk" },
-    { label: "Privacy", href: "#" },
-    { label: "Terms of Use", href: "#" },
-    { label: "Cookies", href: "#" },
-    { label: "Fee Structure", href: "/markets/pricing-overview/" },
+    { label: "Risk disclosure", href: "/legal/risk-disclosure/" },
+    { label: "IB disclosure", href: "/legal/ib-disclosure/" },
+    { label: "Privacy", href: "/legal/privacy/" },
+    { label: "Terms", href: "/legal/terms/" },
   ] as NavLink[],
   socials: [
-    { label: "LinkedIn", href: "#", icon: "in" },
-    { label: "X", href: "#", icon: "x" },
-    { label: "YouTube", href: "#", icon: "yt" },
-    { label: "Instagram", href: "#", icon: "ig" },
+    { label: "LinkedIn", href: "[FILL: LinkedIn URL]", icon: "in" },
+    { label: "X", href: "[FILL: X URL]", icon: "x" },
+    { label: "YouTube", href: "[FILL: YouTube URL]", icon: "yt" },
+    { label: "Instagram", href: "[FILL: Instagram URL]", icon: "ig" },
   ],
+
   home: {
     hero: {
-      title: ["Precision.", "Intelligence.", "Execution."],
-      kicker: "AI-ENGINEERED TRADING INFRASTRUCTURE",
-      body:
-        "NUUK is an AI-engineered quantitative trading company operating in global financial markets. We build proprietary algorithms, machine-learning models and institutional execution systems for disciplined, risk-controlled trading across FX, commodities, indices, equities and digital assets.",
-      cta: { label: "Contact Us", href: "/contact-us/" },
+      kicker: "Economist · Investor · Founder of NUUK",
+      title: "Markets, read with discipline.",
+      lead:
+        "I build AI-driven trading systems, run my own capital, manage investor accounts and teach people to trade for themselves. Everything here is backed by a verifiable track record.",
+      primary: { label: "Choose a broker", href: "/brokers/" },
+      secondary: { label: "Book a call", href: "/contact-us/" },
+      portraitAlt: "Ahmet S. Öztürk",
+      trust: [
+        { value: "[FILL]", label: "years in markets" },
+        { value: "[FILL]", label: "strategies running live" },
+        { value: "[FILL]", label: "investors trained" },
+        { value: "[FILL]", label: "broker partners" },
+      ],
+      pressTitle: "Featured in",
+      press: ["[FILL: media 1]", "[FILL: media 2]", "[FILL: media 3]", "[FILL: media 4]"],
     },
-    audiences: [
-      { label: "Banks", href: "/clients/banks/" },
-      { label: "Brokerages", href: "/clients/brokerages/" },
-      { label: "Asset Managers", href: "/clients/asset-managers/" },
-      { label: "Family Offices", href: "/clients/family-offices/" },
-      { label: "Professional Traders", href: "/clients/professional-traders/" },
-      { label: "Individual Investors", href: "/clients/individual-investors/" },
+    pillarsTitle: "Five ways we work together",
+    pillarsLead: "One person, five doors. Pick the one that fits where you are today.",
+    pillars: [
+      { icon: "cpu", title: "AI trading systems", body: "Proprietary algorithms coded, tested and run live across FX, indices, commodities and digital assets.", who: "For allocators and technical investors", href: "/ai-trading/" },
+      { icon: "chart", title: "Verified track record", body: "My own portfolio and managed strategies, reported through independent verification.", who: "For anyone deciding whether to trust me", href: "/track-record/" },
+      { icon: "briefcase", title: "Managed accounts", body: "Your capital stays in your own broker account. I trade it under agreed risk limits and a performance fee.", who: "For investors who want it done for them", href: "/portfolio-management/" },
+      { icon: "handshake", title: "Broker partners", body: "Independent comparison of the brokers I work with, with a step-by-step account guide for each.", who: "For self-directed traders choosing a broker", href: "/brokers/" },
+      { icon: "signal", title: "Signals, reports & education", body: "Daily notes, weekly reports, trade ideas with full reasoning, and live webinars that teach the method.", who: "For traders who want to learn and stay informed", href: "/signals/" },
     ],
-    core: [
-      {
-        title: ["Multi-Asset", "Coverage"],
-        body: "FX, commodities, equity indices, equities, fixed income, metals and digital assets, reached through a diversified network of regulated venues and liquidity providers.",
-        href: "/markets/",
-        icon: "diversification",
+    record: {
+      kicker: "Track record",
+      title: "Numbers you can check yourself",
+      lead: "Every figure below is pulled from an independent verification service, not typed in by hand.",
+      cta: { label: "See the full track record", href: "/track-record/" },
+    },
+    brokers: {
+      kicker: "Broker partners",
+      title: "Where I trade, and why",
+      lead: "I only list brokers I use or have audited myself. Each card shows regulation, real spreads and funding details.",
+      cta: { label: "Compare all brokers", href: "/brokers/" },
+    },
+    systems: {
+      kicker: "AI trading",
+      title: "Systems built in-house",
+      lead: "Each system is documented: data, model, risk rules, execution and whether it is live or still in testing.",
+      cta: { label: "Explore the systems", href: "/ai-trading/" },
+    },
+    signals: {
+      kicker: "Signals & reports",
+      title: "Trade ideas with the reasoning attached",
+      lead: "Instrument, direction, entry, stop, target and why. Delivered on Telegram and by email.",
+      sample: {
+        instrument: "XAU/USD",
+        direction: "Long",
+        entry: "[FILL]",
+        stop: "[FILL]",
+        target: "[FILL]",
+        rr: "[FILL]",
+        note: "[FILL: one-paragraph reasoning for the sample idea]",
+        date: "[FILL: date]",
       },
-      {
-        title: ["Proprietary", "Technology"],
-        body: "Custom-built machine-learning models, ultra-low-latency execution and a web platform with FIX and HTTP API access.",
-        href: "/technology/",
-        icon: "technology",
-      },
-      {
-        title: ["Transparent", "Fee Structure"],
-        body: "Clear execution, financing and data charges agreed up front. No hidden mark-ups.",
-        href: "/markets/pricing-overview/",
-        icon: "pricing",
-      },
-      {
-        title: ["Institutional", "Service"],
-        body: "A dedicated relationship manager backed by our execution desk, risk team and engineers.",
-        href: "/contact-us/",
-        icon: "service",
-      },
+      cta: { label: "See plans", href: "/signals/" },
+    },
+    education: {
+      kicker: "Education",
+      title: "Next live session",
+      cta: { label: "All events", href: "/education/" },
+    },
+    testimonialsTitle: "What investors say",
+    testimonials: [
+      { quote: "[FILL: real, approved testimonial]", name: "[FILL: name]", role: "[FILL: role, city]" },
+      { quote: "[FILL: real, approved testimonial]", name: "[FILL: name]", role: "[FILL: role, city]" },
+      { quote: "[FILL: real, approved testimonial]", name: "[FILL: name]", role: "[FILL: role, city]" },
     ],
-    servicing: {
-      title: "One Team Serving Institutions and Professional Investors Worldwide",
-      items: [
-        "Structured onboarding with access to the platform and API tools from day one",
-        "Coverage across time zones from our base in DIFC, Dubai",
-        "Execution desk support for block, OTC and multi-venue orders",
-        "Post-trade reporting, reconciliation and risk analytics",
-      ],
-      cta: { label: "Get Started", href: "/contact-us/" },
-    },
-    network: {
-      title: "Our Network",
-      partners: [
-        "Tier-1 FX ECNs",
-        "Global Futures Exchanges",
-        "Equity Index Venues",
-        "Digital Asset Venues",
-        "Prime Custodians",
-        "Liquidity Providers",
-      ],
-    },
-    experts: {
-      title: "Proprietary Trading Platform",
-      items: [
-        {
-          title: "Built by Engineers",
-          body: "A web platform and execution engine designed in-house, delivered through a single multi-currency account.",
-        },
-        {
-          title: "Customisation and Integrations",
-          body: "FIX and HTTP APIs, tailored instrument sets and white-label deployments for partners who need their own front end.",
-        },
-        {
-          title: "Distributed Infrastructure",
-          body: "Co-located, redundant infrastructure across the major trading hubs with sub-millisecond internal latency.",
-        },
-      ],
-      cta: { label: "Learn More", href: "/technology/" },
-      imageAlt: "NUUK trading platform on desktop, laptop and phone",
-    },
-    exchanges: {
-      title: "Global Venue Coverage",
-      groups: [
-        [
-          { city: "New York, United States", codes: ["NYSE", "NASDAQ"] },
-          { city: "Chicago, United States", codes: ["CME", "CBOT", "CBOE"] },
-          { city: "Atlanta, United States", codes: ["ICE"] },
-        ],
-        [
-          { city: "London, United Kingdom", codes: ["LSE", "ICE Futures Europe"] },
-          { city: "Frankfurt, Germany", codes: ["Eurex", "Xetra"] },
-          { city: "Zurich, Switzerland", codes: ["SIX"] },
-        ],
-        [
-          { city: "Dubai, UAE", codes: ["DGCX", "DFM"] },
-          { city: "Abu Dhabi, UAE", codes: ["ADX"] },
-        ],
-        [
-          { city: "Hong Kong", codes: ["HKEX"] },
-          { city: "Singapore", codes: ["SGX"] },
-          { city: "Tokyo, Japan", codes: ["JPX"] },
-        ],
-      ],
-    },
-    broker: {
-      title: "Built on Governance",
-      body:
-        "Our infrastructure connects to a diversified network of regulated venues, custodians and liquidity providers, enabling automated, multi-venue execution with data integrity, latency efficiency and complete systematic governance.",
-      cta: { label: "About NUUK", href: "/company/" },
-      items: [
-        { title: "Systematic Governance", body: "Every decision is rule-based, logged and auditable." },
-        { title: "Trusted Counterparties", body: "Regulated venues and established liquidity providers only." },
-        { title: "Secure Custody", body: "Client assets held with established custodians." },
-        { title: "Segregated Assets", body: "Client assets kept separate from company funds." },
-      ],
-    },
-    pulse: {
-      title: "NUUK Insights",
-      tabs: ["All Posts", "Insights", "Press", "Events"],
-      posts: [
-        {
-          title: "Rates, growth and the dollar into year-end",
-          excerpt: "What our macro models are pricing across FX and rates as the policy path is repriced.",
-          tag: "Insight",
-          category: "Insights",
-          date: "Sep 4, 2026",
-          tone: "stocks",
-        },
-        {
-          title: "Gold near record highs: what the signal engine sees",
-          excerpt: "Metals stay bid while real yields soften. A look at our momentum and mean-reversion signals.",
-          tag: "Insight",
-          category: "Insights",
-          date: "Sep 3, 2026",
-          tone: "metals",
-        },
-        {
-          title: "NUUK expands multi-venue connectivity",
-          excerpt: "New direct connections add depth across FX, futures and digital asset venues.",
-          tag: "Press",
-          category: "Press",
-          date: "Sep 2, 2026",
-          tone: "currencies",
-        },
-        {
-          title: "Institutional roundtables at DIFC this autumn",
-          excerpt: "Join our team for a series of closed-door sessions on AI in execution and risk.",
-          tag: "Event",
-          category: "Events",
-          date: "Sep 1, 2026",
-          tone: "crypto",
-        },
-      ],
-    },
+    postsTitle: "Latest insights",
   },
-  audiences: {
-    banks: {
-      title: "Banks",
-      intro:
-        "Execution, connectivity and AI-driven analytics for banks that need multi-asset market access through a single, disciplined counterparty.",
-      highlights: [
-        { title: "Direct API", body: "FIX and HTTP connectivity for order routing, market data and reporting." },
-        { title: "White Label", body: "Deploy our platform under your brand with tailored instruments and permissions." },
-        { title: "Dedicated Support", body: "Execution desk and post-trade teams in your time zone." },
-      ],
-    },
-    brokerages: {
-      title: "Brokerages",
-      intro: "Extend your product range with multi-asset coverage, competitive execution and a scalable back office.",
-      highlights: [
-        { title: "Omnibus & Sub-Accounts", body: "Flexible account structures for end-client setups." },
-        { title: "White Label", body: "A ready-made trading front end that carries your brand." },
-        { title: "Dedicated Support", body: "Onboarding, execution desk and reconciliation support." },
-      ],
-    },
-    "asset-managers": {
-      title: "Asset Managers",
-      intro: "Execute across global venues from one multi-currency account with institutional reporting and custody.",
-      highlights: [
-        { title: "Multi-Asset Execution", body: "FX, commodities, indices, equities, fixed income, metals and digital assets." },
-        { title: "Portfolio Dashboards", body: "Real-time risk, exposure and P&L analytics." },
-        { title: "Dedicated Support", body: "A relationship manager backed by our execution desk." },
-      ],
-    },
-    "family-offices": {
-      title: "Family Offices",
-      intro: "Discreet, personalised service with global diversification and secure custody.",
-      highlights: [
-        { title: "Global Diversification", body: "Access to exchange-traded and OTC markets worldwide." },
-        { title: "Secure Custody", body: "Segregated assets with established custodians." },
-        { title: "Dedicated Support", body: "A single point of contact for every request." },
-      ],
-    },
-    "professional-traders": {
-      title: "Professional Traders",
-      intro: "Low-latency execution, live market depth and algorithmic tools built by engineers who trade.",
-      highlights: [
-        { title: "Live Market Depth", body: "Full order-book transparency across venues." },
-        { title: "Algorithmic Execution", body: "Automate entries and exits with rule-based orders." },
-        { title: "Risk Controls", body: "Position sizing, circuit breakers and real-time exposure limits." },
-      ],
-    },
-    "individual-investors": {
-      title: "Individual Investors",
-      intro: "Access new asset classes through one account and a platform that grows with you.",
-      highlights: [
-        { title: "New Asset Classes", body: "Equities, indices, metals and digital assets from one account." },
-        { title: "Transparent Fees", body: "Clear execution and financing charges, agreed up front." },
-        { title: "Dedicated Support", body: "Human support when you need it." },
-      ],
-    },
+
+  about: {
+    metaTitle: "About Ahmet S. Öztürk",
+    metaDescription: "Economist, investor and founder of NUUK. Career, approach and what I stand for.",
+    kicker: "About",
+    title: "Economist first, trader second, engineer by necessity.",
+    lead: "[FILL: 2–3 sentence personal introduction: background, why markets, what NUUK is.]",
+    portraitAlt: "Ahmet S. Öztürk",
+    timelineTitle: "Timeline",
+    timeline: [
+      { year: "[FILL]", title: "[FILL: milestone]", body: "[FILL: one sentence]" },
+      { year: "[FILL]", title: "[FILL: milestone]", body: "[FILL: one sentence]" },
+      { year: "[FILL]", title: "[FILL: milestone]", body: "[FILL: one sentence]" },
+      { year: "[FILL]", title: "[FILL: milestone]", body: "[FILL: one sentence]" },
+    ],
+    principlesTitle: "How I work",
+    principles: [
+      { title: "Evidence over opinion", body: "Every claim on this site links to a verifiable source or it is not made." },
+      { title: "Risk before return", body: "Position size, drawdown limits and stop rules are decided before any trade." },
+      { title: "Your money stays yours", body: "Managed accounts run inside your own broker account. I never take custody." },
+      { title: "Teach the method", body: "The goal of education is that you no longer need me." },
+    ],
+    focusTitle: "Markets I cover",
+    focus: ["BIST", "NYSE", "Forex", "Crypto", "Funds", "Commodities", "Real estate", "Old money"],
+    speakingTitle: "Speaking & media",
+    speaking: ["[FILL: event or publication]", "[FILL: event or publication]", "[FILL: event or publication]"],
   },
-  assetClasses: [
-    { id: "fx", label: "Foreign Exchange", tone: "currencies", body: "Spot FX majors, minors and exotics with Tier-1 ECN liquidity." },
-    { id: "commodities", label: "Commodities", tone: "futures", body: "Energy, agricultural and metals futures on major exchanges." },
-    { id: "indices", label: "Equity Indices", tone: "options", body: "Global index futures and CFDs with deep liquidity." },
-    { id: "equities", label: "Equities & ETFs", tone: "stocks", body: "Listed equities and ETFs across US, European and Asian venues." },
-    { id: "bonds", label: "Fixed Income", tone: "bonds", body: "Government and corporate bonds, exchange-traded and OTC." },
-    { id: "metals", label: "Metals", tone: "metals", body: "Gold, silver, platinum and palladium, spot and futures." },
-    { id: "crypto", label: "Digital Assets", tone: "crypto", body: "Major digital assets via regulated venues, 24/7." },
-  ],
-  technologyFeatures: [
-    { title: "Proprietary ML Models", body: "Adaptive learning systems trained on decades of market data." },
-    { title: "Ultra-Low Latency Execution", body: "Co-located servers, direct market access and smart order routing." },
-    { title: "Advanced Risk Management", body: "Automated position sizing, circuit breakers and stress testing." },
-    { title: "Multi-Venue Connectivity", body: "Direct connections to 50+ regulated venues and liquidity providers." },
-    { title: "Real-Time Data Aggregation", body: "Millions of market data points per second, normalised and validated." },
-    { title: "Bank-Grade Security", body: "Encryption, multi-factor authentication and hardware security modules." },
-    { title: "Portfolio Dashboards", body: "Real-time risk, exposure and P&L analytics." },
-    { title: "White Label Solutions", body: "Your brand on our infrastructure, engineered for control." },
-  ],
-  rateCategories: [
-    { title: "Execution Commissions", body: "Per-instrument commissions agreed in your fee schedule, disclosed before every trade." },
-    { title: "Financing", body: "Overnight financing on leveraged positions, quoted per instrument and currency." },
-    { title: "Borrow Costs", body: "Stock and asset borrow costs for short positions, disclosed before execution." },
-    { title: "Data & Connectivity", body: "Market data and API connectivity at flat, published rates." },
-    { title: "Custody & Settlement", body: "Custody, settlement and withdrawal charges listed in your schedule." },
-    { title: "Inactivity", body: "Applied only after a prolonged period without activity." },
-  ],
-  pages: {
-    ctaBand: {
-      title: "Where capital meets machine intelligence.",
-      body: "Talk to our team about onboarding, fees and integration.",
-      cta: { label: "Contact Us", href: "/contact-us/" },
+
+  aiTrading: {
+    metaTitle: "AI Trading Systems",
+    metaDescription: "Proprietary algorithmic trading systems: methodology, risk rules and live status.",
+    kicker: "AI trading",
+    title: "Systems, not signals from a black box",
+    lead: "Every system is built, back-tested and forward-tested before it touches real capital. Below is what each one does, how it manages risk and whether it is live today.",
+    cta: { label: "Request a demo", href: "/contact-us/" },
+    systemsTitle: "The systems",
+    methodTitle: "Methodology",
+    method: [
+      { step: "01", title: "Data", body: "Tick and bar data from primary venues, cleaned and time-aligned. Alternative data where it earns its place." },
+      { step: "02", title: "Model", body: "Rule-based signals combined with machine-learning filters. Nothing trades that cannot be explained in one paragraph." },
+      { step: "03", title: "Risk", body: "Volatility-scaled position sizing, hard daily loss limits and circuit breakers that flatten everything." },
+      { step: "04", title: "Execution", body: "Broker APIs and FIX where available; slippage and fill quality tracked per venue." },
+      { step: "05", title: "Review", body: "Weekly review of live vs. expected performance. Systems that drift are paused, not tweaked mid-flight." },
+    ],
+    faqTitle: "Common questions",
+    faq: [
+      { q: "Can I run a system on my own account?", a: "[FILL: yes/no and how — copy trading, MAM, licence]" },
+      { q: "What is the minimum capital?", a: "[FILL]" },
+      { q: "Do you share the code?", a: "[FILL]" },
+    ],
+  },
+
+  trackRecord: {
+    metaTitle: "Track Record",
+    metaDescription: "Independently verified performance of Ahmet S. Öztürk's own portfolio and managed strategies.",
+    kicker: "Track record",
+    title: "Verified, or not shown",
+    lead: "Performance is reported through third-party verification linked to the broker account. If a number cannot be verified, it is not on this page.",
+    disclaimer: "Past performance is not a guarantee of future results. Figures are net of trading costs and gross of any performance fee unless stated otherwise.",
+    methodologyTitle: "How to read these numbers",
+    methodology: [
+      { title: "Verified", body: "Linked to the broker account via a read-only connection. The verification service, not this site, calculates the figures." },
+      { title: "Max drawdown", body: "Largest peak-to-trough decline in account equity, including open positions." },
+      { title: "Profit factor", body: "Gross profit divided by gross loss. Above 1.0 means the strategy made money over the period." },
+    ],
+    pending: "Verification is being set up for this account. Figures will appear here automatically once the read-only link is live.",
+  },
+
+  managed: {
+    metaTitle: "Managed Accounts",
+    metaDescription: "How managed accounts work: your capital stays in your own broker account, traded under agreed risk limits.",
+    kicker: "Managed accounts",
+    title: "Your account. My execution. Agreed limits.",
+    lead: "Capital never leaves your name. You open an account with a partner broker, connect it to the managed structure, and I trade it within a written risk mandate.",
+    cta: { label: "Request an introductory call", href: "/contact-us/" },
+    howTitle: "How it works",
+    how: [
+      { step: "01", title: "Discovery call", body: "We discuss objectives, horizon, liquidity needs and how much drawdown you can genuinely tolerate." },
+      { step: "02", title: "Account setup", body: "You open an account at a partner broker in your own name and fund it. I receive trading permission only, never withdrawal rights." },
+      { step: "03", title: "Risk mandate", body: "A written mandate sets maximum exposure, daily loss limit and instruments. It cannot be exceeded by the system." },
+      { step: "04", title: "Reporting", body: "You see every trade in real time in your own account, plus a monthly report and a quarterly review call." },
+    ],
+    termsTitle: "Terms at a glance",
+    terms: [
+      { label: "Minimum allocation", value: "[FILL]" },
+      { label: "Performance fee", value: "[FILL: e.g. 20% above high-water mark]" },
+      { label: "Management fee", value: "[FILL: e.g. none]" },
+      { label: "Lock-up", value: "[FILL: e.g. none, withdraw any time]" },
+      { label: "Reporting", value: "Real time in your account; monthly statement" },
+      { label: "Structure", value: "[FILL: MAM / PAMM / copy trading via partner broker]" },
+    ],
+    fitTitle: "Who it is for",
+    fit: ["Investors who want professional execution without giving up custody", "Family offices seeking a satellite allocation to systematic strategies", "Business owners with idle treasury balances"],
+    notFitTitle: "Who it is not for",
+    notFit: ["Anyone who cannot tolerate a [FILL]% drawdown", "Capital needed within [FILL] months", "Anyone expecting fixed or guaranteed returns"],
+    compliance: "[FILL: authorisation status. Until confirmed, this service is described as a managed-account arrangement operated through the partner broker's own structure.]",
+  },
+
+  brokers: {
+    metaTitle: "Broker Partners",
+    metaDescription: "Independent comparison of partner brokers: regulation, spreads, funding, platforms and step-by-step account opening.",
+    kicker: "Broker partners",
+    title: "The brokers I work with",
+    lead: "I refer clients only to brokers I trade with or have audited. Cards below show what matters: who regulates them, what they really charge and how fast money moves.",
+    disclosure: "Links on this page are referral links. If you open and fund an account through them I earn a commission from the broker. This does not change the spreads or commissions you pay.",
+    compareTitle: "Side by side",
+    cardLabels: {
+      regulator: "Regulator",
+      licence: "Licence",
+      founded: "Founded",
+      minDeposit: "Minimum deposit",
+      platforms: "Platforms",
+      spreads: "Typical spreads",
+      commission: "Commission",
+      leverage: "Max leverage",
+      funding: "Funding",
+      withdrawal: "Withdrawal time",
+      islamic: "Islamic account",
+      languages: "Support",
+      bestFor: "Best for",
+      pros: "Strengths",
+      cons: "Watch out for",
+      steps: "How to open an account",
+      yes: "Yes",
+      no: "No",
     },
-    clients: {
-      metaTitle: "Clients: Institutions, Family Offices & Traders",
-      metaDescription: "Why banks, brokerages, asset managers, family offices and professional traders choose NUUK.",
-      kicker: "Clients",
-      title: "Our clients",
-      intro: "From banks to individual investors, NUUK provides one platform, one account and one point of contact.",
-      whyTitle: "Why professionals choose NUUK",
-      reasons: [
-        { title: "Institutional discipline", body: "Systematic governance across execution, risk and reporting." },
-        { title: "Trusted by professionals", body: "Built for institutions and professional investors, from DIFC to the world." },
-        { title: "Access across 50+ venues", body: "One multi-currency account, all major asset classes." },
-        { title: "Institutional technology", body: "Proprietary platform, FIX/HTTP APIs and AI-driven analytics." },
-        { title: "Always available", body: "A global team and execution desk in your time zone." },
-      ],
-      whoTitle: "Who we serve",
-      ctaTitle: "Start the right conversation",
-    },
-    audience: {
-      kicker: "Clients",
-      supportTitle: "Dedicated Support",
-      supportBody: "A relationship manager, execution desk and engineering team in your time zone.",
-    },
-    markets: {
-      metaTitle: "Markets: Multi-Asset Coverage Across 50+ Venues",
-      metaDescription: "FX, commodities, equity indices, equities, fixed income, metals and digital assets from one multi-currency account.",
-      kicker: "Markets",
-      title: "Markets",
-      intro: "Trade the world's most liquid markets from a single, multi-currency account.",
-      cta: { label: "Get Started", href: "/contact-us/" },
-      kpis: [
-        ["50+", "regulated venues"],
-        ["150+", "active AI models"],
-        ["<5ms", "average execution latency"],
-      ],
-      assetsTitle: "Asset Classes",
-      features: [
-        { title: "Global Venue Access", body: "One account for venues in the Americas, Europe, the Middle East and Asia." },
-        { title: "Safe Asset Custody", body: "Segregated client assets with established custodians." },
-        { title: "Cross-Margining", body: "Portfolio-level margin across asset classes." },
-        { title: "Proprietary Technology", body: "Web platform, FIX/HTTP API and AI-driven analytics." },
-      ],
-      depositsTitle: "Multi-Currency Deposits",
-      depositsBody:
-        "Fund your account in USD, EUR, GBP, AED and other major currencies. Hold balances in multiple currencies simultaneously and settle trades without forced conversion.",
-    },
-    pricing: {
-      metaTitle: "Fee Structure",
-      metaDescription: "Clear execution, financing, data and custody charges, agreed up front.",
-      kicker: "Markets",
-      title: "Fee Structure",
-      intro: "Clear execution, financing, data and custody charges, agreed up front. No hidden mark-ups.",
-      cta: { label: "Request a Schedule", href: "/contact-us/" },
-      assetsTitle: "Asset Classes",
-      assetNote: "Commission and financing: per your fee schedule",
-      ratesTitle: "What You Pay For",
-      ctaTitle: "Request your fee schedule",
-      ctaBody: "Institutional and professional clients receive a tailored schedule before onboarding.",
-    },
-    technology: {
-      metaTitle: "Trading Technology: Platform, APIs & AI",
-      metaDescription: "Proprietary web platform, FIX and HTTP APIs, white label and AI-driven market intelligence.",
-      kicker: "Technology",
-      title: "Proprietary Technology",
-      intro: "Enterprise-grade systems engineered for speed, reliability and performance: machine learning, low-latency execution and risk control in one stack.",
-      cta: { label: "Request Demo", href: "/contact-us/" },
-      stackTitle: "Advanced technology stack",
-      httpTitle: "HTTP API",
-      httpBody: "REST endpoints for market data, orders, positions and reporting. Ideal for portfolio tooling, dashboards and automated strategies. No minimum commitment required.",
-      fixTitle: "FIX API",
-      fixBody: "Low-latency FIX 4.4 sessions for order routing and drop-copy, co-located across global trading hubs for institutional execution quality.",
-      aiTitle: "Next-generation AI intelligence",
-      ai: [
-        { title: "Deep Learning Networks", body: "Multi-layered neural networks trained on billions of data points, combining LSTM, transformer models and reinforcement learning." },
-        { title: "Predictive Analytics Engine", body: "Forecasting models that analyse sentiment, order flow, volatility and macro indicators, continuously validated against real outcomes." },
-        { title: "Risk Governance", body: "Real-time exposure limits, circuit breakers and stress tests guard capital around the clock." },
-      ],
-      infraTitle: "Global Trading Infrastructure",
-      infraBody: "Direct connections to 50+ regulated venues and liquidity providers with redundant network architecture, real-time data aggregation and bank-grade security. White-label deployments available for partners.",
-      infraCta: { label: "Talk to our engineers", href: "/contact-us/" },
-    },
-    company: {
-      metaTitle: "About NUUK: AI-Engineered Trading Infrastructure",
-      metaDescription: "NUUK is an AI-engineered quantitative trading and infrastructure company headquartered in DIFC, Dubai.",
-      kicker: "About Us",
-      title: "Our Story",
-      intro: "NUUK is an AI-engineered quantitative trading and infrastructure company. We combine proprietary algorithms, institutional execution systems and a global venue network to give professionals disciplined access to world markets.",
-      principlesTitle: "Guiding Principles",
-      principles: [
-        { title: "Discipline", body: "Every decision is systematic, risk-controlled and auditable." },
-        { title: "Transparency", body: "Clear pricing, clear reporting and clear communication." },
-        { title: "Engineering", body: "We build our own platforms, models and connectivity." },
-        { title: "Partnership", body: "A relationship manager who knows your business." },
-      ],
-      deliverTitle: "You drive the change, we deliver",
-      deliverBody: "Our infrastructure connects to a diversified network of regulated global venues and liquidity providers, enabling automated, multi-venue execution with data integrity, latency efficiency and complete systematic governance.",
-      ctaTitle: "International team, local presence",
-      ctaBody: "Headquartered in DIFC, Dubai, serving clients across time zones.",
-    },
-    contact: {
-      metaTitle: "Contact Us",
-      metaDescription: "Talk to our team about onboarding, fees and integration.",
-      kicker: "About Us",
-      title: "Contact Us",
-      intro: "Customer support, account management and enquiries.",
-      supportTitle: "Customer Support",
-      managerTitle: "Talk to our team in Dubai",
-      formTitle: "Suggestions & Enquiries",
-      form: {
-        name: "Name",
-        namePlaceholder: "Your name",
-        email: "Email",
-        emailPlaceholder: "you@company.com",
-        company: "Company (optional)",
-        companyPlaceholder: "Company",
-        message: "Message",
-        messagePlaceholder: "How can we help?",
-        submit: "Send enquiry",
-        note: "This opens your email client with the message pre-filled. No data is stored on this site.",
-        errorRequired: "Please fill in your name, email and message.",
-        errorEmail: "Please enter a valid email address.",
-        subject: "Enquiry from",
+    list: [
+      {
+        slug: "broker-one",
+        name: "[FILL: Broker 1]",
+        tagline: "[FILL: one line]",
+        regulator: "[FILL: e.g. FCA, CySEC, DFSA]",
+        licence: "[FILL]",
+        founded: "[FILL]",
+        minDeposit: "[FILL]",
+        platforms: ["MT5", "cTrader", "[FILL]"],
+        spreads: [
+          { pair: "EUR/USD", value: "[FILL]" },
+          { pair: "XAU/USD", value: "[FILL]" },
+          { pair: "US500", value: "[FILL]" },
+        ],
+        commission: "[FILL]",
+        leverage: "[FILL]",
+        funding: ["Bank wire", "Card", "[FILL]"],
+        withdrawalTime: "[FILL]",
+        islamic: true,
+        languages: "[FILL]",
+        bestFor: "[FILL: profile]",
+        pros: ["[FILL]", "[FILL]", "[FILL]"],
+        cons: ["[FILL]", "[FILL]"],
+        referralHref: "[FILL: referral link]",
+        steps: ["Open the referral link and choose the account type", "Verify identity (passport + proof of address)", "Fund the account", "Download the platform and log in", "[FILL]"],
+        status: "live",
       },
-      ctaBody: "Institutional and professional enquiries are answered within one business day.",
-      ctaLabel: "Email us",
-    },
-    footer: {
-      copyright: "All rights reserved.",
-      legal1:
-        "is an AI-engineered quantitative trading and trading-infrastructure company based in the Dubai International Financial Centre. Services are offered to professional and institutional clients; availability depends on your jurisdiction and applicable regulation.",
-      legal2:
-        "Any information on this website is provided for informational purposes only and does not constitute investment advice or an offer or solicitation to buy or sell any financial instrument or service.",
-      risk1:
-        "Trading involves substantial risk. Investing in FX, commodities, indices, equities, fixed income, metals and digital assets can result in losses that exceed your initial investment, and trading on margin carries additional risk. Past performance of any model, strategy or system is not a guarantee of future results. Make sure you understand these risks before engaging any service.",
-      risk2: "Live market figures and system telemetry shown on this website are illustrative and may be delayed. Institutional enquiries only.",
-      risk3: "Please verify that any communication claiming to come from NUUK originates from the nuukquant.com domain. Report suspected misuse of our name to",
+      {
+        slug: "broker-two",
+        name: "[FILL: Broker 2]",
+        tagline: "[FILL: one line]",
+        regulator: "[FILL]",
+        licence: "[FILL]",
+        founded: "[FILL]",
+        minDeposit: "[FILL]",
+        platforms: ["MT4", "MT5"],
+        spreads: [
+          { pair: "EUR/USD", value: "[FILL]" },
+          { pair: "XAU/USD", value: "[FILL]" },
+          { pair: "US500", value: "[FILL]" },
+        ],
+        commission: "[FILL]",
+        leverage: "[FILL]",
+        funding: ["Bank wire", "Crypto", "[FILL]"],
+        withdrawalTime: "[FILL]",
+        islamic: false,
+        languages: "[FILL]",
+        bestFor: "[FILL: profile]",
+        pros: ["[FILL]", "[FILL]", "[FILL]"],
+        cons: ["[FILL]", "[FILL]"],
+        referralHref: "[FILL: referral link]",
+        steps: ["Open the referral link and choose the account type", "Verify identity", "Fund the account", "Log in to the platform"],
+        status: "live",
+      },
+      {
+        slug: "broker-three",
+        name: "[FILL: Broker 3]",
+        tagline: "[FILL: one line]",
+        regulator: "[FILL]",
+        licence: "[FILL]",
+        founded: "[FILL]",
+        minDeposit: "[FILL]",
+        platforms: ["Proprietary", "MT5"],
+        spreads: [
+          { pair: "EUR/USD", value: "[FILL]" },
+          { pair: "XAU/USD", value: "[FILL]" },
+          { pair: "US500", value: "[FILL]" },
+        ],
+        commission: "[FILL]",
+        leverage: "[FILL]",
+        funding: ["Bank wire", "Card"],
+        withdrawalTime: "[FILL]",
+        islamic: true,
+        languages: "[FILL]",
+        bestFor: "[FILL: profile]",
+        pros: ["[FILL]", "[FILL]", "[FILL]"],
+        cons: ["[FILL]", "[FILL]"],
+        referralHref: "[FILL: referral link]",
+        steps: ["Open the referral link and choose the account type", "Verify identity", "Fund the account", "Log in to the platform"],
+        status: "soon",
+      },
+    ] as Broker[],
+  },
+
+  signals: {
+    metaTitle: "Signals & Reports",
+    metaDescription: "Daily market notes, weekly reports and trade ideas with full reasoning, delivered on Telegram and by email.",
+    kicker: "Signals & reports",
+    title: "Ideas with the reasoning attached",
+    lead: "No blind alerts. Every idea comes with instrument, direction, entry, stop, target, risk-reward and a paragraph explaining why. You learn while you trade.",
+    whatTitle: "What you receive",
+    what: [
+      { title: "Daily macro note", body: "One page before the London open: what matters today, key levels, scheduled risk." },
+      { title: "Weekly report", body: "Positioning, themes and the week ahead across FX, indices, metals and digital assets." },
+      { title: "Trade ideas", body: "[FILL] ideas per month on average, each with entry, stop, target and reasoning." },
+      { title: "Live updates", body: "Management of open ideas: partial exits, stop moves, invalidation." },
+    ],
+    formatTitle: "Idea format",
+    plansTitle: "Plans",
+    plans: [
+      { name: "Reports", price: "[FILL]", period: "per month", features: ["Daily macro note", "Weekly report", "Archive access"], cta: "Subscribe", highlight: false },
+      { name: "Signals", price: "[FILL]", period: "per month", features: ["Everything in Reports", "Trade ideas with reasoning", "Live updates on Telegram", "Monthly performance sheet"], cta: "Subscribe", highlight: true },
+      { name: "Mentorship", price: "[FILL]", period: "per quarter", features: ["Everything in Signals", "Fortnightly 1:1 review", "Portfolio feedback", "Priority access to webinars"], cta: "Apply", highlight: false },
+    ],
+    performanceTitle: "Signal performance",
+    performanceNote: "Closed ideas are logged monthly with entry, exit and result. [FILL: link to the public log]",
+    disclaimer: "Signals are educational content and general market commentary. They are not personal investment advice and do not take your circumstances into account.",
+  },
+
+  education: {
+    metaTitle: "Webinars & Seminars",
+    metaDescription: "Live webinars and in-person seminars that teach investors to trade for themselves.",
+    kicker: "Education",
+    title: "Learn the method, then trade it yourself",
+    lead: "Live sessions, not recorded courses sold on autopilot. Small groups, real charts, real risk rules.",
+    upcomingTitle: "Upcoming sessions",
+    events: [
+      { date: "[FILL: 2026-10-01]", time: "[FILL: 19:00 GST]", title: "[FILL: session title]", format: "Online webinar", language: "English", price: "[FILL: Free / price]", seats: "[FILL]", href: "[FILL: registration link]" },
+      { date: "[FILL]", time: "[FILL]", title: "[FILL: session title]", format: "In-person, Dubai", language: "Turkish", price: "[FILL]", seats: "[FILL]", href: "[FILL]" },
+    ],
+    eventLabels: { format: "Format", language: "Language", price: "Price", seats: "Seats", register: "Register" },
+    curriculumTitle: "Curriculum",
+    curriculum: [
+      { level: "Foundation", title: "Risk first", topics: ["Position sizing", "Stop placement", "Expectancy", "Journaling"] },
+      { level: "Intermediate", title: "Reading the market", topics: ["Macro drivers", "Technical structure", "Correlations", "Session timing"] },
+      { level: "Advanced", title: "Systematic trading", topics: ["Strategy design", "Back-testing pitfalls", "Automation basics", "Portfolio of strategies"] },
+    ],
+    corporateTitle: "Corporate training",
+    corporateBody: "Custom programmes for brokerages, family offices and treasury teams. [FILL: one sentence on format and past clients]",
+    corporateCta: { label: "Enquire", href: "/contact-us/" },
+    archiveTitle: "Past sessions",
+    archive: [
+      { date: "[FILL]", title: "[FILL: recorded session]", href: "[FILL: recording link]" },
+      { date: "[FILL]", title: "[FILL: recorded session]", href: "[FILL]" },
+    ],
+  },
+
+  insights: {
+    metaTitle: "Insights",
+    metaDescription: "Market commentary on macro, FX, commodities, indices, crypto and AI in trading.",
+    kicker: "Insights",
+    title: "Notes from the desk",
+    tabs: ["All", "Macro", "FX", "Commodities", "Indices", "Crypto", "AI"],
+    posts: [
+      { title: "[FILL: post title]", excerpt: "[FILL: two-line summary]", category: "Macro", date: "[FILL: date]", tone: "stocks", href: "#" },
+      { title: "[FILL: post title]", excerpt: "[FILL: two-line summary]", category: "Commodities", date: "[FILL: date]", tone: "metals", href: "#" },
+      { title: "[FILL: post title]", excerpt: "[FILL: two-line summary]", category: "FX", date: "[FILL: date]", tone: "currencies", href: "#" },
+      { title: "[FILL: post title]", excerpt: "[FILL: two-line summary]", category: "AI", date: "[FILL: date]", tone: "crypto", href: "#" },
+    ],
+  },
+
+  contact: {
+    metaTitle: "Contact",
+    metaDescription: "Book a call, message on WhatsApp or Telegram, or send an enquiry.",
+    kicker: "Contact",
+    title: "Let's talk",
+    lead: "Choose the channel that suits you. Institutional and professional enquiries are answered within one business day.",
+    channels: [
+      { title: "Book a call", body: "30 minutes, video or phone.", cta: "Open calendar", href: "[FILL: Calendly link]" },
+      { title: "WhatsApp", body: "Quick questions and document exchange.", cta: "Message", href: "https://wa.me/971586884464" },
+      { title: "Telegram", body: "Signals channel and community.", cta: "Join", href: "[FILL: Telegram link]" },
+    ],
+    formTitle: "Send an enquiry",
+    form: {
+      name: "Name",
+      namePlaceholder: "Your name",
+      email: "Email",
+      emailPlaceholder: "you@company.com",
+      topic: "Topic",
+      topics: ["Managed account", "Broker selection", "Signals & reports", "Education", "AI systems", "Other"],
+      message: "Message",
+      messagePlaceholder: "How can I help?",
+      submit: "Send",
+      note: "This opens your email client with the message pre-filled. No data is stored on this site.",
+      errorRequired: "Please fill in your name, email and message.",
+      errorEmail: "Please enter a valid email address.",
+      subject: "Enquiry",
     },
   },
+
+  legal: {
+    "risk-disclosure": {
+      title: "Risk disclosure",
+      body: [
+        "Trading involves substantial risk. Investing in FX, commodities, indices, equities, fixed income, metals and digital assets can result in losses that exceed your initial investment, and trading on margin carries additional risk.",
+        "Past performance of any model, strategy, signal service or system is not a guarantee of future results. Verified track records describe what happened, not what will happen.",
+        "Nothing on this website is personal investment advice. Content is general market commentary and education and does not take your financial situation, objectives or risk tolerance into account.",
+        "[FILL: jurisdiction-specific wording, authorisation status]",
+      ],
+    },
+    "ib-disclosure": {
+      title: "Introducing broker disclosure",
+      body: [
+        "Ahmet S. Öztürk / NUUK acts as an introducing partner for the brokers listed on this website. When you open and fund an account through a referral link, the broker pays a commission based on your trading volume.",
+        "This commission is paid by the broker and does not increase the spreads, commissions or fees you pay. Broker cards are written independently; a broker cannot pay to change a rating or a listed weakness.",
+        "You are free to open an account with any broker directly. The referral link is optional.",
+        "[FILL: list of partner brokers and the nature of each agreement]",
+      ],
+    },
+    privacy: { title: "Privacy", body: ["[FILL: privacy policy]"] },
+    terms: { title: "Terms of use", body: ["[FILL: terms of use]"] },
+  },
+
+  ctaBand: {
+    title: "Not sure which door is yours?",
+    body: "A 30-minute call is enough to work out whether you need a broker, a signal service, a managed account or simply education.",
+    cta: { label: "Book a call", href: "/contact-us/" },
+  },
+
+  footer: {
+    copyright: "All rights reserved.",
+    legal1:
+      "is the personal brand of Ahmet S. Öztürk, economist and investor, and the trading name of NUUK Quant, based in the Dubai International Financial Centre. Services are offered to professional and institutional clients where permitted; availability depends on your jurisdiction and applicable regulation.",
+    legal2:
+      "Content on this website is general market commentary and education. It is not personal investment advice and not an offer or solicitation to buy or sell any financial instrument or service.",
+    ib: "Broker links on this website are referral links. I may earn a commission when you open and fund an account through them; this does not change the fees you pay.",
+    risk: "Trading involves substantial risk and can result in losses exceeding your initial investment. Past performance is not a guarantee of future results.",
+  },
+
+  systems: [
+    {
+      slug: "system-one",
+      name: "[FILL: System 1 name]",
+      assetClass: "FX majors",
+      timeframe: "H1 / H4",
+      method: "Trend + ML regime filter",
+      riskProfile: "Moderate",
+      status: "live",
+      since: "[FILL: 2025-01]",
+      summary: "[FILL: two-sentence description of what it trades and the edge it exploits]",
+      stats: [
+        { label: "Live since", value: "[FILL]" },
+        { label: "Max drawdown", value: "[FILL]" },
+        { label: "Trades / month", value: "[FILL]" },
+      ],
+    },
+    {
+      slug: "system-two",
+      name: "[FILL: System 2 name]",
+      assetClass: "Gold, US indices",
+      timeframe: "M15 / H1",
+      method: "Mean reversion, session-aware",
+      riskProfile: "Moderate-high",
+      status: "test",
+      since: "[FILL]",
+      summary: "[FILL]",
+      stats: [
+        { label: "Forward test since", value: "[FILL]" },
+        { label: "Max drawdown", value: "[FILL]" },
+        { label: "Trades / month", value: "[FILL]" },
+      ],
+    },
+    {
+      slug: "system-three",
+      name: "[FILL: System 3 name]",
+      assetClass: "BTC, ETH",
+      timeframe: "H4 / D1",
+      method: "Momentum with volatility targeting",
+      riskProfile: "High",
+      status: "soon",
+      since: "[FILL]",
+      summary: "[FILL]",
+      stats: [
+        { label: "Status", value: "In development" },
+        { label: "Target launch", value: "[FILL]" },
+        { label: "Venue", value: "[FILL]" },
+      ],
+    },
+  ] as TradingSystem[],
+
+  performance: [
+    {
+      name: "Personal portfolio — [FILL: broker]",
+      source: "Myfxbook",
+      verifiedHref: "[FILL: verification link]",
+      status: "verified",
+      since: "[FILL: 2024-01]",
+      updated: "[FILL: auto]",
+      stats: [
+        { label: "Return YTD", value: "[FILL]", tone: "up" },
+        { label: "Max drawdown", value: "[FILL]", tone: "down" },
+        { label: "Profit factor", value: "[FILL]", tone: "neutral" },
+        { label: "Trades", value: "[FILL]", tone: "neutral" },
+      ],
+      series: [100, 103, 101, 106, 109, 108, 114, 118, 116, 121, 125, 123, 129],
+    },
+    {
+      name: "Managed strategy A — [FILL]",
+      source: "FX Blue",
+      verifiedHref: "[FILL]",
+      status: "verified",
+      since: "[FILL]",
+      updated: "[FILL]",
+      stats: [
+        { label: "Return YTD", value: "[FILL]", tone: "up" },
+        { label: "Max drawdown", value: "[FILL]", tone: "down" },
+        { label: "Profit factor", value: "[FILL]", tone: "neutral" },
+        { label: "Trades", value: "[FILL]", tone: "neutral" },
+      ],
+      series: [100, 101, 104, 103, 107, 110, 109, 113, 112, 117, 119, 122, 124],
+    },
+    {
+      name: "Signal log — closed ideas",
+      source: "Public log",
+      verifiedHref: "[FILL]",
+      status: "soon",
+      since: "[FILL]",
+      updated: "[FILL]",
+      stats: [
+        { label: "Ideas closed", value: "[FILL]", tone: "neutral" },
+        { label: "Win rate", value: "[FILL]", tone: "neutral" },
+        { label: "Avg R", value: "[FILL]", tone: "neutral" },
+        { label: "Net R", value: "[FILL]", tone: "up" },
+      ],
+      series: [100, 102, 104, 103, 106, 108, 111, 110, 113, 115, 118, 120, 121],
+    },
+  ] as PerformanceCard[],
 };
 
 export type SiteContent = typeof en;

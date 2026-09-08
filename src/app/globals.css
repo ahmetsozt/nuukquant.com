@@ -3,6 +3,11 @@
 @theme {
   --font-sans: var(--font-inter), Inter, system-ui, sans-serif;
   --font-display: var(--font-plex), "IBM Plex Sans", Inter, system-ui, sans-serif;
+  --font-serif: var(--font-serif), "Instrument Serif", Georgia, serif;
+  --font-mono: var(--font-mono), "JetBrains Mono", ui-monospace, monospace;
+  --color-up: #12a37f;
+  --color-down: #d75237;
+  --color-paper: #f7f5f0;
 
   /* NUUK brand tokens */
   --color-primary: #12a37f;
@@ -64,10 +69,31 @@ body {
 h1,
 h2,
 .display {
-  font-family: var(--font-display);
-  font-weight: 200;
-  letter-spacing: -0.005em;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.01em;
   color: var(--color-ink);
+  text-wrap: balance;
+}
+h3,
+h4 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+}
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.kicker {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-primary);
 }
 
 ::selection {
@@ -94,7 +120,13 @@ h2,
   @apply py-20 lg:py-22 2xl:py-30;
 }
 .h2-section {
-  @apply text-[32px] leading-[1.2] lg:text-[40px] lg:leading-[50px] 2xl:text-[48px] 2xl:leading-[58px];
+  @apply text-[34px] leading-[1.12] lg:text-[44px] 2xl:text-[52px];
+}
+.h1-display {
+  @apply text-[44px] leading-[1.05] lg:text-[64px] 2xl:text-[76px];
+}
+.fill {
+  @apply rounded-sm bg-[#fff3c4] px-1 text-[#7a5b00];
 }
 
 /* Button text-swap hover */

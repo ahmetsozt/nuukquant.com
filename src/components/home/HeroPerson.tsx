@@ -4,10 +4,11 @@ import Fill from "@/components/ui/Fill";
 import Icon from "@/components/ui/Icon";
 import Portrait from "@/components/ui/Portrait";
 import HeroBackdrop from "@/components/home/HeroBackdrop";
-import Ticker from "@/components/home/Ticker";
+import LiveTape from "@/components/market/LiveTape";
+import type { Locale } from "@/i18n";
 import type { SiteContent } from "@/content/en";
 
-export default function HeroPerson({ c }: { c: SiteContent }) {
+export default function HeroPerson({ c, locale }: { c: SiteContent; locale: Locale }) {
   const h = c.home.hero;
   return (
     <section className="relative overflow-hidden bg-hero text-white" aria-labelledby="hero-heading">
@@ -51,7 +52,7 @@ export default function HeroPerson({ c }: { c: SiteContent }) {
           </div>
         </div>
       </div>
-      <Ticker />
+      <LiveTape locale={locale} />
     </section>
   );
 }

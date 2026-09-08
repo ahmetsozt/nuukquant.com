@@ -106,6 +106,19 @@ export const tr: ContentOverride = {
       ],
       pressTitle: "Partner aracı kurumlar",
     },
+    markets: {
+      "kicker": "Canlı fiyatlar",
+      "title": "Piyasalar, şu anda",
+      "lead": "TradingView'dan canlı akan kotasyonlar: forex, emtia, endeksler, kripto ve izlediğim hisseler. Grafiği açmak için satıra tıklayın.",
+      "tabs": [
+        "Forex",
+        "Emtia",
+        "Endeksler",
+        "Kripto",
+        "Hisseler"
+      ],
+      "note": "Kotasyonlar TradingView ve veri ortakları tarafından sağlanır; bazı borsa verileri gecikmelidir. İşlem koşulları, spread'ler ve emir gerçekleştirme, işlem yaptığınız aracı kuruma aittir."
+    },
     numbersTitle: "Doğrulayabileceğiniz rakamlar*",
     numbersNote: "*Rakamlar Eylül 2026 itibarıyla. Doğrulama linkleri, her salt okunur bağlantı devreye girdikçe performans geçmişi sayfasına eklenir.",
     promo: {
@@ -596,7 +609,7 @@ export const tr: ContentOverride = {
         "Bu politika, NUUK Quant'ın (\"NUUK\", \"biz\") nuukquant.com üzerinden hangi kişisel verileri, neden topladığını ve hangi haklara sahip olduğunuzu açıklar. Son güncelleme: 8 Eylül 2026.",
         "Bize verdiğiniz veriler. E-posta, WhatsApp, Telegram veya talep formu üzerinden bizimle iletişime geçtiğinizde gönderdiğiniz bilgileri alırız: ad, e-posta adresi, telefon numarası ve mesajınızın içeriği. Talep formu kendi e-posta istemcinizi açar; yazdığınız hiçbir şey bu web sitesinde saklanmaz.",
         "Otomatik olarak toplanan veriler. Sitenin nasıl kullanıldığını anlamak için IP anonimleştirmeli Google Analytics 4 kullanırız: görüntülenen sayfalar, yaklaşık konum, cihaz türü ve hangi düğmelere tıklandığı (örneğin bir aracı kurum bağlantısı veya bir plan). Bu veriler toplu hâldedir ve sizi isim olarak tanımlamaz. Tarayıcı ayarı veya reklam engelleyici ile engelleyebilirsiniz.",
-        "Çerezler. Sitenin kendisi çerez ayarlamaz. Google Analytics oturumları ayırt etmek için çerez ayarlayabilir; bağlantılarımızdan açtığınız üçüncü taraf siteler (aracı kurumlar, Telegram, Calendly, sosyal ağlar) kendi politikalarını uygular.",
+        "Çerezler. Sitenin kendisi çerez ayarlamaz. Google Analytics oturumları ayırt etmek için çerez ayarlayabilir; bağlantılarımızdan açtığınız üçüncü taraf siteler (aracı kurumlar, Telegram, Calendly, sosyal ağlar) kendi politikalarını uygular. Bu sitedeki canlı piyasa kotasyonları gömülü TradingView bileşenleridir; TradingView sunucularından yüklenir ve TradingView'ın gizlilik politikası kapsamında kendi çerezlerini bırakabilir.",
         "Verileri neden işliyoruz? Talebinizi yanıtlamak, istediğiniz hizmetleri sunmak (yönetilen hesaplar, sinyaller, eğitim), yasal ve düzenleyici yükümlülükleri yerine getirmek ve web sitesini geliştirmek için. Hukuki dayanak, rızanız, sizinle yapılan bir sözleşmenin ifası veya işi yürütmedeki meşru menfaatimizdir.",
         "Paylaşım. Kişisel verileri satmayız. Yalnızca web sitesini ve iletişimi yürütmek için gereken hizmet sağlayıcılarla (barındırma, e-posta, analitik), sizi tanıtmamızı istediğinizde ortak aracı kurumlarla ve yasaların gerektirdiği durumlarda yetkili makamlarla paylaşırız.",
         "Saklama ve güvenlik. Talep verileri, talebin işlenmesi için gerektiği sürece ve bir iş ilişkisi kurulması hâlinde düzenleyici kayıt tutma yükümlülüklerine uygun olarak beş yıla kadar saklanır. Veriler erişim kontrollü sistemlerde tutulur.",

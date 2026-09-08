@@ -1,4 +1,6 @@
 import type { SiteContent } from "@/content/en";
+import type { Locale } from "@/i18n";
+import LiveMarkets from "@/components/market/LiveMarkets";
 import HeroPerson from "@/components/home/HeroPerson";
 import AwardsStrip from "@/components/home/AwardsStrip";
 import StatCards from "@/components/home/StatCards";
@@ -12,12 +14,13 @@ import EducationPreview from "@/components/home/EducationPreview";
 import LatestPosts from "@/components/home/LatestPosts";
 import CtaBand from "@/components/sections/CtaBand";
 
-export default function HomeSections({ c }: { c: SiteContent }) {
+export default function HomeSections({ c, locale }: { c: SiteContent; locale: Locale }) {
   return (
     <>
-      <HeroPerson c={c} />
+      <HeroPerson c={c} locale={locale} />
       <AwardsStrip c={c} />
       <StatCards c={c} />
+      <LiveMarkets c={c} locale={locale} />
       <Pillars c={c} />
       <PromoBand c={c} />
       <RecordStrip c={c} />

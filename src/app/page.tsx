@@ -6,7 +6,7 @@ import { getContent } from "@/i18n";
 export default function RootHomePage() {
   return (
     <Shell locale="en">
-      <HomeSections c={getContent("en")} />
+      <HomeSections c={getContent("en")} locale="en" />
     </Shell>
   );
 }

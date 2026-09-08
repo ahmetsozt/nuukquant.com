@@ -106,6 +106,19 @@ export const es: ContentOverride = {
       ],
       pressTitle: "Brókers asociados",
     },
+    markets: {
+      "kicker": "Precios en vivo",
+      "title": "Los mercados, ahora mismo",
+      "lead": "Cotizaciones en directo desde TradingView: forex, materias primas, índices, cripto y las acciones que sigo. Haga clic en una fila para abrir el gráfico.",
+      "tabs": [
+        "Forex",
+        "Materias primas",
+        "Índices",
+        "Cripto",
+        "Acciones"
+      ],
+      "note": "Las cotizaciones las proporcionan TradingView y sus socios de datos; algunos feeds bursátiles llegan con retraso. Las condiciones de trading, los spreads y la ejecución son los del bróker con el que opera."
+    },
     numbersTitle: "Cifras que puede verificar*",
     numbersNote: "*Cifras a septiembre de 2026. Los enlaces de verificación se añaden a la página de track record a medida que se activa cada conexión de solo lectura.",
     promo: {
@@ -605,7 +618,7 @@ export const es: ContentOverride = {
         "Esta política explica qué datos personales recopila NUUK Quant (\"NUUK\", \"nosotros\") a través de nuukquant.com, con qué finalidad y qué derechos tiene usted. Última actualización: 8 de septiembre de 2026.",
         "Datos que usted nos facilita. Cuando nos contacta por correo electrónico, WhatsApp, Telegram o el formulario de consulta, recibimos los datos que nos envía: nombre, dirección de correo electrónico, número de teléfono y el contenido de su mensaje. El formulario de consulta abre su propio cliente de correo; nada de lo que escribe se almacena en este sitio web.",
         "Datos recopilados automáticamente. Utilizamos Google Analytics 4 con anonimización de IP para entender cómo se usa el sitio: páginas vistas, ubicación aproximada, tipo de dispositivo y qué botones se pulsan (por ejemplo, un enlace de bróker o un plan). Estos datos están agregados y no le identifican por su nombre. Puede bloquearlos mediante una configuración del navegador o un bloqueador de anuncios.",
-        "Cookies. El sitio en sí no instala cookies. Google Analytics puede instalar cookies para distinguir sesiones; los sitios de terceros que abra desde nuestros enlaces (brókeres, Telegram, Calendly, redes sociales) aplican sus propias políticas.",
+        "Cookies. El sitio en sí no instala cookies. Google Analytics puede instalar cookies para distinguir sesiones; los sitios de terceros que abra desde nuestros enlaces (brókeres, Telegram, Calendly, redes sociales) aplican sus propias políticas. Las cotizaciones en directo de este sitio son widgets de TradingView incrustados, que se cargan desde los servidores de TradingView y pueden instalar sus propias cookies según la política de privacidad de TradingView.",
         "Por qué tratamos los datos. Para responder a su consulta, para prestar los servicios que ha solicitado (cuentas gestionadas, señales, formación), para cumplir obligaciones legales y regulatorias, y para mejorar el sitio web. La base legal es su consentimiento, la ejecución de un acuerdo con usted o nuestro interés legítimo en gestionar el negocio.",
         "Cesión de datos. No vendemos datos personales. Solo los compartimos con los proveedores de servicios necesarios para operar el sitio web y las comunicaciones (alojamiento, correo electrónico, analítica), con los brókeres asociados cuando usted nos pide que le presentemos, y con las autoridades cuando la ley lo exija.",
         "Conservación y seguridad. Los datos de las consultas se conservan durante el tiempo necesario para atender la solicitud y hasta cinco años cuando se establece una relación comercial, de acuerdo con las obligaciones regulatorias de conservación de registros. Los datos se almacenan en sistemas con control de acceso.",

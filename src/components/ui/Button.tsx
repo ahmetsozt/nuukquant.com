@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-type Variant = "primary" | "outline" | "outline-beige" | "ghost" | "header";
+type Variant = "primary" | "outline" | "outline-dark" | "outline-beige" | "ghost" | "header";
 
 const base =
   "btn inline-flex items-center justify-center text-[15px] font-medium transition-[background-color,border-color,color,opacity] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50";
@@ -9,6 +9,7 @@ const base =
 const variants: Record<Variant, string> = {
   primary: "rounded-md bg-primary px-5 py-4 text-white hover:bg-primary-dark",
   outline: "rounded-md border-[1.5px] border-primary px-5 py-4 text-white hover:bg-primary/10",
+  "outline-dark": "rounded-md border-[1.5px] border-ink/20 px-5 py-4 text-ink hover:border-ink",
   "outline-beige":
     "rounded-md border-[1.5px] border-beige px-5 py-4 text-white hover:border-white hover:opacity-80",
   ghost: "px-4 py-3 text-body hover:text-ink",
@@ -64,10 +65,19 @@ export default function Button({
     );
   const cls = `${base} ${variants[variant]} ${className}`;
   if (href) {
+    // Internal paths go through next/link; external, mailto and placeholder links use a plain anchor.
+    if (href.startsWith("/")) {
+      return (
+        <Link href={href} className={cls}>
+          {inner}
+        </Link>
+      );
+    }
+    const external = /^https?:/.test(href);
     return (
-      <Link href={href} className={cls}>
+      <a href={href.startsWith("[") ? "#" : href} className={cls} {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
         {inner}
-      </Link>
+      </a>
     );
   }
   return (

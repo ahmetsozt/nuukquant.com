@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans, IBM_Plex_Sans_Arabic, Inter } from "next/font/google";
+import { IBM_Plex_Sans, IBM_Plex_Sans_Arabic, Inter, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 import Reveal from "@/components/ui/Reveal";
 import Analytics from "@/components/Analytics";
 import { en } from "@/content/en";
@@ -19,6 +19,21 @@ const plex = IBM_Plex_Sans({
   display: "swap",
 });
 
+const serif = Instrument_Serif({
+  subsets: ["latin", "latin-ext"],
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
+const mono = JetBrains_Mono({
+  subsets: ["latin", "latin-ext", "cyrillic"],
+  weight: ["400", "500", "600"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
 const arabic = IBM_Plex_Sans_Arabic({
   subsets: ["arabic"],
   weight: ["300", "400", "500"],
@@ -35,7 +50,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${plex.variable} ${arabic.variable}`}>
+    <html lang="en" className={`${inter.variable} ${plex.variable} ${serif.variable} ${mono.variable} ${arabic.variable}`}>
       <body>
         {children}
         <Reveal />

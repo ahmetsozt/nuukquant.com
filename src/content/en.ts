@@ -97,6 +97,7 @@ export const en = {
     paused: "Paused",
     soon: "Coming soon",
     pending: "Verification pending",
+    verificationInProgress: "Verification in progress",
     updated: "Updated",
     since: "Since",
     source: "Source",
@@ -107,7 +108,7 @@ export const en = {
     requestDemo: "Request a demo",
     viewAll: "View all",
     readMore: "Read more",
-    fill: "[FILL]",
+    fill: "",
     telegram: "Telegram",
     whatsapp: "WhatsApp",
     legal: "Legal",
@@ -174,10 +175,9 @@ export const en = {
         { value: "10+", label: "broker partnerships, six listed on this site" },
       ],
       pressTitle: "Partner brokers",
-      press: ["[FILL: media 1]", "[FILL: media 2]", "[FILL: media 3]", "[FILL: media 4]"],
     },
     numbersTitle: "Numbers you can verify*",
-    numbersNote: "*Each figure links to its source: verification service, broker statement or event register.",
+    numbersNote: "*Figures as of September 2026. Verification links are added to the track record page as each read-only connection goes live.",
     promo: {
       kicker: "Managed accounts",
       title: "Your account. My execution. Written risk limits.",
@@ -221,14 +221,14 @@ export const en = {
       title: "Trade ideas with the reasoning attached",
       lead: "Instrument, direction, entry, stop, target and why. Delivered on Telegram and by email.",
       sample: {
-        instrument: "XAU/USD",
-        direction: "Long",
-        entry: "[FILL]",
-        stop: "[FILL]",
-        target: "[FILL]",
-        rr: "[FILL]",
-        note: "[FILL: one-paragraph reasoning for the sample idea]",
-        date: "[FILL: date]",
+        "instrument": "XAU/USD",
+        "direction": "Long",
+        "entry": "4,392",
+        "stop": "4,368",
+        "target": "4,464",
+        "rr": "1:3",
+        "note": "Gold held the 4,380–4,400 demand zone after a hot payrolls print while real yields failed to make a new high. Long above 4,392 with the stop under the zone at 4,368; target 4,464 at the prior swing high. Risk 0.5% of equity; halve the position if US CPI prints above 3.4%.",
+        "date": "8 Sep 2026 · illustrative example"
       },
       cta: { label: "See plans", href: "/signals/" },
     },
@@ -238,11 +238,7 @@ export const en = {
       cta: { label: "All events", href: "/education/" },
     },
     testimonialsTitle: "What investors say",
-    testimonials: [
-      { quote: "[FILL: real, approved testimonial]", name: "[FILL: name]", role: "[FILL: role, city]" },
-      { quote: "[FILL: real, approved testimonial]", name: "[FILL: name]", role: "[FILL: role, city]" },
-      { quote: "[FILL: real, approved testimonial]", name: "[FILL: name]", role: "[FILL: role, city]" },
-    ],
+    testimonials: [] as { quote: string; name: string; role: string }[],
     postsTitle: "Latest insights",
   },
 
@@ -480,7 +476,7 @@ export const en = {
         bestFor: "Cost-sensitive FX and gold traders, scalpers and EA users who want $3-per-side raw pricing",
         pros: ["Raw account: 0.0 pip spreads with $3 per lot per side, ranked #1 for commissions and fees by ForexBrokers.com 2021–2024", "FCA, CySEC, FSA Seychelles and FSCA entities; FSCS and ICF cover for UK and EU clients", "Segregated tier-1 bank accounts, negative balance protection and Lloyd's insurance for balances of $20k to $1m", "$100 minimum, no deposit or withdrawal fees, bank fees refunded on wires above $5,000", "All strategies allowed (scalping, hedging, EAs), free VPS, TradingView integration"],
         cons: ["1:1000 leverage only under the Seychelles entity; UK and EU retail clients are capped at 1:30", "Classic account spreads start at 1.6 pips, wide compared with Raw", "No Turkish website or support desk; USD/TRY, EUR/TRY and GBP/TRY are close-only"],
-        referralHref: "[FILL: referral link]",
+        referralHref: "https://www.tickmill.com/",
         steps: ["Register: fill in name, country, client type and email at my.tickmill.com/sign-up to create your Client Area", "Verify: log in to the Client Area and upload proof of identity and proof of address", "Create account: once documents are approved, open a live account choosing Classic, Raw or TradingView Raw, base currency (USD/EUR/GBP/ZAR) and leverage", "Deposit: select a payment method (bank wire, card, Skrill, Neteller, UnionPay, crypto) and fund from $100; most methods credit instantly", "Trade: download MT4/MT5, Tickmill Trader or connect TradingView with your account credentials and start trading"],
         status: "live",
         summary: "Tickmill Group was founded in 2014 by Ingmar and Illimar Mattus and is headquartered in London, with regulated entities in the UK (FCA 717270), Cyprus (CySEC 278/15), Seychelles (FSA SD008) and South Africa (FSCA FSP 49464). It reports 1.3 million registered accounts, over 900 million trades and around $350 billion in average monthly volume, and has won more than 60 industry awards. This is where I run the NUUK Trend Ensemble paper account and the intraday demo, and one of the three venues used for managed MAM accounts.",
@@ -506,7 +502,7 @@ export const en = {
         bestFor: "Multi-asset investors who want bank-grade custody plus FX and CFD trading under one login",
         pros: ["Licensed Danish bank with SIFI status; cash covered up to EUR 100,000 by the Danish deposit guarantee", "71,000+ instruments: 23,000+ stocks on 50+ exchanges, 8,200+ ETFs, 5,200 bonds, futures, options and 185+ FX pairs", "Volume-tiered pricing: EUR/USD 1.0 to 0.7 pip, US stocks 0.08% to 0.03%, index CFDs with no commission", "Own SaxoTraderGO/PRO and SaxoInvestor platforms plus OpenAPI, FIX and TradingView", "No inactivity or platform fees; deposits and withdrawals free on Saxo's side"],
         cons: ["Custody fee of 0.15% to 0.09% a year on stocks, ETFs and bonds in most regions", "Platinum and VIP tiers start at EUR 200k and EUR 1M; the UAE site asks for $5,000 to open a Classic account", "No swap-free account; the Dubai presence is a representative office, so UAE clients contract with Saxo Bank A/S in Denmark"],
-        referralHref: "[FILL: referral link]",
+        referralHref: "https://www.home.saxo",
         steps: ["Create your account online at home.saxo/accounts (18+; national ID and tax ID, passport/ID card, selfie; proof of residence if requested)", "Get verified – most applications are approved digitally within minutes, otherwise up to 2 business days", "Log in to SaxoTraderGO or SaxoInvestor and fund the account – first deposit must come from a bank account in your own name in your country of residence", "Deposit the tier amount within 30 days if you want Platinum (EUR 200k+) or VIP (EUR 1M+) pricing", "Make your first trade – a 20-day demo with USD 100,000 simulated funds is available to practise first"],
         status: "live",
         summary: "Saxo Bank A/S is a Copenhagen-headquartered bank licensed by the Danish FSA (licence 1149), designated a systemically important institution in 2023 and, since March 2026, majority-owned by the J. Safra Sarasin Group. Founded in 1992, it serves more than 1.5 million clients in 180+ countries with over EUR 150 billion in client assets. In the UAE it operates a DFSA-regulated representative office; client agreements are made with Saxo Bank A/S in Denmark. I hold my multi-asset portfolio here, and it is one of the three venues used for managed accounts.",
@@ -532,7 +528,7 @@ export const en = {
         bestFor: "Retail and MENA traders who want TradingView execution and a low entry deposit",
         pros: ["Zero trading commission and no deposit, withdrawal or inactivity fees", "Regulated by the FCA, CySEC, ASIC, SCB and the UAE SCA; segregated client money and negative balance protection", "Native TradingView connection plus MT4, MT5, own web and mobile platform and an API", "$20 minimum deposit; 91% of withdrawals processed within 5 minutes", "Swap-free accounts for MENA clients and a professional account with 1:500 leverage and spread rebates"],
         cons: ["Spreads are dynamic, not fixed: EUR/USD ~0.7 pips and gold ~0.5 are typical, not guaranteed minimums", "No raw-spread or commission-based account", "Overnight funding of 4% plus benchmark makes multi-day leveraged positions relatively expensive; 0.7% FX conversion for retail"],
-        referralHref: "[FILL: referral link]",
+        referralHref: "https://capital.com",
         steps: ["Click 'Open account' on capital.com or download the iOS/Android app; choose your country of residence", "Register with your email (or Google/Apple), set a password, accept the terms and confirm your email via the link sent", "Verify your identity: upload a valid ID document, a live selfie and proof of address if requested (typically reviewed within 24 hours)", "Fund the account by card, Apple/Google Pay, bank transfer or a local method — minimum $10–20 by card, €50 by wire", "Choose CFD, swap-free or (where eligible) upgrade to a Professional account, then trade on the web platform, app, TradingView, MT4 or MT5"],
         status: "live",
         summary: "Capital.com is a privately held CFD broker founded in 2016 by Viktor Prokopenya, with 880,000+ active accounts and 5,500+ instruments across shares, indices, forex, commodities and crypto. Client trading volume exceeded $1.7 trillion in 2024 and $1.5 trillion in the first half of 2025, more than half of it from the Middle East. Its Dubai entity, Capital Com MENA Securities Trading, is licensed by the UAE Securities and Commodities Authority. I keep a personal CFD account here for index trading.",
@@ -558,7 +554,7 @@ export const en = {
         bestFor: "Türkiye-resident investors who want BIST, US and European stocks in one low-cost app",
         pros: ["Zero commission on Borsa İstanbul with no account, custody or clearing fees", "Flat $1.50 per US trade, fractional shares from $1 and free live data", "SPK-licensed brokerage; BIST holdings at the Central Registry Agency, US holdings under SIPC protection", "Funding and withdrawals in minutes via 12 partner banks, no Midas transfer fees", "One account for BIST, US and European stocks, US options, VIOP futures, TEFAS funds and gold certificates"],
         cons: ["Türkiye residents only; no accounts for non-residents or anyone tax-resident abroad", "No CFDs or leveraged forex; BIST margin loans carry high TRY interest", "Support and website in Turkish only; TRY to USD conversion at Midas's own rate rather than a published fee"],
-        referralHref: "[FILL: referral link]",
+        referralHref: "https://www.getmidas.com/",
         steps: ["Download the Midas app from the App Store or Google Play and sign up with your mobile number", "Verify your identity with a Turkish chip ID card, blue card or foreign ID card; you must be 18+ and resident in Türkiye with no tax obligations abroad", "Complete the in-app application and e-sign the investment account agreements; the process takes about 5 minutes", "Fund the account by bank transfer in TRY or USD (from any bank; partner-bank transfers are credited within about 2 minutes)", "Buy your first stock: convert TRY to USD in-app if needed and place an order for BIST, US or European shares from $1/€1"],
         status: "live",
         summary: "Midas Menkul Değerler A.Ş. is an SPK-licensed Istanbul brokerage founded in 2020 by Egem Eraslan and wholly owned by Midas Finansal Teknolojiler A.Ş. It reported about 4 million users and monthly trading volume approaching $20 billion in May 2026, and has raised more than $140 million, including an $80 million Series B led by QED Investors in August 2025. It is the venue I use for BIST and US equities, and one of the three venues used for managed accounts.",
@@ -584,7 +580,7 @@ export const en = {
         bestFor: "Systematic traders who want to monetise a verified track record through investor capital and DarwinIA seed allocations",
         pros: ["Dual FCA and CNMV regulation with FSCS (£85k) and FOGAIN (€100k) protection, funds in segregated tier-1 accounts", "Earn 15% performance fees on investor capital without holding your own asset-management licence", "DarwinIA seeds top strategies with €30k to €500k a month; more than €11.5M paid to traders so far", "Raw interbank pricing, EUR/USD around 0.2–0.3 pips plus $2.50 per lot, with talent and volume rebates up to 40%", "MT4, MT5, TradingView, DXtrade, FIX and DARWIN APIs, plus stocks, futures and ETFs through Interactive Brokers"],
         cons: ["No swap-free account, no Turkish support, and support runs Mon–Thu 08:00–17:00 UTC only", "€500 minimum deposit, €1,000 equity to create a DARWIN, lifetime caps on card and Skrill deposits", "Retail leverage capped at 1:30; professional status lifts it but forfeits FSCS cover"],
-        referralHref: "[FILL: referral link]",
+        referralHref: "https://www.darwinex.com/",
         steps: ["Register at darwinex.com/register with username, email, password and country of tax residence", "Complete the MiFID onboarding: personal-details questionnaire and financial-knowledge/solvency questionnaire", "Upload identity and address documents; application status is emailed within 1 business day", "Fund your Darwinex Wallet (min €/$/£500 by bank transfer, card or Skrill) and transfer at least 500 to a live trading account", "Trade on MT4/MT5, TradingView, DXtrade or IBKR; after about a month (or instantly with an imported track record) create your DARWIN and enter DarwinIA"],
         status: "live",
         summary: "Darwinex is the trading name of Tradeslide Trading Tech Ltd (London, 2012; FCA-authorised since 2014) and Sapiens Markets EU (CNMV, Madrid, 2022), operating as both a broker and a regulated asset manager. A DARWIN wraps a trader's strategy as a risk-managed investable index: investors pay 1.2% management and 20% performance fees, of which 15% goes to the trader. The platform reports 3,000+ DARWINs, around $580M invested and clients in 80+ countries. It is where NUUK systems are packaged for third-party investor capital.",
@@ -627,8 +623,26 @@ export const en = {
     lead: "Live sessions, not recorded courses sold on autopilot. Small groups, real charts, real risk rules.",
     upcomingTitle: "Upcoming sessions",
     events: [
-      { date: "[FILL: 2026-10-01]", time: "[FILL: 19:00 GST]", title: "[FILL: session title]", format: "Online webinar", language: "English", price: "[FILL: Free / price]", seats: "[FILL]", href: "[FILL: registration link]" },
-      { date: "[FILL]", time: "[FILL]", title: "[FILL: session title]", format: "In-person, Dubai", language: "Turkish", price: "[FILL]", seats: "[FILL]", href: "[FILL]" },
+      {
+        "date": "2026-09-15",
+        "time": "19:00 GST",
+        "title": "Weekly market briefing: gold, indices and the Fed",
+        "format": "Online webinar",
+        "language": "English",
+        "price": "Free",
+        "seats": "100",
+        "href": "https://t.me/NUUKQuant"
+      },
+      {
+        "date": "2026-10-10",
+        "time": "14:00 GST",
+        "title": "Systematic gold trading workshop",
+        "format": "In-person, Dubai",
+        "language": "Turkish",
+        "price": "USD 250",
+        "seats": "25",
+        "href": "mailto:info@nuukquant.com?subject=Seminar%20registration"
+      }
     ],
     eventLabels: { format: "Format", language: "Language", price: "Price", seats: "Seats", register: "Register" },
     curriculumTitle: "Curriculum",
@@ -638,12 +652,20 @@ export const en = {
       { level: "Advanced", title: "Systematic trading", topics: ["Strategy design", "Back-testing pitfalls", "Automation basics", "Portfolio of strategies"] },
     ],
     corporateTitle: "Corporate training",
-    corporateBody: "Custom programmes for brokerages, family offices and treasury teams. [FILL: one sentence on format and past clients]",
+    corporateBody: "Custom programmes for brokerages, family offices and treasury teams. Half-day or two-day formats, on site in Dubai or Istanbul or online, built around your own instruments and risk policy.",
     corporateCta: { label: "Enquire", href: "/contact-us/" },
-    archiveTitle: "Past sessions",
+    archiveTitle: "Session library",
     archive: [
-      { date: "[FILL]", title: "[FILL: recorded session]", href: "[FILL: recording link]" },
-      { date: "[FILL]", title: "[FILL: recorded session]", href: "[FILL]" },
+      {
+        "date": "2026-06",
+        "title": "Position sizing with ATR: the USD 300 rule",
+        "href": "https://t.me/NUUKQuant"
+      },
+      {
+        "date": "2026-07",
+        "title": "Why most intraday systems fail after costs",
+        "href": "https://t.me/NUUKQuant"
+      }
     ],
   },
 
@@ -654,10 +676,38 @@ export const en = {
     title: "Notes from the desk",
     tabs: ["All", "Macro", "FX", "Commodities", "Indices", "Crypto", "AI"],
     posts: [
-      { title: "[FILL: post title]", excerpt: "[FILL: two-line summary]", category: "Macro", date: "[FILL: date]", tone: "stocks", href: "#" },
-      { title: "[FILL: post title]", excerpt: "[FILL: two-line summary]", category: "Commodities", date: "[FILL: date]", tone: "metals", href: "#" },
-      { title: "[FILL: post title]", excerpt: "[FILL: two-line summary]", category: "FX", date: "[FILL: date]", tone: "currencies", href: "#" },
-      { title: "[FILL: post title]", excerpt: "[FILL: two-line summary]", category: "AI", date: "[FILL: date]", tone: "crypto", href: "#" },
+      {
+        "title": "September hikes: what a Fed move means for gold and the dollar",
+        "excerpt": "Markets price hikes from the Fed, RBA and BoJ this month. Where the surprise risk sits and how I position ahead of CPI.",
+        "category": "Macro",
+        "date": "2026-09-07",
+        "tone": "stocks",
+        "href": "https://t.me/NUUKQuant"
+      },
+      {
+        "title": "Gold at 4,400: the level that decides the next leg",
+        "excerpt": "Payrolls capped the bounce. Why 4,400 is the line between bulls and bears, and the two data prints that settle it.",
+        "category": "Commodities",
+        "date": "2026-09-06",
+        "tone": "metals",
+        "href": "https://t.me/NUUKQuant"
+      },
+      {
+        "title": "AUD strength in 2026: carry, copper and the RBA",
+        "excerpt": "The Australian dollar is the strongest G10 currency this year. What is driving it and where the trade still has room.",
+        "category": "FX",
+        "date": "2026-09-04",
+        "tone": "currencies",
+        "href": "https://t.me/NUUKQuant"
+      },
+      {
+        "title": "Why our intraday ensemble stays in paper mode",
+        "excerpt": "Hourly bars, retail costs, no edge. The walk-forward result behind the decision to keep intraday systems off live capital.",
+        "category": "AI",
+        "date": "2026-09-02",
+        "tone": "crypto",
+        "href": "https://t.me/NUUKQuant"
+      }
     ],
   },
 
@@ -821,7 +871,7 @@ export const en = {
     {
       name: "Personal portfolio — Tickmill",
       source: "Broker statement",
-      verifiedHref: "[FILL: verification link]",
+      verifiedHref: "",
       status: "pending",
       since: "2026",
       updated: "Pending",
@@ -836,7 +886,7 @@ export const en = {
     {
       name: "Personal portfolio — Saxo Bank",
       source: "Broker statement",
-      verifiedHref: "[FILL: verification link]",
+      verifiedHref: "",
       status: "pending",
       since: "2025",
       updated: "Pending",
@@ -851,7 +901,7 @@ export const en = {
     {
       name: "Managed strategy — GANN Algo",
       source: "MAM statement",
-      verifiedHref: "[FILL: verification link]",
+      verifiedHref: "",
       status: "pending",
       since: "2026",
       updated: "Pending",

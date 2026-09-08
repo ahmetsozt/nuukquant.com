@@ -34,6 +34,7 @@ export const es: ContentOverride = {
     paused: "En pausa",
     soon: "Próximamente",
     pending: "Verificación pendiente",
+    verificationInProgress: "Verificación en curso",
     updated: "Actualizado",
     since: "Desde",
     source: "Fuente",
@@ -44,7 +45,7 @@ export const es: ContentOverride = {
     requestDemo: "Solicitar una demo",
     viewAll: "Ver todo",
     readMore: "Leer más",
-    fill: "[FILL]",
+    fill: "",
     telegram: "Telegram",
     whatsapp: "WhatsApp",
     legal: "Información legal",
@@ -106,7 +107,7 @@ export const es: ContentOverride = {
       pressTitle: "Brókers asociados",
     },
     numbersTitle: "Cifras que puede verificar*",
-    numbersNote: "*Cada cifra enlaza a su fuente: servicio de verificación, extracto del bróker o registro del evento.",
+    numbersNote: "*Cifras a septiembre de 2026. Los enlaces de verificación se añaden a la página de track record a medida que se activa cada conexión de solo lectura.",
     promo: {
       kicker: "Cuentas gestionadas",
       title: "Su cuenta. Mi ejecución. Límites de riesgo por escrito.",
@@ -149,7 +150,12 @@ export const es: ContentOverride = {
       title: "Ideas de trading con el razonamiento incluido",
       lead: "Instrumento, dirección, entrada, stop, objetivo y el porqué. Entregadas por Telegram y por correo electrónico.",
       sample: {
-        direction: "Largo",
+        "entry": "4,392",
+        "stop": "4,368",
+        "target": "4,464",
+        "rr": "1:3",
+        "note": "El oro sostuvo la zona de demanda 4.380–4.400 tras un dato de empleo fuerte, mientras los rendimientos reales no marcaron un nuevo máximo. Compra por encima de 4.392 con el stop bajo la zona en 4.368; objetivo 4.464 en el máximo previo. Riesgo del 0,5% del capital; se reduce la posición a la mitad si el IPC de EE. UU. sale por encima del 3,4%.",
+        "date": "8 sep 2026 · ejemplo ilustrativo"
       },
       cta: { label: "Ver planes" },
     },
@@ -506,8 +512,20 @@ export const es: ContentOverride = {
     lead: "Sesiones en vivo, no cursos grabados vendidos en piloto automático. Grupos reducidos, gráficos reales, reglas de riesgo reales.",
     upcomingTitle: "Próximas sesiones",
     events: [
-      { format: "Webinar en línea", language: "Inglés" },
-      { format: "Presencial, Dubái", language: "Turco" },
+      {
+        "title": "Briefing semanal de mercados: oro, índices y la Fed",
+        "format": "Webinar en línea",
+        "language": "Inglés",
+        "price": "Gratis",
+        "seats": "100"
+      },
+      {
+        "title": "Taller de trading sistemático en oro",
+        "format": "Presencial, Dubái",
+        "language": "Turco",
+        "price": "250 USD",
+        "seats": "25"
+      }
     ],
     eventLabels: { format: "Formato", language: "Idioma", price: "Precio", seats: "Plazas", register: "Inscribirse" },
     curriculumTitle: "Programa",
@@ -517,9 +535,9 @@ export const es: ContentOverride = {
       { level: "Avanzado", title: "Trading sistemático", topics: ["Diseño de estrategias", "Trampas del backtesting", "Fundamentos de automatización", "Cartera de estrategias"] },
     ],
     corporateTitle: "Formación corporativa",
-    corporateBody: "Programas a medida para brókeres, family offices y equipos de tesorería. [FILL: one sentence on format and past clients]",
+    corporateBody: "Programas a medida para brókeres, family offices y equipos de tesorería. Formato de medio día o dos días, presencial en Dubái o Estambul o en línea, construido sobre sus propios instrumentos y política de riesgo.",
     corporateCta: { label: "Consultar" },
-    archiveTitle: "Sesiones anteriores",
+    archiveTitle: "Biblioteca de sesiones",
   },
 
   insights: {

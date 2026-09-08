@@ -37,9 +37,13 @@ export function PerformanceCardView({ card, c }: { card: PerformanceCard; c: Sit
         <span>
           {c.ui.updated}: <Fill text={card.updated} />
         </span>
-        <a href={card.verifiedHref.startsWith("[") ? "#" : card.verifiedHref} className="inline-flex items-center gap-1 font-semibold text-primary hover:underline">
-          {c.ui.verified} <Icon name="arrow-up-right" size={13} />
-        </a>
+        {card.verifiedHref ? (
+          <a href={card.verifiedHref} className="inline-flex items-center gap-1 font-semibold text-primary hover:underline">
+            {c.ui.verified} <Icon name="arrow-up-right" size={13} />
+          </a>
+        ) : (
+          <span>{c.ui.verificationInProgress}</span>
+        )}
       </div>
     </article>
   );

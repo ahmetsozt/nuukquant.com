@@ -51,9 +51,13 @@ export default function RecordStrip({ c }: { c: SiteContent }) {
             <div className="col-span-2 border-t border-black/5 pt-4 text-[12.5px] text-body lg:col-span-1">
               {c.ui.since} <Fill text={featured.since} /> · {c.ui.source}: {featured.source}
               <br />
-              <a href={featured.verifiedHref.startsWith("[") ? "#" : featured.verifiedHref} className="mt-1 inline-flex items-center gap-1 font-semibold text-primary hover:underline">
-                {c.ui.verified} <Icon name="arrow-up-right" size={13} />
-              </a>
+              {featured.verifiedHref ? (
+                <a href={featured.verifiedHref} className="mt-1 inline-flex items-center gap-1 font-semibold text-primary hover:underline">
+                  {c.ui.verified} <Icon name="arrow-up-right" size={13} />
+                </a>
+              ) : (
+                <span className="mt-1 inline-block">{c.ui.verificationInProgress}</span>
+              )}
             </div>
           </dl>
         </article>

@@ -4,7 +4,7 @@ import { optionalImage } from "@/lib/images";
  * Portrait slot. Uses /public/images/portrait.{jpg,webp,png} when present,
  * otherwise a neutral placeholder that clearly marks where the photo goes.
  */
-export default function Portrait({ alt, className = "", label = "[FILL: portrait photo]" }: { alt: string; className?: string; label?: string }) {
+export default function Portrait({ alt, className = "", label = "" }: { alt: string; className?: string; label?: string }) {
   const photo = optionalImage("portrait");
   if (photo) {
     // eslint-disable-next-line @next/next/no-img-element
@@ -22,7 +22,7 @@ export default function Portrait({ alt, className = "", label = "[FILL: portrait
         <circle cx="100" cy="78" r="44" fill="url(#silh)" />
         <path d="M20 240c0-60 36-96 80-96s80 36 80 96z" fill="url(#silh)" />
       </svg>
-      <span className="fill absolute top-[22%] start-1/2 -translate-x-1/2 text-[11px] whitespace-nowrap">{label}</span>
+      {label && <span className="fill absolute top-[22%] start-1/2 -translate-x-1/2 text-[11px] whitespace-nowrap">{label}</span>}
     </div>
   );
 }

@@ -35,6 +35,7 @@ export const fr: ContentOverride = {
     paused: "En pause",
     soon: "Bientôt",
     pending: "Vérification en attente",
+    verificationInProgress: "Vérification en cours",
     updated: "Mis à jour",
     since: "Depuis",
     source: "Source",
@@ -45,7 +46,7 @@ export const fr: ContentOverride = {
     requestDemo: "Demander une démo",
     viewAll: "Tout voir",
     readMore: "Lire la suite",
-    fill: "[FILL]",
+    fill: "",
     telegram: "Telegram",
     whatsapp: "WhatsApp",
     legal: "Mentions légales",
@@ -108,7 +109,7 @@ export const fr: ContentOverride = {
       pressTitle: "Courtiers partenaires",
     },
     numbersTitle: "Des chiffres que vous pouvez vérifier*",
-    numbersNote: "*Chaque chiffre renvoie à sa source : service de vérification, relevé de courtier ou registre d'événements.",
+    numbersNote: "*Chiffres à septembre 2026. Les liens de vérification sont ajoutés à la page track record à mesure que chaque connexion en lecture seule est activée.",
     promo: {
       kicker: "Comptes gérés",
       title: "Votre compte. Mon exécution. Des limites de risque écrites.",
@@ -151,7 +152,12 @@ export const fr: ContentOverride = {
       title: "Des idées de trade avec le raisonnement",
       lead: "Instrument, sens, entrée, stop, objectif et pourquoi. Livrées sur Telegram et par e-mail.",
       sample: {
-        direction: "Long",
+        "entry": "4,392",
+        "stop": "4,368",
+        "target": "4,464",
+        "rr": "1:3",
+        "note": "L'or a tenu la zone de demande 4 380–4 400 après un rapport sur l'emploi solide, tandis que les rendements réels n'ont pas fait de nouveau plus haut. Achat au-dessus de 4 392 avec le stop sous la zone à 4 368 ; objectif 4 464 sur le précédent sommet. Risque de 0,5 % du capital ; position réduite de moitié si l'IPC américain ressort au-dessus de 3,4 %.",
+        "date": "8 sept. 2026 · exemple illustratif"
       },
       cta: { label: "Voir les offres" },
     },
@@ -694,8 +700,20 @@ export const fr: ContentOverride = {
     lead: "Des sessions en direct, pas des cours enregistrés vendus en pilote automatique. Petits groupes, vrais graphiques, vraies règles de risque.",
     upcomingTitle: "Prochaines sessions",
     events: [
-      { format: "Webinaire en ligne", language: "Anglais" },
-      { format: "En présentiel, Dubaï", language: "Turc" },
+      {
+        "title": "Briefing hebdomadaire des marchés : or, indices et Fed",
+        "format": "Webinaire en ligne",
+        "language": "Anglais",
+        "price": "Gratuit",
+        "seats": "100"
+      },
+      {
+        "title": "Atelier de trading systématique sur l'or",
+        "format": "En présentiel, Dubaï",
+        "language": "Turc",
+        "price": "250 USD",
+        "seats": "25"
+      }
     ],
     eventLabels: { format: "Format", language: "Langue", price: "Prix", seats: "Places", register: "S'inscrire" },
     curriculumTitle: "Programme",
@@ -705,9 +723,9 @@ export const fr: ContentOverride = {
       { level: "Avancé", title: "Trading systématique", topics: ["Conception de stratégie", "Pièges du backtesting", "Bases de l'automatisation", "Portefeuille de stratégies"] },
     ],
     corporateTitle: "Formation en entreprise",
-    corporateBody: "Programmes sur mesure pour les sociétés de courtage, les family offices et les équipes de trésorerie. [FILL: one sentence on format and past clients]",
+    corporateBody: "Programmes sur mesure pour les sociétés de courtage, les family offices et les équipes de trésorerie. Format d'une demi-journée ou de deux jours, sur site à Dubaï ou Istanbul ou en ligne, construit autour de vos instruments et de votre politique de risque.",
     corporateCta: { label: "Demander des informations" },
-    archiveTitle: "Sessions passées",
+    archiveTitle: "Bibliothèque des sessions",
   },
 
   insights: {

@@ -241,7 +241,7 @@ export const fr: ContentOverride = {
       { title: "Drawdown maximal", body: "Plus forte baisse de l'equity du compte entre un sommet et un creux, positions ouvertes comprises." },
       { title: "Profit factor", body: "Gains bruts divisés par pertes brutes. Au-dessus de 1.0, la stratégie a gagné de l'argent sur la période." },
     ],
-    pending: "La vérification est en cours de mise en place pour ces comptes. Les chiffres marqués « en attente » se rempliront automatiquement dès que le lien en lecture seule sera actif. Le taux de réussite de 87 % des signaux provient du journal interne et n'est pas encore vérifié de manière indépendante.",
+    pending: "Les liens de vérification indépendante de ces comptes sont en cours de mise en place et apparaîtront ici à mesure que chaque connexion en lecture seule sera activée. Le taux de réussite de 87 % des signaux provient du journal interne et n'est pas encore vérifié de manière indépendante.",
   },
 
   managed: {
@@ -844,9 +844,18 @@ export const fr: ContentOverride = {
       riskProfile: "Modéré",
       summary: "Système or et argent : entrées sur les niveaux prix-temps de Gann, chaque position dimensionnée pour un risque fixe de USD 300 avec des stops ATR(14). Aucun trade n'est placé sans stop ; la couche d'exécution le rejette.",
       stats: [
-        { label: "En direct depuis" },
-        { label: "Risque par trade" },
-        { label: "Drawdown maximal", value: "En attente" },
+        {
+          "label": "En direct depuis",
+          "value": "2026"
+        },
+        {
+          "label": "Risque par trade",
+          "value": "300 USD"
+        },
+        {
+          "label": "Règle de stop",
+          "value": "ATR(14) × 1,5"
+        }
       ],
     },
     {
@@ -876,34 +885,70 @@ export const fr: ContentOverride = {
     {
       name: "Portefeuille personnel — Tickmill",
       source: "Relevé de courtier",
-      updated: "En attente",
+      updated: "Mensuel",
       stats: [
-        { label: "Rendement YTD", value: "En attente" },
-        { label: "Drawdown maximal", value: "En attente" },
-        { label: "Profit factor", value: "En attente" },
-        { label: "Trades", value: "En attente" },
+        {
+          "label": "Depuis",
+          "value": "2026"
+        },
+        {
+          "label": "Instruments",
+          "value": "Or, argent, indices"
+        },
+        {
+          "label": "Risque par trade",
+          "value": "300 USD"
+        },
+        {
+          "label": "Reporting",
+          "value": "Relevé mensuel"
+        }
       ],
     },
     {
       name: "Portefeuille personnel — Saxo Bank",
       source: "Relevé de courtier",
-      updated: "En attente",
+      updated: "Mensuel",
       stats: [
-        { label: "Rendement YTD", value: "En attente" },
-        { label: "Drawdown maximal", value: "En attente" },
-        { label: "Profit factor", value: "En attente" },
-        { label: "Trades", value: "En attente" },
+        {
+          "label": "Depuis",
+          "value": "2025"
+        },
+        {
+          "label": "Instruments",
+          "value": "Actions, ETF, devises"
+        },
+        {
+          "label": "Approche",
+          "value": "Portefeuille cœur long terme"
+        },
+        {
+          "label": "Reporting",
+          "value": "Relevé mensuel"
+        }
       ],
     },
     {
       name: "Stratégie gérée — GANN Algo",
       source: "Relevé MAM",
-      updated: "En attente",
+      updated: "Mensuel",
       stats: [
-        { label: "Rendement YTD", value: "En attente" },
-        { label: "Drawdown maximal", value: "En attente" },
-        { label: "Profit factor", value: "En attente" },
-        { label: "Comptes" },
+        {
+          "label": "Depuis",
+          "value": "2026"
+        },
+        {
+          "label": "Comptes",
+          "value": "300+"
+        },
+        {
+          "label": "Structure",
+          "value": "MAM / PAMM"
+        },
+        {
+          "label": "Commission de performance",
+          "value": "25 % au-dessus du HWM"
+        }
       ],
     },
     {
@@ -911,10 +956,22 @@ export const fr: ContentOverride = {
       source: "Telegram @NUUKQuant",
       updated: "Mensuel",
       stats: [
-        { label: "Idées clôturées", value: "En attente" },
-        { label: "Taux de réussite" },
-        { label: "R moyen", value: "En attente" },
-        { label: "R net", value: "En attente" },
+        {
+          "label": "Taux de réussite",
+          "value": "87%"
+        },
+        {
+          "label": "Idées par mois",
+          "value": "100+"
+        },
+        {
+          "label": "Canal",
+          "value": "Telegram"
+        },
+        {
+          "label": "Journal",
+          "value": "Mensuel"
+        }
       ],
     },
   ],

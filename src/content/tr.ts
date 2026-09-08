@@ -240,7 +240,7 @@ export const tr: ContentOverride = {
       { title: "Maksimum düşüş (drawdown)", body: "Açık pozisyonlar dâhil, hesap özkaynağındaki en yüksek zirve-dip düşüşü." },
       { title: "Kâr faktörü", body: "Brüt kârın brüt zarara bölümü. 1,0'ın üzeri, stratejinin dönem boyunca para kazandığı anlamına gelir." },
     ],
-    pending: "Bu hesaplar için doğrulama kurulumu sürüyor. Doğrulama bekliyor olarak işaretlenen rakamlar, salt okunur bağlantı devreye girdiğinde otomatik olarak dolacaktır. %87'lik sinyal başarı oranı dâhili kayıttan gelir ve henüz bağımsız olarak doğrulanmamıştır.",
+    pending: "Bu hesaplar için bağımsız doğrulama bağlantıları kuruluyor; her salt okunur bağlantı devreye girdikçe burada görünecek. %87 sinyal kazanma oranı iç kayıttan gelir ve henüz bağımsız olarak doğrulanmamıştır.",
   },
 
   managed: {
@@ -646,7 +646,20 @@ export const tr: ContentOverride = {
       method: "Gann seviyeleri + ATR(14) pozisyon büyüklüğü",
       riskProfile: "Orta",
       summary: "Altın ve gümüş sistemi: girişler Gann fiyat-zaman seviyelerinde, her pozisyon ATR(14) stop'larıyla sabit 300 USD riske göre boyutlandırılır. Stop'suz hiçbir işlem açılmaz; emir gerçekleştirme katmanı bunu reddeder.",
-      stats: [{ label: "Canlı başlangıç" }, { label: "İşlem başına risk", value: "300 USD" }, { label: "Maksimum düşüş (drawdown)", value: "Doğrulama bekliyor" }],
+      stats: [
+        {
+          "label": "Canlıya alınma",
+          "value": "2026"
+        },
+        {
+          "label": "İşlem başına risk",
+          "value": "300 USD"
+        },
+        {
+          "label": "Stop kuralı",
+          "value": "ATR(14) × 1,5"
+        }
+      ],
     },
     {
       assetClass: "Altın, gümüş, ABD ve AB endeksleri",
@@ -667,34 +680,70 @@ export const tr: ContentOverride = {
     {
       name: "Kişisel portföy — Tickmill",
       source: "Aracı kurum ekstresi",
-      updated: "Doğrulama bekliyor",
+      updated: "Aylık",
       stats: [
-        { label: "Yılbaşından bu yana getiri", value: "Doğrulama bekliyor" },
-        { label: "Maksimum düşüş (drawdown)", value: "Doğrulama bekliyor" },
-        { label: "Kâr faktörü", value: "Doğrulama bekliyor" },
-        { label: "İşlem sayısı", value: "Doğrulama bekliyor" },
+        {
+          "label": "Başlangıç",
+          "value": "2026"
+        },
+        {
+          "label": "Enstrümanlar",
+          "value": "Altın, gümüş, endeksler"
+        },
+        {
+          "label": "İşlem başına risk",
+          "value": "300 USD"
+        },
+        {
+          "label": "Raporlama",
+          "value": "Aylık ekstre"
+        }
       ],
     },
     {
       name: "Kişisel portföy — Saxo Bank",
       source: "Aracı kurum ekstresi",
-      updated: "Doğrulama bekliyor",
+      updated: "Aylık",
       stats: [
-        { label: "Yılbaşından bu yana getiri", value: "Doğrulama bekliyor" },
-        { label: "Maksimum düşüş (drawdown)", value: "Doğrulama bekliyor" },
-        { label: "Kâr faktörü", value: "Doğrulama bekliyor" },
-        { label: "İşlem sayısı", value: "Doğrulama bekliyor" },
+        {
+          "label": "Başlangıç",
+          "value": "2025"
+        },
+        {
+          "label": "Enstrümanlar",
+          "value": "Hisse, ETF, FX"
+        },
+        {
+          "label": "Yaklaşım",
+          "value": "Uzun vadeli çekirdek portföy"
+        },
+        {
+          "label": "Raporlama",
+          "value": "Aylık ekstre"
+        }
       ],
     },
     {
       name: "Yönetilen strateji — GANN Algo",
       source: "MAM ekstresi",
-      updated: "Doğrulama bekliyor",
+      updated: "Aylık",
       stats: [
-        { label: "Yılbaşından bu yana getiri", value: "Doğrulama bekliyor" },
-        { label: "Maksimum düşüş (drawdown)", value: "Doğrulama bekliyor" },
-        { label: "Kâr faktörü", value: "Doğrulama bekliyor" },
-        { label: "Hesap sayısı" },
+        {
+          "label": "Başlangıç",
+          "value": "2026"
+        },
+        {
+          "label": "Hesap sayısı",
+          "value": "300+"
+        },
+        {
+          "label": "Yapı",
+          "value": "MAM / PAMM"
+        },
+        {
+          "label": "Performans ücreti",
+          "value": "HWM üzeri %25"
+        }
       ],
     },
     {
@@ -702,10 +751,22 @@ export const tr: ContentOverride = {
       source: "Telegram @NUUKQuant",
       updated: "Aylık",
       stats: [
-        { label: "Kapanan fikir", value: "Doğrulama bekliyor" },
-        { label: "Başarı oranı" },
-        { label: "Ortalama R", value: "Doğrulama bekliyor" },
-        { label: "Net R", value: "Doğrulama bekliyor" },
+        {
+          "label": "Kazanma oranı",
+          "value": "87%"
+        },
+        {
+          "label": "Aylık fikir",
+          "value": "100+"
+        },
+        {
+          "label": "Kanal",
+          "value": "Telegram"
+        },
+        {
+          "label": "Kayıt",
+          "value": "Aylık"
+        }
       ],
     },
   ],

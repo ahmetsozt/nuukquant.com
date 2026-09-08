@@ -239,7 +239,7 @@ export const es: ContentOverride = {
       { title: "Drawdown máximo", body: "Mayor caída desde un máximo hasta un mínimo en el capital de la cuenta, incluidas las posiciones abiertas." },
       { title: "Factor de beneficio", body: "Beneficio bruto dividido entre pérdida bruta. Por encima de 1,0 significa que la estrategia ganó dinero en el periodo." },
     ],
-    pending: "La verificación de estas cuentas está en proceso de configuración. Las cifras marcadas como pendientes se completarán automáticamente cuando el enlace de solo lectura esté activo. La tasa de acierto del 87% de las señales procede del registro interno y todavía no ha sido verificada de forma independiente.",
+    pending: "Los enlaces de verificación independiente de estas cuentas se están configurando y aparecerán aquí a medida que se active cada conexión de solo lectura. La tasa de acierto del 87% de las señales procede del registro interno y aún no está verificada de forma independiente.",
   },
 
   managed: {
@@ -658,9 +658,18 @@ export const es: ContentOverride = {
       riskProfile: "Moderado",
       summary: "Sistema para oro y plata: entradas en niveles precio-tiempo de Gann, cada posición dimensionada a un riesgo fijo de 300 USD con stops por ATR(14). No se abre ninguna operación sin stop; la capa de ejecución la rechaza.",
       stats: [
-        { label: "En vivo desde" },
-        { label: "Riesgo por operación", value: "300 USD" },
-        { label: "Drawdown máximo", value: "Pendiente" },
+        {
+          "label": "En vivo desde",
+          "value": "2026"
+        },
+        {
+          "label": "Riesgo por operación",
+          "value": "300 USD"
+        },
+        {
+          "label": "Regla de stop",
+          "value": "ATR(14) × 1,5"
+        }
       ],
     },
     {
@@ -693,34 +702,70 @@ export const es: ContentOverride = {
     {
       name: "Cartera personal — Tickmill",
       source: "Extracto del bróker",
-      updated: "Pendiente",
+      updated: "Mensual",
       stats: [
-        { label: "Rentabilidad YTD", value: "Pendiente" },
-        { label: "Drawdown máximo", value: "Pendiente" },
-        { label: "Factor de beneficio", value: "Pendiente" },
-        { label: "Operaciones", value: "Pendiente" },
+        {
+          "label": "Desde",
+          "value": "2026"
+        },
+        {
+          "label": "Instrumentos",
+          "value": "Oro, plata, índices"
+        },
+        {
+          "label": "Riesgo por operación",
+          "value": "300 USD"
+        },
+        {
+          "label": "Informes",
+          "value": "Extracto mensual"
+        }
       ],
     },
     {
       name: "Cartera personal — Saxo Bank",
       source: "Extracto del bróker",
-      updated: "Pendiente",
+      updated: "Mensual",
       stats: [
-        { label: "Rentabilidad YTD", value: "Pendiente" },
-        { label: "Drawdown máximo", value: "Pendiente" },
-        { label: "Factor de beneficio", value: "Pendiente" },
-        { label: "Operaciones", value: "Pendiente" },
+        {
+          "label": "Desde",
+          "value": "2025"
+        },
+        {
+          "label": "Instrumentos",
+          "value": "Acciones, ETF, divisas"
+        },
+        {
+          "label": "Enfoque",
+          "value": "Cartera núcleo a largo plazo"
+        },
+        {
+          "label": "Informes",
+          "value": "Extracto mensual"
+        }
       ],
     },
     {
       name: "Estrategia gestionada — GANN Algo",
       source: "Extracto MAM",
-      updated: "Pendiente",
+      updated: "Mensual",
       stats: [
-        { label: "Rentabilidad YTD", value: "Pendiente" },
-        { label: "Drawdown máximo", value: "Pendiente" },
-        { label: "Factor de beneficio", value: "Pendiente" },
-        { label: "Cuentas" },
+        {
+          "label": "Desde",
+          "value": "2026"
+        },
+        {
+          "label": "Cuentas",
+          "value": "300+"
+        },
+        {
+          "label": "Estructura",
+          "value": "MAM / PAMM"
+        },
+        {
+          "label": "Comisión de éxito",
+          "value": "25% sobre HWM"
+        }
       ],
     },
     {
@@ -728,10 +773,22 @@ export const es: ContentOverride = {
       source: "Telegram @NUUKQuant",
       updated: "Mensual",
       stats: [
-        { label: "Ideas cerradas", value: "Pendiente" },
-        { label: "Tasa de acierto" },
-        { label: "R medio", value: "Pendiente" },
-        { label: "R neto", value: "Pendiente" },
+        {
+          "label": "Tasa de acierto",
+          "value": "87%"
+        },
+        {
+          "label": "Ideas al mes",
+          "value": "100+"
+        },
+        {
+          "label": "Canal",
+          "value": "Telegram"
+        },
+        {
+          "label": "Registro",
+          "value": "Mensual"
+        }
       ],
     },
   ],

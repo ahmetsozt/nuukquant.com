@@ -313,7 +313,7 @@ export const en = {
       { title: "Max drawdown", body: "Largest peak-to-trough decline in account equity, including open positions." },
       { title: "Profit factor", body: "Gross profit divided by gross loss. Above 1.0 means the strategy made money over the period." },
     ],
-    pending: "Verification is being set up for these accounts. Figures marked pending will populate automatically once the read-only link is live. The 87% signal win rate comes from the internal log and is not yet independently verified.",
+    pending: "Independent verification links are being set up for these accounts and will appear here as each read-only connection goes live. The 87% signal win rate comes from the internal log and is not yet independently verified.",
   },
 
   managed: {
@@ -825,9 +825,18 @@ export const en = {
       since: "2026",
       summary: "Gold and silver system: entries on Gann price-time levels, every position sized to a fixed USD 300 risk with ATR(14) stops. No trade is placed without a stop; the execution layer rejects it.",
       stats: [
-        { label: "Live since", value: "2026" },
-        { label: "Risk per trade", value: "USD 300" },
-        { label: "Max drawdown", value: "Pending" },
+        {
+          "label": "Live since",
+          "value": "2026"
+        },
+        {
+          "label": "Risk per trade",
+          "value": "USD 300"
+        },
+        {
+          "label": "Stop rule",
+          "value": "ATR(14) × 1.5"
+        }
       ],
       series: [100, 102, 101, 105, 108, 107, 112, 115, 113, 119, 124, 122, 128, 133],
     },
@@ -874,12 +883,28 @@ export const en = {
       verifiedHref: "",
       status: "pending",
       since: "2026",
-      updated: "Pending",
+      updated: "Monthly",
       stats: [
-        { label: "Return YTD", value: "Pending", tone: "up" },
-        { label: "Max drawdown", value: "Pending", tone: "down" },
-        { label: "Profit factor", value: "Pending", tone: "neutral" },
-        { label: "Trades", value: "Pending", tone: "neutral" },
+        {
+          "label": "Since",
+          "value": "2026",
+          "tone": "neutral"
+        },
+        {
+          "label": "Instruments",
+          "value": "Gold, silver, indices",
+          "tone": "neutral"
+        },
+        {
+          "label": "Risk per trade",
+          "value": "USD 300",
+          "tone": "neutral"
+        },
+        {
+          "label": "Reporting",
+          "value": "Monthly statement",
+          "tone": "neutral"
+        }
       ],
       series: [100, 103, 101, 106, 109, 108, 114, 118, 116, 121, 125, 123, 129],
     },
@@ -889,12 +914,28 @@ export const en = {
       verifiedHref: "",
       status: "pending",
       since: "2025",
-      updated: "Pending",
+      updated: "Monthly",
       stats: [
-        { label: "Return YTD", value: "Pending", tone: "up" },
-        { label: "Max drawdown", value: "Pending", tone: "down" },
-        { label: "Profit factor", value: "Pending", tone: "neutral" },
-        { label: "Trades", value: "Pending", tone: "neutral" },
+        {
+          "label": "Since",
+          "value": "2025",
+          "tone": "neutral"
+        },
+        {
+          "label": "Instruments",
+          "value": "Stocks, ETFs, FX",
+          "tone": "neutral"
+        },
+        {
+          "label": "Approach",
+          "value": "Long-term core portfolio",
+          "tone": "neutral"
+        },
+        {
+          "label": "Reporting",
+          "value": "Monthly statement",
+          "tone": "neutral"
+        }
       ],
       series: [100, 101, 104, 103, 107, 110, 109, 113, 112, 117, 119, 122, 124],
     },
@@ -904,12 +945,28 @@ export const en = {
       verifiedHref: "",
       status: "pending",
       since: "2026",
-      updated: "Pending",
+      updated: "Monthly",
       stats: [
-        { label: "Return YTD", value: "Pending", tone: "up" },
-        { label: "Max drawdown", value: "Pending", tone: "down" },
-        { label: "Profit factor", value: "Pending", tone: "neutral" },
-        { label: "Accounts", value: "300+", tone: "neutral" },
+        {
+          "label": "Since",
+          "value": "2026",
+          "tone": "neutral"
+        },
+        {
+          "label": "Accounts",
+          "value": "300+",
+          "tone": "neutral"
+        },
+        {
+          "label": "Structure",
+          "value": "MAM / PAMM",
+          "tone": "neutral"
+        },
+        {
+          "label": "Performance fee",
+          "value": "25% above HWM",
+          "tone": "neutral"
+        }
       ],
       series: [100, 102, 105, 104, 108, 111, 110, 114, 117, 116, 120, 123, 125],
     },
@@ -921,10 +978,26 @@ export const en = {
       since: "2025",
       updated: "Monthly",
       stats: [
-        { label: "Ideas closed", value: "Pending", tone: "neutral" },
-        { label: "Win rate", value: "87%", tone: "up" },
-        { label: "Avg R", value: "Pending", tone: "neutral" },
-        { label: "Net R", value: "Pending", tone: "neutral" },
+        {
+          "label": "Win rate",
+          "value": "87%",
+          "tone": "up"
+        },
+        {
+          "label": "Ideas per month",
+          "value": "100+",
+          "tone": "neutral"
+        },
+        {
+          "label": "Channel",
+          "value": "Telegram",
+          "tone": "neutral"
+        },
+        {
+          "label": "Log",
+          "value": "Monthly",
+          "tone": "neutral"
+        }
       ],
       series: [100, 102, 104, 103, 106, 108, 111, 110, 113, 115, 118, 120, 121],
     },

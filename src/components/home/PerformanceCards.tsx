@@ -18,11 +18,13 @@ export function PerformanceCardView({ card, c }: { card: PerformanceCard; c: Sit
             {c.ui.since} <Fill text={card.since} /> · {c.ui.source}: {card.source}
           </p>
         </div>
-        <Badge status={card.status} c={c} />
+        {card.status !== "pending" && <Badge status={card.status} c={c} />}
       </div>
-      <div className="mt-5 h-16">
-        <Sparkline data={card.series} className="h-full w-full" stroke="#0165fa" />
-      </div>
+      {card.status !== "pending" && (
+        <div className="mt-5 h-16">
+          <Sparkline data={card.series} className="h-full w-full" stroke="#0165fa" />
+        </div>
+      )}
       <dl className="mt-5 grid grid-cols-2 gap-x-4 gap-y-4 border-t border-black/5 pt-5">
         {card.stats.map((s) => (
           <div key={s.label}>
@@ -37,20 +39,18 @@ export function PerformanceCardView({ card, c }: { card: PerformanceCard; c: Sit
         <span>
           {c.ui.updated}: <Fill text={card.updated} />
         </span>
-        {card.verifiedHref ? (
+        {card.verifiedHref && (
           <a href={card.verifiedHref} className="inline-flex items-center gap-1 font-semibold text-primary hover:underline">
             {c.ui.verified} <Icon name="arrow-up-right" size={13} />
           </a>
-        ) : (
-          <span>{c.ui.verificationInProgress}</span>
         )}
       </div>
     </article>
   );
 }
 
-export default function PerformanceCards({ c, limit }: { c: SiteContent; limit?: number }) {
-  const cards = limit ? c.performance.slice(0, limit) : c.performance;
+export default function PerformanceCards({ c, limit, cards: given }: { c: SiteContent; limit?: number; cards?: PerformanceCard[] }) {
+  const cards = given ?? (limit ? c.performance.slice(0, limit) : c.performance);
   return (
     <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
       {cards.map((card) => (

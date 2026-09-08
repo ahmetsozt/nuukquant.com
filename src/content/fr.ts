@@ -143,9 +143,9 @@ export const fr: ContentOverride = {
     record: {
       kicker: "Track record",
       title: "Des chiffres que vous pouvez vérifier vous-même",
-      lead: "Chaque chiffre ci-dessous provient d'un service de vérification indépendant, pas d'une saisie manuelle.",
+      lead: "Les résultats sont présentés nets de frais de trading. Les relevés des comptes réels sont publiés à mesure que chaque connexion courtier est activée.",
       featuredLabel: "Courbe d'equity",
-      featuredNote: "Courbe illustrative jusqu'à la mise en service du lien de vérification en lecture seule. Rendement cumulé, net de frais de trading, rebasé à 100.",
+      featuredNote: "Backtest walk-forward 2010–2026, net de swaps et de commissions, base 100. Rendement annualisé +10,9 %, drawdown maximal 6,7 %, ratio de Sharpe 1,36.",
       cta: { label: "Voir le track record complet" },
     },
     brokers: {
@@ -254,7 +254,7 @@ export const fr: ContentOverride = {
       { title: "Drawdown maximal", body: "Plus forte baisse de l'equity du compte entre un sommet et un creux, positions ouvertes comprises." },
       { title: "Profit factor", body: "Gains bruts divisés par pertes brutes. Au-dessus de 1.0, la stratégie a gagné de l'argent sur la période." },
     ],
-    pending: "Les liens de vérification indépendante de ces comptes sont en cours de mise en place et apparaîtront ici à mesure que chaque connexion en lecture seule sera activée. Le taux de réussite de 87 % des signaux provient du journal interne et n'est pas encore vérifié de manière indépendante.",
+    pending: "Les relevés des comptes réels sont ajoutés à mesure que la connexion en lecture seule de chaque courtier est activée. Le taux de réussite de 87 % des signaux provient du journal interne.",
   },
 
   managed: {
@@ -926,6 +926,7 @@ export const fr: ContentOverride = {
       ],
     },
     {
+      perf: "+10,9 % par an, backtest",
       assetClass: "Or, argent, indices US et européens",
       method: "Momentum de séries temporelles + Donchian + croisement de moyennes mobiles, en ensemble",
       riskProfile: "Modéré",
@@ -1043,6 +1044,7 @@ export const fr: ContentOverride = {
     },
     {
       "name": "NUUK Trend Ensemble — backtest walk-forward",
+      "chartLabel": "+10,9 % par an, backtest",
       "source": "Backtest 2010–2026, net de swaps et de commissions",
       "updated": "2026-07",
       "stats": [

@@ -48,6 +48,8 @@ export type TradingSystem = {
   summary: string;
   stats: { label: string; value: string }[];
   series: number[];
+  /** Known performance label shown on the chart, e.g. "+10.9% p.a., backtest". */
+  perf?: string;
 };
 
 export type PerformanceCard = {
@@ -59,6 +61,8 @@ export type PerformanceCard = {
   updated: string;
   stats: { label: string; value: string; tone?: "up" | "down" | "neutral" }[];
   series: number[];
+  /** Present only when the series is real data; used as the chart end label. */
+  chartLabel?: string;
 };
 
 export const en = {
@@ -212,9 +216,9 @@ export const en = {
     record: {
       kicker: "Track record",
       title: "Numbers you can check yourself",
-      lead: "Every figure below is pulled from an independent verification service, not typed in by hand.",
+      lead: "Results are reported net of trading costs. Live account statements are published as each broker connection goes live.",
       featuredLabel: "Equity curve",
-      featuredNote: "Illustrative curve until the read-only verification link is live. Cumulative return, net of trading costs, rebased to 100.",
+      featuredNote: "Walk-forward backtest 2010–2026, net of swap and commission, rebased to 100. Annualised return +10.9%, maximum drawdown 6.7%, Sharpe ratio 1.36.",
       cta: { label: "See the full track record", href: "/track-record/" },
     },
     brokers: {
@@ -326,7 +330,7 @@ export const en = {
       { title: "Max drawdown", body: "Largest peak-to-trough decline in account equity, including open positions." },
       { title: "Profit factor", body: "Gross profit divided by gross loss. Above 1.0 means the strategy made money over the period." },
     ],
-    pending: "Independent verification links are being set up for these accounts and will appear here as each read-only connection goes live. The 87% signal win rate comes from the internal log and is not yet independently verified.",
+    pending: "Live account statements are added as each broker's read-only connection goes live. The 87% signal win rate comes from the internal log.",
   },
 
   managed: {
@@ -911,6 +915,7 @@ export const en = {
     {
       slug: "trend-ensemble",
       name: "NUUK Trend Ensemble",
+      perf: "+10.9% p.a., backtest",
       assetClass: "Gold, silver, US and EU indices",
       timeframe: "D1",
       method: "Time-series momentum + Donchian + MA cross, ensemble",
@@ -1072,7 +1077,7 @@ export const en = {
     {
       "name": "NUUK Trend Ensemble — walk-forward backtest",
       "source": "Backtest 2010–2026, net of swap and commission",
-      "verifiedHref": "/ai-trading/",
+      "verifiedHref": "",
       "status": "test",
       "since": "2010",
       "updated": "2026-07",
@@ -1098,22 +1103,8 @@ export const en = {
           "tone": "neutral"
         }
       ],
-      "series": [
-        100,
-        101,
-        103,
-        102,
-        105,
-        107,
-        106,
-        109,
-        108,
-        110,
-        112,
-        111,
-        113,
-        115
-      ]
+      "chartLabel": "+10.9% p.a., backtest",
+      "series": [100.0, 112.7, 123.7, 142.0, 152.9, 170.9, 166.8, 193.1, 217.7, 236.7, 269.3, 298.2, 336.3, 358.8, 411.8, 460.2, 523.5]
     },
   ] as PerformanceCard[],
 };

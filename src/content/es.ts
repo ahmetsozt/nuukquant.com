@@ -141,9 +141,9 @@ export const es: ContentOverride = {
     record: {
       kicker: "Historial verificado",
       title: "Cifras que puede comprobar usted mismo",
-      lead: "Cada cifra que aparece a continuación procede de un servicio de verificación independiente, no se ha introducido a mano.",
+      lead: "Los resultados se presentan netos de costes de trading. Los extractos de las cuentas reales se publican a medida que se activa cada conexión con el bróker.",
       featuredLabel: "Curva de capital",
-      featuredNote: "Curva ilustrativa hasta que el enlace de verificación de solo lectura esté activo. Rentabilidad acumulada, neta de costes de negociación, con base 100.",
+      featuredNote: "Backtest walk-forward 2010–2026, neto de swaps y comisiones, base 100. Rentabilidad anualizada +10,9%, drawdown máximo 6,7%, ratio de Sharpe 1,36.",
       cta: { label: "Ver el historial completo" },
     },
     brokers: {
@@ -252,7 +252,7 @@ export const es: ContentOverride = {
       { title: "Drawdown máximo", body: "Mayor caída desde un máximo hasta un mínimo en el capital de la cuenta, incluidas las posiciones abiertas." },
       { title: "Factor de beneficio", body: "Beneficio bruto dividido entre pérdida bruta. Por encima de 1,0 significa que la estrategia ganó dinero en el periodo." },
     ],
-    pending: "Los enlaces de verificación independiente de estas cuentas se están configurando y aparecerán aquí a medida que se active cada conexión de solo lectura. La tasa de acierto del 87% de las señales procede del registro interno y aún no está verificada de forma independiente.",
+    pending: "Los extractos de las cuentas reales se añaden a medida que se activa la conexión de solo lectura de cada bróker. La tasa de acierto del 87% de las señales procede del registro interno.",
   },
 
   managed: {
@@ -740,6 +740,7 @@ export const es: ContentOverride = {
       ],
     },
     {
+      perf: "+10,9% anual, backtest",
       assetClass: "Oro, plata, índices de EE. UU. y la UE",
       timeframe: "D1",
       method: "Momentum de series temporales + Donchian + cruce de medias móviles, en conjunto (ensemble)",
@@ -860,6 +861,7 @@ export const es: ContentOverride = {
     },
     {
       "name": "NUUK Trend Ensemble — backtest walk-forward",
+      "chartLabel": "+10,9% anual, backtest",
       "source": "Backtest 2010–2026, neto de swaps y comisiones",
       "updated": "2026-07",
       "stats": [

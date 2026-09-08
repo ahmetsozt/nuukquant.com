@@ -15,8 +15,8 @@ export default function EducationPreview({ c }: { c: SiteContent }) {
           </Button>
         </div>
         <div className="mt-10 space-y-4">
-          {c.education.events.slice(0, 1).map((ev) => (
-            <EventCard key={ev.title + ev.date} e={ev} c={c} />
+          {c.education.events.slice(0, 1).map((ev, i) => (
+            <EventCard key={i} e={ev} c={c} />
           ))}
         </div>
       </div>

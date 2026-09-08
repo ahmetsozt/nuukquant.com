@@ -21,8 +21,8 @@ export default function InsightsList({ c }: { c: SiteContent }) {
         <p className="py-16 text-center text-muted">{c.ui.noPosts}</p>
       ) : (
         <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {posts.map((p) => (
-            <PostCard key={p.title + p.date} p={p} c={c} />
+          {posts.map((p, i) => (
+            <PostCard key={i} p={p} c={c} />
           ))}
         </div>
       )}

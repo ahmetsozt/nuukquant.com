@@ -11,7 +11,8 @@ const toneClass = { up: "text-up", down: "text-down", neutral: "text-ink" } as c
 
 export default function RecordStrip({ c }: { c: SiteContent }) {
   const r = c.home.record;
-  const featured = c.performance[0];
+  const featured = c.performance.find((x) => x.chartLabel) ?? c.performance[0];
+  const others = c.performance.filter((x) => x !== featured).slice(0, 3);
   return (
     <section className="section-pad bg-white" aria-labelledby="record-heading">
       <div className="container-x">
@@ -32,10 +33,10 @@ export default function RecordStrip({ c }: { c: SiteContent }) {
                   <Fill text={featured.name} />
                 </h3>
               </div>
-              <Badge status={featured.status} c={c} />
+              {featured.status !== "pending" && <Badge status={featured.status} c={c} />}
             </div>
             <div className="mt-6 h-[220px] lg:h-[300px]">
-              <EquityChart data={featured.series} className="h-full w-full" />
+              <EquityChart data={featured.series} className="h-full w-full" endLabel={featured.chartLabel} />
             </div>
             <p className="mt-3 text-[12.5px] text-muted">{r.featuredNote}</p>
           </div>
@@ -51,19 +52,17 @@ export default function RecordStrip({ c }: { c: SiteContent }) {
             <div className="col-span-2 border-t border-black/5 pt-4 text-[12.5px] text-body lg:col-span-1">
               {c.ui.since} <Fill text={featured.since} /> · {c.ui.source}: {featured.source}
               <br />
-              {featured.verifiedHref ? (
+              {featured.verifiedHref && (
                 <a href={featured.verifiedHref} className="mt-1 inline-flex items-center gap-1 font-semibold text-primary hover:underline">
                   {c.ui.verified} <Icon name="arrow-up-right" size={13} />
                 </a>
-              ) : (
-                <span className="mt-1 inline-block">{c.ui.verificationInProgress}</span>
               )}
             </div>
           </dl>
         </article>
 
         <div className="mt-6">
-          <PerformanceCards c={c} limit={3} />
+          <PerformanceCards c={c} cards={others} />
         </div>
         <p className="mt-6 text-[12.5px] text-muted">{c.trackRecord.disclaimer}</p>
       </div>

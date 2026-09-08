@@ -216,9 +216,9 @@ export const tr: ContentOverride = {
     "record": {
       "kicker": "Performans kaydı",
       "title": "Bağımsız olarak doğrulanabilir sonuçlar",
-      "lead": "Aşağıdaki rakamlar elle girilmez; bağımsız doğrulama servislerinden alınır.",
+      "lead": "Sonuçlar işlem maliyetleri düşülmüş olarak raporlanır. Canlı hesap ekstreleri, her aracı kurum bağlantısı devreye alındıkça yayımlanır.",
       "featuredLabel": "Özkaynak eğrisi",
-      "featuredNote": "Salt okunur doğrulama bağlantısı devreye alınana kadar temsili eğri. İşlem maliyetleri düşülmüş, 100'e endekslenmiş kümülatif getiri.",
+      "featuredNote": "Walk-forward backtest 2010–2026, swap ve komisyon düşülmüş, 100'e endekslenmiş. Yıllıklandırılmış getiri +%10,9, maksimum düşüş %6,7, Sharpe oranı 1,36.",
       "cta": {
         "label": "Performans kaydının tamamı"
       }
@@ -417,7 +417,7 @@ export const tr: ContentOverride = {
         "body": "Brüt kârın brüt zarara oranı. 1,0'ın üzeri, stratejinin dönem boyunca net kazanç sağladığını gösterir."
       }
     ],
-    "pending": "Bu hesaplar için bağımsız doğrulama bağlantıları kurulmaktadır; her salt okunur bağlantı devreye alındıkça rakamlar burada yayımlanacaktır. %87 sinyal başarı oranı kurum içi kayda dayanır ve henüz bağımsız olarak doğrulanmamıştır."
+    "pending": "Canlı hesap ekstreleri, her aracı kurumun salt okunur bağlantısı devreye alındıkça eklenir. %87 sinyal başarı oranı kurum içi kayda dayanır."
   },
 
   managed: {
@@ -1025,6 +1025,7 @@ export const tr: ContentOverride = {
       ],
     },
     {
+      perf: "yıllık +%10,9, backtest",
       assetClass: "Altın, gümüş, ABD ve AB endeksleri",
       method: "Zaman serisi momentumu + Donchian + hareketli ortalama kesişimi, topluluk (ensemble)",
       riskProfile: "Orta",
@@ -1134,6 +1135,7 @@ export const tr: ContentOverride = {
     },
     {
       "name": "NUUK Trend Ensemble — walk-forward backtest",
+      "chartLabel": "yıllık +%10,9, backtest",
       "source": "Backtest 2010–2026, swap ve komisyon dahil",
       "updated": "2026-07",
       "stats": [

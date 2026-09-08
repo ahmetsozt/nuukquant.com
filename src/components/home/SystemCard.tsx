@@ -7,9 +7,12 @@ export default function SystemCard({ s, c }: { s: TradingSystem; c: SiteContent 
   const dim = s.status === "soon";
   return (
     <article className="rv group relative flex flex-col overflow-hidden rounded-card bg-navy p-7 text-white ring-1 ring-white/10 transition hover:ring-cyan/40">
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 opacity-70 transition-opacity group-hover:opacity-100">
-        <Sparkline data={s.series} className="h-full w-full" stroke={dim ? "#6b7280" : "#00d3f3"} />
-      </div>
+      {s.perf && (
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 opacity-70 transition-opacity group-hover:opacity-100">
+          <Sparkline data={s.series} className="h-full w-full" stroke={dim ? "#6b7280" : "#00d3f3"} />
+          <span className="num absolute end-5 bottom-4 rounded-pill bg-cyan px-2.5 py-1 text-[11px] font-bold text-navy-deep">{s.perf}</span>
+        </div>
+      )}
       <div className="relative flex items-start justify-between gap-3">
         <div>
           <p className="num text-[12px] font-semibold tracking-wider text-cyan uppercase">
@@ -34,7 +37,7 @@ export default function SystemCard({ s, c }: { s: TradingSystem; c: SiteContent 
           </div>
         ))}
       </dl>
-      <p className="relative mt-4 mb-16 text-[12px] text-soft/70">
+      <p className={`relative mt-4 text-[12px] text-soft/70 ${s.perf ? "mb-16" : "mb-2"}`}>
         {s.method} · {s.riskProfile}
       </p>
     </article>

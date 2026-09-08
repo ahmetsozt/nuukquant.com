@@ -1001,6 +1001,52 @@ export const en = {
       ],
       series: [100, 102, 104, 103, 106, 108, 111, 110, 113, 115, 118, 120, 121],
     },
+    {
+      "name": "NUUK Trend Ensemble — walk-forward backtest",
+      "source": "Backtest 2010–2026, net of swap and commission",
+      "verifiedHref": "/ai-trading/",
+      "status": "test",
+      "since": "2010",
+      "updated": "2026-07",
+      "stats": [
+        {
+          "label": "Net return, test period",
+          "value": "+10.9%",
+          "tone": "up"
+        },
+        {
+          "label": "Max drawdown",
+          "value": "6.7%",
+          "tone": "down"
+        },
+        {
+          "label": "Sharpe ratio",
+          "value": "1.36",
+          "tone": "neutral"
+        },
+        {
+          "label": "Paper trading since",
+          "value": "2026-07",
+          "tone": "neutral"
+        }
+      ],
+      "series": [
+        100,
+        101,
+        103,
+        102,
+        105,
+        107,
+        106,
+        109,
+        108,
+        110,
+        112,
+        111,
+        113,
+        115
+      ]
+    },
   ] as PerformanceCard[],
 };
 

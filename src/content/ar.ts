@@ -793,5 +793,28 @@ export const ar: ContentOverride = {
         }
       ],
     },
+    {
+      "name": "NUUK Trend Ensemble — اختبار walk-forward",
+      "source": "اختبار تاريخي 2010–2026، صافي السواب والعمولة",
+      "updated": "2026-07",
+      "stats": [
+        {
+          "label": "صافي العائد، فترة الاختبار",
+          "value": "+10.9%"
+        },
+        {
+          "label": "أقصى تراجع",
+          "value": "6.7%"
+        },
+        {
+          "label": "نسبة شارب",
+          "value": "1.36"
+        },
+        {
+          "label": "تداول ورقي منذ",
+          "value": "2026-07"
+        }
+      ]
+    },
   ],
 };

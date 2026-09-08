@@ -10,12 +10,13 @@ export async function generateMetadata({ params }: { params: LocaleParams }): Pr
 }
 
 export default async function InsightsPage({ params }: { params: LocaleParams }) {
-  const { c } = await resolve(params);
+  const { locale, c } = await resolve(params);
   const p = c.insights;
+  const localeHome = locale === "en" ? "/" : `/${locale}/`;
   return (
     <>
-      <PageIntro kicker={p.kicker} title={p.title} />
-      <section className="section-pad">
+      <PageIntro tone="light" kicker={p.kicker} title={p.title} crumbs={[{ label: c.ui.home, href: localeHome }, { label: p.kicker }]} />
+      <section className="section-pad bg-white">
         <div className="container-x">
           <InsightsList c={c} />
         </div>

@@ -21,18 +21,18 @@ export default function EquityChart({ data, className = "" }: { data: number[]; 
     <svg viewBox={`0 0 ${w} ${h}`} className={className} preserveAspectRatio="none" aria-hidden="true">
       <defs>
         <linearGradient id="eq-area" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#12a37f" stopOpacity="0.28" />
-          <stop offset="1" stopColor="#12a37f" stopOpacity="0" />
+          <stop offset="0" stopColor="#0165fa" stopOpacity="0.28" />
+          <stop offset="1" stopColor="#0165fa" stopOpacity="0" />
         </linearGradient>
       </defs>
       {[0.25, 0.5, 0.75].map((f) => (
-        <line key={f} x1={pad} x2={w - pad} y1={pad + (h - pad * 2) * f} y2={pad + (h - pad * 2) * f} stroke="#10141f" strokeOpacity="0.06" />
+        <line key={f} x1={pad} x2={w - pad} y1={pad + (h - pad * 2) * f} y2={pad + (h - pad * 2) * f} stroke="#0a0a0a" strokeOpacity="0.06" />
       ))}
-      <line x1={pad} x2={w - pad} y1={baseY} y2={baseY} stroke="#10141f" strokeOpacity="0.18" strokeDasharray="4 6" />
+      <line x1={pad} x2={w - pad} y1={baseY} y2={baseY} stroke="#0a0a0a" strokeOpacity="0.18" strokeDasharray="4 6" />
       <path d={area} fill="url(#eq-area)" />
-      <path d={line} fill="none" stroke="#12a37f" strokeWidth="2.5" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
-      <circle cx={ex} cy={ey} r="6" fill="#12a37f" />
-      <circle cx={ex} cy={ey} r="6" fill="none" stroke="#12a37f" strokeOpacity="0.35" strokeWidth="10" />
+      <path d={line} fill="none" stroke="#0165fa" strokeWidth="2.5" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
+      <circle cx={ex} cy={ey} r="6" fill="#0165fa" />
+      <circle cx={ex} cy={ey} r="6" fill="none" stroke="#0165fa" strokeOpacity="0.35" strokeWidth="10" />
     </svg>
   );
 }

@@ -6,61 +6,66 @@ import Fill from "@/components/ui/Fill";
 import Icon from "@/components/ui/Icon";
 import type { Broker, SiteContent } from "@/content/en";
 
+/** Link to the broker's own landing page under /brokers/{slug}/. */
+export function brokerHref(c: SiteContent, b: Broker) {
+  return `${c.nav[1].href}${b.slug}/`;
+}
+
 export function BrokerCardCompact({ b, c }: { b: Broker; c: SiteContent }) {
   const L = c.brokers.cardLabels;
   return (
-    <article className="rv group flex flex-col overflow-hidden rounded-xl bg-white ring-1 ring-black/5 shadow-card transition hover:-translate-y-0.5 hover:shadow-hover">
-      <div className="relative flex h-24 items-center justify-center bg-paper">
+    <article className="rv group flex flex-col overflow-hidden rounded-card bg-white shadow-card ring-1 ring-black/5 transition hover:-translate-y-1 hover:shadow-hover">
+      <div className="relative flex h-28 items-center justify-center bg-fog">
         <BrokerLogo slug={b.slug} name={b.name} className="h-12 scale-125" />
-        <div className="absolute top-3 end-3">
+        <div className="absolute top-4 end-4">
           <Badge status={b.status} c={c} />
         </div>
       </div>
-      <div className="flex flex-1 flex-col p-6">
-      <h3 className="text-[19px] leading-snug">
-        <Fill text={b.name} />
-      </h3>
-      <p className="mt-1 text-[14px] text-body">
-        <Fill text={b.tagline} />
-      </p>
-      <dl className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-[13px]">
-        <div>
-          <dt className="text-muted">{L.regulator}</dt>
-          <dd className="text-ink">
-            <Fill text={b.regulator} />
-          </dd>
+      <div className="flex flex-1 flex-col p-7">
+        <h3 className="text-[20px] leading-snug">
+          <Fill text={b.name} />
+        </h3>
+        <p className="mt-1 text-[14px] text-body">
+          <Fill text={b.tagline} />
+        </p>
+        <dl className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-[13px]">
+          <div>
+            <dt className="text-muted">{L.regulator}</dt>
+            <dd className="font-semibold text-ink">
+              <Fill text={b.regulator} />
+            </dd>
+          </div>
+          <div>
+            <dt className="text-muted">{L.minDeposit}</dt>
+            <dd className="num font-semibold text-ink">
+              <Fill text={b.minDeposit} />
+            </dd>
+          </div>
+          <div>
+            <dt className="text-muted">EUR/USD</dt>
+            <dd className="num font-semibold text-ink">
+              <Fill text={b.spreads[0]?.value ?? ""} />
+            </dd>
+          </div>
+          <div>
+            <dt className="text-muted">{L.withdrawal}</dt>
+            <dd className="font-semibold text-ink">
+              <Fill text={b.withdrawalTime} />
+            </dd>
+          </div>
+        </dl>
+        <p className="mt-4 text-[13px] text-body">
+          <span className="text-muted">{L.bestFor}: </span>
+          <Fill text={b.bestFor} />
+        </p>
+        <div className="mt-6 flex items-center gap-4">
+          <Button href={b.referralHref} size="sm" event="broker_cta_click" eventLabel={b.slug}>
+            {c.ui.openAccount}
+          </Button>
+          <Link href={brokerHref(c, b)} className="inline-flex items-center gap-1 text-[13.5px] font-semibold text-ink hover:text-primary">
+            {L.profile} <Icon name="arrow-up-right" size={13} />
+          </Link>
         </div>
-        <div>
-          <dt className="text-muted">{L.minDeposit}</dt>
-          <dd className="num text-ink">
-            <Fill text={b.minDeposit} />
-          </dd>
-        </div>
-        <div>
-          <dt className="text-muted">EUR/USD</dt>
-          <dd className="num text-ink">
-            <Fill text={b.spreads[0]?.value ?? ""} />
-          </dd>
-        </div>
-        <div>
-          <dt className="text-muted">{L.withdrawal}</dt>
-          <dd className="text-ink">
-            <Fill text={b.withdrawalTime} />
-          </dd>
-        </div>
-      </dl>
-      <p className="mt-4 text-[13px] text-body">
-        <span className="text-muted">{L.bestFor}: </span>
-        <Fill text={b.bestFor} />
-      </p>
-      <div className="mt-5 flex items-center gap-3">
-        <Button href={b.referralHref} className="py-3">
-          {c.ui.openAccount}
-        </Button>
-        <Link href={`${c.nav[1].href}#${b.slug}`} className="inline-flex items-center gap-1 text-[13px] text-body hover:text-ink">
-          {c.ui.learnMore} <Icon name="arrow-up-right" size={13} />
-        </Link>
-      </div>
       </div>
     </article>
   );
@@ -81,14 +86,14 @@ export function BrokerCardFull({ b, c }: { b: Broker; c: SiteContent }) {
     [L.languages, b.languages],
   ];
   return (
-    <article id={b.slug} className="rv scroll-mt-24 overflow-hidden rounded-2xl bg-white ring-1 ring-black/5 shadow-card">
+    <article id={b.slug} className="rv scroll-mt-24 overflow-hidden rounded-card bg-white shadow-card ring-1 ring-black/5">
       <div className="grid lg:grid-cols-12">
         <div className="border-b border-black/5 p-6 lg:col-span-4 lg:border-e lg:border-b-0 lg:p-8">
           <div className="flex items-center justify-between">
             <BrokerLogo slug={b.slug} name={b.name} />
             <Badge status={b.status} c={c} />
           </div>
-          <h3 className="mt-5 text-[24px] leading-tight">
+          <h3 className="mt-5 text-[26px] leading-tight">
             <Fill text={b.name} />
           </h3>
           <p className="mt-2 text-[14.5px] text-body">
@@ -98,8 +103,13 @@ export function BrokerCardFull({ b, c }: { b: Broker; c: SiteContent }) {
             <span className="text-muted">{L.bestFor}: </span>
             <Fill text={b.bestFor} />
           </p>
-          <div className="mt-6">
-            <Button href={b.referralHref}>{c.ui.openAccount}</Button>
+          <div className="mt-6 flex flex-wrap items-center gap-4">
+            <Button href={b.referralHref} event="broker_cta_click" eventLabel={b.slug}>
+              {c.ui.openAccount}
+            </Button>
+            <Link href={brokerHref(c, b)} className="inline-flex items-center gap-1 text-[14px] font-semibold text-ink hover:text-primary">
+              {L.profile} <Icon name="arrow-up-right" size={14} />
+            </Link>
           </div>
           <p className="mt-4 text-[11.5px] leading-5 text-muted">{c.brokers.disclosure}</p>
         </div>
@@ -109,18 +119,18 @@ export function BrokerCardFull({ b, c }: { b: Broker; c: SiteContent }) {
               {rows.map(([k, v]) => (
                 <div key={k} className="flex justify-between gap-4 py-2.5">
                   <dt className="text-muted">{k}</dt>
-                  <dd className="text-end text-ink">
+                  <dd className="text-end font-medium text-ink">
                     <Fill text={v} />
                   </dd>
                 </div>
               ))}
             </dl>
-            <p className="mt-5 text-[12px] font-medium tracking-wide text-muted uppercase">{L.spreads}</p>
+            <p className="mt-5 text-[12px] font-semibold tracking-wide text-muted uppercase">{L.spreads}</p>
             <ul className="mt-2 grid grid-cols-3 gap-2">
               {b.spreads.map((s) => (
-                <li key={s.pair} className="rounded-md bg-paper px-3 py-2">
+                <li key={s.pair} className="rounded-2xl bg-fog px-3 py-2.5">
                   <p className="text-[11.5px] text-muted">{s.pair}</p>
-                  <p className="num text-[15px] text-ink">
+                  <p className="num text-[15px] font-bold text-ink">
                     <Fill text={s.value} />
                   </p>
                 </li>
@@ -128,7 +138,7 @@ export function BrokerCardFull({ b, c }: { b: Broker; c: SiteContent }) {
             </ul>
           </div>
           <div>
-            <p className="text-[12px] font-medium tracking-wide text-muted uppercase">{L.pros}</p>
+            <p className="text-[12px] font-semibold tracking-wide text-muted uppercase">{L.pros}</p>
             <ul className="mt-2 space-y-1.5 text-[13.5px] text-body">
               {b.pros.map((p, i) => (
                 <li key={i} className="flex gap-2">
@@ -137,7 +147,7 @@ export function BrokerCardFull({ b, c }: { b: Broker; c: SiteContent }) {
                 </li>
               ))}
             </ul>
-            <p className="mt-5 text-[12px] font-medium tracking-wide text-muted uppercase">{L.cons}</p>
+            <p className="mt-5 text-[12px] font-semibold tracking-wide text-muted uppercase">{L.cons}</p>
             <ul className="mt-2 space-y-1.5 text-[13.5px] text-body">
               {b.cons.map((p, i) => (
                 <li key={i} className="flex gap-2">
@@ -146,15 +156,15 @@ export function BrokerCardFull({ b, c }: { b: Broker; c: SiteContent }) {
                 </li>
               ))}
             </ul>
-            <details className="group mt-6 rounded-md bg-paper">
-              <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-3 text-[13.5px] font-medium text-ink">
+            <details className="group mt-6 rounded-2xl bg-fog">
+              <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-3 text-[13.5px] font-semibold text-ink">
                 {L.steps}
                 <Icon name="chevron" size={16} className="transition-transform group-open:rotate-180" />
               </summary>
               <ol className="space-y-2 px-4 pb-4 text-[13.5px] text-body">
                 {b.steps.map((s, i) => (
                   <li key={i} className="flex gap-3">
-                    <span className="num text-muted">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="flex size-6 flex-none items-center justify-center rounded-full bg-primary text-[11px] font-bold text-white">{i + 1}</span>
                     <Fill text={s} />
                   </li>
                 ))}

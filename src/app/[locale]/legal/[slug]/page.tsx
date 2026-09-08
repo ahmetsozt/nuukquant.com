@@ -21,20 +21,23 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 }
 
 export default async function LegalPage({ params }: { params: Params }) {
-  const { c } = await resolve(params);
+  const { locale, c } = await resolve(params);
   const { slug } = await params;
   const doc = c.legal[slug as LegalKey];
   if (!doc) notFound();
+  const localeHome = locale === "en" ? "/" : `/${locale}/`;
   return (
     <>
-      <PageIntro title={doc.title} />
-      <section className="section-pad">
-        <div className="container-x max-w-[820px] space-y-5 text-[15.5px] leading-7 text-body">
-          {doc.body.map((p, i) => (
-            <p key={i}>
-              <Fill text={p} />
-            </p>
-          ))}
+      <PageIntro tone="light" kicker={c.ui.legal} title={doc.title} crumbs={[{ label: c.ui.home, href: localeHome }, { label: doc.title }]} />
+      <section className="section-pad bg-white">
+        <div className="container-x max-w-[820px]">
+          <div className="space-y-5 rounded-card bg-fog p-8 lg:p-10">
+            {doc.body.map((p, i) => (
+              <p key={i} className="text-[15.5px] leading-7 text-body">
+                <Fill text={p} />
+              </p>
+            ))}
+          </div>
         </div>
       </section>
     </>

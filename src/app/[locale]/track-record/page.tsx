@@ -11,29 +11,30 @@ export async function generateMetadata({ params }: { params: LocaleParams }): Pr
 }
 
 export default async function TrackRecordPage({ params }: { params: LocaleParams }) {
-  const { c } = await resolve(params);
+  const { locale, c } = await resolve(params);
   const p = c.trackRecord;
+  const localeHome = locale === "en" ? "/" : `/${locale}/`;
   return (
     <>
-      <PageIntro kicker={p.kicker} title={p.title} body={p.lead} />
-      <section className="section-pad">
+      <PageIntro tone="light" kicker={p.kicker} title={p.title} body={p.lead} crumbs={[{ label: c.ui.home, href: localeHome }, { label: p.kicker }]} />
+      <section className="section-pad bg-white">
         <div className="container-x">
           <PerformanceCards c={c} />
           <p className="mt-6 max-w-[760px] text-[12.5px] leading-5 text-muted">{p.disclaimer}</p>
         </div>
       </section>
-      <section className="bg-paper py-20 lg:py-24">
+      <section className="section-pad bg-fog">
         <div className="container-x">
           <SectionHead title={p.methodologyTitle} />
-          <ul className="mt-10 grid gap-8 md:grid-cols-3">
+          <ul className="mt-10 grid gap-5 md:grid-cols-3">
             {p.methodology.map((m) => (
-              <li key={m.title} className="rv">
+              <li key={m.title} className="rv rounded-card bg-white p-7 shadow-card ring-1 ring-black/5">
                 <h3 className="text-[18px]">{m.title}</h3>
                 <p className="mt-2 text-[14.5px] leading-6 text-body">{m.body}</p>
               </li>
             ))}
           </ul>
-          <p className="mt-10 rounded-md border border-dashed border-black/15 bg-white p-4 text-[13.5px] text-body">{p.pending}</p>
+          <p className="mt-8 rounded-card bg-white p-6 text-[13.5px] leading-6 text-body ring-1 ring-black/5">{p.pending}</p>
         </div>
       </section>
       <CtaBand c={c} />

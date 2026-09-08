@@ -30,6 +30,10 @@ export type Broker = {
   referralHref: string;
   steps: string[];
   status: Status;
+  /** 2–3 sentence profile used on the broker's landing page. */
+  summary: string;
+  website: string;
+  faq: { q: string; a: string }[];
 };
 
 export type TradingSystem = {
@@ -103,6 +107,15 @@ export const en = {
     viewAll: "View all",
     readMore: "Read more",
     fill: "[FILL]",
+    telegram: "Telegram",
+    whatsapp: "WhatsApp",
+    legal: "Legal",
+    followUs: "Follow",
+    riskBar: {
+      pre: "Trading leveraged products such as CFDs and forex carries a high risk of losing money rapidly.",
+      strong: "Past performance is not a guarantee of future results.",
+      post: "Nothing on this site is personal investment advice.",
+    },
   },
   nav: [
     {
@@ -153,6 +166,7 @@ export const en = {
       primary: { label: "Choose a broker", href: "/brokers/" },
       secondary: { label: "Book a call", href: "/contact-us/" },
       portraitAlt: "Ahmet S. Öztürk",
+      trustLine: ["Partner brokers regulated by FCA, ASIC and DFSA", "Independently verified track record", "Based in DIFC, Dubai"],
       trust: [
         { value: "[FILL]", label: "years in markets" },
         { value: "[FILL]", label: "strategies running live" },
@@ -162,6 +176,17 @@ export const en = {
       pressTitle: "Featured in",
       press: ["[FILL: media 1]", "[FILL: media 2]", "[FILL: media 3]", "[FILL: media 4]"],
     },
+    numbersTitle: "Numbers you can verify*",
+    numbersNote: "*Each figure links to its source: verification service, broker statement or event register.",
+    promo: {
+      kicker: "Managed accounts",
+      title: "Your account. My execution. Written risk limits.",
+      body: "Capital never leaves your name. You open an account at a partner broker, I receive trading permission only, and a written mandate caps exposure and daily loss.",
+      figure: "0",
+      figureLabel: "custody transferred. Your money stays in your own broker account, visible to you in real time.",
+      cta: { label: "How it works", href: "/portfolio-management/" },
+    },
+    postsLead: "Macro, FX, commodities, indices, crypto and AI in trading. Written to be read in five minutes.",
     pillarsTitle: "Five ways we work together",
     pillarsLead: "One person, five doors. Pick the one that fits where you are today.",
     pillars: [
@@ -345,34 +370,89 @@ export const en = {
       steps: "How to open an account",
       yes: "Yes",
       no: "No",
+      profile: "Full profile",
+      allBrokers: "All brokers",
+      atAGlance: "At a glance",
+      conditions: "Trading conditions",
+      about: "About the broker",
+      website: "Official website",
+      faq: "Common questions",
+      openWith: "Five steps to a funded account with",
+      verifyNote: "Conditions verified on the broker's website on [FILL: date]. Always check the live figures before funding.",
     },
     list: [
       {
-        slug: "broker-one",
-        name: "[FILL: Broker 1]",
-        tagline: "[FILL: one line]",
-        regulator: "[FILL: e.g. FCA, CySEC, DFSA]",
-        licence: "[FILL]",
-        founded: "[FILL]",
-        minDeposit: "[FILL]",
-        platforms: ["MT5", "cTrader", "[FILL]"],
+        slug: "pepperstone",
+        name: "Pepperstone",
+        tagline: "Raw spreads from 0.0 pips, five platforms, nine licensed entities",
+        regulator: "FCA · ASIC · CySEC · DFSA · BaFin · SCB · CMA",
+        licence: "SCB SIA-F217 (Pepperstone Markets Ltd) [FILL: confirm the entity your link onboards to]",
+        founded: "2010, Melbourne",
+        minDeposit: "$0 · $10 by card",
+        platforms: ["Pepperstone platform", "TradingView", "MT5", "MT4", "cTrader"],
         spreads: [
-          { pair: "EUR/USD", value: "[FILL]" },
-          { pair: "XAU/USD", value: "[FILL]" },
-          { pair: "US500", value: "[FILL]" },
+          { pair: "EUR/USD", value: "0.0 Razor · 1.0 Standard" },
+          { pair: "XAU/USD", value: "from 0.08 Razor" },
+          { pair: "US500", value: "from 0.4" },
         ],
-        commission: "[FILL]",
-        leverage: "[FILL]",
-        funding: ["Bank wire", "Card", "[FILL]"],
-        withdrawalTime: "[FILL]",
+        commission: "Razor: $3.50 per lot per side on FX and gold · Standard: none (share CFDs excepted)",
+        leverage: "1:30 retail (FCA, ASIC, CySEC, DFSA) · up to 1:500 SCB · 1:1000 SCB Pro",
+        funding: ["Visa / Mastercard", "Apple Pay", "Google Pay", "PayPal", "Skrill", "Neteller", "Bank transfer", "Crypto"],
+        withdrawalTime: "Up to 1 business day",
         islamic: true,
-        languages: "[FILL]",
-        bestFor: "[FILL: profile]",
-        pros: ["[FILL]", "[FILL]", "[FILL]"],
-        cons: ["[FILL]", "[FILL]"],
-        referralHref: "[FILL: referral link]",
-        steps: ["Open the referral link and choose the account type", "Verify identity (passport + proof of address)", "Fund the account", "Download the platform and log in", "[FILL]"],
+        languages: "24/5 multilingual, 18 h at weekends · Turkish [FILL: confirm]",
+        bestFor: "Active FX and gold traders on raw spreads; algo traders on MT5, cTrader or TradingView",
+        pros: [
+          "Razor account: spreads from 0.0 pips with a flat $3.50 per lot per side",
+          "99.59% fill rate with no dealing-desk intervention",
+          "1,350+ markets: FX, indices, commodities, shares, ETFs and crypto CFDs",
+          "Free deposits; card, e-wallet and crypto withdrawals processed within one business day",
+          "Regulated in seven jurisdictions, client funds segregated at tier-1 banks",
+        ],
+        cons: [
+          "Retail leverage capped at 1:30 under the FCA, ASIC, CySEC and DFSA entities",
+          "International bank withdrawals cost $20 and can take up to 7 business days",
+          "CFDs only: you never own the underlying share or coin",
+        ],
+        referralHref:
+          "https://pepperstone.com/en?irclickid=UaOy823GzxyZTpIW-sTmzTmUUkr2ioT9XTblTQ0&transaction_id=UaOy823GzxyZTpIW-sTmzTmUUkr2ioT9XTblTQ0_35888&irgwc=1&afsrc=1&utm_source=affiliate-6292990&utm_medium=ONLINE_TRACKING_LINK&utm_campaign=Online%20Tracking%20Link&utm_content=impact&irpid=6292990&sharedid=35888&utm_term=www.dailyforex.com",
+        steps: [
+          "Open the referral link and click Join now. Register with your email and get a free demo.",
+          "Answer the appropriateness questions (about 5 minutes).",
+          "Verify identity: government ID plus proof of address.",
+          "Fund from $10 by card, Apple Pay, PayPal or e-wallet. Bank transfer has no minimum.",
+          "Choose Razor or Standard, then log in on MT5, cTrader, TradingView or the Pepperstone app.",
+        ],
         status: "live",
+        summary:
+          "Founded in Melbourne in 2010, Pepperstone is one of the largest CFD brokers by volume: over 900,000 accounts, around $1 trillion in monthly trading volume and nine licensed entities across the FCA, ASIC, CySEC, DFSA, BaFin, SCB and CMA. [FILL: one sentence on how you use Pepperstone yourself, e.g. which account and platform]",
+        website: "https://pepperstone.com",
+        faq: [
+          {
+            q: "Razor or Standard: which account should I choose?",
+            a: "Razor for FX and gold if you trade actively: raw spreads from 0.0 pips plus $3.50 per lot per side. Standard if you prefer everything inside the spread: from 1.0 pip on EUR/USD, no commission except on share CFDs. Both give access to the same 1,350+ markets.",
+          },
+          {
+            q: "What is the minimum deposit?",
+            a: "There is no minimum to open the account. Card, Apple Pay, Google Pay, PayPal, Skrill and Neteller deposits start at $10; domestic bank transfers have no minimum. Deposits are free.",
+          },
+          {
+            q: "How fast are withdrawals?",
+            a: "Cards, e-wallets and crypto are processed within one business day and are free. International bank transfers cost $20 and can take up to 7 business days.",
+          },
+          {
+            q: "Is Pepperstone regulated?",
+            a: "Yes. Group entities are licensed by the FCA (UK), ASIC (Australia), CySEC (Cyprus), DFSA (Dubai), BaFin (Germany), SCB (Bahamas) and CMA (Kenya). Client funds are held in segregated accounts at tier-1 banks and retail clients have negative balance protection.",
+          },
+          {
+            q: "Which entity will my account be under?",
+            a: "[FILL: the entity your referral link onboards to, and what that means for leverage and negative balance protection]",
+          },
+          {
+            q: "Does a referral link change my fees?",
+            a: "No. Spreads and commissions are identical whether you register directly or through my link. The broker pays my commission from its own revenue.",
+          },
+        ],
       },
       {
         slug: "broker-two",
@@ -400,6 +480,13 @@ export const en = {
         referralHref: "[FILL: referral link]",
         steps: ["Open the referral link and choose the account type", "Verify identity", "Fund the account", "Log in to the platform"],
         status: "live",
+        summary: "[FILL: 2–3 sentence profile of the broker and how you use it]",
+        website: "[FILL: broker website]",
+        faq: [
+          { q: "[FILL: question]", a: "[FILL: answer]" },
+          { q: "[FILL: question]", a: "[FILL: answer]" },
+          { q: "Does a referral link change my fees?", a: "No. Spreads and commissions are identical whether you register directly or through my link. The broker pays my commission from its own revenue." },
+        ],
       },
       {
         slug: "broker-three",
@@ -427,6 +514,12 @@ export const en = {
         referralHref: "[FILL: referral link]",
         steps: ["Open the referral link and choose the account type", "Verify identity", "Fund the account", "Log in to the platform"],
         status: "soon",
+        summary: "[FILL: 2–3 sentence profile of the broker and how you use it]",
+        website: "[FILL: broker website]",
+        faq: [
+          { q: "[FILL: question]", a: "[FILL: answer]" },
+          { q: "Does a referral link change my fees?", a: "No. Spreads and commissions are identical whether you register directly or through my link. The broker pays my commission from its own revenue." },
+        ],
       },
     ] as Broker[],
   },
@@ -543,7 +636,7 @@ export const en = {
         "Ahmet S. Öztürk / NUUK acts as an introducing partner for the brokers listed on this website. When you open and fund an account through a referral link, the broker pays a commission based on your trading volume.",
         "This commission is paid by the broker and does not increase the spreads, commissions or fees you pay. Broker cards are written independently; a broker cannot pay to change a rating or a listed weakness.",
         "You are free to open an account with any broker directly. The referral link is optional.",
-        "[FILL: list of partner brokers and the nature of each agreement]",
+        "Current partners: Pepperstone (introducing partner agreement via the Impact affiliate network). [FILL: other brokers and the nature of each agreement]",
       ],
     },
     privacy: { title: "Privacy", body: ["[FILL: privacy policy]"] },
@@ -551,13 +644,20 @@ export const en = {
   },
 
   ctaBand: {
-    title: "Not sure which door is yours?",
-    body: "A 30-minute call is enough to work out whether you need a broker, a signal service, a managed account or simply education.",
+    title: "Ready to start?",
+    body: "Four steps from first call to first trade. Most people are set up within a week.",
+    steps: [
+      { title: "Book a call", body: "30 minutes to decide which service fits: broker, signals, managed account or education." },
+      { title: "Open a broker account", body: "In your own name, through a partner broker. Verification takes about 10 minutes with ID and proof of address." },
+      { title: "Fund and connect", body: "Deposit from $10 by card. Connect the account to the managed structure or signal channel if you chose one." },
+      { title: "Start trading", body: "Follow the plan, review results monthly, and never take a trade you cannot explain." },
+    ],
     cta: { label: "Book a call", href: "/contact-us/" },
   },
 
   footer: {
     copyright: "All rights reserved.",
+    riskTitle: "Risk disclaimer",
     legal1:
       "is the personal brand of Ahmet S. Öztürk, economist and investor, and the trading name of NUUK Quant, based in the Dubai International Financial Centre. Services are offered to professional and institutional clients where permitted; availability depends on your jurisdiction and applicable regulation.",
     legal2:

@@ -12,20 +12,21 @@ export async function generateMetadata({ params }: { params: LocaleParams }): Pr
 }
 
 export default async function ManagedPage({ params }: { params: LocaleParams }) {
-  const { c } = await resolve(params);
+  const { locale, c } = await resolve(params);
   const p = c.managed;
+  const localeHome = locale === "en" ? "/" : `/${locale}/`;
   return (
     <>
-      <PageIntro tone="dark" kicker={p.kicker} title={p.title} body={p.lead} cta={p.cta} />
+      <PageIntro tone="dark" kicker={p.kicker} title={p.title} body={p.lead} cta={p.cta} crumbs={[{ label: c.ui.home, href: localeHome }, { label: p.kicker }]} />
 
-      <section className="section-pad">
+      <section className="section-pad bg-white">
         <div className="container-x">
           <SectionHead title={p.howTitle} />
-          <ol className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {p.how.map((h) => (
-              <li key={h.step} className="rv rounded-xl border border-black/5 p-6">
-                <p className="num text-[12px] text-primary">{h.step}</p>
-                <h3 className="mt-3 text-[18px]">{h.title}</h3>
+          <ol className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            {p.how.map((h, i) => (
+              <li key={h.step} className="rv rounded-card bg-fog p-7">
+                <span className="flex size-8 items-center justify-center rounded-full bg-primary text-[13px] font-bold text-white">{i + 1}</span>
+                <h3 className="mt-5 text-[18px]">{h.title}</h3>
                 <p className="mt-2 text-[14.5px] leading-6 text-body">{h.body}</p>
               </li>
             ))}
@@ -33,23 +34,23 @@ export default async function ManagedPage({ params }: { params: LocaleParams }) 
         </div>
       </section>
 
-      <section className="bg-paper py-20 lg:py-24">
+      <section className="section-pad bg-fog">
         <div className="container-x grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <SectionHead title={p.termsTitle} />
-            <dl className="mt-8 divide-y divide-black/10 rounded-xl bg-white ring-1 ring-black/5">
+            <dl className="mt-8 divide-y divide-black/5 rounded-card bg-white shadow-card ring-1 ring-black/5">
               {p.terms.map((t) => (
-                <div key={t.label} className="flex justify-between gap-4 px-5 py-3.5 text-[14px]">
+                <div key={t.label} className="flex justify-between gap-4 px-6 py-3.5 text-[14px]">
                   <dt className="text-muted">{t.label}</dt>
-                  <dd className="text-end text-ink">
+                  <dd className="text-end font-medium text-ink">
                     <Fill text={t.value} />
                   </dd>
                 </div>
               ))}
             </dl>
           </div>
-          <div className="grid gap-10 lg:col-span-7 lg:grid-cols-2">
-            <div>
+          <div className="grid gap-5 lg:col-span-7 lg:grid-cols-2">
+            <div className="rv rounded-card bg-white p-7 shadow-card ring-1 ring-black/5">
               <h3 className="text-[18px]">{p.fitTitle}</h3>
               <ul className="mt-4 space-y-2 text-[14.5px] text-body">
                 {p.fit.map((f) => (
@@ -60,7 +61,7 @@ export default async function ManagedPage({ params }: { params: LocaleParams }) 
                 ))}
               </ul>
             </div>
-            <div>
+            <div className="rv rounded-card bg-white p-7 shadow-card ring-1 ring-black/5">
               <h3 className="text-[18px]">{p.notFitTitle}</h3>
               <ul className="mt-4 space-y-2 text-[14.5px] text-body">
                 {p.notFit.map((f) => (
@@ -75,9 +76,9 @@ export default async function ManagedPage({ params }: { params: LocaleParams }) 
         </div>
       </section>
 
-      <section className="py-10">
+      <section className="bg-white py-10">
         <div className="container-x">
-          <p className="rounded-md border border-dashed border-black/15 p-4 text-[13px] leading-6 text-body">
+          <p className="rounded-card bg-fog p-6 text-[13px] leading-6 text-body">
             <Fill text={p.compliance} />
           </p>
         </div>

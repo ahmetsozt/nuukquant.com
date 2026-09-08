@@ -4,16 +4,18 @@ import { useState } from "react";
 import { en, type SiteContent } from "@/content/en";
 import PostCard from "@/components/home/PostCard";
 
+const tabActive = "rounded-pill bg-ink px-4 py-2 text-[14px] font-semibold text-white";
+const tabIdle = "rounded-pill bg-fog px-4 py-2 text-[14px] font-semibold text-body hover:bg-tint hover:text-primary";
+
 export default function InsightsList({ c }: { c: SiteContent }) {
   const [tab, setTab] = useState(0);
   const posts = c.insights.posts.filter((p) => tab === 0 || p.category === en.insights.tabs[tab]);
   return (
     <>
-      <div role="tablist" className="flex gap-6 overflow-x-auto border-b border-black/10 scroll-row">
+      <div role="tablist" className="flex gap-2 overflow-x-auto scroll-row">
         {c.insights.tabs.map((t, i) => (
-          <button key={t} role="tab" aria-selected={tab === i} onClick={() => setTab(i)} className={`relative py-3 text-[14.5px] whitespace-nowrap ${tab === i ? "text-ink" : "text-body hover:text-ink"}`}>
+          <button key={t} role="tab" aria-selected={tab === i} onClick={() => setTab(i)} className={`whitespace-nowrap transition ${tab === i ? tabActive : tabIdle}`}>
             {t}
-            <span className={`absolute inset-x-0 -bottom-px h-0.5 bg-primary transition-transform ${tab === i ? "scale-x-100" : "scale-x-0"}`} />
           </button>
         ))}
       </div>

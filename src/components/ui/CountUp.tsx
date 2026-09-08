@@ -40,7 +40,12 @@ export default function CountUp({ value, className = "" }: { value: string; clas
       requestAnimationFrame(step);
     }, { threshold: 0.5 });
     io.observe(el);
-    return () => io.disconnect();
+    // Safety net: show the final value even if the observer never fires (print, prerender, hidden tabs).
+    const fallback = window.setTimeout(done, 3000);
+    return () => {
+      io.disconnect();
+      window.clearTimeout(fallback);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [value]);
 

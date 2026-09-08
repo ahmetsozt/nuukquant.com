@@ -22,7 +22,7 @@ const SCALE = 0.85;
 /** Live market tape under the hero (TradingView ticker-tape widget). */
 export default function LiveTape({ locale }: { locale: Locale }) {
   return (
-    <div dir="ltr" className="relative z-10 overflow-hidden border-t border-black/5 bg-[#e6e8ec]" aria-label="Live market tape" style={{ height: Math.round(46 * SCALE) }}>
+    <div dir="ltr" className="relative z-10 overflow-hidden border-t border-black/5 bg-[#d4d7dd]" aria-label="Live market tape" style={{ height: Math.round(46 * SCALE) }}>
       <div style={{ width: `${100 / SCALE}%`, transform: `scale(${SCALE})`, transformOrigin: "top left" }}>
         <TvWidget
           locale={locale}

@@ -64,7 +64,7 @@ export default function Header({ c, locale }: { c: SiteContent; locale: Locale }
       </div>
 
       {/* Utility bar */}
-      <div className="hidden bg-ink text-white lg:block">
+      <div className="relative z-[60] hidden bg-ink text-white lg:block">
         <div className="container-x flex h-10 items-center justify-between text-[13px]">
           <ul className="flex items-center gap-6">
             {quick.map((q) => (

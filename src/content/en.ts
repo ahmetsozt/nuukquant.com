@@ -1218,6 +1218,22 @@ export const en = {
     ]
   },
   portal: {
+    security: {
+      "title": "Security",
+      "lead": "Two-step verification adds a one-time code from an authenticator app (Google Authenticator, 1Password, Authy) to every sign-in. Strongly recommended for admin accounts.",
+      "enable": "Enable two-step verification",
+      "scan": "Scan the QR code with your authenticator app, or enter the secret manually, then type the 6-digit code.",
+      "code": "6-digit code",
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "enabled": "Two-step verification is on.",
+      "disabled": "Two-step verification is off.",
+      "active": "active",
+      "remove": "Remove",
+      "challengeTitle": "Two-step verification",
+      "challengeLead": "Enter the code from your authenticator app.",
+      "error": "Something went wrong."
+    },
     memberships: {
       activateHint: "Activate invites the applicant automatically (if they have no account yet) and opens every panel of their plan until the date you set.",
       activatedInvited: "Invitation sent and panels granted; the member sets a password from the email.",

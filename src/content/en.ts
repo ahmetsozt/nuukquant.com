@@ -1,7 +1,7 @@
 /**
  * Single source of truth for all site copy. Other locales override parts of this
  * object (see src/i18n.ts). Anything marked "[FILL]" is a placeholder waiting for
- * real data from Ahmet.
+ * real data from NUUK.
  */
 export type NavLink = { label: string; href: string };
 export type NavGroup = { label: string; href: string; items: NavLink[] };
@@ -69,14 +69,13 @@ export type PerformanceCard = {
 
 export const en = {
   meta: {
-    title: "Ahmet S. Öztürk — Economist, Investor, Founder of NUUK",
+    title: "NUUK — AI-Engineered Trading & Portfolio Management, Dubai",
     description:
-      "Economist and investor based in DIFC, Dubai. AI-driven trading systems, managed accounts, broker partnerships, market signals and investor education.",
+      "NUUK is an AI-engineered trading company in DIFC, Dubai: algorithmic trading systems, managed accounts, broker partnerships, research, signals and investor education.",
   },
   brand: {
     name: "NUUK",
-    person: "Ahmet S. Öztürk",
-    role: "Economist · Investor · Founder",
+    role: "Algorithmic trading · Portfolio management · Broker partnerships",
     legalName: "NUUK Quant",
     email: "info@nuukquant.com",
     phone: "+971 58 688 4464",
@@ -181,24 +180,21 @@ export const en = {
   ] as NavLink[],
   socials: [
     { label: "LinkedIn", href: "https://www.linkedin.com/company/nuukquant/", icon: "in" },
-    { label: "X", href: "https://x.com/AhmetSTurk", icon: "x" },
-    { label: "Instagram", href: "https://www.instagram.com/ahmetsturk/", icon: "ig" },
   ],
 
   home: {
     hero: {
       visualTag: "Algorithmic trading · Portfolio management",
       visualAlt: "NUUK-liveried Formula 1 car in a dark studio",
-      kicker: "Economist · Investor · Founder of NUUK",
+      kicker: "AI-engineered trading company · DIFC, Dubai",
       title: "Markets, read with discipline.",
       lead:
-        "I build AI-driven trading systems, run my own capital, manage investor accounts and teach people to trade for themselves. Every figure on this site states its source and its method.",
+        "NUUK builds AI-driven trading systems, runs them on its own capital first, manages investor accounts and teaches investors to trade for themselves. Every figure on this site states its source and its method.",
       primary: { label: "Choose a broker", href: "/brokers/" },
       secondary: { label: "Book a call", href: "/contact-us/" },
-      portraitAlt: "Ahmet S. Öztürk",
       trustLine: ["Partner brokers regulated by FCA, ASIC, CySEC and DFSA", "Own capital in every system", "Based in DIFC, Dubai"],
       trust: [
-        { value: "17", label: "years in markets, since an FX desk in London in 2009" },
+        { value: "17", label: "years of Istanbul–London dealing-desk experience behind the firm" },
         { value: "87", label: "strategy variants back-tested since 2026; three in production, documented on the AI trading page" },
         { value: "3,000+", label: "investors trained in webinars and seminars" },
         { value: "10+", label: "broker partnerships, six listed on this site" },
@@ -208,7 +204,7 @@ export const en = {
     markets: {
       "kicker": "Live prices",
       "title": "Markets, right now",
-      "lead": "Live quotes streamed from TradingView: forex, commodities, indices, crypto and the stocks I watch. Click any row to open the chart.",
+      "lead": "Live quotes streamed from TradingView: forex, commodities, indices, crypto and the stocks the desk watches. Click any row to open the chart.",
       "tabs": [
         "Forex",
         "Commodities",
@@ -222,20 +218,20 @@ export const en = {
     numbersNote: "*Figures as of September 2026, from NUUK's own records.",
     promo: {
       kicker: "Managed accounts",
-      title: "Your account. My execution. Written risk limits.",
-      body: "Capital never leaves your name. You open an account at a partner broker, I receive trading permission only, and a written mandate caps exposure and daily loss.",
+      title: "Your account. NUUK's execution. Written risk limits.",
+      body: "Capital never leaves your name. You open an account at a partner broker, NUUK receives trading permission only, and a written mandate caps exposure and daily loss.",
       figure: "300+",
       figureLabel: "managed accounts, every one of them inside the client's own broker account. Custody never transfers.",
       cta: { label: "How it works", href: "/portfolio-management/" },
     },
     postsLead: "Macro, FX, commodities, indices, crypto and AI in trading. Written to be read in five minutes.",
     pillarsTitle: "Five ways we work together",
-    pillarsLead: "One person, five doors. Pick the one that fits where you are today.",
+    pillarsLead: "Five services, one rule: capital always stays in the client's own account.",
     pillars: [
       { icon: "cpu", title: "AI trading systems", body: "Proprietary algorithms coded, tested and run live across FX, indices, commodities and digital assets.", who: "For allocators and technical investors", href: "/ai-trading/" },
-      { icon: "chart", title: "Track record", body: "My own portfolio and the systems' results, reported net of costs with the source and method behind every figure.", who: "For anyone deciding whether to trust me", href: "/track-record/" },
-      { icon: "briefcase", title: "Managed accounts", body: "Your capital stays in your own broker account. I trade it under agreed risk limits and a performance fee.", who: "For investors who want it done for them", href: "/portfolio-management/" },
-      { icon: "handshake", title: "Broker partners", body: "Independent comparison of the brokers I work with, with a step-by-step account guide for each.", who: "For self-directed traders choosing a broker", href: "/brokers/" },
+      { icon: "chart", title: "Track record", body: "NUUK's own portfolio and the systems' results, reported net of costs with the source and method behind every figure.", who: "For anyone deciding whether to trust NUUK", href: "/track-record/" },
+      { icon: "briefcase", title: "Managed accounts", body: "Your capital stays in your own broker account. NUUK trades it under agreed risk limits and a performance fee.", who: "For investors who want it done for them", href: "/portfolio-management/" },
+      { icon: "handshake", title: "Broker partners", body: "Independent comparison of the brokers NUUK works with, with a step-by-step account guide for each.", who: "For self-directed traders choosing a broker", href: "/brokers/" },
       { icon: "signal", title: "Signals, reports & education", body: "Daily notes, weekly reports, trade ideas with full reasoning, and live webinars that teach the method.", who: "For traders who want to learn and stay informed", href: "/signals/" },
     ],
     record: {
@@ -248,8 +244,8 @@ export const en = {
     },
     brokers: {
       kicker: "Broker partners",
-      title: "Where I trade, and why",
-      lead: "I only list brokers I use or have audited myself. Each card shows regulation, real spreads and funding details.",
+      title: "Where NUUK trades, and why",
+      lead: "Only brokers NUUK trades with or has audited are listed. Each card shows regulation, real spreads and funding details.",
       cta: { label: "Compare all brokers", href: "/brokers/" },
     },
     systems: {
@@ -285,37 +281,122 @@ export const en = {
   },
 
   about: {
-    metaTitle: "About Ahmet S. Öztürk",
-    metaDescription: "Economist, investor and founder of NUUK. Seventeen years in FX and CFD markets, from a London dealing desk to an AI-driven trading company in Dubai.",
-    kicker: "About",
-    title: "Economist first, trader second, engineer by necessity.",
-    lead: "I started on an FX brokerage desk in London in 2009 and spent the next seven years inside brokerages in London and Istanbul, finishing as Head of International FX at IKON Finance. In 2016 I founded İşlem Odası, an introducing-broker and client-coverage business that grew to 700+ clients and more than USD 26 million in client business. In 2025 I moved to Dubai and founded NUUK: an AI-engineered trading company that builds and runs systematic strategies across FX, gold, indices and digital assets, and shares the method through managed accounts, signals and education.",
-    portraitAlt: "Ahmet S. Öztürk",
-    timelineTitle: "Timeline",
-    timeline: [
-      { year: "2005–2008", title: "Seneca College, Toronto", body: "International Business Administration (co-op). Where the habit of reading everything as numbers started." },
-      { year: "2009–2011", title: "FXCM, London", body: "First seat on an FX brokerage desk. Execution, liquidity and client risk, learned from the inside." },
-      { year: "2011–2014", title: "Tacirler and ALB, Istanbul", body: "FX specialist roles at two Turkish brokerages as the domestic market opened up to leveraged trading." },
-      { year: "2014–2016", title: "IKON Finance", body: "Head of International FX. Grew the international client book by 27%." },
-      { year: "2016–2025", title: "İşlem Odası, Istanbul", body: "Founded an introducing-broker and client-coverage business: 700+ clients, USD 26M+ in client business, USD 2.5M cumulative partner revenue." },
-      { year: "2025", title: "NUUK, Dubai", body: "Founded NUUK in the Dubai International Financial Centre: AI-driven trading systems, managed accounts, broker partnerships, signals and education." },
+    "metaTitle": "About NUUK",
+    "metaDescription": "NUUK is an AI-engineered trading and portfolio-management company founded in Dubai's DIFC in 2025, built on seventeen years of Istanbul and London dealing-desk experience.",
+    "kicker": "About NUUK",
+    "title": "Seventeen years on the desk. One company built to prove it.",
+    "lead": "NUUK was founded in the Dubai International Financial Centre in 2025 on seventeen years of dealing-desk experience that runs from a London FX brokerage floor in 2009, through Istanbul's institutional desks, to an introducing-broker business of more than 700 clients. That experience became a single conviction: markets reward discipline, not opinion. NUUK turns it into systematic strategies, runs them on its own capital first, and shares the method through managed accounts, research and education.",
+    "facts": [
+      {
+        "value": "2025",
+        "label": "founded in DIFC, Dubai"
+      },
+      {
+        "value": "17",
+        "label": "years of Istanbul–London desk experience behind the firm"
+      },
+      {
+        "value": "3",
+        "label": "systems in production, 87 strategy variants tested"
+      },
+      {
+        "value": "6",
+        "label": "regulated partner brokers"
+      }
     ],
-    principlesTitle: "How I work",
-    principles: [
-      { title: "Evidence over opinion", body: "Every figure on this site states its source and its method. If it cannot be explained, it is not shown." },
-      { title: "Risk before return", body: "Position size, drawdown limits and stop rules are decided before any trade." },
-      { title: "Your money stays yours", body: "Managed accounts run inside your own broker account. I never take custody." },
-      { title: "Teach the method", body: "The goal of education is that you no longer need me." },
+    "activitiesTitle": "What NUUK does",
+    "activitiesLead": "Five activities, one rule that runs through all of them: client capital stays in the client's own account.",
+    "activities": [
+      {
+        "title": "Algorithmic trading systems",
+        "body": "Strategies designed, back-tested and forward-tested in-house, then run live on NUUK's own capital across FX, gold, indices and digital assets. GANN NUUK Trader AI is live at Tickmill."
+      },
+      {
+        "title": "Portfolio management",
+        "body": "Managed accounts inside the client's own broker account through MAM/PAMM structures, under a written risk mandate, a management fee and a performance fee on net profit."
+      },
+      {
+        "title": "Broker partnerships",
+        "body": "Introducing-broker agreements with six regulated brokers, each reviewed independently and documented with a step-by-step account guide."
+      },
+      {
+        "title": "Research and signals",
+        "body": "Daily desk notes, a weekly report and trade ideas with the full reasoning, delivered through the investor portal and Telegram."
+      },
+      {
+        "title": "Investor education",
+        "body": "Webinars, seminars and mentorship: more than 3,000 investors trained to read markets with the same discipline the desk uses."
+      }
     ],
-    focusTitle: "Markets I cover",
-    focus: ["BIST", "NYSE", "Forex", "Crypto", "Funds", "Commodities", "Real estate", "Old money"],
-    speakingTitle: "Where I publish",
-    speaking: [
+    "timelineTitle": "The story",
+    "timeline": [
+      {
+        "year": "2009",
+        "title": "London",
+        "body": "The desk experience behind NUUK begins on an FX brokerage floor in the City: execution, liquidity and client risk, learned from the inside."
+      },
+      {
+        "year": "2011",
+        "title": "Istanbul",
+        "body": "Institutional FX coverage at Istanbul brokerages as Türkiye opens to leveraged trading; the international client book grows by 27%."
+      },
+      {
+        "year": "2016",
+        "title": "A client business",
+        "body": "An introducing-broker and client-coverage practice grows to more than 700 clients and over USD 26 million in client business."
+      },
+      {
+        "year": "2025",
+        "title": "NUUK, Dubai",
+        "body": "Founded in the Dubai International Financial Centre as an AI-engineered trading company: systems, managed accounts, broker partnerships, research and education."
+      },
+      {
+        "year": "2026",
+        "title": "Systems in production",
+        "body": "87 strategy variants back-tested, three in production. GANN NUUK Trader AI runs on NUUK's own capital at Tickmill and is reported on the track-record page."
+      },
+      {
+        "year": "Today",
+        "title": "A multilingual desk",
+        "body": "An investor portal, six partner brokers and a website in six languages, serving investors from Istanbul to the Gulf."
+      }
+    ],
+    "principlesTitle": "How NUUK works",
+    "principles": [
+      {
+        "title": "Evidence over opinion",
+        "body": "Every figure on this site states its source and its method. If it cannot be explained, it is not shown."
+      },
+      {
+        "title": "Risk before return",
+        "body": "Position size, drawdown limits and stop rules are decided before any trade."
+      },
+      {
+        "title": "Your money stays yours",
+        "body": "Managed accounts run inside your own broker account. NUUK never takes custody."
+      },
+      {
+        "title": "Own capital first",
+        "body": "No system reaches a client account before it has run on NUUK's own money."
+      }
+    ],
+    "focusTitle": "Markets covered",
+    "focus": [
+      "BIST",
+      "NYSE",
+      "Forex",
+      "Crypto",
+      "Funds",
+      "Commodities",
+      "Real estate",
+      "Old money"
+    ],
+    "speakingTitle": "Where NUUK publishes",
+    "speaking": [
       "Telegram · @NUUKQuant: daily market notes, trade ideas and the monthly system report",
-      "X · @AhmetSTurk: market commentary and research threads",
-      "LinkedIn · NUUK.: company updates and long-form research",
-      "Instagram · @ahmetsturk: behind the desk",
-    ],
+      "LinkedIn · NUUK: company updates and long-form research",
+      "Investor portal: research, signals, daily P&L and education for subscribers"
+    ]
   },
 
   aiTrading: {
@@ -338,13 +419,13 @@ export const en = {
     faq: [
       { q: "Can I run a system on my own account?", a: "Yes. Depending on the broker you can copy-trade, join a MAM/PAMM structure at Tickmill, Saxo Bank or Midas, or follow the signal channel and execute yourself. In every case the account stays in your own name." },
       { q: "What is the minimum capital?", a: "USD 1,000 for copy trading or signals. Managed MAM/PAMM accounts start at the minimum allocation shown on the managed-accounts page." },
-      { q: "Do you share the code?", a: "No. The code stays proprietary. What I publish is the methodology, the risk rules and the results, each with its source." },
+      { q: "Do you share the code?", a: "No. The code stays proprietary. What NUUK publishes is the methodology, the risk rules and the results, each with its source." },
     ],
   },
 
   trackRecord: {
     metaTitle: "Track Record",
-    metaDescription: "Performance of Ahmet S. Öztürk's own portfolio and the NUUK systems, with the source and method of every figure.",
+    metaDescription: "Performance of NUUK's own portfolio and trading systems, with the source and method of every figure.",
     kicker: "Track record",
     title: "Every number, with its source",
     lead: "Accounts are held at partner brokers. Each figure below states where it comes from, live account, paper trading or walk-forward backtest, and how it is calculated. Past performance is not a guarantee of future results.",
@@ -362,13 +443,13 @@ export const en = {
     metaTitle: "Managed Accounts",
     metaDescription: "How managed accounts work: your capital stays in your own broker account, traded under agreed risk limits.",
     kicker: "Managed accounts",
-    title: "Your account. My execution. Agreed limits.",
-    lead: "Capital never leaves your name. You open an account with a partner broker, connect it to the managed structure, and I trade it within a written risk mandate.",
+    title: "Your account. NUUK's execution. Agreed limits.",
+    lead: "Capital never leaves your name. You open an account with a partner broker, connect it to the managed structure, and NUUK trades it within a written risk mandate.",
     cta: { label: "Request an introductory call", href: "/contact-us/" },
     howTitle: "How it works",
     how: [
       { step: "01", title: "Discovery call", body: "We discuss objectives, horizon, liquidity needs and how much drawdown you can genuinely tolerate." },
-      { step: "02", title: "Account setup", body: "You open an account at a partner broker in your own name and fund it. I receive trading permission only, never withdrawal rights." },
+      { step: "02", title: "Account setup", body: "You open an account at a partner broker in your own name and fund it. NUUK receives trading permission only, never withdrawal rights." },
       { step: "03", title: "Risk mandate", body: "A written mandate sets maximum exposure, daily loss limit and instruments. It cannot be exceeded by the system." },
       { step: "04", title: "Reporting", body: "You see every trade in real time in your own account, plus a monthly report and a quarterly review call." },
     ],
@@ -433,9 +514,9 @@ export const en = {
     metaTitle: "Broker Partners",
     metaDescription: "Independent comparison of partner brokers: regulation, spreads, funding, platforms and step-by-step account opening.",
     kicker: "Broker partners",
-    title: "The brokers I work with",
-    lead: "I refer clients only to brokers I trade with or have audited. Six partners today: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas and Darwinex. Each card shows who regulates them, what they really charge and how fast money moves.",
-    disclosure: "Links on this page are referral links. If you open and fund an account through them I earn a commission from the broker. This does not change the spreads or commissions you pay.",
+    title: "The brokers NUUK works with",
+    lead: "NUUK refers clients only to brokers it trades with or has audited. Six partners today: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas and Darwinex. Each card shows who regulates them, what they really charge and how fast money moves.",
+    disclosure: "Links on this page are referral links. If you open and fund an account through them NUUK earns a commission from the broker. This does not change the spreads or commissions you pay.",
     compareTitle: "Side by side",
     partner: {
       "kicker": "Partner programme",
@@ -582,11 +663,11 @@ export const en = {
           },
           {
             q: "Which entity will my account be under?",
-            a: "Through my link you register with Pepperstone Financial Services (DIFC) Limited, the Dubai entity regulated by the DFSA. Retail leverage is capped at 1:30, client money is segregated and retail clients have negative balance protection. Professional clients can apply for higher leverage.",
+            a: "Through NUUK's link you register with Pepperstone Financial Services (DIFC) Limited, the Dubai entity regulated by the DFSA. Retail leverage is capped at 1:30, client money is segregated and retail clients have negative balance protection. Professional clients can apply for higher leverage.",
           },
           {
             q: "Does a referral link change my fees?",
-            a: "No. Spreads and commissions are identical whether you register directly or through my link. The broker pays my commission from its own revenue.",
+            a: "No. Spreads and commissions are identical whether you register directly or through NUUK's link. The broker pays NUUK's commission from its own revenue.",
           },
         ],
       },
@@ -821,7 +902,7 @@ export const en = {
     posts: [
       {
         "title": "September hikes: what a Fed move means for gold and the dollar",
-        "excerpt": "Markets price hikes from the Fed, RBA and BoJ this month. Where the surprise risk sits and how I position ahead of CPI.",
+        "excerpt": "Markets price hikes from the Fed, RBA and BoJ this month. Where the surprise risk sits and how the desk positions ahead of CPI.",
         "category": "Macro",
         "date": "2026-09-07",
         "tone": "stocks",
@@ -1465,7 +1546,7 @@ export const en = {
       topic: "Topic",
       topics: ["Managed account", "Broker selection", "Signals & reports", "Education", "AI systems", "Other"],
       message: "Message",
-      messagePlaceholder: "How can I help?",
+      messagePlaceholder: "How can we help?",
       submit: "Send",
       note: "This opens your email client with the message pre-filled. No data is stored on this site.",
       errorRequired: "Please fill in your name, email and message.",
@@ -1490,7 +1571,7 @@ export const en = {
     "ib-disclosure": {
       title: "Introducing broker disclosure",
       body: [
-        "Ahmet S. Öztürk / NUUK acts as an introducing partner for the brokers listed on this website. When you open and fund an account through a referral link, the broker pays a commission based on your trading volume.",
+        "NUUK acts as an introducing partner for the brokers listed on this website. When you open and fund an account through a referral link, the broker pays a commission based on your trading volume.",
         "This commission is paid by the broker and does not increase the spreads, commissions or fees you pay. Broker cards are written independently; a broker cannot pay to change a rating or a listed weakness.",
         "You are free to open an account with any broker directly. The referral link is optional.",
         "Current partners: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas and Darwinex under introducing-broker agreements. Tickmill, Saxo Bank and Midas additionally operate the MAM/PAMM structures used for managed accounts under separate portfolio-management agreements.",
@@ -1540,10 +1621,10 @@ export const en = {
     copyright: "All rights reserved.",
     riskTitle: "Risk disclaimer",
     legal1:
-      "is the personal brand of Ahmet S. Öztürk, economist and investor, and the trading name of NUUK Quant, based in the Dubai International Financial Centre. Services are offered to professional and institutional clients where permitted; availability depends on your jurisdiction and applicable regulation.",
+      "is the trading name of NUUK Quant, an AI-engineered trading and portfolio-management company based in the Dubai International Financial Centre. Services are offered to professional and institutional clients where permitted; availability depends on your jurisdiction and applicable regulation.",
     legal2:
       "Content on this website is general market commentary and education. It is not personal investment advice and not an offer or solicitation to buy or sell any financial instrument or service.",
-    ib: "Broker links on this website are referral links. I may earn a commission when you open and fund an account through them; this does not change the fees you pay.",
+    ib: "Broker links on this website are referral links. NUUK may earn a commission when you open and fund an account through them; this does not change the fees you pay.",
     risk: "Trading involves substantial risk and can result in losses exceeding your initial investment. Past performance is not a guarantee of future results.",
   },
 

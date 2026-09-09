@@ -9,12 +9,12 @@ import type { ContentOverride } from "@/i18n";
  */
 export const es: ContentOverride = {
   meta: {
-    title: "Ahmet S. Öztürk — Economista, inversor y fundador de NUUK",
+    title: "NUUK — Trading basado en IA y gestión de carteras, Dubái",
     description:
-      "Economista e inversor con sede en el DIFC, Dubái. Sistemas de trading basados en IA, cuentas gestionadas, alianzas con brókeres, señales de mercado y formación para inversores.",
+      "NUUK es una empresa de trading basada en IA con sede en el DIFC, Dubái: sistemas de trading algorítmico, cuentas gestionadas, alianzas con brókeres, investigación, señales y formación para inversores.",
   },
   brand: {
-    role: "Economista · Inversor · Fundador",
+    role: "Trading algorítmico · Gestión de carteras · Alianzas con brókeres",
     office: "Dubai International Financial Centre (DIFC), Dubái, EAU",
   },
   ui: {
@@ -106,16 +106,15 @@ export const es: ContentOverride = {
     hero: {
       visualTag: "Trading algorítmico · Gestión de carteras",
       visualAlt: "Monoplaza de Fórmula 1 con los colores de NUUK en un estudio oscuro",
-      kicker: "Economista · Inversor · Fundador de NUUK",
+      kicker: "Empresa de trading basada en IA · DIFC, Dubái",
       title: "Los mercados, leídos con disciplina.",
       lead:
-        "Diseño sistemas de trading basados en IA, opero mi propio capital, gestiono cuentas de inversores y enseño a operar de forma autónoma. Cada cifra de este sitio indica su fuente y su método.",
+        "NUUK diseña sistemas de trading basados en IA, los opera primero con su propio capital, gestiona cuentas de inversores y enseña a los inversores a operar de forma autónoma. Cada cifra de este sitio indica su fuente y su método.",
       primary: { label: "Elegir un bróker" },
       secondary: { label: "Reservar una llamada" },
-      portraitAlt: "Ahmet S. Öztürk",
       trustLine: ["Brókeres asociados regulados por la FCA, ASIC, CySEC y DFSA", "Capital propio en cada sistema", "Con sede en el DIFC, Dubái"],
       trust: [
-        { label: "años en los mercados, desde una mesa de FX en Londres en 2009" },
+        { label: "años de experiencia en mesas de negociación entre Estambul y Londres detrás de la firma" },
         {"label": "variantes de estrategia sometidas a backtest desde 2026; tres en producción, documentadas en la página de trading con IA"},
         { label: "inversores formados en webinars y seminarios" },
         { label: "alianzas con brókeres, seis de ellas publicadas en este sitio" },
@@ -125,7 +124,7 @@ export const es: ContentOverride = {
     markets: {
       "kicker": "Precios en vivo",
       "title": "Los mercados, ahora mismo",
-      "lead": "Cotizaciones en directo desde TradingView: forex, materias primas, índices, cripto y las acciones que sigo. Haga clic en una fila para abrir el gráfico.",
+      "lead": "Cotizaciones en directo desde TradingView: forex, materias primas, índices, cripto y las acciones que sigue la mesa. Haga clic en una fila para abrir el gráfico.",
       "tabs": [
         "Forex",
         "Materias primas",
@@ -139,19 +138,19 @@ export const es: ContentOverride = {
     numbersNote: "*Cifras a septiembre de 2026, de los registros propios de NUUK.",
     promo: {
       kicker: "Cuentas gestionadas",
-      title: "Su cuenta. Mi ejecución. Límites de riesgo por escrito.",
-      body: "El capital nunca sale de su nombre. Usted abre una cuenta en un bróker asociado, yo recibo únicamente permiso de negociación y un mandato escrito limita la exposición y la pérdida diaria.",
+      title: "Su cuenta. La ejecución de NUUK. Límites de riesgo por escrito.",
+      body: "El capital nunca sale de su nombre. Usted abre una cuenta en un bróker asociado, NUUK recibe únicamente permiso de negociación y un mandato escrito limita la exposición y la pérdida diaria.",
       figureLabel: "cuentas gestionadas, todas ellas dentro de la propia cuenta de bróker del cliente. La custodia nunca se transfiere.",
       cta: { label: "Cómo funciona" },
     },
     postsLead: "Macro, FX, materias primas, índices, cripto e IA aplicada al trading. Escrito para leerse en cinco minutos.",
     pillarsTitle: "Cinco formas de trabajar juntos",
-    pillarsLead: "Una persona, cinco puertas. Elija la que encaje con el punto en el que se encuentra hoy.",
+    pillarsLead: "Cinco servicios, una regla: el capital permanece siempre en la propia cuenta del cliente.",
     pillars: [
       { title: "Sistemas de trading con IA", body: "Algoritmos propios programados, probados y ejecutados en vivo en FX, índices, materias primas y activos digitales.", who: "Para asignadores de capital e inversores técnicos" },
-      { title: "Historial", body: "Los resultados de mi cartera y de los sistemas, netos de costes, con la fuente y el método de cada cifra.", who: "Para quien esté decidiendo si confiar en mí" },
-      { title: "Cuentas gestionadas", body: "Su capital permanece en su propia cuenta de bróker. Yo la opero bajo límites de riesgo acordados y una comisión de éxito.", who: "Para inversores que prefieren delegar la ejecución" },
-      { title: "Brókeres asociados", body: "Comparativa independiente de los brókeres con los que trabajo, con una guía paso a paso para abrir cuenta en cada uno.", who: "Para traders autónomos que eligen bróker" },
+      { title: "Historial", body: "Los resultados de la cartera propia de NUUK y de los sistemas, netos de costes, con la fuente y el método de cada cifra.", who: "Para quien esté decidiendo si confiar en NUUK" },
+      { title: "Cuentas gestionadas", body: "Su capital permanece en su propia cuenta de bróker. NUUK la opera bajo límites de riesgo acordados y una comisión de éxito.", who: "Para inversores que prefieren delegar la ejecución" },
+      { title: "Brókeres asociados", body: "Comparativa independiente de los brókeres con los que trabaja NUUK, con una guía paso a paso para abrir cuenta en cada uno.", who: "Para traders autónomos que eligen bróker" },
       { title: "Señales, informes y formación", body: "Notas diarias, informes semanales, ideas de trading con el razonamiento completo y webinars en vivo que enseñan el método.", who: "Para traders que quieren aprender y mantenerse informados" },
     ],
     record: {
@@ -164,8 +163,8 @@ export const es: ContentOverride = {
     },
     brokers: {
       kicker: "Brókeres asociados",
-      title: "Dónde opero, y por qué",
-      lead: "Solo publico brókeres que uso o que he auditado personalmente. Cada tarjeta muestra regulación, spreads reales y condiciones de depósito.",
+      title: "Dónde opera NUUK, y por qué",
+      lead: "Solo se publican brókeres con los que NUUK opera o que ha auditado. Cada tarjeta muestra regulación, spreads reales y condiciones de depósito.",
       cta: { label: "Comparar todos los brókeres" },
     },
     systems: {
@@ -198,37 +197,122 @@ export const es: ContentOverride = {
   },
 
   about: {
-    metaTitle: "Sobre Ahmet S. Öztürk",
-    metaDescription: "Economista, inversor y fundador de NUUK. Diecisiete años en los mercados de FX y CFD, desde una mesa de negociación en Londres hasta una empresa de trading basada en IA en Dubái.",
-    kicker: "Sobre mí",
-    title: "Economista primero, trader después, ingeniero por necesidad.",
-    lead: "Empecé en una mesa de intermediación de FX en Londres en 2009 y pasé los siete años siguientes dentro de brókeres en Londres y Estambul, terminando como Head of International FX en IKON Finance. En 2016 fundé İşlem Odası, un negocio de introductor de negocio (IB) y cobertura de clientes que creció hasta más de 700 clientes y más de 26 millones de USD en negocio de clientes. En 2025 me trasladé a Dubái y fundé NUUK: una empresa de trading diseñada con IA que construye y ejecuta estrategias sistemáticas en FX, oro, índices y activos digitales, y comparte el método a través de cuentas gestionadas, señales y formación.",
-    portraitAlt: "Ahmet S. Öztürk",
-    timelineTitle: "Trayectoria",
-    timeline: [
-      { title: "Seneca College, Toronto", body: "Administración de Negocios Internacionales (co-op). Donde nació el hábito de leerlo todo en cifras." },
-      { title: "FXCM, Londres", body: "Primer puesto en una mesa de intermediación de FX. Ejecución, liquidez y riesgo de cliente, aprendidos desde dentro." },
-      { title: "Tacirler y ALB, Estambul", body: "Puestos de especialista en FX en dos brókeres turcos mientras el mercado local se abría al trading apalancado." },
-      { title: "IKON Finance", body: "Head of International FX. Hizo crecer la cartera de clientes internacionales un 27%." },
-      { title: "İşlem Odası, Estambul", body: "Fundé un negocio de introductor de negocio y cobertura de clientes: más de 700 clientes, más de 26 M USD en negocio de clientes y 2,5 M USD de ingresos acumulados de partners." },
-      { title: "NUUK, Dubái", body: "Fundé NUUK en el Dubai International Financial Centre: sistemas de trading basados en IA, cuentas gestionadas, alianzas con brókeres, señales y formación." },
+    "metaTitle": "Sobre NUUK",
+    "metaDescription": "NUUK es una empresa de trading basada en IA y gestión de carteras fundada en el DIFC de Dubái en 2025, construida sobre diecisiete años de experiencia en mesas de negociación de Estambul y Londres.",
+    "kicker": "Sobre NUUK",
+    "title": "Diecisiete años en la mesa. Una empresa creada para demostrarlo.",
+    "lead": "NUUK se fundó en el Dubai International Financial Centre en 2025 sobre diecisiete años de experiencia en mesas de negociación: desde una sala de intermediación de FX en Londres en 2009, pasando por las mesas institucionales de Estambul, hasta un negocio de introductor con más de 700 clientes. Esa experiencia se convirtió en una sola convicción: los mercados premian la disciplina, no la opinión. NUUK la traduce en estrategias sistemáticas, las opera primero con su propio capital y comparte el método a través de cuentas gestionadas, investigación y formación.",
+    "facts": [
+      {
+        "value": "2025",
+        "label": "fundada en el DIFC, Dubái"
+      },
+      {
+        "value": "17",
+        "label": "años de experiencia en mesas de Estambul y Londres detrás de la firma"
+      },
+      {
+        "value": "3",
+        "label": "sistemas en producción, 87 variantes de estrategia probadas"
+      },
+      {
+        "value": "6",
+        "label": "brókeres asociados regulados"
+      }
     ],
-    principlesTitle: "Cómo trabajo",
-    principles: [
-      { title: "Evidencia antes que opinión", body: "Cada cifra de este sitio indica su fuente y su método. Lo que no puede explicarse no se muestra." },
-      { title: "Riesgo antes que rentabilidad", body: "El tamaño de la posición, los límites de drawdown y las reglas de stop se deciden antes de cualquier operación." },
-      { title: "Su dinero sigue siendo suyo", body: "Las cuentas gestionadas operan dentro de su propia cuenta de bróker. Nunca asumo la custodia." },
-      { title: "Enseñar el método", body: "El objetivo de la formación es que usted deje de necesitarme." },
+    "activitiesTitle": "Qué hace NUUK",
+    "activitiesLead": "Cinco actividades y una regla que las atraviesa todas: el capital del cliente permanece en su propia cuenta.",
+    "activities": [
+      {
+        "title": "Sistemas de trading algorítmico",
+        "body": "Estrategias diseñadas, sometidas a backtesting y forward testing internamente, y después operadas en real con el capital propio de NUUK en FX, oro, índices y activos digitales. GANN NUUK Trader AI está en producción en Tickmill."
+      },
+      {
+        "title": "Gestión de carteras",
+        "body": "Cuentas gestionadas dentro de la propia cuenta de bróker del cliente mediante estructuras MAM/PAMM, bajo un mandato de riesgo por escrito, una comisión de gestión y una comisión de éxito sobre el beneficio neto."
+      },
+      {
+        "title": "Alianzas con brókeres",
+        "body": "Acuerdos de introductor con seis brókeres regulados, cada uno revisado de forma independiente y documentado con una guía de apertura de cuenta paso a paso."
+      },
+      {
+        "title": "Investigación y señales",
+        "body": "Notas diarias de la mesa, un informe semanal e ideas de trading con el razonamiento completo, a través del portal del inversor y Telegram."
+      },
+      {
+        "title": "Formación para inversores",
+        "body": "Webinars, seminarios y mentoría: más de 3.000 inversores formados para leer los mercados con la misma disciplina que usa la mesa."
+      }
     ],
-    focusTitle: "Mercados que cubro",
-    focus: ["BIST", "NYSE", "Forex", "Cripto", "Fondos", "Materias primas", "Inmobiliario", "Patrimonio tradicional"],
-    speakingTitle: "Dónde publico",
-    speaking: [
+    "timelineTitle": "La historia",
+    "timeline": [
+      {
+        "year": "2009",
+        "title": "Londres",
+        "body": "La experiencia de mesa que hay detrás de NUUK empieza en una sala de intermediación de FX en la City: ejecución, liquidez y riesgo de cliente, aprendidos desde dentro."
+      },
+      {
+        "year": "2011",
+        "title": "Estambul",
+        "body": "Cobertura institucional de FX en brókeres de Estambul mientras Turquía se abre al trading apalancado; la cartera de clientes internacionales crece un 27%."
+      },
+      {
+        "year": "2016",
+        "title": "Un negocio de clientes",
+        "body": "Un negocio de introductor y cobertura de clientes crece hasta más de 700 clientes y más de 26 M USD en negocio de clientes."
+      },
+      {
+        "year": "2025",
+        "title": "NUUK, Dubái",
+        "body": "Fundación en el Dubai International Financial Centre como empresa de trading basada en IA: sistemas, cuentas gestionadas, alianzas con brókeres, investigación y formación."
+      },
+      {
+        "year": "2026",
+        "title": "Sistemas en producción",
+        "body": "87 variantes de estrategia sometidas a backtesting, tres en producción. GANN NUUK Trader AI opera con el capital propio de NUUK en Tickmill y se publica en la página de resultados."
+      },
+      {
+        "year": "Hoy",
+        "title": "Una mesa multilingüe",
+        "body": "Un portal del inversor, seis brókeres asociados y un sitio en seis idiomas al servicio de inversores desde Estambul hasta el Golfo."
+      }
+    ],
+    "principlesTitle": "Cómo trabaja NUUK",
+    "principles": [
+      {
+        "title": "Evidencia antes que opinión",
+        "body": "Cada cifra de este sitio indica su fuente y su método. Lo que no puede explicarse no se muestra."
+      },
+      {
+        "title": "Riesgo antes que rentabilidad",
+        "body": "El tamaño de la posición, los límites de drawdown y las reglas de stop se deciden antes de cualquier operación."
+      },
+      {
+        "title": "Su dinero sigue siendo suyo",
+        "body": "Las cuentas gestionadas operan dentro de su propia cuenta de bróker. NUUK nunca asume la custodia."
+      },
+      {
+        "title": "Primero el capital propio",
+        "body": "Ningún sistema llega a una cuenta de cliente antes de haber operado con el dinero propio de NUUK."
+      }
+    ],
+    "focusTitle": "Mercados cubiertos",
+    "focus": [
+      "BIST",
+      "NYSE",
+      "Forex",
+      "Cripto",
+      "Fondos",
+      "Materias primas",
+      "Inmobiliario",
+      "Patrimonio tradicional"
+    ],
+    "speakingTitle": "Dónde publica NUUK",
+    "speaking": [
       "Telegram · @NUUKQuant: notas diarias de mercado, ideas de trading y el informe mensual de sistemas",
-      "X · @AhmetSTurk: comentario de mercado e hilos de investigación",
-      "LinkedIn · NUUK.: novedades de la empresa e investigación en profundidad",
-      "Instagram · @ahmetsturk: detrás de la mesa de operaciones",
-    ],
+      "LinkedIn · NUUK: novedades de la empresa e investigación en profundidad",
+      "Portal del inversor: investigación, señales, P&L diario y formación para suscriptores"
+    ]
   },
 
   aiTrading: {
@@ -251,13 +335,13 @@ export const es: ContentOverride = {
     faq: [
       { q: "¿Puedo ejecutar un sistema en mi propia cuenta?", a: "Sí. Según el bróker, puede hacer copy trading, unirse a una estructura MAM/PAMM en Tickmill, Saxo Bank o Midas, o seguir el canal de señales y ejecutar usted mismo. En todos los casos la cuenta permanece a su nombre." },
       { q: "¿Cuál es el capital mínimo?", a: "1.000 USD para copy trading o señales. Las cuentas gestionadas MAM/PAMM parten de la asignación mínima indicada en la página de cuentas gestionadas." },
-      { q: "¿Comparte el código?", a: "No. El código sigue siendo propietario. Publico la metodología, las reglas de riesgo y los resultados, cada uno con su fuente." },
+      { q: "¿Comparte el código?", a: "No. El código sigue siendo propietario. NUUK publica la metodología, las reglas de riesgo y los resultados, cada uno con su fuente." },
     ],
   },
 
   trackRecord: {
     metaTitle: "Historial verificado",
-    metaDescription: "Rendimiento de la cartera propia de Ahmet S. Öztürk y de los sistemas NUUK, con la fuente y el método de cada cifra.",
+    metaDescription: "Rendimiento de la cartera propia de NUUK y de sus sistemas de trading, con la fuente y el método de cada cifra.",
     kicker: "Historial verificado",
     title: "Cada cifra, con su fuente",
     lead: "Las cuentas se mantienen en brókeres asociados. Cada cifra indica de dónde procede, cuenta real, paper trading o backtest walk-forward, y cómo se calcula. El rendimiento pasado no garantiza resultados futuros.",
@@ -275,13 +359,13 @@ export const es: ContentOverride = {
     metaTitle: "Cuentas gestionadas",
     metaDescription: "Cómo funcionan las cuentas gestionadas: su capital permanece en su propia cuenta de bróker, operado bajo límites de riesgo acordados.",
     kicker: "Cuentas gestionadas",
-    title: "Su cuenta. Mi ejecución. Límites acordados.",
-    lead: "El capital nunca sale de su nombre. Usted abre una cuenta en un bróker asociado, la conecta a la estructura gestionada y yo la opero dentro de un mandato de riesgo por escrito.",
+    title: "Su cuenta. La ejecución de NUUK. Límites acordados.",
+    lead: "El capital nunca sale de su nombre. Usted abre una cuenta en un bróker asociado, la conecta a la estructura gestionada y NUUK la opera dentro de un mandato de riesgo por escrito.",
     cta: { label: "Solicitar una llamada introductoria" },
     howTitle: "Cómo funciona",
     how: [
       { title: "Llamada de descubrimiento", body: "Hablamos de objetivos, horizonte, necesidades de liquidez y cuánto drawdown puede tolerar realmente." },
-      { title: "Apertura de la cuenta", body: "Usted abre una cuenta en un bróker asociado a su propio nombre y la financia. Yo recibo únicamente permiso de negociación, nunca derechos de retiro." },
+      { title: "Apertura de la cuenta", body: "Usted abre una cuenta en un bróker asociado a su propio nombre y la financia. NUUK recibe únicamente permiso de negociación, nunca derechos de retiro." },
       { title: "Mandato de riesgo", body: "Un mandato escrito fija la exposición máxima, el límite de pérdida diaria y los instrumentos. El sistema no puede superarlo." },
       { title: "Informes", body: "Usted ve cada operación en tiempo real en su propia cuenta, además de un informe mensual y una llamada de revisión trimestral." },
     ],
@@ -346,9 +430,9 @@ export const es: ContentOverride = {
     metaTitle: "Brókeres asociados",
     metaDescription: "Comparativa independiente de brókeres asociados: regulación, spreads, métodos de depósito, plataformas y apertura de cuenta paso a paso.",
     kicker: "Brókeres asociados",
-    title: "Los brókeres con los que trabajo",
-    lead: "Solo refiero clientes a brókeres con los que opero o que he auditado. Seis socios a día de hoy: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas y Darwinex. Cada tarjeta muestra quién los regula, qué cobran realmente y con qué rapidez se mueve el dinero.",
-    disclosure: "Los enlaces de esta página son enlaces de referido. Si abre y financia una cuenta a través de ellos, recibo una comisión del bróker. Esto no modifica los spreads ni las comisiones que usted paga.",
+    title: "Los brókeres con los que trabaja NUUK",
+    lead: "NUUK solo refiere clientes a brókeres con los que opera o que ha auditado. Seis socios a día de hoy: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas y Darwinex. Cada tarjeta muestra quién los regula, qué cobran realmente y con qué rapidez se mueve el dinero.",
+    disclosure: "Los enlaces de esta página son enlaces de referido. Si abre y financia una cuenta a través de ellos, NUUK recibe una comisión del bróker. Esto no modifica los spreads ni las comisiones que usted paga.",
     compareTitle: "Comparativa",
     partner: {
       "kicker": "Programa de socios",
@@ -1060,7 +1144,7 @@ export const es: ContentOverride = {
       topic: "Asunto",
       topics: ["Cuenta gestionada", "Elección de bróker", "Señales e informes", "Formación", "Sistemas de IA", "Otro"],
       message: "Mensaje",
-      messagePlaceholder: "¿En qué puedo ayudarle?",
+      messagePlaceholder: "¿En qué podemos ayudarle?",
       submit: "Enviar",
       note: "Esto abre su cliente de correo con el mensaje ya redactado. No se almacena ningún dato en este sitio.",
       errorRequired: "Por favor, indique su nombre, correo electrónico y mensaje.",
@@ -1085,7 +1169,7 @@ export const es: ContentOverride = {
     "ib-disclosure": {
       title: "Declaración de introductor de negocio (IB)",
       body: [
-        "Ahmet S. Öztürk / NUUK actúa como partner introductor para los brókeres publicados en este sitio web. Cuando usted abre y financia una cuenta a través de un enlace de referido, el bróker paga una comisión basada en su volumen de negociación.",
+        "NUUK actúa como partner introductor para los brókeres publicados en este sitio web. Cuando usted abre y financia una cuenta a través de un enlace de referido, el bróker paga una comisión basada en su volumen de negociación.",
         "Esta comisión la paga el bróker y no aumenta los spreads, comisiones ni gastos que usted paga. Las fichas de los brókeres se redactan de forma independiente; un bróker no puede pagar para modificar una valoración ni una debilidad señalada.",
         "Usted es libre de abrir una cuenta directamente con cualquier bróker. El enlace de referido es opcional.",
         "Socios actuales: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas y Darwinex bajo acuerdos de introductor de negocio. Tickmill, Saxo Bank y Midas operan además las estructuras MAM/PAMM utilizadas para las cuentas gestionadas bajo acuerdos separados de gestión de carteras.",
@@ -1135,10 +1219,10 @@ export const es: ContentOverride = {
     copyright: "Todos los derechos reservados.",
     riskTitle: "Advertencia de riesgo",
     legal1:
-      "es la marca personal de Ahmet S. Öztürk, economista e inversor, y el nombre comercial de NUUK Quant, con sede en el Dubai International Financial Centre. Los servicios se ofrecen a clientes profesionales e institucionales donde esté permitido; la disponibilidad depende de su jurisdicción y de la regulación aplicable.",
+      "es el nombre comercial de NUUK Quant, empresa de trading basada en IA y gestión de carteras con sede en el Dubai International Financial Centre. Los servicios se ofrecen a clientes profesionales e institucionales donde esté permitido; la disponibilidad depende de su jurisdicción y de la regulación aplicable.",
     legal2:
       "El contenido de este sitio web es comentario general de mercado y material educativo. No constituye asesoramiento de inversión personalizado ni una oferta o solicitud de compra o venta de ningún instrumento financiero o servicio.",
-    ib: "Los enlaces a brókeres de este sitio web son enlaces de referido. Puedo recibir una comisión cuando usted abre y financia una cuenta a través de ellos; esto no modifica las comisiones que usted paga.",
+    ib: "Los enlaces a brókeres de este sitio web son enlaces de referido. NUUK puede recibir una comisión cuando usted abre y financia una cuenta a través de ellos; esto no modifica las comisiones que usted paga.",
     risk: "Operar implica un riesgo sustancial y puede generar pérdidas superiores a su inversión inicial. Los resultados pasados no garantizan resultados futuros.",
   },
 

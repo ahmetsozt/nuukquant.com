@@ -5,3 +5,4 @@
 - team.jpg — Unsplash photo-1517048676732-d65bc937f952
 
 Unsplash License: free to use for commercial and non-commercial purposes, no permission needed.
+- about-difc.webp / about-difc-720.webp — AI-generated (Higgsfield, nano_banana), DIFC Gate at blue hour

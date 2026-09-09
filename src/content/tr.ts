@@ -8,11 +8,11 @@ import type { ContentOverride } from "@/i18n";
  */
 export const tr: ContentOverride = {
   meta: {
-    "title": "Ahmet S. Öztürk | Ekonomist, Yatırımcı, NUUK Kurucusu",
-    "description": "DIFC (Dubai) merkezli ekonomist ve yatırımcı. Yapay zekâ destekli sistematik işlem stratejileri, portföy yönetimi, aracı kurum ortaklıkları, araştırma ve sinyal hizmetleri, yatırımcı eğitimi."
+    "title": "NUUK | Yapay Zekâ Destekli Yatırım ve Portföy Yönetimi, Dubai",
+    "description": "NUUK, DIFC (Dubai) merkezli yapay zekâ destekli bir yatırım kuruluşudur: algoritmik işlem sistemleri, portföy yönetimi, aracı kurum ortaklıkları, araştırma ve sinyal hizmetleri, yatırımcı eğitimi."
   },
   brand: {
-    "role": "Ekonomist · Yatırımcı · Kurucu",
+    "role": "Algoritmik işlem · Portföy yönetimi · Aracı kurum ortaklıkları",
     "office": "Dubai Uluslararası Finans Merkezi (DIFC), Dubai, BAE"
   },
   ui: {
@@ -143,16 +143,15 @@ export const tr: ContentOverride = {
     "hero": {
       "visualTag": "Algoritmik İşlem · Portföy Yönetimi",
       "visualAlt": "Karanlık stüdyoda NUUK renklerinde Formula 1 aracı",
-      "kicker": "Ekonomist · Yatırımcı · NUUK Kurucusu",
+      "kicker": "Yapay zekâ destekli yatırım kuruluşu · DIFC, Dubai",
       "title": "Piyasalarda disiplinli, sistematik yaklaşım.",
-      "lead": "NUUK, yapay zekâ destekli sistematik işlem stratejileri geliştirir; kurucusunun kendi sermayesini ve yatırımcı portföylerini yönetir, yatırımcılara kendi başlarına işlem yapmayı öğretir. Sitedeki her rakam kaynağını ve yöntemini belirtir.",
+      "lead": "NUUK, yapay zekâ destekli sistematik işlem stratejileri geliştirir; bunları önce kendi sermayesiyle çalıştırır, yatırımcı portföylerini yönetir ve yatırımcılara kendi başlarına işlem yapmayı öğretir. Sitedeki her rakam kaynağını ve yöntemini belirtir.",
       "primary": {
         "label": "Aracı Kurum Seçin"
       },
       "secondary": {
         "label": "Görüşme Talep Edin"
       },
-      "portraitAlt": "Ahmet S. Öztürk",
       "trustLine": [
         "FCA, ASIC, CySEC ve DFSA denetimindeki ortak aracı kurumlar",
         "Her sistemde kendi sermayemiz",
@@ -161,7 +160,7 @@ export const tr: ContentOverride = {
       "trust": [
         {
           "value": "17",
-          "label": "yıllık piyasa deneyimi; 2009'da Londra'da bir FX işlem masasında başladı"
+          "label": "yıllık İstanbul–Londra işlem masası tecrübesi"
         },
         {
           "value": "87",
@@ -214,7 +213,7 @@ export const tr: ContentOverride = {
       },
       {
         "title": "Performans Kaydı",
-        "body": "Kendi portföyümüz ve sistemlerin sonuçları; maliyetler düşülmüş, her rakamın kaynağı ve yöntemi belirtilmiş olarak.",
+        "body": "NUUK'un kendi portföyü ve sistemlerin sonuçları; maliyetler düşülmüş, her rakamın kaynağı ve yöntemi belirtilmiş olarak.",
         "who": "Karar öncesi kanıt görmek isteyen yatırımcılar için"
       },
       {
@@ -287,46 +286,87 @@ export const tr: ContentOverride = {
   },
 
   about: {
-    "metaTitle": "Ahmet S. Öztürk Hakkında",
-    "metaDescription": "Ekonomist, yatırımcı ve NUUK kurucusu. FX ve CFD piyasalarında on yedi yıl: Londra'daki bir işlem masasından Dubai'de yapay zekâ destekli bir yatırım kuruluşuna.",
-    "kicker": "Hakkında",
-    "title": "Ekonomist bakışı, işlemci disiplini, mühendis titizliği.",
-    "lead": "Kariyerime 2009'da Londra'da bir FX aracı kurumunun işlem masasında başladım; sonraki yedi yılı Londra ve İstanbul'daki aracı kurumlarda geçirdim ve IKON Finance'te Uluslararası FX Bölüm Başkanı olarak tamamladım. 2016'da kurduğum İşlem Odası, 700'ün üzerinde müşteriye ve 26 milyon USD'yi aşan müşteri hacmine ulaşan bir tanıtım aracısı (IB) ve müşteri ilişkileri kuruluşudur. 2025'te Dubai'ye taşınarak NUUK'u kurdum: FX, altın, endeksler ve dijital varlıklarda sistematik stratejiler geliştiren ve bunları portföy yönetimi, araştırma hizmetleri ve eğitim yoluyla yatırımcılara sunan bir yatırım kuruluşu.",
-    "portraitAlt": "Ahmet S. Öztürk",
-    "timelineTitle": "Kariyer",
+    "metaTitle": "NUUK Hakkında",
+    "metaDescription": "NUUK, 2025'te Dubai Uluslararası Finans Merkezi'nde (DIFC) kurulan, on yedi yıllık İstanbul–Londra işlem masası tecrübesi üzerine inşa edilmiş yapay zekâ destekli bir yatırım ve portföy yönetimi kuruluşudur.",
+    "kicker": "NUUK Hakkında",
+    "title": "On yedi yıl işlem masasında. Bunu kanıtlamak için kurulan bir şirket.",
+    "lead": "NUUK, 2025 yılında Dubai Uluslararası Finans Merkezi'nde kuruldu. Arkasında 2009'da Londra'daki bir FX aracı kurumunun işlem masasında başlayan, İstanbul'un kurumsal masalarından geçen ve 700'ün üzerinde müşteriye ulaşan bir tanıtım aracılığı işine uzanan on yedi yıllık tecrübe var. Bu tecrübe tek bir kanaate dönüştü: piyasalar görüşü değil, disiplini ödüllendirir. NUUK bu kanaati sistematik stratejilere çevirir, önce kendi sermayesiyle çalıştırır; yöntemi portföy yönetimi, araştırma ve eğitim yoluyla yatırımcılarla paylaşır.",
+    "facts": [
+      {
+        "value": "2025",
+        "label": "DIFC, Dubai'de kuruluş"
+      },
+      {
+        "value": "17",
+        "label": "yıllık İstanbul–Londra işlem masası tecrübesi"
+      },
+      {
+        "value": "3",
+        "label": "canlı sistem; 87 strateji varyantı test edildi"
+      },
+      {
+        "value": "6",
+        "label": "lisanslı aracı kurum ortağı"
+      }
+    ],
+    "activitiesTitle": "NUUK ne yapar",
+    "activitiesLead": "Beş faaliyet alanı ve hepsinden geçen tek kural: müşteri sermayesi her zaman müşterinin kendi hesabında kalır.",
+    "activities": [
+      {
+        "title": "Algoritmik işlem sistemleri",
+        "body": "Stratejiler şirket içinde tasarlanır, geriye ve ileriye dönük test edilir; ardından FX, altın, endeksler ve dijital varlıklarda NUUK'un kendi sermayesiyle canlıya alınır. GANN NUUK Trader AI, Tickmill'de canlı."
+      },
+      {
+        "title": "Portföy yönetimi",
+        "body": "MAM/PAMM yapılarıyla müşterinin kendi aracı kurum hesabında yönetilen portföyler; yazılı risk mandası, yönetim ücreti ve net kâr üzerinden performans ücreti."
+      },
+      {
+        "title": "Aracı kurum ortaklıkları",
+        "body": "Altı lisanslı aracı kurumla tanıtım aracılığı (IB) anlaşmaları; her biri bağımsız olarak incelenmiş ve adım adım hesap açma rehberiyle belgelenmiş."
+      },
+      {
+        "title": "Araştırma ve sinyaller",
+        "body": "Günlük masa notları, haftalık rapor ve gerekçesi tam yazılmış işlem fikirleri; yatırımcı paneli ve Telegram üzerinden."
+      },
+      {
+        "title": "Yatırımcı eğitimi",
+        "body": "Webinar, seminer ve mentorluk: 3.000'den fazla yatırımcı, masanın kullandığı disiplinle piyasa okumayı öğrendi."
+      }
+    ],
+    "timelineTitle": "Hikâye",
     "timeline": [
       {
-        "year": "2005–2008",
-        "title": "Seneca College, Toronto",
-        "body": "Uluslararası İşletme Yönetimi (co-op programı)."
+        "year": "2009",
+        "title": "Londra",
+        "body": "NUUK'un arkasındaki masa tecrübesi, Londra'da bir FX aracı kurumunun işlem masasında başlar: emir gerçekleştirme, likidite ve müşteri riski, içeriden öğrenilir."
       },
       {
-        "year": "2009–2011",
-        "title": "FXCM, Londra",
-        "body": "FX aracı kurum işlem masası: emir gerçekleştirme, likidite ve müşteri riski yönetimi."
+        "year": "2011",
+        "title": "İstanbul",
+        "body": "Türkiye piyasası kaldıraçlı işlemlere açılırken İstanbul aracı kurumlarında kurumsal FX; uluslararası müşteri portföyü %27 büyür."
       },
       {
-        "year": "2011–2014",
-        "title": "Tacirler Yatırım ve ALB Menkul, İstanbul",
-        "body": "Yurt içi piyasanın kaldıraçlı işlemlere açıldığı dönemde iki aracı kurumda FX uzmanlığı."
-      },
-      {
-        "year": "2014–2016",
-        "title": "IKON Finance",
-        "body": "Uluslararası FX Bölüm Başkanı; uluslararası müşteri portföyü %27 büyütüldü."
-      },
-      {
-        "year": "2016–2025",
-        "title": "İşlem Odası, İstanbul",
-        "body": "Tanıtım aracısı (IB) ve müşteri ilişkileri kuruluşu: 700'ün üzerinde müşteri, 26 milyon USD'yi aşan müşteri hacmi, 2,5 milyon USD kümülatif ortaklık geliri."
+        "year": "2016",
+        "title": "Müşteri işi",
+        "body": "Tanıtım aracılığı ve müşteri ilişkileri işi 700'ün üzerinde müşteriye ve 26 milyon USD'yi aşan müşteri hacmine ulaşır."
       },
       {
         "year": "2025",
         "title": "NUUK, Dubai",
-        "body": "Dubai Uluslararası Finans Merkezi'nde kuruluş: algoritmik işlem sistemleri, portföy yönetimi, aracı kurum ortaklıkları, araştırma ve eğitim."
+        "body": "Dubai Uluslararası Finans Merkezi'nde yapay zekâ destekli bir yatırım kuruluşu olarak kurulur: sistemler, portföy yönetimi, aracı kurum ortaklıkları, araştırma ve eğitim."
+      },
+      {
+        "year": "2026",
+        "title": "Canlı sistemler",
+        "body": "87 strateji varyantı test edildi; üçü üretimde. GANN NUUK Trader AI, Tickmill'de NUUK'un kendi sermayesiyle çalışıyor; sonuçları performans sayfasında."
+      },
+      {
+        "year": "Bugün",
+        "title": "Çok dilli bir masa",
+        "body": "Yatırımcı paneli, altı aracı kurum ortağı ve İstanbul'dan Körfez'e yatırımcılara altı dilde hizmet veren bir site."
       }
     ],
-    "principlesTitle": "Çalışma ilkeleri",
+    "principlesTitle": "NUUK nasıl çalışır",
     "principles": [
       {
         "title": "Kanıt esası",
@@ -341,8 +381,8 @@ export const tr: ContentOverride = {
         "body": "Yönetilen hesaplar müşterinin kendi aracı kurum hesabında çalışır. NUUK hiçbir zaman saklama yetkisi üstlenmez."
       },
       {
-        "title": "Yöntem aktarımı",
-        "body": "Eğitimin amacı, yatırımcının kendi kararlarını bağımsız olarak verebilmesidir."
+        "title": "Önce kendi sermayesi",
+        "body": "Hiçbir sistem, NUUK'un kendi parasıyla çalışmadan bir müşteri hesabına ulaşmaz."
       }
     ],
     "focusTitle": "Takip edilen piyasalar",
@@ -359,9 +399,8 @@ export const tr: ContentOverride = {
     "speakingTitle": "Yayın kanalları",
     "speaking": [
       "Telegram · @NUUKQuant: günlük piyasa notları, işlem fikirleri ve aylık sistem raporu",
-      "X · @AhmetSTurk: piyasa değerlendirmeleri ve araştırma dizileri",
-      "LinkedIn · NUUK.: kurumsal duyurular ve kapsamlı araştırmalar",
-      "Instagram · @ahmetsturk: işlem masasından notlar"
+      "LinkedIn · NUUK: kurumsal duyurular ve kapsamlı araştırmalar",
+      "Yatırımcı paneli: aboneler için araştırma, sinyaller, günlük K/Z ve eğitim"
     ]
   },
 
@@ -417,7 +456,7 @@ export const tr: ContentOverride = {
 
   trackRecord: {
     "metaTitle": "Performans Kaydı",
-    "metaDescription": "Ahmet S. Öztürk'ün kendi portföyünün ve NUUK sistemlerinin performansı; her rakamın kaynağı ve yöntemiyle.",
+    "metaDescription": "NUUK'un kendi portföyünün ve işlem sistemlerinin performansı; her rakamın kaynağı ve yöntemiyle.",
     "kicker": "Performans kaydı",
     "title": "Her rakam, kaynağıyla",
     "lead": "Hesaplar ortak aracı kurumlarda tutulur. Aşağıdaki her rakam nereden geldiğini (canlı hesap, kâğıt üzerinde işlem veya walk-forward backtest) ve nasıl hesaplandığını belirtir. Geçmiş performans gelecekteki sonuçların garantisi değildir.",
@@ -1589,7 +1628,7 @@ export const tr: ContentOverride = {
     "ib-disclosure": {
       title: "Tanıtım aracısı (IB) bildirimi",
       body: [
-        "Ahmet S. Öztürk / NUUK, bu web sitesinde listelenen aracı kurumlar için tanıtım aracısı (IB) olarak hareket eder. Bir yönlendirme bağlantısı üzerinden hesap açıp fonladığınızda aracı kurum, işlem hacminize dayalı bir komisyon öder.",
+        "NUUK, bu web sitesinde listelenen aracı kurumlar için tanıtım aracısı (IB) olarak hareket eder. Bir yönlendirme bağlantısı üzerinden hesap açıp fonladığınızda aracı kurum, işlem hacminize dayalı bir komisyon öder.",
         "Bu komisyon aracı kurum tarafından ödenir ve ödediğiniz spread'leri, komisyonları veya ücretleri artırmaz. Aracı kurum kartları bağımsız olarak yazılır; bir aracı kurum, bir değerlendirmeyi veya listelenen bir zayıf yönü değiştirmek için ödeme yapamaz.",
         "Dilediğiniz aracı kurumda doğrudan hesap açmakta serbestsiniz. Yönlendirme bağlantısı isteğe bağlıdır.",
         "Mevcut ortaklar: tanıtım aracısı sözleşmeleri kapsamında Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas ve Darwinex. Tickmill, Saxo Bank ve Midas ayrıca, ayrı portföy yönetimi sözleşmeleri kapsamında yönetilen hesaplar için kullanılan MAM/PAMM yapılarını işletir.",
@@ -1652,7 +1691,7 @@ export const tr: ContentOverride = {
   footer: {
     "copyright": "Tüm hakları saklıdır.",
     "riskTitle": "Risk uyarısı",
-    "legal1": "ekonomist ve yatırımcı Ahmet S. Öztürk'ün kişisel markası ve Dubai Uluslararası Finans Merkezi merkezli NUUK Quant'ın ticari unvanıdır. Hizmetler, mevzuatın izin verdiği ülkelerde profesyonel ve kurumsal müşterilere sunulur; erişilebilirlik bulunduğunuz ülkeye ve ilgili düzenlemelere bağlıdır.",
+    "legal1": "Dubai Uluslararası Finans Merkezi merkezli, yapay zekâ destekli bir yatırım ve portföy yönetimi kuruluşu olan NUUK Quant'ın ticari unvanıdır. Hizmetler, mevzuatın izin verdiği ülkelerde profesyonel ve kurumsal müşterilere sunulur; erişilebilirlik bulunduğunuz ülkeye ve ilgili düzenlemelere bağlıdır.",
     "legal2": "Bu web sitesindeki içerik genel piyasa yorumu ve eğitim amaçlıdır. Kişisel yatırım tavsiyesi değildir; herhangi bir finansal araç veya hizmetin alım ya da satımına yönelik teklif veya davet niteliği taşımaz.",
     "ib": "Bu web sitesindeki aracı kurum bağlantıları yönlendirme (referral) bağlantılarıdır. Bu bağlantılar üzerinden hesap açıp fonlamanız hâlinde NUUK komisyon elde edebilir; bu durum ödediğiniz ücretleri değiştirmez.",
     "risk": "İşlem yapmak önemli ölçüde risk içerir ve başlangıç sermayenizi aşan zararlarla sonuçlanabilir. Geçmiş performans gelecekteki sonuçların göstergesi değildir."

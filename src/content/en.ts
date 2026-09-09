@@ -87,6 +87,15 @@ export const en = {
     office: "Dubai International Financial Centre (DIFC), Dubai, UAE",
   },
   ui: {
+    investorLogin: "Investor login",
+    pnl: {
+      "kicker": "Proprietary desk",
+      "today": "Closed today",
+      "trades": "trades",
+      "winRate": "win rate",
+      "updated": "Updated",
+      "source": "NUUK's own account, MT5 daily statement, net of commission and swap. Illustrative of the desk only; not a managed-account result."
+    },
     contactToOpen: "Contact us to open an account",
     scrollDown: "Scroll down",
     contact: "Contact",
@@ -159,6 +168,8 @@ export const en = {
         { label: "Contact", href: "/contact-us/" },
         { label: "Risk disclosure", href: "/legal/risk-disclosure/" },
         { label: "IB disclosure", href: "/legal/ib-disclosure/" },
+        { label: "Investor portal", href: "/investors/" },
+        { label: "Case studies", href: "/case-studies/" },
       ],
     },
   ] as NavGroup[],
@@ -438,6 +449,42 @@ export const en = {
       "cta": {
         "label": "Discuss a partnership",
         "href": "mailto:info@nuukquant.com?subject=Partner%20programme"
+      }
+    },
+    wizard: {
+      "title": "Find your broker in three questions",
+      "lead": "Answer three questions and we point you to the partner that fits. Not personal advice; always check the live conditions on the broker's site.",
+      "q1": "Where do you live?",
+      "o1": [
+        "Türkiye",
+        "UAE / Gulf",
+        "EU / United Kingdom",
+        "Elsewhere"
+      ],
+      "q2": "What do you want to trade?",
+      "o2": [
+        "FX, gold and index CFDs",
+        "Stocks and ETFs",
+        "Crypto and multi-asset CFDs",
+        "Copy trading / managed"
+      ],
+      "q3": "Starting capital",
+      "o3": [
+        "Under USD 1,000",
+        "USD 1,000 – 25,000",
+        "USD 25,000 – 250,000",
+        "Over USD 250,000"
+      ],
+      "result": "Our recommendation",
+      "alt": "Also worth a look",
+      "restart": "Start again",
+      "reasons": {
+        "pepperstone": "DFSA-regulated entity for Gulf residents, raw spreads from 0.0 pips on FX and metals, MT4/MT5/cTrader/TradingView.",
+        "tickmill": "FCA and CySEC regulated with Turkish-speaking support, raw spreads from 0.0 pips and the MAM structure we use for pooled accounts.",
+        "saxo": "Bank-grade custody and 70,000+ instruments across stocks, ETFs, bonds and options, with tiered pricing for larger accounts.",
+        "capital-com": "Low minimum, 3,000+ CFDs including crypto and stocks, and a fast app; suits first steps in multi-asset CFDs.",
+        "midas": "Turkish-regulated brokerage app for BIST, US and European shares from USD 1, in Turkish, with TRY funding.",
+        "darwinex": "Turn a systematic strategy into an investable DARWIN or follow ours; FCA-regulated with copy and allocation built in."
       }
     },
     cardLabels: {
@@ -760,6 +807,12 @@ export const en = {
   },
 
   insights: {
+    notesTitle: "Desk notes",
+    newsTitle: "Market news, live",
+    newsLead: "Headlines and analysis from professional newswires and TradingView contributors, streamed as they publish. Times in your local zone.",
+    techTitle: "Technical snapshot",
+    techLead: "Aggregated oscillator and moving-average readings on the instruments our systems trade most, on the daily timeframe.",
+    feedNote: "Feeds by TradingView. Third-party content is not NUUK's view and is not investment advice.",
     metaTitle: "Insights",
     metaDescription: "Market commentary on macro, FX, commodities, indices, crypto and AI in trading.",
     kicker: "Insights",
@@ -984,6 +1037,184 @@ export const en = {
       "label": "Read the IB disclosure",
       "href": "/legal/ib-disclosure/"
     }
+  },
+  investors: {
+    "metaTitle": "Investor portal",
+    "metaDescription": "Where managed-account clients log in, what NUUK reports each month and how to request access.",
+    "kicker": "Investor portal",
+    "title": "Your account, your login, your reports",
+    "lead": "Managed accounts live at the broker, in your own name. Log in to the broker's client portal for real-time statements; NUUK adds the monthly report and the quarterly review.",
+    "portalsTitle": "Broker client portals",
+    "portalLabel": "Client portal",
+    "reportsTitle": "What you receive from NUUK",
+    "reports": [
+      {
+        "title": "Real-time statements",
+        "body": "Every trade, fee and balance is visible in your broker account the moment it happens. Nothing is reported by us that you cannot see there."
+      },
+      {
+        "title": "Monthly report",
+        "body": "By the fifth business day: net performance, fees charged, exposure by instrument, drawdown against the mandate and a short commentary."
+      },
+      {
+        "title": "Quarterly review",
+        "body": "A 30-minute call to review the mandate, the risk limits and any change in your objectives or liquidity needs."
+      },
+      {
+        "title": "Annual fee statement",
+        "body": "One page for your accountant: management and performance fees, high-water mark history and withdrawals."
+      }
+    ],
+    "accessTitle": "Request portal access",
+    "accessBody": "Reports are sent to the email on your mandate. To change the address, add a second recipient or request a report you cannot find, contact us with your account number.",
+    "accessCta": {
+      "label": "Contact the desk",
+      "href": "/contact-us/"
+    },
+    "faqTitle": "Access and withdrawals",
+    "faq": [
+      {
+        "q": "Who holds my money?",
+        "a": "The broker, in an account in your own name. NUUK has trading permission only and cannot withdraw or transfer funds."
+      },
+      {
+        "q": "Can I withdraw at any time?",
+        "a": "Pooled MAM: after the first 30 days, at any time. Dedicated account: with 30 days' notice, so open positions can be closed in an orderly way. Withdrawals are made by you, in the broker portal."
+      },
+      {
+        "q": "Where do I see the fees you charged?",
+        "a": "On the broker statement, as separate line items, and summarised in the monthly report."
+      }
+    ],
+    "portals": [
+      {
+        "slug": "pepperstone",
+        "name": "Pepperstone",
+        "href": "https://secure.pepperstone.com/"
+      },
+      {
+        "slug": "tickmill",
+        "name": "Tickmill",
+        "href": "https://my.tickmill.com/"
+      },
+      {
+        "slug": "saxo",
+        "name": "Saxo Bank",
+        "href": "https://www.saxotrader.com/"
+      },
+      {
+        "slug": "capital-com",
+        "name": "Capital.com",
+        "href": "https://capital.com/trading/platform/"
+      },
+      {
+        "slug": "midas",
+        "name": "Midas",
+        "href": "https://www.getmidas.com/"
+      },
+      {
+        "slug": "darwinex",
+        "name": "Darwinex",
+        "href": "https://www.darwinex.com/login"
+      }
+    ]
+  },
+  caseStudies: {
+    "metaTitle": "Case studies",
+    "metaDescription": "Three illustrative scenarios showing how NUUK structures a mandate, sets risk limits and charges fees. No client is depicted.",
+    "kicker": "Case studies",
+    "title": "How a mandate is built, in three scenarios",
+    "lead": "Illustrative scenarios, not client stories. The profiles are composites; the fees, limits and arithmetic are exactly those we use.",
+    "badge": "Illustrative scenario",
+    "labels": {
+      "profile": "Profile",
+      "objective": "Objective",
+      "structure": "What we would propose",
+      "mandate": "Mandate",
+      "fees": "Fees",
+      "year": "An illustrative year at 12% gross",
+      "note": "What to notice"
+    },
+    "items": [
+      {
+        "name": "Family office treasury, Dubai",
+        "profile": "A single-family office holding USD 500,000 of treasury cash that must stay liquid within 60 days.",
+        "objective": "Preserve capital first; target 8–12% net a year with a maximum drawdown of 8%.",
+        "structure": "A dedicated PAMM account at Saxo Bank in the office's own name, traded under a written mandate.",
+        "mandate": [
+          "Instruments: FX majors, gold, US and EU index CFDs",
+          "Maximum gross exposure 3× equity, daily loss limit 1%",
+          "Maximum drawdown 8%: account paused and reviewed",
+          "30 days' notice for withdrawals"
+        ],
+        "fees": "USD 1,000 per month (2.4% p.a. at this size) plus 25% of profit above the high-water mark, after the management fee.",
+        "rows": [
+          [
+            "Gross profit (12%)",
+            "USD 60,000"
+          ],
+          [
+            "Management fee (12 × USD 1,000)",
+            "USD 12,000"
+          ],
+          [
+            "Performance fee (25% of USD 48,000)",
+            "USD 12,000"
+          ],
+          [
+            "Net to the office",
+            "USD 36,000 (+7.2%)"
+          ]
+        ],
+        "note": "At USD 500,000 the fixed management fee falls to 2.4% a year. Below USD 250,000 the same fee would be too heavy, which is why the dedicated tier starts there."
+      },
+      {
+        "name": "Self-directed trader, Istanbul",
+        "profile": "An engineer who has traded FX on his own for three years with USD 5,000 and wants the systems without running them.",
+        "objective": "Systematic exposure to the NUUK systems, no management fee, ability to leave quickly.",
+        "structure": "Pooled MAM at Tickmill: his own account, in his name, allocated to the pool.",
+        "mandate": [
+          "Same systems and risk limits as NUUK's own capital",
+          "Fixed USD 300 risk per trade on GANN Live, scaled to pool size",
+          "No management fee; 30-day lock-up, then withdraw at any time"
+        ],
+        "fees": "No management fee; 25% of profit above the high-water mark.",
+        "rows": [
+          [
+            "Gross profit (12%)",
+            "USD 600"
+          ],
+          [
+            "Management fee",
+            "USD 0"
+          ],
+          [
+            "Performance fee (25%)",
+            "USD 150"
+          ],
+          [
+            "Net to the trader",
+            "USD 450 (+9.0%)"
+          ]
+        ],
+        "note": "A losing year costs him nothing in fees; the pool must recover the high-water mark before any performance fee is charged again."
+      },
+      {
+        "name": "Educator with an audience, Riyadh",
+        "profile": "A trading educator with 2,000 students who already recommends brokers informally.",
+        "objective": "Monetise the recommendations transparently without becoming a broker or handling client money.",
+        "structure": "NUUK master introducing-partner agreement: her students open accounts through NUUK's partner links; the rebate is split with her.",
+        "mandate": [
+          "Written rebate split, paid monthly with a per-client statement",
+          "Broker onboarding and KYC guidance in Arabic and English",
+          "Comparison material and the economic calendar she can reuse",
+          "Disclosure to students: rebates are paid by the broker, conditions unchanged"
+        ],
+        "fees": "No fee to her or her students; income comes from the broker's rebate, disclosed in the IB disclosure.",
+        "rows": [],
+        "note": "The rebate depends on each broker's schedule and her students' volume, so no figure is shown here. Terms are agreed in writing before the first client is introduced."
+      }
+    ]
   },
   contact: {
     metaTitle: "Contact",

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { SiteContent } from "@/content/en";
-import { localeNames, locales, switchLocale, type Locale } from "@/i18n";
+import { localeNames, localePath, locales, switchLocale, type Locale } from "@/i18n";
 import Logo from "@/components/ui/Logo";
 import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
@@ -75,6 +75,12 @@ export default function Header({ c, locale }: { c: SiteContent; locale: Locale }
                 </a>
               </li>
             ))}
+            <li>
+              <Link href={localePath(locale, "/investors/")} className="inline-flex items-center gap-1 text-white/85 hover:text-white">
+                <Icon name="shield" size={12} />
+                {c.ui.investorLogin}
+              </Link>
+            </li>
           </ul>
           <LanguageMenu locale={locale} />
         </div>

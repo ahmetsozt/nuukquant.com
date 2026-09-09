@@ -2,6 +2,7 @@ import type { SiteContent } from "@/content/en";
 import type { Locale } from "@/i18n";
 import HeroPerson from "@/components/home/HeroPerson";
 import AwardsStrip from "@/components/home/AwardsStrip";
+import DailyPnl from "@/components/market/DailyPnl";
 import StatCards from "@/components/home/StatCards";
 import Pillars from "@/components/home/Pillars";
 import PromoBand from "@/components/home/PromoBand";
@@ -18,6 +19,7 @@ export default function HomeSections({ c, locale }: { c: SiteContent; locale: Lo
     <>
       <HeroPerson c={c} locale={locale} />
       <AwardsStrip c={c} />
+      <DailyPnl c={c} />
       <StatCards c={c} />
       <Pillars c={c} />
       <PromoBand c={c} />

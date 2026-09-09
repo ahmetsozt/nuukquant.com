@@ -5,16 +5,9 @@ import Button from "@/components/ui/Button";
 import Fill from "@/components/ui/Fill";
 import Icon from "@/components/ui/Icon";
 import type { Broker, SiteContent } from "@/content/en";
+import { brokerCta, brokerHref } from "@/lib/brokers";
 
-/** Primary call to action: referral link, or the contact page when accounts are opened through NUUK. */
-export function brokerCta(c: SiteContent, b: Broker) {
-  return b.contactToOpen ? { href: c.ctaBand.cta.href, label: c.ui.contactToOpen, external: false } : { href: b.referralHref, label: c.ui.openAccount, external: true };
-}
-
-/** Link to the broker's own landing page under /brokers/{slug}/. */
-export function brokerHref(c: SiteContent, b: Broker) {
-  return `${c.nav[1].href}${b.slug}/`;
-}
+export { brokerCta, brokerHref } from "@/lib/brokers";
 
 export function BrokerCardCompact({ b, c }: { b: Broker; c: SiteContent }) {
   const L = c.brokers.cardLabels;

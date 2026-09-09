@@ -17,6 +17,7 @@ const PAGES = [
   "how-we-make-money/",
   "insights/",
   "investors/",
+  "portal/",
   "case-studies/",
   "legal/risk-disclosure/",
   "legal/ib-disclosure/",

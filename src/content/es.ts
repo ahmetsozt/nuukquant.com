@@ -859,6 +859,7 @@ export const es: ContentOverride = {
     }
   },
   investors: {
+    loginCta: { label: "Entrar en el portal" },
     "metaTitle": "Portal del inversor",
     "metaDescription": "Dónde inician sesión los clientes de cuentas gestionadas, qué informa NUUK cada mes y cómo solicitar acceso.",
     "kicker": "Portal del inversor",

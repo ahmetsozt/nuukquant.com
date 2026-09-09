@@ -861,6 +861,7 @@ export const ar: ContentOverride = {
     }
   },
   investors: {
+    loginCta: { label: "تسجيل الدخول إلى البوابة" },
     "metaTitle": "بوابة المستثمر",
     "metaDescription": "أين يسجّل عملاء الحسابات المُدارة الدخول، وماذا تُبلغ NUUK كل شهر، وكيفية طلب الوصول.",
     "kicker": "بوابة المستثمر",

@@ -1039,6 +1039,7 @@ export const en = {
     }
   },
   investors: {
+    loginCta: { label: "Log in to the portal", href: "/portal/" },
     "metaTitle": "Investor portal",
     "metaDescription": "Where managed-account clients log in, what NUUK reports each month and how to request access.",
     "kicker": "Investor portal",
@@ -1215,6 +1216,98 @@ export const en = {
         "note": "The rebate depends on each broker's schedule and her students' volume, so no figure is shown here. Terms are agreed in writing before the first client is introduced."
       }
     ]
+  },
+  portal: {
+    "metaTitle": "Investor portal",
+    "kicker": "Investor portal",
+    "title": "Sign in to your panels",
+    "lead": "Subscribers and managed-account clients sign in here. You see only the panels included in your subscription.",
+    "notConfigured": "The portal is not connected yet. Once the Supabase project is configured this page becomes the login.",
+    "signIn": "Sign in",
+    "signInLead": "Enter the email your subscription is registered under. We send a one-time link; no password to remember.",
+    "email": "Email",
+    "password": "Password",
+    "sendLink": "Send sign-in link",
+    "linkSent": "Check your inbox: the sign-in link is valid for one hour.",
+    "signInPassword": "Sign in",
+    "usePassword": "Use a password instead",
+    "useLink": "Use an email link instead",
+    "inviteOnly": "Access is by invitation only. If you have subscribed and cannot sign in, contact us from the address you used when subscribing.",
+    "welcome": "Signed in as",
+    "signOut": "Sign out",
+    "noPanelsTitle": "No panels on this account yet",
+    "noPanels": "Your account exists but no panel has been assigned. If you subscribed today, allow a few hours; otherwise choose a plan below.",
+    "subscribe": {
+      "label": "See subscription plans",
+      "href": "/signals/"
+    },
+    "empty": "Nothing published yet.",
+    "error": "Something went wrong.",
+    "panelNames": {
+      "signals": "Signal feed",
+      "daily-pnl": "Desk P&L",
+      "reports": "My reports",
+      "education": "Session library"
+    },
+    "signals": {
+      "instrument": "Instrument",
+      "direction": "Direction",
+      "entry": "Entry",
+      "stop": "Stop",
+      "target": "Target",
+      "rationale": "Rationale",
+      "directions": {
+        "long": "Long",
+        "short": "Short",
+        "flat": "Flat"
+      },
+      "statuses": {
+        "open": "Open",
+        "target": "Target hit",
+        "stopped": "Stopped",
+        "closed": "Closed"
+      }
+    },
+    "pnl": {
+      "date": "Date",
+      "closedPnl": "Closed P&L",
+      "trades": "Trades",
+      "winRate": "Win rate",
+      "total": "Total shown"
+    },
+    "reports": {
+      "download": "Open"
+    },
+    "education": {
+      "open": "Open"
+    },
+    "admin": {
+      "title": "Title",
+      "grant": "Grant a panel",
+      "email": "Email",
+      "panel": "Panel",
+      "until": "Valid until",
+      "note": "Note",
+      "notePlaceholder": "e.g. Pro plan, paid 2026-09",
+      "grantBtn": "Grant",
+      "granted": "Panel granted.",
+      "revoke": "Revoke",
+      "revoked": "Panel revoked.",
+      "newSignal": "New signal",
+      "publish": "Publish",
+      "published": "Signal published.",
+      "addPnl": "Add a P&L day",
+      "wins": "Winning trades",
+      "save": "Save",
+      "saved": "Saved.",
+      "uploadReport": "Upload a client report",
+      "forEmail": "Client email",
+      "period": "Period",
+      "file": "File",
+      "upload": "Upload",
+      "uploaded": "Report uploaded.",
+      "noUser": "No user with that email; invite them first."
+    }
   },
   contact: {
     metaTitle: "Contact",

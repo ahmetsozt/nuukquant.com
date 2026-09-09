@@ -1047,6 +1047,7 @@ export const fr: ContentOverride = {
     }
   },
   investors: {
+    loginCta: { label: "Se connecter à l’espace" },
     "metaTitle": "Espace investisseur",
     "metaDescription": "Où les clients des comptes gérés se connectent, ce que NUUK rapporte chaque mois et comment demander l’accès.",
     "kicker": "Espace investisseur",

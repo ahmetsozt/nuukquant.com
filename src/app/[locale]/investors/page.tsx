@@ -78,8 +78,11 @@ export default async function InvestorsPage({ params }: { params: LocaleParams }
               <h2 className="text-[26px] font-bold leading-tight lg:text-[32px]">{p.accessTitle}</h2>
               <p className="mt-3 text-[15.5px] leading-7 text-white/75">{p.accessBody}</p>
             </div>
-            <div className="lg:col-span-4 lg:text-end">
-              <Button href={p.accessCta.href} event="cta_click" eventLabel="investors_access">
+            <div className="flex flex-wrap gap-3 lg:col-span-4 lg:justify-end">
+              <Button href={p.loginCta.href} event="cta_click" eventLabel="investors_login">
+                {p.loginCta.label}
+              </Button>
+              <Button href={p.accessCta.href} variant="outline" event="cta_click" eventLabel="investors_access">
                 {p.accessCta.label}
               </Button>
             </div>

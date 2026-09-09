@@ -1219,6 +1219,13 @@ export const en = {
   },
   portal: {
     security: {
+      passwordTitle: "Password",
+      passwordLead: "Optional. You can always sign in with an email link; set a password if you prefer to type one.",
+      newPassword: "New password",
+      confirmPassword: "Confirm password",
+      savePassword: "Save password",
+      passwordRule: "Use at least 8 characters and enter the same password twice.",
+      passwordSaved: "Password saved.",
       "title": "Security",
       "lead": "Two-step verification adds a one-time code from an authenticator app (Google Authenticator, 1Password, Authy) to every sign-in. Strongly recommended for admin accounts.",
       "enable": "Enable two-step verification",

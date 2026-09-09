@@ -1299,6 +1299,13 @@ export const tr: ContentOverride = {
   },
   portal: {
     security: {
+      passwordTitle: "Şifre",
+      passwordLead: "İsteğe bağlı. Her zaman e-posta bağlantısıyla giriş yapabilirsiniz; şifreyle girmeyi tercih ederseniz burada belirleyin.",
+      newPassword: "Yeni şifre",
+      confirmPassword: "Şifre (tekrar)",
+      savePassword: "Şifreyi kaydet",
+      passwordRule: "En az 8 karakter kullanın ve aynı şifreyi iki kez girin.",
+      passwordSaved: "Şifre kaydedildi.",
       "title": "Güvenlik",
       "lead": "İki adımlı doğrulama, her girişte kimlik doğrulama uygulamasından (Google Authenticator, 1Password, Authy) tek kullanımlık kod ister. Yönetici hesapları için şiddetle önerilir.",
       "enable": "İki adımlı doğrulamayı aç",

@@ -471,7 +471,7 @@ export const fr: ContentOverride = {
           "Pas de site ni de service client en turc ; USD/TRY, EUR/TRY et GBP/TRY sont en clôture uniquement",
         ],
         steps: [
-          "Inscription : renseignez nom, pays, type de client et e-mail sur my.tickmill.com/sign-up pour créer votre Espace client",
+          "Inscription : renseignez nom, pays, type de client et e-mail sur my.tickmill.com/sign-up pour créer votre Espace client ; si le champ Introducing Broker est vide, saisissez le code IB IB82498200",
           "Vérification : connectez-vous à l'Espace client et téléchargez un justificatif d'identité et un justificatif de domicile",
           "Création du compte : une fois les documents approuvés, ouvrez un compte réel en choisissant Classic, Raw ou TradingView Raw, la devise de base (USD/EUR/GBP/ZAR) et le levier",
           "Dépôt : sélectionnez un moyen de paiement (virement bancaire, carte, Skrill, Neteller, UnionPay, crypto) et approvisionnez dès $100 ; la plupart des méthodes sont créditées instantanément",

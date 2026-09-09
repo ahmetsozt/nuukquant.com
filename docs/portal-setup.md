@@ -70,3 +70,24 @@ Panels are rows in `panels`; add a row to create a new sellable panel.
 Status: 2026-09-09 project `clwsbcpktizyxavyuoxp` (Frankfurt) is live with
 both SQL files applied, signups disabled, site URL and redirect set,
 ahmet@ahmetsozturk.com invited and set to admin.
+
+## 6. Notifications, one-click activation, emails (status 2026-09-09)
+
+- `supabase/notifications.sql` is applied: every new application emails
+  ahmet@ahmetsozturk.com through the FormSubmit relay (verified: HTTP 200)
+  and, once a Telegram bot token + chat ID are saved under Admin → Content →
+  Notifications, pushes the same text to Telegram.
+- Edge function `admin-activate` is deployed (JWT verification handled in
+  code; legacy-secret verification OFF). Admin → Memberships → **Activate**
+  now invites the applicant automatically and grants the plan's panels.
+- `supabase/functions/stripe-webhook` is written but not deployed: it needs a
+  Stripe account (secret key + webhook secret as function secrets) and
+  Payment Links carrying `metadata.plan=<slug>`.
+- Branded bilingual email templates are in `supabase/email-templates/`.
+  Supabase only allows custom templates with **custom SMTP**; the built-in
+  sender is also limited to a few emails per hour, so before real
+  subscribers arrive: Authentication → Emails → SMTP Settings with Resend
+  (free tier) or a Google Workspace app password, then paste the templates
+  into Invite user / Magic link / Reset password.
+- Two-step verification (TOTP) is available to every portal user under
+  Security; enable it on the admin account first.

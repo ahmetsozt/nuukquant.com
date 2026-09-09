@@ -10,12 +10,12 @@ import type { ContentOverride } from "@/i18n";
  */
 export const fr: ContentOverride = {
   meta: {
-    title: "Ahmet S. Öztürk — Économiste, investisseur, fondateur de NUUK",
+    title: "NUUK — Trading piloté par l'IA et gestion de portefeuille, Dubaï",
     description:
-      "Économiste et investisseur basé au DIFC, à Dubaï. Systèmes de trading pilotés par l'IA, comptes gérés, partenariats avec des courtiers, signaux de marché et formation des investisseurs.",
+      "NUUK est une société de trading pilotée par l'IA basée au DIFC, à Dubaï : systèmes de trading algorithmique, comptes gérés, partenariats avec des courtiers, recherche, signaux et formation des investisseurs.",
   },
   brand: {
-    role: "Économiste · Investisseur · Fondateur",
+    role: "Trading algorithmique · Gestion de portefeuille · Partenariats courtiers",
     office: "Dubai International Financial Centre (DIFC), Dubaï, Émirats arabes unis",
   },
   ui: {
@@ -108,16 +108,15 @@ export const fr: ContentOverride = {
     hero: {
       visualTag: "Trading algorithmique · Gestion de portefeuille",
       visualAlt: "Monoplace de Formule 1 aux couleurs NUUK dans un studio sombre",
-      kicker: "Économiste · Investisseur · Fondateur de NUUK",
+      kicker: "Société de trading pilotée par l'IA · DIFC, Dubaï",
       title: "Les marchés, lus avec discipline.",
       lead:
-        "Je conçois des systèmes de trading pilotés par l’IA, je négocie mon propre capital, je gère des comptes d’investisseurs et j’apprends aux gens à trader par eux-mêmes. Chaque chiffre de ce site indique sa source et sa méthode.",
+        "NUUK conçoit des systèmes de trading pilotés par l'IA, les exploite d'abord sur son propre capital, gère des comptes d'investisseurs et apprend aux investisseurs à trader par eux-mêmes. Chaque chiffre de ce site indique sa source et sa méthode.",
       primary: { label: "Choisir un courtier" },
       secondary: { label: "Réserver un appel" },
-      portraitAlt: "Ahmet S. Öztürk",
       trustLine: ["Courtiers partenaires régulés par la FCA, l'ASIC, la CySEC et la DFSA", "Notre capital dans chaque système", "Basé au DIFC, à Dubaï"],
       trust: [
-        { label: "années sur les marchés, depuis un desk FX à Londres en 2009" },
+        { label: "années d'expérience de desk entre Istanbul et Londres derrière la société" },
         {"label": "variantes de stratégies back-testées depuis 2026 ; trois en production, documentées sur la page trading IA"},
         { label: "investisseurs formés lors de webinaires et de séminaires" },
         { label: "partenariats avec des courtiers, dont six présentés sur ce site" },
@@ -127,7 +126,7 @@ export const fr: ContentOverride = {
     markets: {
       "kicker": "Cours en direct",
       "title": "Les marchés, maintenant",
-      "lead": "Cotations en direct via TradingView : forex, matières premières, indices, crypto et les actions que je suis. Cliquez sur une ligne pour ouvrir le graphique.",
+      "lead": "Cotations en direct via TradingView : forex, matières premières, indices, crypto et les actions suivies par le desk. Cliquez sur une ligne pour ouvrir le graphique.",
       "tabs": [
         "Forex",
         "Matières premières",
@@ -141,19 +140,19 @@ export const fr: ContentOverride = {
     numbersNote: "*Chiffres à septembre 2026, issus des registres de NUUK.",
     promo: {
       kicker: "Comptes gérés",
-      title: "Votre compte. Mon exécution. Des limites de risque écrites.",
-      body: "Le capital ne quitte jamais votre nom. Vous ouvrez un compte chez un courtier partenaire, je reçois uniquement une autorisation de trading, et un mandat écrit plafonne l'exposition et la perte quotidienne.",
+      title: "Votre compte. L'exécution de NUUK. Des limites de risque écrites.",
+      body: "Le capital ne quitte jamais votre nom. Vous ouvrez un compte chez un courtier partenaire, NUUK reçoit uniquement une autorisation de trading, et un mandat écrit plafonne l'exposition et la perte quotidienne.",
       figureLabel: "comptes gérés, chacun logé dans le propre compte de courtage du client. La garde des fonds n'est jamais transférée.",
       cta: { label: "Comment ça marche" },
     },
     postsLead: "Macro, forex, matières premières, indices, cryptos et IA appliquée au trading. Écrit pour être lu en cinq minutes.",
     pillarsTitle: "Cinq façons de travailler ensemble",
-    pillarsLead: "Une seule personne, cinq portes. Choisissez celle qui correspond à votre situation actuelle.",
+    pillarsLead: "Cinq services, une règle : le capital reste toujours sur le propre compte du client.",
     pillars: [
       { title: "Systèmes de trading IA", body: "Algorithmes propriétaires codés, testés et exécutés en direct sur le forex, les indices, les matières premières et les actifs numériques.", who: "Pour les allocateurs et les investisseurs techniques" },
-      { title: "Track record", body: "Les résultats de mon portefeuille et des systèmes, nets de coûts, avec la source et la méthode de chaque chiffre.", who: "Pour quiconque décide s'il peut me faire confiance" },
-      { title: "Comptes gérés", body: "Votre capital reste sur votre propre compte de courtage. Je le trade dans le cadre de limites de risque convenues et d'une commission de performance.", who: "Pour les investisseurs qui préfèrent déléguer" },
-      { title: "Courtiers partenaires", body: "Comparatif indépendant des courtiers avec lesquels je travaille, avec un guide d'ouverture de compte étape par étape pour chacun.", who: "Pour les traders autonomes qui choisissent un courtier" },
+      { title: "Track record", body: "Les résultats du portefeuille propre de NUUK et des systèmes, nets de coûts, avec la source et la méthode de chaque chiffre.", who: "Pour quiconque décide s'il peut faire confiance à NUUK" },
+      { title: "Comptes gérés", body: "Votre capital reste sur votre propre compte de courtage. NUUK le trade dans le cadre de limites de risque convenues et d'une commission de performance.", who: "Pour les investisseurs qui préfèrent déléguer" },
+      { title: "Courtiers partenaires", body: "Comparatif indépendant des courtiers avec lesquels NUUK travaille, avec un guide d'ouverture de compte étape par étape pour chacun.", who: "Pour les traders autonomes qui choisissent un courtier" },
       { title: "Signaux, rapports et formation", body: "Notes quotidiennes, rapports hebdomadaires, idées de trade avec le raisonnement complet, et webinaires en direct qui enseignent la méthode.", who: "Pour les traders qui veulent apprendre et rester informés" },
     ],
     record: {
@@ -166,8 +165,8 @@ export const fr: ContentOverride = {
     },
     brokers: {
       kicker: "Courtiers partenaires",
-      title: "Où je trade, et pourquoi",
-      lead: "Je ne référence que des courtiers que j'utilise ou que j'ai audités moi-même. Chaque fiche présente la régulation, les spreads réels et les modalités de dépôt.",
+      title: "Où NUUK trade, et pourquoi",
+      lead: "Seuls les courtiers avec lesquels NUUK trade ou qu'elle a audités sont référencés. Chaque fiche présente la régulation, les spreads réels et les modalités de dépôt.",
       cta: { label: "Comparer tous les courtiers" },
     },
     systems: {
@@ -200,37 +199,122 @@ export const fr: ContentOverride = {
   },
 
   about: {
-    metaTitle: "À propos d'Ahmet S. Öztürk",
-    metaDescription: "Économiste, investisseur et fondateur de NUUK. Dix-sept ans sur les marchés du forex et des CFD, d'un desk de négociation à Londres à une société de trading pilotée par l'IA à Dubaï.",
-    kicker: "À propos",
-    title: "Économiste d'abord, trader ensuite, ingénieur par nécessité.",
-    lead: "J'ai débuté sur le desk FX d'un courtier à Londres en 2009 et j'ai passé les sept années suivantes au sein de sociétés de courtage à Londres et à Istanbul, jusqu'au poste de Head of International FX chez IKON Finance. En 2016, j'ai fondé İşlem Odası, une activité d'apporteur d'affaires (IB) et de suivi de clientèle qui a atteint plus de 700 clients et plus de 26 millions USD d'activité client. En 2025, je me suis installé à Dubaï et j'ai fondé NUUK : une société de trading conçue autour de l'IA, qui construit et exécute des stratégies systématiques sur le forex, l'or, les indices et les actifs numériques, et qui partage la méthode via des comptes gérés, des signaux et de la formation.",
-    portraitAlt: "Ahmet S. Öztürk",
-    timelineTitle: "Parcours",
-    timeline: [
-      { title: "Seneca College, Toronto", body: "International Business Administration (en alternance). Là où est née l'habitude de tout lire en chiffres." },
-      { title: "FXCM, Londres", body: "Premier poste sur le desk FX d'un courtier. Exécution, liquidité et risque client, appris de l'intérieur." },
-      { title: "Tacirler et ALB, Istanbul", body: "Postes de spécialiste FX chez deux courtiers turcs, alors que le marché domestique s'ouvrait au trading à effet de levier." },
-      { title: "IKON Finance", body: "Head of International FX. Croissance de 27 % du portefeuille de clients internationaux." },
-      { title: "İşlem Odası, Istanbul", body: "Création d'une activité d'apporteur d'affaires (IB) et de suivi de clientèle : plus de 700 clients, plus de 26 M USD d'activité client, 2,5 M USD de revenus partenaires cumulés." },
-      { title: "NUUK, Dubaï", body: "Création de NUUK au Dubai International Financial Centre : systèmes de trading pilotés par l'IA, comptes gérés, partenariats avec des courtiers, signaux et formation." },
+    "metaTitle": "À propos de NUUK",
+    "metaDescription": "NUUK est une société de trading pilotée par l'IA et de gestion de portefeuille fondée au DIFC de Dubaï en 2025, bâtie sur dix-sept ans d'expérience de desk entre Istanbul et Londres.",
+    "kicker": "À propos de NUUK",
+    "title": "Dix-sept ans sur le desk. Une société créée pour le prouver.",
+    "lead": "NUUK a été fondée au Dubai International Financial Centre en 2025 sur dix-sept ans d'expérience de desk : d'une salle de courtage FX à Londres en 2009, en passant par les desks institutionnels d'Istanbul, jusqu'à une activité d'apporteur d'affaires de plus de 700 clients. Cette expérience est devenue une conviction unique : les marchés récompensent la discipline, pas l'opinion. NUUK la transforme en stratégies systématiques, les exploite d'abord sur son propre capital et partage la méthode par des comptes gérés, de la recherche et de la formation.",
+    "facts": [
+      {
+        "value": "2025",
+        "label": "fondée au DIFC, Dubaï"
+      },
+      {
+        "value": "17",
+        "label": "années d'expérience de desk entre Istanbul et Londres"
+      },
+      {
+        "value": "3",
+        "label": "systèmes en production, 87 variantes de stratégies testées"
+      },
+      {
+        "value": "6",
+        "label": "courtiers partenaires régulés"
+      }
     ],
-    principlesTitle: "Ma façon de travailler",
-    principles: [
-      { title: "Les preuves avant les opinions", body: "Chaque chiffre de ce site indique sa source et sa méthode. Ce qui ne peut être expliqué n’est pas montré." },
-      { title: "Le risque avant le rendement", body: "Taille de position, limites de drawdown et règles de stop sont fixées avant tout trade." },
-      { title: "Votre argent reste le vôtre", body: "Les comptes gérés fonctionnent dans votre propre compte de courtage. Je n'assure jamais la garde des fonds." },
-      { title: "Transmettre la méthode", body: "L'objectif de la formation est que vous n'ayez plus besoin de moi." },
+    "activitiesTitle": "Ce que fait NUUK",
+    "activitiesLead": "Cinq activités et une règle commune à toutes : le capital du client reste sur son propre compte.",
+    "activities": [
+      {
+        "title": "Systèmes de trading algorithmique",
+        "body": "Des stratégies conçues, back-testées et testées en avant en interne, puis exploitées en réel sur le capital propre de NUUK sur le forex, l'or, les indices et les actifs numériques. GANN NUUK Trader AI est en production chez Tickmill."
+      },
+      {
+        "title": "Gestion de portefeuille",
+        "body": "Des comptes gérés dans le propre compte de courtage du client via des structures MAM/PAMM, sous mandat de risque écrit, avec des frais de gestion et une commission de performance sur le bénéfice net."
+      },
+      {
+        "title": "Partenariats avec des courtiers",
+        "body": "Des accords d'apporteur d'affaires avec six courtiers régulés, chacun examiné de façon indépendante et documenté par un guide d'ouverture de compte étape par étape."
+      },
+      {
+        "title": "Recherche et signaux",
+        "body": "Notes quotidiennes du desk, rapport hebdomadaire et idées de trade avec le raisonnement complet, diffusés via le portail investisseurs et Telegram."
+      },
+      {
+        "title": "Formation des investisseurs",
+        "body": "Webinaires, séminaires et mentorat : plus de 3 000 investisseurs formés à lire les marchés avec la même discipline que le desk."
+      }
     ],
-    focusTitle: "Marchés couverts",
-    focus: ["BIST", "NYSE", "Forex", "Crypto", "Fonds", "Matières premières", "Immobilier", "Fortunes établies"],
-    speakingTitle: "Où je publie",
-    speaking: [
+    "timelineTitle": "L'histoire",
+    "timeline": [
+      {
+        "year": "2009",
+        "title": "Londres",
+        "body": "L'expérience de desk derrière NUUK commence dans une salle de courtage FX de la City : exécution, liquidité et risque client, appris de l'intérieur."
+      },
+      {
+        "year": "2011",
+        "title": "Istanbul",
+        "body": "Couverture FX institutionnelle chez des courtiers d'Istanbul alors que la Turquie s'ouvre au trading à effet de levier ; le portefeuille de clients internationaux croît de 27 %."
+      },
+      {
+        "year": "2016",
+        "title": "Une activité de clientèle",
+        "body": "Une activité d'apporteur d'affaires et de suivi de clientèle atteint plus de 700 clients et plus de 26 M USD d'activité client."
+      },
+      {
+        "year": "2025",
+        "title": "NUUK, Dubaï",
+        "body": "Création au Dubai International Financial Centre d'une société de trading pilotée par l'IA : systèmes, comptes gérés, partenariats avec des courtiers, recherche et formation."
+      },
+      {
+        "year": "2026",
+        "title": "Systèmes en production",
+        "body": "87 variantes de stratégies back-testées, trois en production. GANN NUUK Trader AI tourne sur le capital propre de NUUK chez Tickmill et figure sur la page de performance."
+      },
+      {
+        "year": "Aujourd'hui",
+        "title": "Un desk multilingue",
+        "body": "Un portail investisseurs, six courtiers partenaires et un site en six langues, au service des investisseurs d'Istanbul au Golfe."
+      }
+    ],
+    "principlesTitle": "Comment NUUK travaille",
+    "principles": [
+      {
+        "title": "Les preuves avant les opinions",
+        "body": "Chaque chiffre de ce site indique sa source et sa méthode. Ce qui ne peut être expliqué n'est pas montré."
+      },
+      {
+        "title": "Le risque avant le rendement",
+        "body": "Taille de position, limites de drawdown et règles de stop sont fixées avant tout trade."
+      },
+      {
+        "title": "Votre argent reste le vôtre",
+        "body": "Les comptes gérés fonctionnent dans votre propre compte de courtage. NUUK n'assure jamais la garde des fonds."
+      },
+      {
+        "title": "Le capital propre d'abord",
+        "body": "Aucun système n'atteint un compte client avant d'avoir tourné sur l'argent propre de NUUK."
+      }
+    ],
+    "focusTitle": "Marchés couverts",
+    "focus": [
+      "BIST",
+      "NYSE",
+      "Forex",
+      "Crypto",
+      "Fonds",
+      "Matières premières",
+      "Immobilier",
+      "Fortunes établies"
+    ],
+    "speakingTitle": "Où NUUK publie",
+    "speaking": [
       "Telegram · @NUUKQuant : notes de marché quotidiennes, idées de trade et rapport mensuel des systèmes",
-      "X · @AhmetSTurk : commentaires de marché et fils de recherche",
-      "LinkedIn · NUUK. : actualités de l'entreprise et recherche de fond",
-      "Instagram · @ahmetsturk : les coulisses du desk",
-    ],
+      "LinkedIn · NUUK : actualités de l'entreprise et recherche de fond",
+      "Portail investisseurs : recherche, signaux, P&L quotidien et formation pour les abonnés"
+    ]
   },
 
   aiTrading: {
@@ -253,13 +337,13 @@ export const fr: ContentOverride = {
     faq: [
       { q: "Puis-je faire tourner un système sur mon propre compte ?", a: "Oui. Selon le courtier, vous pouvez faire du copy trading, rejoindre une structure MAM/PAMM chez Tickmill, Saxo Bank ou Midas, ou suivre le canal de signaux et exécuter vous-même. Dans tous les cas, le compte reste à votre nom." },
       { q: "Quel est le capital minimum ?", a: "USD 1,000 pour le copy trading ou les signaux. Les comptes gérés MAM/PAMM commencent à l'allocation minimale indiquée sur la page des comptes gérés." },
-      { q: "Partagez-vous le code ?", a: "Non. Le code reste propriétaire. Je publie la méthodologie, les règles de risque et les résultats, chacun avec sa source." },
+      { q: "Partagez-vous le code ?", a: "Non. Le code reste propriétaire. NUUK publie la méthodologie, les règles de risque et les résultats, chacun avec sa source." },
     ],
   },
 
   trackRecord: {
     metaTitle: "Track record",
-    metaDescription: "Performance du portefeuille personnel d’Ahmet S. Öztürk et des systèmes NUUK, avec la source et la méthode de chaque chiffre.",
+    metaDescription: "Performance du portefeuille propre de NUUK et de ses systèmes de trading, avec la source et la méthode de chaque chiffre.",
     kicker: "Track record",
     title: "Chaque chiffre, avec sa source",
     lead: "Les comptes sont détenus chez des courtiers partenaires. Chaque chiffre ci-dessous indique d’où il vient, compte réel, paper trading ou backtest walk-forward, et comment il est calculé. Les performances passées ne préjugent pas des résultats futurs.",
@@ -277,13 +361,13 @@ export const fr: ContentOverride = {
     metaTitle: "Comptes gérés",
     metaDescription: "Fonctionnement des comptes gérés : votre capital reste sur votre propre compte de courtage, tradé dans le cadre de limites de risque convenues.",
     kicker: "Comptes gérés",
-    title: "Votre compte. Mon exécution. Des limites convenues.",
-    lead: "Le capital ne quitte jamais votre nom. Vous ouvrez un compte chez un courtier partenaire, vous le reliez à la structure gérée, et je le trade dans le cadre d'un mandat de risque écrit.",
+    title: "Votre compte. L'exécution de NUUK. Des limites convenues.",
+    lead: "Le capital ne quitte jamais votre nom. Vous ouvrez un compte chez un courtier partenaire, vous le reliez à la structure gérée, et NUUK le trade dans le cadre d'un mandat de risque écrit.",
     cta: { label: "Demander un appel de présentation" },
     howTitle: "Comment ça marche",
     how: [
       { title: "Appel de découverte", body: "Nous discutons de vos objectifs, de votre horizon, de vos besoins de liquidité et du drawdown que vous pouvez réellement supporter." },
-      { title: "Ouverture du compte", body: "Vous ouvrez un compte à votre nom chez un courtier partenaire et vous l'approvisionnez. Je reçois uniquement une autorisation de trading, jamais de droit de retrait." },
+      { title: "Ouverture du compte", body: "Vous ouvrez un compte à votre nom chez un courtier partenaire et vous l'approvisionnez. NUUK reçoit uniquement une autorisation de trading, jamais de droit de retrait." },
       { title: "Mandat de risque", body: "Un mandat écrit fixe l'exposition maximale, la limite de perte quotidienne et les instruments. Le système ne peut pas le dépasser." },
       { title: "Reporting", body: "Vous voyez chaque trade en temps réel sur votre propre compte, plus un rapport mensuel et un appel de revue trimestriel." },
     ],
@@ -348,9 +432,9 @@ export const fr: ContentOverride = {
     metaTitle: "Courtiers partenaires",
     metaDescription: "Comparatif indépendant des courtiers partenaires : régulation, spreads, moyens de dépôt, plateformes et ouverture de compte étape par étape.",
     kicker: "Courtiers partenaires",
-    title: "Les courtiers avec lesquels je travaille",
-    lead: "Je n'oriente mes clients que vers des courtiers avec lesquels je trade ou que j'ai audités. Six partenaires aujourd'hui : Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas et Darwinex. Chaque fiche indique qui les régule, ce qu'ils facturent réellement et à quelle vitesse l'argent circule.",
-    disclosure: "Les liens de cette page sont des liens d'affiliation. Si vous ouvrez et approvisionnez un compte via ces liens, je perçois une commission du courtier. Cela ne modifie pas les spreads ni les commissions que vous payez.",
+    title: "Les courtiers avec lesquels NUUK travaille",
+    lead: "NUUK n'oriente ses clients que vers des courtiers avec lesquels elle trade ou qu'elle a audités. Six partenaires aujourd'hui : Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas et Darwinex. Chaque fiche indique qui les régule, ce qu'ils facturent réellement et à quelle vitesse l'argent circule.",
+    disclosure: "Les liens de cette page sont des liens d'affiliation. Si vous ouvrez et approvisionnez un compte via ces liens, NUUK perçoit une commission du courtier. Cela ne modifie pas les spreads ni les commissions que vous payez.",
     compareTitle: "Côte à côte",
     partner: {
       "kicker": "Programme partenaires",
@@ -1248,7 +1332,7 @@ export const fr: ContentOverride = {
       topic: "Sujet",
       topics: ["Compte géré", "Choix d'un courtier", "Signaux et rapports", "Formation", "Systèmes IA", "Autre"],
       message: "Message",
-      messagePlaceholder: "Comment puis-je vous aider ?",
+      messagePlaceholder: "Comment pouvons-nous vous aider ?",
       submit: "Envoyer",
       note: "Cela ouvre votre client de messagerie avec le message prérempli. Aucune donnée n'est stockée sur ce site.",
       errorRequired: "Veuillez renseigner votre nom, votre e-mail et votre message.",
@@ -1273,7 +1357,7 @@ export const fr: ContentOverride = {
     "ib-disclosure": {
       title: "Information sur l'activité d'apporteur d'affaires (IB)",
       body: [
-        "Ahmet S. Öztürk / NUUK agit en tant que partenaire apporteur d'affaires (IB) pour les courtiers présentés sur ce site. Lorsque vous ouvrez et approvisionnez un compte via un lien d'affiliation, le courtier verse une commission calculée sur votre volume de trading.",
+        "NUUK agit en tant que partenaire apporteur d'affaires (IB) pour les courtiers présentés sur ce site. Lorsque vous ouvrez et approvisionnez un compte via un lien d'affiliation, le courtier verse une commission calculée sur votre volume de trading.",
         "Cette commission est payée par le courtier et n'augmente pas les spreads, commissions ou frais que vous payez. Les fiches des courtiers sont rédigées de manière indépendante ; un courtier ne peut pas payer pour modifier une évaluation ou un point faible mentionné.",
         "Vous êtes libre d'ouvrir un compte directement auprès de n'importe quel courtier. Le lien d'affiliation est facultatif.",
         "Partenaires actuels : Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas et Darwinex dans le cadre d'accords d'apporteur d'affaires. Tickmill, Saxo Bank et Midas exploitent en outre les structures MAM/PAMM utilisées pour les comptes gérés, dans le cadre d'accords de gestion de portefeuille distincts.",
@@ -1323,10 +1407,10 @@ export const fr: ContentOverride = {
     copyright: "Tous droits réservés.",
     riskTitle: "Avertissement sur les risques",
     legal1:
-      "est la marque personnelle d'Ahmet S. Öztürk, économiste et investisseur, et le nom commercial de NUUK Quant, basé au Dubai International Financial Centre. Les services sont proposés aux clients professionnels et institutionnels là où la réglementation le permet ; leur disponibilité dépend de votre juridiction et de la réglementation applicable.",
+      "est le nom commercial de NUUK Quant, société de trading pilotée par l'IA et de gestion de portefeuille basée au Dubai International Financial Centre. Les services sont proposés aux clients professionnels et institutionnels là où la réglementation le permet ; leur disponibilité dépend de votre juridiction et de la réglementation applicable.",
     legal2:
       "Le contenu de ce site est un commentaire général de marché et un contenu pédagogique. Il ne constitue pas un conseil en investissement personnalisé ni une offre ou une sollicitation d'achat ou de vente d'un quelconque instrument financier ou service.",
-    ib: "Les liens vers les courtiers sur ce site sont des liens d'affiliation. Je peux percevoir une commission lorsque vous ouvrez et approvisionnez un compte via ces liens ; cela ne modifie pas les frais que vous payez.",
+    ib: "Les liens vers les courtiers sur ce site sont des liens d'affiliation. NUUK peut percevoir une commission lorsque vous ouvrez et approvisionnez un compte via ces liens ; cela ne modifie pas les frais que vous payez.",
     risk: "Le trading comporte des risques substantiels et peut entraîner des pertes supérieures à votre investissement initial. Les performances passées ne préjugent pas des résultats futurs.",
   },
 

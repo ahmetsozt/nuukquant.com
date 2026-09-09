@@ -6,7 +6,7 @@ import type { SiteContent } from "@/content/en";
 /** Partner-broker logo strip under the hero; each logo links to the broker's page. */
 export default function AwardsStrip({ c }: { c: SiteContent }) {
   return (
-    <section className="border-b border-black/5 bg-white" aria-label={c.home.hero.pressTitle}>
+    <section id="partners" className="scroll-mt-24 border-b border-black/5 bg-white" aria-label={c.home.hero.pressTitle}>
       <div className="container-x flex flex-wrap items-center justify-center gap-x-10 gap-y-5 py-7 lg:justify-between">
         <span className="text-[12px] font-semibold tracking-wider text-muted uppercase">{c.home.hero.pressTitle}</span>
         {c.brokers.list.map((b) => (

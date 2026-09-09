@@ -20,6 +20,7 @@ export const ar: ContentOverride = {
     office: "مركز دبي المالي العالمي (DIFC)، دبي، الإمارات العربية المتحدة",
   },
   ui: {
+    scrollDown: "مرّر للأسفل",
     contact: "تواصل",
     getStarted: "احجز مكالمة",
     contactUs: "تواصل معنا",
@@ -92,6 +93,8 @@ export const ar: ContentOverride = {
 
   home: {
     hero: {
+      visualTag: "التداول الخوارزمي · إدارة المحافظ",
+      visualAlt: "سيارة فورمولا 1 بألوان NUUK في استوديو مظلم",
       kicker: "اقتصادي · مستثمر · مؤسس NUUK",
       title: "الأسواق، تُقرأ بانضباط.",
       lead:

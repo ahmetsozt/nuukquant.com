@@ -19,6 +19,7 @@ export const fr: ContentOverride = {
     office: "Dubai International Financial Centre (DIFC), Dubaï, Émirats arabes unis",
   },
   ui: {
+    scrollDown: "Faire défiler",
     contact: "Contact",
     getStarted: "Réserver un appel",
     contactUs: "Contact",
@@ -92,6 +93,8 @@ export const fr: ContentOverride = {
 
   home: {
     hero: {
+      visualTag: "Trading algorithmique · Gestion de portefeuille",
+      visualAlt: "Monoplace de Formule 1 aux couleurs NUUK dans un studio sombre",
       kicker: "Économiste · Investisseur · Fondateur de NUUK",
       title: "Les marchés, lus avec discipline.",
       lead:

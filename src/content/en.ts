@@ -85,6 +85,7 @@ export const en = {
     office: "Dubai International Financial Centre (DIFC), Dubai, UAE",
   },
   ui: {
+    scrollDown: "Scroll down",
     contact: "Contact",
     getStarted: "Book a call",
     contactUs: "Contact",
@@ -164,6 +165,8 @@ export const en = {
 
   home: {
     hero: {
+      visualTag: "Algorithmic trading · Portfolio management",
+      visualAlt: "NUUK-liveried Formula 1 car in a dark studio",
       kicker: "Economist · Investor · Founder of NUUK",
       title: "Markets, read with discipline.",
       lead:

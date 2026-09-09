@@ -1298,6 +1298,22 @@ export const tr: ContentOverride = {
     ]
   },
   portal: {
+    security: {
+      "title": "Güvenlik",
+      "lead": "İki adımlı doğrulama, her girişte kimlik doğrulama uygulamasından (Google Authenticator, 1Password, Authy) tek kullanımlık kod ister. Yönetici hesapları için şiddetle önerilir.",
+      "enable": "İki adımlı doğrulamayı aç",
+      "scan": "QR kodu kimlik doğrulama uygulamanızla tarayın ya da gizli anahtarı elle girin, sonra 6 haneli kodu yazın.",
+      "code": "6 haneli kod",
+      "confirm": "Onayla",
+      "cancel": "Vazgeç",
+      "enabled": "İki adımlı doğrulama açık.",
+      "disabled": "İki adımlı doğrulama kapalı.",
+      "active": "aktif",
+      "remove": "Kaldır",
+      "challengeTitle": "İki adımlı doğrulama",
+      "challengeLead": "Kimlik doğrulama uygulamanızdaki kodu girin.",
+      "error": "Bir sorun oluştu."
+    },
     memberships: {
       "activateHint": "Aktifleştir, başvuranı (hesabı yoksa) otomatik davet eder ve planındaki tüm panelleri belirlediğiniz tarihe kadar açar.",
       "activatedInvited": "Davet gönderildi ve paneller tanımlandı; üye e-postadaki bağlantıdan şifresini belirler.",

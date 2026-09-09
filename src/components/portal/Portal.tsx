@@ -7,6 +7,7 @@ import type { SiteContent } from "@/content/en";
 import { EducationPanel, PnlPanel, ReportsPanel, SignalsPanel } from "@/components/portal/panels";
 import AdminPanel from "@/components/portal/AdminPanel";
 import AdminMemberships from "@/components/portal/AdminMemberships";
+import Security, { MfaChallenge } from "@/components/portal/Security";
 import { Card, Notice, btn, btnOutline, field, label } from "@/components/portal/ui";
 
 type T = SiteContent["portal"];
@@ -34,6 +35,7 @@ export default function Portal({ c }: { c: SiteContent }) {
   const [ents, setEnts] = useState<Entitlement[]>([]);
   const [tab, setTab] = useState<string>("");
   const [error, setError] = useState<string | null>(null);
+  const [aal, setAal] = useState<"ok" | "challenge" | null>(null);
 
   useEffect(() => {
     if (!portalConfigured) return;
@@ -56,6 +58,7 @@ export default function Portal({ c }: { c: SiteContent }) {
   useEffect(() => {
     if (!session) return;
     const sb = supabase();
+    sb.auth.mfa.getAuthenticatorAssuranceLevel().then(({ data }) => setAal(data && data.nextLevel === "aal2" && data.currentLevel !== "aal2" ? "challenge" : "ok"));
     Promise.all([
       sb.from("profiles").select("*").eq("id", session.user.id).single(),
       sb.from("panels").select("*").order("sort"),
@@ -75,6 +78,7 @@ export default function Portal({ c }: { c: SiteContent }) {
   if (!portalConfigured) return <Notice>{t.notConfigured}</Notice>;
   if (!ready) return <p className="text-muted">…</p>;
   if (!session) return <Login t={t} />;
+  if (aal === "challenge") return <MfaChallenge t={t.security} onDone={() => setAal("ok")} />;
 
   return (
     <div className="grid gap-6 lg:grid-cols-12">
@@ -90,6 +94,9 @@ export default function Portal({ c }: { c: SiteContent }) {
                 {t.panelNames[p.slug as keyof T["panelNames"]] ?? p.name}
               </button>
             ))}
+            <button type="button" onClick={() => setTab("security")} className={`rounded-xl px-3 py-2.5 text-start text-[14px] font-semibold ${current === "security" ? "bg-ink text-white" : "text-body hover:bg-fog"}`}>
+              {t.security.title}
+            </button>
             {isAdmin && (
               <>
                 <p className="mt-3 px-3 text-[11px] font-semibold uppercase tracking-wide text-muted">{t.admin.title}</p>
@@ -116,7 +123,9 @@ export default function Portal({ c }: { c: SiteContent }) {
       </aside>
       <div className="lg:col-span-9">
         {error && <Notice tone="error">{error}</Notice>}
-        {current === "memberships" && isAdmin ? (
+        {current === "security" ? (
+          <Security t={t.security} />
+        ) : current === "memberships" && isAdmin ? (
           <AdminMemberships t={t} />
         ) : current === "admin" && isAdmin ? (
           <AdminPanel t={t} panels={panels} />

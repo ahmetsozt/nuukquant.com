@@ -58,8 +58,15 @@ export default function AdminMemberships({ t }: { t: T }) {
     if (!error) setMsg(null);
   }
   async function activate(id: string, until: string) {
-    const { error } = await supabase().rpc("activate_application", { app_id: id, until: until ? new Date(until).toISOString() : null });
-    setMsg(error ? { tone: "error", text: error.message } : { tone: "ok", text: m.activated });
+    const ends = until ? new Date(until).toISOString() : null;
+    // Edge function invites the user if needed and grants the plan's panels; RPC is the fallback when the function is not deployed.
+    const { data, error } = await supabase().functions.invoke("admin-activate", { body: { app_id: id, until: ends, redirect: window.location.href } });
+    if (error || data?.error) {
+      const { error: e2 } = await supabase().rpc("activate_application", { app_id: id, until: ends });
+      setMsg(e2 ? { tone: "error", text: e2.message } : { tone: "ok", text: m.activated });
+    } else {
+      setMsg({ tone: "ok", text: data?.invited ? m.activatedInvited : m.activated });
+    }
     reload();
   }
 
@@ -91,7 +98,7 @@ export default function AdminMemberships({ t }: { t: T }) {
           </select>
         }
       >
-        <p className="mb-4 text-[12.5px] text-muted">{m.inviteHint}</p>
+        <p className="mb-4 text-[12.5px] text-muted">{m.activateHint}</p>
         {shown.length === 0 && <Empty>{m.empty}</Empty>}
         <ul className="divide-y divide-black/5">
           {shown.map((a) => (

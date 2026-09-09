@@ -1219,6 +1219,8 @@ export const en = {
   },
   portal: {
     memberships: {
+      activateHint: "Activate invites the applicant automatically (if they have no account yet) and opens every panel of their plan until the date you set.",
+      activatedInvited: "Invitation sent and panels granted; the member sets a password from the email.",
       "title": "Memberships",
       "stats": {
         "new_applications": "New applications",
@@ -1323,6 +1325,14 @@ export const en = {
       "open": "Open"
     },
     "admin": {
+      notifications: "Notifications",
+      notifyEmail: "Notify this email on new applications",
+      telegramToken: "Telegram bot token",
+      telegramChat: "Telegram chat ID",
+      telegramHint: "Telegram: create a bot with @BotFather, paste its token, send the bot one message and enter your chat ID (from @userinfobot). Every new application is then pushed to your phone instantly.",
+      panelLink: "Panel deep link (e.g. private Telegram channel)",
+      linkLabel: "Button label",
+      linkLabelPlaceholder: "Join the private Telegram channel",
       addEducation: "Add a session",
       url: "Link (video or file)",
       kind: "Type",

@@ -3,13 +3,24 @@
 import { useEffect, useState } from "react";
 import { supabase, type EducationItem, type PnlDay, type Report, type SignalPost } from "@/lib/supabase";
 import type { SiteContent } from "@/content/en";
-import { Card, Empty, Notice, btnOutline, fmtDate, fmtMoney } from "@/components/portal/ui";
+import { Card, Empty, Notice, btn, btnOutline, fmtDate, fmtMoney } from "@/components/portal/ui";
+
+export type PanelLink = { link_url?: string | null; link_label?: string | null };
+
+function LinkAction({ link }: { link?: PanelLink }) {
+  if (!link?.link_url) return undefined;
+  return (
+    <a href={link.link_url} target="_blank" rel="noopener noreferrer" className={btn} data-event="panel_link_click">
+      {link.link_label || link.link_url}
+    </a>
+  );
+}
 
 type T = SiteContent["portal"];
 
 const dirTone: Record<string, string> = { long: "bg-[#e6f7f1] text-up", short: "bg-[#fdecec] text-down", flat: "bg-fog text-body" };
 
-export function SignalsPanel({ t }: { t: T }) {
+export function SignalsPanel({ t, link }: { t: T; link?: PanelLink }) {
   const [rows, setRows] = useState<SignalPost[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   useEffect(() => {
@@ -21,7 +32,7 @@ export function SignalsPanel({ t }: { t: T }) {
       .then(({ data, error }) => (error ? setError(error.message) : setRows(data as SignalPost[])));
   }, []);
   return (
-    <Card title={t.panelNames.signals}>
+    <Card title={t.panelNames.signals} action={<LinkAction link={link} />}>
       {error && <Notice tone="error">{error}</Notice>}
       {rows && rows.length === 0 && <Empty>{t.empty}</Empty>}
       <ul className="space-y-4">
@@ -60,7 +71,7 @@ export function SignalsPanel({ t }: { t: T }) {
   );
 }
 
-export function PnlPanel({ t }: { t: T }) {
+export function PnlPanel({ t, link }: { t: T; link?: PanelLink }) {
   const [rows, setRows] = useState<PnlDay[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   useEffect(() => {
@@ -73,7 +84,7 @@ export function PnlPanel({ t }: { t: T }) {
   }, []);
   const total = rows?.reduce((a, r) => a + Number(r.closed_pnl), 0) ?? 0;
   return (
-    <Card title={t.panelNames["daily-pnl"]} action={rows && rows.length > 0 ? <span className={`text-[15px] font-bold tabular-nums ${total >= 0 ? "text-up" : "text-down"}`}>{t.pnl.total}: {fmtMoney(total)}</span> : undefined}>
+    <Card title={t.panelNames["daily-pnl"]} action={<>{rows && rows.length > 0 && <span className={`text-[15px] font-bold tabular-nums ${total >= 0 ? "text-up" : "text-down"}`}>{t.pnl.total}: {fmtMoney(total)}</span>}<LinkAction link={link} /></>}>
       {error && <Notice tone="error">{error}</Notice>}
       {rows && rows.length === 0 && <Empty>{t.empty}</Empty>}
       {rows && rows.length > 0 && (
@@ -104,7 +115,7 @@ export function PnlPanel({ t }: { t: T }) {
   );
 }
 
-export function ReportsPanel({ t }: { t: T }) {
+export function ReportsPanel({ t, link }: { t: T; link?: PanelLink }) {
   const [rows, setRows] = useState<Report[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   useEffect(() => {
@@ -120,7 +131,7 @@ export function ReportsPanel({ t }: { t: T }) {
     window.open(data.signedUrl, "_blank", "noopener");
   }
   return (
-    <Card title={t.panelNames.reports}>
+    <Card title={t.panelNames.reports} action={<LinkAction link={link} />}>
       {error && <Notice tone="error">{error}</Notice>}
       {rows && rows.length === 0 && <Empty>{t.empty}</Empty>}
       <ul className="divide-y divide-black/5">
@@ -142,18 +153,19 @@ export function ReportsPanel({ t }: { t: T }) {
   );
 }
 
-export function EducationPanel({ t }: { t: T }) {
+export function EducationPanel({ t, link, slug = "education" }: { t: T; link?: PanelLink; slug?: string }) {
   const [rows, setRows] = useState<EducationItem[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   useEffect(() => {
     supabase()
       .from("education_items")
       .select("*")
+      .eq("panel_slug", slug)
       .order("published_at", { ascending: false })
       .then(({ data, error }) => (error ? setError(error.message) : setRows(data as EducationItem[])));
-  }, []);
+  }, [slug]);
   return (
-    <Card title={t.panelNames.education}>
+    <Card title={t.panelNames[slug as keyof T["panelNames"]] ?? t.panelNames.education} action={<LinkAction link={link} />}>
       {error && <Notice tone="error">{error}</Notice>}
       {rows && rows.length === 0 && <Empty>{t.empty}</Empty>}
       <ul className="grid gap-4 sm:grid-cols-2">

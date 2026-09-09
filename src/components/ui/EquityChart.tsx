@@ -2,11 +2,12 @@
  * Equity-curve chart with percentage gridlines (relative to the first value),
  * a dashed baseline and an end-of-series label so the rise is legible at a glance.
  */
-export default function EquityChart({ data, className = "", endLabel }: { data: number[]; className?: string; endLabel?: string }) {
+export default function EquityChart({ data, className = "", endLabel, textScale = 1 }: { data: number[]; className?: string; endLabel?: string; textScale?: number }) {
+  const t = textScale;
   const w = 1000;
   const h = 320;
   const padL = 16;
-  const padR = 92;
+  const padR = 92 * t;
   const padY = 24;
   const min = Math.min(...data);
   const max = Math.max(...data);
@@ -44,7 +45,7 @@ export default function EquityChart({ data, className = "", endLabel }: { data: 
         return (
           <g key={p}>
             <line x1={padL} x2={w - padR + 8} y1={gy} y2={gy} stroke="#0a0a0a" strokeOpacity={p === 0 ? 0.18 : 0.07} strokeDasharray={p === 0 ? "4 6" : undefined} />
-            <text x={w - padR + 14} y={gy + 4} fontSize="12" fill="#6b7280" fontFamily="inherit">
+            <text x={w - padR + 14} y={gy + 4} fontSize={12 * t} fill="#6b7280" fontFamily="inherit">
               {p === 0 ? "0%" : `+${p}%`}
             </text>
           </g>
@@ -54,9 +55,9 @@ export default function EquityChart({ data, className = "", endLabel }: { data: 
       <path d={line} fill="none" stroke="#0165fa" strokeWidth="2.5" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
       <circle cx={ex} cy={ey} r="6" fill="#0165fa" />
       <circle cx={ex} cy={ey} r="6" fill="none" stroke="#0165fa" strokeOpacity="0.35" strokeWidth="10" />
-      <g transform={`translate(${ex - (label.length * 7.4 + 18) - 14}, ${Math.max(ey - 34, 6)})`}>
-        <rect x="0" y="0" width={label.length * 7.4 + 18} height="24" rx="12" fill="#0a0a0a" />
-        <text x="9" y="16" fontSize="12.5" fontWeight="700" fill="#fff" fontFamily="inherit">
+      <g transform={`translate(${ex - (label.length * 7.4 + 18) * t - 14}, ${Math.max(ey - 34 * t, 6)})`}>
+        <rect x="0" y="0" width={(label.length * 7.4 + 18) * t} height={24 * t} rx={12 * t} fill="#0a0a0a" />
+        <text x={9 * t} y={16 * t} fontSize={12.5 * t} fontWeight="700" fill="#fff" fontFamily="inherit">
           {label}
         </text>
       </g>

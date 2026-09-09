@@ -1432,27 +1432,27 @@ export const ru: ContentOverride = {
         },
         {
           "label": "Закрытая чистая прибыль",
-          "value": "+12 422 USD (+26,4%)",
+          "value": "+12 266 USD (+26,1%)",
           "tone": "up"
         },
         {
-          "label": "Открытый P&L",
-          "value": "−3 590 USD",
-          "tone": "down"
+          "label": "Средства (открытых позиций нет)",
+          "value": "59 266 USD",
+          "tone": "neutral"
         },
         {
           "label": "Профит-фактор",
-          "value": "8,06",
+          "value": "3,09",
           "tone": "neutral"
         },
         {
           "label": "Доля прибыльных",
-          "value": "77,6% (135 из 174)",
+          "value": "72,9% (164 из 225)",
           "tone": "neutral"
         },
         {
-          "label": "Макс. просадка (закрытые сделки)",
-          "value": "1,21%",
+          "label": "Макс. просадка",
+          "value": "5,16%",
           "tone": "neutral"
         }
       ]

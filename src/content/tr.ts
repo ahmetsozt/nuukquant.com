@@ -1707,27 +1707,27 @@ export const tr: ContentOverride = {
         },
         {
           "label": "Kapanmış net kâr",
-          "value": "+12.422 USD (+%26,4)",
+          "value": "+12.266 USD (+%26,1)",
           "tone": "up"
         },
         {
-          "label": "Açık pozisyon K/Z",
-          "value": "−3.590 USD",
-          "tone": "down"
+          "label": "Özkaynak (açık pozisyon yok)",
+          "value": "59.266 USD",
+          "tone": "neutral"
         },
         {
           "label": "Kâr faktörü",
-          "value": "8,06",
+          "value": "3,09",
           "tone": "neutral"
         },
         {
           "label": "Kazanma oranı",
-          "value": "%77,6 (174 işlemde 135)",
+          "value": "%72,9 (225 işlemde 164)",
           "tone": "neutral"
         },
         {
-          "label": "Maks. düşüş (kapanmış işlemler)",
-          "value": "%1,21",
+          "label": "Maks. düşüş",
+          "value": "%5,16",
           "tone": "neutral"
         }
       ]

@@ -86,6 +86,13 @@ export default function AdminPanel({ t, panels }: { t: T; panels: Panel[] }) {
     f.reset();
   }
 
+  function addEducation(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const f = e.currentTarget;
+    const d = Object.fromEntries(new FormData(f)) as Record<string, string>;
+    run(() => supabase().from("education_items").insert({ title: d.title, url: d.url, kind: d.kind || "video", description: d.description || null }), a.saved, f);
+  }
+
   const panelOptions = panels.map((p) => (
     <option key={p.slug} value={p.slug}>
       {t.panelNames[p.slug as keyof T["panelNames"]] ?? p.name}
@@ -210,6 +217,36 @@ export default function AdminPanel({ t, panels }: { t: T; panels: Panel[] }) {
               {a.save}
             </button>
           </div>
+        </form>
+      </Card>
+
+      <Card title={a.addEducation}>
+        <form onSubmit={addEducation} className="grid gap-3 sm:grid-cols-6">
+          <label className="block sm:col-span-2">
+            <span className={label}>{a.title}</span>
+            <input name="title" required className={field} />
+          </label>
+          <label className="block sm:col-span-2">
+            <span className={label}>{a.url}</span>
+            <input name="url" type="url" required className={field} dir="ltr" placeholder="https://" />
+          </label>
+          <label className="block">
+            <span className={label}>{a.kind}</span>
+            <select name="kind" className={field}>
+              <option value="video">video</option>
+              <option value="pdf">pdf</option>
+              <option value="slides">slides</option>
+            </select>
+          </label>
+          <div className="flex items-end">
+            <button type="submit" disabled={busy} className={`${btn} w-full`}>
+              {a.save}
+            </button>
+          </div>
+          <label className="block sm:col-span-6">
+            <span className={label}>{a.description}</span>
+            <input name="description" className={field} />
+          </label>
         </form>
       </Card>
 

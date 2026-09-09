@@ -1298,6 +1298,46 @@ export const tr: ContentOverride = {
     ]
   },
   portal: {
+    memberships: {
+      "title": "Üyelikler",
+      "stats": {
+        "new_applications": "Yeni başvuru",
+        "awaiting_payment": "Ödeme bekleyen",
+        "active_members": "Aktif üye",
+        "expiring_7d": "7 gün içinde biten",
+        "mrr": "Aylık gelir (aktif planlar)"
+      },
+      "applications": "Başvurular",
+      "members": "Üyeler",
+      "cols": {
+        "date": "Tarih",
+        "name": "Ad",
+        "contact": "İletişim",
+        "plan": "Plan",
+        "profile": "Deneyim · sermaye",
+        "status": "Durum",
+        "notes": "Notlar",
+        "panels": "Paneller",
+        "expires": "Bitiş",
+        "role": "Rol"
+      },
+      "statuses": {
+        "new": "Yeni",
+        "contacted": "Ulaşıldı",
+        "awaiting_payment": "Ödeme bekliyor",
+        "paid": "Ödendi",
+        "active": "Aktif",
+        "rejected": "Reddedildi",
+        "expired": "Süresi doldu"
+      },
+      "activate": "Aktifleştir",
+      "activateUntil": "Erişim bitişi",
+      "activated": "Üyelik aktifleştirildi, paneller tanımlandı.",
+      "saveNotes": "Kaydet",
+      "filterAll": "Tümü",
+      "inviteHint": "Aktifleştirmeden önce başvuranı Supabase'de davet edin (Authentication → Users → Invite user) ki hesabı oluşsun.",
+      "empty": "Kayıt yok."
+    },
     "metaTitle": "Yatırımcı Paneli",
     "kicker": "Yatırımcı Paneli",
     "title": "Panellerinize giriş yapın",
@@ -1324,6 +1364,7 @@ export const tr: ContentOverride = {
     "empty": "Henüz yayın yok.",
     "error": "Bir sorun oluştu.",
     "panelNames": {
+      "research": "Araştırma ve raporlar",
       "signals": "Sinyal akışı",
       "daily-pnl": "Masa K/Z",
       "reports": "Raporlarım",
@@ -1362,6 +1403,12 @@ export const tr: ContentOverride = {
       "open": "Aç"
     },
     "admin": {
+      "addEducation": "Oturum ekle",
+      "url": "Bağlantı (video veya dosya)",
+      "kind": "Tür",
+      "description": "Açıklama",
+      "content": "İçerik",
+      "memberships": "Üyelikler",
       "title": "Başlık",
       "grant": "Panel tanımla",
       "email": "E-posta",
@@ -1388,6 +1435,56 @@ export const tr: ContentOverride = {
       "uploaded": "Rapor yüklendi.",
       "noUser": "Bu e-postayla kullanıcı yok; önce davet edin."
     }
+  },
+  apply: {
+    "metaTitle": "Üyelik Başvurusu",
+    "kicker": "Üyelik",
+    "title": "Başvurun, sonra planınızı seçin",
+    "lead": "Kim olduğunuzu ve hangi planı istediğinizi söyleyin. Her başvuruyu bir iş günü içinde inceler, ödeme bağlantısını gönderir ve ödeme onaylanınca panellerinizi açarız.",
+    "link": {
+      "label": "Üyelik başvurusu",
+      "href": "/apply/"
+    },
+    "form": {
+      "plan": "Plan",
+      "fullName": "Ad Soyad",
+      "email": "E-posta",
+      "phone": "Telefon (ülke koduyla)",
+      "country": "İkamet ülkesi",
+      "experience": "İşlem deneyimi",
+      "experiences": [
+        "1 yıldan az",
+        "1–3 yıl",
+        "3–10 yıl",
+        "10+ yıl"
+      ],
+      "capital": "İşlem yaptığınız sermaye",
+      "capitals": [
+        "10.000 USD altı",
+        "10.000 – 50.000 USD",
+        "50.000 – 250.000 USD",
+        "250.000 USD üzeri"
+      ],
+      "message": "Bilmemiz gereken bir şey (isteğe bağlı)",
+      "terms": "Kullanım şartlarını ve gizlilik politikasını kabul ediyorum.",
+      "risk": "Risk bildirimini okudum; geçmiş performansın gelecekteki sonuçların garantisi olmadığını anlıyorum.",
+      "submit": "Başvuruyu gönder",
+      "sending": "Gönderiliyor…",
+      "errorRequired": "Lütfen zorunlu alanları doldurun ve iki onay kutusunu işaretleyin.",
+      "errorEmail": "Lütfen geçerli bir e-posta adresi girin.",
+      "error": "Başvuru gönderilemedi. Lütfen bize e-posta gönderin."
+    },
+    "success": {
+      "title": "Başvurunuz alındı",
+      "body": "Başvuruları bir iş günü içinde inceler ve ödeme bağlantısını verdiğiniz adrese e-posta ile göndeririz. Ödemeden sonraki 24 saat içinde panelleriniz açılır; yatırımcı paneline aynı e-posta ile giriş yaparsınız.",
+      "pay": "Ödemeye geç",
+      "portal": "Yatırımcı paneli"
+    },
+    "steps": [
+      "Başvuru",
+      "E-posta ile ödeme bağlantısı",
+      "Paneller açılır, giriş yapın"
+    ]
   },
   contact: {
     "metaTitle": "İletişim",

@@ -743,9 +743,9 @@ export const en = {
     formatTitle: "Idea format",
     plansTitle: "Plans",
     plans: [
-      { name: "Reports", price: "$750", period: "per month", features: ["Daily macro note", "Weekly report", "Archive access"], cta: "Subscribe", highlight: false },
-      { name: "Signals", price: "$1,000", period: "per month", features: ["Everything in Reports", "Trade ideas with reasoning", "Live updates on Telegram", "Monthly performance sheet"], cta: "Subscribe", highlight: true },
-      { name: "Mentorship", price: "$5,000", period: "per quarter", features: ["Everything in Signals", "Fortnightly 1:1 review", "Portfolio feedback", "Priority access to webinars"], cta: "Apply", highlight: false },
+      { slug: "reports", name: "Reports", price: "$750", period: "per month", features: ["Daily macro note", "Weekly report", "Archive access"], cta: "Subscribe", highlight: false },
+      { slug: "signals", name: "Signals", price: "$1,000", period: "per month", features: ["Everything in Reports", "Trade ideas with reasoning", "Live updates on Telegram", "Monthly performance sheet"], cta: "Subscribe", highlight: true },
+      { slug: "mentorship", name: "Mentorship", price: "$5,000", period: "per quarter", features: ["Everything in Signals", "Fortnightly 1:1 review", "Portfolio feedback", "Priority access to webinars"], cta: "Apply", highlight: false },
     ],
     performanceTitle: "Signal performance",
     performanceNote: "Closed ideas are logged monthly with entry, exit and result in the Telegram channel. Internal log to date: 87% of closed ideas reached target before stop. Independent verification of the log is in progress.",
@@ -1218,6 +1218,46 @@ export const en = {
     ]
   },
   portal: {
+    memberships: {
+      "title": "Memberships",
+      "stats": {
+        "new_applications": "New applications",
+        "awaiting_payment": "Awaiting payment",
+        "active_members": "Active members",
+        "expiring_7d": "Expiring in 7 days",
+        "mrr": "Monthly revenue (active plans)"
+      },
+      "applications": "Applications",
+      "members": "Members",
+      "cols": {
+        "date": "Date",
+        "name": "Name",
+        "contact": "Contact",
+        "plan": "Plan",
+        "profile": "Experience · capital",
+        "status": "Status",
+        "notes": "Notes",
+        "panels": "Panels",
+        "expires": "Expires",
+        "role": "Role"
+      },
+      "statuses": {
+        "new": "New",
+        "contacted": "Contacted",
+        "awaiting_payment": "Awaiting payment",
+        "paid": "Paid",
+        "active": "Active",
+        "rejected": "Rejected",
+        "expired": "Expired"
+      },
+      "activate": "Activate",
+      "activateUntil": "Access until",
+      "activated": "Membership activated and panels granted.",
+      "saveNotes": "Save",
+      "filterAll": "All",
+      "inviteHint": "Before activating, invite the applicant in Supabase (Authentication → Users → Invite user) so their account exists.",
+      "empty": "No records."
+    },
     "metaTitle": "Investor portal",
     "kicker": "Investor portal",
     "title": "Sign in to your panels",
@@ -1244,6 +1284,7 @@ export const en = {
     "empty": "Nothing published yet.",
     "error": "Something went wrong.",
     "panelNames": {
+      research: "Research & reports",
       "signals": "Signal feed",
       "daily-pnl": "Desk P&L",
       "reports": "My reports",
@@ -1282,6 +1323,12 @@ export const en = {
       "open": "Open"
     },
     "admin": {
+      addEducation: "Add a session",
+      url: "Link (video or file)",
+      kind: "Type",
+      description: "Description",
+      content: "Content",
+      memberships: "Memberships",
       "title": "Title",
       "grant": "Grant a panel",
       "email": "Email",
@@ -1308,6 +1355,56 @@ export const en = {
       "uploaded": "Report uploaded.",
       "noUser": "No user with that email; invite them first."
     }
+  },
+  apply: {
+    "metaTitle": "Apply for membership",
+    "kicker": "Membership",
+    "title": "Apply, then choose your plan",
+    "lead": "Tell us who you are and which plan you want. We review every application within one business day, send the payment link, and open your panels once payment clears.",
+    "link": {
+      "label": "Apply for membership",
+      "href": "/apply/"
+    },
+    "form": {
+      "plan": "Plan",
+      "fullName": "Full name",
+      "email": "Email",
+      "phone": "Phone (with country code)",
+      "country": "Country of residence",
+      "experience": "Trading experience",
+      "experiences": [
+        "Under 1 year",
+        "1–3 years",
+        "3–10 years",
+        "10+ years"
+      ],
+      "capital": "Capital you trade with",
+      "capitals": [
+        "Under USD 10,000",
+        "USD 10,000 – 50,000",
+        "USD 50,000 – 250,000",
+        "Over USD 250,000"
+      ],
+      "message": "Anything we should know (optional)",
+      "terms": "I accept the terms of use and the privacy policy.",
+      "risk": "I have read the risk disclosure and understand that past performance is not a guarantee of future results.",
+      "submit": "Submit application",
+      "sending": "Submitting…",
+      "errorRequired": "Please fill in the required fields and tick both acknowledgements.",
+      "errorEmail": "Please enter a valid email address.",
+      "error": "The application could not be submitted. Please email us."
+    },
+    "success": {
+      "title": "Application received",
+      "body": "We review applications within one business day and email the payment link to the address you gave. Your panels open within 24 hours of payment, and you sign in at the investor portal with the same email.",
+      "pay": "Proceed to payment",
+      "portal": "Investor portal"
+    },
+    "steps": [
+      "Apply",
+      "Payment link by email",
+      "Panels open, sign in"
+    ]
   },
   contact: {
     metaTitle: "Contact",

@@ -6,6 +6,7 @@ import { portalConfigured, supabase, type Entitlement, type Panel, type Profile 
 import type { SiteContent } from "@/content/en";
 import { EducationPanel, PnlPanel, ReportsPanel, SignalsPanel } from "@/components/portal/panels";
 import AdminPanel from "@/components/portal/AdminPanel";
+import AdminMemberships from "@/components/portal/AdminMemberships";
 import { Card, Notice, btn, btnOutline, field, label } from "@/components/portal/ui";
 
 type T = SiteContent["portal"];
@@ -68,7 +69,7 @@ export default function Portal({ c }: { c: SiteContent }) {
   const isAdmin = profile?.role === "admin";
   const active = new Set(ents.filter((e) => !e.ends_at || new Date(e.ends_at) > new Date()).map((e) => e.panel_slug));
   const visible = panels.filter((p) => isAdmin || active.has(p.slug));
-  const current = tab || visible[0]?.slug || (isAdmin ? "admin" : "");
+  const current = tab || (isAdmin ? "memberships" : visible[0]?.slug || "");
 
   if (!portalConfigured) return <Notice>{t.notConfigured}</Notice>;
   if (!ready) return <p className="text-muted">…</p>;
@@ -89,9 +90,15 @@ export default function Portal({ c }: { c: SiteContent }) {
               </button>
             ))}
             {isAdmin && (
-              <button type="button" onClick={() => setTab("admin")} className={`rounded-xl px-3 py-2.5 text-start text-[14px] font-semibold ${current === "admin" ? "bg-primary text-white" : "text-primary hover:bg-tint"}`}>
-                {t.admin.title}
-              </button>
+              <>
+                <p className="mt-3 px-3 text-[11px] font-semibold uppercase tracking-wide text-muted">{t.admin.title}</p>
+                <button type="button" onClick={() => setTab("memberships")} className={`rounded-xl px-3 py-2.5 text-start text-[14px] font-semibold ${current === "memberships" ? "bg-primary text-white" : "text-primary hover:bg-tint"}`}>
+                  {t.admin.memberships}
+                </button>
+                <button type="button" onClick={() => setTab("admin")} className={`rounded-xl px-3 py-2.5 text-start text-[14px] font-semibold ${current === "admin" ? "bg-primary text-white" : "text-primary hover:bg-tint"}`}>
+                  {t.admin.content}
+                </button>
+              </>
             )}
           </nav>
           <button
@@ -108,7 +115,9 @@ export default function Portal({ c }: { c: SiteContent }) {
       </aside>
       <div className="lg:col-span-9">
         {error && <Notice tone="error">{error}</Notice>}
-        {current === "admin" && isAdmin ? (
+        {current === "memberships" && isAdmin ? (
+          <AdminMemberships t={t} />
+        ) : current === "admin" && isAdmin ? (
           <AdminPanel t={t} panels={panels} />
         ) : current && PANEL_VIEWS[current] ? (
           PANEL_VIEWS[current](t)

@@ -18,6 +18,7 @@ export const ru: ContentOverride = {
     office: "Дубайский международный финансовый центр (DIFC), Дубай, ОАЭ",
   },
   ui: {
+    contactToOpen: "Свяжитесь с нами, чтобы открыть счёт",
     scrollDown: "Прокрутить вниз",
     contact: "Контакты",
     getStarted: "Записаться на звонок",
@@ -381,6 +382,7 @@ export const ru: ContentOverride = {
       }
     },
     cardLabels: {
+      contactNote: "Счета у {broker} открываются через NUUK в рамках партнёрского соглашения. Свяжитесь с нами, и мы проведём вас через процедуру открытия; шаги ниже показывают, что запросит брокер.",
       regulator: "Регулятор",
       licence: "Лицензия",
       founded: "Основан",

@@ -28,6 +28,8 @@ export type Broker = {
   pros: string[];
   cons: string[];
   referralHref: string;
+  /** Accounts are opened through NUUK: CTA points to the contact page instead of a referral link. */
+  contactToOpen?: boolean;
   steps: string[];
   status: Status;
   /** 2–3 sentence profile used on the broker's landing page. */
@@ -85,6 +87,7 @@ export const en = {
     office: "Dubai International Financial Centre (DIFC), Dubai, UAE",
   },
   ui: {
+    contactToOpen: "Contact us to open an account",
     scrollDown: "Scroll down",
     contact: "Contact",
     getStarted: "Book a call",
@@ -430,6 +433,7 @@ export const en = {
       }
     },
     cardLabels: {
+      contactNote: "Accounts with {broker} are opened through NUUK under our partnership agreement. Contact us and we will guide you through the onboarding; the steps below show what the broker will ask for.",
       regulator: "Regulator",
       licence: "Licence",
       founded: "Founded",
@@ -577,6 +581,7 @@ export const en = {
         pros: ["Licensed Danish bank with SIFI status; cash covered up to EUR 100,000 by the Danish deposit guarantee", "71,000+ instruments: 23,000+ stocks on 50+ exchanges, 8,200+ ETFs, 5,200 bonds, futures, options and 185+ FX pairs", "Volume-tiered pricing: EUR/USD 1.0 to 0.7 pip, US stocks 0.08% to 0.03%, index CFDs with no commission", "Own SaxoTraderGO/PRO and SaxoInvestor platforms plus OpenAPI, FIX and TradingView", "No inactivity or platform fees; deposits and withdrawals free on Saxo's side"],
         cons: ["Custody fee of 0.15% to 0.09% a year on stocks, ETFs and bonds in most regions", "Platinum and VIP tiers start at EUR 200k and EUR 1M; the UAE site asks for $5,000 to open a Classic account", "No swap-free account; the Dubai presence is a representative office, so UAE clients contract with Saxo Bank A/S in Denmark"],
         referralHref: "https://www.home.saxo",
+        contactToOpen: true,
         steps: ["Create your account online at home.saxo/accounts (18+; national ID and tax ID, passport/ID card, selfie; proof of residence if requested)", "Get verified – most applications are approved digitally within minutes, otherwise up to 2 business days", "Log in to SaxoTraderGO or SaxoInvestor and fund the account – first deposit must come from a bank account in your own name in your country of residence", "Deposit the tier amount within 30 days if you want Platinum (EUR 200k+) or VIP (EUR 1M+) pricing", "Make your first trade – a 20-day demo with USD 100,000 simulated funds is available to practise first"],
         status: "live",
         summary: "Saxo Bank A/S is a Copenhagen-headquartered bank licensed by the Danish FSA (licence 1149), designated a systemically important institution in 2023 and, since March 2026, majority-owned by the J. Safra Sarasin Group. Founded in 1992, it serves more than 1.5 million clients in 180+ countries with over EUR 150 billion in client assets. In the UAE it operates a DFSA-regulated representative office; client agreements are made with Saxo Bank A/S in Denmark. I hold my multi-asset portfolio here, and it is one of the three venues used for managed accounts.",
@@ -603,6 +608,7 @@ export const en = {
         pros: ["Zero trading commission and no deposit, withdrawal or inactivity fees", "Regulated by the FCA, CySEC, ASIC, SCB and the UAE SCA; segregated client money and negative balance protection", "Native TradingView connection plus MT4, MT5, own web and mobile platform and an API", "$20 minimum deposit; 91% of withdrawals processed within 5 minutes", "Swap-free accounts for MENA clients and a professional account with 1:500 leverage and spread rebates"],
         cons: ["Spreads are dynamic, not fixed: EUR/USD ~0.7 pips and gold ~0.5 are typical, not guaranteed minimums", "No raw-spread or commission-based account", "Overnight funding of 4% plus benchmark makes multi-day leveraged positions relatively expensive; 0.7% FX conversion for retail"],
         referralHref: "https://capital.com",
+        contactToOpen: true,
         steps: ["Click 'Open account' on capital.com or download the iOS/Android app; choose your country of residence", "Register with your email (or Google/Apple), set a password, accept the terms and confirm your email via the link sent", "Verify your identity: upload a valid ID document, a live selfie and proof of address if requested (typically reviewed within 24 hours)", "Fund the account by card, Apple/Google Pay, bank transfer or a local method — minimum $10–20 by card, €50 by wire", "Choose CFD, swap-free or (where eligible) upgrade to a Professional account, then trade on the web platform, app, TradingView, MT4 or MT5"],
         status: "live",
         summary: "Capital.com is a privately held CFD broker founded in 2016 by Viktor Prokopenya, with 880,000+ active accounts and 5,500+ instruments across shares, indices, forex, commodities and crypto. Client trading volume exceeded $1.7 trillion in 2024 and $1.5 trillion in the first half of 2025, more than half of it from the Middle East. Its Dubai entity, Capital Com MENA Securities Trading, is licensed by the UAE Securities and Commodities Authority. I keep a personal CFD account here for index trading.",
@@ -629,6 +635,7 @@ export const en = {
         pros: ["Zero commission on Borsa İstanbul with no account, custody or clearing fees", "Flat $1.50 per US trade, fractional shares from $1 and free live data", "SPK-licensed brokerage; BIST holdings at the Central Registry Agency, US holdings under SIPC protection", "Funding and withdrawals in minutes via 12 partner banks, no Midas transfer fees", "One account for BIST, US and European stocks, US options, VIOP futures, TEFAS funds and gold certificates"],
         cons: ["Türkiye residents only; no accounts for non-residents or anyone tax-resident abroad", "No CFDs or leveraged forex; BIST margin loans carry high TRY interest", "Support and website in Turkish only; TRY to USD conversion at Midas's own rate rather than a published fee"],
         referralHref: "https://www.getmidas.com/",
+        contactToOpen: true,
         steps: ["Download the Midas app from the App Store or Google Play and sign up with your mobile number", "Verify your identity with a Turkish chip ID card, blue card or foreign ID card; you must be 18+ and resident in Türkiye with no tax obligations abroad", "Complete the in-app application and e-sign the investment account agreements; the process takes about 5 minutes", "Fund the account by bank transfer in TRY or USD (from any bank; partner-bank transfers are credited within about 2 minutes)", "Buy your first stock: convert TRY to USD in-app if needed and place an order for BIST, US or European shares from $1/€1"],
         status: "live",
         summary: "Midas Menkul Değerler A.Ş. is an SPK-licensed Istanbul brokerage founded in 2020 by Egem Eraslan and wholly owned by Midas Finansal Teknolojiler A.Ş. It reported about 4 million users and monthly trading volume approaching $20 billion in May 2026, and has raised more than $140 million, including an $80 million Series B led by QED Investors in August 2025. It is the venue I use for BIST and US equities, and one of the three venues used for managed accounts.",
@@ -655,6 +662,7 @@ export const en = {
         pros: ["Dual FCA and CNMV regulation with FSCS (£85k) and FOGAIN (€100k) protection, funds in segregated tier-1 accounts", "Earn 15% performance fees on investor capital without holding your own asset-management licence", "DarwinIA seeds top strategies with €30k to €500k a month; more than €11.5M paid to traders so far", "Raw interbank pricing, EUR/USD around 0.2–0.3 pips plus $2.50 per lot, with talent and volume rebates up to 40%", "MT4, MT5, TradingView, DXtrade, FIX and DARWIN APIs, plus stocks, futures and ETFs through Interactive Brokers"],
         cons: ["No swap-free account, no Turkish support, and support runs Mon–Thu 08:00–17:00 UTC only", "€500 minimum deposit, €1,000 equity to create a DARWIN, lifetime caps on card and Skrill deposits", "Retail leverage capped at 1:30; professional status lifts it but forfeits FSCS cover"],
         referralHref: "https://www.darwinex.com/",
+        contactToOpen: true,
         steps: ["Register at darwinex.com/register with username, email, password and country of tax residence", "Complete the MiFID onboarding: personal-details questionnaire and financial-knowledge/solvency questionnaire", "Upload identity and address documents; application status is emailed within 1 business day", "Fund your Darwinex Wallet (min €/$/£500 by bank transfer, card or Skrill) and transfer at least 500 to a live trading account", "Trade on MT4/MT5, TradingView, DXtrade or IBKR; after about a month (or instantly with an imported track record) create your DARWIN and enter DarwinIA"],
         status: "live",
         summary: "Darwinex is the trading name of Tradeslide Trading Tech Ltd (London, 2012; FCA-authorised since 2014) and Sapiens Markets EU (CNMV, Madrid, 2022), operating as both a broker and a regulated asset manager. A DARWIN wraps a trader's strategy as a risk-managed investable index: investors pay 1.2% management and 20% performance fees, of which 15% goes to the trader. The platform reports 3,000+ DARWINs, around $580M invested and clients in 80+ countries. It is where NUUK systems are packaged for third-party investor capital.",

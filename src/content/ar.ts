@@ -20,6 +20,7 @@ export const ar: ContentOverride = {
     office: "مركز دبي المالي العالمي (DIFC)، دبي، الإمارات العربية المتحدة",
   },
   ui: {
+    contactToOpen: "تواصل معنا لفتح حساب",
     scrollDown: "مرّر للأسفل",
     contact: "تواصل",
     getStarted: "احجز مكالمة",
@@ -353,6 +354,7 @@ export const ar: ContentOverride = {
       }
     },
     cardLabels: {
+      contactNote: "تُفتح الحسابات لدى {broker} عبر NUUK بموجب اتفاقية الشراكة. تواصل معنا وسنرافقك في إجراءات الفتح؛ توضح الخطوات أدناه ما سيطلبه الوسيط منك.",
       regulator: "الجهة الرقابية",
       licence: "الترخيص",
       founded: "سنة التأسيس",

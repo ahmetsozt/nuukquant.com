@@ -7,7 +7,7 @@ import Fill from "@/components/ui/Fill";
 import Badge from "@/components/ui/Badge";
 import BrokerLogo from "@/components/ui/BrokerLogo";
 import Button from "@/components/ui/Button";
-import { BrokerCardFull, brokerHref } from "@/components/home/BrokerCard";
+import { BrokerCardFull, brokerCta, brokerHref } from "@/components/home/BrokerCard";
 import { resolve, type LocaleParams } from "@/lib/page";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
@@ -74,14 +74,14 @@ export default async function BrokersPage({ params }: { params: LocaleParams }) 
                   {p.list.map((b) => (
                     <td key={b.slug} className="px-5 py-4">
                       <a
-                        href={b.referralHref.startsWith("[") ? "#" : b.referralHref}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href={brokerCta(c, b).href}
+                        target={brokerCta(c, b).external ? "_blank" : undefined}
+                        rel={brokerCta(c, b).external ? "noopener noreferrer" : undefined}
                         data-event="broker_cta_click"
                         data-label={b.slug}
                         className="inline-flex rounded-pill bg-primary px-5 py-3 text-[14px] font-semibold text-white hover:bg-primary-dark"
                       >
-                        {c.ui.openAccount}
+                        {brokerCta(c, b).label}
                       </a>
                     </td>
                   ))}

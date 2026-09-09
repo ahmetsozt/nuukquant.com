@@ -6,6 +6,11 @@ import Fill from "@/components/ui/Fill";
 import Icon from "@/components/ui/Icon";
 import type { Broker, SiteContent } from "@/content/en";
 
+/** Primary call to action: referral link, or the contact page when accounts are opened through NUUK. */
+export function brokerCta(c: SiteContent, b: Broker) {
+  return b.contactToOpen ? { href: c.ctaBand.cta.href, label: c.ui.contactToOpen, external: false } : { href: b.referralHref, label: c.ui.openAccount, external: true };
+}
+
 /** Link to the broker's own landing page under /brokers/{slug}/. */
 export function brokerHref(c: SiteContent, b: Broker) {
   return `${c.nav[1].href}${b.slug}/`;
@@ -59,8 +64,8 @@ export function BrokerCardCompact({ b, c }: { b: Broker; c: SiteContent }) {
           <Fill text={b.bestFor} />
         </p>
         <div className="mt-6 flex items-center gap-4">
-          <Button href={b.referralHref} size="sm" event="broker_cta_click" eventLabel={b.slug}>
-            {c.ui.openAccount}
+          <Button href={brokerCta(c, b).href} size="sm" event="broker_cta_click" eventLabel={b.slug}>
+            {brokerCta(c, b).label}
           </Button>
           <Link href={brokerHref(c, b)} className="inline-flex items-center gap-1 text-[13.5px] font-semibold text-ink hover:text-primary">
             {L.profile} <Icon name="arrow-up-right" size={13} />
@@ -104,8 +109,8 @@ export function BrokerCardFull({ b, c }: { b: Broker; c: SiteContent }) {
             <Fill text={b.bestFor} />
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-4">
-            <Button href={b.referralHref} event="broker_cta_click" eventLabel={b.slug}>
-              {c.ui.openAccount}
+            <Button href={brokerCta(c, b).href} event="broker_cta_click" eventLabel={b.slug}>
+              {brokerCta(c, b).label}
             </Button>
             <Link href={brokerHref(c, b)} className="inline-flex items-center gap-1 text-[14px] font-semibold text-ink hover:text-primary">
               {L.profile} <Icon name="arrow-up-right" size={14} />

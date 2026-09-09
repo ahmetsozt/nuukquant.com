@@ -18,6 +18,7 @@ const PAGES = [
   "insights/",
   "investors/",
   "portal/",
+  "apply/",
   "case-studies/",
   "legal/risk-disclosure/",
   "legal/ib-disclosure/",

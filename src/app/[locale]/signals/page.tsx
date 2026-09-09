@@ -65,7 +65,7 @@ export default async function SignalsPage({ params }: { params: LocaleParams }) 
                   ))}
                 </ul>
                 <div className="mt-8">
-                  <Button href={c.contact.channels[2].href} variant={plan.highlight ? "primary" : "outline-dark"} className="w-full" event="plan_cta_click" eventLabel={plan.name}>
+                  <Button href={`${c.apply.link.href}?plan=${plan.slug}`} variant={plan.highlight ? "primary" : "outline-dark"} className="w-full" event="plan_cta_click" eventLabel={plan.name}>
                     {plan.cta}
                   </Button>
                 </div>

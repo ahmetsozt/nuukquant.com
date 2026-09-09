@@ -93,6 +93,25 @@ export default function AdminPanel({ t, panels }: { t: T; panels: Panel[] }) {
     run(() => supabase().from("education_items").insert({ title: d.title, url: d.url, kind: d.kind || "video", description: d.description || null }), a.saved, f);
   }
 
+  const [settings, setSettings] = useState<Record<string, string>>({});
+  useEffect(() => {
+    supabase()
+      .from("settings")
+      .select("key,value")
+      .then(({ data }) => data && setSettings(Object.fromEntries(data.map((r: { key: string; value: string | null }) => [r.key, r.value ?? ""]))));
+  }, []);
+  function saveSettings(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.currentTarget)) as Record<string, string>;
+    const rows = ["notify_email", "telegram_bot_token", "telegram_chat_id"].map((key) => ({ key, value: d[key]?.trim() || null, updated_at: new Date().toISOString() }));
+    run(() => supabase().from("settings").upsert(rows), a.saved);
+  }
+  function savePanelLink(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.currentTarget)) as Record<string, string>;
+    run(() => supabase().from("panels").update({ link_url: d.link_url || null, link_label: d.link_label || null }).eq("slug", d.panel), a.saved);
+  }
+
   const panelOptions = panels.map((p) => (
     <option key={p.slug} value={p.slug}>
       {t.panelNames[p.slug as keyof T["panelNames"]] ?? p.name}
@@ -156,6 +175,53 @@ export default function AdminPanel({ t, panels }: { t: T; panels: Panel[] }) {
             </tbody>
           </table>
         </div>
+      </Card>
+
+      <Card title={a.notifications}>
+        <form onSubmit={saveSettings} className="grid gap-3 sm:grid-cols-6" key={Object.keys(settings).length}>
+          <label className="block sm:col-span-2">
+            <span className={label}>{a.notifyEmail}</span>
+            <input name="notify_email" type="email" defaultValue={settings.notify_email ?? ""} className={field} dir="ltr" />
+          </label>
+          <label className="block sm:col-span-2">
+            <span className={label}>{a.telegramToken}</span>
+            <input name="telegram_bot_token" defaultValue={settings.telegram_bot_token ?? ""} className={field} dir="ltr" placeholder="123456:ABC…" />
+          </label>
+          <label className="block">
+            <span className={label}>{a.telegramChat}</span>
+            <input name="telegram_chat_id" defaultValue={settings.telegram_chat_id ?? ""} className={field} dir="ltr" />
+          </label>
+          <div className="flex items-end">
+            <button type="submit" disabled={busy} className={`${btn} w-full`}>
+              {a.save}
+            </button>
+          </div>
+          <p className="text-[12.5px] text-muted sm:col-span-6">{a.telegramHint}</p>
+        </form>
+      </Card>
+
+      <Card title={a.panelLink}>
+        <form onSubmit={savePanelLink} className="grid gap-3 sm:grid-cols-6">
+          <label className="block">
+            <span className={label}>{a.panel}</span>
+            <select name="panel" className={field}>
+              {panelOptions}
+            </select>
+          </label>
+          <label className="block sm:col-span-2">
+            <span className={label}>{a.linkLabel}</span>
+            <input name="link_label" className={field} placeholder={a.linkLabelPlaceholder} />
+          </label>
+          <label className="block sm:col-span-2">
+            <span className={label}>{a.url}</span>
+            <input name="link_url" type="url" className={field} dir="ltr" placeholder="https://t.me/+…" />
+          </label>
+          <div className="flex items-end">
+            <button type="submit" disabled={busy} className={`${btn} w-full`}>
+              {a.save}
+            </button>
+          </div>
+        </form>
       </Card>
 
       <Card title={a.newSignal}>

@@ -11,11 +11,12 @@ import { Card, Notice, btn, btnOutline, field, label } from "@/components/portal
 
 type T = SiteContent["portal"];
 
-const PANEL_VIEWS: Record<string, (t: T) => React.ReactNode> = {
-  signals: (t) => <SignalsPanel t={t} />,
-  "daily-pnl": (t) => <PnlPanel t={t} />,
-  reports: (t) => <ReportsPanel t={t} />,
-  education: (t) => <EducationPanel t={t} />,
+const PANEL_VIEWS: Record<string, (t: T, p: Panel) => React.ReactNode> = {
+  signals: (t, p) => <SignalsPanel t={t} link={p} />,
+  "daily-pnl": (t, p) => <PnlPanel t={t} link={p} />,
+  reports: (t, p) => <ReportsPanel t={t} link={p} />,
+  education: (t, p) => <EducationPanel t={t} link={p} />,
+  research: (t, p) => <EducationPanel t={t} link={p} slug="research" />,
 };
 
 declare global {
@@ -120,7 +121,7 @@ export default function Portal({ c }: { c: SiteContent }) {
         ) : current === "admin" && isAdmin ? (
           <AdminPanel t={t} panels={panels} />
         ) : current && PANEL_VIEWS[current] ? (
-          PANEL_VIEWS[current](t)
+          PANEL_VIEWS[current](t, panels.find((p) => p.slug === current) ?? { slug: current, name: current, description: null, sort: 0 })
         ) : (
           <Card title={t.noPanelsTitle}>
             <p className="text-[15px] leading-7 text-body">{t.noPanels}</p>

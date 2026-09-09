@@ -18,7 +18,7 @@ export function supabase(): SupabaseClient {
 }
 
 export type Profile = { id: string; email: string; full_name: string | null; role: "investor" | "admin" };
-export type Panel = { slug: string; name: string; description: string | null; sort: number };
+export type Panel = { slug: string; name: string; description: string | null; sort: number; link_url?: string | null; link_label?: string | null };
 export type Entitlement = { panel_slug: string; ends_at: string | null };
 export type SignalPost = {
   id: string;

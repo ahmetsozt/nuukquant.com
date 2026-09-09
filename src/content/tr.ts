@@ -1299,6 +1299,8 @@ export const tr: ContentOverride = {
   },
   portal: {
     memberships: {
+      "activateHint": "Aktifleştir, başvuranı (hesabı yoksa) otomatik davet eder ve planındaki tüm panelleri belirlediğiniz tarihe kadar açar.",
+      "activatedInvited": "Davet gönderildi ve paneller tanımlandı; üye e-postadaki bağlantıdan şifresini belirler.",
       "title": "Üyelikler",
       "stats": {
         "new_applications": "Yeni başvuru",
@@ -1403,6 +1405,14 @@ export const tr: ContentOverride = {
       "open": "Aç"
     },
     "admin": {
+      "notifications": "Bildirimler",
+      "notifyEmail": "Yeni başvuruda bildirim e-postası",
+      "telegramToken": "Telegram bot token",
+      "telegramChat": "Telegram sohbet ID",
+      "telegramHint": "Telegram: @BotFather ile bir bot oluşturun, token'ı yapıştırın, bota bir mesaj gönderin ve sohbet ID'nizi (@userinfobot) girin. Her yeni başvuru anında telefonunuza düşer.",
+      "panelLink": "Panel bağlantısı (örn. özel Telegram kanalı)",
+      "linkLabel": "Buton etiketi",
+      "linkLabelPlaceholder": "Özel Telegram kanalına katıl",
       "addEducation": "Oturum ekle",
       "url": "Bağlantı (video veya dosya)",
       "kind": "Tür",

@@ -142,7 +142,14 @@ export const en = {
     },
     { label: "Brokers", href: "/brokers/", items: [] },
     { label: "Track record", href: "/track-record/", items: [] },
-    { label: "Insights", href: "/insights/", items: [] },
+    {
+      label: "Insights",
+      href: "/insights/",
+      items: [
+        { label: "Market notes", href: "/insights/" },
+        { label: "Economic calendar", href: "/economic-calendar/" },
+      ],
+    },
     {
       label: "About",
       href: "/about/",
@@ -793,6 +800,16 @@ export const en = {
     ],
   },
 
+  calendar: {
+    metaTitle: "Economic calendar",
+    metaDescription: "Live economic calendar: central bank decisions, inflation, employment and GDP releases with consensus and previous figures.",
+    kicker: "Economic calendar",
+    title: "This week's market-moving releases",
+    lead: "Central bank decisions, inflation, employment and growth data in one view, with consensus and previous figures. Times are shown in your local time zone.",
+    note: "Data by TradingView. High-impact events carry three bars. NUUK systems reduce position size around high-impact releases; discretionary traders should avoid opening new positions in the 15 minutes before one.",
+    tipsTitle: "How we read the calendar",
+    tips: ["Compare the actual figure with consensus, not with the previous reading; the surprise is what moves the market.", "Watch the revision to last month's number; a large revision often matters more than the headline.", "Rate decisions move markets twice: at the decision and again at the press conference about 30 minutes later."],
+  },
   contact: {
     metaTitle: "Contact",
     metaDescription: "Book a call, message on WhatsApp or Telegram, or send an enquiry.",

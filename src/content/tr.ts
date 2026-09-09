@@ -87,7 +87,11 @@ export const tr: ContentOverride = {
       "label": "Performans"
     },
     {
-      "label": "Analizler"
+      "label": "Analizler",
+      "items": [
+        { "label": "Piyasa Notları" },
+        { "label": "Ekonomik Takvim" }
+      ]
     },
     {
       "label": "Kurumsal",
@@ -876,6 +880,16 @@ export const tr: ContentOverride = {
     tabs: ["Tümü", "Makro", "FX", "Emtia", "Endeksler", "Kripto", "Yapay zekâ"],
   },
 
+  "calendar": {
+    "metaTitle": "Ekonomik Takvim",
+    "metaDescription": "Canlı ekonomik takvim: merkez bankası kararları, enflasyon, istihdam ve büyüme verileri; beklenti ve önceki değerlerle birlikte.",
+    "kicker": "Ekonomik Takvim",
+    "title": "Bu haftanın piyasayı hareket ettirecek verileri",
+    "lead": "Merkez bankası kararları, enflasyon, istihdam ve büyüme verileri tek ekranda; beklenti ve önceki değerlerle birlikte. Saatler bulunduğunuz saat diliminde gösterilir.",
+    "note": "Veri sağlayıcı TradingView. Yüksek etkili olaylar üç çubukla işaretlenir. NUUK sistemleri yüksek etkili açıklamalar çevresinde pozisyon büyüklüğünü azaltır; manuel işlem yapanlar böyle bir veriden önceki 15 dakika içinde yeni pozisyon açmaktan kaçınmalıdır.",
+    "tipsTitle": "Takvimi nasıl okuyoruz",
+    "tips": ["Gerçekleşen rakamı önceki değerle değil, beklentiyle karşılaştırın; piyasayı hareket ettiren sürprizdir.", "Geçen ayın rakamındaki revizyona bakın; büyük bir revizyon çoğu zaman manşet veriden daha önemlidir.", "Faiz kararları piyasayı iki kez hareket ettirir: kararda ve yaklaşık 30 dakika sonraki basın toplantısında."],
+  },
   contact: {
     "metaTitle": "İletişim",
     "metaDescription": "Görüşme talep edin, WhatsApp veya Telegram üzerinden ulaşın ya da bilgi talebi gönderin.",

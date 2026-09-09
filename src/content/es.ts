@@ -18,6 +18,7 @@ export const es: ContentOverride = {
     office: "Dubai International Financial Centre (DIFC), Dubái, EAU",
   },
   ui: {
+    contactToOpen: "Contáctenos para abrir una cuenta",
     scrollDown: "Desplazarse hacia abajo",
     contact: "Contacto",
     getStarted: "Reservar una llamada",
@@ -351,6 +352,7 @@ export const es: ContentOverride = {
       }
     },
     cardLabels: {
+      contactNote: "Las cuentas en {broker} se abren a través de NUUK en virtud de nuestro acuerdo de colaboración. Contáctenos y le acompañaremos en la apertura; los pasos siguientes muestran lo que le pedirá el bróker.",
       regulator: "Regulador",
       licence: "Licencia",
       founded: "Fundado",

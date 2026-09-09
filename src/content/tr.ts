@@ -16,6 +16,7 @@ export const tr: ContentOverride = {
     "office": "Dubai Uluslararası Finans Merkezi (DIFC), Dubai, BAE"
   },
   ui: {
+    "contactToOpen": "Hesap açmak için bizimle iletişime geçin",
     "scrollDown": "Aşağı kaydır",
     "contact": "İletişim",
     "getStarted": "Görüşme Talep Edin",
@@ -538,6 +539,7 @@ export const tr: ContentOverride = {
       }
     },
     cardLabels: {
+      "contactNote": "{broker} nezdindeki hesaplar, ortaklık anlaşmamız kapsamında NUUK aracılığıyla açılır. Bizimle iletişime geçin; hesap açılışını birlikte yürütelim. Aşağıdaki adımlar aracı kurumun sizden isteyeceklerini gösterir.",
       "regulator": "Düzenleyici otorite",
       "licence": "Lisans",
       "founded": "Kuruluş",

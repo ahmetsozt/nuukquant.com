@@ -1,3 +1,4 @@
+import { brokerCta } from "@/components/home/BrokerCard";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -55,8 +56,8 @@ export default async function BrokerLandingPage({ params }: { params: Params }) 
     [L.languages, b.languages],
   ];
   const cta = (
-    <Button href={b.referralHref} event="broker_cta_click" eventLabel={b.slug}>
-      {c.ui.openAccount}
+    <Button href={brokerCta(c, b).href} event="broker_cta_click" eventLabel={b.slug}>
+      {brokerCta(c, b).label}
     </Button>
   );
   return (
@@ -184,7 +185,7 @@ export default async function BrokerLandingPage({ params }: { params: Params }) 
             <div className="text-center">
               <h2 className="h2-section">{L.steps}</h2>
               <p className="mx-auto mt-3 max-w-[640px] text-[15px] text-body">
-                {L.openWith} <Fill text={b.name} />
+                {b.contactToOpen ? L.contactNote.replace("{broker}", b.name) : <>{L.openWith} <Fill text={b.name} /></>}
               </p>
             </div>
             <ol className="mx-auto mt-10 grid max-w-[1100px] gap-8 sm:grid-cols-2 lg:grid-cols-5">

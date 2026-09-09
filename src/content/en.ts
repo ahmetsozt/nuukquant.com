@@ -104,8 +104,8 @@ export const en = {
     test: "Testing",
     paused: "Paused",
     soon: "Coming soon",
-    pending: "Verification pending",
-    verificationInProgress: "Verification in progress",
+    pending: "Reporting pending",
+    verificationInProgress: "Reporting in progress",
     updated: "Updated",
     since: "Since",
     source: "Source",
@@ -181,11 +181,11 @@ export const en = {
       kicker: "Economist · Investor · Founder of NUUK",
       title: "Markets, read with discipline.",
       lead:
-        "I build AI-driven trading systems, run my own capital, manage investor accounts and teach people to trade for themselves. Everything here is backed by a verifiable track record.",
+        "I build AI-driven trading systems, run my own capital, manage investor accounts and teach people to trade for themselves. Every figure on this site states its source and its method.",
       primary: { label: "Choose a broker", href: "/brokers/" },
       secondary: { label: "Book a call", href: "/contact-us/" },
       portraitAlt: "Ahmet S. Öztürk",
-      trustLine: ["Partner brokers regulated by FCA, ASIC, CySEC and DFSA", "Track record under independent verification", "Based in DIFC, Dubai"],
+      trustLine: ["Partner brokers regulated by FCA, ASIC, CySEC and DFSA", "Own capital in every system", "Based in DIFC, Dubai"],
       trust: [
         { value: "17", label: "years in markets, since an FX desk in London in 2009" },
         { value: "87", label: "strategy variants back-tested since 2026; three in production, documented on the AI trading page" },
@@ -207,8 +207,8 @@ export const en = {
       ],
       "note": "Quotes are provided by TradingView and its data partners; some exchange feeds are delayed. Trading conditions, spreads and execution are those of the broker you trade with."
     },
-    numbersTitle: "Numbers you can verify*",
-    numbersNote: "*Figures as of September 2026. Verification links are added to the track record page as each read-only connection goes live.",
+    numbersTitle: "NUUK in numbers*",
+    numbersNote: "*Figures as of September 2026, from NUUK's own records.",
     promo: {
       kicker: "Managed accounts",
       title: "Your account. My execution. Written risk limits.",
@@ -222,15 +222,15 @@ export const en = {
     pillarsLead: "One person, five doors. Pick the one that fits where you are today.",
     pillars: [
       { icon: "cpu", title: "AI trading systems", body: "Proprietary algorithms coded, tested and run live across FX, indices, commodities and digital assets.", who: "For allocators and technical investors", href: "/ai-trading/" },
-      { icon: "chart", title: "Verified track record", body: "My own portfolio and managed strategies, reported through independent verification.", who: "For anyone deciding whether to trust me", href: "/track-record/" },
+      { icon: "chart", title: "Track record", body: "My own portfolio and the systems' results, reported net of costs with the source and method behind every figure.", who: "For anyone deciding whether to trust me", href: "/track-record/" },
       { icon: "briefcase", title: "Managed accounts", body: "Your capital stays in your own broker account. I trade it under agreed risk limits and a performance fee.", who: "For investors who want it done for them", href: "/portfolio-management/" },
       { icon: "handshake", title: "Broker partners", body: "Independent comparison of the brokers I work with, with a step-by-step account guide for each.", who: "For self-directed traders choosing a broker", href: "/brokers/" },
       { icon: "signal", title: "Signals, reports & education", body: "Daily notes, weekly reports, trade ideas with full reasoning, and live webinars that teach the method.", who: "For traders who want to learn and stay informed", href: "/signals/" },
     ],
     record: {
       kicker: "Track record",
-      title: "Numbers you can check yourself",
-      lead: "Results are reported net of trading costs. Live account statements are published as each broker connection goes live.",
+      title: "Results, with the method behind them",
+      lead: "Results are reported net of trading costs. Every figure states its source: live account, paper trading or backtest.",
       featuredLabel: "Equity curve",
       featuredNote: "Walk-forward backtest 2010–2026, net of swap and commission, rebased to 100. Annualised return +10.9%, maximum drawdown 6.7%, Sharpe ratio 1.36.",
       cta: { label: "See the full track record", href: "/track-record/" },
@@ -291,7 +291,7 @@ export const en = {
     ],
     principlesTitle: "How I work",
     principles: [
-      { title: "Evidence over opinion", body: "Every claim on this site links to a verifiable source or it is not made." },
+      { title: "Evidence over opinion", body: "Every figure on this site states its source and its method. If it cannot be explained, it is not shown." },
       { title: "Risk before return", body: "Position size, drawdown limits and stop rules are decided before any trade." },
       { title: "Your money stays yours", body: "Managed accounts run inside your own broker account. I never take custody." },
       { title: "Teach the method", body: "The goal of education is that you no longer need me." },
@@ -327,24 +327,24 @@ export const en = {
     faq: [
       { q: "Can I run a system on my own account?", a: "Yes. Depending on the broker you can copy-trade, join a MAM/PAMM structure at Tickmill, Saxo Bank or Midas, or follow the signal channel and execute yourself. In every case the account stays in your own name." },
       { q: "What is the minimum capital?", a: "USD 1,000 for copy trading or signals. Managed MAM/PAMM accounts start at the minimum allocation shown on the managed-accounts page." },
-      { q: "Do you share the code?", a: "No. The code stays proprietary. What I publish is the methodology, the risk rules and the verified results." },
+      { q: "Do you share the code?", a: "No. The code stays proprietary. What I publish is the methodology, the risk rules and the results, each with its source." },
     ],
   },
 
   trackRecord: {
     metaTitle: "Track Record",
-    metaDescription: "Independently verified performance of Ahmet S. Öztürk's own portfolio and managed strategies.",
+    metaDescription: "Performance of Ahmet S. Öztürk's own portfolio and the NUUK systems, with the source and method of every figure.",
     kicker: "Track record",
-    title: "Verified, or not shown",
-    lead: "Accounts are held at Tickmill, Saxo Bank, Scope Markets, Dukascopy, Midas and Capital.com. Each one is being linked to a read-only verification service and figures appear here automatically as each link goes live. If a number cannot be verified, it is not on this page.",
+    title: "Every number, with its source",
+    lead: "Accounts are held at partner brokers. Each figure below states where it comes from, live account, paper trading or walk-forward backtest, and how it is calculated. Past performance is not a guarantee of future results.",
     disclaimer: "Past performance is not a guarantee of future results. Figures are net of trading costs and gross of any performance fee unless stated otherwise.",
     methodologyTitle: "How to read these numbers",
     methodology: [
-      { title: "Verified", body: "Linked to the broker account via a read-only connection. The verification service, not this site, calculates the figures." },
+      { title: "Source", body: "Live account, paper trading or backtest. The label sits next to every figure, and the calculation method is described on this page." },
       { title: "Max drawdown", body: "Largest peak-to-trough decline in account equity, including open positions." },
       { title: "Profit factor", body: "Gross profit divided by gross loss. Above 1.0 means the strategy made money over the period." },
     ],
-    pending: "Live account statements are added as each broker's read-only connection goes live. The 87% signal win rate comes from the internal log.",
+    pending: "Live account figures are published from NUUK's own month-end records. The 87% signal figure comes from the internal log.",
   },
 
   managed: {
@@ -998,6 +998,9 @@ export const en = {
     ],
     formTitle: "Send an enquiry",
     form: {
+      sending: "Sending…",
+      success: "Thank you. Your message has been sent; we reply within one business day.",
+      sendError: "The message could not be sent. Please email us directly:",
       name: "Name",
       namePlaceholder: "Your name",
       email: "Email",

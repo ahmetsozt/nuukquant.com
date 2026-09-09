@@ -36,8 +36,8 @@ export const fr: ContentOverride = {
     test: "En test",
     paused: "En pause",
     soon: "Bientôt",
-    pending: "Vérification en attente",
-    verificationInProgress: "Vérification en cours",
+    pending: "Rapport en attente",
+    verificationInProgress: "Rapport en cours",
     updated: "Mis à jour",
     since: "Depuis",
     source: "Source",
@@ -100,11 +100,11 @@ export const fr: ContentOverride = {
       kicker: "Économiste · Investisseur · Fondateur de NUUK",
       title: "Les marchés, lus avec discipline.",
       lead:
-        "Je conçois des systèmes de trading pilotés par l'IA, je gère mon propre capital, je gère des comptes d'investisseurs et j'apprends aux gens à trader par eux-mêmes. Tout ce que vous trouverez ici repose sur un track record vérifiable.",
+        "Je conçois des systèmes de trading pilotés par l’IA, je négocie mon propre capital, je gère des comptes d’investisseurs et j’apprends aux gens à trader par eux-mêmes. Chaque chiffre de ce site indique sa source et sa méthode.",
       primary: { label: "Choisir un courtier" },
       secondary: { label: "Réserver un appel" },
       portraitAlt: "Ahmet S. Öztürk",
-      trustLine: ["Courtiers partenaires régulés par la FCA, l'ASIC, la CySEC et la DFSA", "Track record en cours de vérification indépendante", "Basé au DIFC, à Dubaï"],
+      trustLine: ["Courtiers partenaires régulés par la FCA, l'ASIC, la CySEC et la DFSA", "Notre capital dans chaque système", "Basé au DIFC, à Dubaï"],
       trust: [
         { label: "années sur les marchés, depuis un desk FX à Londres en 2009" },
         {"label": "variantes de stratégies back-testées depuis 2026 ; trois en production, documentées sur la page trading IA"},
@@ -126,8 +126,8 @@ export const fr: ContentOverride = {
       ],
       "note": "Les cotations sont fournies par TradingView et ses partenaires de données ; certains flux boursiers sont différés. Les conditions de trading, les spreads et l'exécution sont ceux du courtier avec lequel vous tradez."
     },
-    numbersTitle: "Des chiffres que vous pouvez vérifier*",
-    numbersNote: "*Chiffres à septembre 2026. Les liens de vérification sont ajoutés à la page track record à mesure que chaque connexion en lecture seule est activée.",
+    numbersTitle: "NUUK en chiffres*",
+    numbersNote: "*Chiffres à septembre 2026, issus des registres de NUUK.",
     promo: {
       kicker: "Comptes gérés",
       title: "Votre compte. Mon exécution. Des limites de risque écrites.",
@@ -140,15 +140,15 @@ export const fr: ContentOverride = {
     pillarsLead: "Une seule personne, cinq portes. Choisissez celle qui correspond à votre situation actuelle.",
     pillars: [
       { title: "Systèmes de trading IA", body: "Algorithmes propriétaires codés, testés et exécutés en direct sur le forex, les indices, les matières premières et les actifs numériques.", who: "Pour les allocateurs et les investisseurs techniques" },
-      { title: "Track record vérifié", body: "Mon propre portefeuille et mes stratégies gérées, publiés via une vérification indépendante.", who: "Pour quiconque décide s'il peut me faire confiance" },
+      { title: "Track record", body: "Les résultats de mon portefeuille et des systèmes, nets de coûts, avec la source et la méthode de chaque chiffre.", who: "Pour quiconque décide s'il peut me faire confiance" },
       { title: "Comptes gérés", body: "Votre capital reste sur votre propre compte de courtage. Je le trade dans le cadre de limites de risque convenues et d'une commission de performance.", who: "Pour les investisseurs qui préfèrent déléguer" },
       { title: "Courtiers partenaires", body: "Comparatif indépendant des courtiers avec lesquels je travaille, avec un guide d'ouverture de compte étape par étape pour chacun.", who: "Pour les traders autonomes qui choisissent un courtier" },
       { title: "Signaux, rapports et formation", body: "Notes quotidiennes, rapports hebdomadaires, idées de trade avec le raisonnement complet, et webinaires en direct qui enseignent la méthode.", who: "Pour les traders qui veulent apprendre et rester informés" },
     ],
     record: {
       kicker: "Track record",
-      title: "Des chiffres que vous pouvez vérifier vous-même",
-      lead: "Les résultats sont présentés nets de frais de trading. Les relevés des comptes réels sont publiés à mesure que chaque connexion courtier est activée.",
+      title: "Les résultats, et la méthode derrière",
+      lead: "Les résultats sont nets des coûts de trading. Chaque chiffre indique sa source : compte réel, paper trading ou backtest.",
       featuredLabel: "Courbe d'equity",
       featuredNote: "Backtest walk-forward 2010–2026, net de swaps et de commissions, base 100. Rendement annualisé +10,9 %, drawdown maximal 6,7 %, ratio de Sharpe 1,36.",
       cta: { label: "Voir le track record complet" },
@@ -206,7 +206,7 @@ export const fr: ContentOverride = {
     ],
     principlesTitle: "Ma façon de travailler",
     principles: [
-      { title: "Les preuves avant les opinions", body: "Chaque affirmation sur ce site renvoie à une source vérifiable, sinon elle n'est pas faite." },
+      { title: "Les preuves avant les opinions", body: "Chaque chiffre de ce site indique sa source et sa méthode. Ce qui ne peut être expliqué n’est pas montré." },
       { title: "Le risque avant le rendement", body: "Taille de position, limites de drawdown et règles de stop sont fixées avant tout trade." },
       { title: "Votre argent reste le vôtre", body: "Les comptes gérés fonctionnent dans votre propre compte de courtage. Je n'assure jamais la garde des fonds." },
       { title: "Transmettre la méthode", body: "L'objectif de la formation est que vous n'ayez plus besoin de moi." },
@@ -242,24 +242,24 @@ export const fr: ContentOverride = {
     faq: [
       { q: "Puis-je faire tourner un système sur mon propre compte ?", a: "Oui. Selon le courtier, vous pouvez faire du copy trading, rejoindre une structure MAM/PAMM chez Tickmill, Saxo Bank ou Midas, ou suivre le canal de signaux et exécuter vous-même. Dans tous les cas, le compte reste à votre nom." },
       { q: "Quel est le capital minimum ?", a: "USD 1,000 pour le copy trading ou les signaux. Les comptes gérés MAM/PAMM commencent à l'allocation minimale indiquée sur la page des comptes gérés." },
-      { q: "Partagez-vous le code ?", a: "Non. Le code reste propriétaire. Ce que je publie, c'est la méthodologie, les règles de risque et les résultats vérifiés." },
+      { q: "Partagez-vous le code ?", a: "Non. Le code reste propriétaire. Je publie la méthodologie, les règles de risque et les résultats, chacun avec sa source." },
     ],
   },
 
   trackRecord: {
     metaTitle: "Track record",
-    metaDescription: "Performance vérifiée de manière indépendante du portefeuille personnel et des stratégies gérées d'Ahmet S. Öztürk.",
+    metaDescription: "Performance du portefeuille personnel d’Ahmet S. Öztürk et des systèmes NUUK, avec la source et la méthode de chaque chiffre.",
     kicker: "Track record",
-    title: "Vérifié, ou non publié",
-    lead: "Les comptes sont détenus chez Tickmill, Saxo Bank, Scope Markets, Dukascopy, Midas et Capital.com. Chacun est en cours de connexion à un service de vérification en lecture seule, et les chiffres apparaissent ici automatiquement dès que chaque lien est actif. Si un chiffre ne peut pas être vérifié, il ne figure pas sur cette page.",
+    title: "Chaque chiffre, avec sa source",
+    lead: "Les comptes sont détenus chez des courtiers partenaires. Chaque chiffre ci-dessous indique d’où il vient, compte réel, paper trading ou backtest walk-forward, et comment il est calculé. Les performances passées ne préjugent pas des résultats futurs.",
     disclaimer: "Les performances passées ne préjugent pas des résultats futurs. Les chiffres sont nets de frais de trading et bruts de toute commission de performance, sauf indication contraire.",
     methodologyTitle: "Comment lire ces chiffres",
     methodology: [
-      { title: "Vérifié", body: "Relié au compte de courtage par une connexion en lecture seule. C'est le service de vérification, et non ce site, qui calcule les chiffres." },
+      { title: "Source", body: "Compte réel, paper trading ou backtest. L’étiquette figure à côté de chaque chiffre et la méthode de calcul est décrite sur cette page." },
       { title: "Drawdown maximal", body: "Plus forte baisse de l'equity du compte entre un sommet et un creux, positions ouvertes comprises." },
       { title: "Profit factor", body: "Gains bruts divisés par pertes brutes. Au-dessus de 1.0, la stratégie a gagné de l'argent sur la période." },
     ],
-    pending: "Les relevés des comptes réels sont ajoutés à mesure que la connexion en lecture seule de chaque courtier est activée. Le taux de réussite de 87 % des signaux provient du journal interne.",
+    pending: "Les chiffres des comptes réels sont publiés à partir des relevés de fin de mois de NUUK. Le taux de 87 % des signaux provient du journal interne.",
   },
 
   managed: {
@@ -1006,6 +1006,9 @@ export const fr: ContentOverride = {
     ],
     formTitle: "Envoyer une demande",
     form: {
+      sending: "Envoi…",
+      success: "Merci. Votre message a été envoyé ; nous répondons sous un jour ouvré.",
+      sendError: "Le message n’a pas pu être envoyé. Écrivez-nous directement :",
       name: "Nom",
       namePlaceholder: "Votre nom",
       email: "E-mail",

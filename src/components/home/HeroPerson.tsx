@@ -1,9 +1,8 @@
-import Blob from "@/components/ui/Blob";
 import Button from "@/components/ui/Button";
 import Fill from "@/components/ui/Fill";
 import Icon from "@/components/ui/Icon";
-import Portrait from "@/components/ui/Portrait";
 import HeroBackdrop from "@/components/home/HeroBackdrop";
+import HeroVisual from "@/components/home/HeroVisual";
 import LiveTape from "@/components/market/LiveTape";
 import type { Locale } from "@/i18n";
 import type { SiteContent } from "@/content/en";
@@ -40,16 +39,7 @@ export default function HeroPerson({ c, locale }: { c: SiteContent; locale: Loca
           </ul>
         </div>
         <div className="lg:col-span-6">
-          <div className="relative mx-auto aspect-[5/4] w-full max-w-[440px] lg:max-w-[640px]">
-            <Blob className="h-full w-full">
-              <Portrait alt={h.portraitAlt} />
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#00164a]/80 to-transparent" />
-            </Blob>
-            <div className="absolute bottom-3 start-3 rounded-card-sm bg-white/95 px-5 py-3.5 text-ink shadow-card backdrop-blur lg:bottom-8 lg:-start-4">
-              <p className="text-[16px] font-bold">{c.brand.person}</p>
-              <p className="mt-0.5 text-[12.5px] text-body">{c.brand.role} · DIFC, Dubai</p>
-            </div>
-          </div>
+          <HeroVisual c={c} />
         </div>
       </div>
       <LiveTape locale={locale} />

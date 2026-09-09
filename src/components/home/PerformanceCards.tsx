@@ -20,7 +20,7 @@ export function PerformanceCardView({ card, c }: { card: PerformanceCard; c: Sit
         </div>
         {card.status !== "pending" && <Badge status={card.status} c={c} />}
       </div>
-      {card.status !== "pending" && (
+      {card.status !== "pending" && card.series.length > 1 && (
         <div className="mt-5 h-16">
           <Sparkline data={card.series} className="h-full w-full" stroke="#0165fa" />
         </div>

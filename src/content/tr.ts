@@ -1470,27 +1470,41 @@ export const tr: ContentOverride = {
 
   performance: [
     {
-      name: "Kişisel portföy — Tickmill",
-      source: "Aracı kurum ekstresi",
-      updated: "Aylık",
-      stats: [
+      "name": "GANN NUUK Trader AI — Tickmill, kendi sermayemiz",
+      "source": "MT4 detaylı rapor, 9 Eyl 2026",
+      "updated": "2026-09-09",
+      "stats": [
         {
-          "label": "Başlangıç",
-          "value": "2026"
+          "label": "Yatırılan",
+          "value": "47.000 USD",
+          "tone": "neutral"
         },
         {
-          "label": "Enstrümanlar",
-          "value": "Altın, gümüş, endeksler"
+          "label": "Kapanmış net kâr",
+          "value": "+12.422 USD (+%26,4)",
+          "tone": "up"
         },
         {
-          "label": "İşlem başına risk",
-          "value": "300 USD"
+          "label": "Açık pozisyon K/Z",
+          "value": "−3.590 USD",
+          "tone": "down"
         },
         {
-          "label": "Raporlama",
-          "value": "Aylık ekstre"
+          "label": "Kâr faktörü",
+          "value": "8,06",
+          "tone": "neutral"
+        },
+        {
+          "label": "Kazanma oranı",
+          "value": "%77,6 (174 işlemde 135)",
+          "tone": "neutral"
+        },
+        {
+          "label": "Maks. düşüş (kapanmış işlemler)",
+          "value": "%1,21",
+          "tone": "neutral"
         }
-      ],
+      ]
     },
     {
       name: "Kişisel portföy — Saxo Bank",

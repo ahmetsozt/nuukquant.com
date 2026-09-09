@@ -1194,27 +1194,41 @@ export const ar: ContentOverride = {
 
   performance: [
     {
-      name: "المحفظة الشخصية — Tickmill",
-      source: "كشف حساب الوسيط",
-      updated: "شهرياً",
-      stats: [
+      "name": "GANN NUUK Trader AI — Tickmill، رأسمالنا الخاص",
+      "source": "كشف MT4 التفصيلي، 9 سبتمبر 2026",
+      "updated": "2026-09-09",
+      "stats": [
         {
-          "label": "منذ",
-          "value": "2026"
+          "label": "المودَع",
+          "value": "47,000 دولار",
+          "tone": "neutral"
         },
         {
-          "label": "الأدوات",
-          "value": "الذهب والفضة والمؤشرات"
+          "label": "صافي الربح المحقق",
+          "value": "+12,422 دولار (+26.4%)",
+          "tone": "up"
         },
         {
-          "label": "المخاطرة لكل صفقة",
-          "value": "300 دولار"
+          "label": "ربح/خسارة المراكز المفتوحة",
+          "value": "−3,590 دولار",
+          "tone": "down"
         },
         {
-          "label": "التقارير",
-          "value": "كشف شهري"
+          "label": "عامل الربح",
+          "value": "8.06",
+          "tone": "neutral"
+        },
+        {
+          "label": "نسبة الربح",
+          "value": "77.6% (135 من 174)",
+          "tone": "neutral"
+        },
+        {
+          "label": "أقصى تراجع (الصفقات المغلقة)",
+          "value": "1.21%",
+          "tone": "neutral"
         }
-      ],
+      ]
     },
     {
       name: "المحفظة الشخصية — Saxo Bank",

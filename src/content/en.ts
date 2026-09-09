@@ -1387,35 +1387,45 @@ export const en = {
 
   performance: [
     {
-      name: "Personal portfolio — Tickmill",
-      source: "Broker statement",
-      verifiedHref: "",
-      status: "pending",
-      since: "2026",
-      updated: "Monthly",
-      stats: [
+      "name": "GANN NUUK Trader AI — Tickmill, own capital",
+      "source": "MT4 detailed statement, 9 Sep 2026",
+      "verifiedHref": "",
+      "status": "live",
+      "since": "2026",
+      "updated": "2026-09-09",
+      "stats": [
         {
-          "label": "Since",
-          "value": "2026",
+          "label": "Deposited",
+          "value": "USD 47,000",
           "tone": "neutral"
         },
         {
-          "label": "Instruments",
-          "value": "Gold, silver, indices",
+          "label": "Closed net profit",
+          "value": "+USD 12,422 (+26.4%)",
+          "tone": "up"
+        },
+        {
+          "label": "Open P&L",
+          "value": "−USD 3,590",
+          "tone": "down"
+        },
+        {
+          "label": "Profit factor",
+          "value": "8.06",
           "tone": "neutral"
         },
         {
-          "label": "Risk per trade",
-          "value": "USD 300",
+          "label": "Win rate",
+          "value": "77.6% (135 of 174)",
           "tone": "neutral"
         },
         {
-          "label": "Reporting",
-          "value": "Monthly statement",
+          "label": "Max drawdown (closed trades)",
+          "value": "1.21%",
           "tone": "neutral"
         }
       ],
-      series: [100, 103, 101, 106, 109, 108, 114, 118, 116, 121, 125, 123, 129],
+      "series": []
     },
     {
       name: "Personal portfolio — Saxo Bank",

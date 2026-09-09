@@ -1420,27 +1420,41 @@ export const ru: ContentOverride = {
 
   performance: [
     {
-      name: "Личный портфель — Tickmill",
-      source: "Выписка брокера",
-      updated: "Ежемесячно",
-      stats: [
+      "name": "GANN NUUK Trader AI — Tickmill, собственный капитал",
+      "source": "Детальная выписка MT4, 9 сен 2026",
+      "updated": "2026-09-09",
+      "stats": [
         {
-          "label": "С",
-          "value": "2026"
+          "label": "Внесено",
+          "value": "47 000 USD",
+          "tone": "neutral"
         },
         {
-          "label": "Инструменты",
-          "value": "Золото, серебро, индексы"
+          "label": "Закрытая чистая прибыль",
+          "value": "+12 422 USD (+26,4%)",
+          "tone": "up"
         },
         {
-          "label": "Риск на сделку",
-          "value": "300 USD"
+          "label": "Открытый P&L",
+          "value": "−3 590 USD",
+          "tone": "down"
         },
         {
-          "label": "Отчётность",
-          "value": "Ежемесячная выписка"
+          "label": "Профит-фактор",
+          "value": "8,06",
+          "tone": "neutral"
+        },
+        {
+          "label": "Доля прибыльных",
+          "value": "77,6% (135 из 174)",
+          "tone": "neutral"
+        },
+        {
+          "label": "Макс. просадка (закрытые сделки)",
+          "value": "1,21%",
+          "tone": "neutral"
         }
-      ],
+      ]
     },
     {
       name: "Личный портфель — Saxo Bank",

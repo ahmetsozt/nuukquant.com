@@ -1192,27 +1192,41 @@ export const es: ContentOverride = {
 
   performance: [
     {
-      name: "Cartera personal — Tickmill",
-      source: "Extracto del bróker",
-      updated: "Mensual",
-      stats: [
+      "name": "GANN NUUK Trader AI — Tickmill, capital propio",
+      "source": "Extracto detallado MT4, 9 sep 2026",
+      "updated": "2026-09-09",
+      "stats": [
         {
-          "label": "Desde",
-          "value": "2026"
+          "label": "Depositado",
+          "value": "47.000 USD",
+          "tone": "neutral"
         },
         {
-          "label": "Instrumentos",
-          "value": "Oro, plata, índices"
+          "label": "Beneficio neto realizado",
+          "value": "+12.422 USD (+26,4%)",
+          "tone": "up"
         },
         {
-          "label": "Riesgo por operación",
-          "value": "300 USD"
+          "label": "P&L abierto",
+          "value": "−3.590 USD",
+          "tone": "down"
         },
         {
-          "label": "Informes",
-          "value": "Extracto mensual"
+          "label": "Factor de beneficio",
+          "value": "8,06",
+          "tone": "neutral"
+        },
+        {
+          "label": "Tasa de acierto",
+          "value": "77,6% (135 de 174)",
+          "tone": "neutral"
+        },
+        {
+          "label": "Drawdown máx. (operaciones cerradas)",
+          "value": "1,21%",
+          "tone": "neutral"
         }
-      ],
+      ]
     },
     {
       name: "Cartera personal — Saxo Bank",

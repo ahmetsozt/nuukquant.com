@@ -1218,6 +1218,7 @@ export const en = {
     ]
   },
   portal: {
+    linkExpired: "This sign-in link has expired or was already used. Enter your email below and we will send a fresh one.",
     security: {
       passwordTitle: "Password",
       passwordLead: "Optional. You can always sign in with an email link; set a password if you prefer to type one.",

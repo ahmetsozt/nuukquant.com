@@ -1298,6 +1298,7 @@ export const tr: ContentOverride = {
     ]
   },
   portal: {
+    linkExpired: "Bu giriş bağlantısının süresi dolmuş ya da daha önce kullanılmış. E-postanızı girin, yenisini gönderelim.",
     security: {
       passwordTitle: "Şifre",
       passwordLead: "İsteğe bağlı. Her zaman e-posta bağlantısıyla giriş yapabilirsiniz; şifreyle girmeyi tercih ederseniz burada belirleyin.",

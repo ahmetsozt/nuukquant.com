@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageIntro from "@/components/sections/PageIntro";
+import DailyPnl from "@/components/market/DailyPnl";
 import CtaBand from "@/components/sections/CtaBand";
 import SectionHead from "@/components/ui/SectionHead";
 import PerformanceCards from "@/components/home/PerformanceCards";
@@ -17,6 +18,7 @@ export default async function TrackRecordPage({ params }: { params: LocaleParams
   return (
     <>
       <PageIntro tone="light" kicker={p.kicker} title={p.title} body={p.lead} crumbs={[{ label: c.ui.home, href: localeHome }, { label: p.kicker }]} />
+      <DailyPnl c={c} />
       <section className="section-pad bg-white">
         <div className="container-x">
           <PerformanceCards c={c} />

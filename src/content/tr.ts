@@ -16,6 +16,15 @@ export const tr: ContentOverride = {
     "office": "Dubai Uluslararası Finans Merkezi (DIFC), Dubai, BAE"
   },
   ui: {
+    "investorLogin": "Yatırımcı girişi",
+    pnl: {
+      "kicker": "Kendi masamız",
+      "today": "Bugün kapanış",
+      "trades": "işlem",
+      "winRate": "kazanma oranı",
+      "updated": "Güncelleme",
+      "source": "NUUK'un kendi hesabı, MT5 günlük ekstresi; komisyon ve swap düşülmüş. Yalnızca masayı temsil eder; yönetilen hesap sonucu değildir."
+    },
     "contactToOpen": "Hesap açmak için bizimle iletişime geçin",
     "scrollDown": "Aşağı kaydır",
     "contact": "İletişim",
@@ -108,7 +117,9 @@ export const tr: ContentOverride = {
         },
         {
           "label": "Tanıtım Aracısı (IB) Bildirimi"
-        }
+        },
+        { "label": "Yatırımcı Portalı" },
+        { "label": "Vaka Çalışmaları" },
       ]
     }
   ],
@@ -543,6 +554,42 @@ export const tr: ContentOverride = {
         "label": "Ortaklık görüşmesi talep edin"
       }
     },
+    wizard: {
+      "title": "Üç soruda aracı kurumunuzu bulun",
+      "lead": "Üç soruyu yanıtlayın, size uygun ortağı gösterelim. Kişisel tavsiye değildir; güncel koşulları her zaman aracı kurumun sitesinden doğrulayın.",
+      "q1": "Nerede yaşıyorsunuz?",
+      "o1": [
+        "Türkiye",
+        "BAE / Körfez",
+        "AB / Birleşik Krallık",
+        "Diğer"
+      ],
+      "q2": "Ne işlem yapmak istiyorsunuz?",
+      "o2": [
+        "FX, altın ve endeks CFD'leri",
+        "Hisse ve ETF",
+        "Kripto ve çoklu varlık CFD'leri",
+        "Kopya işlem / yönetilen hesap"
+      ],
+      "q3": "Başlangıç sermayesi",
+      "o3": [
+        "1.000 USD altı",
+        "1.000 – 25.000 USD",
+        "25.000 – 250.000 USD",
+        "250.000 USD üzeri"
+      ],
+      "result": "Önerimiz",
+      "alt": "Bakmaya değer",
+      "restart": "Yeniden başla",
+      "reasons": {
+        "pepperstone": "Körfez sakinleri için DFSA lisanslı yapı, FX ve metallerde 0,0 pipten başlayan ham spread, MT4/MT5/cTrader/TradingView.",
+        "tickmill": "FCA ve CySEC denetimi, Türkçe destek, 0,0 pipten ham spread ve havuz hesaplarımızda kullandığımız MAM yapısı.",
+        "saxo": "Banka düzeyinde saklama; hisse, ETF, tahvil ve opsiyonlarda 70.000'den fazla enstrüman; büyük hesaplar için kademeli fiyatlama.",
+        "capital-com": "Düşük minimum, kripto ve hisse dahil 3.000'den fazla CFD, hızlı uygulama; çoklu varlık CFD'lerine ilk adım için uygun.",
+        "midas": "Türkiye'de düzenlenen aracılık uygulaması; BIST, ABD ve Avrupa hisseleri 1 USD'den, Türkçe ve TL ile fonlama.",
+        "darwinex": "Sistematik stratejinizi yatırım yapılabilir bir DARWIN'e dönüştürün ya da bizimkini takip edin; FCA denetimli, kopya ve tahsis yerleşik."
+      }
+    },
     cardLabels: {
       "contactNote": "{broker} nezdindeki hesaplar, ortaklık anlaşmamız kapsamında NUUK aracılığıyla açılır. Bizimle iletişime geçin; hesap açılışını birlikte yürütelim. Aşağıdaki adımlar aracı kurumun sizden isteyeceklerini gösterir.",
       "regulator": "Düzenleyici otorite",
@@ -874,6 +921,12 @@ export const tr: ContentOverride = {
   },
 
   insights: {
+    "notesTitle": "Masa notları",
+    "newsTitle": "Canlı piyasa haberleri",
+    "newsLead": "Profesyonel haber ajansları ve TradingView analistlerinden başlıklar ve analizler, yayımlandıkça akar. Saatler yerel saat diliminizde.",
+    "techTitle": "Teknik görünüm",
+    "techLead": "Sistemlerimizin en çok işlem yaptığı enstrümanlarda, günlük periyotta osilatör ve hareketli ortalama okumalarının toplulaştırılmış özeti.",
+    "feedNote": "Akışlar TradingView tarafından sağlanır. Üçüncü taraf içerikleri NUUK'un görüşü değildir ve yatırım tavsiyesi niteliği taşımaz.",
     metaTitle: "Analizler",
     metaDescription: "Makro, FX, emtia, endeksler, kripto ve işlemlerde yapay zekâ üzerine piyasa yorumları.",
     kicker: "Analizler",
@@ -1064,6 +1117,184 @@ export const tr: ContentOverride = {
       "label": "IB bildirimini okuyun",
       "href": "/legal/ib-disclosure/"
     }
+  },
+  investors: {
+    "metaTitle": "Yatırımcı Portalı",
+    "metaDescription": "Yönetilen hesap müşterileri nereden giriş yapar, NUUK her ay ne raporlar ve erişim nasıl talep edilir.",
+    "kicker": "Yatırımcı Portalı",
+    "title": "Hesabınız, girişiniz, raporlarınız",
+    "lead": "Yönetilen hesaplar aracı kurumda, kendi adınıza tutulur. Gerçek zamanlı ekstre için aracı kurumun müşteri portalına giriş yapın; NUUK aylık raporu ve üç aylık değerlendirmeyi ekler.",
+    "portalsTitle": "Aracı kurum müşteri portalları",
+    "portalLabel": "Müşteri portalı",
+    "reportsTitle": "NUUK'tan ne alırsınız",
+    "reports": [
+      {
+        "title": "Gerçek zamanlı ekstre",
+        "body": "Her işlem, ücret ve bakiye gerçekleştiği anda aracı kurum hesabınızda görünür. Orada göremeyeceğiniz hiçbir şeyi biz raporlamayız."
+      },
+      {
+        "title": "Aylık rapor",
+        "body": "Beşinci iş gününe kadar: net performans, alınan ücretler, enstrüman bazında maruziyet, yetki belgesine göre düşüş ve kısa bir yorum."
+      },
+      {
+        "title": "Üç aylık değerlendirme",
+        "body": "Yetki belgesini, risk limitlerini ve hedefleriniz ya da likidite ihtiyacınızdaki değişiklikleri gözden geçirmek için 30 dakikalık görüşme."
+      },
+      {
+        "title": "Yıllık ücret dökümü",
+        "body": "Muhasebeciniz için tek sayfa: yönetim ve performans ücretleri, en yüksek değer seviyesi geçmişi ve para çekimleri."
+      }
+    ],
+    "accessTitle": "Portal erişimi talep edin",
+    "accessBody": "Raporlar yetki belgenizdeki e-posta adresine gönderilir. Adresi değiştirmek, ikinci bir alıcı eklemek veya bulamadığınız bir raporu istemek için hesap numaranızla bize ulaşın.",
+    "accessCta": {
+      "label": "Masayla iletişime geçin",
+      "href": "/contact-us/"
+    },
+    "faqTitle": "Erişim ve para çekme",
+    "faq": [
+      {
+        "q": "Paramı kim tutuyor?",
+        "a": "Aracı kurum, kendi adınıza açılmış hesapta. NUUK yalnızca işlem yetkisine sahiptir; para çekemez veya transfer edemez."
+      },
+      {
+        "q": "İstediğim zaman para çekebilir miyim?",
+        "a": "Havuz MAM: ilk 30 günden sonra istediğiniz zaman. Özel hesap: açık pozisyonların düzenli kapatılabilmesi için 30 gün önceden bildirimle. Para çekme işlemini aracı kurum portalında siz yaparsınız."
+      },
+      {
+        "q": "Aldığınız ücretleri nerede görürüm?",
+        "a": "Aracı kurum ekstresinde ayrı kalemler olarak ve aylık raporda özet halinde."
+      }
+    ],
+    "portals": [
+      {
+        "slug": "pepperstone",
+        "name": "Pepperstone",
+        "href": "https://secure.pepperstone.com/"
+      },
+      {
+        "slug": "tickmill",
+        "name": "Tickmill",
+        "href": "https://my.tickmill.com/"
+      },
+      {
+        "slug": "saxo",
+        "name": "Saxo Bank",
+        "href": "https://www.saxotrader.com/"
+      },
+      {
+        "slug": "capital-com",
+        "name": "Capital.com",
+        "href": "https://capital.com/trading/platform/"
+      },
+      {
+        "slug": "midas",
+        "name": "Midas",
+        "href": "https://www.getmidas.com/"
+      },
+      {
+        "slug": "darwinex",
+        "name": "Darwinex",
+        "href": "https://www.darwinex.com/login"
+      }
+    ]
+  },
+  caseStudies: {
+    "metaTitle": "Vaka Çalışmaları",
+    "metaDescription": "NUUK'un bir yetki belgesini nasıl yapılandırdığını, risk limitlerini nasıl belirlediğini ve ücretlendirdiğini gösteren üç temsili senaryo. Gerçek müşteri anlatılmamaktadır.",
+    "kicker": "Vaka Çalışmaları",
+    "title": "Bir yetki nasıl kurulur: üç senaryo",
+    "lead": "Temsili senaryolar; müşteri hikâyesi değildir. Profiller kurgusaldır; ücretler, limitler ve hesaplamalar birebir kullandıklarımızdır.",
+    "badge": "Temsili senaryo",
+    "labels": {
+      "profile": "Profil",
+      "objective": "Hedef",
+      "structure": "Önerimiz",
+      "mandate": "Yetki belgesi",
+      "fees": "Ücretler",
+      "year": "%12 brüt getirili temsili bir yıl",
+      "note": "Dikkat edilecek nokta"
+    },
+    "items": [
+      {
+        "name": "Aile ofisi hazinesi, Dubai",
+        "profile": "60 gün içinde likit kalması gereken 500.000 USD hazine nakdi tutan tek aileli bir ofis.",
+        "objective": "Önce sermayeyi koru; yıllık %8–12 net hedef, maksimum %8 düşüş.",
+        "structure": "Saxo Bank'ta ofisin kendi adına özel PAMM hesabı; yazılı yetki belgesiyle işlem.",
+        "mandate": [
+          "Enstrümanlar: ana FX pariteleri, altın, ABD ve AB endeks CFD'leri",
+          "Maksimum brüt maruziyet özkaynağın 3 katı, günlük zarar limiti %1",
+          "Maksimum düşüş %8: hesap durdurulur ve değerlendirilir",
+          "Para çekimde 30 gün önceden bildirim"
+        ],
+        "fees": "Aylık 1.000 USD (bu büyüklükte yıllık %2,4) artı yönetim ücreti sonrası en yüksek değer seviyesinin üzerindeki kârın %25'i.",
+        "rows": [
+          [
+            "Brüt kâr (%12)",
+            "60.000 USD"
+          ],
+          [
+            "Yönetim ücreti (12 × 1.000 USD)",
+            "12.000 USD"
+          ],
+          [
+            "Performans ücreti (48.000 USD'nin %25'i)",
+            "12.000 USD"
+          ],
+          [
+            "Ofise kalan net",
+            "36.000 USD (+%7,2)"
+          ]
+        ],
+        "note": "500.000 USD'de sabit yönetim ücreti yıllık %2,4'e düşer. 250.000 USD altında aynı ücret fazla ağır olurdu; özel kademenin oradan başlamasının nedeni budur."
+      },
+      {
+        "name": "Kendi işlem yapan yatırımcı, İstanbul",
+        "profile": "Üç yıldır 5.000 USD ile kendi başına FX işlemi yapan ve sistemleri çalıştırmadan kullanmak isteyen bir mühendis.",
+        "objective": "NUUK sistemlerine sistematik maruziyet, yönetim ücreti yok, hızlı çıkış imkânı.",
+        "structure": "Tickmill'de havuz MAM: kendi adına kendi hesabı, havuza tahsisli.",
+        "mandate": [
+          "NUUK'un kendi sermayesiyle aynı sistemler ve risk limitleri",
+          "GANN Live'da işlem başına sabit 300 USD risk, havuz büyüklüğüne ölçeklenir",
+          "Yönetim ücreti yok; 30 gün kilit süresi, sonra istediğinde çekim"
+        ],
+        "fees": "Yönetim ücreti yok; en yüksek değer seviyesinin üzerindeki kârın %25'i.",
+        "rows": [
+          [
+            "Brüt kâr (%12)",
+            "600 USD"
+          ],
+          [
+            "Yönetim ücreti",
+            "0 USD"
+          ],
+          [
+            "Performans ücreti (%25)",
+            "150 USD"
+          ],
+          [
+            "Yatırımcıya kalan net",
+            "450 USD (+%9,0)"
+          ]
+        ],
+        "note": "Zararlı bir yıl ona ücret olarak hiçbir şeye mal olmaz; yeniden performans ücreti alınabilmesi için havuzun en yüksek değer seviyesini geri kazanması gerekir."
+      },
+      {
+        "name": "Kitlesi olan eğitmen, Riyad",
+        "profile": "2.000 öğrencisi olan ve zaten gayriresmî olarak aracı kurum öneren bir işlem eğitmeni.",
+        "objective": "Önerileri aracı kurum olmadan ve müşteri parasına dokunmadan şeffaf biçimde gelire dönüştürmek.",
+        "structure": "NUUK ana tanıtıcı ortak anlaşması: öğrencileri NUUK'un ortak linkleriyle hesap açar; iade onunla paylaşılır.",
+        "mandate": [
+          "Yazılı iade paylaşımı; aylık ödeme ve müşteri bazında döküm",
+          "Arapça ve İngilizce aracı kurum kaydı ve KYC rehberliği",
+          "Yeniden kullanabileceği karşılaştırma materyali ve ekonomik takvim",
+          "Öğrencilere açıklama: iadeyi aracı kurum öder, koşullar değişmez"
+        ],
+        "fees": "Ona veya öğrencilerine ücret yok; gelir, IB bildiriminde açıklanan aracı kurum iadesinden gelir.",
+        "rows": [],
+        "note": "İade her aracı kurumun tarifesine ve öğrencilerin hacmine bağlıdır; bu yüzden burada rakam gösterilmez. Şartlar ilk müşteri tanıtılmadan önce yazılı olarak kararlaştırılır."
+      }
+    ]
   },
   contact: {
     "metaTitle": "İletişim",

@@ -18,6 +18,15 @@ export const es: ContentOverride = {
     office: "Dubai International Financial Centre (DIFC), Dubái, EAU",
   },
   ui: {
+    investorLogin: "Acceso inversores",
+    pnl: {
+      "kicker": "Mesa propia",
+      "today": "Cierre de hoy",
+      "trades": "operaciones",
+      "winRate": "tasa de acierto",
+      "updated": "Actualizado",
+      "source": "Cuenta propia de NUUK, extracto diario de MT5, neto de comisión y swap. Solo ilustra la mesa; no es un resultado de cuenta gestionada."
+    },
     contactToOpen: "Contáctenos para abrir una cuenta",
     scrollDown: "Desplazarse hacia abajo",
     contact: "Contacto",
@@ -81,6 +90,8 @@ export const es: ContentOverride = {
         { label: "Contacto" },
         { label: "Advertencia de riesgo" },
         { label: "Declaración de IB" },
+        { label: "Portal del inversor" },
+        { label: "Casos prácticos" },
       ],
     },
   ],
@@ -352,6 +363,42 @@ export const es: ContentOverride = {
         "label": "Hablar de una alianza"
       }
     },
+    wizard: {
+      "title": "Encuentre su bróker en tres preguntas",
+      "lead": "Responda tres preguntas y le indicamos el socio que encaja. No es asesoramiento personal; compruebe siempre las condiciones vigentes en la web del bróker.",
+      "q1": "¿Dónde reside?",
+      "o1": [
+        "Türkiye",
+        "EAU / Golfo",
+        "UE / Reino Unido",
+        "Otro lugar"
+      ],
+      "q2": "¿Qué quiere operar?",
+      "o2": [
+        "Forex, oro y CFD sobre índices",
+        "Acciones y ETF",
+        "Cripto y CFD multiactivo",
+        "Copy trading / cuenta gestionada"
+      ],
+      "q3": "Capital inicial",
+      "o3": [
+        "Menos de 1.000 USD",
+        "1.000 – 25.000 USD",
+        "25.000 – 250.000 USD",
+        "Más de 250.000 USD"
+      ],
+      "result": "Nuestra recomendación",
+      "alt": "También merece un vistazo",
+      "restart": "Empezar de nuevo",
+      "reasons": {
+        "pepperstone": "Entidad regulada por la DFSA para residentes del Golfo, spreads raw desde 0,0 pips en forex y metales, MT4/MT5/cTrader/TradingView.",
+        "tickmill": "Regulado por FCA y CySEC con soporte en turco, spreads raw desde 0,0 pips y la estructura MAM que usamos para las cuentas agrupadas.",
+        "saxo": "Custodia de nivel bancario y más de 70.000 instrumentos en acciones, ETF, bonos y opciones, con precios escalonados para cuentas grandes.",
+        "capital-com": "Mínimo bajo, más de 3.000 CFD incluidos cripto y acciones y una app rápida; adecuado para los primeros pasos en CFD multiactivo.",
+        "midas": "App de intermediación regulada en Türkiye para acciones de BIST, EE. UU. y Europa desde 1 USD, en turco y con ingreso en TRY.",
+        "darwinex": "Convierta una estrategia sistemática en un DARWIN invertible o siga el nuestro; regulado por la FCA con copia y asignación integradas."
+      }
+    },
     cardLabels: {
       contactNote: "Las cuentas en {broker} se abren a través de NUUK en virtud de nuestro acuerdo de colaboración. Contáctenos y le acompañaremos en la apertura; los pasos siguientes muestran lo que le pedirá el bróker.",
       regulator: "Regulador",
@@ -614,6 +661,12 @@ export const es: ContentOverride = {
   },
 
   insights: {
+    notesTitle: "Notas de la mesa",
+    newsTitle: "Noticias de mercado en directo",
+    newsLead: "Titulares y análisis de agencias profesionales y colaboradores de TradingView, emitidos según se publican. Horas en su zona horaria.",
+    techTitle: "Instantánea técnica",
+    techLead: "Lecturas agregadas de osciladores y medias móviles en los instrumentos que más operan nuestros sistemas, en marco diario.",
+    feedNote: "Fuentes de TradingView. El contenido de terceros no es la opinión de NUUK ni constituye asesoramiento de inversión.",
     metaTitle: "Análisis",
     metaDescription: "Comentario de mercado sobre macro, FX, materias primas, índices, cripto e IA aplicada al trading.",
     kicker: "Análisis",
@@ -804,6 +857,184 @@ export const es: ContentOverride = {
       "label": "Leer la declaración de IB",
       "href": "/legal/ib-disclosure/"
     }
+  },
+  investors: {
+    "metaTitle": "Portal del inversor",
+    "metaDescription": "Dónde inician sesión los clientes de cuentas gestionadas, qué informa NUUK cada mes y cómo solicitar acceso.",
+    "kicker": "Portal del inversor",
+    "title": "Su cuenta, su acceso, sus informes",
+    "lead": "Las cuentas gestionadas están en el bróker, a su nombre. Inicie sesión en el portal de clientes del bróker para extractos en tiempo real; NUUK añade el informe mensual y la revisión trimestral.",
+    "portalsTitle": "Portales de clientes de los brókeres",
+    "portalLabel": "Portal de clientes",
+    "reportsTitle": "Lo que recibe de NUUK",
+    "reports": [
+      {
+        "title": "Extractos en tiempo real",
+        "body": "Cada operación, comisión y saldo es visible en su cuenta del bróker en el momento. No informamos de nada que no pueda ver allí."
+      },
+      {
+        "title": "Informe mensual",
+        "body": "Antes del quinto día hábil: rendimiento neto, comisiones cobradas, exposición por instrumento, drawdown frente al mandato y un breve comentario."
+      },
+      {
+        "title": "Revisión trimestral",
+        "body": "Una llamada de 30 minutos para revisar el mandato, los límites de riesgo y cualquier cambio en sus objetivos o necesidades de liquidez."
+      },
+      {
+        "title": "Resumen anual de comisiones",
+        "body": "Una página para su contable: comisiones de gestión y de éxito, historial del máximo histórico y retiradas."
+      }
+    ],
+    "accessTitle": "Solicitar acceso al portal",
+    "accessBody": "Los informes se envían al correo de su mandato. Para cambiar la dirección, añadir un segundo destinatario o pedir un informe que no encuentra, contáctenos con su número de cuenta.",
+    "accessCta": {
+      "label": "Contactar con la mesa",
+      "href": "/contact-us/"
+    },
+    "faqTitle": "Acceso y retiradas",
+    "faq": [
+      {
+        "q": "¿Quién custodia mi dinero?",
+        "a": "El bróker, en una cuenta a su nombre. NUUK solo tiene permiso de operativa y no puede retirar ni transferir fondos."
+      },
+      {
+        "q": "¿Puedo retirar en cualquier momento?",
+        "a": "MAM agrupado: tras los primeros 30 días, en cualquier momento. Cuenta dedicada: con 30 días de preaviso para cerrar posiciones de forma ordenada. Las retiradas las hace usted en el portal del bróker."
+      },
+      {
+        "q": "¿Dónde veo las comisiones cobradas?",
+        "a": "En el extracto del bróker, como partidas separadas, y resumidas en el informe mensual."
+      }
+    ],
+    "portals": [
+      {
+        "slug": "pepperstone",
+        "name": "Pepperstone",
+        "href": "https://secure.pepperstone.com/"
+      },
+      {
+        "slug": "tickmill",
+        "name": "Tickmill",
+        "href": "https://my.tickmill.com/"
+      },
+      {
+        "slug": "saxo",
+        "name": "Saxo Bank",
+        "href": "https://www.saxotrader.com/"
+      },
+      {
+        "slug": "capital-com",
+        "name": "Capital.com",
+        "href": "https://capital.com/trading/platform/"
+      },
+      {
+        "slug": "midas",
+        "name": "Midas",
+        "href": "https://www.getmidas.com/"
+      },
+      {
+        "slug": "darwinex",
+        "name": "Darwinex",
+        "href": "https://www.darwinex.com/login"
+      }
+    ]
+  },
+  caseStudies: {
+    "metaTitle": "Casos prácticos",
+    "metaDescription": "Tres escenarios ilustrativos que muestran cómo NUUK estructura un mandato, fija los límites de riesgo y cobra sus comisiones. No se representa a ningún cliente.",
+    "kicker": "Casos prácticos",
+    "title": "Cómo se construye un mandato, en tres escenarios",
+    "lead": "Escenarios ilustrativos, no historias de clientes. Los perfiles son compuestos; las comisiones, límites y cálculos son exactamente los que aplicamos.",
+    "badge": "Escenario ilustrativo",
+    "labels": {
+      "profile": "Perfil",
+      "objective": "Objetivo",
+      "structure": "Lo que propondríamos",
+      "mandate": "Mandato",
+      "fees": "Comisiones",
+      "year": "Un año ilustrativo al 12% bruto",
+      "note": "Qué observar"
+    },
+    "items": [
+      {
+        "name": "Tesorería de un family office, Dubái",
+        "profile": "Un family office con 500.000 USD de tesorería que debe seguir siendo líquida en 60 días.",
+        "objective": "Preservar el capital primero; objetivo del 8–12% neto anual con un drawdown máximo del 8%.",
+        "structure": "Una cuenta PAMM dedicada en Saxo Bank a nombre del family office, operada bajo mandato escrito.",
+        "mandate": [
+          "Instrumentos: pares mayores de forex, oro, CFD sobre índices de EE. UU. y la UE",
+          "Exposición bruta máxima 3× el patrimonio, límite de pérdida diaria del 1%",
+          "Drawdown máximo del 8%: cuenta en pausa y revisión",
+          "Preaviso de 30 días para retiradas"
+        ],
+        "fees": "1.000 USD al mes (2,4% anual a este tamaño) más el 25% del beneficio por encima del máximo histórico, tras la comisión de gestión.",
+        "rows": [
+          [
+            "Beneficio bruto (12%)",
+            "60.000 USD"
+          ],
+          [
+            "Comisión de gestión (12 × 1.000 USD)",
+            "12.000 USD"
+          ],
+          [
+            "Comisión de éxito (25% de 48.000 USD)",
+            "12.000 USD"
+          ],
+          [
+            "Neto para el family office",
+            "36.000 USD (+7,2%)"
+          ]
+        ],
+        "note": "Con 500.000 USD la comisión de gestión fija baja al 2,4% anual. Por debajo de 250.000 USD la misma comisión sería demasiado pesada; por eso el nivel dedicado empieza ahí."
+      },
+      {
+        "name": "Trader autónomo, Estambul",
+        "profile": "Un ingeniero que opera forex por su cuenta desde hace tres años con 5.000 USD y quiere los sistemas sin ejecutarlos.",
+        "objective": "Exposición sistemática a los sistemas NUUK, sin comisión de gestión y con salida rápida.",
+        "structure": "MAM agrupado en Tickmill: su propia cuenta, a su nombre, asignada al pool.",
+        "mandate": [
+          "Los mismos sistemas y límites de riesgo que el capital propio de NUUK",
+          "Riesgo fijo de 300 USD por operación en GANN Live, escalado al tamaño del pool",
+          "Sin comisión de gestión; bloqueo de 30 días y después retirada en cualquier momento"
+        ],
+        "fees": "Sin comisión de gestión; 25% del beneficio por encima del máximo histórico.",
+        "rows": [
+          [
+            "Beneficio bruto (12%)",
+            "600 USD"
+          ],
+          [
+            "Comisión de gestión",
+            "0 USD"
+          ],
+          [
+            "Comisión de éxito (25%)",
+            "150 USD"
+          ],
+          [
+            "Neto para el trader",
+            "450 USD (+9,0%)"
+          ]
+        ],
+        "note": "Un año con pérdidas no le cuesta nada en comisiones; el pool debe recuperar el máximo histórico antes de volver a cobrar la comisión de éxito."
+      },
+      {
+        "name": "Formadora con audiencia, Riad",
+        "profile": "Una formadora de trading con 2.000 alumnos que ya recomienda brókeres de manera informal.",
+        "objective": "Monetizar las recomendaciones con transparencia sin convertirse en bróker ni manejar dinero de clientes.",
+        "structure": "Acuerdo de introductor principal con NUUK: sus alumnos abren cuentas con los enlaces de socios de NUUK; la retrocesión se reparte con ella.",
+        "mandate": [
+          "Reparto de retrocesión por escrito, pagado mensualmente con un extracto por cliente",
+          "Orientación de apertura de cuenta y KYC en árabe e inglés",
+          "Material comparativo y calendario económico reutilizables",
+          "Información a los alumnos: la retrocesión la paga el bróker y las condiciones no cambian"
+        ],
+        "fees": "Sin coste para ella ni para sus alumnos; el ingreso procede de la retrocesión del bróker, declarada en la declaración de IB.",
+        "rows": [],
+        "note": "La retrocesión depende de la tarifa de cada bróker y del volumen de sus alumnos, por lo que aquí no se muestra cifra. Las condiciones se acuerdan por escrito antes de presentar al primer cliente."
+      }
+    ]
   },
   contact: {
     metaTitle: "Contacto",

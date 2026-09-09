@@ -8,6 +8,7 @@ import Badge from "@/components/ui/Badge";
 import BrokerLogo from "@/components/ui/BrokerLogo";
 import Button from "@/components/ui/Button";
 import { BrokerCardFull, brokerCta, brokerHref } from "@/components/home/BrokerCard";
+import BrokerWizard from "@/components/brokers/BrokerWizard";
 import { resolve, type LocaleParams } from "@/lib/page";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
@@ -37,7 +38,13 @@ export default async function BrokersPage({ params }: { params: LocaleParams }) 
         <p className="mt-8 max-w-[560px] rounded-card-sm bg-white/10 p-4 text-[13px] leading-5 text-white/80 ring-1 ring-white/10">{p.disclosure}</p>
       </PageIntro>
 
-      <section className="section-pad bg-white">
+      <section className="section-pad bg-white" aria-label={p.wizard.title}>
+        <div className="container-x">
+          <BrokerWizard c={c} />
+        </div>
+      </section>
+
+      <section className="section-pad bg-white pt-0">
         <div className="container-x">
           <SectionHead title={p.compareTitle} />
           <div className="mt-8 overflow-x-auto rounded-card shadow-card ring-1 ring-black/5 scroll-row">

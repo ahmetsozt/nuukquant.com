@@ -19,6 +19,15 @@ export const fr: ContentOverride = {
     office: "Dubai International Financial Centre (DIFC), Dubaï, Émirats arabes unis",
   },
   ui: {
+    investorLogin: "Accès investisseur",
+    pnl: {
+      "kicker": "Desk propriétaire",
+      "today": "Clôturé aujourd’hui",
+      "trades": "trades",
+      "winRate": "taux de réussite",
+      "updated": "Mis à jour",
+      "source": "Compte propre de NUUK, relevé quotidien MT5, net de commission et de swap. Illustre le desk uniquement ; pas un résultat de compte géré."
+    },
     contactToOpen: "Contactez-nous pour ouvrir un compte",
     scrollDown: "Faire défiler",
     contact: "Contact",
@@ -82,6 +91,8 @@ export const fr: ContentOverride = {
         { label: "Contact" },
         { label: "Avertissement sur les risques" },
         { label: "Information IB" },
+        { label: "Espace investisseur" },
+        { label: "Études de cas" },
       ],
     },
   ],
@@ -352,6 +363,42 @@ export const fr: ContentOverride = {
       ],
       "cta": {
         "label": "Discuter d'un partenariat"
+      }
+    },
+    wizard: {
+      "title": "Trouvez votre courtier en trois questions",
+      "lead": "Répondez à trois questions et nous vous indiquons le partenaire adapté. Ce n’est pas un conseil personnalisé ; vérifiez toujours les conditions en vigueur sur le site du courtier.",
+      "q1": "Où résidez-vous ?",
+      "o1": [
+        "Türkiye",
+        "Émirats / Golfe",
+        "UE / Royaume-Uni",
+        "Ailleurs"
+      ],
+      "q2": "Que souhaitez-vous trader ?",
+      "o2": [
+        "Forex, or et CFD sur indices",
+        "Actions et ETF",
+        "Crypto et CFD multi-actifs",
+        "Copy trading / compte géré"
+      ],
+      "q3": "Capital de départ",
+      "o3": [
+        "Moins de 1 000 USD",
+        "1 000 – 25 000 USD",
+        "25 000 – 250 000 USD",
+        "Plus de 250 000 USD"
+      ],
+      "result": "Notre recommandation",
+      "alt": "À considérer aussi",
+      "restart": "Recommencer",
+      "reasons": {
+        "pepperstone": "Entité régulée par la DFSA pour les résidents du Golfe, spreads bruts dès 0,0 pip sur le forex et les métaux, MT4/MT5/cTrader/TradingView.",
+        "tickmill": "Régulé FCA et CySEC avec un support en turc, spreads bruts dès 0,0 pip et la structure MAM que nous utilisons pour les comptes mutualisés.",
+        "saxo": "Conservation de niveau bancaire et plus de 70 000 instruments (actions, ETF, obligations, options), tarification par paliers pour les gros comptes.",
+        "capital-com": "Minimum bas, plus de 3 000 CFD dont crypto et actions, application rapide ; adapté aux premiers pas en CFD multi-actifs.",
+        "midas": "Application de courtage régulée en Türkiye pour les actions BIST, américaines et européennes dès 1 USD, en turc, avec dépôt en TRY.",
+        "darwinex": "Transformez une stratégie systématique en DARWIN investissable ou suivez la nôtre ; régulé FCA, copie et allocation intégrées."
       }
     },
     cardLabels: {
@@ -802,6 +849,12 @@ export const fr: ContentOverride = {
   },
 
   insights: {
+    notesTitle: "Notes du desk",
+    newsTitle: "Actualité des marchés en direct",
+    newsLead: "Titres et analyses des agences professionnelles et des contributeurs TradingView, diffusés dès publication. Heures dans votre fuseau.",
+    techTitle: "Instantané technique",
+    techLead: "Lectures agrégées des oscillateurs et moyennes mobiles sur les instruments que nos systèmes tradent le plus, en journalier.",
+    feedNote: "Flux fournis par TradingView. Les contenus tiers ne reflètent pas l’avis de NUUK et ne constituent pas un conseil en investissement.",
     metaTitle: "Analyses",
     metaDescription: "Commentaires de marché sur la macro, le forex, les matières premières, les indices, les cryptos et l'IA appliquée au trading.",
     kicker: "Analyses",
@@ -992,6 +1045,184 @@ export const fr: ContentOverride = {
       "label": "Lire l’information IB",
       "href": "/legal/ib-disclosure/"
     }
+  },
+  investors: {
+    "metaTitle": "Espace investisseur",
+    "metaDescription": "Où les clients des comptes gérés se connectent, ce que NUUK rapporte chaque mois et comment demander l’accès.",
+    "kicker": "Espace investisseur",
+    "title": "Votre compte, votre accès, vos rapports",
+    "lead": "Les comptes gérés sont chez le courtier, à votre nom. Connectez-vous au portail client du courtier pour les relevés en temps réel ; NUUK ajoute le rapport mensuel et la revue trimestrielle.",
+    "portalsTitle": "Portails clients des courtiers",
+    "portalLabel": "Portail client",
+    "reportsTitle": "Ce que vous recevez de NUUK",
+    "reports": [
+      {
+        "title": "Relevés en temps réel",
+        "body": "Chaque opération, frais et solde est visible dans votre compte de courtage à l’instant même. Nous ne rapportons rien que vous ne puissiez y voir."
+      },
+      {
+        "title": "Rapport mensuel",
+        "body": "Avant le cinquième jour ouvré : performance nette, frais prélevés, exposition par instrument, drawdown par rapport au mandat et bref commentaire."
+      },
+      {
+        "title": "Revue trimestrielle",
+        "body": "Un appel de 30 minutes pour revoir le mandat, les limites de risque et tout changement de vos objectifs ou besoins de liquidité."
+      },
+      {
+        "title": "Relevé annuel des frais",
+        "body": "Une page pour votre comptable : frais de gestion et de performance, historique du plus-haut et retraits."
+      }
+    ],
+    "accessTitle": "Demander l’accès au portail",
+    "accessBody": "Les rapports sont envoyés à l’e-mail figurant sur votre mandat. Pour changer d’adresse, ajouter un second destinataire ou demander un rapport introuvable, contactez-nous avec votre numéro de compte.",
+    "accessCta": {
+      "label": "Contacter le desk",
+      "href": "/contact-us/"
+    },
+    "faqTitle": "Accès et retraits",
+    "faq": [
+      {
+        "q": "Qui détient mon argent ?",
+        "a": "Le courtier, sur un compte à votre nom. NUUK ne dispose que d’un droit de négociation et ne peut ni retirer ni transférer des fonds."
+      },
+      {
+        "q": "Puis-je retirer à tout moment ?",
+        "a": "MAM mutualisé : après les 30 premiers jours, à tout moment. Compte dédié : avec un préavis de 30 jours pour clôturer les positions de façon ordonnée. Les retraits sont effectués par vous, dans le portail du courtier."
+      },
+      {
+        "q": "Où voir les frais prélevés ?",
+        "a": "Sur le relevé du courtier, en lignes séparées, et en résumé dans le rapport mensuel."
+      }
+    ],
+    "portals": [
+      {
+        "slug": "pepperstone",
+        "name": "Pepperstone",
+        "href": "https://secure.pepperstone.com/"
+      },
+      {
+        "slug": "tickmill",
+        "name": "Tickmill",
+        "href": "https://my.tickmill.com/"
+      },
+      {
+        "slug": "saxo",
+        "name": "Saxo Bank",
+        "href": "https://www.saxotrader.com/"
+      },
+      {
+        "slug": "capital-com",
+        "name": "Capital.com",
+        "href": "https://capital.com/trading/platform/"
+      },
+      {
+        "slug": "midas",
+        "name": "Midas",
+        "href": "https://www.getmidas.com/"
+      },
+      {
+        "slug": "darwinex",
+        "name": "Darwinex",
+        "href": "https://www.darwinex.com/login"
+      }
+    ]
+  },
+  caseStudies: {
+    "metaTitle": "Études de cas",
+    "metaDescription": "Trois scénarios illustratifs montrant comment NUUK structure un mandat, fixe les limites de risque et facture ses frais. Aucun client n’est représenté.",
+    "kicker": "Études de cas",
+    "title": "Comment un mandat se construit, en trois scénarios",
+    "lead": "Des scénarios illustratifs, pas des histoires de clients. Les profils sont composites ; les frais, limites et calculs sont exactement ceux que nous appliquons.",
+    "badge": "Scénario illustratif",
+    "labels": {
+      "profile": "Profil",
+      "objective": "Objectif",
+      "structure": "Ce que nous proposerions",
+      "mandate": "Mandat",
+      "fees": "Frais",
+      "year": "Une année illustrative à 12 % brut",
+      "note": "À noter"
+    },
+    "items": [
+      {
+        "name": "Trésorerie d’un family office, Dubaï",
+        "profile": "Un family office détenant 500 000 USD de trésorerie devant rester liquide sous 60 jours.",
+        "objective": "Préserver le capital d’abord ; viser 8 à 12 % net par an avec un drawdown maximal de 8 %.",
+        "structure": "Un compte PAMM dédié chez Saxo Bank au nom du family office, géré sous mandat écrit.",
+        "mandate": [
+          "Instruments : majeures forex, or, CFD sur indices US et UE",
+          "Exposition brute maximale 3× les fonds propres, limite de perte quotidienne 1 %",
+          "Drawdown maximal 8 % : compte mis en pause et revu",
+          "Préavis de 30 jours pour les retraits"
+        ],
+        "fees": "1 000 USD par mois (2,4 % par an à cette taille) plus 25 % du bénéfice au-dessus du plus-haut, après frais de gestion.",
+        "rows": [
+          [
+            "Bénéfice brut (12 %)",
+            "60 000 USD"
+          ],
+          [
+            "Frais de gestion (12 × 1 000 USD)",
+            "12 000 USD"
+          ],
+          [
+            "Frais de performance (25 % de 48 000 USD)",
+            "12 000 USD"
+          ],
+          [
+            "Net pour le family office",
+            "36 000 USD (+7,2 %)"
+          ]
+        ],
+        "note": "À 500 000 USD, les frais de gestion fixes tombent à 2,4 % par an. Sous 250 000 USD, les mêmes frais seraient trop lourds ; c’est pourquoi le palier dédié commence là."
+      },
+      {
+        "name": "Trader autonome, Istanbul",
+        "profile": "Un ingénieur qui trade le forex seul depuis trois ans avec 5 000 USD et veut les systèmes sans les faire tourner.",
+        "objective": "Exposition systématique aux systèmes NUUK, sans frais de gestion, avec sortie rapide possible.",
+        "structure": "MAM mutualisé chez Tickmill : son propre compte, à son nom, alloué au pool.",
+        "mandate": [
+          "Mêmes systèmes et limites de risque que le capital propre de NUUK",
+          "Risque fixe de 300 USD par trade sur GANN Live, à l’échelle du pool",
+          "Pas de frais de gestion ; blocage de 30 jours, puis retrait à tout moment"
+        ],
+        "fees": "Pas de frais de gestion ; 25 % du bénéfice au-dessus du plus-haut.",
+        "rows": [
+          [
+            "Bénéfice brut (12 %)",
+            "600 USD"
+          ],
+          [
+            "Frais de gestion",
+            "0 USD"
+          ],
+          [
+            "Frais de performance (25 %)",
+            "150 USD"
+          ],
+          [
+            "Net pour le trader",
+            "450 USD (+9,0 %)"
+          ]
+        ],
+        "note": "Une année perdante ne lui coûte rien en frais ; le pool doit retrouver son plus-haut avant qu’un frais de performance soit à nouveau prélevé."
+      },
+      {
+        "name": "Formatrice avec une audience, Riyad",
+        "profile": "Une formatrice en trading avec 2 000 élèves qui recommande déjà des courtiers de façon informelle.",
+        "objective": "Monétiser les recommandations de façon transparente sans devenir courtier ni manipuler l’argent des clients.",
+        "structure": "Accord d’apporteur principal avec NUUK : ses élèves ouvrent des comptes via les liens partenaires de NUUK ; la rétrocession est partagée avec elle.",
+        "mandate": [
+          "Partage de rétrocession écrit, payé mensuellement avec un relevé par client",
+          "Accompagnement à l’ouverture de compte et au KYC en arabe et en anglais",
+          "Supports de comparaison et calendrier économique réutilisables",
+          "Information aux élèves : la rétrocession est payée par le courtier, conditions inchangées"
+        ],
+        "fees": "Aucun frais pour elle ni ses élèves ; le revenu provient de la rétrocession du courtier, déclarée dans l’information IB.",
+        "rows": [],
+        "note": "La rétrocession dépend du barème de chaque courtier et du volume de ses élèves ; aucun chiffre n’est donc indiqué ici. Les conditions sont convenues par écrit avant le premier client présenté."
+      }
+    ]
   },
   contact: {
     metaTitle: "Contact",

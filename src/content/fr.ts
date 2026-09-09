@@ -1387,27 +1387,27 @@ export const fr: ContentOverride = {
         },
         {
           "label": "Bénéfice net réalisé",
-          "value": "+12 422 USD (+26,4 %)",
+          "value": "+12 266 USD (+26,1 %)",
           "tone": "up"
         },
         {
-          "label": "P&L latent",
-          "value": "−3 590 USD",
-          "tone": "down"
+          "label": "Capitaux propres (aucune position ouverte)",
+          "value": "59 266 USD",
+          "tone": "neutral"
         },
         {
           "label": "Profit factor",
-          "value": "8,06",
+          "value": "3,09",
           "tone": "neutral"
         },
         {
           "label": "Taux de réussite",
-          "value": "77,6 % (135 sur 174)",
+          "value": "72,9 % (164 sur 225)",
           "tone": "neutral"
         },
         {
-          "label": "Drawdown max (trades clôturés)",
-          "value": "1,21 %",
+          "label": "Drawdown max",
+          "value": "5,16 %",
           "tone": "neutral"
         }
       ]

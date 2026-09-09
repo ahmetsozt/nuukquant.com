@@ -1627,27 +1627,27 @@ export const en = {
         },
         {
           "label": "Closed net profit",
-          "value": "+USD 12,422 (+26.4%)",
+          "value": "+USD 12,266 (+26.1%)",
           "tone": "up"
         },
         {
-          "label": "Open P&L",
-          "value": "−USD 3,590",
-          "tone": "down"
+          "label": "Equity (no open positions)",
+          "value": "USD 59,266",
+          "tone": "neutral"
         },
         {
           "label": "Profit factor",
-          "value": "8.06",
+          "value": "3.09",
           "tone": "neutral"
         },
         {
           "label": "Win rate",
-          "value": "77.6% (135 of 174)",
+          "value": "72.9% (164 of 225)",
           "tone": "neutral"
         },
         {
-          "label": "Max drawdown (closed trades)",
-          "value": "1.21%",
+          "label": "Max drawdown",
+          "value": "5.16%",
           "tone": "neutral"
         }
       ],

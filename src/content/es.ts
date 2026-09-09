@@ -1204,27 +1204,27 @@ export const es: ContentOverride = {
         },
         {
           "label": "Beneficio neto realizado",
-          "value": "+12.422 USD (+26,4%)",
+          "value": "+12.266 USD (+26,1%)",
           "tone": "up"
         },
         {
-          "label": "P&L abierto",
-          "value": "−3.590 USD",
-          "tone": "down"
+          "label": "Patrimonio (sin posiciones abiertas)",
+          "value": "59.266 USD",
+          "tone": "neutral"
         },
         {
           "label": "Factor de beneficio",
-          "value": "8,06",
+          "value": "3,09",
           "tone": "neutral"
         },
         {
           "label": "Tasa de acierto",
-          "value": "77,6% (135 de 174)",
+          "value": "72,9% (164 de 225)",
           "tone": "neutral"
         },
         {
-          "label": "Drawdown máx. (operaciones cerradas)",
-          "value": "1,21%",
+          "label": "Drawdown máx.",
+          "value": "5,16%",
           "tone": "neutral"
         }
       ]

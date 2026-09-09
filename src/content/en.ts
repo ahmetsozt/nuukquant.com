@@ -492,8 +492,7 @@ export const en = {
           "International bank withdrawals cost $20 and can take up to 7 business days",
           "CFDs only: you never own the underlying share or coin",
         ],
-        referralHref:
-          "https://pepperstone.com/en?irclickid=UaOy823GzxyZTpIW-sTmzTmUUkr2ioT9XTblTQ0&transaction_id=UaOy823GzxyZTpIW-sTmzTmUUkr2ioT9XTblTQ0_35888&irgwc=1&afsrc=1&utm_source=affiliate-6292990&utm_medium=ONLINE_TRACKING_LINK&utm_campaign=Online%20Tracking%20Link&utm_content=impact&irpid=6292990&sharedid=35888&utm_term=www.dailyforex.com",
+        referralHref: "https://trk.pepperstonepartners.com/SH1sI",
         steps: [
           "Open the referral link and click Join now. Register with your email and get a free demo.",
           "Answer the appropriateness questions (about 5 minutes).",

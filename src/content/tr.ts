@@ -99,6 +99,7 @@ export const tr: ContentOverride = {
         {
           "label": "Hakkında"
         },
+        { "label": "Nasıl Para Kazanıyoruz" },
         {
           "label": "İletişim"
         },
@@ -889,6 +890,180 @@ export const tr: ContentOverride = {
     "note": "Veri sağlayıcı TradingView. Yüksek etkili olaylar üç çubukla işaretlenir. NUUK sistemleri yüksek etkili açıklamalar çevresinde pozisyon büyüklüğünü azaltır; manuel işlem yapanlar böyle bir veriden önceki 15 dakika içinde yeni pozisyon açmaktan kaçınmalıdır.",
     "tipsTitle": "Takvimi nasıl okuyoruz",
     "tips": ["Gerçekleşen rakamı önceki değerle değil, beklentiyle karşılaştırın; piyasayı hareket ettiren sürprizdir.", "Geçen ayın rakamındaki revizyona bakın; büyük bir revizyon çoğu zaman manşet veriden daha önemlidir.", "Faiz kararları piyasayı iki kez hareket ettirir: kararda ve yaklaşık 30 dakika sonraki basın toplantısında."],
+  },
+  money: {
+    "metaTitle": "Nasıl Para Kazanıyoruz",
+    "metaDescription": "NUUK gelirini kendi sermayesiyle yaptığı işlemlerden, yönettiği portföylerdeki yönetim ve performans ücretlerinden, aracı kurum ortaklıklarından ve araştırma aboneliklerinden elde eder. Her ücret açıklanmıştır.",
+    "kicker": "Nasıl Para Kazanıyoruz",
+    "title": "Siz kazandığınızda kazanırız. Önce kendi sermayemiz.",
+    "lead": "NUUK bir aracı kurum değildir ve işlemlerinizin karşı tarafında yer almaz. Gelirimiz dört şeffaf kaynaktan gelir; en büyüğü, sizin için de çalıştırdığımız aynı işlemlerdir.",
+    "principlesTitle": "Her ücretin arkasındaki dört ilke",
+    "principles": [
+      {
+        "title": "Önce kendi sermayemiz",
+        "body": "Her sistem, başkasının parasını yönetmeden önce kendi paramızla çalışır. Aynı işlemleri, aynı anda, aynı risk limitleriyle alırız."
+      },
+      {
+        "title": "Net kâr üzerinden ücret",
+        "body": "Performans ücreti yalnızca hesabınızın en yüksek değer seviyesinin (high-water mark) üzerindeki gerçekleşmiş kârdan alınır. Zarar telafi edilmeden yeniden kazanmayız."
+      },
+      {
+        "title": "Gizli hiçbir şey yok",
+        "body": "Spread veya komisyon üzerine ek marj yok, platform ücreti yok, swaplara gömülü kesinti yok. Bu sayfada gördükleriniz listenin tamamıdır."
+      },
+      {
+        "title": "Getiriden önce risk",
+        "body": "Her yetki belgesi bir maksimum düşüş ve günlük zarar limitiyle başlar. Bunları aşmaktansa daha az kazanmayı tercih ederiz."
+      }
+    ],
+    "streamsTitle": "Gelirimiz nereden geliyor",
+    "streamsLead": "Büyüklük sırasına göre.",
+    "streams": [
+      {
+        "title": "Kendi sermayemizle işlem",
+        "share": "En büyük kaynak",
+        "body": "Müşterilere sunduğumuz aynı algoritmik sistemlerle kendi sermayemizi işletiriz: GANN Live üretimde, Trend Ensemble kâğıt üzerinde işlemde. Bizi dürüst tutan gelir budur: sistemler çalışmayı bırakırsa bunu ilk biz hissederiz.",
+        "how": "NUUK'un kendi hesaplarındaki işlem kâr ve zararı"
+      },
+      {
+        "title": "Portföy yönetimi",
+        "share": "Yönetim ve performans ücretleri",
+        "body": "İki yapı. Havuz MAM'da yönetim ücreti yoktur; en yüksek değer seviyesinin üzerindeki kârın %25'i alınır. Özel hesapta (250.000 USD'den itibaren) aylık 1.000 USD yönetim ücreti ve yönetim ücreti düşüldükten sonra en yüksek değer seviyesinin üzerindeki kârın %25'i alınır.",
+        "how": "Aracı kurum tarafından hesabınızdan kesilir ve her ekstrede görünür"
+      },
+      {
+        "title": "Aracı kurum ortaklıkları",
+        "share": "Tanıtıcı aracı (IB) iadeleri",
+        "body": "NUUK üzerinden bir ortak aracı kurumda hesap açtığınızda, aracı kurum kazandığı spread veya komisyonun bir bölümünü bize öder. İşlem koşullarınız doğrudan müşteriyle birebir aynıdır. Ortakların ve şartların tam listesi IB bildirimimizdedir.",
+        "how": "Aracı kurum öder; maliyetlerinize asla eklenmez"
+      },
+      {
+        "title": "Araştırma ve eğitim",
+        "share": "Abonelikler ve atölyeler",
+        "body": "Aylık 750, 1.000 ve 5.000 USD'lik sinyal ve araştırma planları ile ücretli atölyeler ve kurumsal eğitimler. Haftalık webinarlar ücretsiz kalır.",
+        "how": "Sabit abonelik veya bilet bedeli, peşin ödenir"
+      }
+    ],
+    "exampleTitle": "Rakamlarla bir yıl",
+    "exampleLead": "Ücretler öncesi %12 brüt getirili bir yıl için temsili rakamlar. Tahmin değildir; getiri negatif olabilir.",
+    "examples": [
+      {
+        "name": "Havuz MAM",
+        "basis": "100.000 USD tahsis",
+        "rows": [
+          [
+            "Brüt kâr (%12)",
+            "12.000 USD"
+          ],
+          [
+            "Yönetim ücreti",
+            "0 USD"
+          ],
+          [
+            "Performans ücreti (%25)",
+            "3.000 USD"
+          ],
+          [
+            "Size kalan net",
+            "9.000 USD (+%9,0)"
+          ],
+          [
+            "NUUK'un kazancı",
+            "3.000 USD"
+          ]
+        ]
+      },
+      {
+        "name": "Özel hesap",
+        "basis": "250.000 USD tahsis",
+        "rows": [
+          [
+            "Brüt kâr (%12)",
+            "30.000 USD"
+          ],
+          [
+            "Yönetim ücreti (12 × 1.000 USD)",
+            "12.000 USD"
+          ],
+          [
+            "Yönetim ücreti sonrası kâr",
+            "18.000 USD"
+          ],
+          [
+            "Performans ücreti (%25)",
+            "4.500 USD"
+          ],
+          [
+            "Size kalan net",
+            "13.500 USD (+%5,4)"
+          ],
+          [
+            "NUUK'un kazancı",
+            "16.500 USD"
+          ]
+        ]
+      }
+    ],
+    "exampleNote": "Zararla kapanan yılda performans ücreti alınmaz; yeniden performans ücreti alınabilmesi için zararın telafi edilmesi gerekir. Özel hesap aylık yönetim ücretini ödemeye devam eder. Aracı kurumun spread, komisyon ve swapları aracı kurum tarafından tahsil edilir ve brüt rakamın içindedir.",
+    "neverTitle": "Asla yapmadıklarımız",
+    "never": [
+      "Spread, komisyon veya swap üzerine marj eklemek",
+      "Paranızı tutmak ya da hesabınızda para çekme yetkisine sahip olmak",
+      "Size karşı işlem yapmak veya emir akışınızı satmak",
+      "Gerçekleşmemiş kazançlardan ya da en yüksek değer seviyesinin altındaki kârdan performans ücreti almak",
+      "Açıklanan iade dışında bir aracı kurumu diğerine tercih ettirmek için ödeme almak"
+    ],
+    "riskTitle": "Risk yönetimi iş modelinin kendisidir",
+    "riskLead": "Ücretler ancak sermaye ayakta kalırsa işe yarar. Bu limitler kendi hesaplarımıza ve yürüttüğümüz her yetkiye uygulanır.",
+    "risk": [
+      {
+        "title": "İşlem başına sabit risk",
+        "body": "Her pozisyon sabit bir risk tutarına göre boyutlandırılır: GANN Live'da işlem başına 300 USD; stop seviyesi girişten önce ATR(14) × 1,5 ile belirlenir."
+      },
+      {
+        "title": "Günlük zarar limiti",
+        "body": "Yetki belgesindeki günlük zarar limitine ulaşıldığında o gün işlem durur. Sistem bunu geçersiz kılamaz."
+      },
+      {
+        "title": "Maksimum düşüş yetkisi",
+        "body": "Her yetki belgesi bir maksimum düşüş belirler. Ulaşıldığında hesap durdurulur ve yeniden başlamadan önce sizinle bir değerlendirme yapılır."
+      },
+      {
+        "title": "Haftalık canlı-beklenen karşılaştırması",
+        "body": "Test edilmiş davranışından sapan sistemler durdurulur; uçuş sırasında ayar yapılmaz."
+      }
+    ],
+    "faqTitle": "Ücretlerle ilgili sorular",
+    "faq": [
+      {
+        "q": "Hesabım zarar ederse bir şey kazanıyor musunuz?",
+        "a": "Hesaptan değil. Havuz MAM'da yönetim ücreti olmadığından zararla biten bir yıl bize hiçbir şey ödemez. Özel hesap, imzadan önce açıklanan aylık yönetim ücretini öder; zarar telafi edilene kadar performans ücreti alınmaz."
+      },
+      {
+        "q": "IB iadeleri bir çıkar çatışması mı?",
+        "a": "Olabilir; bu yüzden açıklanır. Aracı kurumları düzenleme, emir gerçekleştirme ve profilinize uygun koşullara göre öneririz; her ortak, şartlarıyla birlikte IB bildiriminde listelenir. Bizim üzerimizden geldiğiniz için işlem koşullarınız asla değişmez."
+      },
+      {
+        "q": "En yüksek değer seviyesi nasıl hesaplanır?",
+        "a": "Hesabınızın başlangıçtan bu yana, para yatırma ve çekmelere göre düzeltilmiş en yüksek ay sonu değeridir. Performans ücreti yalnızca ay sonu değerinin bu seviyeyi aşan kısmından alınır."
+      },
+      {
+        "q": "Aldığınız ücretleri nerede görebilirim?",
+        "a": "Aracı kurum ekstrenizde. Ücretler aracı kurum tarafından kendi hesabınızın içinden kesilir; her kesinti gerçek zamanlı olarak ve gönderdiğimiz aylık raporda görünür."
+      }
+    ],
+    "cta": {
+      "label": "Bir yetki görüşelim",
+      "href": "/contact-us/"
+    },
+    "feesLink": {
+      "label": "Tam ücret tablosunu görün",
+      "href": "/portfolio-management/"
+    },
+    "ibLink": {
+      "label": "IB bildirimini okuyun",
+      "href": "/legal/ib-disclosure/"
+    }
   },
   contact: {
     "metaTitle": "İletişim",

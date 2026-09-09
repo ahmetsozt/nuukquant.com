@@ -77,6 +77,7 @@ export const es: ContentOverride = {
       label: "Sobre mí",
       items: [
         { label: "Mi historia" },
+        { label: "Cómo ganamos dinero" },
         { label: "Contacto" },
         { label: "Advertencia de riesgo" },
         { label: "Declaración de IB" },
@@ -629,6 +630,180 @@ export const es: ContentOverride = {
     note: "Datos de TradingView. Los eventos de alto impacto llevan tres barras. Los sistemas de NUUK reducen el tamaño de posición en torno a esas publicaciones; los traders discrecionales deberían evitar abrir posiciones nuevas en los 15 minutos previos.",
     tipsTitle: "Cómo leemos el calendario",
     tips: ["Compare el dato real con el consenso, no con el anterior; lo que mueve el mercado es la sorpresa.", "Vigile la revisión del dato del mes pasado; una revisión grande suele importar más que el titular.", "Las decisiones de tipos mueven el mercado dos veces: en la decisión y en la rueda de prensa unos 30 minutos después."],
+  },
+  money: {
+    "metaTitle": "Cómo ganamos dinero",
+    "metaDescription": "NUUK obtiene ingresos operando con su propio capital, con comisiones de gestión y de éxito sobre las carteras gestionadas, con acuerdos con brókeres y con suscripciones de análisis. Cada comisión, explicada.",
+    "kicker": "Cómo ganamos dinero",
+    "title": "Ganamos cuando usted gana. Nuestro capital va primero.",
+    "lead": "NUUK no es un bróker y no toma la contraparte de sus operaciones. Nuestros ingresos proceden de cuatro fuentes transparentes, y la mayor es la misma operativa que gestionamos para usted.",
+    "principlesTitle": "Cuatro principios detrás de cada comisión",
+    "principles": [
+      {
+        "title": "Primero nuestro capital",
+        "body": "Cada sistema opera con nuestro dinero antes de gestionar el de nadie. Tomamos las mismas operaciones, al mismo tiempo, con los mismos límites de riesgo."
+      },
+      {
+        "title": "Cobro sobre el beneficio neto",
+        "body": "La comisión de éxito se aplica solo al beneficio realizado por encima del máximo histórico (high-water mark) de su cuenta. Las pérdidas deben recuperarse antes de que volvamos a cobrar."
+      },
+      {
+        "title": "Nada oculto",
+        "body": "Sin recargo en spreads ni comisiones, sin cuotas de plataforma, sin cargos escondidos en los swaps. Lo que ve en esta página es la lista completa."
+      },
+      {
+        "title": "El riesgo antes que la rentabilidad",
+        "body": "Cada mandato empieza con un drawdown máximo y un límite de pérdida diaria. Preferimos ganar menos a incumplirlos."
+      }
+    ],
+    "streamsTitle": "De dónde proceden nuestros ingresos",
+    "streamsLead": "Por orden de tamaño.",
+    "streams": [
+      {
+        "title": "Operativa con capital propio",
+        "share": "Mayor fuente",
+        "body": "Operamos nuestro propio capital con los mismos sistemas algorítmicos que ofrecemos a los clientes: GANN Live en producción y el Trend Ensemble en paper trading. Es el ingreso que nos mantiene honestos: si los sistemas dejan de funcionar, lo notamos primero.",
+        "how": "Resultado de la operativa en las cuentas propias de NUUK"
+      },
+      {
+        "title": "Gestión de carteras",
+        "share": "Comisiones de gestión y de éxito",
+        "body": "Dos estructuras. El MAM agrupado no cobra comisión de gestión y aplica un 25% sobre los beneficios por encima del máximo histórico. La cuenta dedicada (desde 250.000 USD) cobra 1.000 USD al mes más un 25% sobre los beneficios por encima del máximo histórico, después de la comisión de gestión.",
+        "how": "Las deduce el bróker de su cuenta y aparecen en cada extracto"
+      },
+      {
+        "title": "Acuerdos con brókeres",
+        "share": "Retrocesiones de introductor (IB)",
+        "body": "Cuando abre una cuenta en un bróker asociado a través de NUUK, el bróker nos paga una parte del spread o de la comisión que obtiene. Sus condiciones de operativa son idénticas a las de un cliente directo. La lista completa de socios y condiciones está en nuestra declaración de IB.",
+        "how": "Las paga el bróker; nunca se añaden a sus costes"
+      },
+      {
+        "title": "Análisis y formación",
+        "share": "Suscripciones y talleres",
+        "body": "Planes de señales y análisis por 750, 1.000 y 5.000 USD al mes, además de talleres de pago y formación corporativa. Los webinarios semanales siguen siendo gratuitos.",
+        "how": "Suscripción fija o precio de entrada, pagados por adelantado"
+      }
+    ],
+    "exampleTitle": "Cómo es un año en cifras",
+    "exampleLead": "Cifras ilustrativas para un año con una rentabilidad bruta del 12% antes de comisiones. No son una previsión; la rentabilidad puede ser negativa.",
+    "examples": [
+      {
+        "name": "MAM agrupado",
+        "basis": "100.000 USD asignados",
+        "rows": [
+          [
+            "Beneficio bruto (12%)",
+            "12.000 USD"
+          ],
+          [
+            "Comisión de gestión",
+            "0 USD"
+          ],
+          [
+            "Comisión de éxito (25%)",
+            "3.000 USD"
+          ],
+          [
+            "Neto para usted",
+            "9.000 USD (+9,0%)"
+          ],
+          [
+            "Ingreso de NUUK",
+            "3.000 USD"
+          ]
+        ]
+      },
+      {
+        "name": "Cuenta dedicada",
+        "basis": "250.000 USD asignados",
+        "rows": [
+          [
+            "Beneficio bruto (12%)",
+            "30.000 USD"
+          ],
+          [
+            "Comisión de gestión (12 × 1.000 USD)",
+            "12.000 USD"
+          ],
+          [
+            "Beneficio tras la comisión de gestión",
+            "18.000 USD"
+          ],
+          [
+            "Comisión de éxito (25%)",
+            "4.500 USD"
+          ],
+          [
+            "Neto para usted",
+            "13.500 USD (+5,4%)"
+          ],
+          [
+            "Ingreso de NUUK",
+            "16.500 USD"
+          ]
+        ]
+      }
+    ],
+    "exampleNote": "En un año con pérdidas no hay comisión de éxito, y la pérdida debe recuperarse antes de volver a cobrarla. La cuenta dedicada sigue pagando su comisión de gestión mensual. Los spreads, comisiones y swaps los cobra el bróker y ya están incluidos en la cifra bruta.",
+    "neverTitle": "Lo que nunca hacemos",
+    "never": [
+      "Recargar spreads, comisiones o swaps",
+      "Custodiar su dinero o tener derecho de retirada sobre su cuenta",
+      "Operar en su contra o vender su flujo de órdenes",
+      "Cobrar comisión de éxito sobre ganancias no realizadas o sobre beneficios por debajo del máximo histórico",
+      "Cobrar por recomendar un bróker frente a otro más allá de la retrocesión declarada"
+    ],
+    "riskTitle": "La gestión del riesgo es el modelo de negocio",
+    "riskLead": "Las comisiones solo funcionan si el capital sobrevive. Estos límites se aplican a nuestras propias cuentas y a cada mandato que gestionamos.",
+    "risk": [
+      {
+        "title": "Riesgo fijo por operación",
+        "body": "Cada posición se dimensiona con un importe de riesgo fijo, 300 USD por operación en GANN Live, con el stop fijado por ATR(14) × 1,5 antes de entrar."
+      },
+      {
+        "title": "Límite de pérdida diaria",
+        "body": "La operativa se detiene el resto del día cuando se alcanza el límite de pérdida diaria del mandato. El sistema no puede anularlo."
+      },
+      {
+        "title": "Mandato de drawdown máximo",
+        "body": "Cada mandato fija un drawdown máximo. Alcanzarlo pausa la cuenta y activa una revisión con usted antes de reanudar nada."
+      },
+      {
+        "title": "Revisión semanal real frente a esperado",
+        "body": "Los sistemas que se desvían de su comportamiento probado se pausan; no se retocan en marcha."
+      }
+    ],
+    "faqTitle": "Preguntas sobre comisiones",
+    "faq": [
+      {
+        "q": "¿Ganan algo si mi cuenta pierde dinero?",
+        "a": "No de la cuenta. El MAM agrupado no tiene comisión de gestión, así que un año con pérdidas no nos paga nada. La cuenta dedicada paga su comisión de gestión mensual, comunicada antes de firmar; no se cobra comisión de éxito hasta recuperar la pérdida."
+      },
+      {
+        "q": "¿Las retrocesiones de IB son un conflicto de interés?",
+        "a": "Pueden serlo, por eso se declaran. Recomendamos brókeres por regulación, ejecución y condiciones adecuadas a su perfil, y cada socio figura con sus condiciones en la declaración de IB. Sus condiciones de operativa nunca cambian por venir a través de nosotros."
+      },
+      {
+        "q": "¿Cómo se calcula el máximo histórico?",
+        "a": "Es el mayor valor de fin de mes de su cuenta desde el inicio, ajustado por depósitos y retiradas. La comisión de éxito se cobra solo sobre la parte del valor de fin de mes que lo supera."
+      },
+      {
+        "q": "¿Dónde puedo ver las comisiones cobradas?",
+        "a": "En el extracto de su bróker. Las comisiones las deduce el bróker dentro de su propia cuenta, de modo que cada cargo es visible en tiempo real y en el informe mensual que enviamos."
+      }
+    ],
+    "cta": {
+      "label": "Hablar de un mandato",
+      "href": "/contact-us/"
+    },
+    "feesLink": {
+      "label": "Ver la tabla de comisiones completa",
+      "href": "/portfolio-management/"
+    },
+    "ibLink": {
+      "label": "Leer la declaración de IB",
+      "href": "/legal/ib-disclosure/"
+    }
   },
   contact: {
     metaTitle: "Contacto",

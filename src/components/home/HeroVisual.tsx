@@ -18,7 +18,6 @@ export default function HeroVisual({ c, scrollTo = "#partners" }: { c: SiteConte
       <div className="blob relative h-full w-full overflow-hidden bg-[#050505] shadow-[0_40px_80px_-20px_rgba(1,101,250,0.5)] ring-1 ring-white/10">
         <picture>
           <source media="(max-width: 640px)" srcSet="/images/hero-car-960.webp" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/hero-car.webp"
             alt={h.visualAlt}

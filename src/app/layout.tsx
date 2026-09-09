@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans_Arabic, Manrope } from "next/font/google";
 import Reveal from "@/components/ui/Reveal";
+import AuthRedirect from "@/components/layout/AuthRedirect";
 import Analytics from "@/components/Analytics";
 import { en } from "@/content/en";
 import "./globals.css";
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <Reveal />
         <Analytics />
+        <AuthRedirect />
       </body>
     </html>
   );

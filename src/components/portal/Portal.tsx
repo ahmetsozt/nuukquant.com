@@ -147,7 +147,13 @@ export default function Portal({ c }: { c: SiteContent }) {
 function Login({ t }: { t: T }) {
   const [mode, setMode] = useState<"link" | "password">("link");
   const [busy, setBusy] = useState(false);
-  const [msg, setMsg] = useState<{ tone: "ok" | "error"; text: string } | null>(null);
+  const [msg, setMsg] = useState<{ tone: "ok" | "error"; text: string } | null>(() => {
+    // Supabase reports link problems in the hash, e.g. #error=access_denied&error_code=otp_expired
+    const h = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+    const code = h.get("error_code") ?? h.get("error");
+    if (!code) return null;
+    return { tone: "error", text: code === "otp_expired" ? t.linkExpired : (h.get("error_description") ?? code).replace(/\+/g, " ") };
+  });
 
   async function submit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();

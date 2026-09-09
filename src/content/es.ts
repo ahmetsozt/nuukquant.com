@@ -35,8 +35,8 @@ export const es: ContentOverride = {
     test: "En pruebas",
     paused: "En pausa",
     soon: "Próximamente",
-    pending: "Verificación pendiente",
-    verificationInProgress: "Verificación en curso",
+    pending: "Informe pendiente",
+    verificationInProgress: "Informe en preparación",
     updated: "Actualizado",
     since: "Desde",
     source: "Fuente",
@@ -98,11 +98,11 @@ export const es: ContentOverride = {
       kicker: "Economista · Inversor · Fundador de NUUK",
       title: "Los mercados, leídos con disciplina.",
       lead:
-        "Construyo sistemas de trading basados en IA, gestiono mi propio capital, administro cuentas de inversores y enseño a las personas a operar por sí mismas. Todo lo que ve aquí está respaldado por un historial verificable.",
+        "Diseño sistemas de trading basados en IA, opero mi propio capital, gestiono cuentas de inversores y enseño a operar de forma autónoma. Cada cifra de este sitio indica su fuente y su método.",
       primary: { label: "Elegir un bróker" },
       secondary: { label: "Reservar una llamada" },
       portraitAlt: "Ahmet S. Öztürk",
-      trustLine: ["Brókeres asociados regulados por la FCA, ASIC, CySEC y DFSA", "Historial en proceso de verificación independiente", "Con sede en el DIFC, Dubái"],
+      trustLine: ["Brókeres asociados regulados por la FCA, ASIC, CySEC y DFSA", "Capital propio en cada sistema", "Con sede en el DIFC, Dubái"],
       trust: [
         { label: "años en los mercados, desde una mesa de FX en Londres en 2009" },
         {"label": "variantes de estrategia sometidas a backtest desde 2026; tres en producción, documentadas en la página de trading con IA"},
@@ -124,8 +124,8 @@ export const es: ContentOverride = {
       ],
       "note": "Las cotizaciones las proporcionan TradingView y sus socios de datos; algunos feeds bursátiles llegan con retraso. Las condiciones de trading, los spreads y la ejecución son los del bróker con el que opera."
     },
-    numbersTitle: "Cifras que puede verificar*",
-    numbersNote: "*Cifras a septiembre de 2026. Los enlaces de verificación se añaden a la página de track record a medida que se activa cada conexión de solo lectura.",
+    numbersTitle: "NUUK en cifras*",
+    numbersNote: "*Cifras a septiembre de 2026, de los registros propios de NUUK.",
     promo: {
       kicker: "Cuentas gestionadas",
       title: "Su cuenta. Mi ejecución. Límites de riesgo por escrito.",
@@ -138,15 +138,15 @@ export const es: ContentOverride = {
     pillarsLead: "Una persona, cinco puertas. Elija la que encaje con el punto en el que se encuentra hoy.",
     pillars: [
       { title: "Sistemas de trading con IA", body: "Algoritmos propios programados, probados y ejecutados en vivo en FX, índices, materias primas y activos digitales.", who: "Para asignadores de capital e inversores técnicos" },
-      { title: "Historial verificado", body: "Mi propia cartera y las estrategias gestionadas, reportadas a través de verificación independiente.", who: "Para quien esté decidiendo si confiar en mí" },
+      { title: "Historial", body: "Los resultados de mi cartera y de los sistemas, netos de costes, con la fuente y el método de cada cifra.", who: "Para quien esté decidiendo si confiar en mí" },
       { title: "Cuentas gestionadas", body: "Su capital permanece en su propia cuenta de bróker. Yo la opero bajo límites de riesgo acordados y una comisión de éxito.", who: "Para inversores que prefieren delegar la ejecución" },
       { title: "Brókeres asociados", body: "Comparativa independiente de los brókeres con los que trabajo, con una guía paso a paso para abrir cuenta en cada uno.", who: "Para traders autónomos que eligen bróker" },
       { title: "Señales, informes y formación", body: "Notas diarias, informes semanales, ideas de trading con el razonamiento completo y webinars en vivo que enseñan el método.", who: "Para traders que quieren aprender y mantenerse informados" },
     ],
     record: {
       kicker: "Historial verificado",
-      title: "Cifras que puede comprobar usted mismo",
-      lead: "Los resultados se presentan netos de costes de trading. Los extractos de las cuentas reales se publican a medida que se activa cada conexión con el bróker.",
+      title: "Los resultados, con el método detrás",
+      lead: "Los resultados se presentan netos de costes de operativa. Cada cifra indica su fuente: cuenta real, paper trading o backtest.",
       featuredLabel: "Curva de capital",
       featuredNote: "Backtest walk-forward 2010–2026, neto de swaps y comisiones, base 100. Rentabilidad anualizada +10,9%, drawdown máximo 6,7%, ratio de Sharpe 1,36.",
       cta: { label: "Ver el historial completo" },
@@ -204,7 +204,7 @@ export const es: ContentOverride = {
     ],
     principlesTitle: "Cómo trabajo",
     principles: [
-      { title: "Evidencia antes que opinión", body: "Cada afirmación de este sitio enlaza a una fuente verificable o no se hace." },
+      { title: "Evidencia antes que opinión", body: "Cada cifra de este sitio indica su fuente y su método. Lo que no puede explicarse no se muestra." },
       { title: "Riesgo antes que rentabilidad", body: "El tamaño de la posición, los límites de drawdown y las reglas de stop se deciden antes de cualquier operación." },
       { title: "Su dinero sigue siendo suyo", body: "Las cuentas gestionadas operan dentro de su propia cuenta de bróker. Nunca asumo la custodia." },
       { title: "Enseñar el método", body: "El objetivo de la formación es que usted deje de necesitarme." },
@@ -240,24 +240,24 @@ export const es: ContentOverride = {
     faq: [
       { q: "¿Puedo ejecutar un sistema en mi propia cuenta?", a: "Sí. Según el bróker, puede hacer copy trading, unirse a una estructura MAM/PAMM en Tickmill, Saxo Bank o Midas, o seguir el canal de señales y ejecutar usted mismo. En todos los casos la cuenta permanece a su nombre." },
       { q: "¿Cuál es el capital mínimo?", a: "1.000 USD para copy trading o señales. Las cuentas gestionadas MAM/PAMM parten de la asignación mínima indicada en la página de cuentas gestionadas." },
-      { q: "¿Comparte el código?", a: "No. El código sigue siendo propietario. Lo que publico es la metodología, las reglas de riesgo y los resultados verificados." },
+      { q: "¿Comparte el código?", a: "No. El código sigue siendo propietario. Publico la metodología, las reglas de riesgo y los resultados, cada uno con su fuente." },
     ],
   },
 
   trackRecord: {
     metaTitle: "Historial verificado",
-    metaDescription: "Rendimiento verificado de forma independiente de la cartera propia y de las estrategias gestionadas de Ahmet S. Öztürk.",
+    metaDescription: "Rendimiento de la cartera propia de Ahmet S. Öztürk y de los sistemas NUUK, con la fuente y el método de cada cifra.",
     kicker: "Historial verificado",
-    title: "Verificado, o no se muestra",
-    lead: "Las cuentas están en Tickmill, Saxo Bank, Scope Markets, Dukascopy, Midas y Capital.com. Cada una se está vinculando a un servicio de verificación de solo lectura y las cifras aparecen aquí automáticamente a medida que cada enlace se activa. Si una cifra no puede verificarse, no está en esta página.",
+    title: "Cada cifra, con su fuente",
+    lead: "Las cuentas se mantienen en brókeres asociados. Cada cifra indica de dónde procede, cuenta real, paper trading o backtest walk-forward, y cómo se calcula. El rendimiento pasado no garantiza resultados futuros.",
     disclaimer: "Los resultados pasados no garantizan resultados futuros. Las cifras son netas de costes de negociación y brutas de cualquier comisión de éxito, salvo que se indique lo contrario.",
     methodologyTitle: "Cómo leer estas cifras",
     methodology: [
-      { title: "Verificado", body: "Vinculado a la cuenta del bróker mediante una conexión de solo lectura. Las cifras las calcula el servicio de verificación, no este sitio." },
+      { title: "Fuente", body: "Cuenta real, paper trading o backtest. La etiqueta aparece junto a cada cifra y el método de cálculo se describe en esta página." },
       { title: "Drawdown máximo", body: "Mayor caída desde un máximo hasta un mínimo en el capital de la cuenta, incluidas las posiciones abiertas." },
       { title: "Factor de beneficio", body: "Beneficio bruto dividido entre pérdida bruta. Por encima de 1,0 significa que la estrategia ganó dinero en el periodo." },
     ],
-    pending: "Los extractos de las cuentas reales se añaden a medida que se activa la conexión de solo lectura de cada bróker. La tasa de acierto del 87% de las señales procede del registro interno.",
+    pending: "Las cifras de cuentas reales se publican a partir de los registros de fin de mes de NUUK. El 87% de las señales procede del registro interno.",
   },
 
   managed: {
@@ -818,6 +818,9 @@ export const es: ContentOverride = {
     ],
     formTitle: "Enviar una consulta",
     form: {
+      sending: "Enviando…",
+      success: "Gracias. Su mensaje se ha enviado; respondemos en un día laborable.",
+      sendError: "No se pudo enviar el mensaje. Escríbanos directamente:",
       name: "Nombre",
       namePlaceholder: "Su nombre",
       email: "Correo electrónico",

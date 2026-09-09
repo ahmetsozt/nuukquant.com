@@ -38,6 +38,7 @@ export default function Button({
   className = "",
   onClick,
   type,
+  disabled,
   event,
   eventLabel,
 }: {
@@ -49,6 +50,7 @@ export default function Button({
   className?: string;
   onClick?: () => void;
   type?: "button" | "submit";
+  disabled?: boolean;
   /** GA4 event name fired on click (see Analytics.tsx). */
   event?: string;
   eventLabel?: string;
@@ -78,7 +80,7 @@ export default function Button({
     );
   }
   return (
-    <button type={type ?? "button"} className={cls} onClick={onClick} {...track}>
+    <button type={type ?? "button"} className={`${cls} disabled:cursor-wait disabled:opacity-60`} onClick={onClick} disabled={disabled} {...track}>
       {inner}
     </button>
   );

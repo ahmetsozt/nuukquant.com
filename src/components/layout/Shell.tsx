@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import HtmlLang from "@/components/layout/HtmlLang";
 import { dir, getContent, type Locale } from "@/i18n";
 
@@ -14,6 +15,7 @@ export default function Shell({ locale, children }: { locale: Locale; children: 
       <Header c={c} locale={locale} />
       <main>{children}</main>
       <Footer c={c} locale={locale} />
+      <WhatsAppFloat c={c} />
     </div>
   );
 }

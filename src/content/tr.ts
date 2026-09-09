@@ -33,8 +33,8 @@ export const tr: ContentOverride = {
     "test": "Test aşamasında",
     "paused": "Askıda",
     "soon": "Yakında",
-    "pending": "Doğrulama sürecinde",
-    "verificationInProgress": "Doğrulama sürecinde",
+    "pending": "Raporlama bekliyor",
+    "verificationInProgress": "Raporlama sürüyor",
     "updated": "Güncelleme",
     "since": "Başlangıç",
     "source": "Kaynak",
@@ -134,7 +134,7 @@ export const tr: ContentOverride = {
       "visualAlt": "Karanlık stüdyoda NUUK renklerinde Formula 1 aracı",
       "kicker": "Ekonomist · Yatırımcı · NUUK Kurucusu",
       "title": "Piyasalarda disiplinli, sistematik yaklaşım.",
-      "lead": "NUUK, yapay zekâ destekli sistematik işlem stratejileri geliştiren, kurucusunun kendi sermayesini ve yatırımcı portföylerini yazılı risk limitleri dâhilinde yöneten, düzenlemeye tabi aracı kurumlarla çalışan bir yatırım kuruluşudur. Sunulan her rakam doğrulanabilir kaynaklara dayanır.",
+      "lead": "NUUK, yapay zekâ destekli sistematik işlem stratejileri geliştirir; kurucusunun kendi sermayesini ve yatırımcı portföylerini yönetir, yatırımcılara kendi başlarına işlem yapmayı öğretir. Sitedeki her rakam kaynağını ve yöntemini belirtir.",
       "primary": {
         "label": "Aracı Kurum Seçin"
       },
@@ -144,7 +144,7 @@ export const tr: ContentOverride = {
       "portraitAlt": "Ahmet S. Öztürk",
       "trustLine": [
         "FCA, ASIC, CySEC ve DFSA denetimindeki ortak aracı kurumlar",
-        "Bağımsız doğrulama sürecindeki performans kaydı",
+        "Her sistemde kendi sermayemiz",
         "DIFC, Dubai merkezli"
       ],
       "trust": [
@@ -180,8 +180,8 @@ export const tr: ContentOverride = {
       ],
       "note": "Kotasyonlar TradingView ve veri ortakları tarafından sağlanır; bazı borsa verileri gecikmeli olabilir. İşlem koşulları, spread'ler ve emir gerçekleştirme, işlem yaptığınız aracı kuruma aittir."
     },
-    "numbersTitle": "Doğrulanabilir rakamlar*",
-    "numbersNote": "*Rakamlar Eylül 2026 itibarıyladır. Doğrulama bağlantıları, her salt okunur hesap bağlantısı devreye alındıkça performans kaydı sayfasına eklenir.",
+    "numbersTitle": "Rakamlarla NUUK*",
+    "numbersNote": "*Rakamlar Eylül 2026 itibarıyla NUUK'un kendi kayıtlarından alınmıştır.",
     "promo": {
       "kicker": "Portföy yönetimi",
       "title": "Hesap sizin adınıza. İşlem yetkisi NUUK'ta. Limitler yazılı.",
@@ -202,8 +202,8 @@ export const tr: ContentOverride = {
         "who": "Fon yöneticileri ve nicel yatırımcılar için"
       },
       {
-        "title": "Doğrulanmış Performans Kaydı",
-        "body": "Kurucunun kendi portföyü ve yönetilen stratejiler, bağımsız doğrulama servisleri üzerinden raporlanır.",
+        "title": "Performans Kaydı",
+        "body": "Kendi portföyümüz ve sistemlerin sonuçları; maliyetler düşülmüş, her rakamın kaynağı ve yöntemi belirtilmiş olarak.",
         "who": "Karar öncesi kanıt görmek isteyen yatırımcılar için"
       },
       {
@@ -224,8 +224,8 @@ export const tr: ContentOverride = {
     ],
     "record": {
       "kicker": "Performans kaydı",
-      "title": "Bağımsız olarak doğrulanabilir sonuçlar",
-      "lead": "Sonuçlar işlem maliyetleri düşülmüş olarak raporlanır. Canlı hesap ekstreleri, her aracı kurum bağlantısı devreye alındıkça yayımlanır.",
+      "title": "Sonuçlar ve arkasındaki yöntem",
+      "lead": "Sonuçlar işlem maliyetleri düşülmüş olarak raporlanır. Her rakam kaynağını belirtir: canlı hesap, kâğıt üzerinde işlem veya backtest.",
       "featuredLabel": "Özkaynak eğrisi",
       "featuredNote": "Walk-forward backtest 2010–2026, swap ve komisyon düşülmüş, 100'e endekslenmiş. Yıllıklandırılmış getiri +%10,9, maksimum düşüş %6,7, Sharpe oranı 1,36.",
       "cta": {
@@ -319,7 +319,7 @@ export const tr: ContentOverride = {
     "principles": [
       {
         "title": "Kanıt esası",
-        "body": "Bu sitedeki her iddia doğrulanabilir bir kaynağa dayanır; dayanmıyorsa yayımlanmaz."
+        "body": "Sitedeki her rakam kaynağını ve yöntemini belirtir. Açıklanamayan rakam gösterilmez."
       },
       {
         "title": "Önce risk, sonra getiri",
@@ -399,23 +399,23 @@ export const tr: ContentOverride = {
       },
       {
         "q": "Kaynak kod paylaşılıyor mu?",
-        "a": "Hayır. Kod NUUK'un fikrî mülkiyetidir. Yayımlanan unsurlar metodoloji, risk kuralları ve doğrulanmış sonuçlardır."
+        "a": "Hayır. Kod özel kalır. Yayımladığımız şey yöntem, risk kuralları ve kaynağı belirtilmiş sonuçlardır."
       }
     ]
   },
 
   trackRecord: {
     "metaTitle": "Performans Kaydı",
-    "metaDescription": "Ahmet S. Öztürk'ün kendi portföyüne ve yönetilen stratejilere ait, bağımsız doğrulamaya tabi performans kaydı.",
+    "metaDescription": "Ahmet S. Öztürk'ün kendi portföyünün ve NUUK sistemlerinin performansı; her rakamın kaynağı ve yöntemiyle.",
     "kicker": "Performans kaydı",
-    "title": "Yalnızca doğrulanabilir sonuçlar yayımlanır",
-    "lead": "Hesaplar Tickmill, Saxo Bank, Scope Markets, Dukascopy, Midas ve Capital.com nezdinde tutulmaktadır. Her hesap salt okunur bir doğrulama servisine bağlanmaktadır; bağlantı devreye alındıkça rakamlar bu sayfada otomatik olarak yayımlanır. Doğrulanamayan hiçbir rakam bu sayfada yer almaz.",
+    "title": "Her rakam, kaynağıyla",
+    "lead": "Hesaplar ortak aracı kurumlarda tutulur. Aşağıdaki her rakam nereden geldiğini (canlı hesap, kâğıt üzerinde işlem veya walk-forward backtest) ve nasıl hesaplandığını belirtir. Geçmiş performans gelecekteki sonuçların garantisi değildir.",
     "disclaimer": "Geçmiş performans gelecekteki sonuçların göstergesi değildir. Aksi belirtilmedikçe rakamlar işlem maliyetleri düşülmüş, performans ücreti düşülmemiş hâldedir.",
     "methodologyTitle": "Rakamların okunması",
     "methodology": [
       {
-        "title": "Doğrulanmış",
-        "body": "Aracı kurum hesabına salt okunur bağlantıyla bağlıdır. Rakamlar bu site tarafından değil, doğrulama servisi tarafından hesaplanır."
+        "title": "Kaynak",
+        "body": "Canlı hesap, kâğıt üzerinde işlem veya backtest. Etiket her rakamın yanında yer alır; hesaplama yöntemi bu sayfada açıklanır."
       },
       {
         "title": "Maksimum düşüş (drawdown)",
@@ -426,7 +426,7 @@ export const tr: ContentOverride = {
         "body": "Brüt kârın brüt zarara oranı. 1,0'ın üzeri, stratejinin dönem boyunca net kazanç sağladığını gösterir."
       }
     ],
-    "pending": "Canlı hesap ekstreleri, her aracı kurumun salt okunur bağlantısı devreye alındıkça eklenir. %87 sinyal başarı oranı kurum içi kayda dayanır."
+    "pending": "Canlı hesap rakamları NUUK'un ay sonu kayıtlarından yayımlanır. %87 sinyal rakamı dahili kayıt defterinden gelir."
   },
 
   managed: {
@@ -1090,6 +1090,9 @@ export const tr: ContentOverride = {
     ],
     "formTitle": "Bilgi talebi",
     "form": {
+      "sending": "Gönderiliyor…",
+      "success": "Teşekkürler. Mesajınız iletildi; bir iş günü içinde yanıtlıyoruz.",
+      "sendError": "Mesaj gönderilemedi. Lütfen doğrudan e-posta gönderin:",
       "name": "Ad Soyad",
       "namePlaceholder": "Adınız",
       "email": "E-posta",

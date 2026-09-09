@@ -23,7 +23,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.nuukquant.com"),
   title: { default: en.meta.title, template: "%s | NUUK" },
   description: en.meta.description,
-  openGraph: { siteName: "NUUK", type: "website", url: "https://www.nuukquant.com/" },
+  openGraph: { siteName: "NUUK", type: "website", url: "https://www.nuukquant.com/", images: [{ url: "/og.png", width: 1200, height: 630, alt: "NUUK" }] },
+  twitter: { card: "summary_large_image", images: ["/og.png"] },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

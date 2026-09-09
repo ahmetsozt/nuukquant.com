@@ -76,7 +76,7 @@ export default function Header({ c, locale }: { c: SiteContent; locale: Locale }
               </li>
             ))}
             <li>
-              <Link href={localePath(locale, "/investors/")} className="inline-flex items-center gap-1 text-white/85 hover:text-white">
+              <Link href={localePath(locale, "/portal/")} className="inline-flex items-center gap-1 text-white/85 hover:text-white">
                 <Icon name="shield" size={12} />
                 {c.ui.investorLogin}
               </Link>

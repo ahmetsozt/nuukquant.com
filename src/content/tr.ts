@@ -1119,6 +1119,7 @@ export const tr: ContentOverride = {
     }
   },
   investors: {
+    "loginCta": { "label": "Panele giriş yapın", "href": "/portal/" },
     "metaTitle": "Yatırımcı Portalı",
     "metaDescription": "Yönetilen hesap müşterileri nereden giriş yapar, NUUK her ay ne raporlar ve erişim nasıl talep edilir.",
     "kicker": "Yatırımcı Portalı",
@@ -1295,6 +1296,98 @@ export const tr: ContentOverride = {
         "note": "İade her aracı kurumun tarifesine ve öğrencilerin hacmine bağlıdır; bu yüzden burada rakam gösterilmez. Şartlar ilk müşteri tanıtılmadan önce yazılı olarak kararlaştırılır."
       }
     ]
+  },
+  portal: {
+    "metaTitle": "Yatırımcı Paneli",
+    "kicker": "Yatırımcı Paneli",
+    "title": "Panellerinize giriş yapın",
+    "lead": "Aboneler ve yönetilen hesap müşterileri buradan giriş yapar. Yalnızca aboneliğinize dahil panelleri görürsünüz.",
+    "notConfigured": "Panel henüz bağlanmadı. Supabase projesi yapılandırıldığında bu sayfa giriş ekranı olur.",
+    "signIn": "Giriş yap",
+    "signInLead": "Aboneliğinizin kayıtlı olduğu e-posta adresini girin. Tek kullanımlık giriş bağlantısı göndeririz; şifre gerekmez.",
+    "email": "E-posta",
+    "password": "Şifre",
+    "sendLink": "Giriş bağlantısı gönder",
+    "linkSent": "Gelen kutunuzu kontrol edin: giriş bağlantısı bir saat geçerlidir.",
+    "signInPassword": "Giriş yap",
+    "usePassword": "Şifreyle giriş yap",
+    "useLink": "E-posta bağlantısıyla giriş yap",
+    "inviteOnly": "Erişim yalnızca davetle verilir. Abone olduysanız ve giriş yapamıyorsanız, abonelikte kullandığınız adresten bize ulaşın.",
+    "welcome": "Giriş yapan",
+    "signOut": "Çıkış yap",
+    "noPanelsTitle": "Bu hesapta henüz panel yok",
+    "noPanels": "Hesabınız var ancak henüz panel tanımlanmamış. Bugün abone olduysanız birkaç saat bekleyin; aksi halde aşağıdan bir plan seçin.",
+    "subscribe": {
+      "label": "Abonelik planlarını görün",
+      "href": "/signals/"
+    },
+    "empty": "Henüz yayın yok.",
+    "error": "Bir sorun oluştu.",
+    "panelNames": {
+      "signals": "Sinyal akışı",
+      "daily-pnl": "Masa K/Z",
+      "reports": "Raporlarım",
+      "education": "Oturum kütüphanesi"
+    },
+    "signals": {
+      "instrument": "Enstrüman",
+      "direction": "Yön",
+      "entry": "Giriş",
+      "stop": "Zarar durdur",
+      "target": "Hedef",
+      "rationale": "Gerekçe",
+      "directions": {
+        "long": "Alış",
+        "short": "Satış",
+        "flat": "Nötr"
+      },
+      "statuses": {
+        "open": "Açık",
+        "target": "Hedefe ulaştı",
+        "stopped": "Durduruldu",
+        "closed": "Kapandı"
+      }
+    },
+    "pnl": {
+      "date": "Tarih",
+      "closedPnl": "Kapanmış K/Z",
+      "trades": "İşlem",
+      "winRate": "Kazanma oranı",
+      "total": "Gösterilen toplam"
+    },
+    "reports": {
+      "download": "Aç"
+    },
+    "education": {
+      "open": "Aç"
+    },
+    "admin": {
+      "title": "Başlık",
+      "grant": "Panel tanımla",
+      "email": "E-posta",
+      "panel": "Panel",
+      "until": "Geçerlilik sonu",
+      "note": "Not",
+      "notePlaceholder": "örn. Pro plan, 2026-09 ödendi",
+      "grantBtn": "Tanımla",
+      "granted": "Panel tanımlandı.",
+      "revoke": "Kaldır",
+      "revoked": "Panel kaldırıldı.",
+      "newSignal": "Yeni sinyal",
+      "publish": "Yayınla",
+      "published": "Sinyal yayınlandı.",
+      "addPnl": "K/Z günü ekle",
+      "wins": "Kazanan işlem",
+      "save": "Kaydet",
+      "saved": "Kaydedildi.",
+      "uploadReport": "Müşteri raporu yükle",
+      "forEmail": "Müşteri e-postası",
+      "period": "Dönem",
+      "file": "Dosya",
+      "upload": "Yükle",
+      "uploaded": "Rapor yüklendi.",
+      "noUser": "Bu e-postayla kullanıcı yok; önce davet edin."
+    }
   },
   contact: {
     "metaTitle": "İletişim",

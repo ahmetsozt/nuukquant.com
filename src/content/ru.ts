@@ -1093,6 +1093,7 @@ export const ru: ContentOverride = {
     }
   },
   investors: {
+    loginCta: { label: "Войти в портал" },
     "metaTitle": "Портал инвестора",
     "metaDescription": "Где клиенты управляемых счетов входят в систему, что NUUK отчитывает ежемесячно и как запросить доступ.",
     "kicker": "Портал инвестора",

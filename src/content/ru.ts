@@ -18,6 +18,7 @@ export const ru: ContentOverride = {
     office: "Дубайский международный финансовый центр (DIFC), Дубай, ОАЭ",
   },
   ui: {
+    scrollDown: "Прокрутить вниз",
     contact: "Контакты",
     getStarted: "Записаться на звонок",
     contactUs: "Связаться",
@@ -90,6 +91,8 @@ export const ru: ContentOverride = {
 
   home: {
     hero: {
+      visualTag: "Алгоритмическая торговля · Управление портфелем",
+      visualAlt: "Болид Формулы-1 в ливрее NUUK в тёмной студии",
       kicker: "Экономист · Инвестор · Основатель NUUK",
       title: "Рынки, прочитанные с дисциплиной.",
       lead:

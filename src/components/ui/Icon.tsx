@@ -7,6 +7,7 @@ export type IconName =
   | "calendar"
   | "check"
   | "arrow-up-right"
+  | "arrow-down"
   | "mail"
   | "phone"
   | "chat"
@@ -32,6 +33,7 @@ const paths: Record<IconName, string> = {
   calendar: "M4 6h16v14H4zM4 10h16M8 3v4M16 3v4",
   check: "M5 12l4 4L19 6",
   "arrow-up-right": "M7 17L17 7M8 7h9v9",
+  "arrow-down": "M12 4v16M5 13l7 7 7-7",
   mail: "M3 6h18v12H3zM3 7l9 6 9-6",
   phone: "M5 4h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z",
   chat: "M4 5h16v11H8l-4 4z",

@@ -16,6 +16,7 @@ export const tr: ContentOverride = {
     "office": "Dubai Uluslararası Finans Merkezi (DIFC), Dubai, BAE"
   },
   ui: {
+    "scrollDown": "Aşağı kaydır",
     "contact": "İletişim",
     "getStarted": "Görüşme Talep Edin",
     "contactUs": "İletişim",
@@ -123,6 +124,8 @@ export const tr: ContentOverride = {
 
   home: {
     "hero": {
+      "visualTag": "Algoritmik İşlem · Portföy Yönetimi",
+      "visualAlt": "Karanlık stüdyoda NUUK renklerinde Formula 1 aracı",
       "kicker": "Ekonomist · Yatırımcı · NUUK Kurucusu",
       "title": "Piyasalarda disiplinli, sistematik yaklaşım.",
       "lead": "NUUK, yapay zekâ destekli sistematik işlem stratejileri geliştiren, kurucusunun kendi sermayesini ve yatırımcı portföylerini yazılı risk limitleri dâhilinde yöneten, düzenlemeye tabi aracı kurumlarla çalışan bir yatırım kuruluşudur. Sunulan her rakam doğrulanabilir kaynaklara dayanır.",

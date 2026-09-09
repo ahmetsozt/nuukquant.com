@@ -1,51 +1,53 @@
-import Blob from "@/components/ui/Blob";
-import EquityChart from "@/components/ui/EquityChart";
-import Fill from "@/components/ui/Fill";
+import Icon from "@/components/ui/Icon";
+import { MARK_RATIO, MarkSvg, WORDMARK_RATIO, WordmarkSvg } from "@/components/ui/Logo";
 import type { SiteContent } from "@/content/en";
 
-const STAT_COUNT = 3;
+const WORDMARK_HEIGHT = 30;
+const MARK_HEIGHT = 30;
 
 /**
- * Hero artwork: the decorative blob with a floating performance card on top,
- * showing the only equity curve backed by real data (the featured track-record card).
- * Replaces the portrait so the hero leads with the work, not the person.
+ * Hero artwork in the style of a motorsport partnership reveal: an organic
+ * blob clipping a NUUK-liveried car, a logo lock-up on the black headroom
+ * above it, and a scroll cue that drops the visitor to the next section.
  */
-export default function HeroVisual({ c }: { c: SiteContent }) {
-  const featured = c.performance.find((x) => x.chartLabel) ?? c.performance[0];
-  const stats = featured.stats.slice(0, STAT_COUNT);
+export default function HeroVisual({ c, scrollTo = "#partners" }: { c: SiteContent; scrollTo?: string }) {
+  const h = c.home.hero;
   return (
-    <div className="relative mx-auto w-full max-w-[440px] pt-6 pb-10 lg:aspect-[5/4] lg:max-w-[640px] lg:p-0">
-      <div className="absolute inset-0">
-        <Blob className="h-full w-full" alt />
-      </div>
-      <div className="relative mx-[4%] rounded-card-sm bg-white p-4 text-ink shadow-[0_30px_60px_-20px_rgba(0,0,0,0.6)] sm:p-5 lg:absolute lg:inset-x-[8%] lg:top-[9%] lg:mx-0">
-        <div className="flex items-start justify-between gap-3">
-          <div>
-            <p className="kicker text-primary">{c.home.record.featuredLabel}</p>
-            <p className="mt-1 text-[14px] font-bold leading-tight sm:text-[15px]">
-              <Fill text={featured.name} />
-            </p>
+    <div className="relative mx-auto aspect-[5/4] w-full max-w-[440px] lg:max-w-[640px]">
+      <div className="pointer-events-none absolute -inset-[10%] bg-[radial-gradient(55%_55%_at_55%_50%,rgba(1,101,250,0.5),transparent_70%)] blur-2xl" />
+      <div className="blob relative h-full w-full overflow-hidden bg-[#050505] shadow-[0_40px_80px_-20px_rgba(1,101,250,0.5)] ring-1 ring-white/10">
+        <picture>
+          <source media="(max-width: 640px)" srcSet="/images/hero-car-960.webp" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/hero-car.webp"
+            alt={h.visualAlt}
+            width={1600}
+            height={893}
+            fetchPriority="high"
+            className="absolute inset-x-0 bottom-0 h-auto w-full"
+          />
+        </picture>
+        <div className="absolute inset-x-0 top-[9%] flex flex-col items-center gap-2.5 text-white lg:top-[15%] lg:gap-5">
+          <div className="flex origin-top scale-[0.72] items-center gap-5 sm:scale-100 lg:gap-7" dir="ltr">
+            <span className="inline-block" style={{ width: Math.round(WORDMARK_HEIGHT * WORDMARK_RATIO), height: WORDMARK_HEIGHT }}>
+              <WordmarkSvg className="h-full w-full" />
+            </span>
+            <span className="h-14 w-px bg-white/40" aria-hidden="true" />
+            <span className="inline-block" style={{ width: Math.round(MARK_HEIGHT * MARK_RATIO), height: MARK_HEIGHT }}>
+              <MarkSvg className="h-full w-full" />
+            </span>
           </div>
-          <span className="shrink-0 rounded-pill bg-tint px-3 py-1 text-[11.5px] font-semibold text-primary-dark">
-            {c.ui.since} <Fill text={featured.since} />
-          </span>
+          <p className="px-6 text-center text-[9.5px] font-semibold uppercase tracking-[0.2em] text-white/85 sm:text-[11px] lg:text-[13px]">{h.visualTag}</p>
         </div>
-        <div className="mt-3 h-[150px] sm:h-[180px] lg:h-[210px]">
-          <EquityChart data={featured.series} className="h-full w-full" endLabel={featured.chartLabel} textScale={1.6} />
-        </div>
-        <dl className="mt-3 grid grid-cols-3 gap-2 border-t border-ink/10 pt-3">
-          {stats.map((s) => (
-            <div key={s.label}>
-              <dt className="text-[10.5px] uppercase tracking-wide text-muted">{s.label}</dt>
-              <dd className={`mt-0.5 text-[15px] font-extrabold sm:text-[17px] ${s.tone === "up" ? "text-primary" : ""}`}>{s.value}</dd>
-            </div>
-          ))}
-        </dl>
       </div>
-      <div className="relative -mt-4 ms-2 w-fit rounded-card-sm bg-white/95 px-5 py-3.5 text-ink shadow-card backdrop-blur lg:absolute lg:bottom-6 lg:-start-4 lg:m-0">
-        <p className="text-[16px] font-bold">{c.brand.person}</p>
-        <p className="mt-0.5 text-[12.5px] text-body">{c.brand.role} · DIFC, Dubai</p>
-      </div>
+      <a
+        href={scrollTo}
+        aria-label={c.ui.scrollDown}
+        className="blob-alt absolute bottom-[4%] start-[2%] flex h-16 w-16 items-center justify-center bg-primary text-white shadow-[0_16px_32px_-8px_rgba(1,101,250,0.7)] transition-transform duration-200 hover:translate-y-0.5 lg:h-[76px] lg:w-[76px]"
+      >
+        <Icon name="arrow-down" size={26} />
+      </a>
     </div>
   );
 }

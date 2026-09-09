@@ -8,7 +8,8 @@ to them in `entitlements`.
 ## 1. Create the project (5 minutes, free tier)
 
 1. https://supabase.com → New project → name `nuuk-portal`, region Frankfurt.
-2. SQL Editor → New query → paste `supabase/schema.sql` → Run.
+2. SQL Editor → New query → paste `supabase/schema.sql` → Run. Then paste
+   `supabase/memberships.sql` → Run (plans, applications, admin reporting).
 3. Authentication → Providers → Email: keep **Enable email provider** on and
    turn **Allow new users to sign up** OFF (subscribers are invited, never
    self-registered). Leave "Confirm email" on.
@@ -53,3 +54,19 @@ update public.profiles set role = 'admin' where email = 'ahmet@ahmetsozturk.com'
 - **Expiry**: entitlements with `ends_at` in the past disappear automatically.
 
 Panels are rows in `panels`; add a row to create a new sellable panel.
+
+## 5. Membership flow
+
+1. A visitor picks a plan on the signals page → `/apply/` → the application
+   lands in **Admin → Memberships** with status *New*.
+2. You review it, set status *Contacted* / *Awaiting payment* and send the
+   payment link (or set `plans.checkout_url` so the applicant sees a
+   "Proceed to payment" button right after applying).
+3. After payment: Authentication → Users → **Invite user** with the same
+   email, then in Memberships click **Activate** with the access end date.
+   Every panel of the plan is granted at once and the status becomes *Active*.
+4. Expiry is automatic; the KPI "Expiring in 7 days" is your renewal list.
+
+Status: 2026-09-09 project `clwsbcpktizyxavyuoxp` (Frankfurt) is live with
+both SQL files applied, signups disabled, site URL and redirect set,
+ahmet@ahmetsozturk.com invited and set to admin.

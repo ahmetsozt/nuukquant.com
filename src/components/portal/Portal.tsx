@@ -168,7 +168,10 @@ function Login({ t }: { t: T }) {
         ? await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: window.location.href, shouldCreateUser: false } })
         : await sb.auth.signInWithPassword({ email, password });
     setBusy(false);
-    if (error) return setMsg({ tone: "error", text: error.message });
+    if (error) {
+      const friendly = /signups not allowed|user not found/i.test(error.message) ? t.notRegistered : /invalid login credentials/i.test(error.message) ? t.badPassword : error.message;
+      return setMsg({ tone: "error", text: friendly });
+    }
     window.gtag?.("event", "portal_login", { event_label: mode });
     if (mode === "link") setMsg({ tone: "ok", text: t.linkSent });
   }

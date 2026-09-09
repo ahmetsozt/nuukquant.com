@@ -1298,6 +1298,8 @@ export const tr: ContentOverride = {
     ]
   },
   portal: {
+    notRegistered: "Bu e-posta portalda kayıtlı değil. Aboneliğinizin kayıtlı olduğu adresi kullanın ya da davet için bizimle iletişime geçin.",
+    badPassword: "E-posta veya şifre hatalı. Henüz şifre belirlemediyseniz e-posta bağlantısıyla giriş yapın.",
     linkExpired: "Bu giriş bağlantısının süresi dolmuş ya da daha önce kullanılmış. E-postanızı girin, yenisini gönderelim.",
     security: {
       passwordTitle: "Şifre",

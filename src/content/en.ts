@@ -1218,6 +1218,8 @@ export const en = {
     ]
   },
   portal: {
+    notRegistered: "This email is not registered on the portal. Use the address your subscription was registered under, or contact us to be invited.",
+    badPassword: "Email or password is incorrect. If you have not set a password yet, use the email link instead.",
     linkExpired: "This sign-in link has expired or was already used. Enter your email below and we will send a fresh one.",
     security: {
       passwordTitle: "Password",

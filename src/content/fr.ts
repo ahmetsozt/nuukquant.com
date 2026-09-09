@@ -78,6 +78,7 @@ export const fr: ContentOverride = {
       label: "À propos",
       items: [
         { label: "Parcours" },
+        { label: "Comment nous gagnons de l’argent" },
         { label: "Contact" },
         { label: "Avertissement sur les risques" },
         { label: "Information IB" },
@@ -817,6 +818,180 @@ export const fr: ContentOverride = {
     note: "Données TradingView. Les événements à fort impact portent trois barres. Les systèmes NUUK réduisent la taille des positions autour de ces publications ; les traders discrétionnaires devraient éviter d’ouvrir de nouvelles positions dans les 15 minutes qui les précèdent.",
     tipsTitle: "Comment nous lisons le calendrier",
     tips: ["Comparez le chiffre réel au consensus, pas à la valeur précédente ; c’est la surprise qui fait bouger le marché.", "Surveillez la révision du chiffre du mois dernier ; une forte révision compte souvent plus que le chiffre principal.", "Les décisions de taux font bouger le marché deux fois : à l’annonce, puis à la conférence de presse environ 30 minutes plus tard."],
+  },
+  money: {
+    "metaTitle": "Comment nous gagnons de l’argent",
+    "metaDescription": "NUUK se rémunère en négociant son propre capital, par des frais de gestion et de performance sur les portefeuilles gérés, par des partenariats avec des courtiers et par des abonnements à la recherche. Chaque frais est expliqué.",
+    "kicker": "Comment nous gagnons de l’argent",
+    "title": "Nous gagnons quand vous gagnez. Notre capital passe en premier.",
+    "lead": "NUUK n’est pas un courtier et ne prend pas la contrepartie de vos ordres. Nos revenus proviennent de quatre sources transparentes, et la plus importante est le trading que nous menons aussi pour vous.",
+    "principlesTitle": "Quatre principes derrière chaque frais",
+    "principles": [
+      {
+        "title": "Notre capital d’abord",
+        "body": "Chaque système tourne avec notre argent avant de gérer celui d’autrui. Nous prenons les mêmes positions, au même moment, avec les mêmes limites de risque."
+      },
+      {
+        "title": "Rémunérés sur le bénéfice net",
+        "body": "Les frais de performance ne s’appliquent qu’au bénéfice réalisé au-dessus du plus-haut historique (high-water mark) de votre compte. Les pertes doivent être récupérées avant que nous gagnions à nouveau."
+      },
+      {
+        "title": "Rien de caché",
+        "body": "Aucune majoration des spreads ou des commissions, aucun frais de plateforme, aucune charge dissimulée dans les swaps. Ce que vous voyez sur cette page est la liste complète."
+      },
+      {
+        "title": "Le risque avant le rendement",
+        "body": "Chaque mandat commence par un drawdown maximal et une limite de perte quotidienne. Nous préférons gagner moins que les dépasser."
+      }
+    ],
+    "streamsTitle": "D’où viennent nos revenus",
+    "streamsLead": "Par ordre d’importance.",
+    "streams": [
+      {
+        "title": "Trading pour compte propre",
+        "share": "Première source",
+        "body": "Nous négocions notre propre capital avec les mêmes systèmes algorithmiques proposés aux clients : GANN Live en production, le Trend Ensemble en paper trading. C’est le revenu qui nous garde honnêtes : si les systèmes cessent de fonctionner, nous le sentons en premier.",
+        "how": "Résultat de trading sur les comptes propres de NUUK"
+      },
+      {
+        "title": "Gestion de portefeuille",
+        "share": "Frais de gestion et de performance",
+        "body": "Deux structures. Le MAM mutualisé ne facture aucun frais de gestion et 25 % des bénéfices au-dessus du plus-haut historique. Le compte dédié (à partir de 250 000 USD) facture 1 000 USD par mois plus 25 % des bénéfices au-dessus du plus-haut historique, après frais de gestion.",
+        "how": "Prélevés par le courtier sur votre compte et visibles sur chaque relevé"
+      },
+      {
+        "title": "Partenariats avec des courtiers",
+        "share": "Rétrocessions d’apporteur d’affaires (IB)",
+        "body": "Lorsque vous ouvrez un compte chez un courtier partenaire via NUUK, le courtier nous reverse une part du spread ou de la commission qu’il perçoit. Vos conditions de trading sont identiques à celles d’un client direct. La liste complète des partenaires et des conditions figure dans notre information IB.",
+        "how": "Payées par le courtier, jamais ajoutées à vos coûts"
+      },
+      {
+        "title": "Recherche et formation",
+        "share": "Abonnements et ateliers",
+        "body": "Formules de signaux et de recherche à 750, 1 000 et 5 000 USD par mois, ainsi que des ateliers payants et des formations en entreprise. Les webinaires hebdomadaires restent gratuits.",
+        "how": "Abonnement fixe ou prix du billet, payés d’avance"
+      }
+    ],
+    "exampleTitle": "À quoi ressemble une année en chiffres",
+    "exampleLead": "Chiffres illustratifs pour une année avec un rendement brut de 12 % avant frais. Ce n’est pas une prévision ; les rendements peuvent être négatifs.",
+    "examples": [
+      {
+        "name": "MAM mutualisé",
+        "basis": "100 000 USD alloués",
+        "rows": [
+          [
+            "Bénéfice brut (12 %)",
+            "12 000 USD"
+          ],
+          [
+            "Frais de gestion",
+            "0 USD"
+          ],
+          [
+            "Frais de performance (25 %)",
+            "3 000 USD"
+          ],
+          [
+            "Net pour vous",
+            "9 000 USD (+9,0 %)"
+          ],
+          [
+            "Revenu de NUUK",
+            "3 000 USD"
+          ]
+        ]
+      },
+      {
+        "name": "Compte dédié",
+        "basis": "250 000 USD alloués",
+        "rows": [
+          [
+            "Bénéfice brut (12 %)",
+            "30 000 USD"
+          ],
+          [
+            "Frais de gestion (12 × 1 000 USD)",
+            "12 000 USD"
+          ],
+          [
+            "Bénéfice après frais de gestion",
+            "18 000 USD"
+          ],
+          [
+            "Frais de performance (25 %)",
+            "4 500 USD"
+          ],
+          [
+            "Net pour vous",
+            "13 500 USD (+5,4 %)"
+          ],
+          [
+            "Revenu de NUUK",
+            "16 500 USD"
+          ]
+        ]
+      }
+    ],
+    "exampleNote": "Lors d’une année perdante, aucun frais de performance n’est facturé et la perte doit être récupérée avant qu’un frais de performance soit à nouveau prélevé. Le compte dédié continue de payer ses frais de gestion mensuels. Les spreads, commissions et swaps sont facturés par le courtier et sont déjà inclus dans le chiffre brut.",
+    "neverTitle": "Ce que nous ne faisons jamais",
+    "never": [
+      "Majorer les spreads, commissions ou swaps",
+      "Détenir votre argent ou disposer d’un droit de retrait sur votre compte",
+      "Trader contre vous ou vendre votre flux d’ordres",
+      "Facturer des frais de performance sur des gains latents ou sur des bénéfices inférieurs au plus-haut historique",
+      "Être payés pour recommander un courtier plutôt qu’un autre au-delà de la rétrocession déclarée"
+    ],
+    "riskTitle": "La gestion du risque est le modèle économique",
+    "riskLead": "Les frais n’ont de sens que si le capital survit. Ces limites s’appliquent à nos propres comptes et à chaque mandat que nous gérons.",
+    "risk": [
+      {
+        "title": "Risque fixe par position",
+        "body": "Chaque position est dimensionnée sur un montant de risque fixe, 300 USD par trade sur GANN Live, avec un stop fixé par ATR(14) × 1,5 avant l’entrée."
+      },
+      {
+        "title": "Limite de perte quotidienne",
+        "body": "Le trading s’arrête pour la journée dès que la limite de perte quotidienne du mandat est atteinte. Le système ne peut pas la contourner."
+      },
+      {
+        "title": "Mandat de drawdown maximal",
+        "body": "Chaque mandat fixe un drawdown maximal. L’atteindre met le compte en pause et déclenche une revue avec vous avant toute reprise."
+      },
+      {
+        "title": "Revue hebdomadaire réel contre attendu",
+        "body": "Les systèmes qui s’écartent de leur comportement testé sont mis en pause, pas retouchés en vol."
+      }
+    ],
+    "faqTitle": "Questions sur les frais",
+    "faq": [
+      {
+        "q": "Gagnez-vous quelque chose si mon compte perd de l’argent ?",
+        "a": "Pas sur le compte. Le MAM mutualisé n’a pas de frais de gestion, une année perdante ne nous rapporte donc rien. Le compte dédié paie ses frais de gestion mensuels, indiqués avant signature ; aucun frais de performance n’est facturé tant que la perte n’est pas récupérée."
+      },
+      {
+        "q": "Les rétrocessions IB sont-elles un conflit d’intérêts ?",
+        "a": "Elles peuvent l’être, c’est pourquoi elles sont déclarées. Nous recommandons les courtiers selon la régulation, l’exécution et les conditions adaptées à votre profil, et chaque partenaire figure avec ses conditions dans l’information IB. Vos conditions de trading ne changent jamais parce que vous venez par nous."
+      },
+      {
+        "q": "Comment le plus-haut historique est-il calculé ?",
+        "a": "C’est la valeur de fin de mois la plus élevée de votre compte depuis l’ouverture, ajustée des dépôts et retraits. Un frais de performance n’est prélevé que sur la partie de la valeur de fin de mois qui le dépasse."
+      },
+      {
+        "q": "Où puis-je voir les frais prélevés ?",
+        "a": "Sur votre relevé de courtier. Les frais sont prélevés par le courtier à l’intérieur de votre propre compte ; chaque prélèvement est visible en temps réel et dans le rapport mensuel que nous envoyons."
+      }
+    ],
+    "cta": {
+      "label": "Discuter d’un mandat",
+      "href": "/contact-us/"
+    },
+    "feesLink": {
+      "label": "Voir la grille tarifaire complète",
+      "href": "/portfolio-management/"
+    },
+    "ibLink": {
+      "label": "Lire l’information IB",
+      "href": "/legal/ib-disclosure/"
+    }
   },
   contact: {
     metaTitle: "Contact",

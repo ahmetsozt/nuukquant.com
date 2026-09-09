@@ -155,6 +155,7 @@ export const en = {
       href: "/about/",
       items: [
         { label: "Story", href: "/about/" },
+        { label: "How we make money", href: "/how-we-make-money/" },
         { label: "Contact", href: "/contact-us/" },
         { label: "Risk disclosure", href: "/legal/risk-disclosure/" },
         { label: "IB disclosure", href: "/legal/ib-disclosure/" },
@@ -809,6 +810,180 @@ export const en = {
     note: "Data by TradingView. High-impact events carry three bars. NUUK systems reduce position size around high-impact releases; discretionary traders should avoid opening new positions in the 15 minutes before one.",
     tipsTitle: "How we read the calendar",
     tips: ["Compare the actual figure with consensus, not with the previous reading; the surprise is what moves the market.", "Watch the revision to last month's number; a large revision often matters more than the headline.", "Rate decisions move markets twice: at the decision and again at the press conference about 30 minutes later."],
+  },
+  money: {
+    "metaTitle": "How we make money",
+    "metaDescription": "NUUK earns from trading its own capital, from management and performance fees on managed portfolios, from broker partnerships and from research subscriptions. Every fee explained.",
+    "kicker": "How we make money",
+    "title": "We earn when you earn. Our own capital goes first.",
+    "lead": "NUUK is not a broker and does not take the other side of your trades. Our income comes from four transparent sources, and the largest of them is the same trading we run for you.",
+    "principlesTitle": "Four principles behind every fee",
+    "principles": [
+      {
+        "title": "Own capital first",
+        "body": "Every system runs on our own money before it manages anyone else's. We take the same trades, at the same time, with the same risk limits."
+      },
+      {
+        "title": "Paid on net profit",
+        "body": "Performance fees are charged only on realised profit above your account's high-water mark. Losses have to be recovered before we earn again."
+      },
+      {
+        "title": "Nothing hidden",
+        "body": "No mark-up on spreads or commissions, no platform fees, no charges buried in swaps. What you see on this page is the complete list."
+      },
+      {
+        "title": "Risk before return",
+        "body": "Every mandate starts with a maximum drawdown and a daily loss limit. We would rather earn less than breach them."
+      }
+    ],
+    "streamsTitle": "Where our income comes from",
+    "streamsLead": "Listed in order of size.",
+    "streams": [
+      {
+        "title": "Proprietary trading",
+        "share": "Largest source",
+        "body": "We trade our own capital with the same algorithmic systems offered to clients: GANN Live in production, the Trend Ensemble in paper trading. This is the income that keeps us honest: if the systems stop working, we feel it first.",
+        "how": "Trading profit and loss on NUUK's own accounts"
+      },
+      {
+        "title": "Portfolio management",
+        "share": "Management and performance fees",
+        "body": "Two structures. The pooled MAM charges no management fee and 25% of profits above the high-water mark. The dedicated account (from USD 250,000) charges USD 1,000 per month plus 25% of profits above the high-water mark, after the management fee.",
+        "how": "Deducted by the broker from your account and shown on every statement"
+      },
+      {
+        "title": "Broker partnerships",
+        "share": "Introducing-broker rebates",
+        "body": "When you open an account with a partner broker through NUUK, the broker pays us a share of the spread or commission it earns. Your trading conditions are identical to a direct client's. The full list of partners and terms is in our IB disclosure.",
+        "how": "Paid by the broker, never added to your costs"
+      },
+      {
+        "title": "Research and education",
+        "share": "Subscriptions and workshops",
+        "body": "Signal and research plans at USD 750, 1,000 and 5,000 per month, plus paid workshops and corporate training. Weekly webinars stay free.",
+        "how": "Fixed subscription or ticket price, paid in advance"
+      }
+    ],
+    "exampleTitle": "What a year looks like in numbers",
+    "exampleLead": "Illustrative figures for one year with a gross return of 12% before fees. They are not a forecast; returns can be negative.",
+    "examples": [
+      {
+        "name": "Pooled MAM",
+        "basis": "USD 100,000 allocated",
+        "rows": [
+          [
+            "Gross profit (12%)",
+            "USD 12,000"
+          ],
+          [
+            "Management fee",
+            "USD 0"
+          ],
+          [
+            "Performance fee (25%)",
+            "USD 3,000"
+          ],
+          [
+            "Net to you",
+            "USD 9,000 (+9.0%)"
+          ],
+          [
+            "NUUK earns",
+            "USD 3,000"
+          ]
+        ]
+      },
+      {
+        "name": "Dedicated account",
+        "basis": "USD 250,000 allocated",
+        "rows": [
+          [
+            "Gross profit (12%)",
+            "USD 30,000"
+          ],
+          [
+            "Management fee (12 × USD 1,000)",
+            "USD 12,000"
+          ],
+          [
+            "Profit after management fee",
+            "USD 18,000"
+          ],
+          [
+            "Performance fee (25%)",
+            "USD 4,500"
+          ],
+          [
+            "Net to you",
+            "USD 13,500 (+5.4%)"
+          ],
+          [
+            "NUUK earns",
+            "USD 16,500"
+          ]
+        ]
+      }
+    ],
+    "exampleNote": "In a losing year there is no performance fee, and the loss must be recovered before any performance fee is charged again. The dedicated account still pays its monthly management fee. Broker spreads, commissions and swaps are charged by the broker and are already inside the gross figure.",
+    "neverTitle": "What we never do",
+    "never": [
+      "Mark up spreads, commissions or swaps",
+      "Hold your money or have withdrawal rights on your account",
+      "Trade against you or sell your order flow",
+      "Charge a performance fee on unrealised gains or on profits below the high-water mark",
+      "Take payment for recommending one broker over another beyond the disclosed rebate"
+    ],
+    "riskTitle": "Risk management is the business model",
+    "riskLead": "Fees only work if capital survives. These limits apply to our own accounts and to every mandate we run.",
+    "risk": [
+      {
+        "title": "Fixed risk per trade",
+        "body": "Every position is sized to a fixed amount of risk, USD 300 per trade on GANN Live, with the stop set by ATR(14) × 1.5 before entry."
+      },
+      {
+        "title": "Daily loss limit",
+        "body": "Trading stops for the day when the mandate's daily loss limit is hit. The system cannot override it."
+      },
+      {
+        "title": "Maximum drawdown mandate",
+        "body": "Each mandate sets a maximum drawdown. Reaching it pauses the account and triggers a review with you before anything restarts."
+      },
+      {
+        "title": "Weekly live-versus-expected review",
+        "body": "Systems that drift from their tested behaviour are paused, not tweaked mid-flight."
+      }
+    ],
+    "faqTitle": "Questions about fees",
+    "faq": [
+      {
+        "q": "Do you earn anything if my account loses money?",
+        "a": "Not from the account. The pooled MAM has no management fee, so a losing year pays us nothing. The dedicated account pays its monthly management fee, which is disclosed before you sign; no performance fee is charged until the loss is recovered."
+      },
+      {
+        "q": "Are IB rebates a conflict of interest?",
+        "a": "They can be, which is why they are disclosed. We recommend brokers on regulation, execution and conditions for your profile, and every partner is listed with its terms in the IB disclosure. Your trading conditions never change because you came through us."
+      },
+      {
+        "q": "How is the high-water mark calculated?",
+        "a": "It is the highest month-end value of your account since inception, adjusted for deposits and withdrawals. A performance fee is charged only on the part of a month-end value that exceeds it."
+      },
+      {
+        "q": "Where can I see the fees you have taken?",
+        "a": "On your broker statement. Fees are deducted by the broker inside your own account, so every charge is visible in real time and in the monthly report we send."
+      }
+    ],
+    "cta": {
+      "label": "Discuss a mandate",
+      "href": "/contact-us/"
+    },
+    "feesLink": {
+      "label": "See the full fee schedule",
+      "href": "/portfolio-management/"
+    },
+    "ibLink": {
+      "label": "Read the IB disclosure",
+      "href": "/legal/ib-disclosure/"
+    }
   },
   contact: {
     metaTitle: "Contact",

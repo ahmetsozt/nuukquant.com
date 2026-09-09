@@ -1375,27 +1375,41 @@ export const fr: ContentOverride = {
 
   performance: [
     {
-      name: "Portefeuille personnel — Tickmill",
-      source: "Relevé de courtier",
-      updated: "Mensuel",
-      stats: [
+      "name": "GANN NUUK Trader AI — Tickmill, capital propre",
+      "source": "Relevé détaillé MT4, 9 sept. 2026",
+      "updated": "2026-09-09",
+      "stats": [
         {
-          "label": "Depuis",
-          "value": "2026"
+          "label": "Déposé",
+          "value": "47 000 USD",
+          "tone": "neutral"
         },
         {
-          "label": "Instruments",
-          "value": "Or, argent, indices"
+          "label": "Bénéfice net réalisé",
+          "value": "+12 422 USD (+26,4 %)",
+          "tone": "up"
         },
         {
-          "label": "Risque par trade",
-          "value": "300 USD"
+          "label": "P&L latent",
+          "value": "−3 590 USD",
+          "tone": "down"
         },
         {
-          "label": "Reporting",
-          "value": "Relevé mensuel"
+          "label": "Profit factor",
+          "value": "8,06",
+          "tone": "neutral"
+        },
+        {
+          "label": "Taux de réussite",
+          "value": "77,6 % (135 sur 174)",
+          "tone": "neutral"
+        },
+        {
+          "label": "Drawdown max (trades clôturés)",
+          "value": "1,21 %",
+          "tone": "neutral"
         }
-      ],
+      ]
     },
     {
       name: "Portefeuille personnel — Saxo Bank",

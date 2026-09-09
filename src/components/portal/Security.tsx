@@ -46,8 +46,37 @@ export default function Security({ t }: { t: T }) {
     setTick((n) => n + 1);
   }
 
+  const [pwMsg, setPwMsg] = useState<{ tone: "ok" | "error"; text: string } | null>(null);
+  async function setPassword(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const d = new FormData(e.currentTarget);
+    const pw = String(d.get("password") ?? "");
+    if (pw.length < 8 || pw !== String(d.get("confirm") ?? "")) return setPwMsg({ tone: "error", text: t.passwordRule });
+    const { error } = await supabase().auth.updateUser({ password: pw });
+    setPwMsg(error ? { tone: "error", text: error.message } : { tone: "ok", text: t.passwordSaved });
+    if (!error) e.currentTarget.reset();
+  }
+
   const active = factors.filter((f) => f.status === "verified");
   return (
+    <div className="space-y-6">
+    <Card title={t.passwordTitle}>
+      <p className="text-[14.5px] leading-6 text-body">{t.passwordLead}</p>
+      <form onSubmit={setPassword} className="mt-5 grid gap-3 sm:grid-cols-3">
+        <label className="block">
+          <span className={label}>{t.newPassword}</span>
+          <input name="password" type="password" autoComplete="new-password" required minLength={8} className={field} dir="ltr" />
+        </label>
+        <label className="block">
+          <span className={label}>{t.confirmPassword}</span>
+          <input name="confirm" type="password" autoComplete="new-password" required minLength={8} className={field} dir="ltr" />
+        </label>
+        <div className="flex items-end">
+          <button type="submit" className={btn}>{t.savePassword}</button>
+        </div>
+        {pwMsg && <div className="sm:col-span-3"><Notice tone={pwMsg.tone}>{pwMsg.text}</Notice></div>}
+      </form>
+    </Card>
     <Card title={t.title}>
       <p className="text-[14.5px] leading-6 text-body">{t.lead}</p>
       {msg && <div className="mt-4"><Notice tone={msg.tone}>{msg.text}</Notice></div>}
@@ -85,6 +114,7 @@ export default function Security({ t }: { t: T }) {
         </button>
       )}
     </Card>
+    </div>
   );
 }
 

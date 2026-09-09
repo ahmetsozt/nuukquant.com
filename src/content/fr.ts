@@ -73,7 +73,7 @@ export const fr: ContentOverride = {
     },
     { label: "Courtiers" },
     { label: "Track record" },
-    { label: "Analyses" },
+    { label: "Analyses", items: [{ label: "Notes de marché" }, { label: "Calendrier économique" }] },
     {
       label: "À propos",
       items: [
@@ -808,6 +808,16 @@ export const fr: ContentOverride = {
     tabs: ["Tout", "Macro", "Forex", "Matières premières", "Indices", "Crypto", "IA"],
   },
 
+  calendar: {
+    metaTitle: "Calendrier économique",
+    metaDescription: "Calendrier économique en direct : décisions des banques centrales, inflation, emploi et PIB avec consensus et valeurs précédentes.",
+    kicker: "Calendrier économique",
+    title: "Les publications de la semaine qui font bouger les marchés",
+    lead: "Décisions des banques centrales, inflation, emploi et croissance sur un seul écran, avec consensus et valeurs précédentes. Les horaires sont affichés dans votre fuseau horaire.",
+    note: "Données TradingView. Les événements à fort impact portent trois barres. Les systèmes NUUK réduisent la taille des positions autour de ces publications ; les traders discrétionnaires devraient éviter d’ouvrir de nouvelles positions dans les 15 minutes qui les précèdent.",
+    tipsTitle: "Comment nous lisons le calendrier",
+    tips: ["Comparez le chiffre réel au consensus, pas à la valeur précédente ; c’est la surprise qui fait bouger le marché.", "Surveillez la révision du chiffre du mois dernier ; une forte révision compte souvent plus que le chiffre principal.", "Les décisions de taux font bouger le marché deux fois : à l’annonce, puis à la conférence de presse environ 30 minutes plus tard."],
+  },
   contact: {
     metaTitle: "Contact",
     metaDescription: "Réservez un appel, écrivez sur WhatsApp ou Telegram, ou envoyez une demande.",

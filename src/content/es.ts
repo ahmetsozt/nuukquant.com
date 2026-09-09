@@ -72,7 +72,7 @@ export const es: ContentOverride = {
     },
     { label: "Brókeres" },
     { label: "Historial verificado" },
-    { label: "Análisis" },
+    { label: "Análisis", items: [{ label: "Notas de mercado" }, { label: "Calendario económico" }] },
     {
       label: "Sobre mí",
       items: [
@@ -620,6 +620,16 @@ export const es: ContentOverride = {
     tabs: ["Todo", "Macro", "FX", "Materias primas", "Índices", "Cripto", "IA"],
   },
 
+  calendar: {
+    metaTitle: "Calendario económico",
+    metaDescription: "Calendario económico en directo: decisiones de bancos centrales, inflación, empleo y PIB con consenso y datos anteriores.",
+    kicker: "Calendario económico",
+    title: "Las publicaciones de la semana que mueven el mercado",
+    lead: "Decisiones de bancos centrales, inflación, empleo y crecimiento en una sola vista, con consenso y datos anteriores. Las horas se muestran en su zona horaria.",
+    note: "Datos de TradingView. Los eventos de alto impacto llevan tres barras. Los sistemas de NUUK reducen el tamaño de posición en torno a esas publicaciones; los traders discrecionales deberían evitar abrir posiciones nuevas en los 15 minutos previos.",
+    tipsTitle: "Cómo leemos el calendario",
+    tips: ["Compare el dato real con el consenso, no con el anterior; lo que mueve el mercado es la sorpresa.", "Vigile la revisión del dato del mes pasado; una revisión grande suele importar más que el titular.", "Las decisiones de tipos mueven el mercado dos veces: en la decisión y en la rueda de prensa unos 30 minutos después."],
+  },
   contact: {
     metaTitle: "Contacto",
     metaDescription: "Reserve una llamada, escriba por WhatsApp o Telegram, o envíe una consulta.",

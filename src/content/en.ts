@@ -1695,35 +1695,35 @@ export const en = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — Tickmill, own capital",
-      "source": "MT4 detailed statement, 9 Sep 2026",
+      "source": "MT4 detailed statement, 10 Sep 2026 · deposited USD 47,000",
       "verifiedHref": "",
       "status": "live",
       "since": "2026",
-      "updated": "2026-09-09",
+      "updated": "2026-09-10",
       "stats": [
         {
-          "label": "Deposited",
-          "value": "USD 47,000",
+          "label": "Balance",
+          "value": "USD 61,363",
           "tone": "neutral"
         },
         {
           "label": "Closed net profit",
-          "value": "+USD 12,266 (+26.1%)",
+          "value": "+USD 14,363 (+30.6%)",
           "tone": "up"
         },
         {
-          "label": "Equity (no open positions)",
-          "value": "USD 59,266",
+          "label": "Equity (open P/L −USD 3,890 included)",
+          "value": "USD 57,472",
           "tone": "neutral"
         },
         {
           "label": "Profit factor",
-          "value": "3.09",
+          "value": "3.39",
           "tone": "neutral"
         },
         {
           "label": "Win rate",
-          "value": "72.9% (164 of 225)",
+          "value": "73.6% (176 of 239)",
           "tone": "neutral"
         },
         {

@@ -6,10 +6,11 @@ import Fill from "@/components/ui/Fill";
 import Button from "@/components/ui/Button";
 import EventCard from "@/components/home/EventCard";
 import { resolve, type LocaleParams } from "@/lib/page";
+import { seo } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
-  const { c } = await resolve(params);
-  return { title: c.education.metaTitle, description: c.education.metaDescription };
+  const { locale, c } = await resolve(params);
+  return { ...seo(locale, "education/"), title: c.education.metaTitle, description: c.education.metaDescription };
 }
 
 export default async function EducationPage({ params }: { params: LocaleParams }) {

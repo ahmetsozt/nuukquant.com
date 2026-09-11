@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import PageIntro from "@/components/sections/PageIntro";
 import PortalLoader from "@/app/[locale]/portal/PortalLoader";
 import { resolve, type LocaleParams } from "@/lib/page";
+import { seo } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
-  const { c } = await resolve(params);
-  return { title: c.portal.metaTitle, description: c.portal.lead, robots: { index: false } };
+  const { locale, c } = await resolve(params);
+  return { ...seo(locale, "portal/"), title: c.portal.metaTitle, description: c.portal.lead, robots: { index: false } };
 }
 
 export default async function PortalPage({ params }: { params: LocaleParams }) {

@@ -7,10 +7,13 @@ import Icon from "@/components/ui/Icon";
 import Button from "@/components/ui/Button";
 import { SignalSample } from "@/components/home/SignalPreview";
 import { resolve, type LocaleParams } from "@/lib/page";
+import { seo } from "@/lib/seo";
+import JsonLd from "@/components/seo/JsonLd";
+import { serviceSchema } from "@/lib/schema";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
-  const { c } = await resolve(params);
-  return { title: c.signals.metaTitle, description: c.signals.metaDescription };
+  const { locale, c } = await resolve(params);
+  return { ...seo(locale, "signals/"), title: c.signals.metaTitle, description: c.signals.metaDescription };
 }
 
 export default async function SignalsPage({ params }: { params: LocaleParams }) {
@@ -20,6 +23,18 @@ export default async function SignalsPage({ params }: { params: LocaleParams }) 
   return (
     <>
       <PageIntro tone="dark" kicker={p.kicker} title={p.title} body={p.lead} crumbs={[{ label: c.ui.home, href: localeHome }, { label: p.kicker }]} />
+      <JsonLd
+        data={serviceSchema(
+          p.metaTitle,
+          p.metaDescription,
+          p.plans.map((plan) => ({
+            name: plan.name,
+            price: plan.price.replace(/[^0-9.]/g, ""),
+            currency: "USD",
+            unit: plan.period,
+          })),
+        )}
+      />
 
       <section className="section-pad bg-white">
         <div className="container-x grid gap-12 lg:grid-cols-12">

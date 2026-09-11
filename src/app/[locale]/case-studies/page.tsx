@@ -3,10 +3,11 @@ import PageIntro from "@/components/sections/PageIntro";
 import CtaBand from "@/components/sections/CtaBand";
 import Icon from "@/components/ui/Icon";
 import { resolve, type LocaleParams } from "@/lib/page";
+import { seo } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
-  const { c } = await resolve(params);
-  return { title: c.caseStudies.metaTitle, description: c.caseStudies.metaDescription };
+  const { locale, c } = await resolve(params);
+  return { ...seo(locale, "case-studies/"), title: c.caseStudies.metaTitle, description: c.caseStudies.metaDescription };
 }
 
 export default async function CaseStudiesPage({ params }: { params: LocaleParams }) {

@@ -14,6 +14,7 @@ import Icon from "@/components/ui/Icon";
 import { en } from "@/content/en";
 import { locales } from "@/i18n";
 import { resolve } from "@/lib/page";
+import { seo } from "@/lib/seo";
 
 type Params = Promise<{ locale: string; slug: string }>;
 
@@ -26,10 +27,10 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
-  const { c } = await resolve(params);
+  const { locale, c } = await resolve(params);
   const { slug } = await params;
   const b = c.brokers.list.find((x) => x.slug === slug);
-  return b ? { title: `${b.name} — ${c.brokers.kicker}`, description: b.tagline } : {};
+  return b ? { ...seo(locale, `brokers/${slug}/`), title: `${b.name} — ${c.brokers.kicker}`, description: b.tagline } : {};
 }
 
 export default async function BrokerLandingPage({ params }: { params: Params }) {

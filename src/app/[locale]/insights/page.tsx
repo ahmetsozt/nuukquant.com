@@ -9,10 +9,11 @@ const TIMELINE = "https://s3.tradingview.com/external-embedding/embed-widget-tim
 const TECH = "https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js";
 const TECH_SYMBOLS = ["OANDA:XAUUSD", "FX:EURUSD", "CAPITALCOM:US500", "BITSTAMP:BTCUSD"];
 import { resolve, type LocaleParams } from "@/lib/page";
+import { seo } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
-  const { c } = await resolve(params);
-  return { title: c.insights.metaTitle, description: c.insights.metaDescription };
+  const { locale, c } = await resolve(params);
+  return { ...seo(locale, "insights/"), title: c.insights.metaTitle, description: c.insights.metaDescription };
 }
 
 export default async function InsightsPage({ params }: { params: LocaleParams }) {

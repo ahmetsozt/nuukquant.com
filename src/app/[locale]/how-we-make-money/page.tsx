@@ -6,13 +6,14 @@ import Faq from "@/components/sections/Faq";
 import SectionHead from "@/components/ui/SectionHead";
 import Icon from "@/components/ui/Icon";
 import { resolve, type LocaleParams } from "@/lib/page";
+import { seo } from "@/lib/seo";
 
 const PRINCIPLE_ICONS = ["briefcase", "chart", "shield", "warning"] as const;
 const STREAM_ICONS = ["chart", "briefcase", "handshake", "signal"] as const;
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
-  const { c } = await resolve(params);
-  return { title: c.money.metaTitle, description: c.money.metaDescription };
+  const { locale, c } = await resolve(params);
+  return { ...seo(locale, "how-we-make-money/"), title: c.money.metaTitle, description: c.money.metaDescription };
 }
 
 export default async function HowWeMakeMoneyPage({ params }: { params: LocaleParams }) {

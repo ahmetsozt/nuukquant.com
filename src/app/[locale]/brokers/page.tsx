@@ -10,10 +10,11 @@ import Button from "@/components/ui/Button";
 import { BrokerCardFull, brokerCta, brokerHref } from "@/components/home/BrokerCard";
 import BrokerWizard from "@/components/brokers/BrokerWizard";
 import { resolve, type LocaleParams } from "@/lib/page";
+import { seo } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
-  const { c } = await resolve(params);
-  return { title: c.brokers.metaTitle, description: c.brokers.metaDescription };
+  const { locale, c } = await resolve(params);
+  return { ...seo(locale, "brokers/"), title: c.brokers.metaTitle, description: c.brokers.metaDescription };
 }
 
 export default async function BrokersPage({ params }: { params: LocaleParams }) {

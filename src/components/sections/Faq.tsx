@@ -1,4 +1,6 @@
 import Fill from "@/components/ui/Fill";
+import JsonLd from "@/components/seo/JsonLd";
+import { faqSchema } from "@/lib/schema";
 import SectionHead from "@/components/ui/SectionHead";
 
 export type FaqItem = { q: string; a: string };
@@ -27,6 +29,7 @@ export default function Faq({ title, items, tone = "light" }: { title: string; i
           </div>
         </div>
       </div>
+      <JsonLd data={faqSchema(items)} />
     </section>
   );
 }

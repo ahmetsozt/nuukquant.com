@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import PageIntro from "@/components/sections/PageIntro";
 import ApplyLoader from "@/app/[locale]/apply/ApplyLoader";
 import { resolve, type LocaleParams } from "@/lib/page";
+import { seo } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
-  const { c } = await resolve(params);
-  return { title: c.apply.metaTitle, description: c.apply.lead };
+  const { locale, c } = await resolve(params);
+  return { ...seo(locale, "apply/"), title: c.apply.metaTitle, description: c.apply.lead };
 }
 
 export default async function ApplyPage({ params }: { params: LocaleParams }) {

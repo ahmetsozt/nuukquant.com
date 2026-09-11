@@ -39,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: page === "" || page === "insights/" ? ("weekly" as const) : ("monthly" as const),
       priority: page === "" ? 1 : page.startsWith("legal/") ? 0.3 : 0.7,
-      alternates: { languages: Object.fromEntries(locales.map((l) => [l, url(l, page)])) },
+      alternates: { languages: { ...Object.fromEntries(locales.map((l) => [l, url(l, page)])), "x-default": url("en", page) } },
     })),
   );
 }

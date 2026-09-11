@@ -23,7 +23,7 @@ export function pageUrl(locale: Locale, path: string): string {
  * for a single page. Spread into every page's generateMetadata, otherwise the
  * page inherits the locale layout's canonical and points at the home page.
  */
-export function seo(locale: Locale, path: string): Metadata {
+export function seo(locale: Locale, path: string, image = "/og.png"): Metadata {
   const languages: Record<string, string> = Object.fromEntries(locales.map((l) => [l, pageUrl(l, path)]));
   languages["x-default"] = pageUrl("en", path);
   return {
@@ -33,9 +33,14 @@ export function seo(locale: Locale, path: string): Metadata {
       types: { "application/rss+xml": `${SITE}/feed.xml` },
     },
     openGraph: {
+      // A page-level openGraph replaces the layout's wholesale, so site name,
+      // type and image have to be repeated here or social cards lose them.
+      type: "website",
+      siteName: "NUUK",
       url: pageUrl(locale, path),
       locale: OG_LOCALE[locale],
       alternateLocale: locales.filter((l) => l !== locale).map((l) => OG_LOCALE[l]),
+      images: [{ url: `${SITE}${image}`, width: 1200, height: 630, alt: "NUUK — algorithmic trading and portfolio management, DIFC Dubai" }],
     },
   };
 }

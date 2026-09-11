@@ -12,7 +12,7 @@ const ACTIVITY_ICONS: IconName[] = ["cpu", "briefcase", "handshake", "signal", "
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
   const { locale, c } = await resolve(params);
-  return { ...seo(locale, "about/"), title: c.about.metaTitle, description: c.about.metaDescription };
+  return { ...seo(locale, "about/", "/og/about.png"), title: c.about.metaTitle, description: c.about.metaDescription };
 }
 
 export default async function AboutPage({ params }: { params: LocaleParams }) {

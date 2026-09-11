@@ -10,7 +10,7 @@ import { seo } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
   const { locale, c } = await resolve(params);
-  return { ...seo(locale, "education/"), title: c.education.metaTitle, description: c.education.metaDescription };
+  return { ...seo(locale, "education/", "/og/education.png"), title: c.education.metaTitle, description: c.education.metaDescription };
 }
 
 export default async function EducationPage({ params }: { params: LocaleParams }) {

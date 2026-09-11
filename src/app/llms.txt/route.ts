@@ -56,6 +56,7 @@ export function GET() {
     "",
     "## Machine-readable",
     "",
+    `- [Full reference](${SITE}/llms-full.txt)`,
     `- [Sitemap](${SITE}/sitemap.xml)`,
     `- [Feed](${SITE}/feed.xml)`,
     "",

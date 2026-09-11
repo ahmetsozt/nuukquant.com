@@ -11,7 +11,7 @@ const COUNTRIES = "us,eu,gb,jp,ch,ca,au,nz,cn,tr,ae,sa,de,fr,it,in,br,mx,za,kr";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
   const { locale, c } = await resolve(params);
-  return { ...seo(locale, "economic-calendar/"), title: c.calendar.metaTitle, description: c.calendar.metaDescription };
+  return { ...seo(locale, "economic-calendar/", "/og/economic-calendar.png"), title: c.calendar.metaTitle, description: c.calendar.metaDescription };
 }
 
 export default async function EconomicCalendarPage({ params }: { params: LocaleParams }) {

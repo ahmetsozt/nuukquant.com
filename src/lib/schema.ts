@@ -109,3 +109,19 @@ export function serviceSchema(name: string, description: string, offers: { name:
     })),
   };
 }
+
+/** An ordered list of published items, e.g. the desk notes on the insights page. */
+export function itemListSchema(name: string, items: { name: string; url: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    numberOfItems: items.length,
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      url: item.url.startsWith("http") ? item.url : `${SITE}${item.url}`,
+    })),
+  };
+}

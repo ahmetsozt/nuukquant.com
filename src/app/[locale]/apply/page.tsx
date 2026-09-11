@@ -6,7 +6,7 @@ import { seo } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
   const { locale, c } = await resolve(params);
-  return { ...seo(locale, "apply/"), title: c.apply.metaTitle, description: c.apply.lead };
+  return { ...seo(locale, "apply/", "/og/apply.png"), title: c.apply.metaTitle, description: c.apply.lead };
 }
 
 export default async function ApplyPage({ params }: { params: LocaleParams }) {

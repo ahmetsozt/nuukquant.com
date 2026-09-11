@@ -9,7 +9,7 @@ import { seo } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
   const { locale, c } = await resolve(params);
-  return { ...seo(locale, "ai-trading/"), title: c.aiTrading.metaTitle, description: c.aiTrading.metaDescription };
+  return { ...seo(locale, "ai-trading/", "/og/ai-trading.png"), title: c.aiTrading.metaTitle, description: c.aiTrading.metaDescription };
 }
 
 export default async function AiTradingPage({ params }: { params: LocaleParams }) {

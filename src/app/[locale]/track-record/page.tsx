@@ -9,7 +9,7 @@ import { seo } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
   const { locale, c } = await resolve(params);
-  return { ...seo(locale, "track-record/"), title: c.trackRecord.metaTitle, description: c.trackRecord.metaDescription };
+  return { ...seo(locale, "track-record/", "/og/track-record.png"), title: c.trackRecord.metaTitle, description: c.trackRecord.metaDescription };
 }
 
 export default async function TrackRecordPage({ params }: { params: LocaleParams }) {

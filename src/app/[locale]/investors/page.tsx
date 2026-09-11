@@ -13,7 +13,7 @@ const REPORT_ICONS = ["chart", "calendar", "phone", "briefcase"] as const;
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
   const { locale, c } = await resolve(params);
-  return { ...seo(locale, "investors/"), title: c.investors.metaTitle, description: c.investors.metaDescription };
+  return { ...seo(locale, "investors/", "/og/investors.png"), title: c.investors.metaTitle, description: c.investors.metaDescription };
 }
 
 export default async function InvestorsPage({ params }: { params: LocaleParams }) {

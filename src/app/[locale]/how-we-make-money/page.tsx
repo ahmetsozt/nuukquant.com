@@ -13,7 +13,7 @@ const STREAM_ICONS = ["chart", "briefcase", "handshake", "signal"] as const;
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
   const { locale, c } = await resolve(params);
-  return { ...seo(locale, "how-we-make-money/"), title: c.money.metaTitle, description: c.money.metaDescription };
+  return { ...seo(locale, "how-we-make-money/", "/og/how-we-make-money.png"), title: c.money.metaTitle, description: c.money.metaDescription };
 }
 
 export default async function HowWeMakeMoneyPage({ params }: { params: LocaleParams }) {

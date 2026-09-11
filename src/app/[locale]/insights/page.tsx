@@ -10,10 +10,12 @@ const TECH = "https://s3.tradingview.com/external-embedding/embed-widget-technic
 const TECH_SYMBOLS = ["OANDA:XAUUSD", "FX:EURUSD", "CAPITALCOM:US500", "BITSTAMP:BTCUSD"];
 import { resolve, type LocaleParams } from "@/lib/page";
 import { seo } from "@/lib/seo";
+import JsonLd from "@/components/seo/JsonLd";
+import { itemListSchema } from "@/lib/schema";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
   const { locale, c } = await resolve(params);
-  return { ...seo(locale, "insights/"), title: c.insights.metaTitle, description: c.insights.metaDescription };
+  return { ...seo(locale, "insights/", "/og/insights.png"), title: c.insights.metaTitle, description: c.insights.metaDescription };
 }
 
 export default async function InsightsPage({ params }: { params: LocaleParams }) {
@@ -23,6 +25,7 @@ export default async function InsightsPage({ params }: { params: LocaleParams })
   return (
     <>
       <PageIntro tone="light" kicker={p.kicker} title={p.title} crumbs={[{ label: c.ui.home, href: localeHome }, { label: p.kicker }]} />
+      <JsonLd data={itemListSchema(c.insights.metaTitle, c.insights.posts.map((post) => ({ name: post.title, url: post.href })))} />
       <section className="section-pad bg-white" aria-label={p.newsTitle}>
         <div className="container-x">
           <SectionHead title={p.newsTitle} lead={p.newsLead} />

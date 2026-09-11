@@ -8,7 +8,7 @@ import { seo } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
   const { locale, c } = await resolve(params);
-  return { ...seo(locale, "contact-us/"), title: c.contact.metaTitle, description: c.contact.metaDescription };
+  return { ...seo(locale, "contact-us/", "/og/contact-us.png"), title: c.contact.metaTitle, description: c.contact.metaDescription };
 }
 
 const icons = ["calendar", "chat", "send"] as const;

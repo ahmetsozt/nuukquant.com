@@ -13,7 +13,7 @@ import { serviceSchema } from "@/lib/schema";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
   const { locale, c } = await resolve(params);
-  return { ...seo(locale, "signals/"), title: c.signals.metaTitle, description: c.signals.metaDescription };
+  return { ...seo(locale, "signals/", "/og/signals.png"), title: c.signals.metaTitle, description: c.signals.metaDescription };
 }
 
 export default async function SignalsPage({ params }: { params: LocaleParams }) {

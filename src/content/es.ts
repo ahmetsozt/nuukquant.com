@@ -1278,32 +1278,32 @@ export const es: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — Tickmill, capital propio",
-      "source": "Extracto detallado MT4, 10 sep 2026 · depositado 47.000 USD",
-      "updated": "2026-09-10",
+      "source": "Extracto detallado MT4, 11 sep 2026",
+      "updated": "2026-09-11",
       "stats": [
         {
-          "label": "Saldo",
-          "value": "61.363 USD",
+          "label": "Depositado",
+          "value": "47.000 USD",
           "tone": "neutral"
         },
         {
           "label": "Beneficio neto realizado",
-          "value": "+14.363 USD (+30,6%)",
+          "value": "+17.910 USD (+38,1%)",
           "tone": "up"
         },
         {
-          "label": "Patrimonio (P/L abierto −3.890 USD incluido)",
-          "value": "57.472 USD",
+          "label": "Patrimonio (sin posiciones abiertas)",
+          "value": "64.910 USD",
           "tone": "neutral"
         },
         {
           "label": "Factor de beneficio",
-          "value": "3,39",
+          "value": "3,38",
           "tone": "neutral"
         },
         {
           "label": "Tasa de acierto",
-          "value": "73,6% (176 de 239)",
+          "value": "73,8% (189 de 256)",
           "tone": "neutral"
         },
         {

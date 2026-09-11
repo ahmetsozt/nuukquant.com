@@ -1736,32 +1736,32 @@ export const tr: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — Tickmill, kendi sermayemiz",
-      "source": "MT4 detaylı rapor, 10 Eyl 2026 · yatırılan 47.000 USD",
-      "updated": "2026-09-10",
+      "source": "MT4 detaylı rapor, 11 Eyl 2026",
+      "updated": "2026-09-11",
       "stats": [
         {
-          "label": "Bakiye",
-          "value": "61.363 USD",
+          "label": "Yatırılan",
+          "value": "47.000 USD",
           "tone": "neutral"
         },
         {
           "label": "Kapanmış net kâr",
-          "value": "+14.363 USD (+%30,6)",
+          "value": "+17.910 USD (+%38,1)",
           "tone": "up"
         },
         {
-          "label": "Özkaynak (açık K/Z −3.890 USD dâhil)",
-          "value": "57.472 USD",
+          "label": "Özkaynak (açık pozisyon yok)",
+          "value": "64.910 USD",
           "tone": "neutral"
         },
         {
           "label": "Kâr faktörü",
-          "value": "3,39",
+          "value": "3,38",
           "tone": "neutral"
         },
         {
           "label": "Kazanma oranı",
-          "value": "%73,6 (239 işlemde 176)",
+          "value": "%73,8 (256 işlemde 189)",
           "tone": "neutral"
         },
         {

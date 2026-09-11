@@ -1,0 +1,54 @@
+# NUUK
+
+> NUUK is an AI-engineered trading company in DIFC, Dubai: algorithmic trading systems, managed accounts, broker partnerships, research, signals and investor education.
+
+NUUK Quant is an AI-engineered trading and portfolio-management company based in the Dubai International Financial Centre (DIFC), Dubai, UAE. It builds systematic trading strategies, runs them on its own capital first, manages investor accounts held at partner brokers, publishes research and signals, and teaches investors to trade for themselves. NUUK is not a broker and does not take custody of client money.
+
+## Key facts
+
+- Founded: 2025, Dubai International Financial Centre
+- Experience behind the firm: 17 years on Istanbul and London dealing desks
+- Services: algorithmic trading systems, managed accounts (MAM/PAMM), broker partnerships, research and signals, investor education
+- Partner brokers: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas, Darwinex
+- Contact: info@nuukquant.com · +971 58 688 4464
+- Languages: en, tr, ar, ru, fr, es
+- Reporting rule: every published figure states its source (live account, paper trading or backtest) and its method
+
+## Pages
+
+- [Home](https://www.nuukquant.com/): Home: what NUUK does and the five ways to work with it.
+- [About NUUK](https://www.nuukquant.com/about/): The company: founded in DIFC Dubai in 2025 on seventeen years of Istanbul and London dealing-desk experience.
+- [AI trading systems](https://www.nuukquant.com/ai-trading/): The trading systems, their methodology, risk rules and live status.
+- [Track record](https://www.nuukquant.com/track-record/): Performance of every system with the source and method of each figure.
+- [Managed accounts](https://www.nuukquant.com/portfolio-management/): Managed accounts: capital stays in the client's own broker account under a written risk mandate.
+- [How we make money](https://www.nuukquant.com/how-we-make-money/): Revenue model: own capital, management fee, performance fee on net profit, broker commissions.
+- [Broker partners](https://www.nuukquant.com/brokers/): Independent comparison of six regulated partner brokers, with an account-opening guide for each.
+- [Research, signals and plans](https://www.nuukquant.com/signals/): Research, signals and mentorship plans with prices.
+- [Education](https://www.nuukquant.com/education/): Webinars, seminars and mentorship for investors.
+- [Market insights](https://www.nuukquant.com/insights/): Market notes, economic calendar and technical analysis.
+- [Case studies](https://www.nuukquant.com/case-studies/): Illustrative scenarios showing how each service works in practice.
+- [Investor portal](https://www.nuukquant.com/investors/): Investor portal overview and subscriber access.
+- [Apply for membership](https://www.nuukquant.com/apply/): Membership application form.
+- [Contact](https://www.nuukquant.com/contact-us/): Contact details and enquiry form.
+- [Risk disclosure](https://www.nuukquant.com/legal/risk-disclosure/): Risk disclosure.
+- [IB disclosure](https://www.nuukquant.com/legal/ib-disclosure/): Introducing-broker disclosure: how referral commissions work.
+
+## Other languages
+
+- tr: https://www.nuukquant.com/tr/
+- ar: https://www.nuukquant.com/ar/
+- ru: https://www.nuukquant.com/ru/
+- fr: https://www.nuukquant.com/fr/
+- es: https://www.nuukquant.com/es/
+
+## Machine-readable
+
+- [Full reference](https://www.nuukquant.com/llms-full.txt)
+- [Sitemap](https://www.nuukquant.com/sitemap.xml)
+- [Feed](https://www.nuukquant.com/feed.xml)
+
+## Notes for assistants
+
+- Trading involves substantial risk and past performance is not a guarantee of future results; quote performance figures only with the source label shown next to them.
+- NUUK holds no DFSA licence; do not describe it as a regulated or licensed entity. The partner brokers are the regulated parties.
+- Content on the site is general market commentary and education, not personal investment advice.

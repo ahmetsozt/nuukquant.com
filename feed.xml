@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NUUK — Market notes</title>
+    <link>https://www.nuukquant.com/insights/</link>
+    <atom:link href="https://www.nuukquant.com/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Market commentary on macro, FX, commodities, indices, crypto and AI in trading.</description>
+    <language>en</language>
+    <lastBuildDate>Fri, 11 Sep 2026 15:13:06 GMT</lastBuildDate>
+    <item>
+      <title>September hikes: what a Fed move means for gold and the dollar</title>
+      <link>https://t.me/NUUKQuant</link>
+      <guid isPermaLink="false">2026-09-07-September hikes: what a Fed move means for gold and the dollar</guid>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 GMT</pubDate>
+      <category>Macro</category>
+      <description>Markets price hikes from the Fed, RBA and BoJ this month. Where the surprise risk sits and how the desk positions ahead of CPI.</description>
+    </item>
+    <item>
+      <title>Gold at 4,400: the level that decides the next leg</title>
+      <link>https://t.me/NUUKQuant</link>
+      <guid isPermaLink="false">2026-09-06-Gold at 4,400: the level that decides the next leg</guid>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 GMT</pubDate>
+      <category>Commodities</category>
+      <description>Payrolls capped the bounce. Why 4,400 is the line between bulls and bears, and the two data prints that settle it.</description>
+    </item>
+    <item>
+      <title>AUD strength in 2026: carry, copper and the RBA</title>
+      <link>https://t.me/NUUKQuant</link>
+      <guid isPermaLink="false">2026-09-04-AUD strength in 2026: carry, copper and the RBA</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 GMT</pubDate>
+      <category>FX</category>
+      <description>The Australian dollar is the strongest G10 currency this year. What is driving it and where the trade still has room.</description>
+    </item>
+    <item>
+      <title>Why our intraday ensemble stays in paper mode</title>
+      <link>https://t.me/NUUKQuant</link>
+      <guid isPermaLink="false">2026-09-02-Why our intraday ensemble stays in paper mode</guid>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <category>AI</category>
+      <description>Hourly bars, retail costs, no edge. The walk-forward result behind the decision to keep intraday systems off live capital.</description>
+    </item>
+  </channel>
+</rss>

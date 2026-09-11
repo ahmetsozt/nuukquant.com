@@ -1508,32 +1508,32 @@ export const ru: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — Tickmill, собственный капитал",
-      "source": "Детальная выписка MT4, 10 сен 2026 · внесено 47 000 USD",
-      "updated": "2026-09-10",
+      "source": "Детальная выписка MT4, 11 сен 2026",
+      "updated": "2026-09-11",
       "stats": [
         {
-          "label": "Баланс",
-          "value": "61 363 USD",
+          "label": "Внесено",
+          "value": "47 000 USD",
           "tone": "neutral"
         },
         {
           "label": "Закрытая чистая прибыль",
-          "value": "+14 363 USD (+30,6%)",
+          "value": "+17 910 USD (+38,1%)",
           "tone": "up"
         },
         {
-          "label": "Средства (с учётом открытого P/L −3 890 USD)",
-          "value": "57 472 USD",
+          "label": "Средства (открытых позиций нет)",
+          "value": "64 910 USD",
           "tone": "neutral"
         },
         {
           "label": "Профит-фактор",
-          "value": "3,39",
+          "value": "3,38",
           "tone": "neutral"
         },
         {
           "label": "Доля прибыльных",
-          "value": "73,6% (176 из 239)",
+          "value": "73,8% (189 из 256)",
           "tone": "neutral"
         },
         {

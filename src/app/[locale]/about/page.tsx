@@ -6,12 +6,13 @@ import SectionHead from "@/components/ui/SectionHead";
 import PageIntro from "@/components/sections/PageIntro";
 import CtaBand from "@/components/sections/CtaBand";
 import { resolve, type LocaleParams } from "@/lib/page";
+import { seo } from "@/lib/seo";
 
 const ACTIVITY_ICONS: IconName[] = ["cpu", "briefcase", "handshake", "signal", "calendar"];
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
-  const { c } = await resolve(params);
-  return { title: c.about.metaTitle, description: c.about.metaDescription };
+  const { locale, c } = await resolve(params);
+  return { ...seo(locale, "about/"), title: c.about.metaTitle, description: c.about.metaDescription };
 }
 
 export default async function AboutPage({ params }: { params: LocaleParams }) {

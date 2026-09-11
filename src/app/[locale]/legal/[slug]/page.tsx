@@ -5,6 +5,7 @@ import Fill from "@/components/ui/Fill";
 import { en } from "@/content/en";
 import { locales } from "@/i18n";
 import { resolve } from "@/lib/page";
+import { seo } from "@/lib/seo";
 
 type Params = Promise<{ locale: string; slug: string }>;
 type LegalKey = keyof typeof en.legal;
@@ -14,10 +15,10 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
-  const { c } = await resolve(params);
+  const { locale, c } = await resolve(params);
   const { slug } = await params;
   const doc = c.legal[slug as LegalKey];
-  return doc ? { title: doc.title } : {};
+  return doc ? { ...seo(locale, `legal/${slug}/`), title: doc.title, description: doc.body[0]?.slice(0, 160) } : {};
 }
 
 export default async function LegalPage({ params }: { params: Params }) {

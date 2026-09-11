@@ -3,6 +3,8 @@ import type { ReactNode } from "react";
 import Button from "@/components/ui/Button";
 import Blob from "@/components/ui/Blob";
 import Fill from "@/components/ui/Fill";
+import JsonLd from "@/components/seo/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 /**
  * Inner-page hero: headline left, blob visual right, then a breadcrumb bar.
@@ -65,6 +67,7 @@ export default function PageIntro({
           </div>
         </div>
       </section>
+      {crumbs && crumbs.length > 0 && <JsonLd data={breadcrumbSchema(crumbs)} />}
       {crumbs && crumbs.length > 0 && (
         <nav aria-label="Breadcrumb" className="border-b border-black/5 bg-white">
           <ol className="container-x flex flex-wrap items-center gap-2 py-3 text-[13px] text-body">

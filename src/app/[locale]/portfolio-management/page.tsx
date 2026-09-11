@@ -5,10 +5,11 @@ import SectionHead from "@/components/ui/SectionHead";
 import Fill from "@/components/ui/Fill";
 import Icon from "@/components/ui/Icon";
 import { resolve, type LocaleParams } from "@/lib/page";
+import { seo } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
-  const { c } = await resolve(params);
-  return { title: c.managed.metaTitle, description: c.managed.metaDescription };
+  const { locale, c } = await resolve(params);
+  return { ...seo(locale, "portfolio-management/"), title: c.managed.metaTitle, description: c.managed.metaDescription };
 }
 
 export default async function ManagedPage({ params }: { params: LocaleParams }) {

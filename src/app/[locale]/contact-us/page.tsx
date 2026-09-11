@@ -4,10 +4,11 @@ import Fill from "@/components/ui/Fill";
 import Icon from "@/components/ui/Icon";
 import ContactForm from "@/app/[locale]/contact-us/ContactForm";
 import { resolve, type LocaleParams } from "@/lib/page";
+import { seo } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
-  const { c } = await resolve(params);
-  return { title: c.contact.metaTitle, description: c.contact.metaDescription };
+  const { locale, c } = await resolve(params);
+  return { ...seo(locale, "contact-us/"), title: c.contact.metaTitle, description: c.contact.metaDescription };
 }
 
 const icons = ["calendar", "chat", "send"] as const;

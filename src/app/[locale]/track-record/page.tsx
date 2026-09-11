@@ -5,10 +5,11 @@ import CtaBand from "@/components/sections/CtaBand";
 import SectionHead from "@/components/ui/SectionHead";
 import PerformanceCards from "@/components/home/PerformanceCards";
 import { resolve, type LocaleParams } from "@/lib/page";
+import { seo } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
-  const { c } = await resolve(params);
-  return { title: c.trackRecord.metaTitle, description: c.trackRecord.metaDescription };
+  const { locale, c } = await resolve(params);
+  return { ...seo(locale, "track-record/"), title: c.trackRecord.metaTitle, description: c.trackRecord.metaDescription };
 }
 
 export default async function TrackRecordPage({ params }: { params: LocaleParams }) {

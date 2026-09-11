@@ -3,6 +3,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import HtmlLang from "@/components/layout/HtmlLang";
+import JsonLd from "@/components/seo/JsonLd";
+import { organizationSchema, websiteSchema } from "@/lib/schema";
 import { dir, getContent, type Locale } from "@/i18n";
 
 /** Locale-aware page frame: risk bar, header, footer and text direction. */
@@ -16,6 +18,8 @@ export default function Shell({ locale, children }: { locale: Locale; children: 
       <main>{children}</main>
       <Footer c={c} locale={locale} />
       <WhatsAppFloat c={c} />
+      <JsonLd data={organizationSchema(c)} />
+      <JsonLd data={websiteSchema(c, locale)} />
     </div>
   );
 }

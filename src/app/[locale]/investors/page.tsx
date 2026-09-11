@@ -7,12 +7,13 @@ import BrokerLogo from "@/components/ui/BrokerLogo";
 import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
 import { resolve, type LocaleParams } from "@/lib/page";
+import { seo } from "@/lib/seo";
 
 const REPORT_ICONS = ["chart", "calendar", "phone", "briefcase"] as const;
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
-  const { c } = await resolve(params);
-  return { title: c.investors.metaTitle, description: c.investors.metaDescription };
+  const { locale, c } = await resolve(params);
+  return { ...seo(locale, "investors/"), title: c.investors.metaTitle, description: c.investors.metaDescription };
 }
 
 export default async function InvestorsPage({ params }: { params: LocaleParams }) {

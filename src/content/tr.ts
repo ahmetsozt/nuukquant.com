@@ -868,14 +868,15 @@ export const tr: ContentOverride = {
       { "title": "Risk filtresi", "body": "Her aday, geçmeden önce tanımlı bir stop, gerçekçi bir hedef ve kabul edilebilir bir risk/getiri oranı göstermek zorundadır." },
       { "title": "Yayın", "body": "Filtreyi geçen fikirler giriş, hedef, stop ve tek satır gerekçeyle Telegram'a düşer. Kapandığında sonucu kaydedilir." }
     ],
-    "testimonialsTitle": "NUUK topluluğundan deneyimler",
-    "testimonials": [
-      { "quote": "[FILL: üye yorumu 1]", "name": "[FILL: ad soyad]", "city": "[FILL: şehir, ülke]" },
-      { "quote": "[FILL: üye yorumu 2]", "name": "[FILL: ad soyad]", "city": "[FILL: şehir, ülke]" },
-      { "quote": "[FILL: üye yorumu 3]", "name": "[FILL: ad soyad]", "city": "[FILL: şehir, ülke]" },
-      { "quote": "[FILL: üye yorumu 4]", "name": "[FILL: ad soyad]", "city": "[FILL: şehir, ülke]" }
+    "communityTitle": "Her üyenin bizden bekleyebileceği dört söz",
+    "communityLead": "Kanal yeni; henüz üye yorumumuz yok. Yorum uydurmak yerine, her üyenin ilk günden itibaren bizi ölçebileceği dört taahhüdü paylaşıyoruz.",
+    "commitments": [
+      { "title": "Her gün değil, seçici", "body": "Sistemlerin tasarlandığı koşulları bekleriz. Sinyal olmayan günler normaldir ve açıkça söylenir." },
+      { "title": "Her şey tek mesajda", "body": "Enstrüman, yön, giriş, hedef, stop ve tek satır gerekçe. Hiçbir sinyal yalnızca \"al\" ya da \"sat\" olarak gelmez." },
+      { "title": "Her sonuç, kazanç ya da kayıp", "body": "Kapanan fikirler giriş, çıkış ve sonuçla raporlanır. Kayıplar da kazançlarla aynı formatta paylaşılır." },
+      { "title": "Karar her zaman sizin", "body": "Sinyaller kendi analizinizi destekler, yerine geçmez. Risk her fikirde belirtilir, hiçbir sonuç vaat edilmez." }
     ],
-    "testimonialsNote": "Bireysel deneyimler farklılık gösterir. İşlem yapmak kayıp riski taşır.",
+    "communityNote": "Gerçek üyeler yorumlarını paylaştığında burada yer alacak. İşlem yapmak kayıp riski taşır.",
     "aimTitle": "Amacımız",
     "aim": [
       "En büyük algoritmik forex topluluklarından birini kuruyoruz. Farklı deneyim seviyelerinden yatırımcıları bir araya getiriyor, birbirlerinden öğrenmelerini ve piyasayı birlikte takip etmelerini sağlıyoruz.",

@@ -857,14 +857,15 @@ export const en = {
       { title: "Risk filter", body: "Every candidate must show a defined stop, a realistic target and an acceptable risk-reward before it passes." },
       { title: "Published", body: "Ideas that pass are posted to Telegram with entry, target, stop and one line of reasoning. Results are logged when they close." },
     ],
-    testimonialsTitle: "Experiences from the NUUK community",
-    testimonials: [
-      { quote: "[FILL: member quote 1]", name: "[FILL: name]", city: "[FILL: city, country]" },
-      { quote: "[FILL: member quote 2]", name: "[FILL: name]", city: "[FILL: city, country]" },
-      { quote: "[FILL: member quote 3]", name: "[FILL: name]", city: "[FILL: city, country]" },
-      { quote: "[FILL: member quote 4]", name: "[FILL: name]", city: "[FILL: city, country]" },
+    communityTitle: "What every member can hold us to",
+    communityLead: "The channel is new and we have no member reviews yet. Rather than invent them, here are the four commitments each member can measure us against from day one.",
+    commitments: [
+      { title: "Selective, not daily", body: "We wait for the conditions the systems are built for. Days with no signal are normal and are said out loud." },
+      { title: "Everything in one message", body: "Instrument, direction, entry, target, stop and a one-line reason. Nothing arrives as a bare \"buy\" or \"sell\"." },
+      { title: "Every result, win or loss", body: "Closed ideas are reported with entry, exit and outcome. Losses are posted in the same format as wins." },
+      { title: "The decision stays yours", body: "Signals support your own analysis; they never replace it. Risk is stated on every idea and no result is promised." },
     ],
-    testimonialsNote: "Individual experiences vary. Trading carries a risk of loss.",
+    communityNote: "Member reviews will appear here once real members have shared them. Trading carries a risk of loss.",
     aimTitle: "Our aim",
     aim: [
       "We are building one of the largest algorithmic forex communities. Traders of every experience level come together, learn from each other and follow the market side by side.",

@@ -14,6 +14,7 @@ const PAGES = [
   "contact-us/",
   "economic-calendar/",
   "education/",
+  "free-signals/",
   "how-we-make-money/",
   "insights/",
   "investors/",

@@ -15,6 +15,7 @@ PAGES = {
     "brokers": ("Broker partners", "Six regulated brokers, compared independently"),
     "signals": ("Research and signals", "Desk notes, trade ideas and mentorship"),
     "education": ("Education", "Webinars and seminars for investors"),
+    "free-signals": ("Free AI forex signals", "Daily signals on Telegram with entry, target and stop"),
     "insights": ("Market insights", "Macro, FX, commodities, indices and crypto"),
     "case-studies": ("Case studies", "How each service works in practice"),
     "investors": ("Investor portal", "Research, signals and reports for subscribers"),

@@ -136,6 +136,25 @@
   border-radius: 60% 40% 45% 55% / 40% 55% 45% 60%;
 }
 
+/* Floating instrument badges (free-signals hero) */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .float {
+    animation: none;
+  }
+}
+
 /* Scroll reveal */
 .rv {
   opacity: 0;

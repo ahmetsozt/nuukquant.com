@@ -15,6 +15,7 @@ const GUIDE: { path: string; label: string; note: string }[] = [
   { path: "brokers/", label: "Broker partners", note: "Independent comparison of six regulated partner brokers, with an account-opening guide for each." },
   { path: "signals/", label: "Research, signals and plans", note: "Research, signals and mentorship plans with prices." },
   { path: "education/", label: "Education", note: "Webinars, seminars and mentorship for investors." },
+  { path: "free-signals/", label: "Free AI forex signals", note: "Free daily AI-generated forex, index and commodity signals on Telegram, with entry, target and stop on every idea." },
   { path: "insights/", label: "Market insights", note: "Market notes, economic calendar and technical analysis." },
   { path: "case-studies/", label: "Case studies", note: "Illustrative scenarios showing how each service works in practice." },
   { path: "investors/", label: "Investor portal", note: "Investor portal overview and subscriber access." },

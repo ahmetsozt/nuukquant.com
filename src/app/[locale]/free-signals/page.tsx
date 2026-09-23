@@ -7,7 +7,7 @@ import Icon from "@/components/ui/Icon";
 import Button from "@/components/ui/Button";
 import InstrumentCloud from "@/components/free-signals/InstrumentCloud";
 import SignalCard from "@/components/free-signals/SignalCard";
-import CommunityVoices from "@/components/free-signals/CommunityVoices";
+import CommunityPromise from "@/components/free-signals/CommunityPromise";
 import { resolve, type LocaleParams } from "@/lib/page";
 import { seo } from "@/lib/seo";
 
@@ -116,7 +116,7 @@ export default async function FreeSignalsPage({ params }: { params: LocaleParams
         </div>
       </section>
 
-      <CommunityVoices title={p.testimonialsTitle} voices={p.testimonials} note={p.testimonialsNote} />
+      <CommunityPromise title={p.communityTitle} lead={p.communityLead} items={p.commitments} note={p.communityNote} />
 
       {/* Our aim */}
       <section className="section-pad bg-hero text-white" aria-labelledby="aim-heading">

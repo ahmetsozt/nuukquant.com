@@ -822,11 +822,11 @@ export const tr: ContentOverride = {
 
   freeSignals: {
     "metaTitle": "NUUK AI Ücretsiz Forex Sinyalleri ve Algoritmik İşlem",
-    "metaDescription": "Telegram'da her gün ücretsiz, yapay zekâ üretimi forex, endeks ve emtia sinyalleri. Her fikirde giriş, hedef ve zarar durdur seviyesi. NUUK'un algoritmik işlem masasından eğitim içeriği; yatırım tavsiyesi değildir.",
+    "metaDescription": "WhatsApp kanalımızda ücretsiz, yapay zekâ üretimi forex, endeks ve emtia sinyalleri. Her fikirde giriş, hedef ve zarar durdur seviyesi. NUUK'un algoritmik işlem masasından eğitim içeriği; yatırım tavsiyesi değildir.",
     "brandLine": "NUUK AI · Ücretsiz Forex Sinyalleri ve Algoritmik İşlem",
     "kicker": "Ücretsiz sinyaller",
     "title": "Daha bilinçli işlemler için ücretsiz günlük yapay zekâ forex sinyalleri",
-    "lead": "Döviz pariteleri, endeksler ve emtialar NUUK'un algoritmik sistemleri tarafından taranır ve Telegram'da ücretsiz paylaşılır. Her fikirde giriş, hedef ve zarar durdur seviyesi bulunur; böylece işlemi kendi planınıza göre değerlendirebilirsiniz.",
+    "lead": "Döviz pariteleri, endeksler ve emtialar NUUK'un algoritmik sistemleri tarafından taranır ve WhatsApp kanalımızda ücretsiz paylaşılır. Her fikirde giriş, hedef ve zarar durdur seviyesi bulunur; böylece işlemi kendi planınıza göre değerlendirebilirsiniz.",
     "cta": { "label": "Ücretsiz Kanala Katıl" },
     "secondary": { "label": "Algoritmalar nasıl çalışır?" },
     "instruments": [
@@ -838,7 +838,7 @@ export const tr: ContentOverride = {
     ],
     "startTitle": "Başlangıç",
     "chatTitle": "Bizimle sohbet et",
-    "chatLink": "Telegram topluluğumuza katıl",
+    "chatLink": "WhatsApp kanalımıza katıl",
     "chatBody": "Kanallarımız ücretsizdir ve eğitim amacıyla yürütülür. Piyasa analizlerini ve sinyalleri üyelerimiz öğrensin diye paylaşıyoruz; kanaldaki hiçbir içerik yatırım tavsiyesi değildir.",
     "chatCta": "Ücretsiz Kanala Katıl",
     "dailyTitle": "Her gün ne gelir?",
@@ -866,7 +866,7 @@ export const tr: ContentOverride = {
       { "title": "Veri", "body": "40'tan fazla enstrüman için fiyat, hacim, oynaklık ve ekonomik takvim; sürekli güncellenir." },
       { "title": "Modeller", "body": "Trend, ortalamaya dönüş ve olay modelleri her enstrümanı puanlar; yönde uzlaşır ya da pozisyon almaz." },
       { "title": "Risk filtresi", "body": "Her aday, geçmeden önce tanımlı bir stop, gerçekçi bir hedef ve kabul edilebilir bir risk/getiri oranı göstermek zorundadır." },
-      { "title": "Yayın", "body": "Filtreyi geçen fikirler giriş, hedef, stop ve tek satır gerekçeyle Telegram'a düşer. Kapandığında sonucu kaydedilir." }
+      { "title": "Yayın", "body": "Filtreyi geçen fikirler giriş, hedef, stop ve tek satır gerekçeyle WhatsApp kanalına düşer. Kapandığında sonucu kaydedilir." }
     ],
     "communityTitle": "Her üyenin bizden bekleyebileceği dört söz",
     "communityLead": "Kanal yeni; henüz üye yorumumuz yok. Yorum uydurmak yerine, her üyenin ilk günden itibaren bizi ölçebileceği dört taahhüdü paylaşıyoruz.",
@@ -885,7 +885,7 @@ export const tr: ContentOverride = {
       "Günlük ortalama 9,6 trilyon dolarlık işlem hacmiyle forex, dünyanın en büyük ve en likit finansal piyasası. Topluluğumuza katılın, öğrenmeye bugün başlayın."
     ],
     "aboutTitle": "Hakkımızda",
-    "aboutLead": "NUUK, Dubai DIFC merkezli, yapay zekâ ile tasarlanmış bir işlem şirketidir; İstanbul ve Londra'da on yedi yıllık masa deneyimi üzerine kuruludur. Forex piyasasının nasıl işlediğini sade ve uygulanabilir analizlerle anlatır, her stratejiyi önce kendi sermayesiyle çalıştırır.",
+    "aboutLead": "NUUK, Dubai DIFC merkezli, yapay zekâ ile tasarlanmış bir işlem şirketidir; İstanbul ve Londra'da on yedi yıllık masa deneyimi üzerine kuruludur. Forex piyasasının nasıl işlediğini sade ve uygulanabilir analizlerle anlatır; her stratejiyi yayına almadan önce model portföyde test eder.",
     "servicesTitle": "Sunduğumuz hizmetler",
     "services": ["Forex, endeks ve emtia için yapay zekâ üretimi sinyaller", "Yayınlanmış performans kaydıyla sistemli algoritmik işlem sistemleri", "Piyasa trendlerini okurken ve riski yönetirken yol gösteren rehberlik"],
     "aboutClose": "Kısayollara değil; disipline, risk yönetimine ve sabırlı bir öğrenme sürecine inanıyoruz. Amacımız, forex piyasasında kendi kararlarınızı bilinçli şekilde verebilmeniz için gereken bilgiyi ve topluluğu size sunmak.",
@@ -901,13 +901,13 @@ export const tr: ContentOverride = {
       { "q": "Forex brokeri nedir?", "a": "Broker, bireysel ve kurumsal yatırımcıların forex piyasasına erişmesini sağlayan aracı kurumdur. Seçim tamamen size aittir; kurumun bulunduğunuz ülkede yetkili bir otorite tarafından denetlenip denetlenmediğini mutlaka kontrol edin. NUUK, aracı kurumlar sayfasında altı düzenlenmiş ortak brokeri karşılaştırır." },
       { "q": "Pip nedir?", "a": "Pip, bir paritenin standart en küçük fiyat hareketidir. Alış-satış farkını (spread) ölçmek, işlem maliyetini hesaplamak ve kâr-zarar takibi yapmak için kullanılır." },
       { "q": "Forex stratejisi nedir?", "a": "Strateji, bir işleme ne zaman girip ne zaman çıkacağınızı belirleyen kurallar bütünüdür. İyi bir strateji, hangi durumda işlem yapmayacağınızı da tanımlar ve risk yönetimini içerir." },
-      { "q": "Forex'e nasıl başlanır?", "a": "Önce piyasanın nasıl işlediğini öğrenin, ardından gerçek para koymadan demo hesapta pratik yapın. Bu süreçte günlük sinyalleri ve piyasa yorumlarını takip etmek için ücretsiz Telegram topluluğumuza katılabilirsiniz." },
+      { "q": "Forex'e nasıl başlanır?", "a": "Önce piyasanın nasıl işlediğini öğrenin, ardından gerçek para koymadan demo hesapta pratik yapın. Bu süreçte günlük sinyalleri ve piyasa yorumlarını takip etmek için ücretsiz WhatsApp kanalımıza katılabilirsiniz." },
       { "q": "Ne kadar yatırım yapmalıyım?", "a": "Bu tamamen finansal durumunuza, risk toleransınıza, deneyiminize ve hedeflerinize bağlıdır. Yatırım tavsiyesi vermediğimiz için bir tutar öneremeyiz. Genel ilke şudur: kaybetmeyi göze alamayacağınız parayla işlem yapmayın." },
       { "q": "Sinyalleri uygulamak zorunda mıyım?", "a": "Hayır. Her üye piyasayı kendi analiziyle değerlendirmekte ve kendi işlemini açmakta serbesttir. Sinyaller bu süreci desteklemek ve zaman kazandırmak için vardır; karar her zaman size aittir." },
       { "q": "Forex riskli mi?", "a": "Evet. Forex yüksek kayıp riski taşır ve bireysel yatırımcıların önemli bir bölümü para kaybeder. Garantili sonuç yoktur; geçmiş performans geleceğin göstergesi değildir. Sinyal, analiz ve eğitim paylaşarak kendi kararınızı vermenize destek oluruz. Sonuç her zaman sizin tercihlerinize, risk yönetiminize ve piyasa koşullarına bağlıdır." }
     ],
     "closingTitle": "Daha akıllı işlemler sizi bekliyor",
-    "closingBody": "Ücretsiz NUUK Telegram kanalına katılın, gerekçesiyle birlikte paylaşılan yapay zekâ sinyallerini takip edin.",
+    "closingBody": "Ücretsiz NUUK WhatsApp kanalına katılın, gerekçesiyle birlikte paylaşılan yapay zekâ sinyallerini takip edin.",
     "closingCta": "Hemen Başla",
     "riskTitle": "Risk uyarısı",
     "riskBody": "Forex ve CFD işlemleri ciddi bir kayıp riski taşır ve her yatırımcı için uygun değildir. Yatırdığınız sermayenin tamamını kaybedebilirsiniz. NUUK'un paylaştığı sinyaller, analizler ve eğitim içerikleri genel piyasa yorumudur; kişisel yatırım tavsiyesi değildir ve bireysel koşullarınızı dikkate almaz. Geçmiş performans, gelecekteki sonuçların göstergesi değildir. Yalnızca kaybetmeyi göze alabileceğiniz parayla işlem yapın."
@@ -1734,7 +1734,7 @@ export const tr: ContentOverride = {
         "Bu politika, NUUK Quant'ın (\"NUUK\", \"biz\") nuukquant.com üzerinden hangi kişisel verileri, neden topladığını ve hangi haklara sahip olduğunuzu açıklar. Son güncelleme: 8 Eylül 2026.",
         "Bize verdiğiniz veriler. E-posta, WhatsApp, Telegram veya talep formu üzerinden bizimle iletişime geçtiğinizde gönderdiğiniz bilgileri alırız: ad, e-posta adresi, telefon numarası ve mesajınızın içeriği. Talep formu kendi e-posta istemcinizi açar; yazdığınız hiçbir şey bu web sitesinde saklanmaz.",
         "Otomatik olarak toplanan veriler. Sitenin nasıl kullanıldığını anlamak için IP anonimleştirmeli Google Analytics 4 kullanırız: görüntülenen sayfalar, yaklaşık konum, cihaz türü ve hangi düğmelere tıklandığı (örneğin bir aracı kurum bağlantısı veya bir plan). Bu veriler toplu hâldedir ve sizi isim olarak tanımlamaz. Tarayıcı ayarı veya reklam engelleyici ile engelleyebilirsiniz.",
-        "Çerezler ve ziyaretçi analitiği. Google Analytics oturumları ayırt etmek için çerez ayarlayabilir. Apollo.io sayfa ziyaretlerini kaydeder ve ziyaret bir kurumsal ağdan geliyorsa IP adresinin arkasındaki şirketi tanımlayabilir; ayrıca formlarımıza girilen kurumsal e-posta adreslerini kamuya açık şirket verileriyle zenginleştirir. Her ikisi de çerez bırakabilir. Bağlantılarımızdan açtığınız üçüncü taraf siteler (aracı kurumlar, Telegram, sosyal ağlar) kendi politikalarını uygular. Bu sitedeki canlı piyasa kotasyonları gömülü TradingView bileşenleridir; TradingView sunucularından yüklenir ve TradingView'ın gizlilik politikası kapsamında kendi çerezlerini bırakabilir. Bunların tümünü bir tarayıcı eklentisiyle veya üçüncü taraf betikleri kapatarak engelleyebilirsiniz; site bunlar olmadan da çalışır.",
+        "Çerezler ve ziyaretçi analitiği. Google Analytics oturumları ayırt etmek için çerez ayarlayabilir. Apollo.io sayfa ziyaretlerini kaydeder ve ziyaret bir kurumsal ağdan geliyorsa IP adresinin arkasındaki şirketi tanımlayabilir; ayrıca formlarımıza girilen kurumsal e-posta adreslerini kamuya açık şirket verileriyle zenginleştirir. Reklamlarımızın etkisini ölçmek için Meta Pixel kullanırız: sayfa görüntülemelerini ve WhatsApp kanalımıza giden tıklamaları Meta Platforms'a (Facebook/Instagram) iletir; Meta bu verileri kendi gizlilik politikası kapsamında işler ve yurt dışında saklayabilir. Hepsi çerez bırakabilir. Bağlantılarımızdan açtığınız üçüncü taraf siteler (aracı kurumlar, Telegram, sosyal ağlar) kendi politikalarını uygular. Bu sitedeki canlı piyasa kotasyonları gömülü TradingView bileşenleridir; TradingView sunucularından yüklenir ve TradingView'ın gizlilik politikası kapsamında kendi çerezlerini bırakabilir. Bunların tümünü bir tarayıcı eklentisiyle veya üçüncü taraf betikleri kapatarak engelleyebilirsiniz; site bunlar olmadan da çalışır.",
         "Verileri neden işliyoruz? Talebinizi yanıtlamak, istediğiniz hizmetleri sunmak (yönetilen hesaplar, sinyaller, eğitim), yasal ve düzenleyici yükümlülükleri yerine getirmek ve web sitesini geliştirmek için. Hukuki dayanak, rızanız, sizinle yapılan bir sözleşmenin ifası veya işi yürütmedeki meşru menfaatimizdir.",
         "Paylaşım. Kişisel verileri satmayız. Yalnızca web sitesini ve iletişimi yürütmek için gereken hizmet sağlayıcılarla (barındırma, e-posta, analitik), sizi tanıtmamızı istediğinizde ortak aracı kurumlarla ve yasaların gerektirdiği durumlarda yetkili makamlarla paylaşırız.",
         "Saklama ve güvenlik. Talep verileri, talebin işlenmesi için gerektiği sürece ve bir iş ilişkisi kurulması hâlinde düzenleyici kayıt tutma yükümlülüklerine uygun olarak beş yıla kadar saklanır. Veriler erişim kontrollü sistemlerde tutulur.",

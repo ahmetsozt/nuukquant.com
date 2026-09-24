@@ -20,7 +20,7 @@ export default async function FreeSignalsPage({ params }: { params: LocaleParams
   const { locale, c } = await resolve(params);
   const p = c.freeSignals;
   const localeHome = locale === "en" ? "/" : `/${locale}/`;
-  const telegram = c.brand.telegram;
+  const channel = c.brand.whatsappChannel;
 
   return (
     <>
@@ -29,7 +29,7 @@ export default async function FreeSignalsPage({ params }: { params: LocaleParams
         kicker={p.brandLine}
         title={p.title}
         body={p.lead}
-        cta={{ label: p.cta.label, href: telegram }}
+        cta={{ label: p.cta.label, href: channel }}
         secondary={p.secondary}
         visual={<InstrumentCloud instruments={p.instruments} />}
         crumbs={[{ label: c.ui.home, href: localeHome }, { label: p.kicker }]}
@@ -45,13 +45,13 @@ export default async function FreeSignalsPage({ params }: { params: LocaleParams
                 <Icon name="send" size={20} />
               </span>
               <h3 className="mt-6 text-[24px] text-white">{p.chatTitle}</h3>
-              <a href={telegram} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex items-center gap-1.5 text-[15px] font-semibold text-cyan hover:underline">
+              <a href={channel} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex items-center gap-1.5 text-[15px] font-semibold text-cyan hover:underline">
                 {p.chatLink}
                 <Icon name="arrow-up-right" size={14} />
               </a>
               <p className="mt-4 text-[15px] leading-6 text-soft">{p.chatBody}</p>
               <div className="mt-8">
-                <Button href={telegram} variant="cyan" event="cta_click" eventLabel="free_signals_chat">
+                <Button href={channel} variant="cyan" event="cta_click" eventLabel="free_signals_chat">
                   {p.chatCta}
                 </Button>
               </div>
@@ -83,7 +83,7 @@ export default async function FreeSignalsPage({ params }: { params: LocaleParams
             <p className="mt-6 text-[16px] leading-7 text-body">{p.accessBody1}</p>
             <p className="mt-4 text-[16px] leading-7 text-body">{p.accessBody2}</p>
             <div className="mt-8">
-              <Button href={telegram} event="cta_click" eventLabel="free_signals_access">
+              <Button href={channel} event="cta_click" eventLabel="free_signals_access">
                 {p.accessCta}
               </Button>
             </div>
@@ -173,7 +173,7 @@ export default async function FreeSignalsPage({ params }: { params: LocaleParams
             </h2>
             <p className="mx-auto mt-4 max-w-[600px] text-[16px] leading-6 text-body">{p.closingBody}</p>
             <div className="mt-8">
-              <Button href={telegram} event="cta_click" eventLabel="free_signals_closing">
+              <Button href={channel} event="cta_click" eventLabel="free_signals_closing">
                 {p.closingCta}
               </Button>
             </div>

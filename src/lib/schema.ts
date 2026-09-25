@@ -38,7 +38,7 @@ export function organizationSchema(c: SiteContent) {
         availableLanguage: ["English", "Turkish", "Arabic", "Russian", "French", "Spanish"],
       },
     ],
-    sameAs: [c.brand.telegram, c.brand.whatsapp, ...c.socials.map((s) => s.href)].filter(Boolean),
+    sameAs: [c.brand.whatsappChannel, c.brand.whatsapp, ...c.socials.map((s) => s.href)].filter(Boolean),
   };
 }
 

@@ -3,7 +3,7 @@ import Fill from "@/components/ui/Fill";
 export type Sample = { instrument: string; direction: string; entry: string; target: string; stop: string; rr: string; note: string };
 export type SampleLabels = { entry: string; target: string; stop: string; rr: string };
 
-/** One Telegram-style signal message: instrument, direction, levels, one-line reason. */
+/** One WhatsApp-style signal message: instrument, direction, levels, one-line reason. */
 export default function SignalCard({ s, labels }: { s: Sample; labels: SampleLabels }) {
   const cells: [string, string, string][] = [
     [labels.entry, s.entry, "text-white"],

@@ -128,6 +128,7 @@ export const en = {
     fill: "",
     telegram: "Telegram",
     whatsapp: "WhatsApp",
+    whatsappChannel: "WhatsApp channel",
     legal: "Legal",
     followUs: "Follow",
     riskBar: {

@@ -57,6 +57,7 @@ export const tr: ContentOverride = {
     "fill": "",
     "telegram": "Telegram",
     "whatsapp": "WhatsApp",
+    "whatsappChannel": "WhatsApp kanalı",
     "legal": "Yasal",
     "followUs": "Takip edin",
     "riskBar": {

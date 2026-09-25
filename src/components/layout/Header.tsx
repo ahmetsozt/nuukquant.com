@@ -37,7 +37,7 @@ export default function Header({ c, locale }: { c: SiteContent; locale: Locale }
   const contactHref = c.ctaBand.cta.href;
   const homeHref = locale === "en" ? "/" : `/${locale}/`;
   const quick = [
-    { label: c.ui.telegram, href: c.brand.telegram },
+    { label: c.ui.whatsappChannel, href: c.brand.whatsappChannel },
     { label: c.ui.whatsapp, href: c.brand.whatsapp },
   ];
 

@@ -3,6 +3,18 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 [ -d out ] || { echo "run pnpm build first"; exit 1; }
+
+# gh-pages is replaced wholesale, so a build missing a page silently deletes it
+# from the live site. Refuse to publish when an expected page is absent.
+REQUIRED_PAGES=(index.html card/index.html card/ahmet-ozturk.vcf)
+for page in "${REQUIRED_PAGES[@]}"; do
+  [ -f "out/$page" ] && continue
+  echo "deploy aborted: out/$page is missing."
+  echo "This build would delete https://www.nuukquant.com/${page%index.html} from the live site."
+  echo "Run: git pull && pnpm build   (the page's source lives in public/ or src/)"
+  exit 1
+done
+
 REMOTE=$(git remote get-url origin)
 TMP=$(mktemp -d)
 cp -R out/. "$TMP"/

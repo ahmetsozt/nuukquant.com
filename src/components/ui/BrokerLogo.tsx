@@ -8,7 +8,7 @@ export default function BrokerLogo({ slug, name, height = 32, className = "" }: 
   const logo = optionalImage(`brokers/${slug}`);
   if (logo) {
     // eslint-disable-next-line @next/next/no-img-element
-    return <img src={logo} alt={name} style={{ height }} className={`w-auto max-w-full object-contain ${className}`} loading="eager" />;
+    return <img src={logo} alt={name} height={height} style={{ height }} decoding="async" className={`w-auto max-w-full object-contain ${className}`} loading="eager" />;
   }
   const initials = name.replace(/\[FILL:?\s*/i, "").replace("]", "").split(/\s+/).slice(0, 2).map((w) => w[0]?.toUpperCase() ?? "").join("") || "BR";
   return (

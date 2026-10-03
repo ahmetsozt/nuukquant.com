@@ -50,6 +50,8 @@ export default function RecordStrip({ c }: { c: SiteContent }) {
               </div>
             ))}
             <div className="col-span-2 border-t border-black/5 pt-4 text-[12.5px] text-body lg:col-span-1">
+              <dt className="sr-only">{c.ui.source}</dt>
+              <dd>
               {c.ui.since} <Fill text={featured.since} /> · {c.ui.source}: {featured.source}
               <br />
               {featured.verifiedHref && (
@@ -57,6 +59,7 @@ export default function RecordStrip({ c }: { c: SiteContent }) {
                   {c.ui.verified} <Icon name="arrow-up-right" size={13} />
                 </a>
               )}
+              </dd>
             </div>
           </dl>
         </article>

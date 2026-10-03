@@ -129,6 +129,17 @@ export const en = {
     telegram: "Telegram",
     whatsapp: "WhatsApp",
     whatsappChannel: "WhatsApp channel",
+    cookie: {
+      text: "We use cookies for visitor analytics and to measure our ads. Nothing is set until you choose.",
+      accept: "Accept",
+      reject: "Reject",
+      more: "Privacy policy",
+    },
+    notFound: {
+      title: "This page does not exist",
+      body: "The address may have changed or been typed incorrectly. The links below lead back to the main sections.",
+      home: "Go to the home page",
+    },
     legal: "Legal",
     followUs: "Follow",
     riskBar: {

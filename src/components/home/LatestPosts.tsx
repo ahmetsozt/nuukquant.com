@@ -9,7 +9,7 @@ export default function LatestPosts({ c }: { c: SiteContent }) {
       <div className="container-x">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <SectionHead kicker={c.insights.kicker} title={c.home.postsTitle} lead={c.home.postsLead} />
-          <Button href={c.nav.find((g) => g.label === "Insights")?.href ?? "/insights/"} variant="outline-dark">
+          <Button href={c.nav.find((g) => g.href.endsWith("/insights/"))?.href ?? c.nav[0].href} variant="outline-dark">
             {c.ui.viewAll}
           </Button>
         </div>

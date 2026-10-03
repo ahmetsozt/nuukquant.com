@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { IBM_Plex_Sans_Arabic, Manrope } from "next/font/google";
 import Reveal from "@/components/ui/Reveal";
 import AuthRedirect from "@/components/layout/AuthRedirect";
-import Analytics from "@/components/Analytics";
-import MetaPixel from "@/components/MetaPixel";
-import ApolloTracker from "@/components/ApolloTracker";
+import Consent from "@/components/Consent";
+import { getContent, locales } from "@/i18n";
 import { en } from "@/content/en";
 import "./globals.css";
 
@@ -87,15 +86,18 @@ export const viewport = {
   colorScheme: "light dark" as const,
 };
 
+/** Sets <html lang> from the URL before first paint; the static export shares one root layout across locales. */
+const LANG_BOOT = `(function(){var m=location.pathname.match(/^\/(${locales.join("|")})(\/|$)/);var l=m?m[1]:"en";document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";})();`;
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const cookieLabels = Object.fromEntries(locales.map((l) => [l, { ...getContent(l).ui.cookie, href: getContent(l).legalLinks.find((x) => x.href.includes("privacy"))?.href ?? "/legal/privacy/" }]));
   return (
     <html lang="en" className={`${manrope.variable} ${arabic.variable}`}>
       <body>
+        <script dangerouslySetInnerHTML={{ __html: LANG_BOOT }} />
         {children}
         <Reveal />
-        <Analytics />
-        <MetaPixel />
-        <ApolloTracker />
+        <Consent labels={cookieLabels} />
         <AuthRedirect />
       </body>
     </html>

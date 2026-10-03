@@ -58,6 +58,17 @@ export const tr: ContentOverride = {
     "telegram": "Telegram",
     "whatsapp": "WhatsApp",
     "whatsappChannel": "WhatsApp kanalı",
+    "cookie": {
+      "text": "Ziyaretçi analitiği ve reklam ölçümü için çerez kullanıyoruz. Siz seçim yapana kadar hiçbir çerez yerleştirilmez.",
+      "accept": "Kabul et",
+      "reject": "Reddet",
+      "more": "Gizlilik politikası"
+    },
+    "notFound": {
+      "title": "Bu sayfa mevcut değil",
+      "body": "Adres değişmiş ya da yanlış yazılmış olabilir. Aşağıdaki bağlantılar ana bölümlere götürür.",
+      "home": "Ana sayfaya dön"
+    },
     "legal": "Yasal",
     "followUs": "Takip edin",
     "riskBar": {

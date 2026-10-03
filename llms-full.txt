@@ -1,0 +1,149 @@
+# NUUK — full reference for language models
+
+Source: https://www.nuukquant.com/ · Generated at build time · All figures carry the source stated next to them.
+
+## What NUUK is
+
+NUUK was founded in the Dubai International Financial Centre in 2025 on seventeen years of dealing-desk experience that runs from a London FX brokerage floor in 2009, through Istanbul's institutional desks, to an introducing-broker business of more than 700 clients. That experience became a single conviction: markets reward discipline, not opinion. NUUK turns it into systematic strategies, runs them on its own capital first, and shares the method through managed accounts, research and education.
+
+## Services
+
+### Algorithmic trading systems
+
+Strategies designed, back-tested and forward-tested in-house, then run live on NUUK's own capital across FX, gold, indices and digital assets. GANN NUUK Trader AI is live at Tickmill.
+
+### Portfolio management
+
+Managed accounts inside the client's own broker account through MAM/PAMM structures, under a written risk mandate, a management fee and a performance fee on net profit.
+
+### Broker partnerships
+
+Introducing-broker agreements with six regulated brokers, each reviewed independently and documented with a step-by-step account guide.
+
+### Research and signals
+
+Daily desk notes, a weekly report and trade ideas with the full reasoning, delivered through the investor portal and Telegram.
+
+### Investor education
+
+Webinars, seminars and mentorship: more than 3,000 investors trained to read markets with the same discipline the desk uses.
+
+## Company timeline
+
+- 2009 — London: The desk experience behind NUUK begins on an FX brokerage floor in the City: execution, liquidity and client risk, learned from the inside.
+- 2011 — Istanbul: Institutional FX coverage at Istanbul brokerages as Türkiye opens to leveraged trading; the international client book grows by 27%.
+- 2016 — A client business: An introducing-broker and client-coverage practice grows to more than 700 clients and over USD 26 million in client business.
+- 2025 — NUUK, Dubai: Founded in the Dubai International Financial Centre as an AI-engineered trading company: systems, managed accounts, broker partnerships, research and education.
+- 2026 — Systems in production: 87 strategy variants back-tested, three in production. GANN NUUK Trader AI runs on NUUK's own capital at Tickmill and is reported on the track-record page.
+- Today — A multilingual desk: An investor portal, six partner brokers and a website in six languages, serving investors from Istanbul to the Gulf.
+
+## Operating principles
+
+- Evidence over opinion: Every figure on this site states its source and its method. If it cannot be explained, it is not shown.
+- Risk before return: Position size, drawdown limits and stop rules are decided before any trade.
+- Your money stays yours: Managed accounts run inside your own broker account. NUUK never takes custody.
+- Own capital first: No system reaches a client account before it has run on NUUK's own money.
+
+## Track record
+
+Accounts are held at partner brokers. Each figure below states where it comes from, live account, paper trading or walk-forward backtest, and how it is calculated. Past performance is not a guarantee of future results.
+
+### GANN NUUK Trader AI — Tickmill, own capital
+
+Source: MT4 detailed statement, 11 Sep 2026 · Status: live · Since 2026 · Updated 2026-09-11
+
+- Deposited: USD 47,000
+- Closed net profit: +USD 17,910 (+38.1%)
+- Equity (no open positions): USD 64,910
+- Profit factor: 3.38
+- Win rate: 73.8% (189 of 256)
+- Max drawdown: 5.16%
+
+### Personal portfolio — Saxo Bank
+
+Source: Broker statement · Status: pending · Since 2025 · Updated Monthly
+
+- Since: 2025
+- Instruments: Stocks, ETFs, FX
+- Approach: Long-term core portfolio
+- Reporting: Monthly statement
+
+### Managed strategy — GANN Algo
+
+Source: MAM statement · Status: pending · Since 2026 · Updated Monthly
+
+- Since: 2026
+- Accounts: 300+
+- Structure: MAM / PAMM
+- Performance fee: 25% above HWM
+
+### Signal log — closed ideas
+
+Source: Telegram @NUUKQuant · Status: pending · Since 2025 · Updated Monthly
+
+- Win rate: 87%
+- Ideas per month: 100+
+- Channel: Telegram
+- Log: Monthly
+
+### NUUK Trend Ensemble — walk-forward backtest
+
+Source: Backtest 2010–2026, net of swap and commission · Status: test · Since 2010 · Updated 2026-07
+
+- Net return, annualised: +10.9%
+- Max drawdown: 6.7%
+- Sharpe ratio: 1.36
+- Paper trading since: 2026-07
+
+## Managed accounts
+
+Capital never leaves your name. You open an account with a partner broker, connect it to the managed structure, and NUUK trades it within a written risk mandate.
+
+- Discovery call: We discuss objectives, horizon, liquidity needs and how much drawdown you can genuinely tolerate.
+- Account setup: You open an account at a partner broker in your own name and fund it. NUUK receives trading permission only, never withdrawal rights.
+- Risk mandate: A written mandate sets maximum exposure, daily loss limit and instruments. It cannot be exceeded by the system.
+- Reporting: You see every trade in real time in your own account, plus a monthly report and a quarterly review call.
+
+## How NUUK makes money
+
+NUUK is not a broker and does not take the other side of your trades. Our income comes from four transparent sources, and the largest of them is the same trading we run for you.
+
+- Proprietary trading: We trade our own capital with the same algorithmic systems offered to clients: GANN Live in production, the Trend Ensemble in paper trading. This is the income that keeps us honest: if the systems stop working, we feel it first.
+- Portfolio management: Two structures. The pooled MAM charges no management fee and 25% of profits above the high-water mark. The dedicated account (from USD 250,000) charges USD 1,000 per month plus 25% of profits above the high-water mark, after the management fee.
+- Broker partnerships: When you open an account with a partner broker through NUUK, the broker pays us a share of the spread or commission it earns. Your trading conditions are identical to a direct client's. The full list of partners and terms is in our IB disclosure.
+- Research and education: Signal and research plans at USD 750, 1,000 and 5,000 per month, plus paid workshops and corporate training. Weekly webinars stay free.
+
+## Plans and prices
+
+- Reports: $750 per month — Daily macro note; Weekly report; Archive access
+- Signals: $1,000 per month — Everything in Reports; Trade ideas with reasoning; Live updates on Telegram; Monthly performance sheet
+- Mentorship: $5,000 per quarter — Everything in Signals; Fortnightly 1:1 review; Portfolio feedback; Priority access to webinars
+
+## Partner brokers
+
+- Pepperstone (pepperstone): Raw spreads from 0.0 pips, five platforms, nine licensed entities · Regulation: FCA · ASIC · CySEC · DFSA · BaFin · SCB · CMA
+- Tickmill (tickmill): Raw pricing from 0.0 pips with $3 per side, MT4/MT5 and TradingView · Regulation: FCA · CySEC · FSA Seychelles · FSCA
+- Saxo Bank (saxo): Danish investment bank with 71,000+ instruments in one account · Regulation: Danish FSA · FCA · FINMA · MAS · ASIC · SFC · JFSA
+- Capital.com (capital-com): Commission-free CFDs with TradingView, MT4/MT5 and 5,500+ markets · Regulation: FCA · CySEC · ASIC · SCB · SCA (UAE)
+- Midas (midas): SPK-regulated app: zero-commission BIST, flat $1.50 US stock trades · Regulation: SPK (Türkiye) · Borsa İstanbul member
+- Darwinex (darwinex): FCA and CNMV broker that turns a track record into an investable DARWIN · Regulation: FCA · CNMV · FSA Seychelles
+
+## Frequently asked
+
+**Can I run a system on my own account?**
+
+Yes. Depending on the broker you can copy-trade, join a MAM/PAMM structure at Tickmill, Saxo Bank or Midas, or follow the signal channel and execute yourself. In every case the account stays in your own name.
+
+**What is the minimum capital?**
+
+USD 1,000 for copy trading or signals. Managed MAM/PAMM accounts start at the minimum allocation shown on the managed-accounts page.
+
+**Do you share the code?**
+
+No. The code stays proprietary. What NUUK publishes is the methodology, the risk rules and the results, each with its source.
+
+## Limits on what may be claimed
+
+- NUUK is not a broker, holds no DFSA licence and never takes custody of client money; the partner brokers are the regulated parties.
+- Published performance is either a live broker statement, paper trading or a walk-forward backtest, and the label sits next to every figure.
+- Nothing on the site is personal investment advice.

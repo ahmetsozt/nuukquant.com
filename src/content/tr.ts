@@ -75,7 +75,15 @@ export const tr: ContentOverride = {
       "pre": "CFD ve forex gibi kaldıraçlı ürünlerde işlem yapmak yüksek risk içerir; sermayenizin tamamını hızla kaybedebilirsiniz.",
       "strong": "Geçmiş performans gelecekteki sonuçların göstergesi değildir.",
       "post": "Bu sitedeki hiçbir içerik kişisel yatırım tavsiyesi niteliği taşımaz."
-    }
+    },
+    store: {
+      appLabel: "NUUK uygulaması",
+      appStorePre: "İndir",
+      appStore: "App Store",
+      playPre: "İndir",
+      play: "Google Play",
+      soon: "Yakında",
+    },
   },
   nav: [
     {
@@ -99,7 +107,8 @@ export const tr: ContentOverride = {
         {
           "label": "Yatırımcı Eğitimi"
         },
-        { "label": "Ücretsiz AI Sinyaller", "href": "/free-signals/" }
+        { "label": "Ücretsiz AI Sinyaller", "href": "/free-signals/" },
+        { "label": "NUUK Uygulaması ve Üyelik" }
       ]
     },
     {
@@ -148,7 +157,8 @@ export const tr: ContentOverride = {
     },
     {
       "label": "Kullanım Koşulları"
-    }
+    },
+    { "label": "Abonelik Şartları" }
   ],
   socials: [{ label: "LinkedIn" }, { label: "X" }, { label: "Instagram" }],
 
@@ -994,6 +1004,112 @@ export const tr: ContentOverride = {
     "disclaimer": "Sinyaller eğitim içeriği ve genel piyasa yorumu niteliğindedir. Kişisel yatırım tavsiyesi değildir ve bireysel koşullarınızı dikkate almaz."
   },
 
+  membership: {
+    metaTitle: "NUUK uygulaması üyelik: Pro ve Premium",
+    metaDescription:
+      "NUUK uygulamasında NUUK Masa'ya tam erişim: anlık sinyaller, tüm analizler, fiyat alarmları ve demo / paper hesaplarına otomatik kopya. Ödemeyi web sitesinde yap, uygulamaya aynı e-postayla giriş yap.",
+    kicker: "NUUK üyelik",
+    title: "NUUK Masa'ya tam erişim",
+    lead: "Anlık sinyaller, tam analizler ve demo / paper hesaplarında otomatik kopya. Ödemeyi burada yap, uygulamaya aynı e-postayla giriş yap; planın otomatik açılır. İstediğin zaman iptal.",
+    heroCta: { label: "Planları gör" },
+    plansTitle: "Planını seç",
+    plansLead: "Aylık, ABD doları ile. Ödeme yalnızca web sitesinde alınır; uygulamaya aynı e-postayla giriş yaptığında planın açılır.",
+    recommended: "Önerilen",
+    selected: "Uygulamada seçtiğin plan",
+    free: "Ücretsiz",
+    forever: "süresiz",
+    perMonth: "/ ay",
+    taglines: { free: "Piyasayı takip et", pro: "Anlık ol", premium: "Otomatik kopya ve risk paneli" },
+    everythingIn: "{plan} planındaki her şey, artı:",
+    freeCta: "Uygulamayı indir",
+    buy: "{plan} ile devam et",
+    soon: "Ödeme çok yakında",
+    email: {
+      label: "Uygulamada kullandığın e-posta",
+      placeholder: "ornek@eposta.com",
+      hint: "Planın bu adrese bağlanır. Uygulamaya aynı e-postayla giriş yap.",
+      error: "Geçerli bir e-posta adresi gir.",
+    },
+    tokenNote: "Uygulamadan geldin: ödeme hesabına bağlı, e-posta girmene gerek yok.",
+    notices: {
+      paymentSoon: "Online ödeme çok yakında açılıyor. Açıldığında haber almak ya da şimdiden üye olmak için destek@nuukquant.com adresine yaz.",
+      linkInvalid: "Uygulamadan gelen bağlantının süresi dolmuş. Uygulamadan tekrar dene ya da aşağıya uygulamada kullandığın e-postayı yaz.",
+    },
+    secure: "Ödeme, ödeme sağlayıcımızın (Stripe) güvenli ödeme sayfasında alınır. Kart bilgilerin NUUK'a ulaşmaz.",
+    compareTitle: "Planları karşılaştır",
+    feature: "Özellik",
+    included: "Dahil",
+    notIncluded: "Dahil değil",
+    realtime: "Anlık",
+    features: {
+      markets: "Piyasalar ve izleme listesi",
+      calendar_news: "Ekonomik takvim ve haberler",
+      academy: "Akademi ve araçlar",
+      signals_delayed: "Masa sinyalleri (15 dk gecikmeli)",
+      signals_realtime: "Anlık Masa sinyalleri",
+      push_signals: "Sinyal push bildirimleri",
+      analysis_full: "Tüm NUUK analizleri",
+      price_alerts: "Fiyat alarmları",
+      copy_demo_paper: "Demo MT5 / paper hesaplara otomatik kopya",
+      risk_panel: "Hesap başına risk paneli",
+      execution_reports: "Yürütme raporları",
+      broker_partner: "Lisanslı broker ortağı ile gerçek hesap",
+      priority_support: "Öncelikli destek",
+    },
+    stepsTitle: "Üyeliğin uygulamaya nasıl ulaşır",
+    steps: [
+      { title: "Planını seç, ödemeyi burada yap", body: "NUUK uygulamasında kullandığın e-postayı gir ve güvenli ödeme sayfasına geç." },
+      { title: "NUUK uygulamasını aç", body: "Henüz yüklü değilse App Store veya Google Play'den indir." },
+      { title: "Aynı e-postayla giriş yap", body: "Planın otomatik açılır; genellikle birkaç dakika içinde." },
+    ],
+    appTitle: "NUUK uygulamasını indir",
+    appLead: "Piyasalar, takvim, akademi ve NUUK Masa tek uygulamada. İndirmesi ücretsiz; ücretli planlar bu sayfadan alınır.",
+    faqTitle: "Sık sorulanlar",
+    faq: [
+      {
+        q: "Üyeliğim uygulamaya nasıl ulaşır?",
+        a: "Ödemeyi bu sayfada, NUUK uygulamasında kullandığın e-postayla yap. Sonra uygulamayı aç ve aynı e-postayla giriş yap, planın otomatik açılır; genellikle birkaç dakika sürer. Uygulamadaki yükseltme butonundan geldiysen ödeme zaten hesabına bağlıdır.",
+      },
+      {
+        q: "İptal edebilir miyim?",
+        a: "Evet, istediğin zaman. İptal bir sonraki yenilemeyi durdurur; planın ödediğin ayın sonuna kadar açık kalır. Yasa gerektirmedikçe kısmi aylar için iade yapılmaz. Ayrıntılar abonelik şartlarında.",
+      },
+      {
+        q: "Ödeme güvenli mi?",
+        a: "Ödeme, ödeme sağlayıcımızın (Stripe) güvenli ödeme sayfasında alınır. Kart bilgilerin doğrudan sağlayıcıya gider; NUUK bu bilgileri görmez ve saklamaz. Makbuzun e-postayla gelir.",
+      },
+      {
+        q: "Otomatik kopya burada ne anlama geliyor?",
+        a: "Premium ile uygulama, NUUK Masa'nın işlemlerini bağladığın demo MT5 veya paper hesaplara, senin belirlediğin risk sınırları içinde kopyalar: lot çarpanı, maksimum lot, günlük zarar sınırı ve acil durdurma. Böylece Masa'yı deneme ortamında takip edersin. Gerçek para hesabına kopya uygulama içinde yapılmaz; yalnızca lisanslı broker ortağımız üzerinden, o broker'ın kendi hesap açılışı ve sözleşmeleriyle yürür.",
+      },
+      {
+        q: "Uygulama içinden ödeme yapabilir miyim?",
+        a: "Hayır. Üyelikler yalnızca nuukquant.com üzerinden satılır. Giriş yaptığında uygulama planını ve yenileme tarihini gösterir.",
+      },
+    ],
+    fine: [
+      "Uygulama içi otomatik kopya demo ve paper hesaplar içindir. Gerçek hesap kopyası lisanslı broker ortağımız üzerinden yapılır.",
+      "Geçmiş performans gelecek sonuçların garantisi değildir. Kaldıraçlı ürünler yüksek risk içerir.",
+      "Sinyaller ve analizler genel piyasa yorumudur, kişisel yatırım tavsiyesi değildir.",
+    ],
+    legalTitle: "Şartlar ve politikalar",
+    legal: [{ label: "Abonelik şartları" }, { label: "Kullanım koşulları" }, { label: "Gizlilik politikası" }, { label: "Risk bildirimi" }],
+    thanks: {
+      metaTitle: "Ödemen alındı",
+      kicker: "NUUK üyelik",
+      title: "Ödemen alındı",
+      lead: "Üyeliğin birkaç dakika içinde aktifleşir. Uygulamayı aç ve aynı e-postayla giriş yap.",
+      stepsTitle: "Sıradaki adımlar",
+      steps: [
+        { title: "NUUK uygulamasını aç", body: "Telefonunda yoksa aşağıdan indir." },
+        { title: "Ödeme yaptığın e-postayla giriş yap", body: "Gönderdiğimiz 6 haneli kodu gir; planın hesabında hazır." },
+        { title: "Makbuzunu sakla", body: "Ödeme sağlayıcısı makbuzu e-postayla gönderir. Bir sonraki yenilemeden önce istediğin zaman iptal edebilirsin." },
+      ],
+      help: "Planın 15 dakika içinde açılmadıysa ödeme yaptığın e-postadan destek@nuukquant.com adresine yaz.",
+      back: { label: "Üyelik sayfasına dön" },
+    },
+  },
+
   education: {
     metaTitle: "Webinarlar ve Seminerler",
     metaDescription: "Yatırımcılara yöntemi öğreten canlı webinarlar ve yüz yüze seminerler.",
@@ -1764,6 +1880,20 @@ export const tr: ContentOverride = {
         "Fikrî mülkiyet. Bu web sitesindeki metinler, grafikler, logolar, çizelgeler ve sistem açıklamaları NUUK'a veya lisans verenlerine aittir. Sayfaları kişisel kullanım için görüntüleyebilir ve yazdırabilirsiniz; diğer her türlü çoğaltma yazılı izin gerektirir. Aracı kurum adları ve logoları ilgili sahiplerinin mülkiyetindedir ve yalnızca tanımlama amacıyla kullanılır.",
         "Sorumluluk. Web sitesi olduğu gibi sunulur. Yasaların izin verdiği ölçüde NUUK, işlem zararları, veri kaybı veya hizmet kesintisi dâhil olmak üzere web sitesinin kullanımından veya içeriğine dayanılmasından kaynaklanan her türlü zarara ilişkin sorumluluğu reddeder.",
         "Değişiklikler ve uygulanacak hukuk. Bu koşulları ve web sitesini istediğimiz zaman değiştirebiliriz; güncel sürüm her zaman burada yayımlanır. Bu koşullar Dubai Uluslararası Finans Merkezi'nde geçerli yasalara tabidir ve uyuşmazlıklar DIFC Mahkemelerinin yargı yetkisindedir.",
+      ],
+    },
+    // NUUK uygulaması üyelikleri için abonelik şartları (kurucu onayı 2026-10-05).
+    "subscription-terms": {
+      title: "Abonelik şartları",
+      body: [
+        "Bu şartlar, nuukquant.com üzerinden NUUK Quant'tan (Dubai Uluslararası Finans Merkezi, Dubai, Birleşik Arap Emirlikleri) satın alınan NUUK mobil uygulaması ücretli üyeliklerine (Pro ve Premium) uygulanır. Web sitesi kullanım koşullarına ve risk bildirimine ek niteliktedir. Son güncelleme 5 Ekim 2026.",
+        "Ücretlendirme ve yenileme. Üyelikler ödeme sağlayıcımız (Stripe) aracılığıyla ABD doları cinsinden aylık ücretlendirilir ve iptal edilene kadar her ay aynı tarihte otomatik olarak yenilenir. Ödeme sayfasında gösterilen tutar tahsil edilen tutardır; ülkenize göre vergi uygulanabilir.",
+        "Etkinleştirme. Plan, ödeme sırasında verilen e-posta adresini kullanan NUUK uygulama hesabında, genellikle ödemeden sonraki birkaç dakika içinde açılır. Uygulamaya bu adresle giriş yapın. Bir yenileme ödemesi başarısız olursa hesap Free plana döner.",
+        "İptal. İstediğiniz zaman destek@nuukquant.com adresine yazarak veya sunulduğu durumlarda ödeme sağlayıcısının müşteri sayfasından iptal edebilirsiniz. İptal, içinde bulunulan ödenmiş dönemin sonunda geçerli olur: plan o tarihe kadar açık kalır ve yenilenmez.",
+        "İade. Başlamış bir dönem için yapılan ödemeler, kısmi aylar dâhil, yürürlükteki mevzuat gerektirmedikçe iade edilmez.",
+        "Fiyat değişiklikleri. Üyelik fiyatlarını değiştirebiliriz. Yeni fiyat bir sonraki yenilemenize uygulanmadan en az 30 gün önce e-postayla bildirilir; yürürlüğe girmeden önce iptal edebilirsiniz.",
+        "Üyeliğin kapsamı. Uygulama özelliklerine erişim: piyasalar, takvim ve haberler, akademi, Masa sinyalleri ve analizleri; Premium ile demo MT5 veya paper hesaplara otomatik kopya. Sinyaller ve analizler genel piyasa yorumudur, kişisel yatırım tavsiyesi değildir. Uygulama içi otomatik kopya demo ve paper hesaplar içindir; gerçek hesap kopyası yalnızca lisanslı broker ortağımız üzerinden, onun kendi sözleşmeleriyle yapılır. Geçmiş performans gelecek sonuçların garantisi değildir; kaldıraçlı ürünler yüksek risk içerir.",
+        "İletişim. Ödeme veya üyelikle ilgili sorular: destek@nuukquant.com.",
       ],
     },
   },

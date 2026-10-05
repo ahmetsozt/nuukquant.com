@@ -3,7 +3,7 @@ import { IBM_Plex_Sans_Arabic, Manrope } from "next/font/google";
 import Reveal from "@/components/ui/Reveal";
 import AuthRedirect from "@/components/layout/AuthRedirect";
 import Consent from "@/components/Consent";
-import { getContent, locales } from "@/i18n";
+import { getContent, locales, trRootAliases } from "@/i18n";
 import { en } from "@/content/en";
 import "./globals.css";
 
@@ -86,13 +86,18 @@ export const viewport = {
   colorScheme: "light dark" as const,
 };
 
+/** Root-level segments of the Turkish alias pages (/uyelik/, /abonelik-sartlari/). */
+const TR_ROOTS = [...new Set(Object.values(trRootAliases).map((a) => a.split("/")[1]))].join("|");
+
 /** Sets <html lang> from the URL before first paint; the static export shares one root layout across locales. */
-const LANG_BOOT = `(function(){var m=location.pathname.match(/^\/(${locales.join("|")})(\/|$)/);var l=m?m[1]:"en";document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";})();`;
+// "\\/" keeps the backslash in the emitted script; a bare "\/" collapses to "/" and breaks the regex.
+const LANG_BOOT = `(function(){var p=location.pathname;var m=p.match(/^\\/(${locales.join("|")})(\\/|$)/);var l=m?m[1]:/^\\/(${TR_ROOTS})(\\/|$)/.test(p)?"tr":"en";document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";})();`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const cookieLabels = Object.fromEntries(locales.map((l) => [l, { ...getContent(l).ui.cookie, href: getContent(l).legalLinks.find((x) => x.href.includes("privacy"))?.href ?? "/legal/privacy/" }]));
   return (
-    <html lang="en" className={`${manrope.variable} ${arabic.variable}`}>
+    // LANG_BOOT rewrites lang/dir before hydration, so the server's "en" is expected to differ.
+    <html lang="en" className={`${manrope.variable} ${arabic.variable}`} suppressHydrationWarning>
       <body>
         <script dangerouslySetInnerHTML={{ __html: LANG_BOOT }} />
         {children}

@@ -21,6 +21,11 @@ const variants: Record<Variant, string> = {
   header: "bg-primary text-white hover:bg-primary-dark",
 };
 
+/** Button classes for elements Button cannot render itself, e.g. a same-tab link to another origin. */
+export function buttonClass(variant: Variant = "primary", size: Size = "md"): string {
+  return `${base} ${sizes[size]} ${variants[variant]}`;
+}
+
 function Arrow({ className = "" }: { className?: string }) {
   return (
     <svg className={`rtl:rotate-180 ${className}`} width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -61,7 +66,7 @@ export default function Button({
       {arrow && <Arrow />}
     </>
   );
-  const cls = `${base} ${sizes[size]} ${variants[variant]} ${className}`;
+  const cls = `${buttonClass(variant, size)} ${className}`;
   const track = event ? { "data-event": event, "data-label": eventLabel } : {};
   if (href) {
     // Internal paths go through next/link; external, mailto and placeholder links use a plain anchor.

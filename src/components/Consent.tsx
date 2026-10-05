@@ -6,6 +6,7 @@ import { useSyncExternalStore } from "react";
 import Analytics from "@/components/Analytics";
 import ApolloTracker from "@/components/ApolloTracker";
 import MetaPixel from "@/components/MetaPixel";
+import { localeFromPath } from "@/i18n";
 
 type Labels = { text: string; accept: string; reject: string; more: string; href: string };
 type Choice = "granted" | "denied" | "unknown" | "server";
@@ -42,7 +43,7 @@ function choose(v: "granted" | "denied") {
  */
 export default function Consent({ labels }: { labels: Record<string, Labels> }) {
   const pathname = usePathname() || "/";
-  const t = labels[pathname.split("/")[1]] ?? labels.en;
+  const t = labels[localeFromPath(pathname)] ?? labels.en;
   const state = useSyncExternalStore(subscribe, read, () => "server" as Choice);
 
   return (

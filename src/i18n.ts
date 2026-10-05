@@ -26,11 +26,37 @@ export function dir(locale: Locale): "ltr" | "rtl" {
   return locale === "ar" ? "rtl" : "ltr";
 }
 
+/**
+ * Turkish pages that live at short root URLs instead of /tr/…, keyed by their
+ * locale-less path. The NUUK app and the payment provider link to these, so
+ * they must never move. /tr/… copies still render and canonicalise here.
+ */
+export const trRootAliases: Readonly<Record<string, string>> = {
+  "/membership/": "/uyelik/",
+  "/membership/thank-you/": "/uyelik/tesekkurler/",
+  "/legal/subscription-terms/": "/abonelik-sartlari/",
+};
+
+/** Locale-less path for a Turkish root alias ("/uyelik/" → "/membership/"), or null. */
+function aliasTarget(path: string): string | null {
+  const hit = Object.entries(trRootAliases).find(([, alias]) => alias === path);
+  return hit ? hit[0] : null;
+}
+
 /** Prefix an internal path with the locale segment. External and mailto links pass through. */
 export function localePath(locale: Locale, href: string): string {
   if (!href.startsWith("/")) return href;
+  if (locale === "tr" && trRootAliases[href]) return trRootAliases[href];
   if (locale === defaultLocale && href === "/") return "/";
   return `/${locale}${href === "/" ? "/" : href}`;
+}
+
+/** Locale of a pathname, counting the Turkish root aliases as Turkish. */
+export function localeFromPath(pathname: string): Locale {
+  const first = pathname.split("/").filter(Boolean)[0] ?? "";
+  if (isLocale(first)) return first;
+  const normalised = `/${pathname.split("/").filter(Boolean).join("/")}/`;
+  return aliasTarget(normalised) ? "tr" : defaultLocale;
 }
 
 /** Swap the locale segment of a pathname (used by the language switcher). */
@@ -38,7 +64,7 @@ export function switchLocale(pathname: string, to: Locale): string {
   const parts = pathname.split("/").filter(Boolean);
   if (parts.length && isLocale(parts[0])) parts.shift();
   const rest = parts.length ? `/${parts.join("/")}/` : "/";
-  return localePath(to, rest);
+  return localePath(to, aliasTarget(rest) ?? rest);
 }
 
 type Plain = Record<string, unknown>;

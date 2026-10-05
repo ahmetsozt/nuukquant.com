@@ -125,3 +125,37 @@ export function itemListSchema(name: string, items: { name: string; url: string 
     })),
   };
 }
+
+/**
+ * NUUK app paid plans as Product + monthly Offer, one node per plan. Prices come
+ * from the static plan list the page is built with.
+ */
+export function membershipProductsSchema(pageUrl: string, plans: { name: string; priceUsd: number; tagline: string; features: string[] }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": plans.map((p) => ({
+      "@type": "Product",
+      name: `NUUK ${p.name}`,
+      description: `${p.tagline}: ${p.features.join(", ")}.`,
+      brand: { "@type": "Brand", name: "NUUK" },
+      category: "Software subscription",
+      url: pageUrl,
+      offers: {
+        "@type": "Offer",
+        url: pageUrl,
+        price: p.priceUsd.toFixed(2),
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+        seller: { "@id": ORG_ID },
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
+          price: p.priceUsd.toFixed(2),
+          priceCurrency: "USD",
+          billingDuration: "P1M",
+          unitCode: "MON",
+          referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "MON" },
+        },
+      },
+    })),
+  };
+}

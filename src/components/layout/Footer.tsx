@@ -4,6 +4,7 @@ import type { Locale } from "@/i18n";
 import Logo, { LogoMark } from "@/components/ui/Logo";
 import Icon from "@/components/ui/Icon";
 import Fill from "@/components/ui/Fill";
+import StoreBadges from "@/components/ui/StoreBadges";
 
 export default function Footer({ c, locale }: { c: SiteContent; locale: Locale }) {
   const { brand, footer } = c;
@@ -59,6 +60,10 @@ export default function Footer({ c, locale }: { c: SiteContent; locale: Locale }
 
         <div className="mt-14 flex flex-wrap items-center justify-between gap-6 border-t border-white/10 pt-8">
           <Logo href={locale === "en" ? "/" : `/${locale}/`} label={c.ui.home} dark height={28} />
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="text-[13px] text-soft">{c.ui.store.appLabel}</span>
+            <StoreBadges labels={c.ui.store} size="sm" />
+          </div>
           <div className="flex items-center gap-3">
             <span className="text-[13px] text-soft">{c.ui.followUs}</span>
             <ul className="flex gap-2">

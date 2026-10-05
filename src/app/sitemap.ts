@@ -1,10 +1,10 @@
 import type { MetadataRoute } from "next";
 import { en } from "@/content/en";
 import { locales } from "@/i18n";
+import { pageUrl } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
-const BASE = "https://www.nuukquant.com";
 const PAGES = [
   "",
   "about/",
@@ -25,15 +25,17 @@ const PAGES = [
   "legal/ib-disclosure/",
   "legal/privacy/",
   "legal/terms/",
+  "legal/subscription-terms/",
+  "membership/",
   "portfolio-management/",
   "signals/",
   "track-record/",
 ];
 
-/** One entry per page and locale; English lives at / for the home page and /en/ elsewhere. */
+/** One entry per page and locale; English lives at / for the home page and /en/ elsewhere, Turkish membership pages at their root aliases. */
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const url = (locale: string, page: string) => (locale === "en" && page === "" ? `${BASE}/` : `${BASE}/${locale}/${page}`);
+  const url = pageUrl;
   return PAGES.flatMap((page) =>
     locales.map((locale) => ({
       url: url(locale, page),

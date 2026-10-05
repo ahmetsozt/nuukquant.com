@@ -20,6 +20,7 @@ const GUIDE: { path: string; label: string; note: string }[] = [
   { path: "case-studies/", label: "Case studies", note: "Illustrative scenarios showing how each service works in practice." },
   { path: "investors/", label: "Investor portal", note: "Investor portal overview and subscriber access." },
   { path: "apply/", label: "Apply for membership", note: "Membership application form." },
+  { path: "membership/", label: "NUUK app membership", note: "NUUK mobile app plans (Free, Pro, Premium) with monthly USD prices; paid plans are bought on the website and unlock in the app with the same e-mail." },
   { path: "contact-us/", label: "Contact", note: "Contact details and enquiry form." },
   { path: "legal/risk-disclosure/", label: "Risk disclosure", note: "Risk disclosure." },
   { path: "legal/ib-disclosure/", label: "IB disclosure", note: "Introducing-broker disclosure: how referral commissions work." },

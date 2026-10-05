@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { locales, type Locale } from "@/i18n";
+import { locales, trRootAliases, type Locale } from "@/i18n";
 
 export const SITE = "https://www.nuukquant.com";
 
@@ -13,8 +13,10 @@ const OG_LOCALE: Record<Locale, string> = {
   es: "es_ES",
 };
 
-/** Absolute URL of one page in one language. English home lives at the root. */
+/** Absolute URL of one page in one language. English home lives at the root; some Turkish pages have root aliases. */
 export function pageUrl(locale: Locale, path: string): string {
+  const alias = locale === "tr" ? trRootAliases[`/${path}`] : undefined;
+  if (alias) return `${SITE}${alias}`;
   return locale === "en" && path === "" ? `${SITE}/` : `${SITE}/${locale}/${path}`;
 }
 

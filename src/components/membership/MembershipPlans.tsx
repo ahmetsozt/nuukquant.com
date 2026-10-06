@@ -4,10 +4,13 @@ import { useEffect, useState, useSyncExternalStore } from "react";
 import type { SiteContent } from "@/content/en";
 import { buttonClass } from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
-import ApplicationForm from "@/components/membership/ApplicationForm";
+import dynamic from "next/dynamic";
 import { PREMIUM_FEATURES, PREMIUM_PRICE_USD, priceAmount, sitePlanFrom, type SitePlan } from "@/lib/membership";
 
 type Copy = SiteContent["membership"];
+
+/** The form carries the phone-number metadata (~150 kB); load it only once a plan is chosen. */
+const ApplicationForm = dynamic(() => import("@/components/membership/ApplicationForm"), { ssr: false });
 
 let captured: SitePlan | null | undefined;
 /** ?plan= as the visitor arrived (the app sends plan=pro|premium), read once per page load. */
@@ -94,6 +97,7 @@ function PlanCard({
 export default function MembershipPlans({ m, locale, hub }: { m: Copy; locale: string; hub: string | null }) {
   const arrivedWith = useSyncExternalStore(subscribeNever, readPlan, () => null);
   const [open, setOpen] = useState<SitePlan | null>(null);
+  const [mounted, setMounted] = useState(false);
   useEffect(tidyQuery, []);
 
   const legalHref = (needle: string, fallback: string) => m.legal.find((l) => l.href.includes(needle))?.href ?? fallback;
@@ -123,7 +127,10 @@ export default function MembershipPlans({ m, locale, hub }: { m: Copy; locale: s
             priceNote={m.forever}
             features={[...m.plans.free.features]}
             cta={m.plans.free.cta}
-            onChoose={() => setOpen("free")}
+            onChoose={() => {
+              setMounted(true);
+              setOpen("free");
+            }}
             event="membership_choose_free"
           />
           <PlanCard
@@ -137,7 +144,10 @@ export default function MembershipPlans({ m, locale, hub }: { m: Copy; locale: s
             lead={m.plans.premium.everything}
             features={PREMIUM_FEATURES.map((f) => m.features[f])}
             cta={m.plans.premium.cta}
-            onChoose={() => setOpen("premium")}
+            onChoose={() => {
+              setMounted(true);
+              setOpen("premium");
+            }}
             event="membership_choose_premium"
           />
         </ul>
@@ -154,7 +164,7 @@ export default function MembershipPlans({ m, locale, hub }: { m: Copy; locale: s
         </div>
       </div>
 
-      <ApplicationForm m={m} locale={locale} hub={hub} plan={open} onPlanChange={setOpen} onClose={() => setOpen(null)} legal={legal} />
+      {mounted && <ApplicationForm m={m} locale={locale} hub={hub} plan={open} onPlanChange={setOpen} onClose={() => setOpen(null)} legal={legal} />}
     </section>
   );
 }

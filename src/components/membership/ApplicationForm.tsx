@@ -179,8 +179,9 @@ export default function ApplicationForm({
               <legend className="mb-2 text-[14px] font-semibold text-ink">{f.plan}</legend>
               <div className="grid grid-cols-2 gap-2">
                 {(["free", "premium"] as const).map((p) => (
-                  <label key={p} className={`flex cursor-pointer items-center gap-2 rounded-xl border-[1.5px] px-3 py-2.5 text-[14px] font-semibold ${plan === p ? "border-primary bg-tint text-ink" : "border-line text-body"}`}>
-                    <input type="radio" name={`${id}-plan`} value={p} checked={plan === p} onChange={() => onPlanChange(p)} className="accent-primary" />
+                  <label key={p} className={`flex cursor-pointer items-center gap-2 rounded-xl border-[1.5px] px-3 py-2.5 text-[14px] font-semibold has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-primary/40 ${plan === p ? "border-primary bg-tint text-ink" : "border-line text-body"}`}>
+                    <input type="radio" name={`${id}-plan`} value={p} checked={plan === p} onChange={() => onPlanChange(p)} className="sr-only" />
+                    <span aria-hidden="true" className={`flex size-4 flex-none items-center justify-center rounded-full border-2 ${plan === p ? "border-primary" : "border-line"}`}>{plan === p && <span className="size-2 rounded-full bg-primary" />}</span>
                     {p === "premium" ? m.plans.premium.name : m.free}
                   </label>
                 ))}

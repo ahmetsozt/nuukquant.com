@@ -205,3 +205,91 @@ export function checkoutHref(hub: string, plan: PaidPlan, who: { token: string }
   const query = "token" in who ? `t=${encodeURIComponent(who.token)}` : `email=${encodeURIComponent(who.email.trim())}`;
   return `${hub}/v1/billing/checkout/${plan}?${query}`;
 }
+
+// ── website membership applications (hub /v1/membership/*) ───────────────
+
+/** Plans the website sells: the free WhatsApp group and Premium. */
+export type SitePlan = "free" | "premium";
+
+/** ?plan= from the app or old links: "pro" no longer exists on the website and maps to Premium. */
+export function sitePlanFrom(raw: string | null): SitePlan | null {
+  if (raw === "free") return "free";
+  if (raw === "premium" || raw === "pro") return "premium";
+  return null;
+}
+
+/** Premium's own feature list, in display order. */
+export const PREMIUM_FEATURES: readonly PlanFeature[] =
+  FALLBACK_PLAN_OFFERS.find((o) => o.id === "premium")?.features.filter((f) => PLAN_FEATURE_ORDER.includes(f)) ?? [];
+
+export const PREMIUM_PRICE_USD = FALLBACK_PLAN_OFFERS.find((o) => o.id === "premium")?.priceUsd ?? 99;
+
+export interface ApplicationBody {
+  plan: SitePlan;
+  fullName: string;
+  phone: string;
+  email: string;
+  fundingUsd: number;
+  locale: string;
+  consent: true;
+  riskAck: true;
+  website: string;
+}
+
+export interface ApplicationResult {
+  ref: string;
+  plan: SitePlan;
+  status: string;
+  whatsappUrl: string | null;
+  paymentPath: string | null;
+}
+
+export interface PaymentWallet {
+  asset: string;
+  network: string;
+  address: string;
+  qrSvg: string;
+}
+
+export interface PaymentInfo {
+  ref: string;
+  status: string;
+  firstName: string;
+  priceUsd: number;
+  wallets: PaymentWallet[];
+  payNetwork: string | null;
+  txHash: string | null;
+  txSubmittedAt: string | null;
+  paidAt: string | null;
+}
+
+export type ApiOutcome<T> = { ok: true; data: T } | { ok: false; status: number; error: string | null };
+
+/** JSON call to the hub with a timeout; network failures come back as status 0, never thrown. */
+export async function hubCall<T>(url: string, init: RequestInit = {}, timeoutMs = 15_000): Promise<ApiOutcome<T>> {
+  const ctrl = new AbortController();
+  const timer = window.setTimeout(() => ctrl.abort(), timeoutMs);
+  try {
+    const res = await fetch(url, { ...init, signal: ctrl.signal, headers: { Accept: "application/json", ...(init.body ? { "Content-Type": "application/json" } : {}), ...init.headers } });
+    const json = (await res.json().catch(() => null)) as { success?: boolean; data?: T; error?: string | null } | null;
+    if (res.ok && json?.success) return { ok: true, data: json.data as T };
+    return { ok: false, status: res.status, error: json?.error ?? null };
+  } catch {
+    return { ok: false, status: 0, error: null };
+  } finally {
+    window.clearTimeout(timer);
+  }
+}
+
+/** Same rule as the hub: 7–15 digits, optional leading +, spaces/dashes/brackets allowed. */
+export function isPhone(v: string): boolean {
+  const t = v.trim();
+  if (!/^\+?[\d\s().-]{7,24}$/.test(t)) return false;
+  const digits = t.replace(/\D/g, "").length;
+  return digits >= 7 && digits <= 15;
+}
+
+/** Only same-site payment paths from the hub are followed (never an absolute URL). */
+export function safePaymentPath(path: string | null): string | null {
+  return path && /^\/(?:uyelik\/odeme|[a-z]{2}\/membership\/payment)\/\?k=[A-Za-z0-9_-]{32,64}$/.test(path) ? path : null;
+}

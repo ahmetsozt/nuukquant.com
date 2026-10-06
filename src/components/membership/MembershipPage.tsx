@@ -7,7 +7,7 @@ import StoreBadges from "@/components/ui/StoreBadges";
 import JsonLd from "@/components/seo/JsonLd";
 import MembershipPlans from "@/components/membership/MembershipPlans";
 import { getContent, type Locale } from "@/i18n";
-import { FALLBACK_PLAN_OFFERS, hubBaseUrl, planIncludes, PLAN_FEATURE_ORDER } from "@/lib/membership";
+import { hubBaseUrl, PREMIUM_FEATURES, PREMIUM_PRICE_USD } from "@/lib/membership";
 import { membershipProductsSchema } from "@/lib/schema";
 import { pageUrl, seo } from "@/lib/seo";
 import type { SiteContent } from "@/content/en";
@@ -65,17 +65,12 @@ export function AppBand({ c }: { c: SiteContent }) {
 
 /**
  * NUUK app membership page (/uyelik/ in Turkish, /{locale}/membership/ elsewhere).
- * Payments for the app happen here only; see MembershipPlans for the checkout flow.
+ * Free WhatsApp group + Premium; the application form and crypto payment flow live in MembershipPlans.
  */
 export default function MembershipPage({ c, locale }: { c: SiteContent; locale: Locale }) {
   const m = c.membership;
   const localeHome = locale === "en" ? "/" : `/${locale}/`;
-  const paid = FALLBACK_PLAN_OFFERS.filter((o) => o.priceUsd > 0).map((o) => ({
-    name: o.name,
-    priceUsd: o.priceUsd,
-    tagline: m.taglines[o.id],
-    features: PLAN_FEATURE_ORDER.filter((f) => planIncludes(FALLBACK_PLAN_OFFERS, o.id, f)).map((f) => m.features[f]),
-  }));
+  const paid = [{ name: m.plans.premium.name, priceUsd: PREMIUM_PRICE_USD, tagline: m.plans.premium.tagline, features: PREMIUM_FEATURES.map((f) => m.features[f]) }];
   return (
     <>
       <PageIntro
@@ -84,7 +79,7 @@ export default function MembershipPage({ c, locale }: { c: SiteContent; locale: 
         title={m.title}
         body={m.lead}
         cta={{ label: m.heroCta.label, href: m.heroCta.target }}
-        secondary={{ label: m.freeCta, href: "#app" }}
+        secondary={{ label: m.freeCta, href: "#plans" }}
         crumbs={[{ label: c.ui.home, href: localeHome }, { label: m.kicker }]}
       />
       <JsonLd data={membershipProductsSchema(pageUrl(locale, PATH), paid)} />

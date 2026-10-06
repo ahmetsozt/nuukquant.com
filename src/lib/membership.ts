@@ -228,6 +228,8 @@ export interface ApplicationBody {
   plan: SitePlan;
   fullName: string;
   phone: string;
+  /** ISO country of the phone selector; a +number overrides it on the hub. */
+  country: string;
   email: string;
   fundingUsd: number;
   locale: string;

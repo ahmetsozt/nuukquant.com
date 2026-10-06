@@ -34,6 +34,7 @@ export function dir(locale: Locale): "ltr" | "rtl" {
 export const trRootAliases: Readonly<Record<string, string>> = {
   "/membership/": "/uyelik/",
   "/membership/thank-you/": "/uyelik/tesekkurler/",
+  "/membership/payment/": "/uyelik/odeme/",
   "/legal/subscription-terms/": "/abonelik-sartlari/",
 };
 

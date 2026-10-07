@@ -5,7 +5,7 @@ import type { SiteContent } from "@/content/en";
 import { buttonClass } from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
 import dynamic from "next/dynamic";
-import { PREMIUM_FEATURES, PREMIUM_PRICE_USD, priceAmount, sitePlanFrom, type SitePlan } from "@/lib/membership";
+import { PREMIUM_FEATURES, PREMIUM_PRICE_USD, isPromoActive, priceAmount, sitePlanFrom, type SitePlan } from "@/lib/membership";
 
 type Copy = SiteContent["membership"];
 
@@ -41,6 +41,7 @@ function PlanCard({
   tagline,
   price,
   priceNote,
+  promo,
   lead,
   features,
   cta,
@@ -54,6 +55,7 @@ function PlanCard({
   tagline: string;
   price: string;
   priceNote: string;
+  promo?: string;
   lead?: string;
   features: string[];
   cta: string;
@@ -74,6 +76,12 @@ function PlanCard({
         <span className={`num text-[44px] leading-none font-bold ${dark ? "text-white" : "text-ink"}`}>{price}</span>
         <span className={`text-[13px] ${dark ? "text-soft" : "text-muted"}`}>{priceNote}</span>
       </p>
+      {promo && (
+        <p className={`mt-4 inline-flex self-start items-center gap-2 rounded-pill px-3.5 py-1.5 text-[13.5px] font-semibold ${dark ? "bg-cyan text-navy-deep" : "bg-tint text-primary"}`}>
+          <Icon name="calendar" size={15} className="flex-none" />
+          {promo}
+        </p>
+      )}
       {lead && <p className={`mt-6 text-[13px] font-semibold ${dark ? "text-cyan" : "text-primary"}`}>{lead}</p>}
       <ul className={`${lead ? "mt-3" : "mt-6"} flex-1 space-y-2.5 text-[14.5px] ${dark ? "text-soft" : "text-body"}`}>
         {features.map((f) => (
@@ -98,6 +106,7 @@ export default function MembershipPlans({ m, locale, hub }: { m: Copy; locale: s
   const arrivedWith = useSyncExternalStore(subscribeNever, readPlan, () => null);
   const [open, setOpen] = useState<SitePlan | null>(null);
   const [mounted, setMounted] = useState(false);
+  const promoActive = useSyncExternalStore(subscribeNever, isPromoActive, isPromoActive);
   useEffect(tidyQuery, []);
 
   const legalHref = (needle: string, fallback: string) => m.legal.find((l) => l.href.includes(needle))?.href ?? fallback;
@@ -141,6 +150,7 @@ export default function MembershipPlans({ m, locale, hub }: { m: Copy; locale: s
             tagline={m.plans.premium.tagline}
             price={priceAmount(locale, { priceUsd: PREMIUM_PRICE_USD }) ?? ""}
             priceNote={m.perMonth}
+            promo={promoActive ? m.promo : undefined}
             lead={m.plans.premium.everything}
             features={PREMIUM_FEATURES.map((f) => m.features[f])}
             cta={m.plans.premium.cta}

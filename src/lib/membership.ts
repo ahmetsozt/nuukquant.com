@@ -224,6 +224,10 @@ export const PREMIUM_FEATURES: readonly PlanFeature[] =
 
 export const PREMIUM_PRICE_USD = FALLBACK_PLAN_OFFERS.find((o) => o.id === "premium")?.priceUsd ?? 99;
 
+/** October 2026 offer: Premium's first month at 49 USD, until midnight Istanbul time on 1 November. */
+export const PREMIUM_PROMO = { priceUsd: 49, endsAt: Date.parse("2026-11-01T00:00:00+03:00") } as const;
+export const isPromoActive = (now: number = Date.now()): boolean => now < PREMIUM_PROMO.endsAt;
+
 export interface ApplicationBody {
   plan: SitePlan;
   fullName: string;

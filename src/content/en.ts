@@ -962,6 +962,7 @@ export const en = {
     plansTitle: "Choose your plan",
     plansLead: "Both start with the same short form. Premium is billed monthly in US dollars; for now we accept payment in crypto only.",
     recommended: "Recommended",
+    promo: "October only: first month $49",
     selected: "Selected",
     free: "Free",
     forever: "no time limit",

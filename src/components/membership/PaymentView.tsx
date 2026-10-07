@@ -5,7 +5,7 @@ import { useEffect, useId, useState, useSyncExternalStore } from "react";
 import type { SiteContent } from "@/content/en";
 import { buttonClass } from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
-import { hubCall, type PaymentInfo } from "@/lib/membership";
+import { PREMIUM_PROMO, hubCall, isPromoActive, type PaymentInfo } from "@/lib/membership";
 
 type Copy = SiteContent["membership"];
 const KEY_STORE = "nuuk-pay-key";
@@ -68,6 +68,7 @@ export default function PaymentView({ m, hub, membershipHref }: { m: Copy; hub: 
   const id = useId();
   const key = useSyncExternalStore(subscribeNever, takeKeyOnce, () => null);
   const hydrated = useSyncExternalStore(subscribeNever, () => true, () => false);
+  const promoActive = useSyncExternalStore(subscribeNever, isPromoActive, isPromoActive);
   const [fetched, setFetched] = useState<Load>({ state: "loading" });
   const [network, setNetwork] = useState("");
   const [tx, setTx] = useState("");
@@ -128,10 +129,11 @@ export default function PaymentView({ m, hub, membershipHref }: { m: Copy; hub: 
   }
 
   const info = load.info;
-  const price = String(info.priceUsd);
   const reported = info.status === "payment_submitted";
   const paid = info.status === "paid";
   const closed = info.status === "rejected" || info.status === "cancelled";
+  const promo = promoActive && !paid && info.priceUsd > PREMIUM_PROMO.priceUsd;
+  const price = String(promo ? PREMIUM_PROMO.priceUsd : info.priceUsd);
 
   return (
     <div className="grid gap-6 lg:grid-cols-12">
@@ -141,10 +143,19 @@ export default function PaymentView({ m, hub, membershipHref }: { m: Copy; hub: 
             <Icon name="shield" size={16} />
             {p.cryptoOnly}
           </p>
+          {promo && (
+            <p className="mt-4 inline-flex items-center gap-2 rounded-pill bg-cyan px-3.5 py-1.5 text-[13.5px] font-semibold text-navy-deep">
+              <Icon name="calendar" size={15} className="flex-none" />
+              {m.promo}
+            </p>
+          )}
           <dl className="mt-6 grid gap-5 sm:grid-cols-3">
             <div>
               <dt className="text-[12px] tracking-wider text-soft/70 uppercase">{p.amount}</dt>
-              <dd className="num mt-1 text-[30px] font-bold">{p.amountValue.replace("{price}", price)}</dd>
+              <dd className="num mt-1 text-[30px] font-bold">
+                {p.amountValue.replace("{price}", price)}
+                {promo && <s className="mt-1 block text-[15px] font-semibold text-soft/70">{p.amountValue.replace("{price}", String(info.priceUsd))}</s>}
+              </dd>
             </div>
             <div>
               <dt className="text-[12px] tracking-wider text-soft/70 uppercase">{p.ref}</dt>

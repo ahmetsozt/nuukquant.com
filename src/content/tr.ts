@@ -1016,6 +1016,7 @@ export const tr: ContentOverride = {
     plansTitle: "Planını seç",
     plansLead: "İkisi de aynı kısa formla başlar. Premium aylık, ABD doları üzerinden; ödemeleri şimdilik yalnızca kripto para ile kabul ediyoruz.",
     recommended: "Önerilen",
+    promo: "Ekim'e özel ilk ay 49 $",
     selected: "Seçtiğin plan",
     free: "Ücretsiz",
     forever: "süresiz",

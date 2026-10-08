@@ -2077,38 +2077,38 @@ export const tr: ContentOverride = {
 
   performance: [
     {
-      "name": "GANN NUUK Trader AI — Tickmill, kendi sermayemiz",
-      "source": "MT4 detaylı rapor, 11 Eyl 2026",
-      "updated": "2026-09-11",
+      "name": "GANN NUUK Trader AI — XAUUSD & XAGUSD masası",
+      "source": "Model portföy · varsayımsal performans · MT4 detaylı rapor, 8 Eki 2026",
+      "updated": "2026-10-08",
       "stats": [
         {
-          "label": "Yatırılan",
-          "value": "47.000 USD",
+          "label": "Dönem",
+          "value": "2 Eyl – 8 Eki 2026 · 22 işlem günü",
           "tone": "neutral"
         },
         {
-          "label": "Kapanmış net kâr",
-          "value": "+17.910 USD (+%38,1)",
+          "label": "Dönem getirisi",
+          "value": "+%103,8",
           "tone": "up"
         },
         {
-          "label": "Özkaynak (açık pozisyon yok)",
-          "value": "64.910 USD",
-          "tone": "neutral"
-        },
-        {
           "label": "Kâr faktörü",
-          "value": "3,38",
+          "value": "2,83",
           "tone": "neutral"
         },
         {
           "label": "Kazanma oranı",
-          "value": "%73,8 (256 işlemde 189)",
+          "value": "%76,0 (1.835 işlemde 1.395)",
           "tone": "neutral"
         },
         {
           "label": "Maks. düşüş",
-          "value": "%5,16",
+          "value": "%13,30",
+          "tone": "neutral"
+        },
+        {
+          "label": "Yeşil / kırmızı gün",
+          "value": "22 / 0",
           "tone": "neutral"
         }
       ]

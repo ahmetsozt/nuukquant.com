@@ -41,6 +41,7 @@ export const es: ContentOverride = {
     riskDisclosure: "Advertencia de riesgo",
     verified: "Verificado",
     live: "En vivo",
+    model: "Cartera modelo",
     test: "En pruebas",
     paused: "En pausa",
     soon: "Próximamente",
@@ -1277,7 +1278,7 @@ export const es: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — mesa XAUUSD y XAGUSD",
-      "source": "Cartera modelo · rentabilidad hipotética · informe detallado MT4, 8 oct 2026",
+      "source": "Rentabilidad hipotética · informe detallado MT4, 8 oct 2026",
       "updated": "2026-10-08",
       "stats": [
         {

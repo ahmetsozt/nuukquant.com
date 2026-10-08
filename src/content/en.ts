@@ -6,7 +6,7 @@
 export type NavLink = { label: string; href: string };
 export type NavGroup = { label: string; href: string; items: NavLink[] };
 export type Cta = { label: string; href: string };
-export type Status = "live" | "verified" | "test" | "paused" | "soon" | "pending";
+export type Status = "live" | "verified" | "model" | "test" | "paused" | "soon" | "pending";
 
 export type Broker = {
   slug: string;
@@ -109,6 +109,7 @@ export const en = {
     riskDisclosure: "Risk disclosure",
     verified: "Verified",
     live: "Live",
+    model: "Model portfolio",
     test: "Testing",
     paused: "Paused",
     soon: "Coming soon",
@@ -2041,9 +2042,9 @@ export const en = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — XAUUSD & XAGUSD desk",
-      "source": "Model portfolio · hypothetical performance · MT4 detailed statement, 8 Oct 2026",
+      "source": "Hypothetical performance · MT4 detailed statement, 8 Oct 2026",
       "verifiedHref": "",
-      "status": "test",
+      "status": "model",
       "since": "2026",
       "updated": "2026-10-08",
       "stats": [

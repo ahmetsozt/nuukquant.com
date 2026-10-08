@@ -42,6 +42,7 @@ export const fr: ContentOverride = {
     riskDisclosure: "Avertissement sur les risques",
     verified: "Vérifié",
     live: "En direct",
+    model: "Portefeuille modèle",
     test: "En test",
     paused: "En pause",
     soon: "Bientôt",
@@ -1460,7 +1461,7 @@ export const fr: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — desk XAUUSD & XAGUSD",
-      "source": "Portefeuille modèle · performance hypothétique · relevé détaillé MT4, 8 oct. 2026",
+      "source": "Performance hypothétique · relevé détaillé MT4, 8 oct. 2026",
       "updated": "2026-10-08",
       "stats": [
         {

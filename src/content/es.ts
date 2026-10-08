@@ -57,7 +57,7 @@ export const es: ContentOverride = {
     viewAll: "Ver todo",
     readMore: "Leer más",
     fill: "",
-    telegram: "Telegram",
+    telegram: "WhatsApp",
     whatsapp: "WhatsApp",
     legal: "Información legal",
     followUs: "Seguir",
@@ -176,7 +176,7 @@ export const es: ContentOverride = {
     signals: {
       kicker: "Señales e informes",
       title: "Ideas de trading con el razonamiento incluido",
-      lead: "Instrumento, dirección, entrada, stop, objetivo y el porqué. Entregadas por Telegram y por correo electrónico.",
+      lead: "Instrumento, dirección, entrada, stop, objetivo y el porqué. Entregadas por WhatsApp y por correo electrónico.",
       sample: {
         "entry": "4,392",
         "stop": "4,368",
@@ -237,7 +237,7 @@ export const es: ContentOverride = {
       },
       {
         "title": "Investigación y señales",
-        "body": "Notas diarias de la mesa, un informe semanal e ideas de trading con el razonamiento completo, a través del portal del inversor y Telegram."
+        "body": "Notas diarias de la mesa, un informe semanal e ideas de trading con el razonamiento completo, a través del portal del inversor y WhatsApp."
       },
       {
         "title": "Formación para inversores",
@@ -309,7 +309,7 @@ export const es: ContentOverride = {
     ],
     "speakingTitle": "Dónde publica NUUK",
     "speaking": [
-      "Telegram · @NUUKQuant: notas diarias de mercado, ideas de trading y el informe mensual de sistemas",
+      "Grupo de WhatsApp: notas diarias de mercado, ideas de trading y el informe mensual de sistemas",
       "LinkedIn · NUUK: novedades de la empresa e investigación en profundidad",
       "Portal del inversor: investigación, señales, P&L diario y formación para suscriptores"
     ]
@@ -685,7 +685,7 @@ export const es: ContentOverride = {
 
   signals: {
     metaTitle: "Señales e informes",
-    metaDescription: "Notas diarias de mercado, informes semanales e ideas de trading con el razonamiento completo, entregados por Telegram y por correo electrónico.",
+    metaDescription: "Notas diarias de mercado, informes semanales e ideas de trading con el razonamiento completo, entregados por WhatsApp y por correo electrónico.",
     kicker: "Señales e informes",
     title: "Ideas con el razonamiento incluido",
     lead: "Sin alertas a ciegas. Cada idea incluye instrumento, dirección, entrada, stop, objetivo, ratio riesgo-beneficio y un párrafo que explica el porqué. Aprende mientras opera.",
@@ -700,11 +700,11 @@ export const es: ContentOverride = {
     plansTitle: "Planes",
     plans: [
       { name: "Informes", period: "al mes", features: ["Nota macro diaria", "Informe semanal", "Acceso al archivo"], cta: "Suscribirse" },
-      { name: "Señales", period: "al mes", features: ["Todo lo incluido en Informes", "Ideas de trading con razonamiento", "Actualizaciones en vivo por Telegram", "Hoja de rendimiento mensual"], cta: "Suscribirse" },
+      { name: "Señales", period: "al mes", features: ["Todo lo incluido en Informes", "Ideas de trading con razonamiento", "Actualizaciones en vivo por WhatsApp", "Hoja de rendimiento mensual"], cta: "Suscribirse" },
       { name: "Mentoría", period: "por trimestre", features: ["Todo lo incluido en Señales", "Revisión individual quincenal", "Feedback sobre la cartera", "Acceso prioritario a los webinars"], cta: "Solicitar" },
     ],
     performanceTitle: "Rendimiento de las señales",
-    performanceNote: "Las ideas cerradas se registran mensualmente con entrada, salida y resultado en el canal de Telegram. Registro interno hasta la fecha: el 87% de las ideas cerradas alcanzó el objetivo antes que el stop. La verificación independiente del registro está en curso.",
+    performanceNote: "Las ideas cerradas se registran mensualmente con entrada, salida y resultado en el grupo de WhatsApp. Registro interno hasta la fecha: el 87% de las ideas cerradas alcanzó el objetivo antes que el stop. La verificación independiente del registro está en curso.",
     disclaimer: "Las señales son contenido educativo y comentario general de mercado. No constituyen asesoramiento de inversión personalizado y no tienen en cuenta sus circunstancias.",
   },
 
@@ -1123,14 +1123,14 @@ export const es: ContentOverride = {
   },
   contact: {
     metaTitle: "Contacto",
-    metaDescription: "Reserve una llamada, escriba por WhatsApp o Telegram, o envíe una consulta.",
+    metaDescription: "Reserve una llamada, escriba por WhatsApp, o envíe una consulta.",
     kicker: "Contacto",
     title: "Hablemos",
     lead: "Elija el canal que más le convenga. Las consultas institucionales y profesionales se responden en un día hábil.",
     channels: [
       { title: "Reservar una llamada", body: "30 minutos, por vídeo o teléfono. Respuesta en un día hábil.", cta: "Solicitar una llamada" },
       { title: "WhatsApp", body: "Preguntas rápidas e intercambio de documentos.", cta: "Enviar mensaje" },
-      { title: "Telegram", body: "Canal de señales y comunidad.", cta: "Unirse" },
+      { title: "Grupo de WhatsApp", body: "Canal de señales y comunidad.", cta: "Unirse" },
     ],
     formTitle: "Enviar una consulta",
     form: {
@@ -1179,9 +1179,9 @@ export const es: ContentOverride = {
       title: "Política de privacidad",
       body: [
         "Esta política explica qué datos personales recopila NUUK Quant (\"NUUK\", \"nosotros\") a través de nuukquant.com, con qué finalidad y qué derechos tiene usted. Última actualización: 8 de septiembre de 2026.",
-        "Datos que usted nos facilita. Cuando nos contacta por correo electrónico, WhatsApp, Telegram o el formulario de consulta, recibimos los datos que nos envía: nombre, dirección de correo electrónico, número de teléfono y el contenido de su mensaje. El formulario de consulta abre su propio cliente de correo; nada de lo que escribe se almacena en este sitio web.",
+        "Datos que usted nos facilita. Cuando nos contacta por correo electrónico, WhatsApp o el formulario de consulta, recibimos los datos que nos envía: nombre, dirección de correo electrónico, número de teléfono y el contenido de su mensaje. El formulario de consulta abre su propio cliente de correo; nada de lo que escribe se almacena en este sitio web.",
         "Datos recopilados automáticamente. Utilizamos Google Analytics 4 con anonimización de IP para entender cómo se usa el sitio: páginas vistas, ubicación aproximada, tipo de dispositivo y qué botones se pulsan (por ejemplo, un enlace de bróker o un plan). Estos datos están agregados y no le identifican por su nombre. Puede bloquearlos mediante una configuración del navegador o un bloqueador de anuncios.",
-        "Cookies y analítica de visitantes. Google Analytics puede instalar cookies para distinguir sesiones. Apollo.io registra las visitas a las páginas y, cuando la visita procede de una red corporativa, puede identificar la empresa detrás de la dirección IP; además enriquece las direcciones de correo profesionales introducidas en nuestros formularios con datos de empresa disponibles públicamente. Ambos pueden instalar cookies. Los sitios de terceros que abra desde nuestros enlaces (brókeres, Telegram, redes sociales) aplican sus propias políticas. Las cotizaciones en directo de este sitio son widgets de TradingView incrustados, que se cargan desde los servidores de TradingView y pueden instalar sus propias cookies según la política de privacidad de TradingView. Puede bloquear todo esto con una extensión del navegador o desactivando los scripts de terceros; el sitio funciona sin ellos.",
+        "Cookies y analítica de visitantes. Google Analytics puede instalar cookies para distinguir sesiones. Apollo.io registra las visitas a las páginas y, cuando la visita procede de una red corporativa, puede identificar la empresa detrás de la dirección IP; además enriquece las direcciones de correo profesionales introducidas en nuestros formularios con datos de empresa disponibles públicamente. Ambos pueden instalar cookies. Los sitios de terceros que abra desde nuestros enlaces (brókeres, WhatsApp, redes sociales) aplican sus propias políticas. Las cotizaciones en directo de este sitio son widgets de TradingView incrustados, que se cargan desde los servidores de TradingView y pueden instalar sus propias cookies según la política de privacidad de TradingView. Puede bloquear todo esto con una extensión del navegador o desactivando los scripts de terceros; el sitio funciona sin ellos.",
         "Por qué tratamos los datos. Para responder a su consulta, para prestar los servicios que ha solicitado (cuentas gestionadas, señales, formación), para cumplir obligaciones legales y regulatorias, y para mejorar el sitio web. La base legal es su consentimiento, la ejecución de un acuerdo con usted o nuestro interés legítimo en gestionar el negocio.",
         "Cesión de datos. No vendemos datos personales. Solo los compartimos con los proveedores de servicios necesarios para operar el sitio web y las comunicaciones (alojamiento, correo electrónico, analítica), con los brókeres asociados cuando usted nos pide que le presentemos, y con las autoridades cuando la ley lo exija.",
         "Conservación y seguridad. Los datos de las consultas se conservan durante el tiempo necesario para atender la solicitud y hasta cinco años cuando se establece una relación comercial, de acuerdo con las obligaciones regulatorias de conservación de registros. Los datos se almacenan en sistemas con control de acceso.",
@@ -1361,7 +1361,7 @@ export const es: ContentOverride = {
     },
     {
       name: "Registro de señales — ideas cerradas",
-      source: "Telegram @NUUKQuant",
+      source: "Grupo de WhatsApp",
       updated: "Mensual",
       stats: [
         {
@@ -1374,7 +1374,7 @@ export const es: ContentOverride = {
         },
         {
           "label": "Canal",
-          "value": "Telegram"
+          "value": "WhatsApp"
         },
         {
           "label": "Registro",

@@ -81,7 +81,7 @@ export const en = {
     phone: "+971 58 688 4464",
     phoneHref: "tel:+971586884464",
     whatsapp: "https://wa.me/971586884464",
-    telegram: "https://t.me/NUUKQuant",
+    telegram: "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6",
     whatsappChannel: "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6",
     calendly: "mailto:info@nuukquant.com?subject=Call%20request",
     office: "Dubai International Financial Centre (DIFC), Dubai, UAE",
@@ -126,7 +126,7 @@ export const en = {
     viewAll: "View all",
     readMore: "Read more",
     fill: "",
-    telegram: "Telegram",
+    telegram: "WhatsApp",
     whatsapp: "WhatsApp",
     whatsappChannel: "WhatsApp group",
     cookie: {
@@ -281,7 +281,7 @@ export const en = {
     signals: {
       kicker: "Signals & reports",
       title: "Trade ideas with the reasoning attached",
-      lead: "Instrument, direction, entry, stop, target and why. Delivered on Telegram and by email.",
+      lead: "Instrument, direction, entry, stop, target and why. Delivered on WhatsApp and by email.",
       sample: {
         "instrument": "XAU/USD",
         "direction": "Long",
@@ -345,7 +345,7 @@ export const en = {
       },
       {
         "title": "Research and signals",
-        "body": "Daily desk notes, a weekly report and trade ideas with the full reasoning, delivered through the investor portal and Telegram."
+        "body": "Daily desk notes, a weekly report and trade ideas with the full reasoning, delivered through the investor portal and WhatsApp."
       },
       {
         "title": "Investor education",
@@ -417,7 +417,7 @@ export const en = {
     ],
     "speakingTitle": "Where NUUK publishes",
     "speaking": [
-      "Telegram · @NUUKQuant: daily market notes, trade ideas and the monthly system report",
+      "WhatsApp group: daily market notes, trade ideas and the monthly system report",
       "LinkedIn · NUUK: company updates and long-form research",
       "Investor portal: research, signals, daily P&L and education for subscribers"
     ]
@@ -927,7 +927,7 @@ export const en = {
 
   signals: {
     metaTitle: "Signals & Reports",
-    metaDescription: "Daily market notes, weekly reports and trade ideas with full reasoning, delivered on Telegram and by email.",
+    metaDescription: "Daily market notes, weekly reports and trade ideas with full reasoning, delivered on WhatsApp and by email.",
     kicker: "Signals & reports",
     title: "Ideas with the reasoning attached",
     lead: "No blind alerts. Every idea comes with instrument, direction, entry, stop, target, risk-reward and a paragraph explaining why. You learn while you trade.",
@@ -942,11 +942,11 @@ export const en = {
     plansTitle: "Plans",
     plans: [
       { slug: "reports", name: "Reports", price: "$750", period: "per month", features: ["Daily macro note", "Weekly report", "Archive access"], cta: "Subscribe", highlight: false },
-      { slug: "signals", name: "Signals", price: "$1,000", period: "per month", features: ["Everything in Reports", "Trade ideas with reasoning", "Live updates on Telegram", "Monthly performance sheet"], cta: "Subscribe", highlight: true },
+      { slug: "signals", name: "Signals", price: "$1,000", period: "per month", features: ["Everything in Reports", "Trade ideas with reasoning", "Live updates on WhatsApp", "Monthly performance sheet"], cta: "Subscribe", highlight: true },
       { slug: "mentorship", name: "Mentorship", price: "$5,000", period: "per quarter", features: ["Everything in Signals", "Fortnightly 1:1 review", "Portfolio feedback", "Priority access to webinars"], cta: "Apply", highlight: false },
     ],
     performanceTitle: "Signal performance",
-    performanceNote: "Closed ideas are logged monthly with entry, exit and result in the Telegram channel. Internal log to date: 87% of closed ideas reached target before stop. Independent verification of the log is in progress.",
+    performanceNote: "Closed ideas are logged monthly with entry, exit and result in the WhatsApp group. Internal log to date: 87% of closed ideas reached target before stop. Independent verification of the log is in progress.",
     disclaimer: "Signals are educational content and general market commentary. They are not personal investment advice and do not take your circumstances into account.",
   },
 
@@ -1180,7 +1180,7 @@ export const en = {
         "language": "English",
         "price": "Free",
         "seats": "100",
-        "href": "https://t.me/NUUKQuant"
+        "href": "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6"
       },
       {
         "date": "2026-10-10",
@@ -1208,12 +1208,12 @@ export const en = {
       {
         "date": "2026-06",
         "title": "Position sizing with ATR: the USD 300 rule",
-        "href": "https://t.me/NUUKQuant"
+        "href": "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6"
       },
       {
         "date": "2026-07",
         "title": "Why most intraday systems fail after costs",
-        "href": "https://t.me/NUUKQuant"
+        "href": "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6"
       }
     ],
   },
@@ -1237,7 +1237,7 @@ export const en = {
         "category": "Macro",
         "date": "2026-09-07",
         "tone": "stocks",
-        "href": "https://t.me/NUUKQuant"
+        "href": "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6"
       },
       {
         "title": "Gold at 4,400: the level that decides the next leg",
@@ -1245,7 +1245,7 @@ export const en = {
         "category": "Commodities",
         "date": "2026-09-06",
         "tone": "metals",
-        "href": "https://t.me/NUUKQuant"
+        "href": "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6"
       },
       {
         "title": "AUD strength in 2026: carry, copper and the RBA",
@@ -1253,7 +1253,7 @@ export const en = {
         "category": "FX",
         "date": "2026-09-04",
         "tone": "currencies",
-        "href": "https://t.me/NUUKQuant"
+        "href": "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6"
       },
       {
         "title": "Why our intraday ensemble stays in paper mode",
@@ -1261,7 +1261,7 @@ export const en = {
         "category": "AI",
         "date": "2026-09-02",
         "tone": "crypto",
-        "href": "https://t.me/NUUKQuant"
+        "href": "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6"
       }
     ],
   },
@@ -1768,9 +1768,9 @@ export const en = {
       telegramToken: "Telegram bot token",
       telegramChat: "Telegram chat ID",
       telegramHint: "Telegram: create a bot with @BotFather, paste its token, send the bot one message and enter your chat ID (from @userinfobot). Every new application is then pushed to your phone instantly.",
-      panelLink: "Panel deep link (e.g. private Telegram channel)",
+      panelLink: "Panel deep link (e.g. private WhatsApp group)",
       linkLabel: "Button label",
-      linkLabelPlaceholder: "Join the private Telegram channel",
+      linkLabelPlaceholder: "Join the private WhatsApp group",
       addEducation: "Add a session",
       url: "Link (video or file)",
       kind: "Type",
@@ -1856,14 +1856,14 @@ export const en = {
   },
   contact: {
     metaTitle: "Contact",
-    metaDescription: "Book a call, message on WhatsApp or Telegram, or send an enquiry.",
+    metaDescription: "Book a call, message on WhatsApp, or send an enquiry.",
     kicker: "Contact",
     title: "Let's talk",
     lead: "Choose the channel that suits you. Institutional and professional enquiries are answered within one business day.",
     channels: [
       { title: "Book a call", body: "30 minutes, video or phone. Reply within one business day.", cta: "Request a call", href: "mailto:info@nuukquant.com?subject=Call%20request" },
       { title: "WhatsApp", body: "Quick questions and document exchange.", cta: "Message", href: "https://wa.me/971586884464" },
-      { title: "Telegram", body: "Signals channel and community.", cta: "Join", href: "https://t.me/NUUKQuant" },
+      { title: "WhatsApp group", body: "Signals group and community.", cta: "Join", href: "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6" },
     ],
     formTitle: "Send an enquiry",
     form: {
@@ -1912,10 +1912,10 @@ export const en = {
       title: "Privacy policy",
       body: [
         "This policy explains what personal data NUUK Quant (\"NUUK\", \"we\") collects through nuukquant.com, why, and what rights you have. Last updated 6 October 2026.",
-        "Data you give us. When you contact us by email, WhatsApp, Telegram or the enquiry form, we receive the details you send: name, email address, phone number and the content of your message. The enquiry form opens your own email client; nothing you type is stored on this website.",
+        "Data you give us. When you contact us by email, WhatsApp or the enquiry form, we receive the details you send: name, email address, phone number and the content of your message. The enquiry form opens your own email client; nothing you type is stored on this website.",
         "Membership applications. The full name, phone, e-mail, planned funding amount, consent time, IP address and browser details you submit in the nuukquant.com/membership form, and for Premium the network and transaction hash (TxID) you report, are stored to process your application, verify your payment and open Premium. They are kept on the NUUK server and in a Google Sheets file only NUUK can access; application and payment e-mails are sent through Resend. Crypto transactions remain permanently on public blockchains and cannot be erased.",
         "Data collected automatically. We use Google Analytics 4 with IP anonymisation to understand how the site is used: pages viewed, approximate location, device type and which buttons are clicked (for example a broker link or a plan). This data is aggregated and does not identify you by name. You can block it with a browser setting or an ad blocker.",
-        "Cookies and visitor analytics. Google Analytics may set cookies to distinguish sessions. Apollo.io records page visits and, where the visit comes from a business network, may identify the company behind the IP address; Apollo also enriches business email addresses entered into our forms with publicly available company data. We use the Meta Pixel to measure our ads: it sends page views and clicks to our WhatsApp group to Meta Platforms (Facebook/Instagram), which processes them under its own privacy policy and may store them outside your country. All of these may set cookies. Third-party sites you open from our links (brokers, Telegram, social networks) apply their own policies. Live market quotes on this site are embedded TradingView widgets, which load from TradingView's servers and may set their own cookies under TradingView's privacy policy. You can block all of these with a browser extension or by disabling third-party scripts; the site works without them.",
+        "Cookies and visitor analytics. Google Analytics may set cookies to distinguish sessions. Apollo.io records page visits and, where the visit comes from a business network, may identify the company behind the IP address; Apollo also enriches business email addresses entered into our forms with publicly available company data. We use the Meta Pixel to measure our ads: it sends page views and clicks to our WhatsApp group to Meta Platforms (Facebook/Instagram), which processes them under its own privacy policy and may store them outside your country. All of these may set cookies. Third-party sites you open from our links (brokers, WhatsApp, social networks) apply their own policies. Live market quotes on this site are embedded TradingView widgets, which load from TradingView's servers and may set their own cookies under TradingView's privacy policy. You can block all of these with a browser extension or by disabling third-party scripts; the site works without them.",
         "Why we process data. To answer your enquiry, to provide services you have asked for (managed accounts, signals, education), to meet legal and regulatory obligations, and to improve the website. The legal basis is your consent, the performance of an agreement with you, or our legitimate interest in running the business.",
         "Sharing. We do not sell personal data. We share it only with service providers needed to run the website and communications (hosting, email, analytics), with partner brokers when you ask us to introduce you, and with authorities where the law requires it.",
         "Retention and security. Enquiry data is kept for as long as needed to handle the request and for up to five years where a business relationship follows, in line with regulatory record-keeping. Data is stored on access-controlled systems.",
@@ -2146,8 +2146,8 @@ export const en = {
     },
     {
       name: "Signal log — closed ideas",
-      source: "Telegram @NUUKQuant",
-      verifiedHref: "https://t.me/NUUKQuant",
+      source: "WhatsApp group",
+      verifiedHref: "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6",
       status: "pending",
       since: "2025",
       updated: "Monthly",
@@ -2164,7 +2164,7 @@ export const en = {
         },
         {
           "label": "Channel",
-          "value": "Telegram",
+          "value": "WhatsApp",
           "tone": "neutral"
         },
         {

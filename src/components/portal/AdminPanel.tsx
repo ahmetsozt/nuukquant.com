@@ -214,7 +214,7 @@ export default function AdminPanel({ t, panels }: { t: T; panels: Panel[] }) {
           </label>
           <label className="block sm:col-span-2">
             <span className={label}>{a.url}</span>
-            <input name="link_url" type="url" className={field} dir="ltr" placeholder="https://t.me/+…" />
+            <input name="link_url" type="url" className={field} dir="ltr" placeholder="https://chat.whatsapp.com/…" />
           </label>
           <div className="flex items-end">
             <button type="submit" disabled={busy} className={`${btn} w-full`}>

@@ -58,7 +58,7 @@ export const fr: ContentOverride = {
     viewAll: "Tout voir",
     readMore: "Lire la suite",
     fill: "",
-    telegram: "Telegram",
+    telegram: "WhatsApp",
     whatsapp: "WhatsApp",
     legal: "Mentions légales",
     followUs: "Suivre",
@@ -178,7 +178,7 @@ export const fr: ContentOverride = {
     signals: {
       kicker: "Signaux et rapports",
       title: "Des idées de trade avec le raisonnement",
-      lead: "Instrument, sens, entrée, stop, objectif et pourquoi. Livrées sur Telegram et par e-mail.",
+      lead: "Instrument, sens, entrée, stop, objectif et pourquoi. Livrées sur WhatsApp et par e-mail.",
       sample: {
         "entry": "4,392",
         "stop": "4,368",
@@ -239,7 +239,7 @@ export const fr: ContentOverride = {
       },
       {
         "title": "Recherche et signaux",
-        "body": "Notes quotidiennes du desk, rapport hebdomadaire et idées de trade avec le raisonnement complet, diffusés via le portail investisseurs et Telegram."
+        "body": "Notes quotidiennes du desk, rapport hebdomadaire et idées de trade avec le raisonnement complet, diffusés via le portail investisseurs et WhatsApp."
       },
       {
         "title": "Formation des investisseurs",
@@ -311,7 +311,7 @@ export const fr: ContentOverride = {
     ],
     "speakingTitle": "Où NUUK publie",
     "speaking": [
-      "Telegram · @NUUKQuant : notes de marché quotidiennes, idées de trade et rapport mensuel des systèmes",
+      "Groupe WhatsApp : notes de marché quotidiennes, idées de trade et rapport mensuel des systèmes",
       "LinkedIn · NUUK : actualités de l'entreprise et recherche de fond",
       "Portail investisseurs : recherche, signaux, P&L quotidien et formation pour les abonnés"
     ]
@@ -873,7 +873,7 @@ export const fr: ContentOverride = {
 
   signals: {
     metaTitle: "Signaux et rapports",
-    metaDescription: "Notes de marché quotidiennes, rapports hebdomadaires et idées de trade avec le raisonnement complet, livrés sur Telegram et par e-mail.",
+    metaDescription: "Notes de marché quotidiennes, rapports hebdomadaires et idées de trade avec le raisonnement complet, livrés sur WhatsApp et par e-mail.",
     kicker: "Signaux et rapports",
     title: "Des idées avec le raisonnement",
     lead: "Pas d'alertes aveugles. Chaque idée est accompagnée de l'instrument, du sens, de l'entrée, du stop, de l'objectif, du ratio risque/rendement et d'un paragraphe expliquant pourquoi. Vous apprenez en tradant.",
@@ -888,11 +888,11 @@ export const fr: ContentOverride = {
     plansTitle: "Offres",
     plans: [
       { name: "Rapports", period: "par mois", features: ["Note macro quotidienne", "Rapport hebdomadaire", "Accès aux archives"], cta: "S'abonner" },
-      { name: "Signaux", period: "par mois", features: ["Tout ce qui est inclus dans Rapports", "Idées de trade avec raisonnement", "Mises à jour en direct sur Telegram", "Fiche de performance mensuelle"], cta: "S'abonner" },
+      { name: "Signaux", period: "par mois", features: ["Tout ce qui est inclus dans Rapports", "Idées de trade avec raisonnement", "Mises à jour en direct sur WhatsApp", "Fiche de performance mensuelle"], cta: "S'abonner" },
       { name: "Mentorat", period: "par trimestre", features: ["Tout ce qui est inclus dans Signaux", "Revue individuelle toutes les deux semaines", "Retour sur votre portefeuille", "Accès prioritaire aux webinaires"], cta: "Postuler" },
     ],
     performanceTitle: "Performance des signaux",
-    performanceNote: "Les idées clôturées sont consignées chaque mois avec entrée, sortie et résultat dans le canal Telegram. Journal interne à ce jour : 87 % des idées clôturées ont atteint l'objectif avant le stop. La vérification indépendante du journal est en cours.",
+    performanceNote: "Les idées clôturées sont consignées chaque mois avec entrée, sortie et résultat dans le groupe WhatsApp. Journal interne à ce jour : 87 % des idées clôturées ont atteint l'objectif avant le stop. La vérification indépendante du journal est en cours.",
     disclaimer: "Les signaux sont un contenu pédagogique et un commentaire général de marché. Ils ne constituent pas un conseil en investissement personnalisé et ne tiennent pas compte de votre situation.",
   },
 
@@ -1311,14 +1311,14 @@ export const fr: ContentOverride = {
   },
   contact: {
     metaTitle: "Contact",
-    metaDescription: "Réservez un appel, écrivez sur WhatsApp ou Telegram, ou envoyez une demande.",
+    metaDescription: "Réservez un appel, écrivez sur WhatsApp, ou envoyez une demande.",
     kicker: "Contact",
     title: "Parlons-en",
     lead: "Choisissez le canal qui vous convient. Les demandes institutionnelles et professionnelles reçoivent une réponse sous un jour ouvré.",
     channels: [
       { title: "Réserver un appel", body: "30 minutes, en visio ou par téléphone. Réponse sous un jour ouvré.", cta: "Demander un appel" },
       { title: "WhatsApp", body: "Questions rapides et échange de documents.", cta: "Écrire" },
-      { title: "Telegram", body: "Canal de signaux et communauté.", cta: "Rejoindre" },
+      { title: "WhatsApp", body: "Canal de signaux et communauté.", cta: "Rejoindre" },
     ],
     formTitle: "Envoyer une demande",
     form: {
@@ -1367,9 +1367,9 @@ export const fr: ContentOverride = {
       title: "Politique de confidentialité",
       body: [
         "Cette politique explique quelles données personnelles NUUK Quant (« NUUK », « nous ») collecte via nuukquant.com, pourquoi, et quels sont vos droits. Dernière mise à jour le 8 septembre 2026.",
-        "Données que vous nous communiquez. Lorsque vous nous contactez par e-mail, WhatsApp, Telegram ou via le formulaire de contact, nous recevons les informations que vous envoyez : nom, adresse e-mail, numéro de téléphone et contenu de votre message. Le formulaire de contact ouvre votre propre client de messagerie ; rien de ce que vous saisissez n'est stocké sur ce site.",
+        "Données que vous nous communiquez. Lorsque vous nous contactez par e-mail, WhatsApp ou via le formulaire de contact, nous recevons les informations que vous envoyez : nom, adresse e-mail, numéro de téléphone et contenu de votre message. Le formulaire de contact ouvre votre propre client de messagerie ; rien de ce que vous saisissez n'est stocké sur ce site.",
         "Données collectées automatiquement. Nous utilisons Google Analytics 4 avec anonymisation des adresses IP pour comprendre comment le site est utilisé : pages consultées, localisation approximative, type d'appareil et boutons cliqués (par exemple un lien vers un courtier ou une offre). Ces données sont agrégées et ne vous identifient pas nominativement. Vous pouvez les bloquer via un paramètre de votre navigateur ou un bloqueur de publicités.",
-        "Cookies et analyse des visiteurs. Google Analytics peut déposer des cookies pour distinguer les sessions. Apollo.io enregistre les visites de pages et, lorsque la visite provient d'un réseau d'entreprise, peut identifier la société derrière l'adresse IP ; il enrichit également les adresses e-mail professionnelles saisies dans nos formulaires avec des données d'entreprise publiquement disponibles. Les deux peuvent déposer des cookies. Les sites tiers que vous ouvrez depuis nos liens (courtiers, Telegram, réseaux sociaux) appliquent leurs propres politiques. Les cotations en direct de ce site sont des widgets TradingView intégrés, chargés depuis les serveurs de TradingView, qui peuvent déposer leurs propres cookies selon la politique de confidentialité de TradingView. Vous pouvez bloquer tout cela avec une extension de navigateur ou en désactivant les scripts tiers ; le site fonctionne sans eux.",
+        "Cookies et analyse des visiteurs. Google Analytics peut déposer des cookies pour distinguer les sessions. Apollo.io enregistre les visites de pages et, lorsque la visite provient d'un réseau d'entreprise, peut identifier la société derrière l'adresse IP ; il enrichit également les adresses e-mail professionnelles saisies dans nos formulaires avec des données d'entreprise publiquement disponibles. Les deux peuvent déposer des cookies. Les sites tiers que vous ouvrez depuis nos liens (courtiers, WhatsApp, réseaux sociaux) appliquent leurs propres politiques. Les cotations en direct de ce site sont des widgets TradingView intégrés, chargés depuis les serveurs de TradingView, qui peuvent déposer leurs propres cookies selon la politique de confidentialité de TradingView. Vous pouvez bloquer tout cela avec une extension de navigateur ou en désactivant les scripts tiers ; le site fonctionne sans eux.",
         "Pourquoi nous traitons les données. Pour répondre à votre demande, pour fournir les services que vous avez sollicités (comptes gérés, signaux, formation), pour respecter nos obligations légales et réglementaires, et pour améliorer le site. La base juridique est votre consentement, l'exécution d'un contrat conclu avec vous, ou notre intérêt légitime à exploiter notre activité.",
         "Partage. Nous ne vendons pas de données personnelles. Nous ne les partageons qu'avec les prestataires nécessaires au fonctionnement du site et des communications (hébergement, e-mail, analytics), avec les courtiers partenaires lorsque vous nous demandez de vous présenter, et avec les autorités lorsque la loi l'exige.",
         "Conservation et sécurité. Les données de contact sont conservées aussi longtemps que nécessaire pour traiter la demande et jusqu'à cinq ans lorsqu'une relation d'affaires s'ensuit, conformément aux obligations réglementaires de conservation. Les données sont stockées sur des systèmes à accès contrôlé.",
@@ -1544,7 +1544,7 @@ export const fr: ContentOverride = {
     },
     {
       name: "Journal des signaux — idées clôturées",
-      source: "Telegram @NUUKQuant",
+      source: "Groupe WhatsApp",
       updated: "Mensuel",
       stats: [
         {
@@ -1557,7 +1557,7 @@ export const fr: ContentOverride = {
         },
         {
           "label": "Canal",
-          "value": "Telegram"
+          "value": "WhatsApp"
         },
         {
           "label": "Journal",

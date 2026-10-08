@@ -55,7 +55,7 @@ export const tr: ContentOverride = {
     "viewAll": "Tümünü Görüntüle",
     "readMore": "Devamını okuyun",
     "fill": "",
-    "telegram": "Telegram",
+    "telegram": "WhatsApp",
     "whatsapp": "WhatsApp",
     "whatsappChannel": "WhatsApp grubu",
     "cookie": {
@@ -284,7 +284,7 @@ export const tr: ContentOverride = {
     "signals": {
       "kicker": "Araştırma ve sinyaller",
       "title": "Gerekçesi ile sunulan işlem fikirleri",
-      "lead": "Enstrüman, yön, giriş, zarar durdur, hedef ve gerekçe. Telegram ve e-posta ile iletilir.",
+      "lead": "Enstrüman, yön, giriş, zarar durdur, hedef ve gerekçe. WhatsApp ve e-posta ile iletilir.",
       "sample": {
         "entry": "4,392",
         "stop": "4,368",
@@ -349,7 +349,7 @@ export const tr: ContentOverride = {
       },
       {
         "title": "Araştırma ve sinyaller",
-        "body": "Günlük masa notları, haftalık rapor ve gerekçesi tam yazılmış işlem fikirleri; yatırımcı paneli ve Telegram üzerinden."
+        "body": "Günlük masa notları, haftalık rapor ve gerekçesi tam yazılmış işlem fikirleri; yatırımcı paneli ve WhatsApp üzerinden."
       },
       {
         "title": "Yatırımcı eğitimi",
@@ -421,7 +421,7 @@ export const tr: ContentOverride = {
     ],
     "speakingTitle": "Yayın kanalları",
     "speaking": [
-      "Telegram · @NUUKQuant: günlük piyasa notları, işlem fikirleri ve aylık sistem raporu",
+      "WhatsApp grubu: günlük piyasa notları, işlem fikirleri ve aylık sistem raporu",
       "LinkedIn · NUUK: kurumsal duyurular ve kapsamlı araştırmalar",
       "Yatırımcı paneli: aboneler için araştırma, sinyaller, günlük K/Z ve eğitim"
     ]
@@ -937,7 +937,7 @@ export const tr: ContentOverride = {
 
   signals: {
     "metaTitle": "Araştırma ve Sinyal Hizmetleri",
-    "metaDescription": "Günlük piyasa notları, haftalık raporlar ve gerekçeli işlem fikirleri; Telegram ve e-posta ile iletilir.",
+    "metaDescription": "Günlük piyasa notları, haftalık raporlar ve gerekçeli işlem fikirleri; WhatsApp ve e-posta ile iletilir.",
     "kicker": "Araştırma ve sinyaller",
     "title": "Gerekçesi ile sunulan işlem fikirleri",
     "lead": "Gerekçesiz uyarı gönderilmez. Her fikir enstrüman, yön, giriş, zarar durdur, hedef, risk/getiri oranı ve gerekçeyi açıklayan bir paragrafla iletilir.",
@@ -981,7 +981,7 @@ export const tr: ContentOverride = {
         "features": [
           "Raporlar planının tamamı",
           "Gerekçeli işlem fikirleri",
-          "Telegram üzerinden canlı güncellemeler",
+          "WhatsApp üzerinden canlı güncellemeler",
           "Aylık performans tablosu"
         ],
         "cta": "Abone Olun"
@@ -1000,7 +1000,7 @@ export const tr: ContentOverride = {
       }
     ],
     "performanceTitle": "Sinyal performansı",
-    "performanceNote": "Kapanan fikirler her ay giriş, çıkış ve sonuç bilgisiyle Telegram kanalında kayıt altına alınır. Bugüne kadarki kurum içi kayıt: kapanan fikirlerin %87'si zarar durdur seviyesinden önce hedefe ulaşmıştır. Kaydın bağımsız doğrulaması sürmektedir.",
+    "performanceNote": "Kapanan fikirler her ay giriş, çıkış ve sonuç bilgisiyle WhatsApp grubunda kayıt altına alınır. Bugüne kadarki kurum içi kayıt: kapanan fikirlerin %87'si zarar durdur seviyesinden önce hedefe ulaşmıştır. Kaydın bağımsız doğrulaması sürmektedir.",
     "disclaimer": "Sinyaller eğitim içeriği ve genel piyasa yorumu niteliğindedir. Kişisel yatırım tavsiyesi değildir ve bireysel koşullarınızı dikkate almaz."
   },
 
@@ -1800,9 +1800,9 @@ export const tr: ContentOverride = {
       "telegramToken": "Telegram bot token",
       "telegramChat": "Telegram sohbet ID",
       "telegramHint": "Telegram: @BotFather ile bir bot oluşturun, token'ı yapıştırın, bota bir mesaj gönderin ve sohbet ID'nizi (@userinfobot) girin. Her yeni başvuru anında telefonunuza düşer.",
-      "panelLink": "Panel bağlantısı (örn. özel Telegram kanalı)",
+      "panelLink": "Panel bağlantısı (örn. özel WhatsApp grubu)",
       "linkLabel": "Buton etiketi",
-      "linkLabelPlaceholder": "Özel Telegram kanalına katıl",
+      "linkLabelPlaceholder": "Özel WhatsApp grubuna katıl",
       "addEducation": "Oturum ekle",
       "url": "Bağlantı (video veya dosya)",
       "kind": "Tür",
@@ -1888,7 +1888,7 @@ export const tr: ContentOverride = {
   },
   contact: {
     "metaTitle": "İletişim",
-    "metaDescription": "Görüşme talep edin, WhatsApp veya Telegram üzerinden ulaşın ya da bilgi talebi gönderin.",
+    "metaDescription": "Görüşme talep edin, WhatsApp üzerinden ulaşın ya da bilgi talebi gönderin.",
     "kicker": "İletişim",
     "title": "Bize ulaşın",
     "lead": "Size uygun kanalı seçin. Kurumsal ve profesyonel talepler bir iş günü içinde yanıtlanır.",
@@ -1904,8 +1904,8 @@ export const tr: ContentOverride = {
         "cta": "Mesaj Gönderin"
       },
       {
-        "title": "Telegram",
-        "body": "Sinyal kanalı ve topluluk.",
+        "title": "WhatsApp grubu",
+        "body": "Sinyal grubu ve topluluk.",
         "cta": "Katılın"
       }
     ],
@@ -1963,10 +1963,10 @@ export const tr: ContentOverride = {
       title: "Gizlilik politikası",
       body: [
         "Bu politika, NUUK Quant'ın (\"NUUK\", \"biz\") nuukquant.com üzerinden hangi kişisel verileri, neden topladığını ve hangi haklara sahip olduğunuzu açıklar. Son güncelleme: 6 Ekim 2026.",
-        "Bize verdiğiniz veriler. E-posta, WhatsApp, Telegram veya talep formu üzerinden bizimle iletişime geçtiğinizde gönderdiğiniz bilgileri alırız: ad, e-posta adresi, telefon numarası ve mesajınızın içeriği. Talep formu kendi e-posta istemcinizi açar; yazdığınız hiçbir şey bu web sitesinde saklanmaz.",
+        "Bize verdiğiniz veriler. E-posta, WhatsApp veya talep formu üzerinden bizimle iletişime geçtiğinizde gönderdiğiniz bilgileri alırız: ad, e-posta adresi, telefon numarası ve mesajınızın içeriği. Talep formu kendi e-posta istemcinizi açar; yazdığınız hiçbir şey bu web sitesinde saklanmaz.",
         "Üyelik başvuruları. nuukquant.com/uyelik formunda verdiğiniz ad soyad, telefon, e-posta, fonlamayı düşündüğünüz tutar, onay zamanı ile IP adresi ve tarayıcı bilgisi; Premium için ayrıca bildirdiğiniz ağ ve işlem hash'i (TxID) saklanır. Bu bilgiler başvurunuzu yürütmek, ödemenizi doğrulamak ve Premium'u açmak için kullanılır. NUUK sunucusunda ve yalnızca NUUK'un erişebildiği bir Google E-Tablolar dosyasında tutulur; başvuru ve ödeme e-postaları Resend üzerinden gönderilir. Kripto işlemleri herkese açık blok zincirlerinde kalıcıdır ve silinemez.",
         "Otomatik olarak toplanan veriler. Sitenin nasıl kullanıldığını anlamak için IP anonimleştirmeli Google Analytics 4 kullanırız: görüntülenen sayfalar, yaklaşık konum, cihaz türü ve hangi düğmelere tıklandığı (örneğin bir aracı kurum bağlantısı veya bir plan). Bu veriler toplu hâldedir ve sizi isim olarak tanımlamaz. Tarayıcı ayarı veya reklam engelleyici ile engelleyebilirsiniz.",
-        "Çerezler ve ziyaretçi analitiği. Google Analytics oturumları ayırt etmek için çerez ayarlayabilir. Apollo.io sayfa ziyaretlerini kaydeder ve ziyaret bir kurumsal ağdan geliyorsa IP adresinin arkasındaki şirketi tanımlayabilir; ayrıca formlarımıza girilen kurumsal e-posta adreslerini kamuya açık şirket verileriyle zenginleştirir. Reklamlarımızın etkisini ölçmek için Meta Pixel kullanırız: sayfa görüntülemelerini ve WhatsApp grubumuza giden tıklamaları Meta Platforms'a (Facebook/Instagram) iletir; Meta bu verileri kendi gizlilik politikası kapsamında işler ve yurt dışında saklayabilir. Hepsi çerez bırakabilir. Bağlantılarımızdan açtığınız üçüncü taraf siteler (aracı kurumlar, Telegram, sosyal ağlar) kendi politikalarını uygular. Bu sitedeki canlı piyasa kotasyonları gömülü TradingView bileşenleridir; TradingView sunucularından yüklenir ve TradingView'ın gizlilik politikası kapsamında kendi çerezlerini bırakabilir. Bunların tümünü bir tarayıcı eklentisiyle veya üçüncü taraf betikleri kapatarak engelleyebilirsiniz; site bunlar olmadan da çalışır.",
+        "Çerezler ve ziyaretçi analitiği. Google Analytics oturumları ayırt etmek için çerez ayarlayabilir. Apollo.io sayfa ziyaretlerini kaydeder ve ziyaret bir kurumsal ağdan geliyorsa IP adresinin arkasındaki şirketi tanımlayabilir; ayrıca formlarımıza girilen kurumsal e-posta adreslerini kamuya açık şirket verileriyle zenginleştirir. Reklamlarımızın etkisini ölçmek için Meta Pixel kullanırız: sayfa görüntülemelerini ve WhatsApp grubumuza giden tıklamaları Meta Platforms'a (Facebook/Instagram) iletir; Meta bu verileri kendi gizlilik politikası kapsamında işler ve yurt dışında saklayabilir. Hepsi çerez bırakabilir. Bağlantılarımızdan açtığınız üçüncü taraf siteler (aracı kurumlar, WhatsApp, sosyal ağlar) kendi politikalarını uygular. Bu sitedeki canlı piyasa kotasyonları gömülü TradingView bileşenleridir; TradingView sunucularından yüklenir ve TradingView'ın gizlilik politikası kapsamında kendi çerezlerini bırakabilir. Bunların tümünü bir tarayıcı eklentisiyle veya üçüncü taraf betikleri kapatarak engelleyebilirsiniz; site bunlar olmadan da çalışır.",
         "Verileri neden işliyoruz? Talebinizi yanıtlamak, istediğiniz hizmetleri sunmak (yönetilen hesaplar, sinyaller, eğitim), yasal ve düzenleyici yükümlülükleri yerine getirmek ve web sitesini geliştirmek için. Hukuki dayanak, rızanız, sizinle yapılan bir sözleşmenin ifası veya işi yürütmedeki meşru menfaatimizdir.",
         "Paylaşım. Kişisel verileri satmayız. Yalnızca web sitesini ve iletişimi yürütmek için gereken hizmet sağlayıcılarla (barındırma, e-posta, analitik), sizi tanıtmamızı istediğinizde ortak aracı kurumlarla ve yasaların gerektirdiği durumlarda yetkili makamlarla paylaşırız.",
         "Saklama ve güvenlik. Talep verileri, talebin işlenmesi için gerektiği sürece ve bir iş ilişkisi kurulması hâlinde düzenleyici kayıt tutma yükümlülüklerine uygun olarak beş yıla kadar saklanır. Veriler erişim kontrollü sistemlerde tutulur.",
@@ -2161,7 +2161,7 @@ export const tr: ContentOverride = {
     },
     {
       name: "Sinyal kaydı — kapanan fikirler",
-      source: "Telegram @NUUKQuant",
+      source: "WhatsApp grubu",
       updated: "Aylık",
       stats: [
         {
@@ -2174,7 +2174,7 @@ export const tr: ContentOverride = {
         },
         {
           "label": "Kanal",
-          "value": "Telegram"
+          "value": "WhatsApp"
         },
         {
           "label": "Kayıt",

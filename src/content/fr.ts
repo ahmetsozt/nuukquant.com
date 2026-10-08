@@ -58,7 +58,6 @@ export const fr: ContentOverride = {
     viewAll: "Tout voir",
     readMore: "Lire la suite",
     fill: "",
-    telegram: "WhatsApp",
     whatsapp: "WhatsApp",
     legal: "Mentions légales",
     followUs: "Suivre",

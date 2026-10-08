@@ -2042,41 +2042,41 @@ export const en = {
 
   performance: [
     {
-      "name": "GANN NUUK Trader AI — Tickmill, own capital",
-      "source": "MT4 detailed statement, 11 Sep 2026",
+      "name": "GANN NUUK Trader AI — XAUUSD & XAGUSD desk",
+      "source": "Model portfolio · hypothetical performance · MT4 detailed statement, 8 Oct 2026",
       "verifiedHref": "",
-      "status": "live",
+      "status": "test",
       "since": "2026",
-      "updated": "2026-09-11",
+      "updated": "2026-10-08",
       "stats": [
         {
-          "label": "Deposited",
-          "value": "USD 47,000",
+          "label": "Period",
+          "value": "2 Sep – 8 Oct 2026 · 22 trading days",
           "tone": "neutral"
         },
         {
-          "label": "Closed net profit",
-          "value": "+USD 17,910 (+38.1%)",
+          "label": "Period return",
+          "value": "+103.8%",
           "tone": "up"
         },
         {
-          "label": "Equity (no open positions)",
-          "value": "USD 64,910",
-          "tone": "neutral"
-        },
-        {
           "label": "Profit factor",
-          "value": "3.38",
+          "value": "2.83",
           "tone": "neutral"
         },
         {
           "label": "Win rate",
-          "value": "73.8% (189 of 256)",
+          "value": "76.0% (1,395 of 1,835)",
           "tone": "neutral"
         },
         {
           "label": "Max drawdown",
-          "value": "5.16%",
+          "value": "13.30%",
+          "tone": "neutral"
+        },
+        {
+          "label": "Green / red days",
+          "value": "22 / 0",
           "tone": "neutral"
         }
       ],

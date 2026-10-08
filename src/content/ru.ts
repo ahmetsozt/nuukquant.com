@@ -1507,38 +1507,38 @@ export const ru: ContentOverride = {
 
   performance: [
     {
-      "name": "GANN NUUK Trader AI — Tickmill, собственный капитал",
-      "source": "Детальная выписка MT4, 11 сен 2026",
-      "updated": "2026-09-11",
+      "name": "GANN NUUK Trader AI — деск XAUUSD и XAGUSD",
+      "source": "Модельный портфель · гипотетическая доходность · детальная выписка MT4, 8 окт 2026",
+      "updated": "2026-10-08",
       "stats": [
         {
-          "label": "Внесено",
-          "value": "47 000 USD",
+          "label": "Период",
+          "value": "2 сен – 8 окт 2026 · 22 торговых дня",
           "tone": "neutral"
         },
         {
-          "label": "Закрытая чистая прибыль",
-          "value": "+17 910 USD (+38,1%)",
+          "label": "Доходность за период",
+          "value": "+103,8%",
           "tone": "up"
         },
         {
-          "label": "Средства (открытых позиций нет)",
-          "value": "64 910 USD",
-          "tone": "neutral"
-        },
-        {
           "label": "Профит-фактор",
-          "value": "3,38",
+          "value": "2,83",
           "tone": "neutral"
         },
         {
           "label": "Доля прибыльных",
-          "value": "73,8% (189 из 256)",
+          "value": "76,0% (1395 из 1835)",
           "tone": "neutral"
         },
         {
           "label": "Макс. просадка",
-          "value": "5,16%",
+          "value": "13,30%",
+          "tone": "neutral"
+        },
+        {
+          "label": "Зелёные / красные дни",
+          "value": "22 / 0",
           "tone": "neutral"
         }
       ]

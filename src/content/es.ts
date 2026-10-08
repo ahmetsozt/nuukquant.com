@@ -1277,38 +1277,38 @@ export const es: ContentOverride = {
 
   performance: [
     {
-      "name": "GANN NUUK Trader AI — Tickmill, capital propio",
-      "source": "Extracto detallado MT4, 11 sep 2026",
-      "updated": "2026-09-11",
+      "name": "GANN NUUK Trader AI — mesa XAUUSD y XAGUSD",
+      "source": "Cartera modelo · rentabilidad hipotética · informe detallado MT4, 8 oct 2026",
+      "updated": "2026-10-08",
       "stats": [
         {
-          "label": "Depositado",
-          "value": "47.000 USD",
+          "label": "Periodo",
+          "value": "2 sep – 8 oct 2026 · 22 días de negociación",
           "tone": "neutral"
         },
         {
-          "label": "Beneficio neto realizado",
-          "value": "+17.910 USD (+38,1%)",
+          "label": "Rentabilidad del periodo",
+          "value": "+103,8 %",
           "tone": "up"
         },
         {
-          "label": "Patrimonio (sin posiciones abiertas)",
-          "value": "64.910 USD",
-          "tone": "neutral"
-        },
-        {
           "label": "Factor de beneficio",
-          "value": "3,38",
+          "value": "2,83",
           "tone": "neutral"
         },
         {
           "label": "Tasa de acierto",
-          "value": "73,8% (189 de 256)",
+          "value": "76,0 % (1.395 de 1.835)",
           "tone": "neutral"
         },
         {
-          "label": "Drawdown máx.",
-          "value": "5,16%",
+          "label": "Máxima caída",
+          "value": "13,30 %",
+          "tone": "neutral"
+        },
+        {
+          "label": "Días verdes / rojos",
+          "value": "22 / 0",
           "tone": "neutral"
         }
       ]

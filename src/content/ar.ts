@@ -1279,38 +1279,38 @@ export const ar: ContentOverride = {
 
   performance: [
     {
-      "name": "GANN NUUK Trader AI — Tickmill، رأسمالنا الخاص",
-      "source": "كشف MT4 التفصيلي، 11 سبتمبر 2026",
-      "updated": "2026-09-11",
+      "name": "GANN NUUK Trader AI — مكتب XAUUSD و XAGUSD",
+      "source": "محفظة نموذجية · أداء افتراضي · كشف MT4 التفصيلي، 8 أكتوبر 2026",
+      "updated": "2026-10-08",
       "stats": [
         {
-          "label": "المودَع",
-          "value": "47,000 دولار",
+          "label": "الفترة",
+          "value": "2 سبتمبر – 8 أكتوبر 2026 · 22 يوم تداول",
           "tone": "neutral"
         },
         {
-          "label": "صافي الربح المحقق",
-          "value": "+17,910 دولار (+38.1%)",
+          "label": "عائد الفترة",
+          "value": "+103.8%",
           "tone": "up"
         },
         {
-          "label": "حقوق الملكية (لا مراكز مفتوحة)",
-          "value": "64,910 دولار",
-          "tone": "neutral"
-        },
-        {
           "label": "عامل الربح",
-          "value": "3.38",
+          "value": "2.83",
           "tone": "neutral"
         },
         {
           "label": "نسبة الربح",
-          "value": "73.8% (189 من 256)",
+          "value": "76.0% (1,395 من 1,835)",
           "tone": "neutral"
         },
         {
           "label": "أقصى تراجع",
-          "value": "5.16%",
+          "value": "13.30%",
+          "tone": "neutral"
+        },
+        {
+          "label": "أيام رابحة / خاسرة",
+          "value": "22 / 0",
           "tone": "neutral"
         }
       ]

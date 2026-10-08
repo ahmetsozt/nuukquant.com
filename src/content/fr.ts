@@ -1460,38 +1460,38 @@ export const fr: ContentOverride = {
 
   performance: [
     {
-      "name": "GANN NUUK Trader AI — Tickmill, capital propre",
-      "source": "Relevé détaillé MT4, 11 sept. 2026",
-      "updated": "2026-09-11",
+      "name": "GANN NUUK Trader AI — desk XAUUSD & XAGUSD",
+      "source": "Portefeuille modèle · performance hypothétique · relevé détaillé MT4, 8 oct. 2026",
+      "updated": "2026-10-08",
       "stats": [
         {
-          "label": "Déposé",
-          "value": "47 000 USD",
+          "label": "Période",
+          "value": "2 sept. – 8 oct. 2026 · 22 jours de bourse",
           "tone": "neutral"
         },
         {
-          "label": "Bénéfice net réalisé",
-          "value": "+17 910 USD (+38,1 %)",
+          "label": "Rendement de la période",
+          "value": "+103,8 %",
           "tone": "up"
         },
         {
-          "label": "Capitaux propres (aucune position ouverte)",
-          "value": "64 910 USD",
-          "tone": "neutral"
-        },
-        {
-          "label": "Profit factor",
-          "value": "3,38",
+          "label": "Facteur de profit",
+          "value": "2,83",
           "tone": "neutral"
         },
         {
           "label": "Taux de réussite",
-          "value": "73,8 % (189 sur 256)",
+          "value": "76,0 % (1 395 sur 1 835)",
           "tone": "neutral"
         },
         {
-          "label": "Drawdown max",
-          "value": "5,16 %",
+          "label": "Perte maximale",
+          "value": "13,30 %",
+          "tone": "neutral"
+        },
+        {
+          "label": "Jours verts / rouges",
+          "value": "22 / 0",
           "tone": "neutral"
         }
       ]

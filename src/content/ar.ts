@@ -59,7 +59,6 @@ export const ar: ContentOverride = {
     viewAll: "عرض الكل",
     readMore: "اقرأ المزيد",
     fill: "",
-    telegram: "واتساب",
     whatsapp: "WhatsApp",
     legal: "الشؤون القانونية",
     followUs: "تابعنا",

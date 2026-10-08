@@ -81,7 +81,6 @@ export const en = {
     phone: "+971 58 688 4464",
     phoneHref: "tel:+971586884464",
     whatsapp: "https://wa.me/971586884464",
-    telegram: "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6",
     whatsappChannel: "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6",
     calendly: "mailto:info@nuukquant.com?subject=Call%20request",
     office: "Dubai International Financial Centre (DIFC), Dubai, UAE",
@@ -126,7 +125,6 @@ export const en = {
     viewAll: "View all",
     readMore: "Read more",
     fill: "",
-    telegram: "WhatsApp",
     whatsapp: "WhatsApp",
     whatsappChannel: "WhatsApp group",
     cookie: {

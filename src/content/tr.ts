@@ -55,7 +55,6 @@ export const tr: ContentOverride = {
     "viewAll": "Tümünü Görüntüle",
     "readMore": "Devamını okuyun",
     "fill": "",
-    "telegram": "WhatsApp",
     "whatsapp": "WhatsApp",
     "whatsappChannel": "WhatsApp grubu",
     "cookie": {

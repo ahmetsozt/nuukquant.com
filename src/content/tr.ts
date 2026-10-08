@@ -39,6 +39,7 @@ export const tr: ContentOverride = {
     "riskDisclosure": "Risk Bildirimi",
     "verified": "Doğrulanmış",
     "live": "Canlı",
+    "model": "Model portföy",
     "test": "Test aşamasında",
     "paused": "Askıda",
     "soon": "Yakında",
@@ -2077,7 +2078,7 @@ export const tr: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — XAUUSD & XAGUSD masası",
-      "source": "Model portföy · varsayımsal performans · MT4 detaylı rapor, 8 Eki 2026",
+      "source": "Varsayımsal performans · MT4 detaylı rapor, 8 Eki 2026",
       "updated": "2026-10-08",
       "stats": [
         {

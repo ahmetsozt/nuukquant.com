@@ -41,6 +41,7 @@ export const ru: ContentOverride = {
     riskDisclosure: "Раскрытие рисков",
     verified: "Проверено",
     live: "В работе",
+    model: "Модельный портфель",
     test: "Тестирование",
     paused: "Приостановлено",
     soon: "Скоро",
@@ -1507,7 +1508,7 @@ export const ru: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — деск XAUUSD и XAGUSD",
-      "source": "Модельный портфель · гипотетическая доходность · детальная выписка MT4, 8 окт 2026",
+      "source": "Гипотетическая доходность · детальная выписка MT4, 8 окт 2026",
       "updated": "2026-10-08",
       "stats": [
         {

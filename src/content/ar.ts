@@ -43,6 +43,7 @@ export const ar: ContentOverride = {
     riskDisclosure: "الإفصاح عن المخاطر",
     verified: "موثّق",
     live: "مباشر",
+    model: "محفظة نموذجية",
     test: "قيد الاختبار",
     paused: "متوقف مؤقتاً",
     soon: "قريباً",
@@ -1279,7 +1280,7 @@ export const ar: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — مكتب XAUUSD و XAGUSD",
-      "source": "محفظة نموذجية · أداء افتراضي · كشف MT4 التفصيلي، 8 أكتوبر 2026",
+      "source": "أداء افتراضي · كشف MT4 التفصيلي، 8 أكتوبر 2026",
       "updated": "2026-10-08",
       "stats": [
         {

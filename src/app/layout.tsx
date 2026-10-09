@@ -3,6 +3,7 @@ import { IBM_Plex_Sans_Arabic, Manrope } from "next/font/google";
 import Reveal from "@/components/ui/Reveal";
 import AuthRedirect from "@/components/layout/AuthRedirect";
 import Consent from "@/components/Consent";
+import ViewCounter from "@/components/ViewCounter";
 import { getContent, locales, trRootAliases } from "@/i18n";
 import { en } from "@/content/en";
 import "./globals.css";
@@ -102,6 +103,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: LANG_BOOT }} />
         {children}
         <Reveal />
+        <ViewCounter />
         <Consent labels={cookieLabels} />
         <AuthRedirect />
       </body>

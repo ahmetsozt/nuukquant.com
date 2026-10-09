@@ -499,7 +499,7 @@ export const tr: ContentOverride = {
         "body": "Brüt kârın brüt zarara oranı. 1,0'ın üzeri, stratejinin dönem boyunca net kazanç sağladığını gösterir."
       }
     ],
-    "pending": "Canlı hesap rakamları NUUK'un ay sonu kayıtlarından yayımlanır. %87 sinyal rakamı dahili kayıt defterinden gelir."
+    "pending": "Rakamlar hesabın MT4 ekstresindeki kapanmış işlem geçmişinden üretilir. Masa model portföy olarak çalışır; sonuçlar varsayımsaldır."
   },
 
   managed: {

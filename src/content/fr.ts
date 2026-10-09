@@ -354,7 +354,7 @@ export const fr: ContentOverride = {
       { title: "Drawdown maximal", body: "Plus forte baisse de l'equity du compte entre un sommet et un creux, positions ouvertes comprises." },
       { title: "Profit factor", body: "Gains bruts divisés par pertes brutes. Au-dessus de 1.0, la stratégie a gagné de l'argent sur la période." },
     ],
-    pending: "Les chiffres des comptes réels sont publiés à partir des relevés de fin de mois de NUUK. Le taux de 87 % des signaux provient du journal interne.",
+    pending: "Les chiffres proviennent de l'historique des positions clôturées du relevé MT4. Le desk fonctionne comme un portefeuille modèle ; les résultats sont hypothétiques.",
   },
 
   managed: {

@@ -459,7 +459,7 @@ export const en = {
       { title: "Max drawdown", body: "Largest peak-to-trough decline in account equity, including open positions." },
       { title: "Profit factor", body: "Gross profit divided by gross loss. Above 1.0 means the strategy made money over the period." },
     ],
-    pending: "Live account figures are published from NUUK's own month-end records. The 87% signal figure comes from the internal log.",
+    pending: "Figures are generated from the account's closed-trade history in the MT4 statement. The desk runs as a model portfolio; results are hypothetical.",
   },
 
   managed: {

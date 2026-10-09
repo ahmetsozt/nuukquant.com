@@ -352,7 +352,7 @@ export const es: ContentOverride = {
       { title: "Drawdown máximo", body: "Mayor caída desde un máximo hasta un mínimo en el capital de la cuenta, incluidas las posiciones abiertas." },
       { title: "Factor de beneficio", body: "Beneficio bruto dividido entre pérdida bruta. Por encima de 1,0 significa que la estrategia ganó dinero en el periodo." },
     ],
-    pending: "Las cifras de cuentas reales se publican a partir de los registros de fin de mes de NUUK. El 87% de las señales procede del registro interno.",
+    pending: "Las cifras se generan a partir del historial de operaciones cerradas del extracto MT4. La mesa funciona como cartera modelo; los resultados son hipotéticos.",
   },
 
   managed: {

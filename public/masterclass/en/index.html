@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NUUK Masterclass · Finance, Algorithmic Trading, Gann and AI</title>
-  <meta name="description" content="Learn the method NUUK uses every day, in 90 days: finance fundamentals, algorithmic trading, Gann analysis and building your own financial system with AI." />
+  <meta name="description" content="Learn the method NUUK uses every day, step by step: finance fundamentals, algorithmic trading, Gann analysis and building your own financial system with AI." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="NUUK Quant" />
   <meta property="og:title" content="NUUK Masterclass: Read the market, build your own system" />
-  <meta property="og:description" content="Finance, algorithmic trading, Gann and coding with AI. Build your own tested trading system in 90 days. One-time $499." />
+  <meta property="og:description" content="Finance, algorithmic trading, Gann and coding with AI. Build your own tested trading system. One-time $499." />
   <meta property="og:url" content="https://www.nuukquant.com/masterclass/en/" />
   <meta property="og:image" content="https://www.nuukquant.com/og.png" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -31,11 +31,11 @@
     "@context": "https://schema.org",
     "@type": "Course",
     "name": "NUUK Masterclass",
-    "description": "A 90-day online programme on finance fundamentals, risk management, algorithmic trading, Gann analysis and coding with AI.",
+    "description": "An online programme on finance fundamentals, risk management, algorithmic trading, Gann analysis and coding with AI.",
     "inLanguage": "en",
     "url": "https://www.nuukquant.com/masterclass/en/",
     "provider": { "@type": "Organization", "name": "NUUK Quant", "url": "https://www.nuukquant.com" },
-    "hasCourseInstance": { "@type": "CourseInstance", "courseMode": "online", "courseWorkload": "P13W" },
+    "hasCourseInstance": { "@type": "CourseInstance", "courseMode": "online" },
     "offers": { "@type": "Offer", "price": "499", "priceCurrency": "USD" }
   }
   <script type="application/ld+json">
@@ -85,8 +85,7 @@
         <p class="eyebrow">For traders tired of guessing</p>
         <h1 id="hero-title" class="hero-title">
           Read the market.<br />
-          Build <em class="accent">your own system.</em><br />
-          <span class="hero-days">In 90 days.</span>
+          Build <em class="accent">your own system.</em>
         </h1>
         <p class="hero-lead">
           Learn the method we use at NUUK every day, from start to finish: finance fundamentals,
@@ -306,9 +305,9 @@
           </li>
         </ol>
 
-        <!-- 90-day roadmap -->
+        <!-- Roadmap -->
         <div class="roadmap" aria-labelledby="road-title">
-          <h3 id="road-title" class="h-md">The 90-day roadmap</h3>
+          <h3 id="road-title" class="h-md">Your roadmap, step by step</h3>
           <ol class="road">
             <li><span class="mono">Weeks 1–2</span><b>Fundamentals</b><small>Markets, products, macro</small></li>
             <li><span class="mono">Weeks 3–4</span><b>Risk</b><small>Sizing, stops, journal</small></li>
@@ -501,9 +500,9 @@
           <p class="book-price"><span data-book-price>$29.99</span><small>one-time · both editions</small></p>
           <div class="book-cta">
             <a class="btn btn-primary btn-lg" href="https://wa.me/971586884464" target="_blank" rel="noopener noreferrer" data-buy="book">Get the book</a>
-            <a class="btn btn-ghost btn-lg" href="../assets/book/sample-en.pdf" download>Download the free sample</a>
+            <button class="btn btn-ghost btn-lg" type="button" data-sample="en">Download the free sample</button>
           </div>
-          <p class="price-foot">Sample: cover, contents, introduction and Chapter 1 · <a href="../assets/book/ornek-tr.pdf" download hreflang="tr">Türkçe örnek</a></p>
+          <p class="price-foot">Sample: cover, contents, introduction and Chapter 1 · <a href="#book" data-sample="tr" hreflang="tr">Türkçe örnek</a></p>
           <details class="book-toc">
             <summary>Contents</summary>
             <ol>
@@ -575,11 +574,43 @@
   </footer>
 
 
+  <dialog class="sample-dialog" id="sample-dialog" aria-labelledby="sample-title">
+    <form class="sample-form" id="sample-form" novalidate>
+      <p class="eyebrow">Free sample</p>
+      <h2 id="sample-title" class="h-md">Download the sample</h2>
+      <p class="sample-lead">Cover, contents, introduction and Chapter 1. Leave your details and the download starts right away; we'll e-mail you the link too.</p>
+      <label for="s-name">Full name</label>
+      <input id="s-name" name="fullName" type="text" autocomplete="name" required aria-describedby="e-name" />
+      <p class="field-error" id="e-name" data-error-for="name" hidden></p>
+      <label for="s-email">E-mail</label>
+      <input id="s-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="e-email" />
+      <p class="field-error" id="e-email" data-error-for="email" hidden></p>
+      <label for="s-phone">WhatsApp number</label>
+      <input id="s-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+971 50 123 4567" required aria-describedby="h-phone e-phone" />
+      <p class="field-hint" id="h-phone">Include your country code.</p>
+      <p class="field-error" id="e-phone" data-error-for="phone" hidden></p>
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <label class="consent"><input type="checkbox" name="consent" aria-describedby="e-consent" /> <span>I agree that NUUK may use my details to contact me about this book and the programme. <a href="https://www.nuukquant.com/en/legal/privacy/" target="_blank" rel="noopener">Privacy policy</a></span></label>
+      <p class="field-error" id="e-consent" data-error-for="consent" hidden></p>
+      <p class="form-error" data-form-error role="alert" hidden></p>
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Download the sample</button>
+      <button class="btn btn-ghost-dark btn-block" type="button" data-close>Cancel</button>
+    </form>
+    <div class="sample-success" data-sample-success hidden>
+      <p class="eyebrow">Thank you</p>
+      <h2 class="h-md">Your download has started</h2>
+      <p>If it didn't, <a data-sample-link href="#" download>click here</a>. We've e-mailed you the link as well.</p>
+      <p>For the full book, tap "Get the book" and message us on WhatsApp.</p>
+      <button class="btn btn-ghost-dark btn-block" type="button" data-close>Close</button>
+    </div>
+  </dialog>
+
   <script defer src="../js/config.js"></script>
   <script defer src="../js/main.js"></script>
   <script defer src="../js/hero-chart.js"></script>
   <script defer src="../js/gann-math.js"></script>
   <script defer src="../js/gann.js"></script>
   <script defer src="../js/terminal.js"></script>
+  <script defer src="../js/sample-form.js"></script>
 </body>
 </html>

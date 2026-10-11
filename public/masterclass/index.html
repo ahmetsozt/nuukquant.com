@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NUUK Masterclass · Finans, Algoritmik Trading, Gann ve Yapay Zekâ</title>
+  <meta name="description" content="Finansın temellerinden algoritmik trading'e, Gann analizinden yapay zekâyla kendi finansal sistemini kodlamaya kadar NUUK'un her gün kullandığı yöntemi 90 günde öğren." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:site_name" content="NUUK Quant" />
+  <meta property="og:title" content="NUUK Masterclass: Piyasayı oku, kendi sistemini kur" />
+  <meta property="og:description" content="Finans, algoritmik trading, Gann ve yapay zekâyla kodlama. 90 günde test edilmiş kendi trading sistemini kur. Tek seferlik 499 $." />
+  <meta property="og:url" content="https://www.nuukquant.com/masterclass/" />
+  <meta property="og:image" content="https://www.nuukquant.com/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="canonical" href="https://www.nuukquant.com/masterclass/" />
+  <link rel="alternate" hreflang="tr" href="https://www.nuukquant.com/masterclass/" />
+  <link rel="alternate" hreflang="en" href="https://www.nuukquant.com/masterclass/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.nuukquant.com/masterclass/" />
+  <link rel="icon" href="assets/nuuk-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/labs.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "NUUK Masterclass",
+    "description": "Finansın temelleri, risk yönetimi, algoritmik trading, Gann analizi ve yapay zekâyla kodlama üzerine 90 günlük çevrim içi program.",
+    "inLanguage": "tr",
+    "url": "https://www.nuukquant.com/masterclass/",
+    "provider": { "@type": "Organization", "name": "NUUK Quant", "url": "https://www.nuukquant.com" },
+    "hasCourseInstance": { "@type": "CourseInstance", "courseMode": "online", "courseWorkload": "P13W" },
+    "offers": { "@type": "Offer", "price": "499", "priceCurrency": "USD" }
+  }
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "NUUK Quant – The Systematic Trader's Field Guide",
+    "inLanguage": ["en", "tr"],
+    "author": { "@type": "Person", "name": "Ahmet S. Ozturk" },
+    "bookFormat": "https://schema.org/EBook",
+    "alternateName": "Sistematik Trader'ın Saha Rehberi",
+    "publisher": { "@type": "Organization", "name": "NUUK Quant", "url": "https://www.nuukquant.com" },
+    "offers": { "@type": "Offer", "price": "29.99", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#mufredat">İçeriğe geç</a>
+
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Ana menü">
+      <a class="nav-brand" href="#top" aria-label="NUUK Masterclass ana sayfa">
+        <img src="assets/nuuk-wordmark.svg" alt="NUUK" width="78" height="18" />
+        <span class="nav-sub">masterclass</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menüyü aç">
+        <span aria-hidden="true"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#mufredat">Müfredat</a></li>
+        <li><a href="#gann">Gann Lab</a></li>
+        <li><a href="#vibecoding">Vibecoding</a></li>
+        <li><a href="#dahil">Neler dahil</a></li>
+        <li><a href="#fiyat">Fiyat</a></li>
+        <li><a href="#kitap">Kitap</a></li>
+        <li><a href="#sss">SSS</a></li>
+      </ul>
+      <p class="lang-switch"><a href="en/" hreflang="en" lang="en" aria-label="English">EN</a><span aria-current="page">TR</span></p>
+      <a class="btn btn-primary btn-sm" href="https://wa.me/971586884464" target="_blank" rel="noopener noreferrer" data-buy="masterclass">Katıl</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <p class="eyebrow">Tahminle işlem yapmaktan yorulanlar için</p>
+        <h1 id="hero-title" class="hero-title">
+          Piyasayı oku.<br />
+          <em class="accent">Kendi sistemini</em> kur.<br />
+          <span class="hero-days">90 günde.</span>
+        </h1>
+        <p class="hero-lead">
+          NUUK'ta her gün kullandığımız yöntemi baştan sona öğreneceksin: finansın temelleri,
+          algoritmik trading, Gann'ın fiyat ve zaman analizi, yapay zekâyla kendi finansal
+          sistemini kodlamak.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="https://wa.me/971586884464" target="_blank" rel="noopener noreferrer" data-buy="masterclass">Yerini ayırt</a>
+          <a class="btn btn-ghost btn-lg" href="#mufredat">Müfredatı incele</a>
+        </div>
+        <p class="hero-meta">Tek seferlik <span data-price>499 $</span> · Aylık ücret yok · Özel WhatsApp topluluğu</p>
+      </div>
+
+      <div class="container">
+        <figure class="hero-panel" aria-label="Örnek grafik: Gann açıları ve ATR'ye göre stop konan bir kırılım işlemi">
+          <div class="panel-bar">
+            <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="mono">XAUUSD · M15</span>
+            <span class="panel-tags">
+              <span class="tag tag-blue">Gann 1×1</span>
+              <span class="tag">Stop 1,5×ATR</span>
+              <span class="tag tag-up">R 1:4</span>
+            </span>
+          </div>
+          <div class="panel-body">
+            <svg id="hero-chart" class="hero-chart" viewBox="0 0 960 400" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mum grafiği üzerinde Gann yelpazesi"></svg>
+            <aside class="panel-code" aria-hidden="true">
+              <p class="mono dim">// yapay zekâyla yazıldı · NUUK_Breakout.mq5</p>
+              <p class="mono"><b>input</b> double RiskPct = <span class="num">0.5</span>;</p>
+              <p class="mono"><b>input</b> double AtrMult = <span class="num">1.5</span>;</p>
+              <p class="mono"><b>input</b> double RR      = <span class="num">4.0</span>;</p>
+              <p class="mono dim">// lot = risk / (stop × tick)</p>
+              <p class="mono"><b>double</b> lot = Lots(RiskPct, sl);</p>
+              <p class="mono ok">✓ backtest · walk-forward</p>
+            </aside>
+          </div>
+          <figcaption class="panel-cap">Eğitim amaçlı örnek grafiktir; gerçek bir işlem ya da sinyal değildir.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SORUN -->
+    <section class="section paper" id="sorun" aria-labelledby="sorun-title">
+      <div class="container narrow center">
+        <h2 id="sorun-title" class="h-xl">Grafiğe bir indikatör daha<br />eklemek <em class="accent">seni kurtarmaz.</em></h2>
+        <p class="lead">
+          Başarılı masalar grafiğe daha fazla çizgi çekerek değil; kuralları belli, test edilmiş
+          ve riski önceden hesaplanmış bir sistemle çalışır. Eksik olan yeni bir araç değil, bakış açısı.
+        </p>
+      </div>
+      <div class="container stagger" role="list">
+        <p class="stagger-row" role="listitem"><span>Sorun</span><span class="muted">indikatörde değil.</span></p>
+        <p class="stagger-row r2" role="listitem"><span>Sorun, bir</span><span><em class="accent">sistemin</em> olmaması.</span></p>
+        <p class="stagger-row r3" role="listitem"><span class="muted">Sinyal grupları</span><span class="muted">bunu çözmez.</span></p>
+        <p class="stagger-row r4" role="listitem"><span>Bunu kendi kurduğun</span><span class="blue">sistem çözer.</span></p>
+      </div>
+      <div class="container narrow center">
+        <p class="note">
+          İster sıfırdan başla, ister yıllardır grafik başında ol: bu program, grafiği yorumlamakla
+          kuralları belli bir sistemi çalıştırmak arasındaki farkı kapatır.
+        </p>
+      </div>
+    </section>
+
+    <!-- KAZANIMLAR -->
+    <section class="section" id="kazanimlar" aria-labelledby="kaz-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Kazanımlar</p>
+          <h2 id="kaz-title" class="h-xl">Program bittiğinde <em class="accent">elinde olacaklar</em></h2>
+        </div>
+        <ol class="outcomes">
+          <li><span class="mono">01</span><p>Yazılı risk kuralların ve her işlemde lotunu kendisi hesaplayan bir araç.</p></li>
+          <li><span class="mono">02</span><p>Geriye dönük testi ve ileriye dönük doğrulaması yapılmış en az bir strateji.</p></li>
+          <li><span class="mono">03</span><p>Kendi Gann indikatörün ve geçmiş verilerle sınanmış seviye kuralların.</p></li>
+          <li><span class="mono">04</span><p>Yapay zekâyla yazdırdığın, MT4/MT5'te çalışan bir işlem robotu (EA).</p></li>
+          <li><span class="mono">05</span><p>Bütün hesaplarını ve işlemlerini tek ekranda gösteren kişisel bir panel.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- MÜFREDAT -->
+    <section class="section paper" id="mufredat" aria-labelledby="muf-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Müfredat</p>
+          <h2 id="muf-title" class="h-xl">Masterclass <em class="accent">müfredatı</em></h2>
+          <p class="lead">Altı modül, sıfırdan ileri seviyeye. İlk mum grafiğinden, yapay zekâyla kodladığın kendi sistemine kadar.</p>
+        </div>
+
+        <ol class="modules">
+          <li class="module">
+            <details>
+              <summary>
+                <span class="m-num mono">01</span>
+                <span class="m-text"><span class="m-title">Finansın Temelleri</span><span class="m-sub">Piyasanın nasıl işlediğini ve fiyatı neyin hareket ettirdiğini öğren.</span></span>
+                <span class="m-hours mono">~8 saat</span>
+                <span class="m-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="m-body">
+                <ul class="lessons">
+                  <li>Piyasalar ve ürünler: forex, altın, endeksler, kripto ve CFD</li>
+                  <li>Spread, swap, lot ve kaldıraç gerçekte nasıl işler</li>
+                  <li>Makroekonomiyi okumak: Fed kararları, faiz, enflasyon, dolar endeksi (DXY) ve tahvil faizleri</li>
+                  <li>Ekonomik takvim, veri günleri ve seans saatleri</li>
+                  <li>Likidite ve oynaklık: fiyat ne zaman ve neden hızlanır</li>
+                  <li>Temel finans matematiği: getiri, bileşik büyüme ve beklenen değer</li>
+                </ul>
+                <p class="deliverable"><b>Modül sonunda elinde:</b> kendi piyasa takip panon ve haftalık makro notun.</p>
+              </div>
+            </details>
+          </li>
+          <li class="module">
+            <details>
+              <summary>
+                <span class="m-num mono">02</span>
+                <span class="m-text"><span class="m-title">Risk ve Pozisyon Yönetimi</span><span class="m-sub">Önce sermayeni korumayı öğren; büyüme ondan sonra gelir.</span></span>
+                <span class="m-hours mono">~6 saat</span>
+                <span class="m-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="m-body">
+                <ul class="lessons">
+                  <li>İşlem başına risk ve doğru pozisyon büyüklüğü</li>
+                  <li>ATR'ye göre stop belirlemek, R katsayısı ve risk/getiri oranı</li>
+                  <li>Düşüş matematiği: %50'lik kaybı telafi etmek için neden %100 kazanmak gerekir</li>
+                  <li>Korelasyon: aynı anda açık pozisyonların toplam riski</li>
+                  <li>İşlem günlüğü tutmak ve performansı ölçmek</li>
+                  <li>İşlem psikolojisi: kurallarına sadık kalmak</li>
+                </ul>
+                <p class="deliverable"><b>Modül sonunda elinde:</b> yazılı risk kuralların ve otomatik lot hesaplayıcın.</p>
+              </div>
+            </details>
+          </li>
+          <li class="module">
+            <details>
+              <summary>
+                <span class="m-num mono">03</span>
+                <span class="m-text"><span class="m-title">Algoritmik Trading</span><span class="m-sub">Bir fikri kurala, kuralı koda, kodu teste dönüştür.</span></span>
+                <span class="m-hours mono">~12 saat</span>
+                <span class="m-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="m-body">
+                <ul class="lessons">
+                  <li>Strateji fikrini ölçülebilir kurallara çevirmek</li>
+                  <li>Geriye dönük test (backtest): veri kalitesi, işlem maliyeti, kayma ve spread</li>
+                  <li>Aşırı uyum (overfitting), geleceği görme hatası ve hayatta kalan yanılgısı</li>
+                  <li>İleriye dönük doğrulama (walk-forward) ve test dışı veriyle sınama</li>
+                  <li>MT4/MT5 için işlem robotu (EA) yapısı ve Python ile araştırma</li>
+                  <li>Demo hesapta canlı test ve gerçek hesaba geçmeden önceki kontrol listesi</li>
+                </ul>
+                <p class="deliverable"><b>Modül sonunda elinde:</b> geriye dönük testi ve ileriye dönük doğrulaması yapılmış ilk stratejin.</p>
+              </div>
+            </details>
+          </li>
+          <li class="module">
+            <details>
+              <summary>
+                <span class="m-num mono">04</span>
+                <span class="m-text"><span class="m-title">Gann Lab</span><span class="m-sub">Gann'ı efsanelerden arındır, verilerle test et.</span></span>
+                <span class="m-hours mono">~8 saat</span>
+                <span class="m-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="m-body">
+                <ul class="lessons">
+                  <li>W.D. Gann'ın fiyat ve zaman yaklaşımı; neden hâlâ kullanıldığı</li>
+                  <li>Square of 9: karekök hesabı ve açı dönüşleri</li>
+                  <li>Gann açıları ve yelpazesi: 1×1, 2×1, 1×2</li>
+                  <li>Zaman döngüleri ve fiyat-zaman dengesi</li>
+                  <li>Gann seviyelerini indikatör olarak kodlamak</li>
+                  <li>Gann kurallarını geriye dönük testle sınamak: hangisi işe yarıyor, hangisi yaramıyor</li>
+                </ul>
+                <p class="deliverable"><b>Modül sonunda elinde:</b> kendi Gann indikatörün ve geçmiş verilerle sınanmış seviye kuralların.</p>
+              </div>
+            </details>
+          </li>
+          <li class="module">
+            <details>
+              <summary>
+                <span class="m-num mono">05</span>
+                <span class="m-text"><span class="m-title">Yapay Zekâyla Kodlama (Vibecoding)</span><span class="m-sub">Kod ezberlemene gerek yok; ne istediğini doğru anlatmayı öğren.</span></span>
+                <span class="m-hours mono">~12 saat</span>
+                <span class="m-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="m-body">
+                <ul class="lessons">
+                  <li>Claude Code ve Cursor ile çalışma düzeni</li>
+                  <li>Yapay zekâya sistemi eksiksiz anlatan teknik tarifi yazmak</li>
+                  <li>İşlem robotu, indikatör ve piyasa tarayıcısı yazdırmak</li>
+                  <li>Geriye dönük test motoru ve performans paneli kurmak</li>
+                  <li>Bildirim botları, veri akışı ve otomasyon</li>
+                  <li>Güvenlik: API anahtarlarını korumak, kodu test etmek ve hataları ayıklamak</li>
+                </ul>
+                <p class="deliverable"><b>Modül sonunda elinde:</b> yapay zekâyla yazdırdığın, çalışan bir işlem robotu ve kişisel trading panelin.</p>
+              </div>
+            </details>
+          </li>
+          <li class="module module-capstone">
+            <details>
+              <summary>
+                <span class="m-num mono">06</span>
+                <span class="m-text"><span class="m-title">Kendi Sistemin <span class="pill">Bitirme projesi</span></span><span class="m-sub">Öğrendiğin her şeyi tek bir sistemde birleştir.</span></span>
+                <span class="m-hours mono">30 gün</span>
+                <span class="m-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="m-body">
+                <ul class="lessons">
+                  <li>Sistemi tasarlamak: fikir, kurallar, risk ve altyapı</li>
+                  <li>Kodlamak ve geriye dönük test etmek</li>
+                  <li>30 gün boyunca demo hesapta canlı test</li>
+                  <li>Canlı takip paneli ve uyarılar</li>
+                  <li>Canlı seansta sistemini sunmak ve geri bildirim almak</li>
+                </ul>
+                <p class="deliverable"><b>Modül sonunda elinde:</b> sana ait, test edilmiş ve kendi panelinden takip ettiğin bir trading sistemi.</p>
+              </div>
+            </details>
+          </li>
+        </ol>
+
+        <!-- 90 günlük yol haritası -->
+        <div class="roadmap" aria-labelledby="road-title">
+          <h3 id="road-title" class="h-md">90 günlük yol haritası</h3>
+          <ol class="road">
+            <li><span class="mono">Hafta 1–2</span><b>Temeller</b><small>Piyasalar, ürünler, makro</small></li>
+            <li><span class="mono">Hafta 3–4</span><b>Risk</b><small>Lot, stop, işlem günlüğü</small></li>
+            <li><span class="mono">Hafta 5–7</span><b>Algoritma</b><small>Kurallar, test, doğrulama</small></li>
+            <li><span class="mono">Hafta 8–9</span><b>Gann</b><small>Square of 9, açılar</small></li>
+            <li><span class="mono">Hafta 10–11</span><b>Yapay zekâ</b><small>Robot ve panel yazdırma</small></li>
+            <li class="road-end"><span class="mono">Hafta 12–13</span><b>Bitirme</b><small>Canlı test, sunum</small></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- GANN LAB -->
+    <section class="section" id="gann" aria-labelledby="gann-title">
+      <div class="container gann-layout">
+        <div class="gann-copy">
+          <p class="eyebrow">Modül 4'teki araçlardan biri</p>
+          <h2 id="gann-title" class="h-xl">Gann Lab: <em class="accent">Square of 9</em></h2>
+          <p class="lead">
+            Bir fiyat gir, Gann'ın karekök hesabına göre olası destek ve direnç seviyelerini gör.
+            Modülde bu seviyeleri koda dökmeyi ve geçmiş verilerle sınamayı öğreneceksin.
+          </p>
+          <form class="gann-form" id="gann-form" novalidate>
+            <label for="gann-price">Fiyat</label>
+            <div class="gann-input">
+              <input id="gann-price" name="price" type="text" inputmode="decimal" autocomplete="off" value="4000" aria-describedby="gann-hint" />
+              <button class="btn btn-primary" type="submit">Hesapla</button>
+            </div>
+            <p id="gann-hint" class="hint">Ondalık için virgül ya da nokta kullanabilirsin; binlik ayırıcı kullanma. 10'un altındaki fiyatlar (örneğin 1,0850) pip cinsinden hesaplanır.</p>
+            <p class="error" id="gann-error" role="alert" hidden></p>
+          </form>
+          <p class="disclaimer">Bu araç eğitim amaçlıdır; işlem sinyali ya da yatırım tavsiyesi değildir.</p>
+        </div>
+
+        <div class="gann-visual">
+          <div class="ladder" id="gann-ladder" aria-live="polite"></div>
+          <figure class="sq9">
+            <div class="sq9-grid" id="sq9-grid" aria-hidden="true"></div>
+            <figcaption>Yatay-dikey ve çapraz eksenler, Gann'ın 90° ve 45° açılarını gösterir.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIBECODING -->
+    <section class="section paper" id="vibecoding" aria-labelledby="vibe-title">
+      <div class="container vibe-layout">
+        <div class="vibe-copy">
+          <p class="eyebrow">Modül 5</p>
+          <h2 id="vibe-title" class="h-xl">Yapay zekâyla <em class="accent">istediğin finansal sistemi</em> kur.</h2>
+          <p class="lead">
+            Yazılımcı olmana gerek yok. Ne istediğini açıkça tarif etmeyi, ortaya çıkan kodu test etmeyi
+            ve güvenle çalıştırmayı öğreneceksin. NUUK'un kendi sistemleri de bu yöntemle kuruldu.
+          </p>
+        </div>
+        <div class="terminal" role="img" aria-label="Örnek terminal: yapay zekâya bir işlem robotu tarif ediliyor; kod, testler ve geriye dönük test betiği hazırlanıyor">
+          <div class="terminal-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="mono">~/nuuk-sistemim</span></div>
+          <pre class="terminal-body mono" id="terminal" aria-hidden="true"></pre>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3 class="h-md bento-title">Bu programla kurabileceğin sistemler</h3>
+        <ul class="bento">
+          <li><span class="b-k mono">EA</span><b>İşlem robotu (EA)</b><small>Kurallarını MT4/MT5'te senin yerine uygular.</small></li>
+          <li><span class="b-k mono">IND</span><b>Özel indikatör</b><small>Gann seviyeleri, seans aralıkları ya da kendi sinyal mantığın.</small></li>
+          <li><span class="b-k mono">BT</span><b>Geriye dönük test motoru</b><small>Spread ve komisyonu hesaba katan, Python ile yazılmış test aracı.</small></li>
+          <li><span class="b-k mono">LOG</span><b>İşlem günlüğü paneli</b><small>MT4 hesap özetinden kazanma oranını, R dağılımını, saat ve sembol bazında sonuçları kendisi çıkarır.</small></li>
+          <li><span class="b-k mono">RSK</span><b>Risk ve lot hesaplayıcı</b><small>Her işlemde aynı oranda risk almanı sağlar.</small></li>
+          <li><span class="b-k mono">SCN</span><b>Piyasa tarayıcı</b><small>Kurulumunun oluştuğu sembolleri senin yerine bulur.</small></li>
+          <li><span class="b-k mono">ALR</span><b>Fiyat ve haber uyarıları</b><small>Fiyat seviyeye geldiğinde ya da veri açıklanmadan önce telefonuna bildirim gönderir.</small></li>
+          <li><span class="b-k mono">PRT</span><b>Portföy takip panosu</b><small>Bütün hesaplarını tek ekranda, anlık olarak gösterir.</small></li>
+          <li><span class="b-k mono">MAC</span><b>Makro panosu</b><small>Fed, enflasyon, dolar endeksi ve tahvil faizlerini tek ekranda toplar.</small></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- KARŞILAŞTIRMA -->
+    <section class="section" id="fark" aria-labelledby="fark-title">
+      <div class="container narrow">
+        <div class="section-head center">
+          <p class="eyebrow">Fark</p>
+          <h2 id="fark-title" class="h-xl">Sinyal takip etmek mi, <em class="accent">kendi sistemini kurmak mı?</em></h2>
+        </div>
+        <div class="compare" role="table" aria-label="Sinyal grubu ile NUUK Masterclass karşılaştırması">
+          <div class="cmp-row cmp-head" role="row">
+            <span role="columnheader"></span>
+            <span role="columnheader">Sinyal grubu</span>
+            <span role="columnheader">NUUK Masterclass</span>
+          </div>
+          <div class="cmp-row" role="row"><b role="rowheader">İşlem kararı</b><span role="cell">Başkası verir.</span><span role="cell">Kendi kurallarınla sen verirsin.</span></div>
+          <div class="cmp-row" role="row"><b role="rowheader">Neden girildiği</b><span role="cell">Çoğu zaman bilinmez.</span><span role="cell">Her kuralın gerekçesini bilirsin.</span></div>
+          <div class="cmp-row" role="row"><b role="rowheader">Risk</b><span role="cell">Lot ve stop sana kalır.</span><span role="cell">Risk kuralların yazılıdır ve lotu araç hesaplar.</span></div>
+          <div class="cmp-row" role="row"><b role="rowheader">Test</b><span role="cell">Geçmiş sonuçlar çoğu zaman paylaşılmaz.</span><span role="cell">Her stratejiyi geçmiş verilerle sınarsın.</span></div>
+          <div class="cmp-row" role="row"><b role="rowheader">Grup kapanınca</b><span role="cell">Elinde bir şey kalmaz.</span><span role="cell">Sistem senindir, çalışmaya devam eder.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NELER DAHİL -->
+    <section class="section paper" id="dahil" aria-labelledby="dahil-title">
+      <div class="container narrow">
+        <div class="section-head center">
+          <p class="eyebrow">Neler dahil</p>
+          <h2 id="dahil-title" class="h-xl">Üyeliğe <em class="accent">her şey</em> dahil</h2>
+        </div>
+        <ul class="stack" id="value-stack"></ul>
+        <div class="stack-total">
+          <p class="mono"><s data-stack-total>2.290 $</s></p>
+          <p class="stack-price"><span data-price>499 $</span><small>tek seferlik</small></p>
+          <p class="pill pill-blue">Kurucu üye fiyatı</p>
+          <a class="btn btn-primary btn-lg" href="https://wa.me/971586884464" target="_blank" rel="noopener noreferrer" data-buy="masterclass">Yerini ayırt</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- KANIT -->
+    <section class="section" id="kanit" aria-labelledby="kanit-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Programı kim hazırladı</p>
+          <h2 id="kanit-title" class="h-xl">Kurs satıcısı değiliz.<br /><em class="accent">Her gün işlem yapan bir masayız.</em></h2>
+          <p class="lead">Programdaki her yöntem, masada gerçekten kullandığımız işlerden çıktı; kitaplardan derlenmiş teori değil.</p>
+        </div>
+        <dl class="stats">
+          <div><dt>yıllık İstanbul–Londra işlem masası tecrübesi</dt><dd class="mono">17</dd></div>
+          <div><dt>yapay zekâyla kurduğumuz uygulama</dt><dd class="mono">9</dd></div>
+          <div><dt>MT4/MT5 işlem robotu ve aracı</dt><dd class="mono">8</dd></div>
+          <div><dt>webinar ve seminerlerde eğitim verdiğimiz yatırımcı</dt><dd class="mono">3.000+</dd></div>
+        </dl>
+        <p class="stats-note">17 yıl ve 3.000+ rakamları nuukquant.com'da yayımlanan NUUK kayıtlarına dayanır.</p>
+        <div class="founder">
+          <img src="assets/nuuk-mark-white.svg" alt="" width="56" height="56" />
+          <div>
+            <p class="founder-name">Ahmet Öztürk</p>
+            <p class="founder-role">NUUK Quant kurucusu</p>
+            <p>Masada kullanılan işlem robotlarını, yatırımcı panelini, mobil uygulamayı ve veri altyapısını yapay zekâyla kendisi kurdu. Bu programda o sistemlerin nasıl kurulduğunu adım adım anlatıyor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KİMLER İÇİN -->
+    <section class="section paper" id="kimler" aria-labelledby="kimler-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Kimler için</p>
+          <h2 id="kimler-title" class="h-xl">Nereden başlarsan başla, <em class="accent">hedef aynı</em></h2>
+        </div>
+        <ul class="personas">
+          <li><span class="mono">A</span><b>Sıfırdan başlıyorum</b><p>Modül 1 en temelden başlar. Sırayla ilerlediğinde nereden başlayacağını düşünmezsin; her hafta öğrendiklerini bir öncekinin üzerine koyarsın.</p></li>
+          <li><span class="mono">B</span><b>Grafiğe bakarak işlem yapıyorum</b><p>Grafiği okuyorsun ama sonuçların istikrarsız. Kurallarını önce yazıya, sonra koda dökmeyi ve test etmeyi öğrenirsin.</p></li>
+          <li><span class="mono">C</span><b>Kod ya da veriyle çalışıyorum</b><p>Teknik bilgin hazır. Onu piyasa yapısı, risk yönetimi ve Gann'la birleştirdiğinde ortaya çalışan bir sistem çıkar.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FİYAT -->
+    <section class="section" id="fiyat" aria-labelledby="fiyat-title">
+      <div class="container narrow center">
+        <p class="eyebrow">Fiyat</p>
+        <h2 id="fiyat-title" class="h-xl">Tek ödeme. <em class="accent">Aylık ücret yok.</em></h2>
+        <article class="price-card">
+          <p class="mono price-was"><s data-stack-total>2.290 $</s></p>
+          <p class="price-now"><span data-price>499 $</span><small>tek seferlik</small></p>
+          <p class="pill pill-blue">Kurucu üye fiyatı · İlk dönem</p>
+          <ul class="price-list" id="price-list"></ul>
+          <a class="btn btn-primary btn-lg btn-block" href="https://wa.me/971586884464" target="_blank" rel="noopener noreferrer" data-buy="masterclass">Yerini ayırt</a>
+          <p class="price-foot">Bir kez ödersin · Aylık ya da gizli ücret yok · Ödeme şimdilik yalnızca kripto (USDT) ile</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- KİTAP -->
+    <section class="section paper" id="kitap" aria-labelledby="kitap-title">
+      <div class="container book-layout">
+        <div class="book-covers">
+          <img class="cover-back" src="assets/book/cover-en.jpg" alt="" width="487" height="655" loading="lazy" />
+          <img class="cover-front" src="assets/book/cover-tr.jpg" alt="Sistematik Trader'ın Saha Rehberi, Türkçe baskı kapağı" width="493" height="680" loading="lazy" />
+        </div>
+        <div class="book-copy">
+          <p class="eyebrow">Kitap</p>
+          <h2 id="kitap-title" class="h-xl">Önce kitapla <em class="accent">başla</em></h2>
+          <p class="lead"><b>Sistematik Trader'ın Saha Rehberi</b> <span class="muted">(The Systematic Trader's Field Guide)</span>: algoritmik trading, piyasa araştırması, risk yönetimi ve dürüst backtest'e pratik bir giriş. Forex, emtia, hisse senetleri, endeksler ve dijital varlıklarda geçerli.</p>
+          <ul class="book-facts mono">
+            <li>9 bölüm + araç seti</li>
+            <li>3 çalışma sayfası</li>
+            <li>Türkçe ve İngilizce · PDF</li>
+          </ul>
+          <p class="book-price"><span data-book-price>29,99 $</span><small>tek seferlik · iki baskı birlikte</small></p>
+          <div class="book-cta">
+            <a class="btn btn-primary btn-lg" href="https://wa.me/971586884464" target="_blank" rel="noopener noreferrer" data-buy="book">Kitabı al</a>
+            <a class="btn btn-ghost btn-lg" href="assets/book/ornek-tr.pdf" download>Ücretsiz örneği indir</a>
+          </div>
+          <p class="price-foot">Örnek: kapak, içindekiler, giriş ve 1. bölüm · <a href="assets/book/sample-en.pdf" download hreflang="en">English sample</a></p>
+          <details class="book-toc">
+            <summary>İçindekiler</summary>
+            <ol>
+              <li><span class="mono">00</span>Bu Kitap Nasıl Kullanılır</li>
+              <li><span class="mono">01</span>Sistematik Düşünce <em>tahmin değil süreç</em></li>
+              <li><span class="mono">02</span>Piyasalar Gerçekte Nasıl İşler <em>piyasa yapısı, maliyetler, kaldıraç</em></li>
+              <li><span class="mono">03</span>Avantaj Bulmak <em>araştırma ve fikir üretimi</em></li>
+              <li><span class="mono">04</span>Sistematik Teknik Analiz <em>ölçüm aracı olarak indikatörler</em></li>
+              <li><span class="mono">05</span>Temel ve Makro Analiz <em>rejimler ve itici güçler</em></li>
+              <li><span class="mono">06</span>Kendini Kandırmadan Backtest <em>veri, sızıntı, aşırı uyum</em></li>
+              <li><span class="mono">07</span>Risk Yönetimi ve Pozisyon Büyüklüğü <em>hayatta kalma bölümü</em></li>
+              <li><span class="mono">08</span>Performansı Dürüstçe Ölçmek <em>beklenen değer, düşüş, Sharpe</em></li>
+              <li><span class="mono">09</span>Kâğıttan Gerçek Sermayeye <em>stratejinin yaşam döngüsü</em></li>
+              <li><span class="mono">A</span>Araç Seti <em>çalışma sayfaları, özet sayfa, sözlük, okuma listesi</em></li>
+            </ol>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- SSS -->
+    <section class="section" id="sss" aria-labelledby="sss-title">
+      <div class="container narrow">
+        <div class="section-head center">
+          <p class="eyebrow">SSS</p>
+          <h2 id="sss-title" class="h-xl">Sık sorulan <em class="accent">sorular</em></h2>
+        </div>
+        <div class="faq">
+          <details><summary>Hiç bilgim yok. Program bana ağır gelir mi?</summary><p>Hayır. Modül 1 en temelden başlar ve konular sırayla ilerler. Her modülün sonunda elinde somut bir çalışma olur; nerede kaldığını her zaman bilirsin.</p></details>
+          <details><summary>Kod bilmem gerekiyor mu?</summary><p>Hayır. Yapay zekâyla kodlama modülü tam da bunun için var: yapay zekâya ne istediğini doğru anlatmayı, çıkan kodu test etmeyi ve güvenle çalıştırmayı öğrenirsin. Kod biliyorsan daha hızlı ilerlersin.</p></details>
+          <details><summary>Haftada ne kadar zaman ayırmalıyım?</summary><p>Haftada 3–4 saat, dersleri ve canlı seansları takip etmeye yeter. Bitirme projesindeki demo test kendi kendine çalışır; senin işin her gün sonuçlara göz atmak.</p></details>
+          <details><summary>Hangi programlara ihtiyacım var?</summary><p>MetaTrader 4 ya da 5, Python, VS Code ve bir yapay zekâ kodlama aracı (Claude Code ya da Cursor). Hepsinin ücretsiz sürümü ya da deneme planı var. Yapay zekâ aracının aylık ücreti üyeliğe dahil değil.</p></details>
+          <details><summary>Sinyal veriyor musunuz, paramı yönetiyor musunuz?</summary><p>Hayır. Bu bir eğitim programı. NUUK yatırım için para kabul etmez, hesap yönetmez ve kazanç sözü vermez. Amacımız, kendi kararlarını veren ve kendi sistemini kuran biri olman.</p></details>
+          <details><summary>Gann gerçekten işe yarıyor mu?</summary><p>Bazı Gann kuralları bazı piyasalarda istatistiksel olarak anlamlı sonuç veriyor, bazıları vermiyor. Gann Lab'de bu kurallara inanmayı değil, onları test etmeyi öğrenirsin; işe yaramayanı elersin.</p></details>
+          <details><summary>Dersler canlı mı, kayıtlı mı?</summary><p>İkisi de. Kayıtlı dersleri kendi hızında izlersin; her hafta canlı seansta piyasayı ve kodu birlikte inceler, sorularını cevaplarız.</p></details>
+          <details><summary>Nasıl kayıt olurum?</summary><p>"Yerini ayırt" düğmesine bas; WhatsApp'ta doğrudan bizimle yazışırsın. Mesajın hazır yazılmış olarak açılır, göndermen yeterli. Kitap için "Kitabı al" düğmesi aynı şekilde çalışır.</p></details>
+          <details><summary>Ödemeyi nasıl yaparım?</summary><p>Şimdilik yalnızca kripto para (USDT) ile ödeme alıyoruz. WhatsApp'tan yazdığında USDT cüzdan adresini sana iletiyoruz.</p></details>
+          <details><summary>Ödeme tek seferlik mi?</summary><p>Evet. 499 $'ı bir kez ödersin; aylık ya da yıllık ücret yok. Modüller, şablonlar, WhatsApp topluluğu ve canlı seanslar bu ücrete dahil.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- SON ÇAĞRI -->
+    <section class="final" aria-labelledby="final-title">
+      <div class="container narrow center">
+        <h2 id="final-title" class="h-xxl">Tahmin etmeyi bırak.<br /><em class="accent">Sistemini kurmaya başla.</em></h2>
+        <a class="btn btn-primary btn-lg" href="https://wa.me/971586884464" target="_blank" rel="noopener noreferrer" data-buy="masterclass">Yerini ayırt</a>
+        <p class="hero-meta">Tek seferlik <span data-price>499 $</span> · Aylık ücret yok · Özel WhatsApp topluluğu</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="assets/nuuk-wordmark.svg" alt="NUUK" width="78" height="18" />
+      <p class="risk">
+        <b>Risk uyarısı:</b> Bu program bir eğitim içeriğidir; yatırım tavsiyesi, sinyal hizmeti ya da
+        portföy yönetimi değildir. Kaldıraçlı ürünler (forex, CFD) yüksek risk taşır ve yatırdığın
+        paradan fazlasını kaybetmene yol açabilir. Geçmiş performans ve geriye dönük test sonuçları
+        gelecekteki sonuçları garanti etmez.
+      </p>
+      <ul class="footer-links">
+        <li><a href="https://www.nuukquant.com/tr/legal/risk-disclosure/">Risk bildirimi</a></li>
+        <li><a href="https://www.nuukquant.com/tr/legal/privacy/">Gizlilik politikası</a></li>
+        <li><a href="https://www.nuukquant.com/tr/">nuukquant.com</a></li>
+      </ul>
+      <p class="copy">© 2026 NUUK Quant</p>
+    </div>
+  </footer>
+
+
+  <script defer src="js/config.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/hero-chart.js"></script>
+  <script defer src="js/gann-math.js"></script>
+  <script defer src="js/gann.js"></script>
+  <script defer src="js/terminal.js"></script>
+</body>
+</html>

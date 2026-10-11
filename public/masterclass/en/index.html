@@ -500,7 +500,7 @@
           <p class="book-price"><span data-book-price>$29.99</span><small>one-time · both editions</small></p>
           <div class="book-cta">
             <a class="btn btn-primary btn-lg" href="https://wa.me/971586884464" target="_blank" rel="noopener noreferrer" data-buy="book">Get the book</a>
-            <button class="btn btn-ghost btn-lg" type="button" data-sample="en">Download the free sample</button>
+            <button class="btn btn-ghost btn-lg" type="button" data-sample="en">Get the free sample</button>
           </div>
           <p class="price-foot">Sample: cover, contents, introduction and Chapter 1 · <a href="#book" data-sample="tr" hreflang="tr">Türkçe örnek</a></p>
           <details class="book-toc">
@@ -577,30 +577,31 @@
   <dialog class="sample-dialog" id="sample-dialog" aria-labelledby="sample-title">
     <form class="sample-form" id="sample-form" novalidate>
       <p class="eyebrow">Free sample</p>
-      <h2 id="sample-title" class="h-md">Download the sample</h2>
-      <p class="sample-lead">Cover, contents, introduction and Chapter 1. Leave your details and the download starts right away; we'll e-mail you the link too.</p>
-      <label for="s-name">Full name</label>
+      <h2 id="sample-title" class="h-md">Get the sample PDF</h2>
+      <p class="sample-lead">Cover, contents, introduction and Chapter 1. We send the sample PDF <b>on WhatsApp</b>, so your contact details are required. Please double-check your number.</p>
+      <p class="req-note"><span class="req">*</span> All fields are required.</p>
+      <label for="s-name">Full name <span class="req" aria-hidden="true">*</span></label>
       <input id="s-name" name="fullName" type="text" autocomplete="name" required aria-describedby="e-name" />
       <p class="field-error" id="e-name" data-error-for="name" hidden></p>
-      <label for="s-email">E-mail</label>
+      <label for="s-email">E-mail <span class="req" aria-hidden="true">*</span></label>
       <input id="s-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="e-email" />
       <p class="field-error" id="e-email" data-error-for="email" hidden></p>
-      <label for="s-phone">WhatsApp number</label>
+      <label for="s-phone">WhatsApp number <span class="req" aria-hidden="true">*</span></label>
       <input id="s-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+971 50 123 4567" required aria-describedby="h-phone e-phone" />
-      <p class="field-hint" id="h-phone">Include your country code.</p>
+      <p class="field-hint" id="h-phone">The PDF will arrive on WhatsApp at this number. Include your country code.</p>
       <p class="field-error" id="e-phone" data-error-for="phone" hidden></p>
       <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
-      <label class="consent"><input type="checkbox" name="consent" aria-describedby="e-consent" /> <span>I agree that NUUK may use my details to contact me about this book and the programme. <a href="https://www.nuukquant.com/en/legal/privacy/" target="_blank" rel="noopener">Privacy policy</a></span></label>
+      <label class="consent"><input type="checkbox" name="consent" required aria-describedby="e-consent" /> <span>I agree that NUUK may use my details to contact me about this book and the programme. <a href="https://www.nuukquant.com/en/legal/privacy/" target="_blank" rel="noopener">Privacy policy</a></span></label>
       <p class="field-error" id="e-consent" data-error-for="consent" hidden></p>
       <p class="form-error" data-form-error role="alert" hidden></p>
-      <button class="btn btn-primary btn-lg btn-block" type="submit">Download the sample</button>
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Send and open WhatsApp</button>
       <button class="btn btn-ghost-dark btn-block" type="button" data-close>Cancel</button>
     </form>
     <div class="sample-success" data-sample-success hidden>
       <p class="eyebrow">Thank you</p>
-      <h2 class="h-md">Your download has started</h2>
-      <p>If it didn't, <a data-sample-link href="#" download>click here</a>. We've e-mailed you the link as well.</p>
-      <p>For the full book, tap "Get the book" and message us on WhatsApp.</p>
+      <h2 class="h-md">Thanks, we have your details</h2>
+      <p>WhatsApp is opening now. Send the ready-made message and we'll send you the sample PDF there.</p>
+      <a class="btn btn-primary btn-lg btn-block" data-sample-wa href="https://wa.me/971586884464" target="_blank" rel="noopener noreferrer">Open WhatsApp</a>
       <button class="btn btn-ghost-dark btn-block" type="button" data-close>Close</button>
     </div>
   </dialog>

@@ -1,5 +1,6 @@
 /*
- * Kitap örneği formu: "Ücretsiz örneği indir" iletişim bilgisini alır, hub'a kaydeder, sonra PDF'i indirtir.
+ * Kitap örneği formu: "Ücretsiz örneği al" iletişim bilgisini (hepsi zorunlu) alır, hub'a kaydeder, sonra
+ * ziyaretçiyi hazır mesajla WhatsApp hattına yönlendirir; örnek PDF oradan elle gönderilir.
  * Hub doğrulamayı yapar; hata kodlarını ("contact:<alan>:<sorun>") burada alan altı mesajlara çevirir.
  */
 (function () {
@@ -69,7 +70,8 @@
   const formError = form.querySelector('[data-form-error]');
   const submit = form.querySelector('button[type="submit"]');
   const success = dialog.querySelector('[data-sample-success]');
-  const directLink = dialog.querySelector('[data-sample-link]');
+  const waLink = dialog.querySelector('[data-sample-wa]');
+  const WA_REDIRECT_MS = 1200;
   let edition = cfg.lang;
 
   function setFieldError(name, message) {
@@ -101,13 +103,20 @@
     formError.hidden = false;
   }
 
-  function startDownload(url) {
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = '';
-    document.body.append(a);
-    a.click();
-    a.remove();
+  /** Seçilen baskıya göre hazır mesajla WhatsApp adresi. */
+  function whatsappUrl() {
+    const text = cfg.buyMessages.sample[edition] || cfg.buyMessages.sample[cfg.lang];
+    return `https://wa.me/${cfg.whatsapp}?text=${encodeURIComponent(text)}`;
+  }
+
+  /** Boş alanları gönderimden önce yakalar; biçim kuralları hub'da. */
+  function missingFields() {
+    const missing = ['name', 'email', 'phone'].filter((n) => !fields[n].value.trim());
+    missing.forEach((n) => setFieldError(n, TEXT[n].empty));
+    if (!fields.consent.checked) setFieldError('consent', TEXT.consent);
+    const first = missing[0] || (!fields.consent.checked && 'consent');
+    if (first) fields[first].focus();
+    return Boolean(first);
   }
 
   function open(which) {
@@ -122,10 +131,7 @@
   async function onSubmit(e) {
     e.preventDefault();
     clearErrors();
-    if (!fields.consent.checked) {
-      setFieldError('consent', TEXT.consent);
-      return;
-    }
+    if (missingFields()) return;
     const label = submit.textContent;
     submit.disabled = true;
     submit.textContent = TEXT.sending;
@@ -151,11 +157,12 @@
         showServerError(payload && payload.error, payload && payload.data && payload.data.suggestion);
         return;
       }
-      const url = payload.data.downloadUrl || cfg.sampleUrls[edition];
-      directLink.href = url;
+      const wa = whatsappUrl();
+      waLink.href = wa;
       form.hidden = true;
       success.hidden = false;
-      startDownload(url);
+      // Mesajın senin numarana düşmesi için WhatsApp'ı kendiliğinden aç; açılmazsa düğme duruyor.
+      setTimeout(() => window.location.assign(wa), WA_REDIRECT_MS);
     } catch (err) {
       formError.textContent = (err && err.user) || TEXT.network;
       formError.hidden = false;

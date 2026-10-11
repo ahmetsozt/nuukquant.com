@@ -34,10 +34,12 @@
     tr: {
       masterclass: '499 USD ücretli eğitimi almak istiyorum.',
       book: '29.99 USD kitabı almak istiyorum.',
+      sample: { tr: "Örnek e-kitap PDF'ini almak istiyorum.", en: "Örnek e-kitap PDF'ini (İngilizce baskı) almak istiyorum." },
     },
     en: {
       masterclass: "I'd like to join the 499 USD Masterclass.",
       book: "I'd like to buy the 29.99 USD book.",
+      sample: { en: "I'd like to get the sample e-book PDF.", tr: "I'd like to get the sample e-book PDF (Turkish edition)." },
     },
   };
 
@@ -53,10 +55,6 @@
     whatsapp: '971586884464',
     // Kitap örneği formu iletişim bilgisini buraya kaydeder (yerelde test hub'ı http://localhost:8798 kullanılır).
     hubUrl: 'https://hub.nuukquant.com',
-    sampleUrls: Object.freeze({
-      tr: 'https://www.nuukquant.com/masterclass/assets/book/ornek-tr.pdf',
-      en: 'https://www.nuukquant.com/masterclass/assets/book/sample-en.pdf',
-    }),
     buyMessages: Object.freeze(BUY_MESSAGES[lang]),
     valueStack: Object.freeze(VALUE_STACK[lang].map((item) => Object.freeze(item))),
   });

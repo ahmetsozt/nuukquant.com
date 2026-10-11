@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NUUK Masterclass · Finans, Algoritmik Trading, Gann ve Yapay Zekâ</title>
-  <meta name="description" content="Finansın temellerinden algoritmik trading'e, Gann analizinden yapay zekâyla kendi finansal sistemini kodlamaya kadar NUUK'un her gün kullandığı yöntemi 90 günde öğren." />
+  <meta name="description" content="Finansın temellerinden algoritmik trading'e, Gann analizinden yapay zekâyla kendi finansal sistemini kodlamaya kadar NUUK'un her gün kullandığı yöntemi adım adım öğren." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="tr_TR" />
   <meta property="og:site_name" content="NUUK Quant" />
   <meta property="og:title" content="NUUK Masterclass: Piyasayı oku, kendi sistemini kur" />
-  <meta property="og:description" content="Finans, algoritmik trading, Gann ve yapay zekâyla kodlama. 90 günde test edilmiş kendi trading sistemini kur. Tek seferlik 499 $." />
+  <meta property="og:description" content="Finans, algoritmik trading, Gann ve yapay zekâyla kodlama. Test edilmiş kendi trading sistemini kur. Tek seferlik 499 $." />
   <meta property="og:url" content="https://www.nuukquant.com/masterclass/" />
   <meta property="og:image" content="https://www.nuukquant.com/og.png" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -31,11 +31,11 @@
     "@context": "https://schema.org",
     "@type": "Course",
     "name": "NUUK Masterclass",
-    "description": "Finansın temelleri, risk yönetimi, algoritmik trading, Gann analizi ve yapay zekâyla kodlama üzerine 90 günlük çevrim içi program.",
+    "description": "Finansın temelleri, risk yönetimi, algoritmik trading, Gann analizi ve yapay zekâyla kodlama üzerine çevrim içi program.",
     "inLanguage": "tr",
     "url": "https://www.nuukquant.com/masterclass/",
     "provider": { "@type": "Organization", "name": "NUUK Quant", "url": "https://www.nuukquant.com" },
-    "hasCourseInstance": { "@type": "CourseInstance", "courseMode": "online", "courseWorkload": "P13W" },
+    "hasCourseInstance": { "@type": "CourseInstance", "courseMode": "online" },
     "offers": { "@type": "Offer", "price": "499", "priceCurrency": "USD" }
   }
   <script type="application/ld+json">
@@ -85,8 +85,7 @@
         <p class="eyebrow">Tahminle işlem yapmaktan yorulanlar için</p>
         <h1 id="hero-title" class="hero-title">
           Piyasayı oku.<br />
-          <em class="accent">Kendi sistemini</em> kur.<br />
-          <span class="hero-days">90 günde.</span>
+          <em class="accent">Kendi sistemini</em> kur.
         </h1>
         <p class="hero-lead">
           NUUK'ta her gün kullandığımız yöntemi baştan sona öğreneceksin: finansın temelleri,
@@ -305,9 +304,9 @@
           </li>
         </ol>
 
-        <!-- 90 günlük yol haritası -->
+        <!-- Yol haritası -->
         <div class="roadmap" aria-labelledby="road-title">
-          <h3 id="road-title" class="h-md">90 günlük yol haritası</h3>
+          <h3 id="road-title" class="h-md">Adım adım yol haritası</h3>
           <ol class="road">
             <li><span class="mono">Hafta 1–2</span><b>Temeller</b><small>Piyasalar, ürünler, makro</small></li>
             <li><span class="mono">Hafta 3–4</span><b>Risk</b><small>Lot, stop, işlem günlüğü</small></li>
@@ -500,9 +499,9 @@
           <p class="book-price"><span data-book-price>29,99 $</span><small>tek seferlik · iki baskı birlikte</small></p>
           <div class="book-cta">
             <a class="btn btn-primary btn-lg" href="https://wa.me/971586884464" target="_blank" rel="noopener noreferrer" data-buy="book">Kitabı al</a>
-            <a class="btn btn-ghost btn-lg" href="assets/book/ornek-tr.pdf" download>Ücretsiz örneği indir</a>
+            <button class="btn btn-ghost btn-lg" type="button" data-sample="tr">Ücretsiz örneği indir</button>
           </div>
-          <p class="price-foot">Örnek: kapak, içindekiler, giriş ve 1. bölüm · <a href="assets/book/sample-en.pdf" download hreflang="en">English sample</a></p>
+          <p class="price-foot">Örnek: kapak, içindekiler, giriş ve 1. bölüm · <a href="#kitap" data-sample="en" hreflang="en">English sample</a></p>
           <details class="book-toc">
             <summary>İçindekiler</summary>
             <ol>
@@ -574,11 +573,43 @@
   </footer>
 
 
+  <dialog class="sample-dialog" id="sample-dialog" aria-labelledby="sample-title">
+    <form class="sample-form" id="sample-form" novalidate>
+      <p class="eyebrow">Ücretsiz örnek</p>
+      <h2 id="sample-title" class="h-md">Örneği indir</h2>
+      <p class="sample-lead">Kapak, içindekiler, giriş ve 1. bölüm. Bilgilerini bırak, indirme hemen başlasın; bağlantıyı e-postana da gönderelim.</p>
+      <label for="s-name">Ad soyad</label>
+      <input id="s-name" name="fullName" type="text" autocomplete="name" required aria-describedby="e-name" />
+      <p class="field-error" id="e-name" data-error-for="name" hidden></p>
+      <label for="s-email">E-posta</label>
+      <input id="s-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="e-email" />
+      <p class="field-error" id="e-email" data-error-for="email" hidden></p>
+      <label for="s-phone">WhatsApp numarası</label>
+      <input id="s-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="0532 123 45 67" required aria-describedby="h-phone e-phone" />
+      <p class="field-hint" id="h-phone">Türkiye dışındaysan ülke koduyla yaz (örneğin +971).</p>
+      <p class="field-error" id="e-phone" data-error-for="phone" hidden></p>
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <label class="consent"><input type="checkbox" name="consent" aria-describedby="e-consent" /> <span>Bilgilerimin NUUK tarafından bu kitap ve eğitimle ilgili benimle iletişim kurmak için kullanılmasını kabul ediyorum. <a href="https://www.nuukquant.com/tr/legal/privacy/" target="_blank" rel="noopener">Gizlilik politikası</a></span></label>
+      <p class="field-error" id="e-consent" data-error-for="consent" hidden></p>
+      <p class="form-error" data-form-error role="alert" hidden></p>
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Örneği indir</button>
+      <button class="btn btn-ghost-dark btn-block" type="button" data-close>Vazgeç</button>
+    </form>
+    <div class="sample-success" data-sample-success hidden>
+      <p class="eyebrow">Teşekkürler</p>
+      <h2 class="h-md">İndirme başladı</h2>
+      <p>Başlamadıysa <a data-sample-link href="#" download>buraya tıkla</a>. Bağlantıyı e-postana da gönderdik.</p>
+      <p>Kitabın tamamı için "Kitabı al" düğmesiyle WhatsApp'tan bize yazabilirsin.</p>
+      <button class="btn btn-ghost-dark btn-block" type="button" data-close>Kapat</button>
+    </div>
+  </dialog>
+
   <script defer src="js/config.js"></script>
   <script defer src="js/main.js"></script>
   <script defer src="js/hero-chart.js"></script>
   <script defer src="js/gann-math.js"></script>
   <script defer src="js/gann.js"></script>
   <script defer src="js/terminal.js"></script>
+  <script defer src="js/sample-form.js"></script>
 </body>
 </html>

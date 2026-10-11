@@ -145,6 +145,12 @@ main{width:100%;max-width:460px;display:grid;gap:var(--space-stack)}
 .btn--whatsapp svg{color:var(--color-green)}
 .btn--quiet{background:transparent;border-style:dashed;color:var(--color-ink-muted)}
 .btn--quiet:hover{color:var(--color-ink)}
+.btn--masterclass{justify-content:space-between;margin-top:4px;border-color:rgb(95 174 78 / 0.38);background:#161616}
+.btn--masterclass span{flex:1;text-align:left}
+.btn--masterclass .btn__icon{color:var(--color-green)}
+.btn--masterclass .btn__arrow{color:var(--color-ink-muted)}
+.btn--masterclass:hover{border-color:var(--color-green);background:var(--color-surface-hover)}
+.btn--masterclass:hover .btn__arrow{color:var(--color-ink)}
 
 /* ---- QR dialog ---- */
 .qr{
@@ -218,6 +224,11 @@ main{width:100%;max-width:460px;display:grid;gap:var(--space-stack)}
         QR code
       </button>
     </div>
+    <a class="btn btn--masterclass" href="https://www.nuukquant.com/masterclass/" rel="noopener">
+      <svg class="btn__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3.2 18.4 7 10 10.8 1.6 7Z"/><path d="M5.4 8.9v3.6c0 1.3 2.1 2.3 4.6 2.3s4.6-1 4.6-2.3V8.9M17.4 7.6v4.2"/></svg>
+      <span>Masterclass</span>
+      <svg class="btn__arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 10h11M11 5.5l4.5 4.5L11 14.5"/></svg>
+    </a>
   </nav>
 </main>
 

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { en } from "@/content/en";
 import { locales } from "@/i18n";
-import { pageUrl } from "@/lib/seo";
+import { pageUrl, SITE } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
@@ -33,10 +33,20 @@ const PAGES = [
 ];
 
 /** One entry per page and locale; English lives at / for the home page and /en/ elsewhere, Turkish membership pages at their root aliases. */
+/** Static NUUK Masterclass pages copied into public/masterclass/ (source: NUUK Trader apps/masterclass). */
+const MASTERCLASS = { tr: `${SITE}/masterclass/`, en: `${SITE}/masterclass/en/` } as const;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const url = pageUrl;
-  return PAGES.flatMap((page) =>
+  const masterclass = (["tr", "en"] as const).map((lang) => ({
+    url: MASTERCLASS[lang],
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+    alternates: { languages: { tr: MASTERCLASS.tr, en: MASTERCLASS.en, "x-default": MASTERCLASS.tr } },
+  }));
+  return [...masterclass, ...PAGES.flatMap((page) =>
     locales.map((locale) => ({
       url: url(locale, page),
       lastModified: now,
@@ -44,5 +54,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: page === "" ? 1 : page.startsWith("legal/") ? 0.3 : 0.7,
       alternates: { languages: { ...Object.fromEntries(locales.map((l) => [l, url(l, page)])), "x-default": url("en", page) } },
     })),
-  );
+  )];
 }

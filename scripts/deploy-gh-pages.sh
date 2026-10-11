@@ -6,7 +6,7 @@ cd "$(dirname "$0")/.."
 
 # gh-pages is replaced wholesale, so a build missing a page silently deletes it
 # from the live site. Refuse to publish when an expected page is absent.
-REQUIRED_PAGES=(index.html card/index.html card/ahmet-ozturk.vcf)
+REQUIRED_PAGES=(index.html card/index.html card/ahmet-ozturk.vcf masterclass/index.html masterclass/en/index.html)
 for page in "${REQUIRED_PAGES[@]}"; do
   [ -f "out/$page" ] && continue
   echo "deploy aborted: out/$page is missing."

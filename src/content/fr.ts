@@ -19,6 +19,12 @@ export const fr: ContentOverride = {
     office: "Dubai International Financial Centre (DIFC), Dubaï, Émirats arabes unis",
   },
   ui: {
+    "partnerPopup": {
+      "title": "Partenariat stratégique NUUK × MultiBank Group",
+      "alt": "NUUK devient partenaire de MultiBank Group en Turquie",
+      "cta": "Découvrir MultiBank",
+      "close": "Fermer"
+    },
     investorLogin: "Accès investisseur",
     pnl: {
       "kicker": "Desk propriétaire",
@@ -28,7 +34,7 @@ export const fr: ContentOverride = {
       "updated": "Mis à jour",
       "source": "Compte propre de NUUK, relevé quotidien MT5, net de commission et de swap. Illustre le desk uniquement ; pas un résultat de compte géré."
     },
-    contactToOpen: "Contactez-nous pour ouvrir un compte",
+    contactToOpen: "Ouvrir un compte avec nous",
     scrollDown: "Faire défiler",
     contact: "Contact",
     getStarted: "Réserver un appel",
@@ -119,7 +125,7 @@ export const fr: ContentOverride = {
         { label: "années d'expérience de desk entre Istanbul et Londres derrière la société" },
         {"label": "variantes de stratégies back-testées depuis 2026 ; trois en production, documentées sur la page trading IA"},
         { label: "investisseurs formés lors de webinaires et de séminaires" },
-        { label: "partenariats avec des courtiers, dont six présentés sur ce site" },
+        { label: "partenariats avec des courtiers, dont sept présentés sur ce site" },
       ],
       pressTitle: "Courtiers partenaires",
     },
@@ -235,7 +241,7 @@ export const fr: ContentOverride = {
       },
       {
         "title": "Partenariats avec des courtiers",
-        "body": "Des accords d'apporteur d'affaires avec six courtiers régulés, chacun examiné de façon indépendante et documenté par un guide d'ouverture de compte étape par étape."
+        "body": "Des accords d'apporteur d'affaires avec sept courtiers régulés, chacun examiné de façon indépendante et documenté par un guide d'ouverture de compte étape par étape."
       },
       {
         "title": "Recherche et signaux",
@@ -276,7 +282,7 @@ export const fr: ContentOverride = {
       {
         "year": "Aujourd'hui",
         "title": "Un desk multilingue",
-        "body": "Un portail investisseurs, six courtiers partenaires et un site en six langues, au service des investisseurs d'Istanbul au Golfe."
+        "body": "Un portail investisseurs, sept courtiers partenaires et un site en six langues, au service des investisseurs d'Istanbul au Golfe."
       }
     ],
     "principlesTitle": "Comment NUUK travaille",
@@ -433,7 +439,7 @@ export const fr: ContentOverride = {
     metaDescription: "Comparatif indépendant des courtiers partenaires : régulation, spreads, moyens de dépôt, plateformes et ouverture de compte étape par étape.",
     kicker: "Courtiers partenaires",
     title: "Les courtiers avec lesquels NUUK travaille",
-    lead: "NUUK n'oriente ses clients que vers des courtiers avec lesquels elle trade ou qu'elle a audités. Six partenaires aujourd'hui : Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas et Darwinex. Chaque fiche indique qui les régule, ce qu'ils facturent réellement et à quelle vitesse l'argent circule.",
+    lead: "NUUK n'oriente ses clients que vers des courtiers avec lesquels elle trade ou qu'elle a audités. Sept partenaires aujourd'hui : MultiBank Group (notre partenariat pour la Turquie), Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas et Darwinex. Chaque fiche indique qui les régule, ce qu'ils facturent réellement et à quelle vitesse l'argent circule.",
     disclosure: "Les liens de cette page sont des liens d'affiliation. Si vous ouvrez et approvisionnez un compte via ces liens, NUUK perçoit une commission du courtier. Cela ne modifie pas les spreads ni les commissions que vous payez.",
     compareTitle: "Côte à côte",
     partner: {
@@ -482,7 +488,8 @@ export const fr: ContentOverride = {
         "saxo": "Conservation de niveau bancaire et plus de 70 000 instruments (actions, ETF, obligations, options), tarification par paliers pour les gros comptes.",
         "capital-com": "Minimum bas, plus de 3 000 CFD dont crypto et actions, application rapide ; adapté aux premiers pas en CFD multi-actifs.",
         "midas": "Application de courtage régulée en Türkiye pour les actions BIST, américaines et européennes dès 1 USD, en turc, avec dépôt en TRY.",
-        "darwinex": "Transformez une stratégie systématique en DARWIN investissable ou suivez la nôtre ; régulé FCA, copie et allocation intégrées."
+        "darwinex": "Transformez une stratégie systématique en DARWIN investissable ou suivez la nôtre ; régulé FCA, copie et allocation intégrées.",
+        "multibank": "Notre partenariat pour la Turquie : un seul compte, du FX et de l'or aux actions et à la crypto, supervisé par plus de 18 régulateurs, avec l'accompagnement d'ouverture en turc de NUUK."
       }
     },
     cardLabels: {
@@ -516,6 +523,46 @@ export const fr: ContentOverride = {
       verifyNote: "Conditions vérifiées sur le site du courtier le 8 septembre 2026. Vérifiez toujours les chiffres en vigueur avant d'approvisionner un compte.",
     },
     list: [
+      {
+        "tagline": "Notre partenaire pour la Turquie : FX, métaux, indices, actions et crypto sur un seul compte",
+        "founded": "2005, Californie",
+        "spreads": [
+          {
+            "value": "dès 1,5 Standard · 0,8 Pro · 0,0 ECN"
+          },
+          {
+            "value": "voir la plateforme en direct"
+          }
+        ],
+        "commission": "Standard et Pro : aucune, coût inclus dans le spread · ECN : par lot, vérifiez le tarif en vigueur",
+        "leverage": "jusqu'à 1:1000 (entité offshore) · 1:30 pour les particuliers sous CySEC et ASIC",
+        "withdrawalTime": "Demande dans l'espace client MyMultiBank ; délai selon la méthode",
+        "languages": "Support multilingue 24/7 · ouverture de compte en turc via NUUK",
+        "bestFor": "Investisseurs en Turquie qui veulent un seul compte régulé pour le FX, l'or, les indices, les actions et la crypto, avec une ouverture en turc",
+        "summary": "MultiBank Group a été fondée en Californie en 2005 et revendique aujourd'hui plus de 2 millions de clients dans 100 pays, environ 35 milliards de dollars de volume quotidien et plus de 322 millions de dollars de capital libéré. Ses entités sont agréées par l'ASIC, la CySEC, la MAS, la BaFin, la CIMA, l'Autorité des marchés de capitaux des EAU et d'autres. Depuis octobre 2026, NUUK est le partenaire apporteur d'affaires de MultiBank Group en Turquie.",
+        "faq": [
+          {
+            "q": "Que change le partenariat NUUK–MultiBank pour moi ?",
+            "a": "NUUK présente MultiBank Group aux investisseurs en Turquie. Vous ouvrez le compte à votre nom chez MultiBank ; NUUK vous accompagne en turc et fournit recherche et formation. NUUK ne détient jamais votre argent."
+          },
+          {
+            "q": "Quel est le dépôt minimum ?",
+            "a": "50 $ pour Standard, 1 000 $ pour Pro et 10 000 $ pour ECN."
+          },
+          {
+            "q": "MultiBank est-elle régulée ?",
+            "a": "Oui, via des entités distinctes : ASIC AFSL 416279, CySEC 430/23, MAS CMS101174, CIMA 1811316 et d'autres. La protection et le levier maximal dépendent de l'entité qui ouvre votre compte."
+          },
+          {
+            "q": "Existe-t-il un compte islamique ?",
+            "a": "Oui, un compte sans swap est disponible sur demande dans les pays éligibles."
+          },
+          {
+            "q": "NUUK gagne-t-elle de l'argent sur mon compte ?",
+            "a": "Oui. En tant qu'apporteur d'affaires, NUUK est rémunérée par MultiBank sur ses propres revenus. Vos spreads et commissions ne changent pas."
+          }
+        ]
+      },
       {
         tagline: "Spreads bruts dès 0.0 pip, cinq plateformes, neuf entités agréées",
         regulator: "FCA · ASIC · CySEC · DFSA · BaFin · SCB · CMA",
@@ -1360,7 +1407,7 @@ export const fr: ContentOverride = {
         "NUUK agit en tant que partenaire apporteur d'affaires (IB) pour les courtiers présentés sur ce site. Lorsque vous ouvrez et approvisionnez un compte via un lien d'affiliation, le courtier verse une commission calculée sur votre volume de trading.",
         "Cette commission est payée par le courtier et n'augmente pas les spreads, commissions ou frais que vous payez. Les fiches des courtiers sont rédigées de manière indépendante ; un courtier ne peut pas payer pour modifier une évaluation ou un point faible mentionné.",
         "Vous êtes libre d'ouvrir un compte directement auprès de n'importe quel courtier. Le lien d'affiliation est facultatif.",
-        "Partenaires actuels : Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas et Darwinex dans le cadre d'accords d'apporteur d'affaires. Tickmill, Saxo Bank et Midas exploitent en outre les structures MAM/PAMM utilisées pour les comptes gérés, dans le cadre d'accords de gestion de portefeuille distincts.",
+        "Partenaires actuels : MultiBank Group, Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas et Darwinex dans le cadre d'accords d'apporteur d'affaires. Tickmill, Saxo Bank et Midas exploitent en outre les structures MAM/PAMM utilisées pour les comptes gérés, dans le cadre d'accords de gestion de portefeuille distincts.",
       ],
     },
     privacy: {

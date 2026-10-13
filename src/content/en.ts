@@ -95,7 +95,7 @@ export const en = {
       "updated": "Updated",
       "source": "NUUK's own account, MT5 daily statement, net of commission and swap. Illustrative of the desk only; not a managed-account result."
     },
-    contactToOpen: "Contact us to open an account",
+    contactToOpen: "Open an account with us",
     scrollDown: "Scroll down",
     contact: "Contact",
     getStarted: "Book a call",
@@ -128,6 +128,12 @@ export const en = {
     fill: "",
     whatsapp: "WhatsApp",
     whatsappChannel: "WhatsApp group",
+    partnerPopup: {
+      title: "NUUK × MultiBank Group strategic partnership",
+      alt: "NUUK becomes MultiBank Group's introducing partner for Türkiye",
+      cta: "View MultiBank",
+      close: "Close",
+    },
     cookie: {
       text: "We use cookies for visitor analytics and to measure our ads. Nothing is set until you choose.",
       accept: "Accept",
@@ -220,7 +226,7 @@ export const en = {
         { value: "17", label: "years of Istanbul–London dealing-desk experience behind the firm" },
         { value: "87", label: "strategy variants back-tested since 2026; three in production, documented on the AI trading page" },
         { value: "3,000+", label: "investors trained in webinars and seminars" },
-        { value: "10+", label: "broker partnerships, six listed on this site" },
+        { value: "10+", label: "broker partnerships, seven listed on this site" },
       ],
       pressTitle: "Partner brokers",
     },
@@ -340,7 +346,7 @@ export const en = {
       },
       {
         "title": "Broker partnerships",
-        "body": "Introducing-broker agreements with six regulated brokers, each reviewed independently and documented with a step-by-step account guide."
+        "body": "Introducing-broker agreements with seven regulated brokers, each reviewed independently and documented with a step-by-step account guide."
       },
       {
         "title": "Research and signals",
@@ -381,7 +387,7 @@ export const en = {
       {
         "year": "Today",
         "title": "A multilingual desk",
-        "body": "An investor portal, six partner brokers and a website in six languages, serving investors from Istanbul to the Gulf."
+        "body": "An investor portal, seven partner brokers and a website in six languages, serving investors from Istanbul to the Gulf."
       }
     ],
     "principlesTitle": "How NUUK works",
@@ -538,7 +544,7 @@ export const en = {
     metaDescription: "Independent comparison of partner brokers: regulation, spreads, funding, platforms and step-by-step account opening.",
     kicker: "Broker partners",
     title: "The brokers NUUK works with",
-    lead: "NUUK refers clients only to brokers it trades with or has audited. Six partners today: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas and Darwinex. Each card shows who regulates them, what they really charge and how fast money moves.",
+    lead: "NUUK refers clients only to brokers it trades with or has audited. Seven partners today: MultiBank Group (our introducing partnership for Türkiye), Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas and Darwinex. Each card shows who regulates them, what they really charge and how fast money moves.",
     disclosure: "Links on this page are referral links. If you open and fund an account through them NUUK earns a commission from the broker. This does not change the spreads or commissions you pay.",
     compareTitle: "Side by side",
     partner: {
@@ -588,7 +594,8 @@ export const en = {
         "saxo": "Bank-grade custody and 70,000+ instruments across stocks, ETFs, bonds and options, with tiered pricing for larger accounts.",
         "capital-com": "Low minimum, 3,000+ CFDs including crypto and stocks, and a fast app; suits first steps in multi-asset CFDs.",
         "midas": "Turkish-regulated brokerage app for BIST, US and European shares from USD 1, in Turkish, with TRY funding.",
-        "darwinex": "Turn a systematic strategy into an investable DARWIN or follow ours; FCA-regulated with copy and allocation built in."
+        "darwinex": "Turn a systematic strategy into an investable DARWIN or follow ours; FCA-regulated with copy and allocation built in.",
+        "multibank": "Our introducing partnership for Türkiye: one account from FX and gold to shares and crypto, supervised by 18+ regulators, with NUUK's Turkish-speaking onboarding."
       }
     },
     cardLabels: {
@@ -622,6 +629,92 @@ export const en = {
       verifyNote: "Conditions verified on the broker's website on 8 September 2026. Always check the live figures before funding.",
     },
     list: [
+      {
+        "slug": "multibank",
+        "name": "MultiBank Group",
+        "tagline": "Our introducing partner for Türkiye: FX, metals, indices, shares and crypto from one account",
+        "regulator": "ASIC · CySEC · BaFin · MAS · CIMA · UAE CMA · VFSC · BVI FSC",
+        "licence": "ASIC AFSL 416279 (MEX Australia) · CySEC 430/23 (MEX Europe) · MAS CMS101174 · CIMA 1811316 (MEX Atlantic) · UAE CMA 20200000031 · VFSC 700443 · BVI FSC SIBA/L/14/1068",
+        "founded": "2005, California",
+        "minDeposit": "$50 Standard · $1,000 Pro · $10,000 ECN",
+        "platforms": [
+          "MT4",
+          "MT5",
+          "MultiBank-Plus (TradingView)",
+          "MB Trader web",
+          "MultiBank app"
+        ],
+        "spreads": [
+          {
+            "pair": "EUR/USD",
+            "value": "from 1.5 Standard · 0.8 Pro · 0.0 ECN"
+          },
+          {
+            "pair": "XAU/USD",
+            "value": "check the live platform"
+          }
+        ],
+        "commission": "Standard and Pro: none, cost is in the spread · ECN: charged per lot, check the live rate",
+        "leverage": "up to 1:1000 (offshore entity) · 1:30 retail under CySEC and ASIC",
+        "funding": [
+          "Visa / Mastercard",
+          "Bank wire",
+          "SEPA",
+          "Skrill",
+          "Neteller",
+          "Crypto (BTC, USDT)"
+        ],
+        "withdrawalTime": "Requested in the MyMultiBank client area; timing depends on the method",
+        "islamic": true,
+        "languages": "24/7 multilingual support · onboarding in Turkish through NUUK",
+        "bestFor": "Investors in Türkiye who want one regulated account for FX, gold, indices, shares and crypto, with onboarding in Turkish",
+        "pros": [
+          "One account for 20,000+ instruments across FX, metals, indices, shares and crypto (company figure)",
+          "Group entities licensed by ASIC, CySEC, MAS, BaFin, CIMA and the UAE Capital Market Authority, among others",
+          "Low entry: Standard from $50; ECN spreads from 0.0 pips",
+          "MT4, MT5 and the TradingView-based MultiBank-Plus",
+          "Card, bank, SEPA and crypto funding; card and crypto deposits credited instantly"
+        ],
+        "cons": [
+          "1:1000 leverage applies only under the offshore entity; EU and Australian retail clients are capped at 1:30",
+          "The entity you are onboarded under depends on your country: read the client agreement before funding",
+          "Inactivity fee after 90 days without trading (independent reviews cite $60 a month)"
+        ],
+        "referralHref": "https://www.multibankgroup.com/",
+        "contactToOpen": true,
+        "steps": [
+          "Contact NUUK through the form or WhatsApp; we send you the registration link and stay with you through onboarding.",
+          "Register with your name, email, phone and country, then confirm the verification code.",
+          "Upload a government ID and proof of address in the MyMultiBank client area.",
+          "Choose the account type (Standard, Pro or ECN) and the platform (MT4 or MT5).",
+          "Fund by card, bank transfer, SEPA or crypto, then log in and start trading."
+        ],
+        "status": "live",
+        "summary": "MultiBank Group was founded in California in 2005 and today reports more than 2 million clients in 100 countries, around $35 billion in daily trading volume and paid-up capital of over $322 million. Its group entities are licensed by ASIC, CySEC, MAS, BaFin, CIMA, the UAE Capital Market Authority and others. Since October 2026 NUUK is MultiBank Group's introducing partner for Türkiye: we open the account with you and support you in Turkish.",
+        "website": "https://www.multibankgroup.com/",
+        "faq": [
+          {
+            "q": "What does the NUUK–MultiBank partnership mean for me?",
+            "a": "NUUK introduces MultiBank Group to investors in Türkiye. You open the account in your own name at MultiBank; NUUK guides the onboarding in Turkish and provides research and education. NUUK never holds your money."
+          },
+          {
+            "q": "What is the minimum deposit?",
+            "a": "$50 for the Standard account, $1,000 for Pro and $10,000 for ECN."
+          },
+          {
+            "q": "Is MultiBank regulated?",
+            "a": "Yes, through separate group entities: ASIC AFSL 416279, CySEC 430/23, MAS CMS101174, CIMA 1811316, the UAE Capital Market Authority 20200000031 and others. Client protection and maximum leverage depend on the entity your account is opened with."
+          },
+          {
+            "q": "Is there an Islamic account?",
+            "a": "Yes. A swap-free account is available on request in eligible countries."
+          },
+          {
+            "q": "Does NUUK earn from my account?",
+            "a": "Yes. As introducing partner NUUK is paid by MultiBank from its own revenue. This does not change the spreads or commissions you pay."
+          }
+        ]
+      },
       {
         slug: "pepperstone",
         name: "Pepperstone",
@@ -909,7 +1002,7 @@ export const en = {
       { q: "What moves forex prices?", a: "Prices react to economic data such as interest-rate decisions, inflation and growth figures, to central-bank statements, to geopolitical events and to the market's overall expectations." },
       { q: "What is leverage?", a: "Leverage lets you hold a larger position with a small margin. It magnifies losses as much as gains and can cost you the whole amount you deposited, so it has to be used with care." },
       { q: "What do forex indicators do?", a: "Indicators process price and volume data to help you read market tendencies. They give no certain answer; they are one of several inputs to a decision." },
-      { q: "What is a forex broker?", a: "A broker is the intermediary that gives individual and institutional traders access to the forex market. Choosing one is entirely your decision; always check whether the firm is supervised by a competent authority in your country. NUUK compares six regulated partner brokers on its brokers page." },
+      { q: "What is a forex broker?", a: "A broker is the intermediary that gives individual and institutional traders access to the forex market. Choosing one is entirely your decision; always check whether the firm is supervised by a competent authority in your country. NUUK compares seven regulated partner brokers on its brokers page." },
       { q: "What is a pip?", a: "A pip is the smallest standard price move of a currency pair. It is used to measure the spread between bid and ask, to calculate trading costs and to track profit and loss." },
       { q: "What is a forex strategy?", a: "A strategy is the set of rules that decides when you enter a trade and when you leave it. A good strategy also defines when you do not trade, and includes risk management." },
       { q: "How do I start trading forex?", a: "Learn how the market works first, then practise on a demo account before committing real money. Along the way you can join our free WhatsApp group to follow the daily signals and market commentary." },
@@ -1904,7 +1997,7 @@ export const en = {
         "NUUK acts as an introducing partner for the brokers listed on this website. When you open and fund an account through a referral link, the broker pays a commission based on your trading volume.",
         "This commission is paid by the broker and does not increase the spreads, commissions or fees you pay. Broker cards are written independently; a broker cannot pay to change a rating or a listed weakness.",
         "You are free to open an account with any broker directly. The referral link is optional.",
-        "Current partners: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas and Darwinex under introducing-broker agreements. Tickmill, Saxo Bank and Midas additionally operate the MAM/PAMM structures used for managed accounts under separate portfolio-management agreements.",
+        "Current partners: MultiBank Group, Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas and Darwinex under introducing-broker agreements. Tickmill, Saxo Bank and Midas additionally operate the MAM/PAMM structures used for managed accounts under separate portfolio-management agreements.",
       ],
     },
     privacy: {

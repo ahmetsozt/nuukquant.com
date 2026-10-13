@@ -17,7 +17,7 @@ function recommend({ residence = 3, focus = 0, capital = 1 }: Required<Answers>)
   if (focus === 1) return isTurkey ? ["midas", "saxo"] : ["saxo", "capital-com"];
   if (focus === 3) return ["darwinex", "tickmill"];
   if (focus === 2) return ["capital-com", isGulf ? "pepperstone" : "tickmill"];
-  if (isTurkey) return ["tickmill", isLarge ? "saxo" : "pepperstone"];
+  if (isTurkey) return ["multibank", "tickmill"];
   if (isGulf) return ["pepperstone", isLarge ? "saxo" : "tickmill"];
   return isLarge ? ["pepperstone", "saxo"] : ["pepperstone", "tickmill"];
 }

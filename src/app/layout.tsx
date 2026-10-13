@@ -3,6 +3,7 @@ import { IBM_Plex_Sans_Arabic, Manrope } from "next/font/google";
 import Reveal from "@/components/ui/Reveal";
 import AuthRedirect from "@/components/layout/AuthRedirect";
 import Consent from "@/components/Consent";
+import PartnerPopup from "@/components/PartnerPopup";
 import ViewCounter from "@/components/ViewCounter";
 import { getContent, locales, trRootAliases } from "@/i18n";
 import { en } from "@/content/en";
@@ -96,6 +97,9 @@ const LANG_BOOT = `(function(){var p=location.pathname;var m=p.match(/^\\/(${loc
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const cookieLabels = Object.fromEntries(locales.map((l) => [l, { ...getContent(l).ui.cookie, href: getContent(l).legalLinks.find((x) => x.href.includes("privacy"))?.href ?? "/legal/privacy/" }]));
+  const popupLabels = Object.fromEntries(
+    locales.map((l) => [l, { ...getContent(l).ui.partnerPopup, href: `${getContent(l).nav[1].href}multibank/`, image: `/images/partners/multibank-${l}.jpg` }]),
+  );
   return (
     // LANG_BOOT rewrites lang/dir before hydration, so the server's "en" is expected to differ.
     <html lang="en" className={`${manrope.variable} ${arabic.variable}`} suppressHydrationWarning>
@@ -105,6 +109,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Reveal />
         <ViewCounter />
         <Consent labels={cookieLabels} />
+        <PartnerPopup labels={popupLabels} />
         <AuthRedirect />
       </body>
     </html>

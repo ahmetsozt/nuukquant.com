@@ -25,7 +25,7 @@ export const tr: ContentOverride = {
       "updated": "Güncelleme",
       "source": "NUUK'un kendi hesabı, MT5 günlük ekstresi; komisyon ve swap düşülmüş. Yalnızca masayı temsil eder; yönetilen hesap sonucu değildir."
     },
-    "contactToOpen": "Hesap açmak için bizimle iletişime geçin",
+    "contactToOpen": "Bizimle hesap açın",
     "scrollDown": "Aşağı kaydır",
     "contact": "İletişim",
     "getStarted": "Görüşme Talep Edin",
@@ -58,6 +58,12 @@ export const tr: ContentOverride = {
     "fill": "",
     "whatsapp": "WhatsApp",
     "whatsappChannel": "WhatsApp grubu",
+    "partnerPopup": {
+      "title": "NUUK × MultiBank Group stratejik ortaklığı",
+      "alt": "NUUK, MultiBank Group'un Türkiye tanıtım ortağı oldu",
+      "cta": "MultiBank'ı inceleyin",
+      "close": "Kapat"
+    },
     "cookie": {
       "text": "Ziyaretçi analitiği ve reklam ölçümü için çerez kullanıyoruz. Siz seçim yapana kadar hiçbir çerez yerleştirilmez.",
       "accept": "Kabul et",
@@ -195,7 +201,7 @@ export const tr: ContentOverride = {
         },
         {
           "value": "10+",
-          "label": "aracı kurum ortaklığı; altısı bu sitede listelenmektedir"
+          "label": "aracı kurum ortaklığı; yedisi bu sitede listelenmektedir"
         }
       ],
       "pressTitle": "Partner Aracı Kurumlar"
@@ -345,7 +351,7 @@ export const tr: ContentOverride = {
       },
       {
         "title": "Aracı kurum ortaklıkları",
-        "body": "Altı lisanslı aracı kurumla tanıtım aracılığı (IB) anlaşmaları; her biri bağımsız olarak incelenmiş ve adım adım hesap açma rehberiyle belgelenmiş."
+        "body": "Yedi lisanslı aracı kurumla tanıtım aracılığı (IB) anlaşmaları; her biri bağımsız olarak incelenmiş ve adım adım hesap açma rehberiyle belgelenmiş."
       },
       {
         "title": "Araştırma ve sinyaller",
@@ -600,7 +606,7 @@ export const tr: ContentOverride = {
     metaDescription: "Ortak aracı kurumların bağımsız karşılaştırması: düzenleyici otorite, spread'ler, para yatırma, platformlar ve adım adım hesap açma.",
     kicker: "Aracı kurum ortaklıkları",
     title: "Birlikte çalışılan aracı kurumlar",
-    lead: "Yatırımcılar yalnızca fiilen işlem yapılan veya incelenen aracı kurumlara yönlendirilir. Güncel ortaklar: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas ve Darwinex. Her kartta düzenleyici otorite, gerçek işlem maliyetleri ve para yatırma/çekme koşulları yer alır.",
+    lead: "Yatırımcılar yalnızca fiilen işlem yapılan veya incelenen aracı kurumlara yönlendirilir. Güncel ortaklar: MultiBank Group (Türkiye tanıtım ortaklığımız), Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas ve Darwinex. Her kartta düzenleyici otorite, gerçek işlem maliyetleri ve para yatırma/çekme koşulları yer alır.",
     disclosure: "Bu sayfadaki bağlantılar yönlendirme (referral) bağlantılarıdır. Bu bağlantılar üzerinden hesap açıp fonlamanız hâlinde NUUK aracı kurumdan komisyon elde eder. Bu durum ödediğiniz spread veya komisyonları değiştirmez.",
     compareTitle: "Karşılaştırma tablosu",
     partner: {
@@ -649,7 +655,8 @@ export const tr: ContentOverride = {
         "saxo": "Banka düzeyinde saklama; hisse, ETF, tahvil ve opsiyonlarda 70.000'den fazla enstrüman; büyük hesaplar için kademeli fiyatlama.",
         "capital-com": "Düşük minimum, kripto ve hisse dahil 3.000'den fazla CFD, hızlı uygulama; çoklu varlık CFD'lerine ilk adım için uygun.",
         "midas": "Türkiye'de düzenlenen aracılık uygulaması; BIST, ABD ve Avrupa hisseleri 1 USD'den, Türkçe ve TL ile fonlama.",
-        "darwinex": "Sistematik stratejinizi yatırım yapılabilir bir DARWIN'e dönüştürün ya da bizimkini takip edin; FCA denetimli, kopya ve tahsis yerleşik."
+        "darwinex": "Sistematik stratejinizi yatırım yapılabilir bir DARWIN'e dönüştürün ya da bizimkini takip edin; FCA denetimli, kopya ve tahsis yerleşik.",
+        "multibank": "Türkiye tanıtım ortaklığımız: FX ve altından hisse ve kriptoya tek hesap, 18'den fazla düzenleyici otoritenin denetimi ve NUUK'un Türkçe hesap açılış desteği."
       }
     },
     cardLabels: {
@@ -683,6 +690,74 @@ export const tr: ContentOverride = {
       "verifyNote": "Koşullar 8 Eylül 2026 tarihinde aracı kurumun web sitesinden doğrulanmıştır. Fonlama öncesinde güncel değerleri kontrol ediniz."
     },
     list: [
+      {
+        "tagline": "Türkiye tanıtım ortağımız: FX, metaller, endeksler, hisseler ve kripto tek hesapta",
+        "founded": "2005, Kaliforniya",
+        "minDeposit": "$50 Standard · $1.000 Pro · $10.000 ECN",
+        "spreads": [
+          {
+            "value": "Standard'da 1,5 · Pro'da 0,8 · ECN'de 0,0'dan itibaren"
+          },
+          {
+            "value": "canlı platformdan kontrol edin"
+          }
+        ],
+        "commission": "Standard ve Pro: yok, maliyet spread'in içinde · ECN: lot başına alınır, güncel oranı kontrol edin",
+        "leverage": "1:1000'e kadar (offshore kuruluş) · CySEC ve ASIC altında bireysel müşteride 1:30",
+        "funding": [
+          "Visa / Mastercard",
+          "Banka havalesi",
+          "SEPA",
+          "Skrill",
+          "Neteller",
+          "Kripto (BTC, USDT)"
+        ],
+        "withdrawalTime": "MyMultiBank müşteri alanından talep edilir; süre yönteme göre değişir",
+        "languages": "7/24 çok dilli destek · NUUK üzerinden Türkçe hesap açılışı",
+        "bestFor": "FX, altın, endeks, hisse ve kriptoyu tek düzenlenmiş hesapta toplamak ve hesap açılışını Türkçe yürütmek isteyen Türkiye'deki yatırımcılar",
+        "pros": [
+          "FX, metaller, endeksler, hisseler ve kriptoda 20.000'den fazla enstrüman tek hesapta (şirket verisi)",
+          "Grup şirketleri ASIC, CySEC, MAS, BaFin, CIMA ve BAE Sermaye Piyasası Kurumu başta olmak üzere birçok otoritenin lisansıyla çalışıyor",
+          "Düşük giriş: Standard 50 dolardan başlıyor; ECN'de spread 0,0 pipten",
+          "MT4, MT5 ve TradingView tabanlı MultiBank-Plus",
+          "Kart, banka, SEPA ve kripto ile fonlama; kart ve kripto yatırımları anında hesapta"
+        ],
+        "cons": [
+          "1:1000 kaldıraç yalnızca offshore kuruluşta geçerli; AB ve Avustralya'daki bireysel müşteriler 1:30 ile sınırlı",
+          "Hangi kuruluş altında hesap açılacağı ülkenize göre değişir; fonlamadan önce müşteri sözleşmesini okuyun",
+          "90 gün işlem yapılmazsa hareketsizlik ücreti (bağımsız incelemelere göre ayda 60 dolar)"
+        ],
+        "steps": [
+          "Form ya da WhatsApp üzerinden NUUK'a yazın; kayıt bağlantısını gönderir, hesap açılışı boyunca yanınızda oluruz.",
+          "Adınız, e-postanız, telefonunuz ve ülkenizle kaydolun, doğrulama kodunu onaylayın.",
+          "MyMultiBank müşteri alanına kimlik belgenizi ve adres belgenizi yükleyin.",
+          "Hesap türünü (Standard, Pro veya ECN) ve platformu (MT4 veya MT5) seçin.",
+          "Kart, banka havalesi, SEPA veya kriptoyla fonlayın; giriş yapıp işleme başlayın."
+        ],
+        "summary": "MultiBank Group 2005'te Kaliforniya'da kuruldu. Bugün 100 ülkede 2 milyondan fazla müşteri, yaklaşık 35 milyar dolarlık günlük işlem hacmi ve 322 milyon doları aşan ödenmiş sermaye bildiriyor. Grup şirketleri ASIC, CySEC, MAS, BaFin, CIMA, BAE Sermaye Piyasası Kurumu ve diğer otoritelerden lisanslı. Ekim 2026'dan bu yana NUUK, MultiBank Group'un Türkiye tanıtım ortağı: hesabı sizinle birlikte açıyor, Türkçe destek veriyoruz.",
+        "faq": [
+          {
+            "q": "NUUK–MultiBank ortaklığı benim için ne anlama geliyor?",
+            "a": "NUUK, MultiBank Group'u Türkiye'deki yatırımcılara tanıtıyor. Hesabı MultiBank'ta kendi adınıza açarsınız; NUUK hesap açılışını Türkçe yürütür, araştırma ve eğitim sağlar. NUUK paranızı hiçbir zaman teslim almaz."
+          },
+          {
+            "q": "Minimum yatırım ne kadar?",
+            "a": "Standard hesapta 50 dolar, Pro'da 1.000 dolar, ECN'de 10.000 dolar."
+          },
+          {
+            "q": "MultiBank düzenlenmiş bir kurum mu?",
+            "a": "Evet, ayrı grup şirketleri üzerinden: ASIC AFSL 416279, CySEC 430/23, MAS CMS101174, CIMA 1811316, BAE Sermaye Piyasası Kurumu 20200000031 ve diğerleri. Müşteri koruması ve azami kaldıraç, hesabınızın açıldığı kuruluşa göre değişir."
+          },
+          {
+            "q": "İslami hesap var mı?",
+            "a": "Evet. Uygun ülkelerde talep üzerine swap'sız hesap açılabiliyor."
+          },
+          {
+            "q": "NUUK benim hesabımdan kazanıyor mu?",
+            "a": "Evet. Tanıtım ortağı olarak NUUK'a ödemeyi MultiBank kendi gelirinden yapar. Bu sizin ödediğiniz spread veya komisyonu değiştirmez."
+          }
+        ]
+      },
       {
         tagline: "0,0 pip'ten başlayan ham spread'ler, beş platform, dokuz lisanslı kuruluş",
         regulator: "FCA · ASIC · CySEC · DFSA · BaFin · SCB · CMA",
@@ -920,7 +995,7 @@ export const tr: ContentOverride = {
       { "q": "Forex fiyatlarını ne belirler?", "a": "Fiyatlar; faiz kararları, enflasyon ve büyüme verileri gibi ekonomik göstergelerden, merkez bankası açıklamalarından, jeopolitik gelişmelerden ve piyasanın genel beklentisinden etkilenir." },
       { "q": "Kaldıraç nedir?", "a": "Kaldıraç, küçük bir teminatla daha büyük pozisyon taşımanıza imkân verir. Kazancı büyüttüğü kadar zararı da büyütür; yatırdığınız tutarın tamamını kaybetmenize yol açabilir. Bu yüzden dikkatle kullanılması gerekir." },
       { "q": "Forex indikatörleri ne işe yarar?", "a": "İndikatörler, fiyat ve hacim verilerini işleyerek piyasadaki eğilimleri okumanıza yardımcı olur. Kesin sonuç vermezler; karar verirken başvurduğunuz girdilerden yalnızca biridir." },
-      { "q": "Forex brokeri nedir?", "a": "Broker, bireysel ve kurumsal yatırımcıların forex piyasasına erişmesini sağlayan aracı kurumdur. Seçim tamamen size aittir; kurumun bulunduğunuz ülkede yetkili bir otorite tarafından denetlenip denetlenmediğini mutlaka kontrol edin. NUUK, aracı kurumlar sayfasında altı düzenlenmiş ortak brokeri karşılaştırır." },
+      { "q": "Forex brokeri nedir?", "a": "Broker, bireysel ve kurumsal yatırımcıların forex piyasasına erişmesini sağlayan aracı kurumdur. Seçim tamamen size aittir; kurumun bulunduğunuz ülkede yetkili bir otorite tarafından denetlenip denetlenmediğini mutlaka kontrol edin. NUUK, aracı kurumlar sayfasında yedi düzenlenmiş ortak brokeri karşılaştırır." },
       { "q": "Pip nedir?", "a": "Pip, bir paritenin standart en küçük fiyat hareketidir. Alış-satış farkını (spread) ölçmek, işlem maliyetini hesaplamak ve kâr-zarar takibi yapmak için kullanılır." },
       { "q": "Forex stratejisi nedir?", "a": "Strateji, bir işleme ne zaman girip ne zaman çıkacağınızı belirleyen kurallar bütünüdür. İyi bir strateji, hangi durumda işlem yapmayacağınızı da tanımlar ve risk yönetimini içerir." },
       { "q": "Forex'e nasıl başlanır?", "a": "Önce piyasanın nasıl işlediğini öğrenin, ardından gerçek para koymadan demo hesapta pratik yapın. Bu süreçte günlük sinyalleri ve piyasa yorumlarını takip etmek için ücretsiz WhatsApp grubumuza katılabilirsiniz." },
@@ -1956,7 +2031,7 @@ export const tr: ContentOverride = {
         "NUUK, bu web sitesinde listelenen aracı kurumlar için tanıtım aracısı (IB) olarak hareket eder. Bir yönlendirme bağlantısı üzerinden hesap açıp fonladığınızda aracı kurum, işlem hacminize dayalı bir komisyon öder.",
         "Bu komisyon aracı kurum tarafından ödenir ve ödediğiniz spread'leri, komisyonları veya ücretleri artırmaz. Aracı kurum kartları bağımsız olarak yazılır; bir aracı kurum, bir değerlendirmeyi veya listelenen bir zayıf yönü değiştirmek için ödeme yapamaz.",
         "Dilediğiniz aracı kurumda doğrudan hesap açmakta serbestsiniz. Yönlendirme bağlantısı isteğe bağlıdır.",
-        "Mevcut ortaklar: tanıtım aracısı sözleşmeleri kapsamında Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas ve Darwinex. Tickmill, Saxo Bank ve Midas ayrıca, ayrı portföy yönetimi sözleşmeleri kapsamında yönetilen hesaplar için kullanılan MAM/PAMM yapılarını işletir.",
+        "Mevcut ortaklar: tanıtım aracısı sözleşmeleri kapsamında MultiBank Group, Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas ve Darwinex. Tickmill, Saxo Bank ve Midas ayrıca, ayrı portföy yönetimi sözleşmeleri kapsamında yönetilen hesaplar için kullanılan MAM/PAMM yapılarını işletir.",
       ],
     },
     privacy: {

@@ -18,6 +18,12 @@ export const es: ContentOverride = {
     office: "Dubai International Financial Centre (DIFC), Dubái, EAU",
   },
   ui: {
+    "partnerPopup": {
+      "title": "Alianza estratégica NUUK × MultiBank Group",
+      "alt": "NUUK se convierte en socio de MultiBank Group en Turquía",
+      "cta": "Ver MultiBank",
+      "close": "Cerrar"
+    },
     investorLogin: "Acceso inversores",
     pnl: {
       "kicker": "Mesa propia",
@@ -27,7 +33,7 @@ export const es: ContentOverride = {
       "updated": "Actualizado",
       "source": "Cuenta propia de NUUK, extracto diario de MT5, neto de comisión y swap. Solo ilustra la mesa; no es un resultado de cuenta gestionada."
     },
-    contactToOpen: "Contáctenos para abrir una cuenta",
+    contactToOpen: "Abra su cuenta con nosotros",
     scrollDown: "Desplazarse hacia abajo",
     contact: "Contacto",
     getStarted: "Reservar una llamada",
@@ -117,7 +123,7 @@ export const es: ContentOverride = {
         { label: "años de experiencia en mesas de negociación entre Estambul y Londres detrás de la firma" },
         {"label": "variantes de estrategia sometidas a backtest desde 2026; tres en producción, documentadas en la página de trading con IA"},
         { label: "inversores formados en webinars y seminarios" },
-        { label: "alianzas con brókeres, seis de ellas publicadas en este sitio" },
+        { label: "alianzas con brókeres, siete de ellas publicadas en este sitio" },
       ],
       pressTitle: "Brókers asociados",
     },
@@ -233,7 +239,7 @@ export const es: ContentOverride = {
       },
       {
         "title": "Alianzas con brókeres",
-        "body": "Acuerdos de introductor con seis brókeres regulados, cada uno revisado de forma independiente y documentado con una guía de apertura de cuenta paso a paso."
+        "body": "Acuerdos de introductor con siete brókeres regulados, cada uno revisado de forma independiente y documentado con una guía de apertura de cuenta paso a paso."
       },
       {
         "title": "Investigación y señales",
@@ -431,7 +437,7 @@ export const es: ContentOverride = {
     metaDescription: "Comparativa independiente de brókeres asociados: regulación, spreads, métodos de depósito, plataformas y apertura de cuenta paso a paso.",
     kicker: "Brókeres asociados",
     title: "Los brókeres con los que trabaja NUUK",
-    lead: "NUUK solo refiere clientes a brókeres con los que opera o que ha auditado. Seis socios a día de hoy: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas y Darwinex. Cada tarjeta muestra quién los regula, qué cobran realmente y con qué rapidez se mueve el dinero.",
+    lead: "NUUK solo refiere clientes a brókeres con los que opera o que ha auditado. Siete socios a día de hoy: MultiBank Group (nuestra alianza para Turquía), Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas y Darwinex. Cada tarjeta muestra quién los regula, qué cobran realmente y con qué rapidez se mueve el dinero.",
     disclosure: "Los enlaces de esta página son enlaces de referido. Si abre y financia una cuenta a través de ellos, NUUK recibe una comisión del bróker. Esto no modifica los spreads ni las comisiones que usted paga.",
     compareTitle: "Comparativa",
     partner: {
@@ -480,7 +486,8 @@ export const es: ContentOverride = {
         "saxo": "Custodia de nivel bancario y más de 70.000 instrumentos en acciones, ETF, bonos y opciones, con precios escalonados para cuentas grandes.",
         "capital-com": "Mínimo bajo, más de 3.000 CFD incluidos cripto y acciones y una app rápida; adecuado para los primeros pasos en CFD multiactivo.",
         "midas": "App de intermediación regulada en Türkiye para acciones de BIST, EE. UU. y Europa desde 1 USD, en turco y con ingreso en TRY.",
-        "darwinex": "Convierta una estrategia sistemática en un DARWIN invertible o siga el nuestro; regulado por la FCA con copia y asignación integradas."
+        "darwinex": "Convierta una estrategia sistemática en un DARWIN invertible o siga el nuestro; regulado por la FCA con copia y asignación integradas.",
+        "multibank": "Nuestra alianza para Turquía: una sola cuenta, del FX y el oro a las acciones y las cripto, supervisada por más de 18 reguladores, con la apertura acompañada en turco por NUUK."
       }
     },
     cardLabels: {
@@ -514,6 +521,46 @@ export const es: ContentOverride = {
       verifyNote: "Condiciones verificadas en el sitio web del bróker el 8 de septiembre de 2026. Compruebe siempre las cifras vigentes antes de depositar.",
     },
     list: [
+      {
+        "tagline": "Nuestro socio para Turquía: FX, metales, índices, acciones y cripto en una sola cuenta",
+        "founded": "2005, California",
+        "spreads": [
+          {
+            "value": "desde 1,5 Standard · 0,8 Pro · 0,0 ECN"
+          },
+          {
+            "value": "consulte la plataforma en vivo"
+          }
+        ],
+        "commission": "Standard y Pro: sin comisión, el coste va en el spread · ECN: por lote, consulte la tarifa vigente",
+        "leverage": "hasta 1:1000 (entidad offshore) · 1:30 para minoristas bajo CySEC y ASIC",
+        "withdrawalTime": "Se solicita en el área de clientes MyMultiBank; el plazo depende del método",
+        "languages": "Soporte multilingüe 24/7 · apertura en turco a través de NUUK",
+        "bestFor": "Inversores en Turquía que quieren una sola cuenta regulada para FX, oro, índices, acciones y cripto, con la apertura en turco",
+        "summary": "MultiBank Group se fundó en California en 2005 y hoy declara más de 2 millones de clientes en 100 países, un volumen diario de unos 35.000 millones de dólares y más de 322 millones de dólares de capital desembolsado. Sus entidades están autorizadas por ASIC, CySEC, MAS, BaFin, CIMA, la Autoridad del Mercado de Capitales de los EAU y otras. Desde octubre de 2026 NUUK es el socio introductor de MultiBank Group en Turquía.",
+        "faq": [
+          {
+            "q": "¿Qué significa para mí la alianza NUUK–MultiBank?",
+            "a": "NUUK presenta MultiBank Group a los inversores en Turquía. Usted abre la cuenta a su nombre en MultiBank; NUUK le acompaña en turco y aporta análisis y formación. NUUK nunca custodia su dinero."
+          },
+          {
+            "q": "¿Cuál es el depósito mínimo?",
+            "a": "50 $ en Standard, 1.000 $ en Pro y 10.000 $ en ECN."
+          },
+          {
+            "q": "¿Está regulada MultiBank?",
+            "a": "Sí, a través de entidades separadas: ASIC AFSL 416279, CySEC 430/23, MAS CMS101174, CIMA 1811316 y otras. La protección y el apalancamiento máximo dependen de la entidad que abra su cuenta."
+          },
+          {
+            "q": "¿Hay cuenta islámica?",
+            "a": "Sí, hay una cuenta sin swap disponible bajo solicitud en países elegibles."
+          },
+          {
+            "q": "¿Gana NUUK con mi cuenta?",
+            "a": "Sí. Como socio introductor, MultiBank paga a NUUK de sus propios ingresos. Sus spreads y comisiones no cambian."
+          }
+        ]
+      },
       {
         tagline: "Spreads raw desde 0,0 pips, cinco plataformas, nueve entidades con licencia",
         regulator: "FCA · ASIC · CySEC · DFSA · BaFin · SCB · CMA",
@@ -1172,7 +1219,7 @@ export const es: ContentOverride = {
         "NUUK actúa como partner introductor para los brókeres publicados en este sitio web. Cuando usted abre y financia una cuenta a través de un enlace de referido, el bróker paga una comisión basada en su volumen de negociación.",
         "Esta comisión la paga el bróker y no aumenta los spreads, comisiones ni gastos que usted paga. Las fichas de los brókeres se redactan de forma independiente; un bróker no puede pagar para modificar una valoración ni una debilidad señalada.",
         "Usted es libre de abrir una cuenta directamente con cualquier bróker. El enlace de referido es opcional.",
-        "Socios actuales: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas y Darwinex bajo acuerdos de introductor de negocio. Tickmill, Saxo Bank y Midas operan además las estructuras MAM/PAMM utilizadas para las cuentas gestionadas bajo acuerdos separados de gestión de carteras.",
+        "Socios actuales: MultiBank Group, Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas y Darwinex bajo acuerdos de introductor de negocio. Tickmill, Saxo Bank y Midas operan además las estructuras MAM/PAMM utilizadas para las cuentas gestionadas bajo acuerdos separados de gestión de carteras.",
       ],
     },
     privacy: {

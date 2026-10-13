@@ -724,8 +724,7 @@ export const tr: ContentOverride = {
         ],
         "cons": [
           "1:1000 kaldıraç yalnızca offshore kuruluşta geçerli; AB ve Avustralya'daki bireysel müşteriler 1:30 ile sınırlı",
-          "Hangi kuruluş altında hesap açılacağı ülkenize göre değişir; fonlamadan önce müşteri sözleşmesini okuyun",
-          "90 gün işlem yapılmazsa hareketsizlik ücreti (bağımsız incelemelere göre ayda 60 dolar)"
+          "Hangi kuruluş altında hesap açılacağı ülkenize göre değişir; fonlamadan önce müşteri sözleşmesini okuyun"
         ],
         "steps": [
           "Form ya da WhatsApp üzerinden NUUK'a yazın; kayıt bağlantısını gönderir, hesap açılışı boyunca yanınızda oluruz.",

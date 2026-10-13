@@ -677,8 +677,7 @@ export const en = {
         ],
         "cons": [
           "1:1000 leverage applies only under the offshore entity; EU and Australian retail clients are capped at 1:30",
-          "The entity you are onboarded under depends on your country: read the client agreement before funding",
-          "Inactivity fee after 90 days without trading (independent reviews cite $60 a month)"
+          "The entity you are onboarded under depends on your country: read the client agreement before funding"
         ],
         "referralHref": "https://www.multibankgroup.com/",
         "contactToOpen": true,

@@ -524,6 +524,8 @@ export const fr: ContentOverride = {
     },
     list: [
       {
+        "referralHref": "https://multibankint.com/fr/account/live-account?lp=23&salesid=6069752926&original_ref=direct",
+        "ctaNote": "NUUK est le partenaire apporteur d'affaires de MultiBank Group. Les CFD sont des instruments complexes et présentent un risque élevé de perte rapide en capital en raison de l'effet de levier ; n'investissez que l'argent que vous pouvez vous permettre de perdre.",
         "tagline": "Notre partenaire pour la Turquie : FX, métaux, indices, actions et crypto sur un seul compte",
         "founded": "2005, Californie",
         "spreads": [

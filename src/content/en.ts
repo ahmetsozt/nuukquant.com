@@ -30,6 +30,8 @@ export type Broker = {
   referralHref: string;
   /** Accounts are opened through NUUK: CTA points to the contact page instead of a referral link. */
   contactToOpen?: boolean;
+  /** Short partner + risk line shown right under the broker's CTA. */
+  ctaNote?: string;
   steps: string[];
   status: Status;
   /** 2–3 sentence profile used on the broker's landing page. */
@@ -679,7 +681,8 @@ export const en = {
           "1:1000 leverage applies only under the offshore entity; EU and Australian retail clients are capped at 1:30",
           "The entity you are onboarded under depends on your country: read the client agreement before funding"
         ],
-        "referralHref": "https://multibankint.com/tr/account/live-account?lp=23&salesid=6069752926&original_ref=direct",
+        "referralHref": "https://multibankint.com/en/account/live-account?lp=23&salesid=6069752926&original_ref=direct",
+        "ctaNote": "NUUK is MultiBank Group's introducing partner. CFDs are complex instruments and carry a high risk of losing money rapidly due to leverage; only trade with money you can afford to lose.",
         "steps": [
           "Open the registration form through the link on this page; NUUK stays with you through onboarding in Turkish.",
           "Register with your name, email, phone and country, then confirm the verification code.",

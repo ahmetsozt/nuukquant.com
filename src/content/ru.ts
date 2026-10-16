@@ -554,6 +554,8 @@ export const ru: ContentOverride = {
     },
     list: [
       {
+        "referralHref": "https://multibankint.com/ru/account/live-account?lp=23&salesid=6069752926&original_ref=direct",
+        "ctaNote": "NUUK — представляющий партнёр MultiBank Group. CFD — сложные инструменты с высоким риском быстрой потери денег из-за кредитного плеча; торгуйте только теми средствами, потерю которых можете себе позволить.",
         "tagline": "Наш партнёр в Турции: FX, металлы, индексы, акции и криптовалюты на одном счёте",
         "founded": "2005, Калифорния",
         "spreads": [

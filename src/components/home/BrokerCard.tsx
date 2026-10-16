@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrokerCtaNote from "@/components/brokers/BrokerCtaNote";
 import Badge from "@/components/ui/Badge";
 import BrokerLogo from "@/components/ui/BrokerLogo";
 import Button from "@/components/ui/Button";
@@ -64,6 +65,7 @@ export function BrokerCardCompact({ b, c }: { b: Broker; c: SiteContent }) {
             {L.profile} <Icon name="arrow-up-right" size={13} />
           </Link>
         </div>
+        <BrokerCtaNote b={b} className="mt-4 text-muted" />
       </div>
     </article>
   );
@@ -109,6 +111,7 @@ export function BrokerCardFull({ b, c }: { b: Broker; c: SiteContent }) {
               {L.profile} <Icon name="arrow-up-right" size={14} />
             </Link>
           </div>
+          <BrokerCtaNote b={b} className="mt-4 font-medium text-ink" />
           <p className="mt-4 text-[11.5px] leading-5 text-muted">{c.brokers.disclosure}</p>
         </div>
         <div className="grid gap-8 p-6 lg:col-span-8 lg:grid-cols-2 lg:p-8">

@@ -524,6 +524,8 @@ export const ar: ContentOverride = {
     },
     list: [
       {
+        "referralHref": "https://multibankint.com/ar/account/live-account?lp=23&salesid=6069752926&original_ref=direct",
+        "ctaNote": "NUUK هي الشريك المعرِّف لـ MultiBank Group. عقود الفروقات أدوات معقدة وتنطوي على مخاطر عالية لخسارة الأموال بسرعة بسبب الرافعة المالية؛ لا تتداول إلا بأموال يمكنك تحمّل خسارتها.",
         "tagline": "شريكنا المعرِّف في تركيا: الفوركس والمعادن والمؤشرات والأسهم والعملات المشفرة في حساب واحد",
         "founded": "2005، كاليفورنيا",
         "minDeposit": "50$ Standard · 1,000$ Pro · 10,000$ ECN",

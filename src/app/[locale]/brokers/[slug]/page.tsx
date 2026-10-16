@@ -2,6 +2,7 @@ import { brokerCta } from "@/components/home/BrokerCard";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import BrokerCtaNote from "@/components/brokers/BrokerCtaNote";
 import PageIntro from "@/components/sections/PageIntro";
 import Faq from "@/components/sections/Faq";
 import SectionHead from "@/components/ui/SectionHead";
@@ -87,6 +88,7 @@ export default async function BrokerLandingPage({ params }: { params: Params }) 
           {cta}
           <Badge status={b.status} c={c} className="bg-white/10 text-white" />
         </div>
+        <BrokerCtaNote b={b} className="mt-4 text-white/70" />
         <p className="mt-6 text-[13px] text-white/60">
           {L.bestFor}: <Fill text={b.bestFor} />
         </p>
@@ -201,6 +203,7 @@ export default async function BrokerLandingPage({ params }: { params: Params }) 
             </ol>
             <div className="mt-10 flex flex-col items-center gap-4">
               {cta}
+              <BrokerCtaNote b={b} className="text-center font-medium text-ink" />
               <p className="max-w-[640px] text-center text-[12px] leading-5 text-muted">{c.brokers.disclosure}</p>
               <Link href={c.nav[1].href} className="text-[13px] font-semibold text-ink hover:text-primary">
                 ← {L.allBrokers}

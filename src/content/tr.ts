@@ -691,6 +691,8 @@ export const tr: ContentOverride = {
     },
     list: [
       {
+        "referralHref": "https://multibankint.com/tr/account/live-account?lp=23&salesid=6069752926&original_ref=direct",
+        "ctaNote": "NUUK, MultiBank Group'un tanıtım ortağıdır. CFD'ler karmaşık araçlardır ve kaldıraç nedeniyle hızla para kaybetme riski yüksektir; yalnızca kaybetmeyi göze alabileceğiniz parayla işlem yapın.",
         "tagline": "Türkiye tanıtım ortağımız: FX, metaller, endeksler, hisseler ve kripto tek hesapta",
         "founded": "2005, Kaliforniya",
         "minDeposit": "$50 Standard · $1.000 Pro · $10.000 ECN",
@@ -727,7 +729,7 @@ export const tr: ContentOverride = {
           "Hangi kuruluş altında hesap açılacağı ülkenize göre değişir; fonlamadan önce müşteri sözleşmesini okuyun"
         ],
         "steps": [
-          "Form ya da WhatsApp üzerinden NUUK'a yazın; kayıt bağlantısını gönderir, hesap açılışı boyunca yanınızda oluruz.",
+          "Bu sayfadaki bağlantıyla kayıt formunu açın; hesap açılışı boyunca Türkçe destekle yanınızdayız.",
           "Adınız, e-postanız, telefonunuz ve ülkenizle kaydolun, doğrulama kodunu onaylayın.",
           "MyMultiBank müşteri alanına kimlik belgenizi ve adres belgenizi yükleyin.",
           "Hesap türünü (Standard, Pro veya ECN) ve platformu (MT4 veya MT5) seçin.",

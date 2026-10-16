@@ -7,6 +7,7 @@ import Fill from "@/components/ui/Fill";
 import Badge from "@/components/ui/Badge";
 import BrokerLogo from "@/components/ui/BrokerLogo";
 import Button from "@/components/ui/Button";
+import BrokerCtaNote from "@/components/brokers/BrokerCtaNote";
 import { BrokerCardFull, brokerCta, brokerHref } from "@/components/home/BrokerCard";
 import BrokerWizard from "@/components/brokers/BrokerWizard";
 import { resolve, type LocaleParams } from "@/lib/page";
@@ -91,6 +92,7 @@ export default async function BrokersPage({ params }: { params: LocaleParams }) 
                       >
                         {brokerCta(c, b).label}
                       </a>
+                      <BrokerCtaNote b={b} className="mt-3 min-w-[200px] font-normal whitespace-normal text-muted" />
                     </td>
                   ))}
                 </tr>

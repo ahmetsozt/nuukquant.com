@@ -679,17 +679,16 @@ export const en = {
           "1:1000 leverage applies only under the offshore entity; EU and Australian retail clients are capped at 1:30",
           "The entity you are onboarded under depends on your country: read the client agreement before funding"
         ],
-        "referralHref": "https://www.multibankgroup.com/",
-        "contactToOpen": true,
+        "referralHref": "https://multibankint.com/tr/account/live-account?lp=23&salesid=6069752926&original_ref=direct",
         "steps": [
-          "Contact NUUK through the form or WhatsApp; we send you the registration link and stay with you through onboarding.",
+          "Open the registration form through the link on this page; NUUK stays with you through onboarding in Turkish.",
           "Register with your name, email, phone and country, then confirm the verification code.",
           "Upload a government ID and proof of address in the MyMultiBank client area.",
           "Choose the account type (Standard, Pro or ECN) and the platform (MT4 or MT5).",
           "Fund by card, bank transfer, SEPA or crypto, then log in and start trading."
         ],
         "status": "live",
-        "summary": "MultiBank Group was founded in California in 2005 and today reports more than 2 million clients in 100 countries, around $35 billion in daily trading volume and paid-up capital of over $322 million. Its group entities are licensed by ASIC, CySEC, MAS, BaFin, CIMA, the UAE Capital Market Authority and others. Since October 2026 NUUK is MultiBank Group's introducing partner for Türkiye: we open the account with you and support you in Turkish.",
+        "summary": "MultiBank Group was founded in California in 2005 and today reports more than 2 million clients in 100 countries, around $35 billion in daily trading volume and paid-up capital of over $322 million. Its group entities are licensed by ASIC, CySEC, MAS, BaFin, CIMA, the UAE Capital Market Authority and others. Since October 2026 NUUK is MultiBank Group's introducing partner for Türkiye: we open the account with you and support you in Turkish. The link on this page is a referral link and NUUK earns a commission on accounts opened through it; this costs you nothing and changes nothing about your account terms.",
         "website": "https://www.multibankgroup.com/",
         "faq": [
           {

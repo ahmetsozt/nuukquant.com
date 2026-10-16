@@ -522,6 +522,8 @@ export const es: ContentOverride = {
     },
     list: [
       {
+        "referralHref": "https://broker/es/account/live-account?lp=23&salesid=6069752926&original_ref=direct",
+        "ctaNote": "NUUK es socio introductor de broker Group. Los CFD son instrumentos complejos y conllevan un alto riesgo de perder dinero rápidamente debido al apalancamiento; opere solo con dinero que pueda permitirse perder.",
         "tagline": "Nuestro socio para Turquía: FX, metales, índices, acciones y cripto en una sola cuenta",
         "founded": "2005, California",
         "spreads": [

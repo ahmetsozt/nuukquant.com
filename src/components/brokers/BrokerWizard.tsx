@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import BrokerCtaNote from "@/components/brokers/BrokerCtaNote";
 import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
 import { brokerCta, brokerHref } from "@/lib/brokers";
@@ -62,6 +63,7 @@ export default function BrokerWizard({ c }: { c: SiteContent }) {
             {c.brokers.cardLabels.profile} <Icon name="arrow-up-right" size={14} />
           </Link>
         </div>
+        <BrokerCtaNote b={b} className={`mt-4 ${isPrimary ? "text-white/70" : "text-muted"}`} />
       </div>
     );
   };

@@ -475,7 +475,7 @@ export const tr: ContentOverride = {
       },
       {
         "q": "Minimum sermaye ne kadardır?",
-        "a": "Kopya işlem ve sinyal hizmetleri için 1.000 USD. Portföy yönetimi kapsamındaki MAM/PAMM hesapları, portföy yönetimi sayfasında belirtilen minimum tahsis tutarından başlar."
+        "a": "WhatsApp sinyalleri için 250 USD, havuz MAM için 5.000 USD. Portföy yönetimi kapsamındaki MAM/PAMM hesapları, portföy yönetimi sayfasında belirtilen minimum tahsis tutarından başlar."
       },
       {
         "q": "Kaynak kod paylaşılıyor mu?",
@@ -537,16 +537,26 @@ export const tr: ContentOverride = {
         "body": "Her işlem kendi hesabınızda gerçek zamanlı görüntülenir; ayrıca aylık rapor ve üç ayda bir değerlendirme görüşmesi yapılır."
       }
     ],
-    "tiersTitle": "İki tahsis modeli",
+    "tiersTitle": "Üç tahsis modeli",
     "tiers": [
+      {
+        "name": "Ücretsiz WhatsApp Sinyalleri",
+        "tagline": "Sinyaller size gelir, işlemi siz açarsınız",
+        "minimum": "250 USD (MultiBank'ta kendi hesabınız)",
+        "managementFee": "Aylık 49 USD AI üyelik ücreti",
+        "performanceFee": "Yok",
+        "lockup": "Yok; istediğiniz zaman ayrılırsınız",
+        "structure": "Kendi MultiBank hesabınız; sinyaller WhatsApp'tan gelir",
+        "forWhom": "Küçük bakiyeyle başlayıp işlemi kendi eliyle açmak isteyenler"
+      },
       {
         "name": "Havuz MAM",
         "tagline": "Sistemler, kendi hesabınızın içinde",
-        "minimum": "1.000 USD",
+        "minimum": "5.000 USD",
         "managementFee": "Yok",
         "performanceFee": "Yüksek su işaretinin (high-water mark) üzerindeki kârın %25'i",
         "lockup": "30 gün; ardından dilediğiniz zaman çekebilirsiniz",
-        "structure": "Tickmill veya Darwinex'te MAM / kopya işlem havuzu",
+        "structure": "MultiBank'ta MAM / kopya işlem havuzu",
         "forWhom": "Sistemleri kendisi çalıştırmak istemeyen bireysel yatırımcılar"
       },
       {
@@ -1422,7 +1432,7 @@ export const tr: ContentOverride = {
       {
         "title": "Portföy yönetimi",
         "share": "Yönetim ve performans ücretleri",
-        "body": "İki yapı. Havuz MAM'da yönetim ücreti yoktur; en yüksek değer seviyesinin üzerindeki kârın %25'i alınır. Özel hesapta (250.000 USD'den itibaren) aylık 1.000 USD yönetim ücreti ve yönetim ücreti düşüldükten sonra en yüksek değer seviyesinin üzerindeki kârın %25'i alınır.",
+        "body": "Üç yapı. WhatsApp sinyallerinde performans ücreti yoktur, yalnız aylık 49 USD AI üyelik ücreti alınır. Havuz MAM'da yönetim ücreti yoktur; en yüksek değer seviyesinin üzerindeki kârın %25'i alınır. Özel hesapta (250.000 USD'den itibaren) aylık 1.000 USD yönetim ücreti ve yönetim ücreti düşüldükten sonra en yüksek değer seviyesinin üzerindeki kârın %25'i alınır.",
         "how": "Aracı kurum tarafından hesabınızdan kesilir ve her ekstrede görünür"
       },
       {
@@ -2095,7 +2105,7 @@ export const tr: ContentOverride = {
       },
       {
         "title": "Fonlayın ve bağlayın",
-        "body": "Aracı kurum hesabınızı fonlayın: havuz MAM veya sinyal planı için 1.000 USD'den, özel manda için 250.000 USD'den itibaren. Ardından seçtiğiniz yapıya bağlayın."
+        "body": "Aracı kurum hesabınızı fonlayın: WhatsApp sinyalleri için 250 USD'den, havuz MAM için 5.000 USD'den, özel manda için 250.000 USD'den itibaren. Ardından seçtiğiniz yapıya bağlayın."
       },
       {
         "title": "İşleme başlayın",

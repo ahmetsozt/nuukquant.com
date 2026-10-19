@@ -343,7 +343,7 @@ export const fr: ContentOverride = {
     faqTitle: "Questions fréquentes",
     faq: [
       { q: "Puis-je faire tourner un système sur mon propre compte ?", a: "Oui. Selon le courtier, vous pouvez faire du copy trading, rejoindre une structure MAM/PAMM chez Tickmill, Saxo Bank ou Midas, ou suivre le canal de signaux et exécuter vous-même. Dans tous les cas, le compte reste à votre nom." },
-      { q: "Quel est le capital minimum ?", a: "USD 1,000 pour le copy trading ou les signaux. Les comptes gérés MAM/PAMM commencent à l'allocation minimale indiquée sur la page des comptes gérés." },
+      { q: "Quel est le capital minimum ?", a: "250 USD pour les signaux WhatsApp et 5 000 USD pour le pool MAM. Les comptes gérés MAM/PAMM commencent à l'allocation minimale indiquée sur la page des comptes gérés." },
       { q: "Partagez-vous le code ?", a: "Non. Le code reste propriétaire. NUUK publie la méthodologie, les règles de risque et les résultats, chacun avec sa source." },
     ],
   },
@@ -378,16 +378,26 @@ export const fr: ContentOverride = {
       { title: "Mandat de risque", body: "Un mandat écrit fixe l'exposition maximale, la limite de perte quotidienne et les instruments. Le système ne peut pas le dépasser." },
       { title: "Reporting", body: "Vous voyez chaque trade en temps réel sur votre propre compte, plus un rapport mensuel et un appel de revue trimestriel." },
     ],
-    tiersTitle: "Deux façons d'allouer",
+    tiersTitle: "Trois façons d'allouer",
     tiers: [
+      {
+        "name": "Signaux WhatsApp gratuits",
+        "tagline": "Les signaux vous parviennent ; vous passez les ordres",
+        "minimum": "250 USD (votre propre compte MultiBank)",
+        "managementFee": "49 USD par mois pour l'abonnement IA",
+        "performanceFee": "Aucuns",
+        "lockup": "Aucun ; vous partez quand vous voulez",
+        "structure": "Votre propre compte MultiBank ; les signaux arrivent sur WhatsApp",
+        "forWhom": "Ceux qui démarrent avec un petit solde et veulent passer les ordres eux-mêmes"
+      },
       {
         "name": "Pool MAM",
         "tagline": "Les systèmes, dans votre propre compte",
-        "minimum": "1 000 USD",
+        "minimum": "5 000 USD",
         "managementFee": "Aucuns",
         "performanceFee": "25 % des profits au-dessus du high-water mark",
         "lockup": "30 jours, puis retrait à tout moment",
-        "structure": "Pool MAM / copy trading chez Tickmill ou Darwinex",
+        "structure": "Pool MAM / copy trading chez MultiBank",
         "forWhom": "Investisseurs autonomes qui veulent les systèmes sans les piloter"
       },
       {
@@ -1043,7 +1053,7 @@ export const fr: ContentOverride = {
       {
         "title": "Gestion de portefeuille",
         "share": "Frais de gestion et de performance",
-        "body": "Deux structures. Le MAM mutualisé ne facture aucun frais de gestion et 25 % des bénéfices au-dessus du plus-haut historique. Le compte dédié (à partir de 250 000 USD) facture 1 000 USD par mois plus 25 % des bénéfices au-dessus du plus-haut historique, après frais de gestion.",
+        "body": "Trois structures. Les signaux WhatsApp ne facturent aucune commission de performance, seulement 49 USD par mois pour l'abonnement IA. Le MAM mutualisé ne facture aucun frais de gestion et 25 % des bénéfices au-dessus du plus-haut historique. Le compte dédié (à partir de 250 000 USD) facture 1 000 USD par mois plus 25 % des bénéfices au-dessus du plus-haut historique, après frais de gestion.",
         "how": "Prélevés par le courtier sur votre compte et visibles sur chaque relevé"
       },
       {
@@ -1447,7 +1457,7 @@ export const fr: ContentOverride = {
     steps: [
       { title: "Réserver un appel", body: "30 minutes pour décider quel service vous convient : courtier, signaux, compte géré ou formation." },
       { title: "Ouvrir un compte de courtage", body: "À votre nom, chez un courtier partenaire. La vérification prend environ 10 minutes avec une pièce d'identité et un justificatif de domicile." },
-      {"title": "Financer et connecter", "body": "Financez votre compte courtier : à partir de 1 000 USD pour le pool MAM ou un plan de signaux, 250 000 USD pour un mandat dédié. Connectez-le à la structure choisie."},
+      {"title": "Financer et connecter", "body": "Financez votre compte courtier : à partir de 250 USD pour les signaux WhatsApp, 5 000 USD pour le pool MAM, 250 000 USD pour un mandat dédié. Connectez-le à la structure choisie."},
       { title: "Commencer à trader", body: "Suivez le plan, examinez les résultats chaque mois et ne prenez jamais un trade que vous ne pouvez pas expliquer." },
     ],
     cta: { label: "Réserver un appel" },

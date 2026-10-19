@@ -87,6 +87,7 @@ export const es: ContentOverride = {
     },
     { label: "Brókeres" },
     { label: "Historial verificado" },
+    { label: "Masterclass" },
     { label: "Análisis", items: [{ label: "Notas de mercado" }, { label: "Calendario económico" }] },
     {
       label: "Sobre mí",

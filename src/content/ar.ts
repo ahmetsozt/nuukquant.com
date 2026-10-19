@@ -89,6 +89,7 @@ export const ar: ContentOverride = {
     },
     { label: "الوسطاء" },
     { label: "سجل الأداء" },
+    { label: "ماستركلاس" },
     { label: "رؤى", items: [{ label: "ملاحظات السوق" }, { label: "التقويم الاقتصادي" }] },
     {
       label: "عني",

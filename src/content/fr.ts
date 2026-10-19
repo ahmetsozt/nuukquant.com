@@ -88,6 +88,7 @@ export const fr: ContentOverride = {
     },
     { label: "Courtiers" },
     { label: "Track record" },
+    { label: "Masterclass" },
     { label: "Analyses", items: [{ label: "Notes de marché" }, { label: "Calendrier économique" }] },
     {
       label: "À propos",

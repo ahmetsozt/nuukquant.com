@@ -180,6 +180,7 @@ export const en = {
     },
     { label: "Brokers", href: "/brokers/", items: [] },
     { label: "Track record", href: "/track-record/", items: [] },
+    { label: "Masterclass", href: "https://www.nuukquant.com/masterclass/en/", items: [] },
     {
       label: "Insights",
       href: "/insights/",

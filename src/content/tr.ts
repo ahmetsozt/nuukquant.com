@@ -123,6 +123,7 @@ export const tr: ContentOverride = {
     {
       "label": "Performans"
     },
+    { "label": "Masterclass", "href": "https://www.nuukquant.com/masterclass/" },
     {
       "label": "Analizler",
       "items": [

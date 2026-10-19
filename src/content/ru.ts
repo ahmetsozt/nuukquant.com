@@ -87,6 +87,7 @@ export const ru: ContentOverride = {
     },
     { label: "Брокеры" },
     { label: "Трек-рекорд" },
+    { label: "Мастер-класс" },
     { label: "Аналитика", items: [{ label: "Заметки о рынке" }, { label: "Экономический календарь" }] },
     {
       label: "Обо мне",

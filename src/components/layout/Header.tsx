@@ -95,7 +95,7 @@ export default function Header({ c, locale }: { c: SiteContent; locale: Locale }
             <ul className="flex h-full items-center gap-1">
               {c.nav.map((group) => (
                 <li key={group.label} className="group/menu relative flex h-full items-center">
-                  <Link href={group.href} className="rounded-pill px-3.5 py-2 text-[14px] font-medium text-white/85 transition-colors hover:bg-white/10 hover:text-white">
+                  <Link href={group.href} className="rounded-pill px-2.5 py-2 xl:px-3.5 text-[14px] font-medium whitespace-nowrap text-white/85 transition-colors hover:bg-white/10 hover:text-white">
                     {group.label}
                   </Link>
                   {group.items.length > 0 && (
@@ -117,7 +117,7 @@ export default function Header({ c, locale }: { c: SiteContent; locale: Locale }
           </nav>
 
           <div className="hidden items-center gap-3 lg:flex">
-            <Link href={contactHref} className="px-2 text-[14px] font-medium text-white/85 hover:text-white">
+            <Link href={contactHref} className="hidden px-2 text-[14px] xl:inline font-medium text-white/85 hover:text-white">
               {c.ui.contact}
             </Link>
             <Button href={contactHref} variant="header" size="sm" className="py-3.5 text-[15px]" event="cta_click" eventLabel="header">

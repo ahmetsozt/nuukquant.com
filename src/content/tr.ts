@@ -2154,7 +2154,7 @@ export const tr: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — XAUUSD & XAGUSD masası",
-      "source": "Varsayımsal performans · MT4 detaylı rapor, 8 Eki 2026",
+      "source": "Model portföy · MT4 detaylı rapor, 8 Eki 2026",
       "updated": "2026-10-08",
       "stats": [
         {

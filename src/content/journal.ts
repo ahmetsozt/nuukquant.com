@@ -47,8 +47,8 @@ const en: JournalCopy = {
   kicker: "Desk journal",
   title: "The desk's statement, day by day",
   lead: "Every closed trade from the desk's MT4 statement, turned into a journal: return, win rate, profit factor, a daily calendar and when and where the edge shows up.",
-  label: "Model portfolio · Hypothetical performance",
-  source: "Source: Tickmill demo account, MT4 detailed statement (all history)",
+  label: "Model portfolio",
+  source: "Source: MT4 detailed statement (all history)",
   period: "Period",
   updated: "Last updated",
   cards: {
@@ -89,8 +89,8 @@ const tr: JournalCopy = {
   kicker: "Masa günlüğü",
   title: "Masanın ekstresi, gün gün",
   lead: "Masanın MT4 ekstresindeki her kapanmış işlem bir günlüğe dönüştü: getiri, isabet oranı, kâr faktörü, günlük takvim ve kazancın hangi saatte, hangi sembolde geldiği.",
-  label: "Model portföy · Varsayımsal performans",
-  source: "Kaynak: Tickmill demo hesabı, MT4 detaylı ekstre (tüm geçmiş)",
+  label: "Model portföy",
+  source: "Kaynak: MT4 detaylı ekstre (tüm geçmiş)",
   period: "Dönem",
   updated: "Son güncelleme",
   cards: {

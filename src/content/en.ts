@@ -2136,7 +2136,7 @@ export const en = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — XAUUSD & XAGUSD desk",
-      "source": "Hypothetical performance · MT4 detailed statement, 8 Oct 2026",
+      "source": "Model portfolio · MT4 detailed statement, 8 Oct 2026",
       "verifiedHref": "",
       "status": "model",
       "since": "2026",

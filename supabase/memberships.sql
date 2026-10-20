@@ -103,3 +103,16 @@ language sql stable security definer set search_path = public as $$
             from public.applications a join public.plans pl on pl.slug = a.plan_slug where a.status = 'active')
   ) end
 $$;
+
+-- Data API yetkileri (Supabase, 30 Ekim 2026'dan itibaren "public" şemadaki yeni
+-- tablolara otomatik yetki vermiyor). Bu dosya sıfırdan çalıştırılırsa tablolar
+-- API'ye kapalı doğmasın diye yetkiler burada açıkça veriliyor. Kapsam RLS
+-- kurallarından türetildi: kimin hangi satıra eriştiğine yine RLS karar verir,
+-- bu satırlar yalnız rolün tabloya hiç dokunup dokunamayacağını belirler.
+-- Anonim: başvuru formu aktif paketleri okur (plans_public_read) ve başvuru
+-- yazar (applications_insert_public). Form insert'ten sonra satırı geri
+-- okumadığı için anonime applications üzerinde SELECT verilmez.
+grant select on public.plans to anon;
+grant insert on public.applications to anon;
+grant select, insert, update, delete on public.plans, public.applications to authenticated;
+grant all on public.plans, public.applications to service_role;

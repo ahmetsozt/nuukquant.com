@@ -87,3 +87,17 @@ create or replace view public.site_views_sources as
 select site, coalesce(ref_host, '(doğrudan)') as kaynak, count(*) as ziyaret
 from public.site_views
 group by 1, 2;
+
+-- Data API yetkileri (Supabase, 30 Ekim 2026'dan itibaren "public" şemadaki yeni
+-- tablolara otomatik yetki vermiyor). Bu dosya sıfırdan çalıştırılırsa tablolar
+-- API'ye kapalı doğmasın diye yetkiler burada açıkça veriliyor. Kapsam RLS
+-- kurallarından türetildi: kimin hangi satıra eriştiğine yine RLS karar verir,
+-- bu satırlar yalnız rolün tabloya hiç dokunup dokunamayacağını belirler.
+-- Ziyaret yazımı record_view() üzerinden (security definer, yukarıda yetkili);
+-- tabloya doğrudan anonim yazma yok. Okuma yalnız admin (site_views_admin) —
+-- görünümler security_invoker olduğu için aynı RLS'ye tabi.
+grant select on public.site_views, public.site_views_daily,
+                public.site_views_pages, public.site_views_sources to authenticated;
+grant all on public.site_views to service_role;
+grant select on public.site_views_daily, public.site_views_pages,
+                public.site_views_sources to service_role;

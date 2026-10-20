@@ -61,3 +61,12 @@ end $$;
 drop trigger if exists applications_notify on public.applications;
 create trigger applications_notify after insert on public.applications
   for each row execute procedure public.notify_new_application();
+
+-- Data API yetkileri (Supabase, 30 Ekim 2026'dan itibaren "public" şemadaki yeni
+-- tablolara otomatik yetki vermiyor). Bu dosya sıfırdan çalıştırılırsa tablolar
+-- API'ye kapalı doğmasın diye yetkiler burada açıkça veriliyor. Kapsam RLS
+-- kurallarından türetildi: kimin hangi satıra eriştiğine yine RLS karar verir,
+-- bu satırlar yalnız rolün tabloya hiç dokunup dokunamayacağını belirler.
+-- Yalnız admin (settings_admin); anonime yetki yok.
+grant select, insert, update, delete on public.settings to authenticated;
+grant all on public.settings to service_role;

@@ -193,3 +193,18 @@ create policy reports_admin_delete on storage.objects for delete using (bucket_i
 
 -- After running: make yourself admin.
 -- update public.profiles set role = 'admin' where email = 'ahmet@ahmetsozturk.com';
+
+-- Data API yetkileri (Supabase, 30 Ekim 2026'dan itibaren "public" şemadaki yeni
+-- tablolara otomatik yetki vermiyor). Bu dosya sıfırdan çalıştırılırsa tablolar
+-- API'ye kapalı doğmasın diye yetkiler burada açıkça veriliyor. Kapsam RLS
+-- kurallarından türetildi: kimin hangi satıra eriştiğine yine RLS karar verir,
+-- bu satırlar yalnız rolün tabloya hiç dokunup dokunamayacağını belirler.
+-- Hepsi giriş gerektiriyor (auth.uid / has_panel / is_admin); anonime yetki yok.
+grant select, insert, update, delete
+  on public.profiles, public.panels, public.entitlements, public.signal_posts,
+     public.pnl_days, public.reports, public.education_items
+  to authenticated;
+grant all
+  on public.profiles, public.panels, public.entitlements, public.signal_posts,
+     public.pnl_days, public.reports, public.education_items
+  to service_role;

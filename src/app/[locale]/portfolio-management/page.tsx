@@ -39,20 +39,24 @@ export default async function ManagedPage({ params }: { params: LocaleParams }) 
         <div className="container-x">
           <SectionHead title={p.tiersTitle} />
           <div className="mt-10 grid gap-5 lg:grid-cols-2">
-            {p.tiers.map((t, i) => (
-              <article key={t.name} className={`rv rounded-card p-8 ${i === 1 ? "bg-ink text-white" : "bg-white shadow-card ring-1 ring-black/5"}`}>
-                <p className={`kicker ${i === 1 ? "text-cyan" : ""}`}>{t.tagline}</p>
-                <h3 className={`mt-2 text-[26px] ${i === 1 ? "text-white" : ""}`}>{t.name}</h3>
-                <dl className={`mt-6 divide-y text-[14px] ${i === 1 ? "divide-white/10" : "divide-black/5"}`}>
+            {p.tiers.map((t, i) => {
+              // 2x2 ızgarada dama düzeni: sağ üst ve sol alt koyu.
+              const dark = i === 1 || i === 2;
+              return (
+              <article key={t.name} className={`rv rounded-card p-8 ${dark ? "bg-ink text-white" : "bg-white shadow-card ring-1 ring-black/5"}`}>
+                <p className={`kicker ${dark ? "text-cyan" : ""}`}>{t.tagline}</p>
+                <h3 className={`mt-2 text-[26px] ${dark ? "text-white" : ""}`}>{t.name}</h3>
+                <dl className={`mt-6 divide-y text-[14px] ${dark ? "divide-white/10" : "divide-black/5"}`}>
                   {(["minimum", "managementFee", "performanceFee", "lockup", "structure", "forWhom"] as const).map((k) => (
                     <div key={k} className="grid grid-cols-[minmax(0,11rem)_1fr] gap-4 py-3">
-                      <dt className={i === 1 ? "text-white/60" : "text-muted"}>{p.tierLabels[k]}</dt>
-                      <dd className={`font-medium ${i === 1 ? "text-white" : "text-ink"}`}>{t[k]}</dd>
+                      <dt className={dark ? "text-white/60" : "text-muted"}>{p.tierLabels[k]}</dt>
+                      <dd className={`font-medium ${dark ? "text-white" : "text-ink"}`}>{t[k]}</dd>
                     </div>
                   ))}
                 </dl>
               </article>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

@@ -417,7 +417,7 @@ export const ar: ContentOverride = {
         "managementFee": "1,000 دولار شهرياً (نحو 4.8% سنوياً عند الحد الأدنى، وأقل نسبياً فوقه)",
         "performanceFee": "25% من الأرباح فوق علامة الذروة",
         "lockup": "إشعار مسبق 30 يوماً",
-        "structure": "PAMM أو حساب مُدار منفصل لدى Saxo Bank أو Tickmill أو Midas",
+        "structure": "PAMM أو حساب مُدار منفصل لدى MultiBank",
         "forWhom": "المكاتب العائلية وخزائن الشركات والمستثمرون المحترفون"
       }
     ],

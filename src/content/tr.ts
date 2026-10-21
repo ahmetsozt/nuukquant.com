@@ -576,7 +576,7 @@ export const tr: ContentOverride = {
         "managementFee": "Aylık 1.000 USD (minimum tutarda yıllık yaklaşık %4,8; üzerinde oransal olarak düşer)",
         "performanceFee": "Yüksek su işaretinin (high-water mark) üzerindeki kârın %25'i",
         "lockup": "30 gün önceden bildirim",
-        "structure": "Saxo Bank, Tickmill veya Midas'ta PAMM ya da ayrı yönetilen hesap",
+        "structure": "MultiBank'ta PAMM ya da ayrı yönetilen hesap",
         "forWhom": "Aile ofisleri, kurumsal hazineler ve profesyonel yatırımcılar"
       }
     ],

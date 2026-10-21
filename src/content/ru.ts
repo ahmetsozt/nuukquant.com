@@ -439,7 +439,7 @@ export const ru: ContentOverride = {
         "managementFee": "1 000 USD в месяц (около 4,8% годовых при минимуме, пропорционально меньше выше него)",
         "performanceFee": "25% прибыли выше high-water mark",
         "lockup": "Уведомление за 30 дней",
-        "structure": "PAMM или отдельно управляемый счёт у Saxo Bank, Tickmill или Midas",
+        "structure": "PAMM или отдельно управляемый счёт в MultiBank",
         "forWhom": "Семейные офисы, корпоративные казначейства и профессиональные инвесторы"
       }
     ],

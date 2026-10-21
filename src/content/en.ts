@@ -524,7 +524,7 @@ export const en = {
         "managementFee": "USD 1,000 per month (about 4.8% p.a. at the minimum, proportionally lower above it)",
         "performanceFee": "25% of profits above the high-water mark",
         "lockup": "30 days' notice",
-        "structure": "PAMM or separately managed account at Saxo Bank, Tickmill or Midas",
+        "structure": "PAMM or separately managed account at MultiBank",
         "forWhom": "Family offices, business treasuries and professional investors"
       }
     ],

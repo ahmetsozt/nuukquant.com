@@ -417,7 +417,7 @@ export const fr: ContentOverride = {
         "managementFee": "1 000 USD par mois (environ 4,8 % par an au minimum, proportionnellement moins au-delà)",
         "performanceFee": "25 % des profits au-dessus du high-water mark",
         "lockup": "Préavis de 30 jours",
-        "structure": "PAMM ou compte géré séparément chez Saxo Bank, Tickmill ou Midas",
+        "structure": "PAMM ou compte géré séparément chez MultiBank",
         "forWhom": "Family offices, trésoreries d'entreprise et investisseurs professionnels"
       }
     ],

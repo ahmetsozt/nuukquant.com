@@ -376,7 +376,7 @@ export const es: ContentOverride = {
       { title: "Mandato de riesgo", body: "Un mandato escrito fija la exposición máxima, el límite de pérdida diaria y los instrumentos. El sistema no puede superarlo." },
       { title: "Informes", body: "Usted ve cada operación en tiempo real en su propia cuenta, además de un informe mensual y una llamada de revisión trimestral." },
     ],
-    tiersTitle: "Tres formas de asignar",
+    tiersTitle: "Cuatro formas de asignar",
     tiers: [
       {
         "name": "Señales gratuitas por WhatsApp",
@@ -387,6 +387,16 @@ export const es: ContentOverride = {
         "lockup": "Ninguno; puede salir cuando quiera",
         "structure": "Su propia cuenta MultiBank; las señales llegan por WhatsApp",
         "forWhom": "Quienes empiezan con un saldo pequeño y quieren operar ellos mismos"
+      },
+      {
+        "name": "Cuenta IA",
+        "tagline": "Operativa con IA, en su propia cuenta",
+        "minimum": "1.000 – 4.999 USD",
+        "managementFee": "49 USD al mes",
+        "performanceFee": "Ninguna",
+        "lockup": "Ninguno; retire cuando quiera",
+        "structure": "Su propia cuenta en MultiBank",
+        "forWhom": "Quienes quieren operativa con IA de menor riesgo"
       },
       {
         "name": "Pool MAM",
@@ -865,7 +875,7 @@ export const es: ContentOverride = {
       {
         "title": "Gestión de carteras",
         "share": "Comisiones de gestión y de éxito",
-        "body": "Tres estructuras. Las señales de WhatsApp no cobran comisión de rendimiento, solo 49 USD al mes por la membresía de IA. El MAM agrupado no cobra comisión de gestión y aplica un 25% sobre los beneficios por encima del máximo histórico. La cuenta dedicada (desde 250.000 USD) cobra 1.000 USD al mes más un 25% sobre los beneficios por encima del máximo histórico, después de la comisión de gestión.",
+        "body": "Cuatro estructuras. Las señales de WhatsApp no cobran comisión de rendimiento, solo 49 USD al mes por la membresía de IA. La cuenta IA (1.000–4.999 USD) cuesta 49 USD al mes, sin comisión de rendimiento. El MAM agrupado no cobra comisión de gestión y aplica un 25% sobre los beneficios por encima del máximo histórico. La cuenta dedicada (desde 250.000 USD) cobra 1.000 USD al mes más un 25% sobre los beneficios por encima del máximo histórico, después de la comisión de gestión.",
         "how": "Las deduce el bróker de su cuenta y aparecen en cada extracto"
       },
       {

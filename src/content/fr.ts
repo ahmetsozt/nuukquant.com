@@ -378,7 +378,7 @@ export const fr: ContentOverride = {
       { title: "Mandat de risque", body: "Un mandat écrit fixe l'exposition maximale, la limite de perte quotidienne et les instruments. Le système ne peut pas le dépasser." },
       { title: "Reporting", body: "Vous voyez chaque trade en temps réel sur votre propre compte, plus un rapport mensuel et un appel de revue trimestriel." },
     ],
-    tiersTitle: "Trois façons d'allouer",
+    tiersTitle: "Quatre façons d'allouer",
     tiers: [
       {
         "name": "Signaux WhatsApp gratuits",
@@ -389,6 +389,16 @@ export const fr: ContentOverride = {
         "lockup": "Aucun ; vous partez quand vous voulez",
         "structure": "Votre propre compte MultiBank ; les signaux arrivent sur WhatsApp",
         "forWhom": "Ceux qui démarrent avec un petit solde et veulent passer les ordres eux-mêmes"
+      },
+      {
+        "name": "Compte IA",
+        "tagline": "Le trading par l'IA, dans votre propre compte",
+        "minimum": "1 000 – 4 999 USD",
+        "managementFee": "49 USD par mois",
+        "performanceFee": "Aucune",
+        "lockup": "Aucun ; retrait à tout moment",
+        "structure": "Votre propre compte MultiBank",
+        "forWhom": "Ceux qui veulent un trading IA à risque réduit"
       },
       {
         "name": "Pool MAM",
@@ -1053,7 +1063,7 @@ export const fr: ContentOverride = {
       {
         "title": "Gestion de portefeuille",
         "share": "Frais de gestion et de performance",
-        "body": "Trois structures. Les signaux WhatsApp ne facturent aucune commission de performance, seulement 49 USD par mois pour l'abonnement IA. Le MAM mutualisé ne facture aucun frais de gestion et 25 % des bénéfices au-dessus du plus-haut historique. Le compte dédié (à partir de 250 000 USD) facture 1 000 USD par mois plus 25 % des bénéfices au-dessus du plus-haut historique, après frais de gestion.",
+        "body": "Quatre structures. Les signaux WhatsApp ne facturent aucune commission de performance, seulement 49 USD par mois pour l'abonnement IA. Le compte IA (1 000–4 999 USD) coûte 49 USD par mois, sans commission de performance. Le MAM mutualisé ne facture aucun frais de gestion et 25 % des bénéfices au-dessus du plus-haut historique. Le compte dédié (à partir de 250 000 USD) facture 1 000 USD par mois plus 25 % des bénéfices au-dessus du plus-haut historique, après frais de gestion.",
         "how": "Prélevés par le courtier sur votre compte et visibles sur chaque relevé"
       },
       {

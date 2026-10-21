@@ -537,7 +537,7 @@ export const tr: ContentOverride = {
         "body": "Her işlem kendi hesabınızda gerçek zamanlı görüntülenir; ayrıca aylık rapor ve üç ayda bir değerlendirme görüşmesi yapılır."
       }
     ],
-    "tiersTitle": "Üç tahsis modeli",
+    "tiersTitle": "Dört tahsis modeli",
     "tiers": [
       {
         "name": "Ücretsiz WhatsApp Sinyalleri",
@@ -548,6 +548,16 @@ export const tr: ContentOverride = {
         "lockup": "Yok; istediğiniz zaman ayrılırsınız",
         "structure": "Kendi MultiBank hesabınız; sinyaller WhatsApp'tan gelir",
         "forWhom": "Küçük bakiyeyle başlayıp işlemi kendi eliyle açmak isteyenler"
+      },
+      {
+        "name": "AI Hesap",
+        "tagline": "Yapay zekâ işlemleri, kendi hesabınızda",
+        "minimum": "1.000 – 4.999 USD",
+        "managementFee": "Aylık 49 USD",
+        "performanceFee": "Yok",
+        "lockup": "Yok; istediğiniz zaman çekebilirsiniz",
+        "structure": "MultiBank'ta kendi hesabınız",
+        "forWhom": "Düşük riskle yapay zekâ işlemleri isteyenler"
       },
       {
         "name": "Havuz MAM",
@@ -1432,7 +1442,7 @@ export const tr: ContentOverride = {
       {
         "title": "Portföy yönetimi",
         "share": "Yönetim ve performans ücretleri",
-        "body": "Üç yapı. WhatsApp sinyallerinde performans ücreti yoktur, yalnız aylık 49 USD AI üyelik ücreti alınır. Havuz MAM'da yönetim ücreti yoktur; en yüksek değer seviyesinin üzerindeki kârın %25'i alınır. Özel hesapta (250.000 USD'den itibaren) aylık 1.000 USD yönetim ücreti ve yönetim ücreti düşüldükten sonra en yüksek değer seviyesinin üzerindeki kârın %25'i alınır.",
+        "body": "Dört yapı. WhatsApp sinyallerinde performans ücreti yoktur, yalnız aylık 49 USD AI üyelik ücreti alınır. AI Hesap'ta (1.000–4.999 USD) aylık 49 USD ücret alınır, performans ücreti yoktur. Havuz MAM'da yönetim ücreti yoktur; en yüksek değer seviyesinin üzerindeki kârın %25'i alınır. Özel hesapta (250.000 USD'den itibaren) aylık 1.000 USD yönetim ücreti ve yönetim ücreti düşüldükten sonra en yüksek değer seviyesinin üzerindeki kârın %25'i alınır.",
         "how": "Aracı kurum tarafından hesabınızdan kesilir ve her ekstrede görünür"
       },
       {

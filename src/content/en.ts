@@ -485,7 +485,7 @@ export const en = {
       { step: "03", title: "Risk mandate", body: "A written mandate sets maximum exposure, daily loss limit and instruments. It cannot be exceeded by the system." },
       { step: "04", title: "Reporting", body: "You see every trade in real time in your own account, plus a monthly report and a quarterly review call." },
     ],
-    tiersTitle: "Three ways to allocate",
+    tiersTitle: "Four ways to allocate",
     tiers: [
       {
         "name": "Free WhatsApp signals",
@@ -496,6 +496,16 @@ export const en = {
         "lockup": "None; leave whenever you like",
         "structure": "Your own MultiBank account; signals arrive on WhatsApp",
         "forWhom": "People starting with a small balance who want to place the trades themselves"
+      },
+      {
+        "name": "AI account",
+        "tagline": "AI-run trading, in your own account",
+        "minimum": "USD 1,000 – 4,999",
+        "managementFee": "USD 49 per month",
+        "performanceFee": "None",
+        "lockup": "None; withdraw whenever you like",
+        "structure": "Your own MultiBank account",
+        "forWhom": "People who want lower-risk AI trading"
       },
       {
         "name": "Pooled MAM",
@@ -1417,7 +1427,7 @@ export const en = {
       {
         "title": "Portfolio management",
         "share": "Management and performance fees",
-        "body": "Three structures. The WhatsApp signals charge no performance fee, only USD 49 per month for the AI membership. The pooled MAM charges no management fee and 25% of profits above the high-water mark. The dedicated account (from USD 250,000) charges USD 1,000 per month plus 25% of profits above the high-water mark, after the management fee.",
+        "body": "Four structures. The WhatsApp signals charge no performance fee, only USD 49 per month for the AI membership. The AI account (USD 1,000–4,999) costs USD 49 per month with no performance fee. The pooled MAM charges no management fee and 25% of profits above the high-water mark. The dedicated account (from USD 250,000) charges USD 1,000 per month plus 25% of profits above the high-water mark, after the management fee.",
         "how": "Deducted by the broker from your account and shown on every statement"
       },
       {

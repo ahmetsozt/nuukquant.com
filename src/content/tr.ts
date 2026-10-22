@@ -1459,65 +1459,8 @@ export const tr: ContentOverride = {
       }
     ],
     "exampleTitle": "Rakamlarla bir yıl",
-    "exampleLead": "Ücretler öncesi %12 brüt getirili bir yıl için temsili rakamlar. Tahmin değildir; getiri negatif olabilir.",
-    "examples": [
-      {
-        "name": "Havuz MAM",
-        "basis": "100.000 USD tahsis",
-        "rows": [
-          [
-            "Brüt kâr (%12)",
-            "12.000 USD"
-          ],
-          [
-            "Yönetim ücreti",
-            "0 USD"
-          ],
-          [
-            "Performans ücreti (%25)",
-            "3.000 USD"
-          ],
-          [
-            "Size kalan net",
-            "9.000 USD (+%9,0)"
-          ],
-          [
-            "NUUK'un kazancı",
-            "3.000 USD"
-          ]
-        ]
-      },
-      {
-        "name": "Özel hesap",
-        "basis": "250.000 USD tahsis",
-        "rows": [
-          [
-            "Brüt kâr (%12)",
-            "30.000 USD"
-          ],
-          [
-            "Yönetim ücreti (12 × 1.000 USD)",
-            "12.000 USD"
-          ],
-          [
-            "Yönetim ücreti sonrası kâr",
-            "18.000 USD"
-          ],
-          [
-            "Performans ücreti (%25)",
-            "4.500 USD"
-          ],
-          [
-            "Size kalan net",
-            "13.500 USD (+%5,4)"
-          ],
-          [
-            "NUUK'un kazancı",
-            "16.500 USD"
-          ]
-        ]
-      }
-    ],
+    "exampleLead": "",
+    "examples": [],
     "exampleNote": "Zararla kapanan yılda performans ücreti alınmaz; yeniden performans ücreti alınabilmesi için zararın telafi edilmesi gerekir. Özel hesap aylık yönetim ücretini ödemeye devam eder. Aracı kurumun spread, komisyon ve swapları aracı kurum tarafından tahsil edilir ve brüt rakamın içindedir.",
     "neverTitle": "Asla yapmadıklarımız",
     "never": [
@@ -1674,14 +1617,14 @@ export const tr: ContentOverride = {
       "structure": "Önerimiz",
       "mandate": "Yetki belgesi",
       "fees": "Ücretler",
-      "year": "%12 brüt getirili temsili bir yıl",
+      "year": "",
       "note": "Dikkat edilecek nokta"
     },
     "items": [
       {
         "name": "Aile ofisi hazinesi, Dubai",
         "profile": "60 gün içinde likit kalması gereken 500.000 USD hazine nakdi tutan tek aileli bir ofis.",
-        "objective": "Önce sermayeyi koru; yıllık %8–12 net hedef, maksimum %8 düşüş.",
+        "objective": "Önce sermayeyi koru; maksimum %8 düşüş.",
         "structure": "Saxo Bank'ta ofisin kendi adına özel PAMM hesabı; yazılı yetki belgesiyle işlem.",
         "mandate": [
           "Enstrümanlar: ana FX pariteleri, altın, ABD ve AB endeks CFD'leri",
@@ -1690,24 +1633,7 @@ export const tr: ContentOverride = {
           "Para çekimde 30 gün önceden bildirim"
         ],
         "fees": "Aylık 1.000 USD (bu büyüklükte yıllık %2,4) artı yönetim ücreti sonrası en yüksek değer seviyesinin üzerindeki kârın %25'i.",
-        "rows": [
-          [
-            "Brüt kâr (%12)",
-            "60.000 USD"
-          ],
-          [
-            "Yönetim ücreti (12 × 1.000 USD)",
-            "12.000 USD"
-          ],
-          [
-            "Performans ücreti (48.000 USD'nin %25'i)",
-            "12.000 USD"
-          ],
-          [
-            "Ofise kalan net",
-            "36.000 USD (+%7,2)"
-          ]
-        ],
+        "rows": [],
         "note": "500.000 USD'de sabit yönetim ücreti yıllık %2,4'e düşer. 250.000 USD altında aynı ücret fazla ağır olurdu; özel kademenin oradan başlamasının nedeni budur."
       },
       {
@@ -1721,24 +1647,7 @@ export const tr: ContentOverride = {
           "Yönetim ücreti yok; 30 gün kilit süresi, sonra istediğinde çekim"
         ],
         "fees": "Yönetim ücreti yok; en yüksek değer seviyesinin üzerindeki kârın %25'i.",
-        "rows": [
-          [
-            "Brüt kâr (%12)",
-            "600 USD"
-          ],
-          [
-            "Yönetim ücreti",
-            "0 USD"
-          ],
-          [
-            "Performans ücreti (%25)",
-            "150 USD"
-          ],
-          [
-            "Yatırımcıya kalan net",
-            "450 USD (+%9,0)"
-          ]
-        ],
+        "rows": [],
         "note": "Zararlı bir yıl ona ücret olarak hiçbir şeye mal olmaz; yeniden performans ücreti alınabilmesi için havuzun en yüksek değer seviyesini geri kazanması gerekir."
       },
       {

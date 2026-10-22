@@ -892,65 +892,8 @@ export const es: ContentOverride = {
       }
     ],
     "exampleTitle": "Cómo es un año en cifras",
-    "exampleLead": "Cifras ilustrativas para un año con una rentabilidad bruta del 12% antes de comisiones. No son una previsión; la rentabilidad puede ser negativa.",
-    "examples": [
-      {
-        "name": "MAM agrupado",
-        "basis": "100.000 USD asignados",
-        "rows": [
-          [
-            "Beneficio bruto (12%)",
-            "12.000 USD"
-          ],
-          [
-            "Comisión de gestión",
-            "0 USD"
-          ],
-          [
-            "Comisión de éxito (25%)",
-            "3.000 USD"
-          ],
-          [
-            "Neto para usted",
-            "9.000 USD (+9,0%)"
-          ],
-          [
-            "Ingreso de NUUK",
-            "3.000 USD"
-          ]
-        ]
-      },
-      {
-        "name": "Cuenta dedicada",
-        "basis": "250.000 USD asignados",
-        "rows": [
-          [
-            "Beneficio bruto (12%)",
-            "30.000 USD"
-          ],
-          [
-            "Comisión de gestión (12 × 1.000 USD)",
-            "12.000 USD"
-          ],
-          [
-            "Beneficio tras la comisión de gestión",
-            "18.000 USD"
-          ],
-          [
-            "Comisión de éxito (25%)",
-            "4.500 USD"
-          ],
-          [
-            "Neto para usted",
-            "13.500 USD (+5,4%)"
-          ],
-          [
-            "Ingreso de NUUK",
-            "16.500 USD"
-          ]
-        ]
-      }
-    ],
+    "exampleLead": "",
+    "examples": [],
     "exampleNote": "En un año con pérdidas no hay comisión de éxito, y la pérdida debe recuperarse antes de volver a cobrarla. La cuenta dedicada sigue pagando su comisión de gestión mensual. Los spreads, comisiones y swaps los cobra el bróker y ya están incluidos en la cifra bruta.",
     "neverTitle": "Lo que nunca hacemos",
     "never": [
@@ -1107,14 +1050,14 @@ export const es: ContentOverride = {
       "structure": "Lo que propondríamos",
       "mandate": "Mandato",
       "fees": "Comisiones",
-      "year": "Un año ilustrativo al 12% bruto",
+      "year": "",
       "note": "Qué observar"
     },
     "items": [
       {
         "name": "Tesorería de un family office, Dubái",
         "profile": "Un family office con 500.000 USD de tesorería que debe seguir siendo líquida en 60 días.",
-        "objective": "Preservar el capital primero; objetivo del 8–12% neto anual con un drawdown máximo del 8%.",
+        "objective": "Preservar el capital primero; drawdown máximo del 8%.",
         "structure": "Una cuenta PAMM dedicada en Saxo Bank a nombre del family office, operada bajo mandato escrito.",
         "mandate": [
           "Instrumentos: pares mayores de forex, oro, CFD sobre índices de EE. UU. y la UE",
@@ -1123,24 +1066,7 @@ export const es: ContentOverride = {
           "Preaviso de 30 días para retiradas"
         ],
         "fees": "1.000 USD al mes (2,4% anual a este tamaño) más el 25% del beneficio por encima del máximo histórico, tras la comisión de gestión.",
-        "rows": [
-          [
-            "Beneficio bruto (12%)",
-            "60.000 USD"
-          ],
-          [
-            "Comisión de gestión (12 × 1.000 USD)",
-            "12.000 USD"
-          ],
-          [
-            "Comisión de éxito (25% de 48.000 USD)",
-            "12.000 USD"
-          ],
-          [
-            "Neto para el family office",
-            "36.000 USD (+7,2%)"
-          ]
-        ],
+        "rows": [],
         "note": "Con 500.000 USD la comisión de gestión fija baja al 2,4% anual. Por debajo de 250.000 USD la misma comisión sería demasiado pesada; por eso el nivel dedicado empieza ahí."
       },
       {
@@ -1154,24 +1080,7 @@ export const es: ContentOverride = {
           "Sin comisión de gestión; bloqueo de 30 días y después retirada en cualquier momento"
         ],
         "fees": "Sin comisión de gestión; 25% del beneficio por encima del máximo histórico.",
-        "rows": [
-          [
-            "Beneficio bruto (12%)",
-            "600 USD"
-          ],
-          [
-            "Comisión de gestión",
-            "0 USD"
-          ],
-          [
-            "Comisión de éxito (25%)",
-            "150 USD"
-          ],
-          [
-            "Neto para el trader",
-            "450 USD (+9,0%)"
-          ]
-        ],
+        "rows": [],
         "note": "Un año con pérdidas no le cuesta nada en comisiones; el pool debe recuperar el máximo histórico antes de volver a cobrar la comisión de éxito."
       },
       {

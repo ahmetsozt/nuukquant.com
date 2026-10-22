@@ -1444,65 +1444,8 @@ export const en = {
       }
     ],
     "exampleTitle": "What a year looks like in numbers",
-    "exampleLead": "Illustrative figures for one year with a gross return of 12% before fees. They are not a forecast; returns can be negative.",
-    "examples": [
-      {
-        "name": "Pooled MAM",
-        "basis": "USD 100,000 allocated",
-        "rows": [
-          [
-            "Gross profit (12%)",
-            "USD 12,000"
-          ],
-          [
-            "Management fee",
-            "USD 0"
-          ],
-          [
-            "Performance fee (25%)",
-            "USD 3,000"
-          ],
-          [
-            "Net to you",
-            "USD 9,000 (+9.0%)"
-          ],
-          [
-            "NUUK earns",
-            "USD 3,000"
-          ]
-        ]
-      },
-      {
-        "name": "Dedicated account",
-        "basis": "USD 250,000 allocated",
-        "rows": [
-          [
-            "Gross profit (12%)",
-            "USD 30,000"
-          ],
-          [
-            "Management fee (12 × USD 1,000)",
-            "USD 12,000"
-          ],
-          [
-            "Profit after management fee",
-            "USD 18,000"
-          ],
-          [
-            "Performance fee (25%)",
-            "USD 4,500"
-          ],
-          [
-            "Net to you",
-            "USD 13,500 (+5.4%)"
-          ],
-          [
-            "NUUK earns",
-            "USD 16,500"
-          ]
-        ]
-      }
-    ],
+    "exampleLead": "",
+    "examples": [] as { name: string; basis: string; rows: [string, string][] }[],
     "exampleNote": "In a losing year there is no performance fee, and the loss must be recovered before any performance fee is charged again. The dedicated account still pays its monthly management fee. Broker spreads, commissions and swaps are charged by the broker and are already inside the gross figure.",
     "neverTitle": "What we never do",
     "never": [
@@ -1659,14 +1602,14 @@ export const en = {
       "structure": "What we would propose",
       "mandate": "Mandate",
       "fees": "Fees",
-      "year": "An illustrative year at 12% gross",
+      "year": "",
       "note": "What to notice"
     },
     "items": [
       {
         "name": "Family office treasury, Dubai",
         "profile": "A single-family office holding USD 500,000 of treasury cash that must stay liquid within 60 days.",
-        "objective": "Preserve capital first; target 8–12% net a year with a maximum drawdown of 8%.",
+        "objective": "Preserve capital first; maximum drawdown of 8%.",
         "structure": "A dedicated PAMM account at Saxo Bank in the office's own name, traded under a written mandate.",
         "mandate": [
           "Instruments: FX majors, gold, US and EU index CFDs",
@@ -1675,24 +1618,7 @@ export const en = {
           "30 days' notice for withdrawals"
         ],
         "fees": "USD 1,000 per month (2.4% p.a. at this size) plus 25% of profit above the high-water mark, after the management fee.",
-        "rows": [
-          [
-            "Gross profit (12%)",
-            "USD 60,000"
-          ],
-          [
-            "Management fee (12 × USD 1,000)",
-            "USD 12,000"
-          ],
-          [
-            "Performance fee (25% of USD 48,000)",
-            "USD 12,000"
-          ],
-          [
-            "Net to the office",
-            "USD 36,000 (+7.2%)"
-          ]
-        ],
+        "rows": [] as [string, string][],
         "note": "At USD 500,000 the fixed management fee falls to 2.4% a year. Below USD 250,000 the same fee would be too heavy, which is why the dedicated tier starts there."
       },
       {
@@ -1706,24 +1632,7 @@ export const en = {
           "No management fee; 30-day lock-up, then withdraw at any time"
         ],
         "fees": "No management fee; 25% of profit above the high-water mark.",
-        "rows": [
-          [
-            "Gross profit (12%)",
-            "USD 600"
-          ],
-          [
-            "Management fee",
-            "USD 0"
-          ],
-          [
-            "Performance fee (25%)",
-            "USD 150"
-          ],
-          [
-            "Net to the trader",
-            "USD 450 (+9.0%)"
-          ]
-        ],
+        "rows": [] as [string, string][],
         "note": "A losing year costs him nothing in fees; the pool must recover the high-water mark before any performance fee is charged again."
       },
       {
@@ -1738,7 +1647,7 @@ export const en = {
           "Disclosure to students: rebates are paid by the broker, conditions unchanged"
         ],
         "fees": "No fee to her or her students; income comes from the broker's rebate, disclosed in the IB disclosure.",
-        "rows": [],
+        "rows": [] as [string, string][],
         "note": "The rebate depends on each broker's schedule and her students' volume, so no figure is shown here. Terms are agreed in writing before the first client is introduced."
       }
     ]

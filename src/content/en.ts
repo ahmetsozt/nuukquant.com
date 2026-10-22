@@ -468,7 +468,7 @@ export const en = {
       { title: "Max drawdown", body: "Largest peak-to-trough decline in account equity, including open positions." },
       { title: "Profit factor", body: "Gross profit divided by gross loss. Above 1.0 means the strategy made money over the period." },
     ],
-    pending: "Figures are generated from the account's closed-trade history in the MT4 statement. The desk runs as a model portfolio; results are hypothetical.",
+    pending: "Figures are generated from the account's closed-trade history in the MT4 statement. The desk runs as a model portfolio.",
   },
 
   managed: {
@@ -2157,40 +2157,40 @@ export const en = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — XAUUSD & XAGUSD desk",
-      "source": "Model portfolio · MT4 detailed statement, 8 Oct 2026",
+      "source": "Model portfolio · MT4 detailed statement, 22 Oct 2026",
       "verifiedHref": "",
       "status": "model",
       "since": "2026",
-      "updated": "2026-10-08",
+      "updated": "2026-10-22",
       "stats": [
         {
           "label": "Period",
-          "value": "2 Sep – 8 Oct 2026 · 22 trading days",
+          "value": "2 Sep – 22 Oct 2026 · 31 trading days",
           "tone": "neutral"
         },
         {
           "label": "Period return",
-          "value": "+103.8%",
+          "value": "+118.3%",
           "tone": "up"
         },
         {
           "label": "Profit factor",
-          "value": "2.83",
+          "value": "2.46",
           "tone": "neutral"
         },
         {
           "label": "Win rate",
-          "value": "76.0% (1,395 of 1,835)",
+          "value": "74.3% (3,019 of 4,061)",
           "tone": "neutral"
         },
         {
           "label": "Max drawdown",
-          "value": "13.30%",
+          "value": "13.61%",
           "tone": "neutral"
         },
         {
           "label": "Green / red days",
-          "value": "22 / 0",
+          "value": "31 / 0",
           "tone": "neutral"
         }
       ],

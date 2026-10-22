@@ -506,7 +506,7 @@ export const tr: ContentOverride = {
         "body": "Brüt kârın brüt zarara oranı. 1,0'ın üzeri, stratejinin dönem boyunca net kazanç sağladığını gösterir."
       }
     ],
-    "pending": "Rakamlar hesabın MT4 ekstresindeki kapanmış işlem geçmişinden üretilir. Masa model portföy olarak çalışır; sonuçlar varsayımsaldır."
+    "pending": "Rakamlar hesabın MT4 ekstresindeki kapanmış işlem geçmişinden üretilir. Masa model portföy olarak çalışır."
   },
 
   managed: {
@@ -2175,37 +2175,37 @@ export const tr: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — XAUUSD & XAGUSD masası",
-      "source": "Model portföy · MT4 detaylı rapor, 8 Eki 2026",
-      "updated": "2026-10-08",
+      "source": "Model portföy · MT4 detaylı rapor, 22 Eki 2026",
+      "updated": "2026-10-22",
       "stats": [
         {
           "label": "Dönem",
-          "value": "2 Eyl – 8 Eki 2026 · 22 işlem günü",
+          "value": "2 Eyl – 22 Eki 2026 · 31 işlem günü",
           "tone": "neutral"
         },
         {
           "label": "Dönem getirisi",
-          "value": "+%103,8",
+          "value": "+%118,3",
           "tone": "up"
         },
         {
           "label": "Kâr faktörü",
-          "value": "2,83",
+          "value": "2,46",
           "tone": "neutral"
         },
         {
           "label": "Kazanma oranı",
-          "value": "%76,0 (1.835 işlemde 1.395)",
+          "value": "%74,3 (4.061 işlemde 3.019)",
           "tone": "neutral"
         },
         {
           "label": "Maks. düşüş",
-          "value": "%13,30",
+          "value": "%13,61",
           "tone": "neutral"
         },
         {
           "label": "Yeşil / kırmızı gün",
-          "value": "22 / 0",
+          "value": "31 / 0",
           "tone": "neutral"
         }
       ]

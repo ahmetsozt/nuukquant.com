@@ -361,7 +361,7 @@ export const fr: ContentOverride = {
       { title: "Drawdown maximal", body: "Plus forte baisse de l'equity du compte entre un sommet et un creux, positions ouvertes comprises." },
       { title: "Profit factor", body: "Gains bruts divisés par pertes brutes. Au-dessus de 1.0, la stratégie a gagné de l'argent sur la période." },
     ],
-    pending: "Les chiffres proviennent de l'historique des positions clôturées du relevé MT4. Le desk fonctionne comme un portefeuille modèle ; les résultats sont hypothétiques.",
+    pending: "Les chiffres proviennent de l'historique des positions clôturées du relevé MT4. Le desk fonctionne comme un portefeuille modèle.",
   },
 
   managed: {
@@ -1531,37 +1531,37 @@ export const fr: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — desk XAUUSD & XAGUSD",
-      "source": "Performance hypothétique · relevé détaillé MT4, 8 oct. 2026",
-      "updated": "2026-10-08",
+      "source": "Portefeuille modèle · relevé détaillé MT4, 22 oct. 2026",
+      "updated": "2026-10-22",
       "stats": [
         {
           "label": "Période",
-          "value": "2 sept. – 8 oct. 2026 · 22 jours de bourse",
+          "value": "2 sept. – 22 oct. 2026 · 31 jours de bourse",
           "tone": "neutral"
         },
         {
           "label": "Rendement de la période",
-          "value": "+103,8 %",
+          "value": "+118,3 %",
           "tone": "up"
         },
         {
           "label": "Facteur de profit",
-          "value": "2,83",
+          "value": "2,46",
           "tone": "neutral"
         },
         {
           "label": "Taux de réussite",
-          "value": "76,0 % (1 395 sur 1 835)",
+          "value": "74,3 % (3 019 sur 4 061)",
           "tone": "neutral"
         },
         {
           "label": "Perte maximale",
-          "value": "13,30 %",
+          "value": "13,61 %",
           "tone": "neutral"
         },
         {
           "label": "Jours verts / rouges",
-          "value": "22 / 0",
+          "value": "31 / 0",
           "tone": "neutral"
         }
       ]

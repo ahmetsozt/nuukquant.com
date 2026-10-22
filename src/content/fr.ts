@@ -1080,65 +1080,8 @@ export const fr: ContentOverride = {
       }
     ],
     "exampleTitle": "À quoi ressemble une année en chiffres",
-    "exampleLead": "Chiffres illustratifs pour une année avec un rendement brut de 12 % avant frais. Ce n’est pas une prévision ; les rendements peuvent être négatifs.",
-    "examples": [
-      {
-        "name": "MAM mutualisé",
-        "basis": "100 000 USD alloués",
-        "rows": [
-          [
-            "Bénéfice brut (12 %)",
-            "12 000 USD"
-          ],
-          [
-            "Frais de gestion",
-            "0 USD"
-          ],
-          [
-            "Frais de performance (25 %)",
-            "3 000 USD"
-          ],
-          [
-            "Net pour vous",
-            "9 000 USD (+9,0 %)"
-          ],
-          [
-            "Revenu de NUUK",
-            "3 000 USD"
-          ]
-        ]
-      },
-      {
-        "name": "Compte dédié",
-        "basis": "250 000 USD alloués",
-        "rows": [
-          [
-            "Bénéfice brut (12 %)",
-            "30 000 USD"
-          ],
-          [
-            "Frais de gestion (12 × 1 000 USD)",
-            "12 000 USD"
-          ],
-          [
-            "Bénéfice après frais de gestion",
-            "18 000 USD"
-          ],
-          [
-            "Frais de performance (25 %)",
-            "4 500 USD"
-          ],
-          [
-            "Net pour vous",
-            "13 500 USD (+5,4 %)"
-          ],
-          [
-            "Revenu de NUUK",
-            "16 500 USD"
-          ]
-        ]
-      }
-    ],
+    "exampleLead": "",
+    "examples": [],
     "exampleNote": "Lors d’une année perdante, aucun frais de performance n’est facturé et la perte doit être récupérée avant qu’un frais de performance soit à nouveau prélevé. Le compte dédié continue de payer ses frais de gestion mensuels. Les spreads, commissions et swaps sont facturés par le courtier et sont déjà inclus dans le chiffre brut.",
     "neverTitle": "Ce que nous ne faisons jamais",
     "never": [
@@ -1295,14 +1238,14 @@ export const fr: ContentOverride = {
       "structure": "Ce que nous proposerions",
       "mandate": "Mandat",
       "fees": "Frais",
-      "year": "Une année illustrative à 12 % brut",
+      "year": "",
       "note": "À noter"
     },
     "items": [
       {
         "name": "Trésorerie d’un family office, Dubaï",
         "profile": "Un family office détenant 500 000 USD de trésorerie devant rester liquide sous 60 jours.",
-        "objective": "Préserver le capital d’abord ; viser 8 à 12 % net par an avec un drawdown maximal de 8 %.",
+        "objective": "Préserver le capital d’abord ; drawdown maximal de 8 %.",
         "structure": "Un compte PAMM dédié chez Saxo Bank au nom du family office, géré sous mandat écrit.",
         "mandate": [
           "Instruments : majeures forex, or, CFD sur indices US et UE",
@@ -1311,24 +1254,7 @@ export const fr: ContentOverride = {
           "Préavis de 30 jours pour les retraits"
         ],
         "fees": "1 000 USD par mois (2,4 % par an à cette taille) plus 25 % du bénéfice au-dessus du plus-haut, après frais de gestion.",
-        "rows": [
-          [
-            "Bénéfice brut (12 %)",
-            "60 000 USD"
-          ],
-          [
-            "Frais de gestion (12 × 1 000 USD)",
-            "12 000 USD"
-          ],
-          [
-            "Frais de performance (25 % de 48 000 USD)",
-            "12 000 USD"
-          ],
-          [
-            "Net pour le family office",
-            "36 000 USD (+7,2 %)"
-          ]
-        ],
+        "rows": [],
         "note": "À 500 000 USD, les frais de gestion fixes tombent à 2,4 % par an. Sous 250 000 USD, les mêmes frais seraient trop lourds ; c’est pourquoi le palier dédié commence là."
       },
       {
@@ -1342,24 +1268,7 @@ export const fr: ContentOverride = {
           "Pas de frais de gestion ; blocage de 30 jours, puis retrait à tout moment"
         ],
         "fees": "Pas de frais de gestion ; 25 % du bénéfice au-dessus du plus-haut.",
-        "rows": [
-          [
-            "Bénéfice brut (12 %)",
-            "600 USD"
-          ],
-          [
-            "Frais de gestion",
-            "0 USD"
-          ],
-          [
-            "Frais de performance (25 %)",
-            "150 USD"
-          ],
-          [
-            "Net pour le trader",
-            "450 USD (+9,0 %)"
-          ]
-        ],
+        "rows": [],
         "note": "Une année perdante ne lui coûte rien en frais ; le pool doit retrouver son plus-haut avant qu’un frais de performance soit à nouveau prélevé."
       },
       {

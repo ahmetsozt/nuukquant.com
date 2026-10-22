@@ -77,7 +77,8 @@ export default async function HowWeMakeMoneyPage({ params }: { params: LocalePar
         </div>
       </section>
 
-      {/* Worked example */}
+      {/* Worked example — hidden while there are no examples (no illustrative return figures, 22 Oct 2026) */}
+      {p.examples.length > 0 && (
       <section className="section-pad bg-white" aria-label={p.exampleTitle}>
         <div className="container-x">
           <SectionHead title={p.exampleTitle} lead={p.exampleLead} />
@@ -107,6 +108,7 @@ export default async function HowWeMakeMoneyPage({ params }: { params: LocalePar
           <p className="mt-6 max-w-[900px] text-[13.5px] leading-6 text-muted">{p.exampleNote}</p>
         </div>
       </section>
+      )}
 
       {/* Never + risk */}
       <section className="section-pad bg-hero text-white" aria-label={p.riskTitle}>

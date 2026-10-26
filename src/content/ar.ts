@@ -1260,27 +1260,27 @@ export const ar: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — مكتب XAUUSD و XAGUSD",
-      "source": "محفظة نموذجية · كشف MT4 التفصيلي، 22 أكتوبر 2026",
-      "updated": "2026-10-22",
+      "source": "محفظة نموذجية · كشف MT4 التفصيلي، 26 أكتوبر 2026",
+      "updated": "2026-10-26",
       "stats": [
         {
           "label": "الفترة",
-          "value": "2 سبتمبر – 22 أكتوبر 2026 · 31 يوم تداول",
+          "value": "2 سبتمبر – 26 أكتوبر 2026 · 33 يوم تداول",
           "tone": "neutral"
         },
         {
           "label": "عائد الفترة",
-          "value": "+118.3%",
+          "value": "+121.2%",
           "tone": "up"
         },
         {
           "label": "عامل الربح",
-          "value": "2.46",
+          "value": "2.42",
           "tone": "neutral"
         },
         {
           "label": "نسبة الربح",
-          "value": "74.3% (3,019 من 4,061)",
+          "value": "73.7% (3,497 من 4,743)",
           "tone": "neutral"
         },
         {
@@ -1290,7 +1290,7 @@ export const ar: ContentOverride = {
         },
         {
           "label": "أيام رابحة / خاسرة",
-          "value": "31 / 0",
+          "value": "33 / 0",
           "tone": "neutral"
         }
       ]

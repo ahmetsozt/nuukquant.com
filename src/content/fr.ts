@@ -1440,27 +1440,27 @@ export const fr: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — desk XAUUSD & XAGUSD",
-      "source": "Portefeuille modèle · relevé détaillé MT4, 22 oct. 2026",
-      "updated": "2026-10-22",
+      "source": "Portefeuille modèle · relevé détaillé MT4, 26 oct. 2026",
+      "updated": "2026-10-26",
       "stats": [
         {
           "label": "Période",
-          "value": "2 sept. – 22 oct. 2026 · 31 jours de bourse",
+          "value": "2 sept. – 26 oct. 2026 · 33 jours de bourse",
           "tone": "neutral"
         },
         {
           "label": "Rendement de la période",
-          "value": "+118,3 %",
+          "value": "+121,2 %",
           "tone": "up"
         },
         {
           "label": "Facteur de profit",
-          "value": "2,46",
+          "value": "2,42",
           "tone": "neutral"
         },
         {
           "label": "Taux de réussite",
-          "value": "74,3 % (3 019 sur 4 061)",
+          "value": "73,7 % (3 497 sur 4 743)",
           "tone": "neutral"
         },
         {
@@ -1470,7 +1470,7 @@ export const fr: ContentOverride = {
         },
         {
           "label": "Jours verts / rouges",
-          "value": "31 / 0",
+          "value": "33 / 0",
           "tone": "neutral"
         }
       ]

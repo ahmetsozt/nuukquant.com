@@ -475,7 +475,7 @@ export const tr: ContentOverride = {
       },
       {
         "q": "Minimum sermaye ne kadardır?",
-        "a": "WhatsApp sinyalleri için 250 USD, havuz MAM için 5.000 USD. Portföy yönetimi kapsamındaki MAM/PAMM hesapları, portföy yönetimi sayfasında belirtilen minimum tahsis tutarından başlar."
+        "a": "WhatsApp sinyalleri için 250 USD, NUUK AI - Premium için 5.000 USD. Portföy yönetimi kapsamındaki MAM/PAMM hesapları, portföy yönetimi sayfasında belirtilen minimum tahsis tutarından başlar."
       },
       {
         "q": "Kaynak kod paylaşılıyor mu?",
@@ -537,7 +537,7 @@ export const tr: ContentOverride = {
         "body": "Her işlem kendi hesabınızda gerçek zamanlı görüntülenir; ayrıca aylık rapor ve üç ayda bir değerlendirme görüşmesi yapılır."
       }
     ],
-    "tiersTitle": "Dört tahsis modeli",
+    "tiersTitle": "Üç tahsis modeli",
     "tiers": [
       {
         "name": "Ücretsiz WhatsApp Sinyalleri",
@@ -550,20 +550,10 @@ export const tr: ContentOverride = {
         "forWhom": "Küçük bakiyeyle başlayıp işlemi kendi eliyle açmak isteyenler"
       },
       {
-        "name": "AI Hesap",
-        "tagline": "Yapay zekâ işlemleri, kendi hesabınızda",
-        "minimum": "1.000 – 4.999 USD",
-        "managementFee": "Aylık 49 USD",
-        "performanceFee": "Yok",
-        "lockup": "Yok; istediğiniz zaman çekebilirsiniz",
-        "structure": "MultiBank'ta kendi hesabınız",
-        "forWhom": "Düşük riskle yapay zekâ işlemleri isteyenler"
-      },
-      {
-        "name": "Havuz MAM",
+        "name": "NUUK AI - Premium",
         "tagline": "Sistemler, kendi hesabınızın içinde",
         "minimum": "5.000 USD",
-        "managementFee": "Yok",
+        "managementFee": "Aylık 99 USD",
         "performanceFee": "Yüksek su işaretinin (high-water mark) üzerindeki kârın %25'i",
         "lockup": "30 gün; ardından dilediğiniz zaman çekebilirsiniz",
         "structure": "MultiBank'ta MAM / kopya işlem havuzu",
@@ -1442,7 +1432,7 @@ export const tr: ContentOverride = {
       {
         "title": "Portföy yönetimi",
         "share": "Yönetim ve performans ücretleri",
-        "body": "Dört yapı. WhatsApp sinyallerinde performans ücreti yoktur, yalnız aylık 49 USD AI üyelik ücreti alınır. AI Hesap'ta (1.000–4.999 USD) aylık 49 USD ücret alınır, performans ücreti yoktur. Havuz MAM'da yönetim ücreti yoktur; en yüksek değer seviyesinin üzerindeki kârın %25'i alınır. Özel hesapta (250.000 USD'den itibaren) aylık 1.000 USD yönetim ücreti ve yönetim ücreti düşüldükten sonra en yüksek değer seviyesinin üzerindeki kârın %25'i alınır.",
+        "body": "Üç yapı. WhatsApp sinyallerinde performans ücreti yoktur, yalnız aylık 49 USD AI üyelik ücreti alınır. NUUK AI - Premium'da (5.000 USD'den itibaren) aylık 99 USD yönetim ücreti ve en yüksek değer seviyesinin üzerindeki kârın %25'i alınır. Özel hesapta (250.000 USD'den itibaren) aylık 1.000 USD yönetim ücreti ve yönetim ücreti düşüldükten sonra en yüksek değer seviyesinin üzerindeki kârın %25'i alınır.",
         "how": "Aracı kurum tarafından hesabınızdan kesilir ve her ekstrede görünür"
       },
       {
@@ -1494,7 +1484,7 @@ export const tr: ContentOverride = {
     "faq": [
       {
         "q": "Hesabım zarar ederse bir şey kazanıyor musunuz?",
-        "a": "Hesaptan değil. Havuz MAM'da yönetim ücreti olmadığından zararla biten bir yıl bize hiçbir şey ödemez. Özel hesap, imzadan önce açıklanan aylık yönetim ücretini öder; zarar telafi edilene kadar performans ücreti alınmaz."
+        "a": "Hesaptan değil. Zararla biten bir yılda performans ücreti alınmaz; NUUK AI - Premium ve özel hesap yalnız imzadan önce açıklanan aylık yönetim ücretini öder; zarar telafi edilene kadar performans ücreti alınmaz."
       },
       {
         "q": "IB iadeleri bir çıkar çatışması mı?",
@@ -1564,7 +1554,7 @@ export const tr: ContentOverride = {
       },
       {
         "q": "İstediğim zaman para çekebilir miyim?",
-        "a": "Havuz MAM: ilk 30 günden sonra istediğiniz zaman. Özel hesap: açık pozisyonların düzenli kapatılabilmesi için 30 gün önceden bildirimle. Para çekme işlemini aracı kurum portalında siz yaparsınız."
+        "a": "NUUK AI - Premium: ilk 30 günden sonra istediğiniz zaman. Özel hesap: açık pozisyonların düzenli kapatılabilmesi için 30 gün önceden bildirimle. Para çekme işlemini aracı kurum portalında siz yaparsınız."
       },
       {
         "q": "Aldığınız ücretleri nerede görürüm?",
@@ -2024,7 +2014,7 @@ export const tr: ContentOverride = {
       },
       {
         "title": "Fonlayın ve bağlayın",
-        "body": "Aracı kurum hesabınızı fonlayın: WhatsApp sinyalleri için 250 USD'den, havuz MAM için 5.000 USD'den, özel manda için 250.000 USD'den itibaren. Ardından seçtiğiniz yapıya bağlayın."
+        "body": "Aracı kurum hesabınızı fonlayın: WhatsApp sinyalleri için 250 USD'den, NUUK AI - Premium için 5.000 USD'den, özel manda için 250.000 USD'den itibaren. Ardından seçtiğiniz yapıya bağlayın."
       },
       {
         "title": "İşleme başlayın",

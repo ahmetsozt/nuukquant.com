@@ -343,7 +343,7 @@ export const fr: ContentOverride = {
     faqTitle: "Questions fréquentes",
     faq: [
       { q: "Puis-je faire tourner un système sur mon propre compte ?", a: "Oui. Selon le courtier, vous pouvez faire du copy trading, rejoindre une structure MAM/PAMM chez Tickmill, Saxo Bank ou Midas, ou suivre le canal de signaux et exécuter vous-même. Dans tous les cas, le compte reste à votre nom." },
-      { q: "Quel est le capital minimum ?", a: "250 USD pour les signaux WhatsApp et 5 000 USD pour le pool MAM. Les comptes gérés MAM/PAMM commencent à l'allocation minimale indiquée sur la page des comptes gérés." },
+      { q: "Quel est le capital minimum ?", a: "250 USD pour les signaux WhatsApp et 5 000 USD pour NUUK AI - Premium. Les comptes gérés MAM/PAMM commencent à l'allocation minimale indiquée sur la page des comptes gérés." },
       { q: "Partagez-vous le code ?", a: "Non. Le code reste propriétaire. NUUK publie la méthodologie, les règles de risque et les résultats, chacun avec sa source." },
     ],
   },
@@ -378,7 +378,7 @@ export const fr: ContentOverride = {
       { title: "Mandat de risque", body: "Un mandat écrit fixe l'exposition maximale, la limite de perte quotidienne et les instruments. Le système ne peut pas le dépasser." },
       { title: "Reporting", body: "Vous voyez chaque trade en temps réel sur votre propre compte, plus un rapport mensuel et un appel de revue trimestriel." },
     ],
-    tiersTitle: "Quatre façons d'allouer",
+    tiersTitle: "Trois façons d'allouer",
     tiers: [
       {
         "name": "Signaux WhatsApp gratuits",
@@ -391,20 +391,10 @@ export const fr: ContentOverride = {
         "forWhom": "Ceux qui démarrent avec un petit solde et veulent passer les ordres eux-mêmes"
       },
       {
-        "name": "Compte IA",
-        "tagline": "Le trading par l'IA, dans votre propre compte",
-        "minimum": "1 000 – 4 999 USD",
-        "managementFee": "49 USD par mois",
-        "performanceFee": "Aucune",
-        "lockup": "Aucun ; retrait à tout moment",
-        "structure": "Votre propre compte MultiBank",
-        "forWhom": "Ceux qui veulent un trading IA à risque réduit"
-      },
-      {
-        "name": "Pool MAM",
+        "name": "NUUK AI - Premium",
         "tagline": "Les systèmes, dans votre propre compte",
         "minimum": "5 000 USD",
-        "managementFee": "Aucuns",
+        "managementFee": "99 USD par mois",
         "performanceFee": "25 % des profits au-dessus du high-water mark",
         "lockup": "30 jours, puis retrait à tout moment",
         "structure": "Pool MAM / copy trading chez MultiBank",
@@ -1063,7 +1053,7 @@ export const fr: ContentOverride = {
       {
         "title": "Gestion de portefeuille",
         "share": "Frais de gestion et de performance",
-        "body": "Quatre structures. Les signaux WhatsApp ne facturent aucune commission de performance, seulement 49 USD par mois pour l'abonnement IA. Le compte IA (1 000–4 999 USD) coûte 49 USD par mois, sans commission de performance. Le MAM mutualisé ne facture aucun frais de gestion et 25 % des bénéfices au-dessus du plus-haut historique. Le compte dédié (à partir de 250 000 USD) facture 1 000 USD par mois plus 25 % des bénéfices au-dessus du plus-haut historique, après frais de gestion.",
+        "body": "Trois structures. Les signaux WhatsApp ne facturent aucune commission de performance, seulement 49 USD par mois pour l'abonnement IA. NUUK AI - Premium (à partir de 5 000 USD) facture 99 USD par mois plus 25 % des bénéfices au-dessus du plus-haut historique. Le compte dédié (à partir de 250 000 USD) facture 1 000 USD par mois plus 25 % des bénéfices au-dessus du plus-haut historique, après frais de gestion.",
         "how": "Prélevés par le courtier sur votre compte et visibles sur chaque relevé"
       },
       {
@@ -1115,7 +1105,7 @@ export const fr: ContentOverride = {
     "faq": [
       {
         "q": "Gagnez-vous quelque chose si mon compte perd de l’argent ?",
-        "a": "Pas sur le compte. Le MAM mutualisé n’a pas de frais de gestion, une année perdante ne nous rapporte donc rien. Le compte dédié paie ses frais de gestion mensuels, indiqués avant signature ; aucun frais de performance n’est facturé tant que la perte n’est pas récupérée."
+        "a": "Pas sur le compte. Une année perdante ne donne lieu à aucune commission de performance ; NUUK AI - Premium et le compte dédié ne paient que leurs frais de gestion mensuels, indiqués avant signature ; aucun frais de performance n’est facturé tant que la perte n’est pas récupérée."
       },
       {
         "q": "Les rétrocessions IB sont-elles un conflit d’intérêts ?",
@@ -1185,7 +1175,7 @@ export const fr: ContentOverride = {
       },
       {
         "q": "Puis-je retirer à tout moment ?",
-        "a": "MAM mutualisé : après les 30 premiers jours, à tout moment. Compte dédié : avec un préavis de 30 jours pour clôturer les positions de façon ordonnée. Les retraits sont effectués par vous, dans le portail du courtier."
+        "a": "NUUK AI - Premium : après les 30 premiers jours, à tout moment. Compte dédié : avec un préavis de 30 jours pour clôturer les positions de façon ordonnée. Les retraits sont effectués par vous, dans le portail du courtier."
       },
       {
         "q": "Où voir les frais prélevés ?",
@@ -1376,7 +1366,7 @@ export const fr: ContentOverride = {
     steps: [
       { title: "Réserver un appel", body: "30 minutes pour décider quel service vous convient : courtier, signaux, compte géré ou formation." },
       { title: "Ouvrir un compte de courtage", body: "À votre nom, chez un courtier partenaire. La vérification prend environ 10 minutes avec une pièce d'identité et un justificatif de domicile." },
-      {"title": "Financer et connecter", "body": "Financez votre compte courtier : à partir de 250 USD pour les signaux WhatsApp, 5 000 USD pour le pool MAM, 250 000 USD pour un mandat dédié. Connectez-le à la structure choisie."},
+      {"title": "Financer et connecter", "body": "Financez votre compte courtier : à partir de 250 USD pour les signaux WhatsApp, 5 000 USD pour NUUK AI - Premium, 250 000 USD pour un mandat dédié. Connectez-le à la structure choisie."},
       { title: "Commencer à trader", body: "Suivez le plan, examinez les résultats chaque mois et ne prenez jamais un trade que vous ne pouvez pas expliquer." },
     ],
     cta: { label: "Réserver un appel" },

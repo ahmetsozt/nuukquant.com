@@ -40,10 +40,11 @@ export default async function ManagedPage({ params }: { params: LocaleParams }) 
           <SectionHead title={p.tiersTitle} />
           <div className="mt-10 grid gap-5 lg:grid-cols-2">
             {p.tiers.map((t, i) => {
-              // 2x2 ızgarada dama düzeni: sağ üst ve sol alt koyu.
-              const dark = i === 1 || i === 2;
+              // İkinci kademe (NUUK AI - Premium) koyu; tek sayıda kademede sonuncusu satırı doldurur.
+              const dark = i === 1;
+              const wide = p.tiers.length % 2 === 1 && i === p.tiers.length - 1;
               return (
-              <article key={t.name} className={`rv rounded-card p-8 ${dark ? "bg-ink text-white" : "bg-white shadow-card ring-1 ring-black/5"}`}>
+              <article key={t.name} className={`rv rounded-card p-8 ${wide ? "lg:col-span-2" : ""} ${dark ? "bg-ink text-white" : "bg-white shadow-card ring-1 ring-black/5"}`}>
                 <p className={`kicker ${dark ? "text-cyan" : ""}`}>{t.tagline}</p>
                 <h3 className={`mt-2 text-[26px] ${dark ? "text-white" : ""}`}>{t.name}</h3>
                 <dl className={`mt-6 divide-y text-[14px] ${dark ? "divide-white/10" : "divide-black/5"}`}>

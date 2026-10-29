@@ -341,7 +341,7 @@ export const es: ContentOverride = {
     faqTitle: "Preguntas frecuentes",
     faq: [
       { q: "¿Puedo ejecutar un sistema en mi propia cuenta?", a: "Sí. Según el bróker, puede hacer copy trading, unirse a una estructura MAM/PAMM en Tickmill, Saxo Bank o Midas, o seguir el canal de señales y ejecutar usted mismo. En todos los casos la cuenta permanece a su nombre." },
-      { q: "¿Cuál es el capital mínimo?", a: "250 USD para las señales de WhatsApp y 5.000 USD para el pool MAM. Las cuentas gestionadas MAM/PAMM parten de la asignación mínima indicada en la página de cuentas gestionadas." },
+      { q: "¿Cuál es el capital mínimo?", a: "250 USD para las señales de WhatsApp y 5.000 USD para NUUK AI - Premium. Las cuentas gestionadas MAM/PAMM parten de la asignación mínima indicada en la página de cuentas gestionadas." },
       { q: "¿Comparte el código?", a: "No. El código sigue siendo propietario. NUUK publica la metodología, las reglas de riesgo y los resultados, cada uno con su fuente." },
     ],
   },
@@ -376,7 +376,7 @@ export const es: ContentOverride = {
       { title: "Mandato de riesgo", body: "Un mandato escrito fija la exposición máxima, el límite de pérdida diaria y los instrumentos. El sistema no puede superarlo." },
       { title: "Informes", body: "Usted ve cada operación en tiempo real en su propia cuenta, además de un informe mensual y una llamada de revisión trimestral." },
     ],
-    tiersTitle: "Cuatro formas de asignar",
+    tiersTitle: "Tres formas de asignar",
     tiers: [
       {
         "name": "Señales gratuitas por WhatsApp",
@@ -389,20 +389,10 @@ export const es: ContentOverride = {
         "forWhom": "Quienes empiezan con un saldo pequeño y quieren operar ellos mismos"
       },
       {
-        "name": "Cuenta IA",
-        "tagline": "Operativa con IA, en su propia cuenta",
-        "minimum": "1.000 – 4.999 USD",
-        "managementFee": "49 USD al mes",
-        "performanceFee": "Ninguna",
-        "lockup": "Ninguno; retire cuando quiera",
-        "structure": "Su propia cuenta en MultiBank",
-        "forWhom": "Quienes quieren operativa con IA de menor riesgo"
-      },
-      {
-        "name": "Pool MAM",
+        "name": "NUUK AI - Premium",
         "tagline": "Los sistemas, dentro de su propia cuenta",
         "minimum": "5.000 USD",
-        "managementFee": "Ninguna",
+        "managementFee": "99 USD al mes",
         "performanceFee": "25% de los beneficios por encima del high-water mark",
         "lockup": "30 días; después, retiro en cualquier momento",
         "structure": "Pool MAM / copy trading en MultiBank",
@@ -875,7 +865,7 @@ export const es: ContentOverride = {
       {
         "title": "Gestión de carteras",
         "share": "Comisiones de gestión y de éxito",
-        "body": "Cuatro estructuras. Las señales de WhatsApp no cobran comisión de rendimiento, solo 49 USD al mes por la membresía de IA. La cuenta IA (1.000–4.999 USD) cuesta 49 USD al mes, sin comisión de rendimiento. El MAM agrupado no cobra comisión de gestión y aplica un 25% sobre los beneficios por encima del máximo histórico. La cuenta dedicada (desde 250.000 USD) cobra 1.000 USD al mes más un 25% sobre los beneficios por encima del máximo histórico, después de la comisión de gestión.",
+        "body": "Tres estructuras. Las señales de WhatsApp no cobran comisión de rendimiento, solo 49 USD al mes por la membresía de IA. NUUK AI - Premium (desde 5.000 USD) cobra 99 USD al mes más un 25% sobre los beneficios por encima del máximo histórico. La cuenta dedicada (desde 250.000 USD) cobra 1.000 USD al mes más un 25% sobre los beneficios por encima del máximo histórico, después de la comisión de gestión.",
         "how": "Las deduce el bróker de su cuenta y aparecen en cada extracto"
       },
       {
@@ -927,7 +917,7 @@ export const es: ContentOverride = {
     "faq": [
       {
         "q": "¿Ganan algo si mi cuenta pierde dinero?",
-        "a": "No de la cuenta. El MAM agrupado no tiene comisión de gestión, así que un año con pérdidas no nos paga nada. La cuenta dedicada paga su comisión de gestión mensual, comunicada antes de firmar; no se cobra comisión de éxito hasta recuperar la pérdida."
+        "a": "No de la cuenta. En un año con pérdidas no se cobra comisión de éxito; NUUK AI - Premium y la cuenta dedicada pagan solo su comisión de gestión mensual, comunicada antes de firmar; no se cobra comisión de éxito hasta recuperar la pérdida."
       },
       {
         "q": "¿Las retrocesiones de IB son un conflicto de interés?",
@@ -997,7 +987,7 @@ export const es: ContentOverride = {
       },
       {
         "q": "¿Puedo retirar en cualquier momento?",
-        "a": "MAM agrupado: tras los primeros 30 días, en cualquier momento. Cuenta dedicada: con 30 días de preaviso para cerrar posiciones de forma ordenada. Las retiradas las hace usted en el portal del bróker."
+        "a": "NUUK AI - Premium: tras los primeros 30 días, en cualquier momento. Cuenta dedicada: con 30 días de preaviso para cerrar posiciones de forma ordenada. Las retiradas las hace usted en el portal del bróker."
       },
       {
         "q": "¿Dónde veo las comisiones cobradas?",
@@ -1188,7 +1178,7 @@ export const es: ContentOverride = {
     steps: [
       { title: "Reserve una llamada", body: "30 minutos para decidir qué servicio encaja: bróker, señales, cuenta gestionada o formación." },
       { title: "Abra una cuenta de bróker", body: "A su propio nombre, a través de un bróker asociado. La verificación tarda unos 10 minutos con documento de identidad y comprobante de domicilio." },
-      {"title": "Financiar y conectar", "body": "Financie su cuenta de bróker: desde 250 USD para las señales de WhatsApp, 5.000 USD para el pool MAM y 250.000 USD para un mandato dedicado. Conéctela a la estructura elegida."},
+      {"title": "Financiar y conectar", "body": "Financie su cuenta de bróker: desde 250 USD para las señales de WhatsApp, 5.000 USD para NUUK AI - Premium y 250.000 USD para un mandato dedicado. Conéctela a la estructura elegida."},
       { title: "Empiece a operar", body: "Siga el plan, revise los resultados cada mes y nunca abra una operación que no pueda explicar." },
     ],
     cta: { label: "Reservar una llamada" },

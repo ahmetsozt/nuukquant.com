@@ -381,7 +381,7 @@ export const ar: ContentOverride = {
     tiersTitle: "ثلاث طرق للتخصيص",
     tiers: [
       {
-        "name": "إشارات واتساب مجانية",
+        "name": "إشارات واتساب",
         "tagline": "الإشارات تصلك وأنت تفتح الصفقات",
         "minimum": "250 دولار (حسابك الخاص لدى MultiBank)",
         "managementFee": "49 دولاراً شهرياً لعضوية الذكاء الاصطناعي",

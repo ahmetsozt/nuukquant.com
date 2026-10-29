@@ -403,7 +403,7 @@ export const ru: ContentOverride = {
     tiersTitle: "Три способа аллокации",
     tiers: [
       {
-        "name": "Бесплатные сигналы в WhatsApp",
+        "name": "Сигналы в WhatsApp",
         "tagline": "Сигналы приходят вам, сделки открываете вы",
         "minimum": "250 USD (ваш собственный счёт в MultiBank)",
         "managementFee": "49 USD в месяц за AI-подписку",

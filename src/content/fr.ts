@@ -381,7 +381,7 @@ export const fr: ContentOverride = {
     tiersTitle: "Trois façons d'allouer",
     tiers: [
       {
-        "name": "Signaux WhatsApp gratuits",
+        "name": "Signaux WhatsApp",
         "tagline": "Les signaux vous parviennent ; vous passez les ordres",
         "minimum": "250 USD (votre propre compte MultiBank)",
         "managementFee": "49 USD par mois pour l'abonnement IA",

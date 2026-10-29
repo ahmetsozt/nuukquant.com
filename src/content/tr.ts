@@ -540,7 +540,7 @@ export const tr: ContentOverride = {
     "tiersTitle": "Üç tahsis modeli",
     "tiers": [
       {
-        "name": "Ücretsiz WhatsApp Sinyalleri",
+        "name": "WhatsApp Sinyalleri",
         "tagline": "Sinyaller size gelir, işlemi siz açarsınız",
         "minimum": "250 USD (MultiBank'ta kendi hesabınız)",
         "managementFee": "Aylık 49 USD AI üyelik ücreti",

@@ -379,7 +379,7 @@ export const es: ContentOverride = {
     tiersTitle: "Tres formas de asignar",
     tiers: [
       {
-        "name": "Señales gratuitas por WhatsApp",
+        "name": "Señales por WhatsApp",
         "tagline": "Las señales le llegan; usted abre las operaciones",
         "minimum": "250 USD (su propia cuenta en MultiBank)",
         "managementFee": "49 USD al mes por la membresía de IA",

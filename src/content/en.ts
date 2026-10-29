@@ -488,7 +488,7 @@ export const en = {
     tiersTitle: "Three ways to allocate",
     tiers: [
       {
-        "name": "Free WhatsApp signals",
+        "name": "WhatsApp signals",
         "tagline": "The signals reach you; you place the trades",
         "minimum": "USD 250 (your own MultiBank account)",
         "managementFee": "USD 49 per month for the AI membership",

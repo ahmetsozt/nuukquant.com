@@ -388,7 +388,9 @@ export const fr: ContentOverride = {
         "performanceFee": "Aucuns",
         "lockup": "Aucun ; vous partez quand vous voulez",
         "structure": "Votre propre compte MultiBank ; les signaux arrivent sur WhatsApp",
-        "forWhom": "Ceux qui démarrent avec un petit solde et veulent passer les ordres eux-mêmes"
+        "forWhom": "Ceux qui démarrent avec un petit solde et veulent passer les ordres eux-mêmes",
+        "join": "Rejoindre",
+        "joinText": "Bonjour. Je souhaite rejoindre le programme de signaux."
       },
       {
         "name": "NUUK AI - Premium",
@@ -398,7 +400,9 @@ export const fr: ContentOverride = {
         "performanceFee": "25 % du bénéfice net hebdomadaire",
         "lockup": "30 jours, puis retrait à tout moment",
         "structure": "Pool MAM / copy trading chez MultiBank",
-        "forWhom": "Investisseurs autonomes qui veulent les systèmes sans les piloter"
+        "forWhom": "Investisseurs autonomes qui veulent les systèmes sans les piloter",
+        "join": "Rejoindre",
+        "joinText": "Bonjour. Je souhaite rejoindre le programme NUUK AI - Premium."
       },
       {
         "name": "Compte dédié",
@@ -408,7 +412,9 @@ export const fr: ContentOverride = {
         "performanceFee": "25 % des profits au-dessus du high-water mark",
         "lockup": "Préavis de 30 jours",
         "structure": "PAMM ou compte géré séparément chez MultiBank",
-        "forWhom": "Family offices, trésoreries d'entreprise et investisseurs professionnels"
+        "forWhom": "Family offices, trésoreries d'entreprise et investisseurs professionnels",
+        "join": "Rejoindre",
+        "joinText": "Bonjour. Je souhaite ouvrir un compte dédié."
       }
     ],
     tierLabels: {

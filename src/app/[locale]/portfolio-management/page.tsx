@@ -4,6 +4,7 @@ import CtaBand from "@/components/sections/CtaBand";
 import SectionHead from "@/components/ui/SectionHead";
 import Fill from "@/components/ui/Fill";
 import Icon from "@/components/ui/Icon";
+import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 import { resolve, type LocaleParams } from "@/lib/page";
 import { seo } from "@/lib/seo";
 
@@ -44,7 +45,7 @@ export default async function ManagedPage({ params }: { params: LocaleParams }) 
               const dark = i === 1;
               const wide = p.tiers.length % 2 === 1 && i === p.tiers.length - 1;
               return (
-              <article key={t.name} className={`rv rounded-card p-8 ${wide ? "lg:col-span-2" : ""} ${dark ? "bg-ink text-white" : "bg-white shadow-card ring-1 ring-black/5"}`}>
+              <article key={t.name} className={`rv flex flex-col rounded-card p-8 ${wide ? "lg:col-span-2" : ""} ${dark ? "bg-ink text-white" : "bg-white shadow-card ring-1 ring-black/5"}`}>
                 <p className={`kicker ${dark ? "text-cyan" : ""}`}>{t.tagline}</p>
                 <h3 className={`mt-2 text-[26px] ${dark ? "text-white" : ""}`}>{t.name}</h3>
                 <dl className={`mt-6 divide-y text-[14px] ${dark ? "divide-white/10" : "divide-black/5"}`}>
@@ -55,6 +56,19 @@ export default async function ManagedPage({ params }: { params: LocaleParams }) 
                     </div>
                   ))}
                 </dl>
+                <div className="mt-auto pt-7">
+                <a
+                  href={`${c.brand.whatsapp}?text=${encodeURIComponent(t.joinText)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-event="whatsapp_click"
+                  data-label={`tier:${t.name}`}
+                  className="inline-flex items-center gap-2.5 rounded-full bg-[#25d366] px-6 py-3 text-[15px] font-semibold text-white shadow-[0_10px_24px_-10px_rgba(37,211,102,0.7)] transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25d366]/50"
+                >
+                  <WhatsAppIcon size={20} />
+                  {t.join}
+                </a>
+                </div>
               </article>
               );
             })}

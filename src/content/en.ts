@@ -495,7 +495,9 @@ export const en = {
         "performanceFee": "None",
         "lockup": "None; leave whenever you like",
         "structure": "Your own MultiBank account; signals arrive on WhatsApp",
-        "forWhom": "People starting with a small balance who want to place the trades themselves"
+        "forWhom": "People starting with a small balance who want to place the trades themselves",
+        "join": "Join",
+        "joinText": "Hello. I'd like to join the signals programme."
       },
       {
         "name": "NUUK AI - Premium",
@@ -505,7 +507,9 @@ export const en = {
         "performanceFee": "25% of weekly net profit",
         "lockup": "30 days, then withdraw any time",
         "structure": "MAM / copy-trading pool at MultiBank",
-        "forWhom": "Self-directed investors who want the systems without running them"
+        "forWhom": "Self-directed investors who want the systems without running them",
+        "join": "Join",
+        "joinText": "Hello. I'd like to join the NUUK AI - Premium programme."
       },
       {
         "name": "Dedicated account",
@@ -515,7 +519,9 @@ export const en = {
         "performanceFee": "25% of profits above the high-water mark",
         "lockup": "30 days' notice",
         "structure": "PAMM or separately managed account at MultiBank",
-        "forWhom": "Family offices, business treasuries and professional investors"
+        "forWhom": "Family offices, business treasuries and professional investors",
+        "join": "Join",
+        "joinText": "Hello. I'd like to open a dedicated account."
       }
     ],
     tierLabels: {

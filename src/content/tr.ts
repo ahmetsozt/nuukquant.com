@@ -547,7 +547,9 @@ export const tr: ContentOverride = {
         "performanceFee": "Yok",
         "lockup": "Yok; istediğiniz zaman ayrılırsınız",
         "structure": "Kendi MultiBank hesabınız; sinyaller WhatsApp'tan gelir",
-        "forWhom": "Küçük bakiyeyle başlayıp işlemi kendi eliyle açmak isteyenler"
+        "forWhom": "Küçük bakiyeyle başlayıp işlemi kendi eliyle açmak isteyenler",
+        "join": "Katıl",
+        "joinText": "Merhaba. Sinyal programına katılmak istiyorum."
       },
       {
         "name": "NUUK AI - Premium",
@@ -557,7 +559,9 @@ export const tr: ContentOverride = {
         "performanceFee": "Haftalık net kâr üzerinden %25",
         "lockup": "30 gün; ardından dilediğiniz zaman çekebilirsiniz",
         "structure": "MultiBank'ta MAM / kopya işlem havuzu",
-        "forWhom": "Sistemleri kendisi çalıştırmak istemeyen bireysel yatırımcılar"
+        "forWhom": "Sistemleri kendisi çalıştırmak istemeyen bireysel yatırımcılar",
+        "join": "Katıl",
+        "joinText": "Merhaba. NUUK AI - Premium programına katılmak istiyorum."
       },
       {
         "name": "Özel Hesap",
@@ -567,7 +571,9 @@ export const tr: ContentOverride = {
         "performanceFee": "Yüksek su işaretinin (high-water mark) üzerindeki kârın %25'i",
         "lockup": "30 gün önceden bildirim",
         "structure": "MultiBank'ta PAMM ya da ayrı yönetilen hesap",
-        "forWhom": "Aile ofisleri, kurumsal hazineler ve profesyonel yatırımcılar"
+        "forWhom": "Aile ofisleri, kurumsal hazineler ve profesyonel yatırımcılar",
+        "join": "Katıl",
+        "joinText": "Merhaba. Özel hesap açmak istiyorum."
       }
     ],
     "tierLabels": {

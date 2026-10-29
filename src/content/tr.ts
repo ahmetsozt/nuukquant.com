@@ -554,7 +554,7 @@ export const tr: ContentOverride = {
         "tagline": "Sistemler, kendi hesabınızın içinde",
         "minimum": "1.000 USD",
         "managementFee": "Aylık 99 USD",
-        "performanceFee": "Yüksek su işaretinin (high-water mark) üzerindeki kârın %25'i",
+        "performanceFee": "Haftalık net kâr üzerinden %25",
         "lockup": "30 gün; ardından dilediğiniz zaman çekebilirsiniz",
         "structure": "MultiBank'ta MAM / kopya işlem havuzu",
         "forWhom": "Sistemleri kendisi çalıştırmak istemeyen bireysel yatırımcılar"
@@ -1432,7 +1432,7 @@ export const tr: ContentOverride = {
       {
         "title": "Portföy yönetimi",
         "share": "Yönetim ve performans ücretleri",
-        "body": "Üç yapı. WhatsApp sinyallerinde performans ücreti yoktur, yalnız aylık 49 USD AI üyelik ücreti alınır. NUUK AI - Premium'da (1.000 USD'den itibaren) aylık 99 USD yönetim ücreti ve en yüksek değer seviyesinin üzerindeki kârın %25'i alınır. Özel hesapta (250.000 USD'den itibaren) aylık 1.000 USD yönetim ücreti ve yönetim ücreti düşüldükten sonra en yüksek değer seviyesinin üzerindeki kârın %25'i alınır.",
+        "body": "Üç yapı. WhatsApp sinyallerinde performans ücreti yoktur, yalnız aylık 49 USD AI üyelik ücreti alınır. NUUK AI - Premium'da (1.000 USD'den itibaren) aylık 99 USD yönetim ücreti ve haftalık net kâr üzerinden %25 performans ücreti alınır. Özel hesapta (250.000 USD'den itibaren) aylık 1.000 USD yönetim ücreti ve yönetim ücreti düşüldükten sonra en yüksek değer seviyesinin üzerindeki kârın %25'i alınır.",
         "how": "Aracı kurum tarafından hesabınızdan kesilir ve her ekstrede görünür"
       },
       {
@@ -1484,7 +1484,7 @@ export const tr: ContentOverride = {
     "faq": [
       {
         "q": "Hesabım zarar ederse bir şey kazanıyor musunuz?",
-        "a": "Hesaptan değil. Zararla biten bir yılda performans ücreti alınmaz; NUUK AI - Premium ve özel hesap yalnız imzadan önce açıklanan aylık yönetim ücretini öder; zarar telafi edilene kadar performans ücreti alınmaz."
+        "a": "Yalnız aylık yönetim ücreti, o da imzadan önce açıklanır. NUUK AI - Premium'da performans ücreti haftalık net kâr üzerinden alınır; zararla kapanan haftada performans ücreti yoktur. Özel hesapta zarar telafi edilene kadar performans ücreti alınmaz."
       },
       {
         "q": "IB iadeleri bir çıkar çatışması mı?",

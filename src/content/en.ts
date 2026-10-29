@@ -502,7 +502,7 @@ export const en = {
         "tagline": "The systems, inside your own account",
         "minimum": "USD 1,000",
         "managementFee": "USD 99 per month",
-        "performanceFee": "25% of profits above the high-water mark",
+        "performanceFee": "25% of weekly net profit",
         "lockup": "30 days, then withdraw any time",
         "structure": "MAM / copy-trading pool at MultiBank",
         "forWhom": "Self-directed investors who want the systems without running them"
@@ -1417,7 +1417,7 @@ export const en = {
       {
         "title": "Portfolio management",
         "share": "Management and performance fees",
-        "body": "Three structures. The WhatsApp signals charge no performance fee, only USD 49 per month for the AI membership. NUUK AI - Premium (from USD 1,000) charges USD 99 per month plus 25% of profits above the high-water mark. The dedicated account (from USD 250,000) charges USD 1,000 per month plus 25% of profits above the high-water mark, after the management fee.",
+        "body": "Three structures. The WhatsApp signals charge no performance fee, only USD 49 per month for the AI membership. NUUK AI - Premium (from USD 1,000) charges USD 99 per month plus 25% of weekly net profit. The dedicated account (from USD 250,000) charges USD 1,000 per month plus 25% of profits above the high-water mark, after the management fee.",
         "how": "Deducted by the broker from your account and shown on every statement"
       },
       {
@@ -1469,7 +1469,7 @@ export const en = {
     "faq": [
       {
         "q": "Do you earn anything if my account loses money?",
-        "a": "Not from the account. No performance fee is charged in a losing year; NUUK AI - Premium and the dedicated account pay only their monthly management fee, which is disclosed before you sign; no performance fee is charged until the loss is recovered."
+        "a": "Only the monthly management fee, which is disclosed before you sign. NUUK AI - Premium charges its performance fee on weekly net profit, so a losing week carries no performance fee. The dedicated account charges no performance fee until the loss is recovered."
       },
       {
         "q": "Are IB rebates a conflict of interest?",

@@ -393,7 +393,7 @@ export const es: ContentOverride = {
         "tagline": "Los sistemas, dentro de su propia cuenta",
         "minimum": "1.000 USD",
         "managementFee": "99 USD al mes",
-        "performanceFee": "25% de los beneficios por encima del high-water mark",
+        "performanceFee": "25% del beneficio neto semanal",
         "lockup": "30 días; después, retiro en cualquier momento",
         "structure": "Pool MAM / copy trading en MultiBank",
         "forWhom": "Inversores autónomos que quieren los sistemas sin operarlos"
@@ -865,7 +865,7 @@ export const es: ContentOverride = {
       {
         "title": "Gestión de carteras",
         "share": "Comisiones de gestión y de éxito",
-        "body": "Tres estructuras. Las señales de WhatsApp no cobran comisión de rendimiento, solo 49 USD al mes por la membresía de IA. NUUK AI - Premium (desde 1.000 USD) cobra 99 USD al mes más un 25% sobre los beneficios por encima del máximo histórico. La cuenta dedicada (desde 250.000 USD) cobra 1.000 USD al mes más un 25% sobre los beneficios por encima del máximo histórico, después de la comisión de gestión.",
+        "body": "Tres estructuras. Las señales de WhatsApp no cobran comisión de rendimiento, solo 49 USD al mes por la membresía de IA. NUUK AI - Premium (desde 1.000 USD) cobra 99 USD al mes más un 25% del beneficio neto semanal. La cuenta dedicada (desde 250.000 USD) cobra 1.000 USD al mes más un 25% sobre los beneficios por encima del máximo histórico, después de la comisión de gestión.",
         "how": "Las deduce el bróker de su cuenta y aparecen en cada extracto"
       },
       {
@@ -917,7 +917,7 @@ export const es: ContentOverride = {
     "faq": [
       {
         "q": "¿Ganan algo si mi cuenta pierde dinero?",
-        "a": "No de la cuenta. En un año con pérdidas no se cobra comisión de éxito; NUUK AI - Premium y la cuenta dedicada pagan solo su comisión de gestión mensual, comunicada antes de firmar; no se cobra comisión de éxito hasta recuperar la pérdida."
+        "a": "Solo la comisión de gestión mensual, comunicada antes de firmar. NUUK AI - Premium cobra la comisión de éxito sobre el beneficio neto semanal, así que una semana con pérdidas no paga comisión de éxito. La cuenta dedicada no paga comisión de éxito hasta recuperar la pérdida."
       },
       {
         "q": "¿Las retrocesiones de IB son un conflicto de interés?",

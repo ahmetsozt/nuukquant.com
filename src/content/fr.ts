@@ -395,7 +395,7 @@ export const fr: ContentOverride = {
         "tagline": "Les systèmes, dans votre propre compte",
         "minimum": "1 000 USD",
         "managementFee": "99 USD par mois",
-        "performanceFee": "25 % des profits au-dessus du high-water mark",
+        "performanceFee": "25 % du bénéfice net hebdomadaire",
         "lockup": "30 jours, puis retrait à tout moment",
         "structure": "Pool MAM / copy trading chez MultiBank",
         "forWhom": "Investisseurs autonomes qui veulent les systèmes sans les piloter"
@@ -1053,7 +1053,7 @@ export const fr: ContentOverride = {
       {
         "title": "Gestion de portefeuille",
         "share": "Frais de gestion et de performance",
-        "body": "Trois structures. Les signaux WhatsApp ne facturent aucune commission de performance, seulement 49 USD par mois pour l'abonnement IA. NUUK AI - Premium (à partir de 1 000 USD) facture 99 USD par mois plus 25 % des bénéfices au-dessus du plus-haut historique. Le compte dédié (à partir de 250 000 USD) facture 1 000 USD par mois plus 25 % des bénéfices au-dessus du plus-haut historique, après frais de gestion.",
+        "body": "Trois structures. Les signaux WhatsApp ne facturent aucune commission de performance, seulement 49 USD par mois pour l'abonnement IA. NUUK AI - Premium (à partir de 1 000 USD) facture 99 USD par mois plus 25 % du bénéfice net hebdomadaire. Le compte dédié (à partir de 250 000 USD) facture 1 000 USD par mois plus 25 % des bénéfices au-dessus du plus-haut historique, après frais de gestion.",
         "how": "Prélevés par le courtier sur votre compte et visibles sur chaque relevé"
       },
       {
@@ -1105,7 +1105,7 @@ export const fr: ContentOverride = {
     "faq": [
       {
         "q": "Gagnez-vous quelque chose si mon compte perd de l’argent ?",
-        "a": "Pas sur le compte. Une année perdante ne donne lieu à aucune commission de performance ; NUUK AI - Premium et le compte dédié ne paient que leurs frais de gestion mensuels, indiqués avant signature ; aucun frais de performance n’est facturé tant que la perte n’est pas récupérée."
+        "a": "Uniquement les frais de gestion mensuels, indiqués avant signature. NUUK AI - Premium prélève sa commission de performance sur le bénéfice net hebdomadaire : une semaine perdante n’en paie aucune. Le compte dédié ne paie aucune commission de performance tant que la perte n’est pas récupérée."
       },
       {
         "q": "Les rétrocessions IB sont-elles un conflit d’intérêts ?",

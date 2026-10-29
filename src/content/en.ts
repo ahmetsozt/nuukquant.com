@@ -450,7 +450,7 @@ export const en = {
     faqTitle: "Common questions",
     faq: [
       { q: "Can I run a system on my own account?", a: "Yes. Depending on the broker you can copy-trade, join a MAM/PAMM structure at Tickmill, Saxo Bank or Midas, or follow the signal channel and execute yourself. In every case the account stays in your own name." },
-      { q: "What is the minimum capital?", a: "USD 250 for the WhatsApp signals, USD 5,000 for NUUK AI - Premium. Managed MAM/PAMM accounts start at the minimum allocation shown on the managed-accounts page." },
+      { q: "What is the minimum capital?", a: "USD 250 for the WhatsApp signals, USD 1,000 for NUUK AI - Premium. Managed MAM/PAMM accounts start at the minimum allocation shown on the managed-accounts page." },
       { q: "Do you share the code?", a: "No. The code stays proprietary. What NUUK publishes is the methodology, the risk rules and the results, each with its source." },
     ],
   },
@@ -500,7 +500,7 @@ export const en = {
       {
         "name": "NUUK AI - Premium",
         "tagline": "The systems, inside your own account",
-        "minimum": "USD 5,000",
+        "minimum": "USD 1,000",
         "managementFee": "USD 99 per month",
         "performanceFee": "25% of profits above the high-water mark",
         "lockup": "30 days, then withdraw any time",
@@ -1417,7 +1417,7 @@ export const en = {
       {
         "title": "Portfolio management",
         "share": "Management and performance fees",
-        "body": "Three structures. The WhatsApp signals charge no performance fee, only USD 49 per month for the AI membership. NUUK AI - Premium (from USD 5,000) charges USD 99 per month plus 25% of profits above the high-water mark. The dedicated account (from USD 250,000) charges USD 1,000 per month plus 25% of profits above the high-water mark, after the management fee.",
+        "body": "Three structures. The WhatsApp signals charge no performance fee, only USD 49 per month for the AI membership. NUUK AI - Premium (from USD 1,000) charges USD 99 per month plus 25% of profits above the high-water mark. The dedicated account (from USD 250,000) charges USD 1,000 per month plus 25% of profits above the high-water mark, after the management fee.",
         "how": "Deducted by the broker from your account and shown on every statement"
       },
       {
@@ -1972,7 +1972,7 @@ export const en = {
     steps: [
       { title: "Book a call", body: "30 minutes to decide which service fits: broker, signals, managed account or education." },
       { title: "Open a broker account", body: "In your own name, through a partner broker. Verification takes about 10 minutes with ID and proof of address." },
-      { title: "Fund and connect", body: "Fund your broker account: from USD 250 for the WhatsApp signals, USD 5,000 for NUUK AI - Premium, USD 250,000 for a dedicated mandate. Connect it to the structure you chose." },
+      { title: "Fund and connect", body: "Fund your broker account: from USD 250 for the WhatsApp signals, USD 1,000 for NUUK AI - Premium, USD 250,000 for a dedicated mandate. Connect it to the structure you chose." },
       { title: "Start trading", body: "Follow the plan, review results monthly, and never take a trade you cannot explain." },
     ],
     cta: { label: "Book a call", href: "/contact-us/" },

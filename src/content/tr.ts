@@ -475,7 +475,7 @@ export const tr: ContentOverride = {
       },
       {
         "q": "Minimum sermaye ne kadardır?",
-        "a": "WhatsApp sinyalleri için 250 USD, NUUK AI - Premium için 5.000 USD. Portföy yönetimi kapsamındaki MAM/PAMM hesapları, portföy yönetimi sayfasında belirtilen minimum tahsis tutarından başlar."
+        "a": "WhatsApp sinyalleri için 250 USD, NUUK AI - Premium için 1.000 USD. Portföy yönetimi kapsamındaki MAM/PAMM hesapları, portföy yönetimi sayfasında belirtilen minimum tahsis tutarından başlar."
       },
       {
         "q": "Kaynak kod paylaşılıyor mu?",
@@ -552,7 +552,7 @@ export const tr: ContentOverride = {
       {
         "name": "NUUK AI - Premium",
         "tagline": "Sistemler, kendi hesabınızın içinde",
-        "minimum": "5.000 USD",
+        "minimum": "1.000 USD",
         "managementFee": "Aylık 99 USD",
         "performanceFee": "Yüksek su işaretinin (high-water mark) üzerindeki kârın %25'i",
         "lockup": "30 gün; ardından dilediğiniz zaman çekebilirsiniz",
@@ -1432,7 +1432,7 @@ export const tr: ContentOverride = {
       {
         "title": "Portföy yönetimi",
         "share": "Yönetim ve performans ücretleri",
-        "body": "Üç yapı. WhatsApp sinyallerinde performans ücreti yoktur, yalnız aylık 49 USD AI üyelik ücreti alınır. NUUK AI - Premium'da (5.000 USD'den itibaren) aylık 99 USD yönetim ücreti ve en yüksek değer seviyesinin üzerindeki kârın %25'i alınır. Özel hesapta (250.000 USD'den itibaren) aylık 1.000 USD yönetim ücreti ve yönetim ücreti düşüldükten sonra en yüksek değer seviyesinin üzerindeki kârın %25'i alınır.",
+        "body": "Üç yapı. WhatsApp sinyallerinde performans ücreti yoktur, yalnız aylık 49 USD AI üyelik ücreti alınır. NUUK AI - Premium'da (1.000 USD'den itibaren) aylık 99 USD yönetim ücreti ve en yüksek değer seviyesinin üzerindeki kârın %25'i alınır. Özel hesapta (250.000 USD'den itibaren) aylık 1.000 USD yönetim ücreti ve yönetim ücreti düşüldükten sonra en yüksek değer seviyesinin üzerindeki kârın %25'i alınır.",
         "how": "Aracı kurum tarafından hesabınızdan kesilir ve her ekstrede görünür"
       },
       {
@@ -2014,7 +2014,7 @@ export const tr: ContentOverride = {
       },
       {
         "title": "Fonlayın ve bağlayın",
-        "body": "Aracı kurum hesabınızı fonlayın: WhatsApp sinyalleri için 250 USD'den, NUUK AI - Premium için 5.000 USD'den, özel manda için 250.000 USD'den itibaren. Ardından seçtiğiniz yapıya bağlayın."
+        "body": "Aracı kurum hesabınızı fonlayın: WhatsApp sinyalleri için 250 USD'den, NUUK AI - Premium için 1.000 USD'den, özel manda için 250.000 USD'den itibaren. Ardından seçtiğiniz yapıya bağlayın."
       },
       {
         "title": "İşleme başlayın",

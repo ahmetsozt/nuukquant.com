@@ -341,7 +341,7 @@ export const es: ContentOverride = {
     faqTitle: "Preguntas frecuentes",
     faq: [
       { q: "¿Puedo ejecutar un sistema en mi propia cuenta?", a: "Sí. Según el bróker, puede hacer copy trading, unirse a una estructura MAM/PAMM en Tickmill, Saxo Bank o Midas, o seguir el canal de señales y ejecutar usted mismo. En todos los casos la cuenta permanece a su nombre." },
-      { q: "¿Cuál es el capital mínimo?", a: "250 USD para las señales de WhatsApp y 5.000 USD para NUUK AI - Premium. Las cuentas gestionadas MAM/PAMM parten de la asignación mínima indicada en la página de cuentas gestionadas." },
+      { q: "¿Cuál es el capital mínimo?", a: "250 USD para las señales de WhatsApp y 1.000 USD para NUUK AI - Premium. Las cuentas gestionadas MAM/PAMM parten de la asignación mínima indicada en la página de cuentas gestionadas." },
       { q: "¿Comparte el código?", a: "No. El código sigue siendo propietario. NUUK publica la metodología, las reglas de riesgo y los resultados, cada uno con su fuente." },
     ],
   },
@@ -391,7 +391,7 @@ export const es: ContentOverride = {
       {
         "name": "NUUK AI - Premium",
         "tagline": "Los sistemas, dentro de su propia cuenta",
-        "minimum": "5.000 USD",
+        "minimum": "1.000 USD",
         "managementFee": "99 USD al mes",
         "performanceFee": "25% de los beneficios por encima del high-water mark",
         "lockup": "30 días; después, retiro en cualquier momento",
@@ -865,7 +865,7 @@ export const es: ContentOverride = {
       {
         "title": "Gestión de carteras",
         "share": "Comisiones de gestión y de éxito",
-        "body": "Tres estructuras. Las señales de WhatsApp no cobran comisión de rendimiento, solo 49 USD al mes por la membresía de IA. NUUK AI - Premium (desde 5.000 USD) cobra 99 USD al mes más un 25% sobre los beneficios por encima del máximo histórico. La cuenta dedicada (desde 250.000 USD) cobra 1.000 USD al mes más un 25% sobre los beneficios por encima del máximo histórico, después de la comisión de gestión.",
+        "body": "Tres estructuras. Las señales de WhatsApp no cobran comisión de rendimiento, solo 49 USD al mes por la membresía de IA. NUUK AI - Premium (desde 1.000 USD) cobra 99 USD al mes más un 25% sobre los beneficios por encima del máximo histórico. La cuenta dedicada (desde 250.000 USD) cobra 1.000 USD al mes más un 25% sobre los beneficios por encima del máximo histórico, después de la comisión de gestión.",
         "how": "Las deduce el bróker de su cuenta y aparecen en cada extracto"
       },
       {
@@ -1178,7 +1178,7 @@ export const es: ContentOverride = {
     steps: [
       { title: "Reserve una llamada", body: "30 minutos para decidir qué servicio encaja: bróker, señales, cuenta gestionada o formación." },
       { title: "Abra una cuenta de bróker", body: "A su propio nombre, a través de un bróker asociado. La verificación tarda unos 10 minutos con documento de identidad y comprobante de domicilio." },
-      {"title": "Financiar y conectar", "body": "Financie su cuenta de bróker: desde 250 USD para las señales de WhatsApp, 5.000 USD para NUUK AI - Premium y 250.000 USD para un mandato dedicado. Conéctela a la estructura elegida."},
+      {"title": "Financiar y conectar", "body": "Financie su cuenta de bróker: desde 250 USD para las señales de WhatsApp, 1.000 USD para NUUK AI - Premium y 250.000 USD para un mandato dedicado. Conéctela a la estructura elegida."},
       { title: "Empiece a operar", body: "Siga el plan, revise los resultados cada mes y nunca abra una operación que no pueda explicar." },
     ],
     cta: { label: "Reservar una llamada" },

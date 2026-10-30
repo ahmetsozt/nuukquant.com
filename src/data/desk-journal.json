@@ -9,20 +9,20 @@
   },
   "period": {
     "from": "2026-09-02",
-    "to": "2026-10-26"
+    "to": "2026-10-30"
   },
   "summary": {
-    "trades": 4743,
-    "days": 33,
-    "greenDays": 33,
+    "trades": 6623,
+    "days": 37,
+    "greenDays": 37,
     "redDays": 0,
-    "net": 111351.12,
-    "twrPct": 121.18,
-    "winRate": 0.7373,
-    "profitFactor": 2.42,
-    "maxDrawdownUsd": -20843.16,
-    "bestDayNet": 12650.6,
-    "avgTradesPerDay": 144
+    "net": 146973.92,
+    "twrPct": 136.09,
+    "winRate": 0.7371,
+    "profitFactor": 2.5,
+    "maxDrawdownUsd": -20823.66,
+    "bestDayNet": 13607.2,
+    "avgTradesPerDay": 179
   },
   "daily": [
     {
@@ -283,27 +283,59 @@
     },
     {
       "date": "2026-10-26",
-      "net": 3020.3,
-      "retPct": 0.575,
-      "cumPct": 121.177,
-      "trades": 425,
-      "winRate": 0.7247
+      "net": 7123.7,
+      "retPct": 1.356,
+      "cumPct": 122.894,
+      "trades": 873,
+      "winRate": 0.669
+    },
+    {
+      "date": "2026-10-27",
+      "net": 10753.7,
+      "retPct": 2.02,
+      "cumPct": 127.397,
+      "trades": 442,
+      "winRate": 0.8371
+    },
+    {
+      "date": "2026-10-28",
+      "net": 4484,
+      "retPct": 0.825,
+      "cumPct": 129.273,
+      "trades": 530,
+      "winRate": 0.6849
+    },
+    {
+      "date": "2026-10-29",
+      "net": 2674.5,
+      "retPct": 0.488,
+      "cumPct": 130.391,
+      "trades": 253,
+      "winRate": 0.8538
+    },
+    {
+      "date": "2026-10-30",
+      "net": 13607.2,
+      "retPct": 2.472,
+      "cumPct": 136.087,
+      "trades": 207,
+      "winRate": 0.7729
     }
   ],
   "bySymbol": [
     {
       "symbol": "XAGUSD",
-      "trades": 2523,
-      "net": 55975.36,
-      "winRate": 0.7063,
-      "medianMinutes": 19
+      "trades": 3409,
+      "net": 70290.76,
+      "winRate": 0.7072,
+      "medianMinutes": 19.4
     },
     {
       "symbol": "XAUUSD",
-      "trades": 2214,
-      "net": 55379.84,
-      "winRate": 0.7746,
-      "medianMinutes": 11.3
+      "trades": 3208,
+      "net": 76687.24,
+      "winRate": 0.7703,
+      "medianMinutes": 12.4
     },
     {
       "symbol": "EURUSD",
@@ -368,53 +400,53 @@
     },
     {
       "hour": 9,
-      "trades": 285,
-      "net": 3671.1
+      "trades": 492,
+      "net": 6164.8
     },
     {
       "hour": 10,
-      "trades": 612,
-      "net": 7268
+      "trades": 951,
+      "net": 11827.7
     },
     {
       "hour": 11,
-      "trades": 538,
-      "net": 14680.91
+      "trades": 857,
+      "net": 32228.41
     },
     {
       "hour": 12,
-      "trades": 450,
-      "net": 5975.8
+      "trades": 707,
+      "net": 11580.3
     },
     {
       "hour": 13,
-      "trades": 267,
-      "net": 7191.3
+      "trades": 467,
+      "net": 8851.3
     },
     {
       "hour": 14,
-      "trades": 802,
-      "net": 12000.38
+      "trades": 892,
+      "net": 11612.68
     },
     {
       "hour": 15,
-      "trades": 923,
-      "net": 41176.75
+      "trades": 943,
+      "net": 41218.45
     },
     {
       "hour": 16,
-      "trades": 635,
-      "net": 14301.17
+      "trades": 655,
+      "net": 14918.67
     },
     {
       "hour": 17,
-      "trades": 114,
-      "net": 2309.2
+      "trades": 241,
+      "net": 5304.6
     },
     {
       "hour": 18,
-      "trades": 108,
-      "net": 2454.79
+      "trades": 218,
+      "net": 1626.89
     },
     {
       "hour": 19,
@@ -423,8 +455,8 @@
     },
     {
       "hour": 20,
-      "trades": 1,
-      "net": 47.4
+      "trades": 192,
+      "net": 1365.8
     },
     {
       "hour": 21,
@@ -445,27 +477,27 @@
   "byDuration": [
     {
       "bucket": "0-5m",
-      "trades": 1245,
-      "net": 26320.72,
-      "winRate": 0.9076
+      "trades": 1668,
+      "net": 35160.62,
+      "winRate": 0.9197
     },
     {
       "bucket": "5-30m",
-      "trades": 1905,
-      "net": 44230.08,
-      "winRate": 0.7559
+      "trades": 2596,
+      "net": 73864.58,
+      "winRate": 0.7985
     },
     {
       "bucket": "30m-2h",
-      "trades": 926,
-      "net": 22335.68,
-      "winRate": 0.6231
+      "trades": 1561,
+      "net": 23019.68,
+      "winRate": 0.5663
     },
     {
       "bucket": "2-8h",
-      "trades": 421,
-      "net": 8970.1,
-      "winRate": 0.5154
+      "trades": 552,
+      "net": 5434.5,
+      "winRate": 0.4674
     },
     {
       "bucket": "8h+",

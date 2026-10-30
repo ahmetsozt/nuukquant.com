@@ -1483,27 +1483,27 @@ export const ru: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — деск XAUUSD и XAGUSD",
-      "source": "Модельный портфель · детальная выписка MT4, 26 окт 2026",
-      "updated": "2026-10-26",
+      "source": "Модельный портфель · детальная выписка MT4, 30 окт 2026",
+      "updated": "2026-10-30",
       "stats": [
         {
           "label": "Период",
-          "value": "2 сен – 26 окт 2026 · 33 торговых дня",
+          "value": "2 сен – 30 окт 2026 · 37 торговых дней",
           "tone": "neutral"
         },
         {
           "label": "Доходность за период",
-          "value": "+121,2%",
+          "value": "+136,1%",
           "tone": "up"
         },
         {
           "label": "Профит-фактор",
-          "value": "2,42",
+          "value": "2,50",
           "tone": "neutral"
         },
         {
           "label": "Доля прибыльных",
-          "value": "73,7% (3497 из 4743)",
+          "value": "73,7% (4882 из 6623)",
           "tone": "neutral"
         },
         {
@@ -1513,7 +1513,7 @@ export const ru: ContentOverride = {
         },
         {
           "label": "Зелёные / красные дни",
-          "value": "33 / 0",
+          "value": "37 / 0",
           "tone": "neutral"
         }
       ]

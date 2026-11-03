@@ -8,6 +8,7 @@ import Button from "@/components/ui/Button";
 import InstrumentCloud from "@/components/free-signals/InstrumentCloud";
 import SignalCard from "@/components/free-signals/SignalCard";
 import CommunityPromise from "@/components/free-signals/CommunityPromise";
+import SignalRecord from "@/components/free-signals/SignalRecord";
 import { resolve, type LocaleParams } from "@/lib/page";
 import { seo } from "@/lib/seo";
 
@@ -99,6 +100,9 @@ export default async function FreeSignalsPage({ params }: { params: LocaleParams
           </div>
         </div>
       </section>
+
+      {/* Published record: every signal sent to the group, also at nuukquant.com/free-signals/ */}
+      <SignalRecord lang={locale === "tr" ? "tr" : "en"} />
 
       {/* How the AI produces a signal */}
       <section className="section-pad bg-white" aria-labelledby="how-heading">

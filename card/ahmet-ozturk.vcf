@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:OZTURK;Ahmet;S.;;
+FN:Ahmet S. OZTURK
+ORG:NUUK
+TITLE:Founder
+item1.TEL;TYPE=CELL,VOICE:+971586884464
+item1.X-ABLabel:UAE
+EMAIL;TYPE=INTERNET,WORK:ahmet@ahmetsozturk.com
+URL:https://nuukquant.com
+END:VCARD

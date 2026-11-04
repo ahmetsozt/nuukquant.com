@@ -24,7 +24,7 @@ if (!input) {
 }
 const out = resolve(opt("--out", "src/data/desk-journal.json"));
 
-const SERVER_UTC_OFFSET_HOURS = 3; // Tickmill server time (GMT+3) in the statement
+const SERVER_UTC_OFFSET_HOURS = 2; // Tickmill server time: GMT+2 in winter, GMT+3 under US daylight saving
 const RETURN_TOLERANCE_PCT = 0.01;
 const MONEY_TOLERANCE = 0.05;
 const DURATION_KEYS = { "0-5 dk": "0-5m", "5-30 dk": "5-30m", "30 dk-2 sa": "30m-2h", "2-8 sa": "2-8h", "8 sa+": "8h+" };

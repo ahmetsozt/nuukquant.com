@@ -2080,27 +2080,27 @@ export const tr: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — XAUUSD & XAGUSD masası",
-      "source": "Model portföy · MT4 detaylı rapor, 30 Eki 2026",
-      "updated": "2026-10-30",
+      "source": "Model portföy · MT4 detaylı rapor, 3 Kas 2026",
+      "updated": "2026-11-03",
       "stats": [
         {
           "label": "Dönem",
-          "value": "2 Eyl – 30 Eki 2026 · 37 işlem günü",
+          "value": "2 Eyl – 3 Kas 2026 · 39 işlem günü",
           "tone": "neutral"
         },
         {
           "label": "Dönem getirisi",
-          "value": "+%136,1",
+          "value": "+%142,3",
           "tone": "up"
         },
         {
           "label": "Kâr faktörü",
-          "value": "2,50",
+          "value": "2,44",
           "tone": "neutral"
         },
         {
           "label": "Kazanma oranı",
-          "value": "%73,7 (6.623 işlemde 4.882)",
+          "value": "%73,3 (7.891 işlemde 5.784)",
           "tone": "neutral"
         },
         {
@@ -2110,7 +2110,7 @@ export const tr: ContentOverride = {
         },
         {
           "label": "Yeşil / kırmızı gün",
-          "value": "37 / 0",
+          "value": "39 / 0",
           "tone": "neutral"
         }
       ]

@@ -2062,30 +2062,30 @@ export const en = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — XAUUSD & XAGUSD desk",
-      "source": "Model portfolio · MT4 detailed statement, 30 Oct 2026",
+      "source": "Model portfolio · MT4 detailed statement, 3 Nov 2026",
       "verifiedHref": "",
       "status": "model",
       "since": "2026",
-      "updated": "2026-10-30",
+      "updated": "2026-11-03",
       "stats": [
         {
           "label": "Period",
-          "value": "2 Sep – 30 Oct 2026 · 37 trading days",
+          "value": "2 Sep – 3 Nov 2026 · 39 trading days",
           "tone": "neutral"
         },
         {
           "label": "Period return",
-          "value": "+136.1%",
+          "value": "+142.3%",
           "tone": "up"
         },
         {
           "label": "Profit factor",
-          "value": "2.50",
+          "value": "2.44",
           "tone": "neutral"
         },
         {
           "label": "Win rate",
-          "value": "73.7% (4,882 of 6,623)",
+          "value": "73.3% (5,784 of 7,891)",
           "tone": "neutral"
         },
         {
@@ -2095,7 +2095,7 @@ export const en = {
         },
         {
           "label": "Green / red days",
-          "value": "37 / 0",
+          "value": "39 / 0",
           "tone": "neutral"
         }
       ],

@@ -1253,27 +1253,27 @@ export const es: ContentOverride = {
   performance: [
     {
       "name": "GANN NUUK Trader AI — mesa XAUUSD y XAGUSD",
-      "source": "Cartera modelo · informe detallado MT4, 30 oct 2026",
-      "updated": "2026-10-30",
+      "source": "Cartera modelo · informe detallado MT4, 3 nov 2026",
+      "updated": "2026-11-03",
       "stats": [
         {
           "label": "Periodo",
-          "value": "2 sep – 30 oct 2026 · 37 días de negociación",
+          "value": "2 sep – 3 nov 2026 · 39 días de negociación",
           "tone": "neutral"
         },
         {
           "label": "Rentabilidad del periodo",
-          "value": "+136,1 %",
+          "value": "+142,3 %",
           "tone": "up"
         },
         {
           "label": "Factor de beneficio",
-          "value": "2,50",
+          "value": "2,44",
           "tone": "neutral"
         },
         {
           "label": "Tasa de acierto",
-          "value": "73,7 % (4.882 de 6.623)",
+          "value": "73,3 % (5.784 de 7.891)",
           "tone": "neutral"
         },
         {
@@ -1283,7 +1283,7 @@ export const es: ContentOverride = {
         },
         {
           "label": "Días verdes / rojos",
-          "value": "37 / 0",
+          "value": "39 / 0",
           "tone": "neutral"
         }
       ]

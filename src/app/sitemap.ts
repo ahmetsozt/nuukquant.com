@@ -37,6 +37,8 @@ const PAGES = [
 const MASTERCLASS = { tr: `${SITE}/masterclass/`, en: `${SITE}/masterclass/en/` } as const;
 /** Turkish free-signals record at the short URL (src/app/free-signals/). */
 const FREE_SIGNALS_RECORD = `${SITE}/free-signals/`;
+/** Turkish trainer game at the short URL (src/app/antrenman/). */
+const TRAINER = `${SITE}/antrenman/`;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -49,7 +51,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: { languages: { tr: MASTERCLASS.tr, en: MASTERCLASS.en, "x-default": MASTERCLASS.tr } },
   }));
   const record = { url: FREE_SIGNALS_RECORD, lastModified: now, changeFrequency: "daily" as const, priority: 0.8 };
-  return [record, ...masterclass, ...PAGES.flatMap((page) =>
+  const trainer = { url: TRAINER, lastModified: now, changeFrequency: "monthly" as const, priority: 0.6 };
+  return [record, trainer, ...masterclass, ...PAGES.flatMap((page) =>
     locales.map((locale) => ({
       url: url(locale, page),
       lastModified: now,

@@ -38,6 +38,13 @@ export const trRootAliases: Readonly<Record<string, string>> = {
   "/legal/subscription-terms/": "/abonelik-sartlari/",
 };
 
+/**
+ * Turkish pages that exist only at a root URL and have no /{locale}/ copy
+ * (src/app/antrenman/). The language switcher keeps Turkish on the page and
+ * sends every other language to its home page instead of a 404.
+ */
+export const trOnlyRootPages: readonly string[] = ["/antrenman/"];
+
 /** Locale-less path for a Turkish root alias ("/uyelik/" → "/membership/"), or null. */
 function aliasTarget(path: string): string | null {
   const hit = Object.entries(trRootAliases).find(([, alias]) => alias === path);
@@ -52,12 +59,12 @@ export function localePath(locale: Locale, href: string): string {
   return `/${locale}${href === "/" ? "/" : href}`;
 }
 
-/** Locale of a pathname, counting the Turkish root aliases as Turkish. */
+/** Locale of a pathname, counting the Turkish root aliases and Turkish-only root pages as Turkish. */
 export function localeFromPath(pathname: string): Locale {
   const first = pathname.split("/").filter(Boolean)[0] ?? "";
   if (isLocale(first)) return first;
   const normalised = `/${pathname.split("/").filter(Boolean).join("/")}/`;
-  return aliasTarget(normalised) ? "tr" : defaultLocale;
+  return aliasTarget(normalised) || trOnlyRootPages.includes(normalised) ? "tr" : defaultLocale;
 }
 
 /** Swap the locale segment of a pathname (used by the language switcher). */
@@ -65,6 +72,7 @@ export function switchLocale(pathname: string, to: Locale): string {
   const parts = pathname.split("/").filter(Boolean);
   if (parts.length && isLocale(parts[0])) parts.shift();
   const rest = parts.length ? `/${parts.join("/")}/` : "/";
+  if (trOnlyRootPages.includes(rest)) return to === "tr" ? rest : localePath(to, "/");
   return localePath(to, aliasTarget(rest) ?? rest);
 }
 

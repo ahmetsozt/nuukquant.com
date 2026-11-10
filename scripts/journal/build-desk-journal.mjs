@@ -74,7 +74,7 @@ const byHour = Array.from({ length: 24 }, (_, hour) => {
 
 const journal = {
   schema: "nuuk.desk-journal.v1",
-  source: { kind: "demo", platform: "MT4", broker: "Tickmill", statement: "MT4 detailed statement, all history", serverUtcOffsetHours: SERVER_UTC_OFFSET_HOURS },
+  source: { kind: "demo", platform: "MT4", statement: "MT4 detailed statement, all history", serverUtcOffsetHours: SERVER_UTC_OFFSET_HOURS },
   period: { from: k.ilk.slice(0, 10), to: k.son.slice(0, 10) },
   summary: {
     trades: k.islem,

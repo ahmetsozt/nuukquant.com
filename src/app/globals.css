@@ -4,7 +4,7 @@
   --font-sans: var(--font-manrope), Manrope, "Noto Sans", system-ui, -apple-system, Roboto, Arial, sans-serif;
   --font-display: var(--font-sans);
 
-  /* Palette (Pepperstone-derived: black, electric blue, cyan, off-white) */
+  /* Palette (black, electric blue, cyan, off-white) */
   --color-primary: #0165fa;
   --color-primary-dark: #0052d6;
   --color-cyan: #00d3f3;

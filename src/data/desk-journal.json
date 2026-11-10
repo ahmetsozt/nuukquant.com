@@ -3,7 +3,6 @@
   "source": {
     "kind": "demo",
     "platform": "MT4",
-    "broker": "Tickmill",
     "statement": "MT4 detailed statement, all history",
     "serverUtcOffsetHours": 2
   },

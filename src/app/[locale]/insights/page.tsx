@@ -7,7 +7,7 @@ import TvWidget from "@/components/market/TvWidget";
 
 const TIMELINE = "https://s3.tradingview.com/external-embedding/embed-widget-timeline.js";
 const TECH = "https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js";
-const TECH_SYMBOLS = ["OANDA:XAUUSD", "FX:EURUSD", "CAPITALCOM:US500", "BITSTAMP:BTCUSD"];
+const TECH_SYMBOLS = ["TVC:GOLD", "FX:EURUSD", "SP:SPX", "BITSTAMP:BTCUSD"];
 import { resolve, type LocaleParams } from "@/lib/page";
 import { seo } from "@/lib/seo";
 import JsonLd from "@/components/seo/JsonLd";

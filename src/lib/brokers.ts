@@ -1,5 +1,8 @@
 import type { Broker, SiteContent } from "@/content/en";
 
+/** Former partner slugs; their old URLs forward to the broker page. */
+export const RETIRED_BROKER_SLUGS = ["pepperstone", "tickmill", "saxo", "capital-com", "midas", "darwinex"];
+
 /** Link to the broker's own landing page under /brokers/{slug}/. */
 export function brokerHref(c: SiteContent, b: Broker) {
   return `${c.nav[1].href}${b.slug}/`;

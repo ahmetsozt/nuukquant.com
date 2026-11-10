@@ -9,10 +9,10 @@ import type { ContentOverride } from "@/i18n";
 export const tr: ContentOverride = {
   meta: {
     "title": "NUUK | Yapay Zekâ Destekli Yatırım ve Portföy Yönetimi, Dubai",
-    "description": "NUUK, DIFC (Dubai) merkezli yapay zekâ destekli bir yatırım kuruluşudur: algoritmik işlem sistemleri, portföy yönetimi, aracı kurum ortaklıkları, araştırma ve sinyal hizmetleri, yatırımcı eğitimi."
+    "description": "NUUK, DIFC (Dubai) merkezli yapay zekâ destekli bir yatırım kuruluşudur: algoritmik işlem sistemleri, portföy yönetimi, broker ortaklığı, araştırma ve sinyal hizmetleri, yatırımcı eğitimi."
   },
   brand: {
-    "role": "Algoritmik işlem · Portföy yönetimi · Aracı kurum ortaklıkları",
+    "role": "Algoritmik işlem · Portföy yönetimi · broker Türkiye çözüm ortağı",
     "office": "Dubai Uluslararası Finans Merkezi (DIFC), Dubai, BAE"
   },
   ui: {
@@ -49,7 +49,7 @@ export const tr: ContentOverride = {
     "since": "Başlangıç",
     "source": "Kaynak",
     "openAccount": "Hesap Açın",
-    "compare": "Aracı kurumları karşılaştırın",
+    "compare": "broker'ı inceleyin",
     "subscribe": "Abone Olun",
     "register": "Kayıt Olun",
     "requestDemo": "Demo Talep Edin",
@@ -60,7 +60,7 @@ export const tr: ContentOverride = {
     "whatsappChannel": "WhatsApp grubu",
     "partnerPopup": {
       "title": "NUUK × broker Group stratejik ortaklığı",
-      "alt": "NUUK, broker Group'un Türkiye tanıtım ortağı oldu",
+      "alt": "NUUK, broker Group'un Türkiye çözüm ortağı oldu",
       "cta": "broker'ı inceleyin",
       "close": "Kapat"
     },
@@ -105,7 +105,7 @@ export const tr: ContentOverride = {
           "label": "Portföy Yönetimi"
         },
         {
-          "label": "Aracı Kurum Ortaklıkları"
+          "label": "broker Ortaklığı"
         },
         {
           "label": "Araştırma ve Sinyaller"
@@ -118,7 +118,7 @@ export const tr: ContentOverride = {
       ]
     },
     {
-      "label": "Aracı Kurumlar"
+      "label": "broker"
     },
     {
       "label": "Performans"
@@ -177,13 +177,13 @@ export const tr: ContentOverride = {
       "title": "Piyasalarda disiplinli, sistematik yaklaşım.",
       "lead": "NUUK, yapay zekâ destekli sistematik işlem stratejileri geliştirir; bunları önce kendi sermayesiyle çalıştırır, yatırımcı portföylerini yönetir ve yatırımcılara kendi başlarına işlem yapmayı öğretir. Sitedeki her rakam kaynağını ve yöntemini belirtir.",
       "primary": {
-        "label": "Aracı Kurum Seçin"
+        "label": "broker Hesabı Açın"
       },
       "secondary": {
         "label": "Görüşme Talep Edin"
       },
       "trustLine": [
-        "FCA, ASIC, CySEC ve DFSA denetimindeki ortak aracı kurumlar",
+        "broker Group'un Türkiye çözüm ortağı",
         "Her sistemde kendi sermayemiz",
         "DIFC, Dubai merkezli"
       ],
@@ -201,11 +201,11 @@ export const tr: ContentOverride = {
           "label": "webinar ve seminerlerde eğitim verilen yatırımcı"
         },
         {
-          "value": "10+",
-          "label": "aracı kurum ortaklığı; yedisi bu sitede listelenmektedir"
+          "value": "1",
+          "label": "her NUUK yatırımcısı için tek aracı kurum: broker Group"
         }
       ],
-      "pressTitle": "Partner Aracı Kurumlar"
+      "pressTitle": "Aracı Kurum Ortağı"
     },
     "markets": {
       "kicker": "Canlı fiyatlar",
@@ -225,7 +225,7 @@ export const tr: ContentOverride = {
     "promo": {
       "kicker": "Portföy yönetimi",
       "title": "Hesap sizin adınıza. İşlem yetkisi NUUK'ta. Limitler yazılı.",
-      "body": "Sermaye hiçbir aşamada müşterinin adından çıkmaz. Ortak aracı kurumda kendi adınıza hesap açarsınız; NUUK yalnızca işlem yetkisi alır ve yazılı risk mandası toplam pozisyon ile günlük zarar limitini belirler.",
+      "body": "Sermaye hiçbir aşamada müşterinin adından çıkmaz. broker'ta kendi adınıza hesap açarsınız; NUUK yalnızca işlem yetkisi alır ve yazılı risk mandası toplam pozisyon ile günlük zarar limitini belirler.",
       "figure": "300+",
       "figureLabel": "yönetilen hesap; her biri müşterinin kendi aracı kurum hesabında. Saklama hiçbir zaman el değiştirmez.",
       "cta": {
@@ -252,9 +252,9 @@ export const tr: ContentOverride = {
         "who": "Profesyonel yönetim isteyen yatırımcılar için"
       },
       {
-        "title": "Aracı Kurum Ortaklıkları",
-        "body": "Birlikte çalışılan aracı kurumların bağımsız karşılaştırması ve her biri için adım adım hesap açma rehberi.",
-        "who": "Aracı kurum seçen, işlemini kendisi yapan yatırımcılar için"
+        "title": "broker Ortaklığı",
+        "body": "NUUK, broker Group'un Türkiye çözüm ortağıdır. Koşullar, düzenleme ve adım adım hesap açma rehberi tek yerde.",
+        "who": "NUUK ile hesap açan herkes için"
       },
       {
         "title": "Araştırma, Sinyal ve Eğitim",
@@ -273,11 +273,11 @@ export const tr: ContentOverride = {
       }
     },
     "brokers": {
-      "kicker": "Aracı kurum ortaklıkları",
-      "title": "Birlikte çalışılan aracı kurumlar",
-      "lead": "Yalnızca fiilen işlem yapılan veya incelenen aracı kurumlar listelenir. Her kartta düzenleyici otorite, gerçek spread'ler ve para yatırma/çekme koşulları yer alır.",
+      "kicker": "Aracı kurum ortağı",
+      "title": "NUUK, broker ile çalışıyor",
+      "lead": "NUUK, broker Group'un Türkiye çözüm ortağıdır ve her NUUK yatırımcısı hesabını broker'ta açar. Kartta düzenleyici otorite, spread'ler ve para yatırma/çekme koşulları yer alır.",
       "cta": {
-        "label": "Tüm aracı kurumları karşılaştırın"
+        "label": "NUUK × broker"
       }
     },
     "systems": {
@@ -335,8 +335,8 @@ export const tr: ContentOverride = {
         "label": "canlı sistem; 87 strateji varyantı test edildi"
       },
       {
-        "value": "6",
-        "label": "lisanslı aracı kurum ortağı"
+        "value": "1",
+        "label": "aracı kurum ortağı: broker Group"
       }
     ],
     "activitiesTitle": "NUUK ne yapar",
@@ -344,15 +344,15 @@ export const tr: ContentOverride = {
     "activities": [
       {
         "title": "Algoritmik işlem sistemleri",
-        "body": "Stratejiler şirket içinde tasarlanır, geriye ve ileriye dönük test edilir; ardından FX, altın, endeksler ve dijital varlıklarda NUUK'un kendi sermayesiyle canlıya alınır. GANN NUUK Trader AI, Tickmill'de canlı."
+        "body": "Stratejiler şirket içinde tasarlanır, geriye ve ileriye dönük test edilir; ardından FX, altın, endeksler ve dijital varlıklarda NUUK'un kendi sermayesiyle canlıya alınır. GANN NUUK Trader AI, Model portföy olarak çalışıyor."
       },
       {
         "title": "Portföy yönetimi",
         "body": "MAM/PAMM yapılarıyla müşterinin kendi aracı kurum hesabında yönetilen portföyler; yazılı risk mandası, yönetim ücreti ve net kâr üzerinden performans ücreti."
       },
       {
-        "title": "Aracı kurum ortaklıkları",
-        "body": "Yedi lisanslı aracı kurumla tanıtım aracılığı (IB) anlaşmaları; her biri bağımsız olarak incelenmiş ve adım adım hesap açma rehberiyle belgelenmiş."
+        "title": "broker ortaklığı",
+        "body": "NUUK, broker Group'un Türkiye çözüm ortağıdır. Yatırımcı hesapları ve kurumsal operasyonlar broker üzerinden yürür; NUUK'un kurumsal altyapısını broker LP sağlar."
       },
       {
         "title": "Araştırma ve sinyaller",
@@ -383,17 +383,17 @@ export const tr: ContentOverride = {
       {
         "year": "2025",
         "title": "NUUK, Dubai",
-        "body": "Dubai Uluslararası Finans Merkezi'nde yapay zekâ destekli bir yatırım kuruluşu olarak kurulur: sistemler, portföy yönetimi, aracı kurum ortaklıkları, araştırma ve eğitim."
+        "body": "Dubai Uluslararası Finans Merkezi'nde yapay zekâ destekli bir yatırım kuruluşu olarak kurulur: sistemler, portföy yönetimi, broker ortaklığı, araştırma ve eğitim."
       },
       {
         "year": "2026",
         "title": "Canlı sistemler",
-        "body": "87 strateji varyantı test edildi; üçü üretimde. GANN NUUK Trader AI, Tickmill'de NUUK'un kendi sermayesiyle çalışıyor; sonuçları performans sayfasında."
+        "body": "87 strateji varyantı test edildi; üçü üretimde. GANN NUUK Trader AI, Model portföy olarak çalışıyor; sonuçları performans sayfasında."
       },
       {
         "year": "Bugün",
         "title": "Çok dilli bir masa",
-        "body": "Yatırımcı paneli, altı aracı kurum ortağı ve İstanbul'dan Körfez'e yatırımcılara altı dilde hizmet veren bir site."
+        "body": "Yatırımcı paneli, broker ortaklığı ve İstanbul'dan Körfez'e yatırımcılara altı dilde hizmet veren bir site."
       }
     ],
     "principlesTitle": "NUUK nasıl çalışır",
@@ -456,7 +456,7 @@ export const tr: ContentOverride = {
       },
       {
         "title": "Risk",
-        "body": "Volatiliteye göre ölçeklenen pozisyon büyüklüğü, katı günlük zarar limitleri ve tüm pozisyonları kapatan devre kesiciler."
+        "body": "Risk, sürecin her aşamasında gözetilir."
       },
       {
         "title": "Emir gerçekleştirme",
@@ -471,7 +471,7 @@ export const tr: ContentOverride = {
     "faq": [
       {
         "q": "Sistemleri kendi hesabımda çalıştırabilir miyim?",
-        "a": "Evet. Aracı kuruma bağlı olarak kopya işlem yapabilir, Tickmill, Saxo Bank veya Midas'taki MAM/PAMM yapısına katılabilir ya da sinyal kanalını takip ederek işlemleri kendiniz gerçekleştirebilirsiniz. Her durumda hesap sizin adınıza kalır."
+        "a": "Evet, broker hesabınızla. Kopya işlem yapabilir, broker'taki MAM/PAMM yapısına katılabilir ya da sinyal kanalını takip ederek işlemleri kendiniz gerçekleştirebilirsiniz. Her durumda hesap sizin adınıza kalır."
       },
       {
         "q": "Minimum sermaye ne kadardır?",
@@ -489,7 +489,7 @@ export const tr: ContentOverride = {
     "metaDescription": "NUUK'un kendi portföyünün ve işlem sistemlerinin performansı; her rakamın kaynağı ve yöntemiyle.",
     "kicker": "Performans kaydı",
     "title": "Her rakam, kaynağıyla",
-    "lead": "Hesaplar ortak aracı kurumlarda tutulur. Aşağıdaki her rakam nereden geldiğini (canlı hesap, kâğıt üzerinde işlem veya walk-forward backtest) ve nasıl hesaplandığını belirtir. Geçmiş performans gelecekteki sonuçların garantisi değildir.",
+    "lead": "Yatırımcı hesapları broker'ta tutulur. Bu sayfadaki sonuçlar NUUK Model portföy hesabına aittir; bu hesap yatırımcı hesaplarından ayrıdır. Her rakam nereden geldiğini ve nasıl hesaplandığını belirtir. Geçmiş performans gelecekteki sonuçların garantisi değildir.",
     "disclaimer": "Geçmiş performans gelecekteki sonuçların göstergesi değildir. Aksi belirtilmedikçe rakamlar işlem maliyetleri düşülmüş, performans ücreti düşülmemiş hâldedir.",
     "methodologyTitle": "Rakamların okunması",
     "methodology": [
@@ -514,7 +514,7 @@ export const tr: ContentOverride = {
     "metaDescription": "Portföy yönetimi nasıl çalışır: sermaye müşterinin kendi aracı kurum hesabında kalır ve yazılı risk limitleri dâhilinde yönetilir.",
     "kicker": "Portföy yönetimi",
     "title": "Hesap sizin adınıza. İşlem yetkisi NUUK'ta. Limitler yazılı.",
-    "lead": "Sermaye hiçbir aşamada müşterinin adından çıkmaz. Ortak aracı kurumda kendi adınıza hesap açar ve yönetilen yapıya bağlarsınız; NUUK işlemleri yazılı risk mandası dâhilinde yürütür.",
+    "lead": "Sermaye hiçbir aşamada müşterinin adından çıkmaz. broker'ta kendi adınıza hesap açar ve yönetilen yapıya bağlarsınız; NUUK işlemleri yazılı risk mandası dâhilinde yürütür.",
     "cta": {
       "label": "Tanışma Görüşmesi Talep Edin"
     },
@@ -526,11 +526,11 @@ export const tr: ContentOverride = {
       },
       {
         "title": "Hesap kurulumu",
-        "body": "Ortak aracı kurumda kendi adınıza hesap açar ve fonlarsınız. NUUK yalnızca işlem yetkisi alır; para çekme yetkisi hiçbir zaman devredilmez."
+        "body": "broker'ta kendi adınıza hesap açar ve fonlarsınız. NUUK yalnızca işlem yetkisi alır; para çekme yetkisi hiçbir zaman devredilmez."
       },
       {
         "title": "Risk mandası",
-        "body": "Yazılı manda; maksimum pozisyon, günlük zarar limiti ve izin verilen enstrümanları belirler. Sistem bu sınırları aşamaz."
+        "body": "Risk limitleri yazılı yetki belgesinde belirlenir."
       },
       {
         "title": "Raporlama",
@@ -615,65 +615,44 @@ export const tr: ContentOverride = {
       "Önümüzdeki 3 ay içinde ihtiyaç duyulacak sermaye",
       "Sabit veya garantili getiri bekleyen yatırımcılar"
     ],
-    "compliance": "NUUK Quant, Dubai Uluslararası Finans Merkezi'nde faaliyet göstermektedir. Yönetilen hesaplar, ortak aracı kurumun kendi MAM/PAMM yapısı üzerinden ve o kurumun düzenleyici çerçevesi dâhilinde çalışır: NUUK yalnızca işlem yetkisine sahiptir; saklama veya para çekme yetkisi hiçbir zaman NUUK'a geçmez. Bugün yönetilen 300'ün üzerindeki hesap havuz MAM yapısındadır; özel mandalar bireysel olarak açılır."
+    "compliance": "NUUK Quant, Dubai Uluslararası Finans Merkezi'nde faaliyet göstermektedir. Yönetilen hesaplar, broker'ın kendi MAM/PAMM yapısı üzerinden ve onun düzenleyici çerçevesi dâhilinde çalışır: NUUK yalnızca işlem yetkisine sahiptir; saklama veya para çekme yetkisi hiçbir zaman NUUK'a geçmez. Bugün yönetilen 300'ün üzerindeki hesap havuz MAM yapısındadır; özel mandalar bireysel olarak açılır."
   },
 
   brokers: {
-    metaTitle: "Aracı Kurum Ortaklıkları",
-    metaDescription: "Ortak aracı kurumların bağımsız karşılaştırması: düzenleyici otorite, spread'ler, para yatırma, platformlar ve adım adım hesap açma.",
-    kicker: "Aracı kurum ortaklıkları",
-    title: "Birlikte çalışılan aracı kurumlar",
-    lead: "Yatırımcılar yalnızca fiilen işlem yapılan veya incelenen aracı kurumlara yönlendirilir. Güncel ortaklar: broker Group (Türkiye tanıtım ortaklığımız), Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas ve Darwinex. Her kartta düzenleyici otorite, gerçek işlem maliyetleri ve para yatırma/çekme koşulları yer alır.",
+    metaTitle: "NUUK × broker",
+    metaDescription: "NUUK, broker Group'un Türkiye çözüm ortağıdır. Düzenleyici otorite, spread'ler, para yatırma, platformlar, kurumsal likidite ve adım adım hesap açma.",
+    kicker: "NUUK × broker",
+    title: "Her NUUK yatırımcısı için tek aracı kurum: broker",
+    lead: "NUUK, broker Group'un Türkiye çözüm ortağıdır. Yatırımcı hesapları ve kurumsal operasyonlar broker üzerinden yürür; her yeni yatırımcı hesabını broker'ta açar.",
     disclosure: "Bu sayfadaki bağlantılar yönlendirme (referral) bağlantılarıdır. Bu bağlantılar üzerinden hesap açıp fonlamanız hâlinde NUUK aracı kurumdan komisyon elde eder. Bu durum ödediğiniz spread veya komisyonları değiştirmez.",
+    hub: {
+      kicker: "NUUK × broker",
+      title: "NUUK, broker Group'un Türkiye çözüm ortağıdır",
+      points: [
+        { title: "Türkiye çözüm ortağı", body: "NUUK ve broker Group, Türkiye'de çözüm ortağı olarak birlikte çalışır." },
+        { title: "Her yatırımcı için tek aracı kurum", body: "Tüm NUUK yatırımcılarının hesabı broker'tadır. Yatırımcı işlemleri ve kurumsal operasyonlar broker üzerinden yürür." },
+        { title: "broker hesabı zorunlu", body: "NUUK ile çalışmak için yeni yatırımcıların broker hesabı açması gerekir." },
+        { title: "broker LP altyapısı", body: "NUUK'un kurumsal altyapısını broker LP sağlar." },
+        { title: "Dünya genelindeki aracı kurumlar için", body: "NUUK, broker'ın altyapısını NUUK çatısı altında global aracı kurumlara sunar." },
+      ],
+      modelNote: "Performans sayfasındaki sonuçlar NUUK Model portföy hesabına aittir; bu hesap yatırımcı hesaplarından ayrıdır.",
+      openAccount: "broker Hesabı Açın",
+      openAccountHref: "https://broker/tr/account/live-account?lp=23&salesid=6069752926",
+      lp: "broker LP",
+      lpHref: "https://broker/en/partnership/institutional-liquidity-offering",
+    },
     compareTitle: "Karşılaştırma tablosu",
     partner: {
-      "kicker": "Ortaklık programı",
-      "title": "Tanıtım aracıları ve eğitmenler için",
-      "body": "Bu aracı kurumlara hâlihazırda müşteri yönlendiriyorsanız NUUK ana tanıtım aracınız (master IB) olarak çalışabilir: aylık ödenen şeffaf komisyon paylaşımı, Türkçe, Arapça ve İngilizce hesap açma ve KYC desteği ve kendi kitleniz için kullanabileceğiniz aracı kurum karşılaştırma materyalleri. Alt ortaklık koşulları her aracı kurum için yazılı olarak belirlenir.",
+      "kicker": "Kurumsal",
+      "title": "NUUK çatısı altında, global aracı kurumlar için broker altyapısı",
+      "body": "NUUK, broker'ın altyapısını NUUK çatısı altında dünya genelindeki aracı kurumlara sunar. Aracı kurumlar, tanıtım ortakları ve eğitmenler; broker LP likiditesi, her ay ödenen şeffaf komisyon paylaşımı ve Türkçe, Arapça, İngilizce hesap açma ve KYC desteğiyle bizimle çalışabilir. Koşullar yazılı olarak belirlenir.",
       "points": [
         "Aylık ödenen şeffaf komisyon paylaşımı",
         "Üç dilde hesap açma ve KYC desteği",
-        "Yeniden kullanılabilir aracı kurum karşılaştırma materyalleri"
+        "broker LP kurumsal likiditesi"
       ],
       "cta": {
-        "label": "Ortaklık görüşmesi talep edin"
-      }
-    },
-    wizard: {
-      "title": "Üç soruda aracı kurumunuzu bulun",
-      "lead": "Üç soruyu yanıtlayın, size uygun ortağı gösterelim. Kişisel tavsiye değildir; güncel koşulları her zaman aracı kurumun sitesinden doğrulayın.",
-      "q1": "Nerede yaşıyorsunuz?",
-      "o1": [
-        "Türkiye",
-        "BAE / Körfez",
-        "AB / Birleşik Krallık",
-        "Diğer"
-      ],
-      "q2": "Ne işlem yapmak istiyorsunuz?",
-      "o2": [
-        "FX, altın ve endeks CFD'leri",
-        "Hisse ve ETF",
-        "Kripto ve çoklu varlık CFD'leri",
-        "Kopya işlem / yönetilen hesap"
-      ],
-      "q3": "Başlangıç sermayesi",
-      "o3": [
-        "1.000 USD altı",
-        "1.000 – 25.000 USD",
-        "25.000 – 250.000 USD",
-        "250.000 USD üzeri"
-      ],
-      "result": "Önerimiz",
-      "alt": "Bakmaya değer",
-      "restart": "Yeniden başla",
-      "reasons": {
-        "pepperstone": "Körfez sakinleri için DFSA lisanslı yapı, FX ve metallerde 0,0 pipten başlayan ham spread, MT4/MT5/cTrader/TradingView.",
-        "tickmill": "FCA ve CySEC denetimi, Türkçe destek, 0,0 pipten ham spread ve havuz hesaplarımızda kullandığımız MAM yapısı.",
-        "saxo": "Banka düzeyinde saklama; hisse, ETF, tahvil ve opsiyonlarda 70.000'den fazla enstrüman; büyük hesaplar için kademeli fiyatlama.",
-        "capital-com": "Düşük minimum, kripto ve hisse dahil 3.000'den fazla CFD, hızlı uygulama; çoklu varlık CFD'lerine ilk adım için uygun.",
-        "midas": "Türkiye'de düzenlenen aracılık uygulaması; BIST, ABD ve Avrupa hisseleri 1 USD'den, Türkçe ve TL ile fonlama.",
-        "darwinex": "Sistematik stratejinizi yatırım yapılabilir bir DARWIN'e dönüştürün ya da bizimkini takip edin; FCA denetimli, kopya ve tahsis yerleşik.",
-        "broker": "Türkiye tanıtım ortaklığımız: FX ve altından hisse ve kriptoya tek hesap, 18'den fazla düzenleyici otoritenin denetimi ve NUUK'un Türkçe hesap açılış desteği."
+        "label": "NUUK ile görüşün"
       }
     },
     cardLabels: {
@@ -697,7 +676,7 @@ export const tr: ContentOverride = {
       "yes": "Evet",
       "no": "Hayır",
       "profile": "Tam profil",
-      "allBrokers": "Tüm aracı kurumlar",
+      "allBrokers": "NUUK × broker",
       "atAGlance": "Özet",
       "conditions": "İşlem koşulları",
       "about": "Aracı kurum hakkında",
@@ -708,9 +687,9 @@ export const tr: ContentOverride = {
     },
     list: [
       {
-        "referralHref": "https://broker/tr/account/live-account?lp=23&salesid=6069752926&original_ref=direct",
-        "ctaNote": "NUUK, broker Group'un tanıtım ortağıdır. CFD'ler karmaşık araçlardır ve kaldıraç nedeniyle hızla para kaybetme riski yüksektir; yalnızca kaybetmeyi göze alabileceğiniz parayla işlem yapın.",
-        "tagline": "Türkiye tanıtım ortağımız: FX, metaller, endeksler, hisseler ve kripto tek hesapta",
+        "referralHref": "https://broker/tr/account/live-account?lp=23&salesid=6069752926",
+        "ctaNote": "NUUK, broker Group'un Türkiye çözüm ortağıdır. CFD'ler karmaşık araçlardır ve kaldıraç nedeniyle hızla para kaybetme riski yüksektir; yalnızca kaybetmeyi göze alabileceğiniz parayla işlem yapın.",
+        "tagline": "NUUK'un Türkiye çözüm ortağı: FX, metaller, endeksler, hisseler ve kripto tek hesapta",
         "founded": "2005, Kaliforniya",
         "minDeposit": "$50 Standard · $1.000 Pro · $10.000 ECN",
         "spreads": [
@@ -752,11 +731,11 @@ export const tr: ContentOverride = {
           "Hesap türünü (Standard, Pro veya ECN) ve platformu (MT4 veya MT5) seçin.",
           "Kart, banka havalesi, SEPA veya kriptoyla fonlayın; giriş yapıp işleme başlayın."
         ],
-        "summary": "broker Group 2005'te Kaliforniya'da kuruldu. Bugün 100 ülkede 2 milyondan fazla müşteri, yaklaşık 35 milyar dolarlık günlük işlem hacmi ve 322 milyon doları aşan ödenmiş sermaye bildiriyor. Grup şirketleri ASIC, CySEC, MAS, BaFin, CIMA, BAE Sermaye Piyasası Kurumu ve diğer otoritelerden lisanslı. Ekim 2026'dan bu yana NUUK, broker Group'un Türkiye tanıtım ortağı: hesabı sizinle birlikte açıyor, Türkçe destek veriyoruz.",
+        "summary": "broker Group 2005'te Kaliforniya'da kuruldu. Bugün 100 ülkede 2 milyondan fazla müşteri, yaklaşık 35 milyar dolarlık günlük işlem hacmi ve 322 milyon doları aşan ödenmiş sermaye bildiriyor. Grup şirketleri ASIC, CySEC, MAS, BaFin, CIMA, BAE Sermaye Piyasası Kurumu ve diğer otoritelerden lisanslı. Ekim 2026'dan bu yana NUUK, broker Group'un Türkiye çözüm ortağı: hesabı sizinle birlikte açıyor, Türkçe destek veriyoruz.",
         "faq": [
           {
             "q": "NUUK–broker ortaklığı benim için ne anlama geliyor?",
-            "a": "NUUK, broker Group'u Türkiye'deki yatırımcılara tanıtıyor. Hesabı broker'ta kendi adınıza açarsınız; NUUK hesap açılışını Türkçe yürütür, araştırma ve eğitim sağlar. NUUK paranızı hiçbir zaman teslim almaz."
+            "a": "NUUK, broker Group'un Türkiye çözüm ortağıdır. Her NUUK yatırımcısının hesabı broker'tadır ve yeni yatırımcıların da burada hesap açması gerekir. Hesabı broker'ta kendi adınıza açarsınız; NUUK hesap açılışını Türkçe yürütür, araştırma ve eğitim sağlar. NUUK paranızı hiçbir zaman teslim almaz."
           },
           {
             "q": "Minimum yatırım ne kadar?",
@@ -772,165 +751,13 @@ export const tr: ContentOverride = {
           },
           {
             "q": "NUUK benim hesabımdan kazanıyor mu?",
-            "a": "Evet. Tanıtım ortağı olarak NUUK'a ödemeyi broker kendi gelirinden yapar. Bu sizin ödediğiniz spread veya komisyonu değiştirmez."
+            "a": "Evet. Çözüm ortağı olarak NUUK'a ödemeyi broker kendi gelirinden yapar. Bu sizin ödediğiniz spread veya komisyonu değiştirmez."
+          },
+          {
+            "q": "broker'ta hesap açmak zorunda mıyım?",
+            "a": "Evet. Her yeni NUUK yatırımcısının broker hesabı olması gerekir. Hesap sizin adınıza açılır; NUUK paranızı hiçbir zaman teslim almaz."
           }
         ]
-      },
-      {
-        tagline: "0,0 pip'ten başlayan ham spread'ler, beş platform, dokuz lisanslı kuruluş",
-        regulator: "FCA · ASIC · CySEC · DFSA · BaFin · SCB · CMA",
-        licence: "DFSA F004356, Pepperstone Financial Services (DIFC) Ltd · grup şirketleri FCA, ASIC, CySEC, BaFin, SCB, CMA altında",
-        founded: "2010, Melbourne",
-        minDeposit: "$0 · kartla $10",
-        spreads: [{ value: "0,0 Razor · 1,0 Standard" }, { value: "Razor'da 0,08'den itibaren" }, { value: "0,4'ten itibaren" }],
-        commission: "Razor: FX ve altında lot başına, işlem yönü başına $3,50 · Standard: yok (hisse CFD'leri hariç)",
-        leverage: "Bireysel 1:30 (FCA, ASIC, CySEC, DFSA) · SCB'de 1:500'e kadar · SCB Pro 1:1000",
-        funding: ["Visa / Mastercard", "Apple Pay", "Google Pay", "PayPal", "Skrill", "Neteller", "Banka havalesi", "Kripto"],
-        withdrawalTime: "En fazla 1 iş günü",
-        languages: "24/5 çok dilli, hafta sonu 18 saat · Türkçe destek masası yok",
-        bestFor: "Ham spread'lerle işlem yapan aktif FX ve altın yatırımcıları; MT5, cTrader veya TradingView'da algoritmik işlem yapanlar",
-        pros: [
-          "Razor hesabı: 0,0 pip'ten başlayan spread'ler ve lot başına, işlem yönü başına sabit $3,50",
-          "Dealing desk müdahalesi olmadan %99,59 emir gerçekleşme oranı",
-          "1.350'den fazla piyasa: FX, endeksler, emtia, hisseler, ETF'ler ve kripto CFD'leri",
-          "Ücretsiz para yatırma; kart, e-cüzdan ve kripto çekimleri bir iş günü içinde işlenir",
-          "Yedi yargı bölgesinde düzenlenir, müşteri fonları birinci sınıf bankalarda ayrıştırılmış hesaplarda tutulur",
-        ],
-        cons: [
-          "FCA, ASIC, CySEC ve DFSA kuruluşlarında bireysel kaldıraç 1:30 ile sınırlı",
-          "Uluslararası banka havalesiyle çekimler $20 ücrete tabi ve 7 iş gününe kadar sürebilir",
-          "Yalnızca CFD: dayanak hisseye veya coine hiçbir zaman sahip olmazsınız",
-        ],
-        steps: [
-          "Yönlendirme bağlantısını açın ve Join now'a tıklayın. E-postanızla kayıt olun ve ücretsiz demo alın.",
-          "Uygunluk sorularını yanıtlayın (yaklaşık 5 dakika).",
-          "Kimliğinizi doğrulayın: resmî kimlik belgesi ve ikametgâh belgesi.",
-          "Kart, Apple Pay, PayPal veya e-cüzdanla $10'dan itibaren fonlayın. Banka havalesinde alt sınır yok.",
-          "Razor veya Standard'ı seçin, ardından MT5, cTrader, TradingView veya Pepperstone uygulamasından giriş yapın.",
-        ],
-        summary:
-          "2010'da Melbourne'da kurulan Pepperstone, hacim bazında en büyük CFD aracı kurumlarından biridir: 900.000'den fazla hesap, aylık yaklaşık 1 trilyon dolar işlem hacmi ve FCA, ASIC, CySEC, DFSA, BaFin, SCB ve CMA altında dokuz lisanslı kuruluş. DFSA tarafından düzenlenen Dubai kuruluşunda bir Standard hesabım var ve bunu takdire dayalı altın işlemleri için kullanıyorum.",
-        faq: [
-          {
-            q: "Razor mı Standard mı: hangi hesabı seçmeliyim?",
-            a: "Aktif işlem yapıyorsanız FX ve altın için Razor: 0,0 pip'ten başlayan ham spread'ler artı lot başına, işlem yönü başına $3,50. Her şeyin spread içinde olmasını tercih ediyorsanız Standard: EUR/USD'de 1,0 pip'ten itibaren, hisse CFD'leri dışında komisyon yok. Her ikisi de aynı 1.350'den fazla piyasaya erişim sağlar.",
-          },
-          {
-            q: "Minimum yatırım tutarı nedir?",
-            a: "Hesap açmak için alt sınır yok. Kart, Apple Pay, Google Pay, PayPal, Skrill ve Neteller ile yatırımlar $10'dan başlar; yurt içi banka havalelerinde alt sınır yok. Para yatırma ücretsizdir.",
-          },
-          {
-            q: "Para çekme ne kadar sürer?",
-            a: "Kart, e-cüzdan ve kripto çekimleri bir iş günü içinde işlenir ve ücretsizdir. Uluslararası banka havaleleri $20 ücrete tabidir ve 7 iş gününe kadar sürebilir.",
-          },
-          {
-            q: "Pepperstone düzenlemeye tabi mi?",
-            a: "Evet. Grup şirketleri FCA (Birleşik Krallık), ASIC (Avustralya), CySEC (Kıbrıs), DFSA (Dubai), BaFin (Almanya), SCB (Bahamalar) ve CMA (Kenya) tarafından lisanslanmıştır. Müşteri fonları birinci sınıf bankalarda ayrıştırılmış hesaplarda tutulur ve bireysel müşteriler negatif bakiye korumasına sahiptir.",
-          },
-          {
-            q: "Hesabım hangi kuruluş altında olacak?",
-            a: "Bağlantım üzerinden, DFSA tarafından düzenlenen Dubai kuruluşu Pepperstone Financial Services (DIFC) Limited'e kayıt olursunuz. Bireysel kaldıraç 1:30 ile sınırlıdır, müşteri parası ayrıştırılır ve bireysel müşteriler negatif bakiye korumasına sahiptir. Profesyonel müşteriler daha yüksek kaldıraç için başvurabilir.",
-          },
-          {
-            q: "Yönlendirme bağlantısı ücretlerimi değiştirir mi?",
-            a: "Hayır. Doğrudan veya bağlantım üzerinden kayıt olmanız fark etmeksizin spread'ler ve komisyonlar aynıdır. Aracı kurum komisyonumu kendi gelirinden öder.",
-          },
-        ],
-      },
-      {
-        tagline: "İşlem yönü başına $3 ile 0,0 pip'ten başlayan ham fiyatlama, MT4/MT5 ve TradingView",
-        regulator: "FCA · CySEC · FSA Seyşeller · FSCA",
-        licence: "FCA 717270 · CySEC 278/15 · FSA SD008 · FSCA FSP 49464 · DFSA temsilcilik ofisi F007663",
-        founded: "2014, Londra",
-        minDeposit: "$100",
-        spreads: [{ value: "0,0 Raw · 1,6 Classic" }, { value: "Raw'da 0,08'den itibaren" }, { value: "0,39'dan itibaren" }],
-        commission: "Raw: lot başına, işlem yönü başına $3 (MT4/MT5), TradingView'da $3,50 · Classic: yok · endeksler ve hisseler: yok",
-        leverage: "Bireysel 1:30 (FCA, CySEC) · Tickmill Ltd (Seyşeller) altında 1:1000'e kadar · profesyonel 1:500",
-        funding: ["Banka havalesi", "Visa / Mastercard", "Skrill", "Neteller", "UnionPay", "Kripto"],
-        withdrawalTime: "1 iş günü içinde işlenir",
-        languages: "Pzt–Cum 07:00–16:00 GMT, 14 dil · Türkçe destek masası yok",
-        bestFor: "İşlem yönü başına $3 ile ham fiyatlama isteyen, maliyete duyarlı FX ve altın yatırımcıları, scalper'lar ve EA kullanıcıları",
-        pros: ["Raw hesabı: lot başına, işlem yönü başına $3 ile 0,0 pip spread; ForexBrokers.com tarafından 2021–2024'te komisyon ve ücretlerde 1 numara seçildi", "FCA, CySEC, FSA Seyşeller ve FSCA kuruluşları; Birleşik Krallık ve AB müşterileri için FSCS ve ICF güvencesi", "Birinci sınıf bankalarda ayrıştırılmış hesaplar, negatif bakiye koruması ve $20 bin–$1 milyon arası bakiyeler için Lloyd's sigortası", "$100 minimum, para yatırma veya çekme ücreti yok, $5.000 üzeri havalelerde banka masrafları iade edilir", "Tüm stratejilere izin verilir (scalping, hedging, EA), ücretsiz VPS, TradingView entegrasyonu"],
-        cons: ["1:1000 kaldıraç yalnızca Seyşeller kuruluşunda; Birleşik Krallık ve AB bireysel müşterileri 1:30 ile sınırlı", "Classic hesap spread'leri 1,6 pip'ten başlar; Raw'a kıyasla geniş", "Türkçe web sitesi veya destek masası yok; USD/TRY, EUR/TRY ve GBP/TRY yalnızca pozisyon kapatmaya açık"],
-        steps: ["Kayıt: my.tickmill.com/sign-up adresinde ad, ülke, müşteri türü ve e-posta girerek Müşteri Alanınızı oluşturun; Introducing Broker alanı boşsa IB kodu olarak IB82498200 girin", "Doğrulama: Müşteri Alanına giriş yapın ve kimlik belgesi ile ikametgâh belgesini yükleyin", "Hesap oluşturma: belgeler onaylandıktan sonra Classic, Raw veya TradingView Raw hesap türünü, ana para birimini (USD/EUR/GBP/ZAR) ve kaldıracı seçerek gerçek hesap açın", "Para yatırma: bir ödeme yöntemi seçin (banka havalesi, kart, Skrill, Neteller, UnionPay, kripto) ve $100'dan itibaren fonlayın; çoğu yöntem anında hesaba geçer", "İşlem: MT4/MT5 veya Tickmill Trader'ı indirin ya da hesap bilgilerinizle TradingView'ı bağlayın ve işleme başlayın"],
-        summary: "Tickmill Group, 2014'te Ingmar ve Illimar Mattus tarafından kuruldu; merkezi Londra'dadır ve Birleşik Krallık (FCA 717270), Kıbrıs (CySEC 278/15), Seyşeller (FSA SD008) ve Güney Afrika'da (FSCA FSP 49464) düzenlemeye tabi kuruluşlara sahiptir. 1,3 milyon kayıtlı hesap, 900 milyonun üzerinde işlem ve aylık ortalama yaklaşık 350 milyar dolar hacim bildirmekte olup 60'tan fazla sektör ödülü kazanmıştır. NUUK Trend Ensemble kâğıt üstü (paper) hesabını ve gün içi demoyu burada çalıştırıyorum; ayrıca yönetilen MAM hesapları için kullanılan üç kurumdan biridir.",
-        faq: [{ q: "Tickmill hangi hesap türlerini sunuyor?", a: "Üç CFD hesabı: Classic (1,6 pip'ten başlayan spread, komisyon yok), Raw (0,0 pip'ten başlayan spread, lot başına ve işlem yönü başına $3, MT4/MT5) ve TradingView Raw / Tickmill Trader (0,0 pip, işlem yönü başına $3,50). Tümü $100'dan başlar, 0,01 lota ve her stratejiye izin verir, faizsiz (swap-free) yapılabilir. Tickmill UK ayrıca bir Vadeli İşlemler hesabı ($1.000) ve bir IBKR çoklu varlık hesabı sunar." }, { q: "Tickmill'de minimum yatırım nedir?", a: "Tüm CFD hesapları için $100 (veya EUR/GBP karşılığı); ZAR hesaplarında alt sınır daha düşüktür. Minimum çekim $25'tır. Tickmill para yatırma veya çekme ücreti almaz ve $5.000 üzeri havale yatırımlarında banka masraflarını iade eder." }, { q: "Tickmill'de para çekme ne kadar sürer?", a: "Çekim talepleri bir iş günü içinde işlenir. Hesaba ulaşma süresi yönteme bağlıdır: e-cüzdanlar ve kripto genellikle anında ile 48 saat arası, kartlar 8 iş gününe kadar, banka havaleleri 2–7 iş günü. Fonlar önce orijinal yatırım yöntemine iade edilir (kartla yatırılanlar karta, kârlar banka veya e-cüzdan yoluyla)." }, { q: "Tickmill düzenlemeye tabi mi ve müşteri fonları güvende mi?", a: "Evet. Tickmill UK Ltd FCA yetkilidir (717270), Tickmill Europe Ltd CySEC lisanslıdır (278/15), Tickmill Ltd FSA Seyşeller menkul kıymet aracısıdır (SD008) ve Tickmill South Africa FSCA lisanslıdır (FSP 49464); Tickmill UK ayrıca bir DFSA temsilcilik ofisi (F007663) işletir. Müşteri parası birinci sınıf bankalarda ayrıştırılır, negatif bakiye koruması uygulanır, Birleşik Krallık müşterileri £120.000'e kadar FSCS, AB müşterileri €20.000'e kadar ICF güvencesi alır ve $20.000 ile $1.000.000 arası bakiyeler Lloyd's ile sigortalıdır." }, { q: "Tickmill hangi kaldıracı sunuyor?", a: "Tickmill Ltd (Seyşeller) altında dinamik kaldıraçla forex ve kıymetli madenlerde 1:1000'e kadar; başlıca kriptolarda 1:200, endekslerde 1:100 ve hisselerde 1:20. Tickmill Europe altında bireysel müşteriler en fazla 1:30, tercihe bağlı profesyonel müşteriler 1:500'e kadar alır; Tickmill UK bireysel müşterileri de 1:30 ile sınırlıdır." }],
-      },
-      {
-        tagline: "Tek hesapta 71.000'den fazla enstrüman sunan Danimarkalı yatırım bankası",
-        regulator: "Danimarka FSA · FCA · FINMA · MAS · ASIC · SFC · JFSA",
-        licence: "Danimarka FSA bankacılık lisansı 1149 (Saxo Bank A/S) · DFSA tarafından düzenlenen DIFC temsilcilik ofisi",
-        founded: "1992, Kopenhag",
-        minDeposit: "Yok (Classic) · BAE sitesinde $5.000",
-        spreads: [{ value: "Classic'te 1,0 · VIP'te 0,7'den itibaren" }, { value: "34 sentten itibaren" }, { value: "0,7'den itibaren" }],
-        commission: "FX ve endeks CFD'leri yalnızca spread · ABD hisseleri %0,08 (min $1), VIP %0,03 · opsiyonlar $0,75'ten, vadeli işlemler $1'dan itibaren",
-        leverage: "Bireysel 1:30 (ESMA tarzı sınırlar) · tercihe bağlı profesyoneller için daha düşük teminat",
-        funding: ["Banka havalesi", "SEPA Instant", "Kart (ülkeye bağlı)", "İlk yatırımdan sonra Wise / Revolut"],
-        withdrawalTime: "Aynı gün işlenir, bankanıza 1–5 iş günü",
-        languages: "24/5 telefon, sohbet ve e-posta; Dubai ofisi · uygulama Türkçe dâhil 23 dilde, Türkçe destek masası yok",
-        bestFor: "Tek girişle banka düzeyinde saklama artı FX ve CFD işlemi isteyen çoklu varlık yatırımcıları",
-        pros: ["SIFI statüsüne sahip lisanslı Danimarka bankası; nakit, Danimarka mevduat güvencesiyle 100.000 EUR'ya kadar korunur", "71.000'den fazla enstrüman: 50'den fazla borsada 23.000'den fazla hisse, 8.200'den fazla ETF, 5.200 tahvil, vadeli işlemler, opsiyonlar ve 185'ten fazla FX paritesi", "Hacme göre kademeli fiyatlama: EUR/USD 1,0'dan 0,7 pip'e, ABD hisseleri %0,08'den %0,03'e, endeks CFD'lerinde komisyon yok", "Kendi SaxoTraderGO/PRO ve SaxoInvestor platformları artı OpenAPI, FIX ve TradingView", "Hareketsizlik veya platform ücreti yok; Saxo tarafında para yatırma ve çekme ücretsiz"],
-        cons: ["Çoğu bölgede hisse, ETF ve tahvillerde yıllık %0,15 ile %0,09 arası saklama ücreti", "Platinum ve VIP kademeleri 200 bin EUR ve 1 milyon EUR'dan başlar; BAE sitesi Classic hesap açmak için $5.000 ister", "Faizsiz (swap-free) hesap yok; Dubai'deki varlık bir temsilcilik ofisi olduğundan BAE müşterileri Danimarka'daki Saxo Bank A/S ile sözleşme yapar"],
-        steps: ["home.saxo/accounts adresinden çevrimiçi hesap oluşturun (18 yaş üstü; ulusal kimlik ve vergi numarası, pasaport/kimlik kartı, selfie; istenirse ikametgâh belgesi)", "Doğrulanın – başvuruların çoğu dakikalar içinde dijital olarak onaylanır, aksi hâlde 2 iş gününe kadar sürer", "SaxoTraderGO veya SaxoInvestor'a giriş yapın ve hesabı fonlayın – ilk yatırım, ikamet ettiğiniz ülkede kendi adınıza açılmış bir banka hesabından gelmelidir", "Platinum (200 bin EUR+) veya VIP (1 milyon EUR+) fiyatlaması istiyorsanız kademe tutarını 30 gün içinde yatırın", "İlk işleminizi yapın – önce alıştırma için 100.000 USD sanal bakiyeli 20 günlük demo mevcuttur"],
-        summary: "Saxo Bank A/S, Danimarka FSA tarafından lisanslanmış (lisans 1149), 2023'te sistemik öneme sahip kuruluş olarak belirlenmiş ve Mart 2026'dan bu yana çoğunluk hissesi J. Safra Sarasin Group'a ait, merkezi Kopenhag'da bulunan bir bankadır. 1992'de kurulmuş olup 180'den fazla ülkede 1,5 milyondan fazla müşteriye 150 milyar EUR'nun üzerinde müşteri varlığıyla hizmet vermektedir. BAE'de DFSA tarafından düzenlenen bir temsilcilik ofisi işletir; müşteri sözleşmeleri Danimarka'daki Saxo Bank A/S ile yapılır. Çoklu varlık portföyümü burada tutuyorum ve yönetilen hesaplar için kullanılan üç kurumdan biridir.",
-        faq: [{ q: "Classic, Platinum ve VIP kademeleri nedir ve nasıl hak kazanırım?", a: "Classic varsayılan kademedir. Platinum için 200.000 EUR+ (BAE sitesinde 250.000 USD+) yatırım veya belirli bir işlem hacmi; VIP için 1.000.000 EUR+ (1.250.000 USD+) veya hacim gerekir. Üst kademeler daha düşük spread ve komisyon ile öncelikli destek alır; Saxo Elite, yaklaşık 5 milyon EUR üzeri varlığa sahip müşteriler içindir." }, { q: "Minimum yatırım var mı?", a: "Uluslararası site Classic hesap için minimum fonlama şartı olmadığını belirtir; ancak BAE/MENA sitesi 5.000 USD minimum fonlama listeler. Platinum veya VIP'e hak kazanmak için kademe tutarları ilk 30 gün içinde yatırılmalıdır." }, { q: "Saxo spread ve komisyon dışında hangi ücretleri alıyor?", a: "Çoğu bölgede hisse, ETF/ETC ve tahvillerde yıllık %0,15 (Classic), %0,12 (Platinum) veya %0,09 (VIP) saklama ücreti (AB'de ikamet edenler için artı KDV), %0,25'e kadar döviz dönüşümü, FX taşıma (rollover) marjı %0,50–0,75; hareketsizlik, platform, para yatırma veya çekme ücreti yok." }, { q: "Saxo'yu kim düzenliyor ve gerçek bir banka mı?", a: "Saxo Bank A/S, Danimarka FSA tarafından denetlenen (lisans no. 1149) ve SIFI olarak sınıflandırılan tam lisanslı bir Danimarka bankasıdır. Grup şirketleri FCA, FINMA, MAS, ASIC, SFC ve JFSA tarafından düzenlenir. Dubai'de Saxo Bank A/S, DFSA tarafından düzenlenen bir temsilcilik ofisi işletir; eski Saxo Bank (Dubai) Ltd lisansı (F001014) 2017'de geri çekilmiştir." }, { q: "Neler işlem yapabilirim?", a: "71.000'den fazla enstrüman: 50'den fazla borsada 23.000'den fazla hisse, 8.200'den fazla ETF, 5.200 tahvil, yatırım fonları, 185'ten fazla FX paritesi, FX opsiyonları, endeks/hisse/emtia CFD'leri, 250'den fazla vadeli işlem, 3.100'den fazla borsa opsiyonu ve kripto FX/ETP'ler." }],
-      },
-      {
-        tagline: "TradingView, MT4/MT5 ve 5.500'den fazla piyasada komisyonsuz CFD",
-        regulator: "FCA · CySEC · ASIC · SCB · SCA (BAE)",
-        licence: "FCA 793714 · CySEC 319/17 · ASIC AFSL 513393 · SCB SIA-F245 · BAE 20200000176 (Capital Com MENA, Dubai)",
-        founded: "2016, Londra",
-        minDeposit: "Kartla $20 · havaleyle €50",
-        spreads: [{ value: "~0,7'den itibaren (dinamik)" }, { value: "~0,5'ten itibaren (dinamik)" }, { value: "~0,6'dan itibaren" }],
-        commission: "CFD'lerde yok, yalnızca spread · gecelik taşıma yıllık %4 ± referans faiz · %0,7 döviz dönüşümü (profesyonel %0,5)",
-        leverage: "Tüm kuruluşlarda bireysel 1:30 · profesyonel 1:500'e kadar",
-        funding: ["Visa / Mastercard", "Apple Pay", "Google Pay", "Banka havalesi", "PayPal (AB/AU)", "Skrill", "Neteller", "Lean (BAE)"],
-        withdrawalTime: "24 saat içinde işlenir, %91'i 5 dakika içinde",
-        languages: "İngilizce 7/24, mesai saatlerinde 10'dan fazla dil · Türkçe resmî olarak teyit edilmemiş",
-        bestFor: "TradingView üzerinden emir gerçekleştirme ve düşük giriş yatırımı isteyen bireysel ve MENA yatırımcıları",
-        pros: ["Sıfır işlem komisyonu; para yatırma, çekme veya hareketsizlik ücreti yok", "FCA, CySEC, ASIC, SCB ve BAE SCA tarafından düzenlenir; ayrıştırılmış müşteri parası ve negatif bakiye koruması", "Yerel TradingView bağlantısı artı MT4, MT5, kendi web ve mobil platformu ve API", "$20 minimum yatırım; çekimlerin %91'i 5 dakika içinde işlenir", "MENA müşterileri için faizsiz (swap-free) hesaplar ve 1:500 kaldıraç ile spread iadesi sunan profesyonel hesap"],
-        cons: ["Spread'ler sabit değil, dinamik: EUR/USD ~0,7 pip ve altın ~0,5 tipik değerlerdir, garanti edilen alt sınırlar değil", "Ham spread veya komisyon bazlı hesap yok", "Yıllık %4 artı referans faizlik gecelik taşıma, çok günlük kaldıraçlı pozisyonları görece pahalı kılar; bireysel müşteriler için %0,7 döviz dönüşümü"],
-        steps: ["capital.com'da 'Open account'a tıklayın veya iOS/Android uygulamasını indirin; ikamet ülkenizi seçin", "E-postanızla (veya Google/Apple ile) kayıt olun, şifre belirleyin, koşulları kabul edin ve gönderilen bağlantıyla e-postanızı onaylayın", "Kimliğinizi doğrulayın: geçerli bir kimlik belgesi, canlı selfie ve istenirse ikametgâh belgesi yükleyin (genellikle 24 saat içinde incelenir)", "Hesabı kart, Apple/Google Pay, banka havalesi veya yerel bir yöntemle fonlayın — kartla minimum $10–20, havaleyle €50", "CFD, faizsiz (swap-free) veya (uygunsanız) Profesyonel hesaba yükseltmeyi seçin; ardından web platformu, uygulama, TradingView, MT4 veya MT5'te işlem yapın"],
-        summary: "Capital.com, 2016'da Viktor Prokopenya tarafından kurulan, 880.000'den fazla aktif hesaba ve hisse, endeks, forex, emtia ve kripto genelinde 5.500'den fazla enstrümana sahip, özel sermayeli bir CFD aracı kurumudur. Müşteri işlem hacmi 2024'te 1,7 trilyon doları, 2025'in ilk yarısında 1,5 trilyon doları aştı; bunun yarısından fazlası Orta Doğu'dan geldi. Dubai kuruluşu Capital Com MENA Securities Trading, BAE Menkul Kıymetler ve Emtia Otoritesi tarafından lisanslanmıştır. Endeks işlemleri için burada kişisel bir CFD hesabı tutuyorum.",
-        faq: [{ q: "Capital.com düzenlemeye tabi mi ve müşteri fonları güvende mi?", a: "Evet. Capital Com (UK) Ltd FCA tarafından düzenlenir (793714), Capital Com SV Investments Ltd CySEC lisanslıdır (319/17), Capital Com Australia Pty Ltd ASIC AFSL 513393'e sahiptir, Capital Com Online Investments Ltd Bahamalar Menkul Kıymetler Komisyonu tarafından lisanslanmıştır (SIA-F245) ve Capital Com MENA Securities Trading L.L.C. Dubai'de BAE SCA/CMA tarafından lisanslanmıştır (20200000176). Bireysel müşteri parası ayrıştırılmış hesaplarda tutulur ve negatif bakiye koruması uygulanır." }, { q: "Minimum yatırım nedir, para yatırma veya çekme ücreti var mı?", a: "Belirtilen minimum, uluslararası sitede kart ve Apple Pay için 10 USD/EUR/GBP (yardım merkezinde ve BAE müşterileri için 20), havale için €50'dir. Capital.com para yatırma, çekme veya hareketsizlik ücreti almaz; bankanız veya ödeme sağlayıcınız kendi ücretini uygulayabilir." }, { q: "Para çekme ne kadar sürer?", a: "Capital.com tüm çekim taleplerini 24 saat içinde, %91'ini ise 5 dakika içinde işlediğini belirtir. Fonların kartınıza veya banka hesabınıza ulaşması 5 iş gününe kadar sürebilir. Çekimler orijinal fonlama yöntemine iade edilir; kartla minimum çekim 20 USD/EUR/GBP'dir." }, { q: "Ne kadar kaldıraç alabilirim?", a: "Bireysel müşteriler başlıca FX paritelerinde 1:30'a, altın ve başlıca endekslerde 1:20'ye, diğer emtia ve endekslerde 1:10'a, hisselerde 1:5'e ve kriptoda 1:2'ye kadar alır. Uygun müşteriler, başlıca FX, endeksler, altın ve petrolde 1:500'e, kriptoda 1:100'e ve başlıca hisselerde 1:33'e kadar kaldıraç ile aylık hacme göre %5–20 spread iadesi sunan Profesyonel hesaba yükseltebilir." }, { q: "Capital.com faizsiz (İslami) hesap ve TradingView işlemi sunuyor mu?", a: "Evet. Faizsiz hesaplar BAE, Suudi Arabistan, Katar, Kuveyt, Bahreyn, Umman, Ürdün, Mısır, Lübnan, Tunus, Cezayir ve Fas'taki müşterilere açıktır — geçiş için açık işlemleri kapatıp support@capital.com ile iletişime geçin. Capital.com resmî bir TradingView aracı kurumudur; hesabınızı bağlayıp MT4, MT5, web platformu ve uygulamanın yanı sıra doğrudan TradingView grafiklerinden emir verebilirsiniz." }],
-      },
-      {
-        tagline: "SPK düzenlemesine tabi uygulama: komisyonsuz BIST, sabit $1,50 ABD hisse işlemi",
-        regulator: "SPK (Türkiye) · Borsa İstanbul üyesi",
-        licence: "SPK aracılık yetki belgesi K-024 (31 Mayıs 2022) · 2021'den beri BIST üyesi · ABD varlıkları SIPC güvencesinde",
-        founded: "2020, İstanbul",
-        minDeposit: "Yok · $1'dan itibaren küsuratlı hisse",
-        spreads: [{ value: "%0 komisyon" }, { value: "İşlem başına $1,50" }, { value: "Midas komisyonu yok" }],
-        commission: "BIST hisseleri %0 · ABD hisseleri sabit $1,50, Avrupa hisseleri işlem başına €1,50 · ABD opsiyonları kontrat başına $1,50 · VİOP %0,01–0,05",
-        leverage: "Hisselerde yok (nakit) · BIST kredili işlem yıllık %48,5–66,5",
-        funding: ["TL banka transferi (EFT / FAST)", "USD veya EUR banka transferi", "Anında hesaba geçen 12 anlaşmalı banka"],
-        withdrawalTime: "Anlaşmalı bankalara dakikalar içinde; $50 bin altı USD dakikalar içinde",
-        languages: "Uygulama Türkçe ve İngilizce · destek ve web sitesi yalnızca Türkçe",
-        bestFor: "BIST, ABD ve Avrupa hisselerini tek bir düşük maliyetli uygulamada isteyen Türkiye'de yerleşik yatırımcılar",
-        pros: ["Borsa İstanbul'da sıfır komisyon; hesap, saklama veya takas ücreti yok", "ABD işlemi başına sabit $1,50, $1'dan itibaren küsuratlı hisse ve ücretsiz canlı veri", "SPK lisanslı aracı kurum; BIST varlıkları Merkezi Kayıt Kuruluşu'nda, ABD varlıkları SIPC güvencesinde", "12 anlaşmalı banka üzerinden dakikalar içinde para yatırma ve çekme, Midas transfer ücreti yok", "BIST, ABD ve Avrupa hisseleri, ABD opsiyonları, VİOP vadeli işlemleri, TEFAS fonları ve altın sertifikaları için tek hesap"],
-        cons: ["Yalnızca Türkiye'de yerleşikler; yurt dışında yerleşik veya yurt dışında vergi mükellefi olanlara hesap yok", "CFD veya kaldıraçlı forex yok; BIST kredili işlemde yüksek TL faizi", "Destek ve web sitesi yalnızca Türkçe; TL'den USD'ye dönüşüm yayımlanmış bir ücret yerine Midas'ın kendi kurundan"],
-        steps: ["Midas uygulamasını App Store veya Google Play'den indirin ve cep telefonu numaranızla kayıt olun", "Kimliğinizi çipli T.C. kimlik kartı, mavi kart veya yabancı kimlik kartı ile doğrulayın; 18 yaş üstü, Türkiye'de yerleşik ve yurt dışında vergi yükümlülüğü olmayan biri olmalısınız", "Uygulama içi başvuruyu tamamlayın ve yatırım hesabı sözleşmelerini e-imzalayın; süreç yaklaşık 5 dakika sürer", "Hesabı TL veya USD banka transferiyle fonlayın (herhangi bir bankadan; anlaşmalı banka transferleri yaklaşık 2 dakika içinde hesaba geçer)", "İlk hissenizi alın: gerekirse uygulama içinde TL'yi USD'ye çevirin ve $1/€1'dan itibaren BIST, ABD veya Avrupa hisseleri için emir verin"],
-        summary: "Midas Menkul Değerler A.Ş., 2020'de Egem Eraslan tarafından kurulan ve tamamı Midas Finansal Teknolojiler A.Ş.'ye ait, SPK lisanslı bir İstanbul aracı kurumudur. Mayıs 2026'da yaklaşık 4 milyon kullanıcı ve 20 milyar dolara yaklaşan aylık işlem hacmi bildirmiş olup, Ağustos 2025'te QED Investors liderliğindeki 80 milyon dolarlık Seri B dâhil 140 milyon doların üzerinde yatırım almıştır. BIST ve ABD hisseleri için kullandığım kurumdur ve yönetilen hesaplar için kullanılan üç kurumdan biridir.",
-        faq: [{ q: "Midas hesabını kimler açabilir?", a: "Türkiye'de yaşayan ve başka bir ülkede vergi mükellefi olmayan, çipli T.C. kimlik kartı, mavi kart veya Türk yabancı kimlik kartı sahibi yetişkinler. Türkiye'de yerleşik çipli kimlik sahipleri için çocuk ve şirket hesapları da mevcuttur. Yurt dışında yerleşikler hesap açamaz." }, { q: "Midas hangi ücretleri alıyor?", a: "BIST hisse işlemleri komisyonsuzdur; hesap, saklama veya takas ücreti yoktur. ABD hisse işlemleri sabit $1,50, Avrupa hisse işlemleri işlem başına sabit €1,50'dir. ABD opsiyonları ayda ilk 500 kontrat için kontrat başına $1,50'dir. TEFAS fon emirlerinde Midas komisyonu yoktur. Midas tarafında para yatırma ve çekme ücretsizdir." }, { q: "ABD hisseleri alabilir miyim ve nasıl korunuyor?", a: "Evet. Midas, $1'dan itibaren küsuratlı hisse ve USD olarak ödenen temettülerle NYSE, NASDAQ ve OTC hisselerine, ABD'de kote ETF'lere ve ABD opsiyonlarına erişim sağlar. Hisseler SEC yetkili saklama kuruluşlarında sizin adınıza tutulur ve Midas sitesine göre 150 milyon dolara kadar (75 milyon dolar menkul kıymet artı 75 milyon dolar nakit) SIPC sigortası kapsamındadır." }, { q: "Döviz dönüşümü nasıl çalışıyor?", a: "Doğrudan USD yatırabilir veya nakit bakiyenizi kullanarak uygulama içinde 7/24 TL'yi USD veya EUR'ya çevirebilirsiniz (USD/TRY ve EUR/TRY pariteleri); dönüştürülen fonlar genellikle hemen işleme açıktır. Midas kendi kurunu verir ve ayrı bir dönüşüm komisyonu yayımlamaz." }, { q: "Para çekme ne kadar sürer?", a: "Midas'ın 12 anlaşmalı bankasına çekimler dakikalar içinde ulaşır. Diğer bankalara TL çekimleri FAST limitleri dâhilinde dakikalar içinde gelir (daha büyük tutarlar sonraki iş günü). $50.000 altı USD çekimleri dakikalar, $50.000–$200.000 arası mesai saatlerinde yaklaşık bir saat sürer. Midas çekim ücreti almaz; anlaşmalı olmayan bankalara USD transferlerinde üçüncü taraf bankaların SWIFT ücretleri uygulanabilir." }],
-      },
-      {
-        tagline: "Performans geçmişini yatırım yapılabilir bir DARWIN'e dönüştüren FCA ve CNMV aracı kurumu",
-        regulator: "FCA · CNMV · FSA Seyşeller",
-        licence: "FCA 586466 · CNMV 311 · FSA SD171",
-        founded: "2012, Londra",
-        minDeposit: "€500 · DARWIN oluşturmak için €1.000 özkaynak",
-        spreads: [{ value: "0,2–0,3 + lot başına $2,5" }, { value: "~0,4 + %0,0025" }, { value: "~0,6 + kontrat başına $0,275" }],
-        commission: "FX lot başına, emir başına $2,50 · endeksler kontrat başına $2,75 · emtia %0,0025 · hisse CFD'leri hisse başına $0,02 · %40'a kadar iade",
-        leverage: "Bireysel 1:30 (FCA, CNMV) · profesyonel 1:200'e kadar",
-        funding: ["Banka havalesi", "Visa / Mastercard", "Skrill"],
-        withdrawalTime: "1–3 iş günü",
-        languages: "Pzt–Per 08:00–17:00 UTC, e-posta ve telefon · site EN, ES, FR, DE, ZH · Türkçe yok",
-        bestFor: "Doğrulanmış performans geçmişini yatırımcı sermayesi ve DarwinIA tohum tahsisleriyle gelire dönüştürmek isteyen sistematik yatırımcılar",
-        pros: ["FSCS (£85 bin) ve FOGAIN (€100 bin) korumasıyla çifte FCA ve CNMV düzenlemesi, fonlar birinci sınıf ayrıştırılmış hesaplarda", "Kendi portföy yönetimi lisansınız olmadan yatırımcı sermayesi üzerinden %15 performans ücreti kazanın", "DarwinIA en iyi stratejilere ayda €30 bin ile €500 bin arası tohum sermaye sağlar; bugüne kadar yatırımcılara €11,5 milyondan fazla ödendi", "Ham bankalararası fiyatlama, EUR/USD yaklaşık 0,2–0,3 pip artı lot başına $2,50, yetenek ve hacim iadeleri %40'a kadar", "MT4, MT5, TradingView, DXtrade, FIX ve DARWIN API'leri; ayrıca Interactive Brokers üzerinden hisse, vadeli işlem ve ETF'ler"],
-        cons: ["Faizsiz (swap-free) hesap yok, Türkçe destek yok ve destek yalnızca Pzt–Per 08:00–17:00 UTC", "€500 minimum yatırım, DARWIN oluşturmak için €1.000 özkaynak, kart ve Skrill yatırımlarında ömür boyu üst sınır", "Bireysel kaldıraç 1:30 ile sınırlı; profesyonel statü bunu yükseltir ancak FSCS güvencesinden feragat edilir"],
-        steps: ["darwinex.com/register adresinde kullanıcı adı, e-posta, şifre ve vergi ikamet ülkesiyle kayıt olun", "MiFID onboarding sürecini tamamlayın: kişisel bilgiler anketi ile finansal bilgi/ödeme gücü anketi", "Kimlik ve adres belgelerini yükleyin; başvuru durumu 1 iş günü içinde e-postayla bildirilir", "Darwinex Cüzdanınızı fonlayın (banka havalesi, kart veya Skrill ile min €/$/£500) ve en az 500'ü gerçek işlem hesabına aktarın", "MT4/MT5, TradingView, DXtrade veya IBKR'de işlem yapın; yaklaşık bir ay sonra (veya içe aktarılan bir performans geçmişiyle anında) DARWIN'inizi oluşturun ve DarwinIA'ya katılın"],
-        summary: "Darwinex, hem aracı kurum hem de düzenlemeye tabi portföy yöneticisi olarak faaliyet gösteren Tradeslide Trading Tech Ltd (Londra, 2012; 2014'ten beri FCA yetkili) ve Sapiens Markets EU'nun (CNMV, Madrid, 2022) ticari adıdır. Bir DARWIN, bir yatırımcının stratejisini risk yönetimli, yatırım yapılabilir bir endeks olarak paketler: yatırımcılar %1,2 yönetim ve %20 performans ücreti öder; bunun %15'i stratejinin sahibine gider. Platform 3.000'den fazla DARWIN, yaklaşık 580 milyon dolar yatırım ve 80'den fazla ülkede müşteri bildirmektedir. NUUK sistemlerinin üçüncü taraf yatırımcı sermayesi için paketlendiği yerdir.",
-        faq: [{ q: "DARWIN nedir?", a: "DARWIN, Darwinex tarafından kendi sembolü ve 100'den başlayan fiyatıyla yönetilen bir endeks olarak paketlenmiş bir işlem stratejisidir. Açık işlemleri ifşa etmeden, bağımsız bir risk motoru altında (aylık %3,25–6,5 VaR hedefi) stratejinin giriş ve çıkışlarını kopyalar; böylece yatırımcılar onu satın alabilir ve strateji sahibi Darwinex'in portföy yönetimi lisansı altında performans ücreti kazanır." }, { q: "Darwinex Zero ile Darwinex gerçek hesap arasındaki fark nedir?", a: "Darwinex Zero, doğrulanmış bir performans geçmişi oluşturmak ve hiçbir işlem sermayesi riske atmadan %15 gerçek performans ücreti için DarwinIA'ya katılmak üzere sanal sermayeli bir MT4/MT5 hesabı sunan bir aboneliktir (aylık €45, yıllık planda aylık €35, 3 yıllık planda aylık €30; vadeli işlemler için €50). Darwinex gerçek hesabın aboneliği yoktur, kendi paranızı kullanır (€500 minimum) ve ilk günden yatırımcı sermayesine erişim sağlar; Zero performans geçmişi gerçek hesaba taşınabilir." }, { q: "Yatırımcılar hangi ücretleri ödüyor ve performans ücreti nasıl paylaşılıyor?", a: "Yatırımcılar Darwinex'e yıllık %1,2 yönetim ücreti ve yüksek su işareti (high-water mark) esasıyla üç ayda bir hesaplanan net kâr üzerinden %20 performans ücreti öder. Bu %20'nin %15'i DARWIN sağlayıcısına (strateji sahibine) ödenir, %5'i Darwinex'te kalır. DarwinIA tohum tahsisleri de elde edilen kârın %15'ini strateji sahibine öder." }, { q: "Minimum yatırım nedir?", a: "İlk yatırım bireysel ve ortak hesaplar için €/$/£500, kurumsal hesaplar için 10.000'dir; sonraki yatırımlar minimum 100'dür (banka havalesiyle 500). DARWIN oluşturmak €1.000 özkaynak, DarwinIA'ya katılım ay boyunca korunan $1.000 özkaynak gerektirir. Yatırımcılar €200'dan başlayabilir (Darwinex INDX için €10.000)." }, { q: "Darwinex nasıl düzenleniyor?", a: "Tradeslide Trading Tech Ltd, aracı kurum ve portföy yöneticisi olarak Birleşik Krallık FCA tarafından yetkilendirilmiş ve düzenlenmiştir (FRN 586466, şirket no. 08061368); £85.000'e kadar FSCS koruması vardır. Sapiens Markets EU Sociedad de Valores SA, İspanya CNMV tarafından düzenlenir (no. 311) ve €100.000'e kadar FOGAIN güvencesi sağlar. Tradeslide Global Ltd, Seyşeller FSA lisansına (SD171) sahiptir. Müşteri fonları birinci sınıf Birleşik Krallık bankalarında ayrıştırılmış hesaplarda tutulur." }],
       },
     ],
   },
@@ -1013,7 +840,7 @@ export const tr: ContentOverride = {
       { "q": "Forex fiyatlarını ne belirler?", "a": "Fiyatlar; faiz kararları, enflasyon ve büyüme verileri gibi ekonomik göstergelerden, merkez bankası açıklamalarından, jeopolitik gelişmelerden ve piyasanın genel beklentisinden etkilenir." },
       { "q": "Kaldıraç nedir?", "a": "Kaldıraç, küçük bir teminatla daha büyük pozisyon taşımanıza imkân verir. Kazancı büyüttüğü kadar zararı da büyütür; yatırdığınız tutarın tamamını kaybetmenize yol açabilir. Bu yüzden dikkatle kullanılması gerekir." },
       { "q": "Forex indikatörleri ne işe yarar?", "a": "İndikatörler, fiyat ve hacim verilerini işleyerek piyasadaki eğilimleri okumanıza yardımcı olur. Kesin sonuç vermezler; karar verirken başvurduğunuz girdilerden yalnızca biridir." },
-      { "q": "Forex brokeri nedir?", "a": "Broker, bireysel ve kurumsal yatırımcıların forex piyasasına erişmesini sağlayan aracı kurumdur. Seçim tamamen size aittir; kurumun bulunduğunuz ülkede yetkili bir otorite tarafından denetlenip denetlenmediğini mutlaka kontrol edin. NUUK, aracı kurumlar sayfasında yedi düzenlenmiş ortak brokeri karşılaştırır." },
+      { "q": "Forex brokeri nedir?", "a": "Broker, bireysel ve kurumsal yatırımcıların forex piyasasına erişmesini sağlayan aracı kurumdur. Seçim tamamen size aittir; kurumun bulunduğunuz ülkede yetkili bir otorite tarafından denetlenip denetlenmediğini mutlaka kontrol edin. NUUK, broker Group ile çalışır; ayrıntılar broker sayfasında." },
       { "q": "Pip nedir?", "a": "Pip, bir paritenin standart en küçük fiyat hareketidir. Alış-satış farkını (spread) ölçmek, işlem maliyetini hesaplamak ve kâr-zarar takibi yapmak için kullanılır." },
       { "q": "Forex stratejisi nedir?", "a": "Strateji, bir işleme ne zaman girip ne zaman çıkacağınızı belirleyen kurallar bütünüdür. İyi bir strateji, hangi durumda işlem yapmayacağınızı da tanımlar ve risk yönetimini içerir." },
       { "q": "Forex'e nasıl başlanır?", "a": "Önce piyasanın nasıl işlediğini öğrenin, ardından gerçek para koymadan demo hesapta pratik yapın. Bu süreçte günlük sinyalleri ve piyasa yorumlarını takip etmek için ücretsiz WhatsApp grubumuza katılabilirsiniz." },
@@ -1151,7 +978,7 @@ export const tr: ContentOverride = {
       emailHint: "Premium, NUUK uygulamasında bu adrese açılır.",
       funding: "Fonlamayı düşündüğün tutar (USD)",
       fundingPh: "örn. 5000",
-      fundingHint: "Sana uygun aracı kurum ve hesap türünü önerebilmemiz için. Fonlamayı kendi adına açılan aracı kurum hesabına sen yaparsın; NUUK müşteri parası tutmaz.",
+      fundingHint: "Sana uygun broker hesabını önerebilmemiz için. Fonlamayı kendi adına açılan aracı kurum hesabına sen yaparsın; NUUK müşteri parası tutmaz.",
       consent: "{privacy} okudum; başvuru bilgilerimin NUUK tarafından işlenmesini kabul ediyorum.",
       consentPremium: "{privacy} ve {terms} okudum; başvuru bilgilerimin NUUK tarafından işlenmesini kabul ediyorum.",
       privacy: "Gizlilik politikasını",
@@ -1248,7 +1075,7 @@ export const tr: ContentOverride = {
       copy_demo_paper: "Demo MT5 / paper hesaplara otomatik kopya",
       risk_panel: "Hesap başına risk paneli",
       execution_reports: "Yürütme raporları",
-      broker_partner: "Lisanslı broker ortağı ile gerçek hesap",
+      broker_partner: "broker'ta gerçek hesap",
       priority_support: "Öncelikli destek",
     },
     stepsTitle: "Nasıl işler",
@@ -1271,7 +1098,7 @@ export const tr: ContentOverride = {
       },
       {
         q: "Fonlama tutarını neden soruyorsunuz?",
-        a: "Sana uygun aracı kurumu ve hesap türünü önerebilmek için. Fonlamayı her zaman kendi adına açılan aracı kurum hesabına yaparsın; NUUK yatırım parası kabul etmez ve tutmaz.",
+        a: "Sana uygun broker hesap türünü önerebilmek için. Fonlamayı her zaman kendi adına açılan aracı kurum hesabına yaparsın; NUUK yatırım parası kabul etmez ve tutmaz.",
       },
       {
         q: "Premium otomatik yenilenir mi?",
@@ -1285,7 +1112,7 @@ export const tr: ContentOverride = {
     fine: [
       "Sinyaller ve analizler genel piyasa yorumudur, kişisel yatırım tavsiyesi değildir.",
       "Geçmiş performans gelecek sonuçların garantisi değildir. Kaldıraçlı ürünler yüksek kayıp riski taşır.",
-      "Uygulama içi otomatik kopya demo ve paper hesaplar içindir. Gerçek hesap kopyası yalnızca lisanslı broker ortağımız üzerinden yapılır.",
+      "Uygulama içi otomatik kopya demo ve paper hesaplar içindir. Gerçek hesap kopyası yalnızca broker üzerinden yapılır.",
     ],
     legalTitle: "Şartlar ve politikalar",
     legal: [{ label: "Abonelik şartları" }, { label: "Kullanım koşulları" }, { label: "Gizlilik politikası" }, { label: "Risk bildirimi" }],
@@ -1403,7 +1230,7 @@ export const tr: ContentOverride = {
   },
   money: {
     "metaTitle": "Nasıl Para Kazanıyoruz",
-    "metaDescription": "NUUK gelirini kendi sermayesiyle yaptığı işlemlerden, yönettiği portföylerdeki yönetim ve performans ücretlerinden, aracı kurum ortaklıklarından ve araştırma aboneliklerinden elde eder. Her ücret açıklanmıştır.",
+    "metaDescription": "NUUK gelirini kendi sermayesiyle yaptığı işlemlerden, yönettiği portföylerdeki yönetim ve performans ücretlerinden, broker ortaklığımızdan ve araştırma aboneliklerinden elde eder. Her ücret açıklanmıştır.",
     "kicker": "Nasıl Para Kazanıyoruz",
     "title": "Siz kazandığınızda kazanırız. Önce kendi sermayemiz.",
     "lead": "NUUK bir aracı kurum değildir ve işlemlerinizin karşı tarafında yer almaz. Gelirimiz dört şeffaf kaynaktan gelir; en büyüğü, sizin için de çalıştırdığımız aynı işlemlerdir.",
@@ -1442,10 +1269,10 @@ export const tr: ContentOverride = {
         "how": "Aracı kurum tarafından hesabınızdan kesilir ve her ekstrede görünür"
       },
       {
-        "title": "Aracı kurum ortaklıkları",
-        "share": "Tanıtıcı aracı (IB) iadeleri",
-        "body": "NUUK üzerinden bir ortak aracı kurumda hesap açtığınızda, aracı kurum kazandığı spread veya komisyonun bir bölümünü bize öder. İşlem koşullarınız doğrudan müşteriyle birebir aynıdır. Ortakların ve şartların tam listesi IB bildirimimizdedir.",
-        "how": "Aracı kurum öder; maliyetlerinize asla eklenmez"
+        "title": "broker ortaklığı",
+        "share": "Ortaklık iadeleri",
+        "body": "NUUK üzerinden broker'ta hesap açtığınızda broker, kazandığı spread veya komisyonun bir bölümünü bize öder. İşlem koşullarınız doğrudan müşteriyle birebir aynıdır. Şartlar IB bildirimimizdedir.",
+        "how": "broker öder; maliyetlerinize asla eklenmez"
       },
       {
         "title": "Araştırma ve eğitim",
@@ -1464,22 +1291,22 @@ export const tr: ContentOverride = {
       "Paranızı tutmak ya da hesabınızda para çekme yetkisine sahip olmak",
       "Size karşı işlem yapmak veya emir akışınızı satmak",
       "Gerçekleşmemiş kazançlardan ya da en yüksek değer seviyesinin altındaki kârdan performans ücreti almak",
-      "Açıklanan iade dışında bir aracı kurumu diğerine tercih ettirmek için ödeme almak"
+      "Açıklanan iade dışında broker'tan gizli ödeme almak"
     ],
     "riskTitle": "Risk yönetimi iş modelinin kendisidir",
-    "riskLead": "Ücretler ancak sermaye ayakta kalırsa işe yarar. Bu limitler kendi hesaplarımıza ve yürüttüğümüz her yetkiye uygulanır.",
+    "riskLead": "Ücretler ancak sermaye ayakta kalırsa işe yarar; bu yüzden önce risk gelir.",
     "risk": [
       {
-        "title": "İşlem başına sabit risk",
-        "body": "Her pozisyon sabit bir risk tutarına göre boyutlandırılır: GANN Live'da işlem başına 300 USD; stop seviyesi girişten önce ATR(14) × 1,5 ile belirlenir."
+        "title": "Kontrollü risk",
+        "body": "Her pozisyon risk gözetilerek belirlenir."
       },
       {
-        "title": "Günlük zarar limiti",
-        "body": "Yetki belgesindeki günlük zarar limitine ulaşıldığında o gün işlem durur. Sistem bunu geçersiz kılamaz."
+        "title": "Risk limitleri",
+        "body": "Risk limitleri başlamadan önce sizinle yazılı olarak belirlenir."
       },
       {
         "title": "Maksimum düşüş yetkisi",
-        "body": "Her yetki belgesi bir maksimum düşüş belirler. Ulaşıldığında hesap durdurulur ve yeniden başlamadan önce sizinle bir değerlendirme yapılır."
+        "body": "Her yetki belgesi, sizinle yazılı olarak belirlenen bir maksimum düşüş içerir."
       },
       {
         "title": "Haftalık canlı-beklenen karşılaştırması",
@@ -1494,7 +1321,7 @@ export const tr: ContentOverride = {
       },
       {
         "q": "IB iadeleri bir çıkar çatışması mı?",
-        "a": "Olabilir; bu yüzden açıklanır. Aracı kurumları düzenleme, emir gerçekleştirme ve profilinize uygun koşullara göre öneririz; her ortak, şartlarıyla birlikte IB bildiriminde listelenir. Bizim üzerimizden geldiğiniz için işlem koşullarınız asla değişmez."
+        "a": "Olabilir; bu yüzden açıklanır. NUUK'un çalıştığı tek aracı kurum broker'tır; bu ortaklığın şartları IB bildiriminde yer alır. Bizim üzerimizden geldiğiniz için işlem koşullarınız asla değişmez."
       },
       {
         "q": "En yüksek değer seviyesi nasıl hesaplanır?",
@@ -1524,8 +1351,8 @@ export const tr: ContentOverride = {
     "metaDescription": "Yönetilen hesap müşterileri nereden giriş yapar, NUUK her ay ne raporlar ve erişim nasıl talep edilir.",
     "kicker": "Yatırımcı Portalı",
     "title": "Hesabınız, girişiniz, raporlarınız",
-    "lead": "Yönetilen hesaplar aracı kurumda, kendi adınıza tutulur. Gerçek zamanlı ekstre için aracı kurumun müşteri portalına giriş yapın; NUUK aylık raporu ve üç aylık değerlendirmeyi ekler.",
-    "portalsTitle": "Aracı kurum müşteri portalları",
+    "lead": "Yönetilen hesaplar aracı kurumda, kendi adınıza tutulur. Gerçek zamanlı ekstre için broker müşteri portalına giriş yapın; NUUK aylık raporu ve üç aylık değerlendirmeyi ekler.",
+    "portalsTitle": "broker müşteri portalı",
     "portalLabel": "Müşteri portalı",
     "reportsTitle": "NUUK'tan ne alırsınız",
     "reports": [
@@ -1569,34 +1396,9 @@ export const tr: ContentOverride = {
     ],
     "portals": [
       {
-        "slug": "pepperstone",
-        "name": "Pepperstone",
-        "href": "https://secure.pepperstone.com/"
-      },
-      {
-        "slug": "tickmill",
-        "name": "Tickmill",
-        "href": "https://my.tickmill.com/"
-      },
-      {
-        "slug": "saxo",
-        "name": "Saxo Bank",
-        "href": "https://www.saxotrader.com/"
-      },
-      {
-        "slug": "capital-com",
-        "name": "Capital.com",
-        "href": "https://capital.com/trading/platform/"
-      },
-      {
-        "slug": "midas",
-        "name": "Midas",
-        "href": "https://www.getmidas.com/"
-      },
-      {
-        "slug": "darwinex",
-        "name": "Darwinex",
-        "href": "https://www.darwinex.com/login"
+        "slug": "broker",
+        "name": "broker Group",
+        "href": "https://broker/tr/account/login"
       }
     ]
   },
@@ -1621,7 +1423,7 @@ export const tr: ContentOverride = {
         "name": "Aile ofisi hazinesi, Dubai",
         "profile": "60 gün içinde likit kalması gereken 500.000 USD hazine nakdi tutan tek aileli bir ofis.",
         "objective": "Önce sermayeyi koru; maksimum %8 düşüş.",
-        "structure": "Saxo Bank'ta ofisin kendi adına özel PAMM hesabı; yazılı yetki belgesiyle işlem.",
+        "structure": "broker'ta ofisin kendi adına özel PAMM hesabı; yazılı yetki belgesiyle işlem.",
         "mandate": [
           "Enstrümanlar: ana FX pariteleri, altın, ABD ve AB endeks CFD'leri",
           "Maksimum brüt maruziyet özkaynağın 3 katı, günlük zarar limiti %1",
@@ -1636,7 +1438,7 @@ export const tr: ContentOverride = {
         "name": "Kendi işlem yapan yatırımcı, İstanbul",
         "profile": "Üç yıldır 5.000 USD ile kendi başına FX işlemi yapan ve sistemleri çalıştırmadan kullanmak isteyen bir mühendis.",
         "objective": "NUUK sistemlerine sistematik maruziyet, yönetim ücreti yok, hızlı çıkış imkânı.",
-        "structure": "Tickmill'de havuz MAM: kendi adına kendi hesabı, havuza tahsisli.",
+        "structure": "broker'ta havuz MAM: kendi adına kendi hesabı, havuza tahsisli.",
         "mandate": [
           "NUUK'un kendi sermayesiyle aynı sistemler ve risk limitleri",
           "GANN Live'da işlem başına sabit 300 USD risk, havuz büyüklüğüne ölçeklenir",
@@ -1653,13 +1455,13 @@ export const tr: ContentOverride = {
         "structure": "NUUK ana tanıtıcı ortak anlaşması: öğrencileri NUUK'un ortak linkleriyle hesap açar; iade onunla paylaşılır.",
         "mandate": [
           "Yazılı iade paylaşımı; aylık ödeme ve müşteri bazında döküm",
-          "Arapça ve İngilizce aracı kurum kaydı ve KYC rehberliği",
-          "Yeniden kullanabileceği karşılaştırma materyali ve ekonomik takvim",
+          "Arapça ve İngilizce broker hesap açılışı ve KYC rehberliği",
+          "Yeniden kullanabileceği broker materyali ve ekonomik takvim",
           "Öğrencilere açıklama: iadeyi aracı kurum öder, koşullar değişmez"
         ],
         "fees": "Ona veya öğrencilerine ücret yok; gelir, IB bildiriminde açıklanan aracı kurum iadesinden gelir.",
         "rows": [],
-        "note": "İade her aracı kurumun tarifesine ve öğrencilerin hacmine bağlıdır; bu yüzden burada rakam gösterilmez. Şartlar ilk müşteri tanıtılmadan önce yazılı olarak kararlaştırılır."
+        "note": "İade, broker'ın tarifesine ve öğrencilerin hacmine bağlıdır; bu yüzden burada rakam gösterilmez. Şartlar ilk müşteri tanıtılmadan önce yazılı olarak kararlaştırılır."
       }
     ]
   },
@@ -1923,7 +1725,7 @@ export const tr: ContentOverride = {
       "topic": "Konu",
       "topics": [
         "Portföy yönetimi",
-        "Aracı kurum seçimi",
+        "broker hesabı",
         "Araştırma ve sinyaller",
         "Eğitim",
         "Algoritmik sistemler",
@@ -1947,18 +1749,18 @@ export const tr: ContentOverride = {
         "İşlem yapmadan önce yatırım hedeflerinizi, deneyim düzeyinizi ve risk iştahınızı değerlendirmeli, kaybetmeyi göze alamayacağınız sermayeyi asla riske atmamalısınız. Herhangi bir tereddüdünüz varsa bulunduğunuz ülkede bağımsız, lisanslı bir finansal danışmandan görüş alın.",
         "Bu web sitesinde gösterilen herhangi bir portföy, model, strateji, sinyal hizmeti veya işlem sisteminin geçmiş performansı, gelecekteki sonuçların güvenilir bir göstergesi değildir. Performans geçmişleri ne olacağını değil, ne olduğunu anlatır. Geriye dönük test, simülasyon veya kâğıt üstü (paper trading) sonuçlarının doğal sınırlamaları vardır: geriye dönük bakışla hazırlanır, finansal risk içermez ve kayma (slippage), likidite veya emir gerçekleştirme maliyetlerinin etkisini yansıtmayabilir.",
         "Bu web sitesindeki hiçbir içerik kişisel yatırım tavsiyesi, kişisel öneri ya da herhangi bir finansal aracı alma veya satma teklifi ya da daveti niteliği taşımaz. İçerik genel piyasa yorumu ve eğitim amaçlıdır; mali durumunuzu, hedeflerinizi veya ihtiyaçlarınızı dikkate almaz.",
-        "Yönetilen hesaplar, ortak aracı kurumdaki müşterinin kendi hesabının içinde, o aracı kurumun MAM veya PAMM yapısı ve düzenleyici çerçevesi altında çalışır. NUUK yalnızca işlem yetkisine sahiptir ve müşteri fonlarının saklamasını hiçbir zaman üstlenmez. Ücretler, kilit süreleri ve risk yetki belgeleri, herhangi bir işlem başlamadan önce yazılı bir sözleşmede belirlenir.",
-        "Bu web sitesindeki aracı kurum bağlantıları yönlendirme (referral) bağlantılarıdır. Bunlar üzerinden hesap açıp fonladığınızda NUUK aracı kurumdan komisyon alabilir; bu durum ödediğiniz spread'leri veya ücretleri değiştirmez ve dilediğiniz aracı kurumda doğrudan hesap açmakta serbestsiniz.",
+        "Yönetilen hesaplar, müşterinin broker'taki kendi hesabının içinde, broker'ın MAM veya PAMM yapısı ve düzenleyici çerçevesi altında çalışır. NUUK yalnızca işlem yetkisine sahiptir ve müşteri fonlarının saklamasını hiçbir zaman üstlenmez. Ücretler, kilit süreleri ve risk yetki belgeleri, herhangi bir işlem başlamadan önce yazılı bir sözleşmede belirlenir.",
+        "Bu web sitesindeki aracı kurum bağlantıları yönlendirme (referral) bağlantılarıdır. Bunlar üzerinden hesap açıp fonladığınızda NUUK aracı kurumdan komisyon alabilir; bu durum ödediğiniz spread'leri veya ücretleri değiştirmez. NUUK'un yatırımcı hizmetlerinden yararlanmak için broker hesabı gerekir.",
         "NUUK Quant, Dubai Uluslararası Finans Merkezi, Dubai, Birleşik Arap Emirlikleri'nden faaliyet gösterir. Hizmetler yalnızca geçerli yasa ve düzenlemelerin izin verdiği yerlerde sunulur; erişilebilirlik ikamet ettiğiniz ülkeye bağlıdır. Bu web sitesindeki hiçbir içerik, böyle bir dağıtımın yerel yasalara aykırı olacağı bir yargı bölgesindeki kişilere yönelik değildir.",
       ],
     },
     "ib-disclosure": {
       title: "Tanıtım aracısı (IB) bildirimi",
       body: [
-        "NUUK, bu web sitesinde listelenen aracı kurumlar için tanıtım aracısı (IB) olarak hareket eder. Bir yönlendirme bağlantısı üzerinden hesap açıp fonladığınızda aracı kurum, işlem hacminize dayalı bir komisyon öder.",
-        "Bu komisyon aracı kurum tarafından ödenir ve ödediğiniz spread'leri, komisyonları veya ücretleri artırmaz. Aracı kurum kartları bağımsız olarak yazılır; bir aracı kurum, bir değerlendirmeyi veya listelenen bir zayıf yönü değiştirmek için ödeme yapamaz.",
-        "Dilediğiniz aracı kurumda doğrudan hesap açmakta serbestsiniz. Yönlendirme bağlantısı isteğe bağlıdır.",
-        "Mevcut ortaklar: tanıtım aracısı sözleşmeleri kapsamında broker Group, Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas ve Darwinex. Tickmill, Saxo Bank ve Midas ayrıca, ayrı portföy yönetimi sözleşmeleri kapsamında yönetilen hesaplar için kullanılan MAM/PAMM yapılarını işletir.",
+        "NUUK, broker Group'un Türkiye çözüm ortağıdır. Bir yönlendirme bağlantısı üzerinden hesap açıp fonladığınızda broker, işlem hacminize dayalı bir komisyon öder.",
+        "Bu komisyon aracı kurum tarafından ödenir ve ödediğiniz spread'leri, komisyonları veya ücretleri artırmaz. Bu web sitesindeki aracı kurum bilgileri broker'ın herkese açık sayfalarından alınmıştır.",
+        "Yeni NUUK yatırımcılarının broker hesabı açması zorunludur. NUUK'un kurumsal altyapısını broker LP sağlar; NUUK, broker'ın altyapısını NUUK çatısı altında dünya genelindeki aracı kurumlara sunar.",
+        "NUUK yalnızca broker Group ile çalışır. broker, yönetilen hesaplar için kullanılan MAM/PAMM yapılarını da işletir.",
       ],
     },
     privacy: {
@@ -1970,7 +1772,7 @@ export const tr: ContentOverride = {
         "Otomatik olarak toplanan veriler. Sitenin nasıl kullanıldığını anlamak için IP anonimleştirmeli Google Analytics 4 kullanırız: görüntülenen sayfalar, yaklaşık konum, cihaz türü ve hangi düğmelere tıklandığı (örneğin bir aracı kurum bağlantısı veya bir plan). Bu veriler toplu hâldedir ve sizi isim olarak tanımlamaz. Tarayıcı ayarı veya reklam engelleyici ile engelleyebilirsiniz.",
         "Çerezler ve ziyaretçi analitiği. Google Analytics oturumları ayırt etmek için çerez ayarlayabilir. Apollo.io sayfa ziyaretlerini kaydeder ve ziyaret bir kurumsal ağdan geliyorsa IP adresinin arkasındaki şirketi tanımlayabilir; ayrıca formlarımıza girilen kurumsal e-posta adreslerini kamuya açık şirket verileriyle zenginleştirir. Reklamlarımızın etkisini ölçmek için Meta Pixel kullanırız: sayfa görüntülemelerini ve WhatsApp grubumuza giden tıklamaları Meta Platforms'a (Facebook/Instagram) iletir; Meta bu verileri kendi gizlilik politikası kapsamında işler ve yurt dışında saklayabilir. Hepsi çerez bırakabilir. Bağlantılarımızdan açtığınız üçüncü taraf siteler (aracı kurumlar, WhatsApp, sosyal ağlar) kendi politikalarını uygular. Bu sitedeki canlı piyasa kotasyonları gömülü TradingView bileşenleridir; TradingView sunucularından yüklenir ve TradingView'ın gizlilik politikası kapsamında kendi çerezlerini bırakabilir. Bunların tümünü bir tarayıcı eklentisiyle veya üçüncü taraf betikleri kapatarak engelleyebilirsiniz; site bunlar olmadan da çalışır.",
         "Verileri neden işliyoruz? Talebinizi yanıtlamak, istediğiniz hizmetleri sunmak (yönetilen hesaplar, sinyaller, eğitim), yasal ve düzenleyici yükümlülükleri yerine getirmek ve web sitesini geliştirmek için. Hukuki dayanak, rızanız, sizinle yapılan bir sözleşmenin ifası veya işi yürütmedeki meşru menfaatimizdir.",
-        "Paylaşım. Kişisel verileri satmayız. Yalnızca web sitesini ve iletişimi yürütmek için gereken hizmet sağlayıcılarla (barındırma, e-posta, analitik), sizi tanıtmamızı istediğinizde ortak aracı kurumlarla ve yasaların gerektirdiği durumlarda yetkili makamlarla paylaşırız.",
+        "Paylaşım. Kişisel verileri satmayız. Yalnızca web sitesini ve iletişimi yürütmek için gereken hizmet sağlayıcılarla (barındırma, e-posta, analitik), sizi tanıtmamızı istediğinizde broker'la ve yasaların gerektirdiği durumlarda yetkili makamlarla paylaşırız.",
         "Saklama ve güvenlik. Talep verileri, talebin işlenmesi için gerektiği sürece ve bir iş ilişkisi kurulması hâlinde düzenleyici kayıt tutma yükümlülüklerine uygun olarak beş yıla kadar saklanır. Veriler erişim kontrollü sistemlerde tutulur.",
         "Haklarınız. info@nuukquant.com adresine yazarak hakkınızda hangi verileri tuttuğumuzu sorabilir, düzeltilmesini veya silinmesini isteyebilir, işlemeye itiraz edebilir veya rızanızı istediğiniz zaman geri çekebilirsiniz. AB, Birleşik Krallık veya DIFC'de bulunuyorsanız veri koruma otoritenize şikâyette bulunma hakkına da sahipsiniz.",
       ],
@@ -2000,7 +1802,7 @@ export const tr: ContentOverride = {
         "Süre ve yenileme. Her ödeme, onay tarihinden itibaren bir aylık Premium dönemini kapsar. Kripto ödemeler otomatik yenilenmez: dönem bitmeden size hatırlatma göndeririz; yeniden ödeme yapılmazsa hesap ücretsiz özelliklere döner.",
         "İade. Doğrulanmış bir dönem için yapılan ödemeler, kısmi aylar dâhil, yürürlükteki mevzuat gerektirmedikçe iade edilmez. Kripto iadelerinde ağ ücretleri ve kur farkları alıcıya yansıtılabilir.",
         "Fiyat değişiklikleri. Üyelik fiyatını değiştirebiliriz. Yeni fiyat, bir sonraki döneminiz başlamadan en az 30 gün önce e-postayla bildirilir.",
-        "Üyeliğin kapsamı. Uygulama özelliklerine erişim: piyasalar, takvim ve haberler, akademi, anlık Masa sinyalleri ve analizleri, fiyat alarmları ve demo MT5 veya paper hesaplara otomatik kopya. Sinyaller ve analizler genel piyasa yorumudur, kişisel yatırım tavsiyesi değildir. Uygulama içi otomatik kopya demo ve paper hesaplar içindir; gerçek hesap kopyası yalnızca lisanslı broker ortağımız üzerinden, onun kendi sözleşmeleriyle yapılır. Geçmiş performans gelecek sonuçların garantisi değildir; kaldıraçlı ürünler yüksek risk içerir.",
+        "Üyeliğin kapsamı. Uygulama özelliklerine erişim: piyasalar, takvim ve haberler, akademi, anlık Masa sinyalleri ve analizleri, fiyat alarmları ve demo MT5 veya paper hesaplara otomatik kopya. Sinyaller ve analizler genel piyasa yorumudur, kişisel yatırım tavsiyesi değildir. Uygulama içi otomatik kopya demo ve paper hesaplar içindir; gerçek hesap kopyası yalnızca broker üzerinden, onun kendi sözleşmeleriyle yapılır. Geçmiş performans gelecek sonuçların garantisi değildir; kaldıraçlı ürünler yüksek risk içerir.",
         "İletişim. Ödeme veya üyelikle ilgili sorular, başvuru numaranızla birlikte: info@nuukquant.com.",
       ],
     },
@@ -2012,15 +1814,15 @@ export const tr: ContentOverride = {
     "steps": [
       {
         "title": "Görüşme talep edin",
-        "body": "Uygun hizmetin belirlenmesi için 30 dakika: aracı kurum, sinyaller, portföy yönetimi veya eğitim."
+        "body": "Uygun hizmetin belirlenmesi için 30 dakika: sinyaller, portföy yönetimi veya eğitim."
       },
       {
-        "title": "Aracı kurum hesabı açın",
-        "body": "Ortak aracı kurumda, kendi adınıza. Kimlik ve ikametgâh belgesiyle doğrulama yaklaşık 10 dakika sürer."
+        "title": "broker hesabı açın",
+        "body": "Her NUUK yatırımcısı için zorunlu; hesap kendi adınıza açılır. Kimlik ve ikametgâh belgesiyle doğrulama yaklaşık 10 dakika sürer."
       },
       {
         "title": "Fonlayın ve bağlayın",
-        "body": "Aracı kurum hesabınızı fonlayın: WhatsApp sinyalleri için 250 USD'den, NUUK AI - Premium için 1.000 USD'den, özel manda için 250.000 USD'den itibaren. Ardından seçtiğiniz yapıya bağlayın."
+        "body": "broker hesabınızı fonlayın: WhatsApp sinyalleri için 250 USD'den, NUUK AI - Premium için 1.000 USD'den, özel manda için 250.000 USD'den itibaren. Ardından seçtiğiniz yapıya bağlayın."
       },
       {
         "title": "İşleme başlayın",
@@ -2043,21 +1845,21 @@ export const tr: ContentOverride = {
 
   systems: [
     {
-      method: "Gann seviyeleri + ATR(14) pozisyon büyüklüğü",
+      method: "Gann seviyeleri",
       riskProfile: "Orta",
-      summary: "Altın ve gümüş sistemi: girişler Gann fiyat-zaman seviyelerinde, her pozisyon ATR(14) stop'larıyla sabit 300 USD riske göre boyutlandırılır. Stop'suz hiçbir işlem açılmaz; emir gerçekleştirme katmanı bunu reddeder.",
+      summary: "Gann fiyat-zaman seviyelerine dayanan altın ve gümüş sistemi.",
       stats: [
         {
           "label": "Canlıya alınma",
           "value": "2026"
         },
         {
-          "label": "İşlem başına risk",
-          "value": "300 USD"
+          "label": "Enstrümanlar",
+          "value": "XAU/USD, XAG/USD"
         },
         {
-          "label": "Stop kuralı",
-          "value": "ATR(14) × 1,5"
+          "label": "Zaman dilimi",
+          "value": "H1 / H4"
         }
       ],
     },
@@ -2066,14 +1868,14 @@ export const tr: ContentOverride = {
       assetClass: "Altın, gümüş, ABD ve AB endeksleri",
       method: "Zaman serisi momentumu + Donchian + hareketli ortalama kesişimi, topluluk (ensemble)",
       riskProfile: "Orta",
-      summary: "Kıymetli maden ve endeks CFD'lerinde günlük trend takip topluluğu. Swap ve komisyon dâhil edilerek 2010–2026 döneminde ileriye yürüyen (walk-forward) testten geçti; Temmuz 2026'dan beri Tickmill'de kâğıt üstü (paper) hesap olarak çalışıyor.",
+      summary: "Kıymetli maden ve endeks CFD'lerinde günlük trend takip topluluğu. Swap ve komisyon dâhil edilerek 2010–2026 döneminde ileriye yürüyen (walk-forward) testten geçti; Temmuz 2026'dan beri Model portföy olarak çalışıyor.",
       stats: [{ label: "İleriye dönük test başlangıcı" }, { label: "Backtest Sharpe" }, { label: "Backtest maks. düşüş" }],
     },
     {
       method: "Açılış aralığı kırılımı + saatlik Donchian",
       riskProfile: "Yüksek",
       summary: "Endeks CFD'lerinde 15 dakikalık açılış aralığı kırılımı ve kıymetli madenlerde 1 saatlik Donchian; NUUK SignalBridge üzerinden MT4'te gerçekleştirilir. Temmuz 2026'dan beri demoda; yalnızca 200 işlemlik kâğıt üstü (paper) eşiği geçildikten sonra canlıya alınacak.",
-      stats: [{ label: "Durum", value: "Demo, kâğıt üstü eşik" }, { label: "Hedef lansman", value: "200 kâğıt üstü işlemden sonra" }, { label: "Kurum" }],
+      stats: [{ label: "Durum", value: "Demo, kâğıt üstü eşik" }, { label: "Hedef lansman", value: "200 kâğıt üstü işlemden sonra" }, { label: "İşlem yeri", value: "Model portföy · MT4/MT5" }],
     },
   ],
 
@@ -2116,7 +1918,7 @@ export const tr: ContentOverride = {
       ]
     },
     {
-      name: "Kişisel portföy — Saxo Bank",
+      name: "Kişisel portföy",
       source: "Aracı kurum ekstresi",
       updated: "Aylık",
       stats: [

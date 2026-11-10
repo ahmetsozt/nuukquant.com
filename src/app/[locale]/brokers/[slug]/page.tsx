@@ -13,6 +13,7 @@ import Button from "@/components/ui/Button";
 import Fill from "@/components/ui/Fill";
 import Icon from "@/components/ui/Icon";
 import { en } from "@/content/en";
+import { RETIRED_BROKER_SLUGS } from "@/lib/brokers";
 import { locales } from "@/i18n";
 import { resolve } from "@/lib/page";
 import { seo } from "@/lib/seo";
@@ -24,12 +25,13 @@ type Params = Promise<{ locale: string; slug: string }>;
  * summary, FAQ and the account-opening steps.
  */
 export function generateStaticParams() {
-  return locales.flatMap((locale) => en.brokers.list.map((b) => ({ locale, slug: b.slug })));
+  return locales.flatMap((locale) => [...en.brokers.list.map((b) => b.slug), ...RETIRED_BROKER_SLUGS].map((slug) => ({ locale, slug })));
 }
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { locale, c } = await resolve(params);
   const { slug } = await params;
+  if (RETIRED_BROKER_SLUGS.includes(slug)) return { robots: { index: false, follow: true } };
   const b = c.brokers.list.find((x) => x.slug === slug);
   return b ? { ...seo(locale, `brokers/${slug}/`), title: `${b.name} — ${c.brokers.kicker}`, description: b.tagline } : {};
 }
@@ -37,6 +39,19 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 export default async function BrokerLandingPage({ params }: { params: Params }) {
   const { locale, c } = await resolve(params);
   const { slug } = await params;
+  if (RETIRED_BROKER_SLUGS.includes(slug)) {
+    const target = `${c.nav[1].href}broker/`;
+    return (
+      <>
+        <meta httpEquiv="refresh" content={`0;url=${target}`} />
+        <p className="container-x py-24 text-center">
+          <Link href={target} className="font-semibold text-primary">
+            broker Group
+          </Link>
+        </p>
+      </>
+    );
+  }
   const b = c.brokers.list.find((x) => x.slug === slug);
   if (!b) notFound();
   const L = c.brokers.cardLabels;

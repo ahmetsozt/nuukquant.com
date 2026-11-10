@@ -133,7 +133,7 @@ const ar: JournalCopy = {
   title: "كشف حساب المكتب، يومًا بيوم",
   lead: "كل صفقة مغلقة من كشف MT4 الخاص بالمكتب في سجل واحد: العائد، نسبة الربح، عامل الربح، تقويم يومي، ومتى وأين يظهر التفوق.",
   label: "محفظة نموذجية",
-  source: "المصدر: حساب تجريبي لدى Tickmill، كشف MT4 المفصل (السجل الكامل)",
+  source: "المصدر: المحفظة النموذجية، كشف MT4 المفصل (السجل الكامل)",
   period: "الفترة",
   updated: "آخر تحديث",
   cards: {
@@ -176,7 +176,7 @@ const ru: JournalCopy = {
   title: "Выписка деска, день за днём",
   lead: "Каждая закрытая сделка из MT4-выписки деска в одном журнале: доходность, доля прибыльных сделок, профит-фактор, дневной календарь и то, где и когда появляется преимущество.",
   label: "Модельный портфель",
-  source: "Источник: демо-счёт Tickmill, подробная выписка MT4 (вся история)",
+  source: "Источник: модельный портфель, подробная выписка MT4 (вся история)",
   period: "Период",
   updated: "Обновлено",
   cards: {
@@ -219,7 +219,7 @@ const fr: JournalCopy = {
   title: "Le relevé du desk, jour après jour",
   lead: "Chaque trade clôturé du relevé MT4 du desk réuni dans un journal : rendement, taux de réussite, profit factor, calendrier quotidien et où et quand l'avantage apparaît.",
   label: "Portefeuille modèle",
-  source: "Source : compte démo Tickmill, relevé détaillé MT4 (tout l'historique)",
+  source: "Source : portefeuille modèle, relevé détaillé MT4 (tout l'historique)",
   period: "Période",
   updated: "Dernière mise à jour",
   cards: {
@@ -262,7 +262,7 @@ const es: JournalCopy = {
   title: "El extracto del desk, día a día",
   lead: "Cada operación cerrada del extracto MT4 del desk convertida en un diario: rentabilidad, tasa de acierto, profit factor, calendario diario y cuándo y dónde aparece la ventaja.",
   label: "Cartera modelo",
-  source: "Fuente: cuenta demo de Tickmill, extracto detallado MT4 (todo el historial)",
+  source: "Fuente: cartera modelo, extracto detallado MT4 (todo el historial)",
   period: "Periodo",
   updated: "Última actualización",
   cards: {

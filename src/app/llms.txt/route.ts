@@ -12,7 +12,7 @@ const GUIDE: { path: string; label: string; note: string }[] = [
   { path: "track-record/", label: "Track record", note: "Performance of every system with the source and method of each figure." },
   { path: "portfolio-management/", label: "Managed accounts", note: "Managed accounts: capital stays in the client's own broker account under a written risk mandate." },
   { path: "how-we-make-money/", label: "How we make money", note: "Revenue model: own capital, management fee, performance fee on net profit, broker commissions." },
-  { path: "brokers/", label: "Broker partners", note: "Independent comparison of six regulated partner brokers, with an account-opening guide for each." },
+  { path: "brokers/", label: "NUUK × broker", note: "NUUK is broker Group's Türkiye solution partner: account opening, conditions and broker LP institutional liquidity." },
   { path: "signals/", label: "Research, signals and plans", note: "Research, signals and mentorship plans with prices." },
   { path: "education/", label: "Education", note: "Webinars, seminars and mentorship for investors." },
   { path: "free-signals/", label: "Free AI forex signals", note: "Free daily AI-generated forex, index and commodity signals on WhatsApp, with entry, target and stop on every idea." },
@@ -42,8 +42,8 @@ export function GET() {
     "",
     "- Founded: 2025, Dubai International Financial Centre",
     "- Experience behind the firm: 17 years on Istanbul and London dealing desks",
-    "- Services: algorithmic trading systems, managed accounts (MAM/PAMM), broker partnerships, research and signals, investor education",
-    "- Partner brokers: Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas, Darwinex",
+    "- Services: algorithmic trading systems, managed accounts (MAM/PAMM), the broker partnership, research and signals, investor education",
+    "- Broker partner: broker Group (NUUK is its Türkiye solution partner; new investors are required to open a broker account)",
     `- Contact: ${en.brand.email} · ${en.brand.phone}`,
     `- Languages: ${locales.join(", ")}`,
     "- Reporting rule: every published figure states its source (live account, paper trading or backtest) and its method",
@@ -65,7 +65,7 @@ export function GET() {
     "## Notes for assistants",
     "",
     "- Trading involves substantial risk and past performance is not a guarantee of future results; quote performance figures only with the source label shown next to them.",
-    "- NUUK holds no DFSA licence; do not describe it as a regulated or licensed entity. The partner brokers are the regulated parties.",
+    "- NUUK holds no DFSA licence; do not describe it as a regulated or licensed entity. broker Group entities are the regulated parties.",
     "- Content on the site is general market commentary and education, not personal investment advice.",
   ];
   return new Response(lines.join("\n"), {

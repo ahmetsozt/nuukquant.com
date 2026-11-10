@@ -2,8 +2,8 @@ import TvWidget from "@/components/market/TvWidget";
 import type { Locale } from "@/i18n";
 
 const symbols = [
-  { proName: "OANDA:XAUUSD", title: "XAU/USD" },
-  { proName: "OANDA:XAGUSD", title: "XAG/USD" },
+  { proName: "TVC:GOLD", title: "XAU/USD" },
+  { proName: "TVC:SILVER", title: "XAG/USD" },
   { proName: "FX:EURUSD", title: "EUR/USD" },
   { proName: "FX:GBPUSD", title: "GBP/USD" },
   { proName: "FX_IDC:USDTRY", title: "USD/TRY" },

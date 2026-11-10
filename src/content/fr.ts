@@ -12,10 +12,10 @@ export const fr: ContentOverride = {
   meta: {
     title: "NUUK — Trading piloté par l'IA et gestion de portefeuille, Dubaï",
     description:
-      "NUUK est une société de trading pilotée par l'IA basée au DIFC, à Dubaï : systèmes de trading algorithmique, comptes gérés, partenariats avec des courtiers, recherche, signaux et formation des investisseurs.",
+      "NUUK est une société de trading pilotée par l'IA basée au DIFC, à Dubaï : systèmes de trading algorithmique, comptes gérés, partenariat avec broker, recherche, signaux et formation des investisseurs.",
   },
   brand: {
-    role: "Trading algorithmique · Gestion de portefeuille · Partenariats courtiers",
+    role: "Trading algorithmique · Gestion de portefeuille · Partenaire de solutions de broker pour la Türkiye",
     office: "Dubai International Financial Centre (DIFC), Dubaï, Émirats arabes unis",
   },
   ui: {
@@ -58,7 +58,7 @@ export const fr: ContentOverride = {
     since: "Depuis",
     source: "Source",
     openAccount: "Ouvrir un compte",
-    compare: "Comparer les courtiers",
+    compare: "Découvrir broker",
     subscribe: "S'abonner",
     register: "S'inscrire",
     requestDemo: "Demander une démo",
@@ -81,12 +81,12 @@ export const fr: ContentOverride = {
         { label: "Systèmes de trading IA" },
         { label: "Track record" },
         { label: "Comptes gérés" },
-        { label: "Courtiers partenaires" },
+        { label: "Partenariat broker" },
         { label: "Signaux et rapports" },
         { label: "Formation" },
       ],
     },
-    { label: "Courtiers" },
+    { label: "broker" },
     { label: "Track record" },
     { label: "Masterclass" },
     { label: "Analyses", items: [{ label: "Notes de marché" }, { label: "Calendrier économique" }] },
@@ -119,16 +119,16 @@ export const fr: ContentOverride = {
       title: "Les marchés, lus avec discipline.",
       lead:
         "NUUK conçoit des systèmes de trading pilotés par l'IA, les exploite d'abord sur son propre capital, gère des comptes d'investisseurs et apprend aux investisseurs à trader par eux-mêmes. Chaque chiffre de ce site indique sa source et sa méthode.",
-      primary: { label: "Choisir un courtier" },
+      primary: { label: "Ouvrir un compte broker" },
       secondary: { label: "Réserver un appel" },
-      trustLine: ["Courtiers partenaires régulés par la FCA, l'ASIC, la CySEC et la DFSA", "Notre capital dans chaque système", "Basé au DIFC, à Dubaï"],
+      trustLine: ["Partenaire de solutions de broker Group pour la Türkiye", "Notre capital dans chaque système", "Basé au DIFC, à Dubaï"],
       trust: [
         { label: "années d'expérience de desk entre Istanbul et Londres derrière la société" },
         {"label": "variantes de stratégies back-testées depuis 2026 ; trois en production, documentées sur la page trading IA"},
         { label: "investisseurs formés lors de webinaires et de séminaires" },
-        { label: "partenariats avec des courtiers, dont sept présentés sur ce site" },
+        { label: "courtier pour chaque investisseur NUUK : broker Group" },
       ],
-      pressTitle: "Courtiers partenaires",
+      pressTitle: "Courtier partenaire",
     },
     markets: {
       "kicker": "Cours en direct",
@@ -148,7 +148,7 @@ export const fr: ContentOverride = {
     promo: {
       kicker: "Comptes gérés",
       title: "Votre compte. L'exécution de NUUK. Des limites de risque écrites.",
-      body: "Le capital ne quitte jamais votre nom. Vous ouvrez un compte chez un courtier partenaire, NUUK reçoit uniquement une autorisation de trading, et un mandat écrit plafonne l'exposition et la perte quotidienne.",
+      body: "Le capital ne quitte jamais votre nom. Vous ouvrez un compte chez broker, NUUK reçoit uniquement une autorisation de trading, et un mandat écrit plafonne l'exposition et la perte quotidienne.",
       figureLabel: "comptes gérés, chacun logé dans le propre compte de courtage du client. La garde des fonds n'est jamais transférée.",
       cta: { label: "Comment ça marche" },
     },
@@ -159,7 +159,7 @@ export const fr: ContentOverride = {
       { title: "Systèmes de trading IA", body: "Algorithmes propriétaires codés, testés et exécutés en direct sur le forex, les indices, les matières premières et les actifs numériques.", who: "Pour les allocateurs et les investisseurs techniques" },
       { title: "Track record", body: "Les résultats du portefeuille propre de NUUK et des systèmes, nets de coûts, avec la source et la méthode de chaque chiffre.", who: "Pour quiconque décide s'il peut faire confiance à NUUK" },
       { title: "Comptes gérés", body: "Votre capital reste sur votre propre compte de courtage. NUUK le trade dans le cadre de limites de risque convenues et d'une commission de performance.", who: "Pour les investisseurs qui préfèrent déléguer" },
-      { title: "Courtiers partenaires", body: "Comparatif indépendant des courtiers avec lesquels NUUK travaille, avec un guide d'ouverture de compte étape par étape pour chacun.", who: "Pour les traders autonomes qui choisissent un courtier" },
+      { title: "Partenariat broker", body: "NUUK est le partenaire de solutions de broker Group pour la Türkiye. Conditions, régulation et guide d'ouverture de compte étape par étape au même endroit.", who: "Pour tous ceux qui ouvrent un compte avec NUUK" },
       { title: "Signaux, rapports et formation", body: "Notes quotidiennes, rapports hebdomadaires, idées de trade avec le raisonnement complet, et webinaires en direct qui enseignent la méthode.", who: "Pour les traders qui veulent apprendre et rester informés" },
     ],
     record: {
@@ -171,10 +171,10 @@ export const fr: ContentOverride = {
       cta: { label: "Voir le track record complet" },
     },
     brokers: {
-      kicker: "Courtiers partenaires",
-      title: "Où NUUK trade, et pourquoi",
-      lead: "Seuls les courtiers avec lesquels NUUK trade ou qu'elle a audités sont référencés. Chaque fiche présente la régulation, les spreads réels et les modalités de dépôt.",
-      cta: { label: "Comparer tous les courtiers" },
+      kicker: "Courtier partenaire",
+      title: "NUUK travaille avec broker",
+      lead: "NUUK est le partenaire de solutions de broker Group pour la Türkiye, et chaque investisseur NUUK y ouvre son compte. La fiche présente la régulation, les spreads et les modalités de dépôt.",
+      cta: { label: "NUUK × broker" },
     },
     systems: {
       kicker: "Trading IA",
@@ -225,8 +225,8 @@ export const fr: ContentOverride = {
         "label": "systèmes en production, 87 variantes de stratégies testées"
       },
       {
-        "value": "6",
-        "label": "courtiers partenaires régulés"
+        "value": "1",
+        "label": "courtier partenaire : broker Group"
       }
     ],
     "activitiesTitle": "Ce que fait NUUK",
@@ -234,15 +234,15 @@ export const fr: ContentOverride = {
     "activities": [
       {
         "title": "Systèmes de trading algorithmique",
-        "body": "Des stratégies conçues, back-testées et testées en avant en interne, puis exploitées en réel sur le capital propre de NUUK sur le forex, l'or, les indices et les actifs numériques. GANN NUUK Trader AI est en production chez Tickmill."
+        "body": "Des stratégies conçues, back-testées et testées en avant en interne, puis exploitées en réel sur le capital propre de NUUK sur le forex, l'or, les indices et les actifs numériques. GANN NUUK Trader AI fonctionne en portefeuille modèle."
       },
       {
         "title": "Gestion de portefeuille",
         "body": "Des comptes gérés dans le propre compte de courtage du client via des structures MAM/PAMM, sous mandat de risque écrit, avec des frais de gestion et une commission de performance sur le bénéfice net."
       },
       {
-        "title": "Partenariats avec des courtiers",
-        "body": "Des accords d'apporteur d'affaires avec sept courtiers régulés, chacun examiné de façon indépendante et documenté par un guide d'ouverture de compte étape par étape."
+        "title": "Partenariat broker",
+        "body": "NUUK est le partenaire de solutions de broker Group pour la Türkiye. Les comptes des investisseurs et les opérations de la société passent par broker, et l'infrastructure institutionnelle de NUUK est fournie par broker LP."
       },
       {
         "title": "Recherche et signaux",
@@ -273,17 +273,17 @@ export const fr: ContentOverride = {
       {
         "year": "2025",
         "title": "NUUK, Dubaï",
-        "body": "Création au Dubai International Financial Centre d'une société de trading pilotée par l'IA : systèmes, comptes gérés, partenariats avec des courtiers, recherche et formation."
+        "body": "Création au Dubai International Financial Centre d'une société de trading pilotée par l'IA : systèmes, comptes gérés, partenariat avec broker, recherche et formation."
       },
       {
         "year": "2026",
         "title": "Systèmes en production",
-        "body": "87 variantes de stratégies back-testées, trois en production. GANN NUUK Trader AI tourne sur le capital propre de NUUK chez Tickmill et figure sur la page de performance."
+        "body": "87 variantes de stratégies back-testées, trois en production. GANN NUUK Trader AI fonctionne en portefeuille modèle et figure sur la page de performance."
       },
       {
         "year": "Aujourd'hui",
         "title": "Un desk multilingue",
-        "body": "Un portail investisseurs, sept courtiers partenaires et un site en six langues, au service des investisseurs d'Istanbul au Golfe."
+        "body": "Un portail investisseurs, le partenariat avec broker et un site en six langues, au service des investisseurs d'Istanbul au Golfe."
       }
     ],
     "principlesTitle": "Comment NUUK travaille",
@@ -336,13 +336,13 @@ export const fr: ContentOverride = {
     method: [
       { title: "Données", body: "Données tick et barres provenant des places primaires, nettoyées et alignées dans le temps. Données alternatives lorsqu'elles méritent leur place." },
       { title: "Modèle", body: "Signaux fondés sur des règles, combinés à des filtres d'apprentissage automatique. Rien ne trade qui ne puisse être expliqué en un paragraphe." },
-      { title: "Risque", body: "Taille de position ajustée à la volatilité, limites de perte quotidienne strictes et coupe-circuits qui liquident toutes les positions." },
+      { title: "Risque", body: "Le risque est pris en compte à chaque étape du processus." },
       { title: "Exécution", body: "API de courtiers et FIX lorsque disponible ; slippage et qualité d'exécution suivis par place de marché." },
       { title: "Revue", body: "Revue hebdomadaire de la performance réelle par rapport à la performance attendue. Les systèmes qui dérivent sont mis en pause, pas retouchés en cours de route." },
     ],
     faqTitle: "Questions fréquentes",
     faq: [
-      { q: "Puis-je faire tourner un système sur mon propre compte ?", a: "Oui. Selon le courtier, vous pouvez faire du copy trading, rejoindre une structure MAM/PAMM chez Tickmill, Saxo Bank ou Midas, ou suivre le canal de signaux et exécuter vous-même. Dans tous les cas, le compte reste à votre nom." },
+      { q: "Puis-je faire tourner un système sur mon propre compte ?", a: "Oui, sur un compte broker. Vous pouvez faire du copy trading, rejoindre une structure MAM/PAMM chez broker, ou suivre le canal de signaux et exécuter vous-même. Dans tous les cas, le compte reste à votre nom." },
       { q: "Quel est le capital minimum ?", a: "250 USD pour les signaux WhatsApp et 1 000 USD pour NUUK AI - Premium. Les comptes gérés MAM/PAMM commencent à l'allocation minimale indiquée sur la page des comptes gérés." },
       { q: "Partagez-vous le code ?", a: "Non. Le code reste propriétaire. NUUK publie la méthodologie, les règles de risque et les résultats, chacun avec sa source." },
     ],
@@ -353,7 +353,7 @@ export const fr: ContentOverride = {
     metaDescription: "Performance du portefeuille propre de NUUK et de ses systèmes de trading, avec la source et la méthode de chaque chiffre.",
     kicker: "Track record",
     title: "Chaque chiffre, avec sa source",
-    lead: "Les comptes sont détenus chez des courtiers partenaires. Chaque chiffre ci-dessous indique d’où il vient, compte réel, paper trading ou backtest walk-forward, et comment il est calculé. Les performances passées ne préjugent pas des résultats futurs.",
+    lead: "Les comptes des investisseurs sont détenus chez broker. Les résultats de cette page appartiennent au portefeuille modèle NUUK, un compte distinct des comptes des investisseurs. Chaque chiffre indique d’où il vient et comment il est calculé. Les performances passées ne préjugent pas des résultats futurs.",
     disclaimer: "Les performances passées ne préjugent pas des résultats futurs. Les chiffres sont nets de frais de trading et bruts de toute commission de performance, sauf indication contraire.",
     methodologyTitle: "Comment lire ces chiffres",
     methodology: [
@@ -369,13 +369,13 @@ export const fr: ContentOverride = {
     metaDescription: "Fonctionnement des comptes gérés : votre capital reste sur votre propre compte de courtage, tradé dans le cadre de limites de risque convenues.",
     kicker: "Comptes gérés",
     title: "Votre compte. L'exécution de NUUK. Des limites convenues.",
-    lead: "Le capital ne quitte jamais votre nom. Vous ouvrez un compte chez un courtier partenaire, vous le reliez à la structure gérée, et NUUK le trade dans le cadre d'un mandat de risque écrit.",
+    lead: "Le capital ne quitte jamais votre nom. Vous ouvrez un compte chez broker, vous le reliez à la structure gérée, et NUUK le trade dans le cadre d'un mandat de risque écrit.",
     cta: { label: "Demander un appel de présentation" },
     howTitle: "Comment ça marche",
     how: [
       { title: "Appel de découverte", body: "Nous discutons de vos objectifs, de votre horizon, de vos besoins de liquidité et du drawdown que vous pouvez réellement supporter." },
-      { title: "Ouverture du compte", body: "Vous ouvrez un compte à votre nom chez un courtier partenaire et vous l'approvisionnez. NUUK reçoit uniquement une autorisation de trading, jamais de droit de retrait." },
-      { title: "Mandat de risque", body: "Un mandat écrit fixe l'exposition maximale, la limite de perte quotidienne et les instruments. Le système ne peut pas le dépasser." },
+      { title: "Ouverture du compte", body: "Vous ouvrez un compte à votre nom chez broker et vous l'approvisionnez. NUUK reçoit uniquement une autorisation de trading, jamais de droit de retrait." },
+      { title: "Mandat de risque", body: "Les limites de risque sont convenues dans un mandat écrit." },
       { title: "Reporting", body: "Vous voyez chaque trade en temps réel sur votre propre compte, plus un rapport mensuel et un appel de revue trimestriel." },
     ],
     tiersTitle: "Trois façons d'allouer",
@@ -448,65 +448,44 @@ export const fr: ContentOverride = {
     fit: ["Investisseurs qui veulent une exécution professionnelle sans renoncer à la garde de leurs fonds", "Family offices à la recherche d'une allocation satellite vers des stratégies systématiques", "Chefs d'entreprise disposant de trésorerie inutilisée"],
     notFitTitle: "À qui cela ne s'adresse pas",
     notFit: ["Quiconque ne peut pas supporter un drawdown de 20 %", "Capital nécessaire dans les 3 mois", "Quiconque attend des rendements fixes ou garantis"],
-    compliance: "NUUK Quant opère depuis le Dubai International Financial Centre. Les comptes gérés fonctionnent via la structure MAM/PAMM du courtier partenaire, dans son cadre réglementaire : NUUK ne détient que le droit de trader, jamais la conservation ni le droit de retrait. Les 300+ comptes gérés aujourd'hui sont dans le pool MAM ; les mandats dédiés sont ouverts individuellement.",
+    compliance: "NUUK Quant opère depuis le Dubai International Financial Centre. Les comptes gérés fonctionnent via la structure MAM/PAMM de broker, dans son cadre réglementaire : NUUK ne détient que le droit de trader, jamais la conservation ni le droit de retrait. Les 300+ comptes gérés aujourd'hui sont dans le pool MAM ; les mandats dédiés sont ouverts individuellement.",
   },
 
   brokers: {
-    metaTitle: "Courtiers partenaires",
-    metaDescription: "Comparatif indépendant des courtiers partenaires : régulation, spreads, moyens de dépôt, plateformes et ouverture de compte étape par étape.",
-    kicker: "Courtiers partenaires",
-    title: "Les courtiers avec lesquels NUUK travaille",
-    lead: "NUUK n'oriente ses clients que vers des courtiers avec lesquels elle trade ou qu'elle a audités. Sept partenaires aujourd'hui : broker Group (notre partenariat pour la Turquie), Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas et Darwinex. Chaque fiche indique qui les régule, ce qu'ils facturent réellement et à quelle vitesse l'argent circule.",
+    metaTitle: "NUUK × broker",
+    metaDescription: "NUUK est le partenaire de solutions de broker Group pour la Türkiye. Régulation, spreads, moyens de dépôt, plateformes, liquidité institutionnelle et ouverture de compte étape par étape.",
+    kicker: "NUUK × broker",
+    title: "Un seul courtier pour chaque investisseur NUUK : broker",
+    lead: "NUUK est le partenaire de solutions de broker Group pour la Türkiye. Les comptes des investisseurs et les opérations de la société passent par broker, et chaque nouvel investisseur y ouvre son compte.",
     disclosure: "Les liens de cette page sont des liens d'affiliation. Si vous ouvrez et approvisionnez un compte via ces liens, NUUK perçoit une commission du courtier. Cela ne modifie pas les spreads ni les commissions que vous payez.",
+    hub: {
+      kicker: "NUUK × broker",
+      title: "NUUK est le partenaire de solutions de broker Group pour la Türkiye",
+      points: [
+        { title: "Partenaire de solutions pour la Türkiye", body: "NUUK et broker Group collaborent en tant que partenaires de solutions pour la Türkiye." },
+        { title: "Un seul courtier pour chaque investisseur", body: "Tous les investisseurs NUUK détiennent leur compte chez broker. Le trading des investisseurs et les opérations de la société passent par broker." },
+        { title: "Compte broker requis", body: "Les nouveaux investisseurs doivent ouvrir un compte broker pour travailler avec NUUK." },
+        { title: "Infrastructure broker LP", body: "L'infrastructure institutionnelle de NUUK est fournie par broker LP." },
+        { title: "Pour les courtiers du monde entier", body: "NUUK propose l'infrastructure de broker aux courtiers internationaux sous l'ombrelle NUUK." },
+      ],
+      modelNote: "Les résultats de la page de performance appartiennent au portefeuille modèle NUUK, un compte distinct des comptes des investisseurs.",
+      openAccount: "Ouvrir un compte broker",
+      openAccountHref: "https://broker/fr/account/live-account?lp=23&salesid=6069752926",
+      lp: "broker LP",
+      lpHref: "https://broker/en/partnership/institutional-liquidity-offering",
+    },
     compareTitle: "Côte à côte",
     partner: {
-      "kicker": "Programme partenaires",
-      "title": "Pour les apporteurs d'affaires et les formateurs",
-      "body": "Si vous amenez déjà des clients à ces courtiers, NUUK peut être votre apporteur principal : un partage de rétrocessions transparent versé chaque mois, un accompagnement à l'ouverture de compte et au KYC en turc, en arabe et en anglais, et les mêmes fiches comparatives pour votre propre audience. Les conditions de sous-partenariat sont fixées par écrit, courtier par courtier.",
+      "kicker": "Institutionnel",
+      "title": "L'infrastructure broker pour les courtiers du monde entier, sous NUUK",
+      "body": "NUUK propose l'infrastructure de broker aux courtiers du monde entier sous l'ombrelle NUUK. Courtiers, apporteurs d'affaires et formateurs peuvent travailler avec nous sur la liquidité de broker LP, un partage de rétrocessions transparent versé chaque mois, et un accompagnement à l'ouverture de compte et au KYC en turc, en arabe et en anglais. Les conditions sont fixées par écrit.",
       "points": [
         "Partage de rétrocessions transparent, versé mensuellement",
         "Accompagnement à l'ouverture de compte et au KYC en trois langues",
-        "Fiches comparatives de courtiers réutilisables"
+        "Liquidité institutionnelle de broker LP"
       ],
       "cta": {
-        "label": "Discuter d'un partenariat"
-      }
-    },
-    wizard: {
-      "title": "Trouvez votre courtier en trois questions",
-      "lead": "Répondez à trois questions et nous vous indiquons le partenaire adapté. Ce n’est pas un conseil personnalisé ; vérifiez toujours les conditions en vigueur sur le site du courtier.",
-      "q1": "Où résidez-vous ?",
-      "o1": [
-        "Türkiye",
-        "Émirats / Golfe",
-        "UE / Royaume-Uni",
-        "Ailleurs"
-      ],
-      "q2": "Que souhaitez-vous trader ?",
-      "o2": [
-        "Forex, or et CFD sur indices",
-        "Actions et ETF",
-        "Crypto et CFD multi-actifs",
-        "Copy trading / compte géré"
-      ],
-      "q3": "Capital de départ",
-      "o3": [
-        "Moins de 1 000 USD",
-        "1 000 – 25 000 USD",
-        "25 000 – 250 000 USD",
-        "Plus de 250 000 USD"
-      ],
-      "result": "Notre recommandation",
-      "alt": "À considérer aussi",
-      "restart": "Recommencer",
-      "reasons": {
-        "pepperstone": "Entité régulée par la DFSA pour les résidents du Golfe, spreads bruts dès 0,0 pip sur le forex et les métaux, MT4/MT5/cTrader/TradingView.",
-        "tickmill": "Régulé FCA et CySEC avec un support en turc, spreads bruts dès 0,0 pip et la structure MAM que nous utilisons pour les comptes mutualisés.",
-        "saxo": "Conservation de niveau bancaire et plus de 70 000 instruments (actions, ETF, obligations, options), tarification par paliers pour les gros comptes.",
-        "capital-com": "Minimum bas, plus de 3 000 CFD dont crypto et actions, application rapide ; adapté aux premiers pas en CFD multi-actifs.",
-        "midas": "Application de courtage régulée en Türkiye pour les actions BIST, américaines et européennes dès 1 USD, en turc, avec dépôt en TRY.",
-        "darwinex": "Transformez une stratégie systématique en DARWIN investissable ou suivez la nôtre ; régulé FCA, copie et allocation intégrées.",
-        "broker": "Notre partenariat pour la Turquie : un seul compte, du FX et de l'or aux actions et à la crypto, supervisé par plus de 18 régulateurs, avec l'accompagnement d'ouverture en turc de NUUK."
+        "label": "Parler à NUUK"
       }
     },
     cardLabels: {
@@ -530,7 +509,7 @@ export const fr: ContentOverride = {
       yes: "Oui",
       no: "Non",
       profile: "Fiche complète",
-      allBrokers: "Tous les courtiers",
+      allBrokers: "NUUK × broker",
       atAGlance: "En bref",
       conditions: "Conditions de trading",
       about: "À propos du courtier",
@@ -541,9 +520,9 @@ export const fr: ContentOverride = {
     },
     list: [
       {
-        "referralHref": "https://broker/fr/account/live-account?lp=23&salesid=6069752926&original_ref=direct",
-        "ctaNote": "NUUK est le partenaire apporteur d'affaires de broker Group. Les CFD sont des instruments complexes et présentent un risque élevé de perte rapide en capital en raison de l'effet de levier ; n'investissez que l'argent que vous pouvez vous permettre de perdre.",
-        "tagline": "Notre partenaire pour la Turquie : FX, métaux, indices, actions et crypto sur un seul compte",
+        "referralHref": "https://broker/fr/account/live-account?lp=23&salesid=6069752926",
+        "ctaNote": "NUUK est le partenaire de solutions de broker Group pour la Türkiye. Les CFD sont des instruments complexes et présentent un risque élevé de perte rapide en capital en raison de l'effet de levier ; n'investissez que l'argent que vous pouvez vous permettre de perdre.",
+        "tagline": "Le partenaire de solutions de NUUK pour la Türkiye : FX, métaux, indices, actions et crypto sur un seul compte",
         "founded": "2005, Californie",
         "spreads": [
           {
@@ -558,11 +537,11 @@ export const fr: ContentOverride = {
         "withdrawalTime": "Demande dans l'espace client broker ; délai selon la méthode",
         "languages": "Support multilingue 24/7 · ouverture de compte en turc via NUUK",
         "bestFor": "Investisseurs en Turquie qui veulent un seul compte régulé pour le FX, l'or, les indices, les actions et la crypto, avec une ouverture en turc",
-        "summary": "broker Group a été fondée en Californie en 2005 et revendique aujourd'hui plus de 2 millions de clients dans 100 pays, environ 35 milliards de dollars de volume quotidien et plus de 322 millions de dollars de capital libéré. Ses entités sont agréées par l'ASIC, la CySEC, la MAS, la BaFin, la CIMA, l'Autorité des marchés de capitaux des EAU et d'autres. Depuis octobre 2026, NUUK est le partenaire apporteur d'affaires de broker Group en Turquie.",
+        "summary": "broker Group a été fondée en Californie en 2005 et revendique aujourd'hui plus de 2 millions de clients dans 100 pays, environ 35 milliards de dollars de volume quotidien et plus de 322 millions de dollars de capital libéré. Ses entités sont agréées par l'ASIC, la CySEC, la MAS, la BaFin, la CIMA, l'Autorité des marchés de capitaux des EAU et d'autres. Depuis octobre 2026, NUUK est le partenaire de solutions de broker Group pour la Türkiye.",
         "faq": [
           {
             "q": "Que change le partenariat NUUK–broker pour moi ?",
-            "a": "NUUK présente broker Group aux investisseurs en Turquie. Vous ouvrez le compte à votre nom chez broker ; NUUK vous accompagne en turc et fournit recherche et formation. NUUK ne détient jamais votre argent."
+            "a": "NUUK est le partenaire de solutions de broker Group pour la Türkiye. Chaque investisseur NUUK détient un compte chez broker, et les nouveaux investisseurs doivent en ouvrir un. Vous ouvrez le compte à votre nom chez broker ; NUUK vous accompagne en turc et fournit recherche et formation. NUUK ne détient jamais votre argent."
           },
           {
             "q": "Quel est le dépôt minimum ?",
@@ -578,361 +557,13 @@ export const fr: ContentOverride = {
           },
           {
             "q": "NUUK gagne-t-elle de l'argent sur mon compte ?",
-            "a": "Oui. En tant qu'apporteur d'affaires, NUUK est rémunérée par broker sur ses propres revenus. Vos spreads et commissions ne changent pas."
+            "a": "Oui. En tant que partenaire de solutions, NUUK est rémunérée par broker sur ses propres revenus. Vos spreads et commissions ne changent pas."
+          },
+          {
+            "q": "Dois-je ouvrir un compte chez broker ?",
+            "a": "Oui. Un compte broker est requis pour chaque nouvel investisseur NUUK. Le compte est à votre nom et NUUK ne détient jamais votre argent."
           }
         ]
-      },
-      {
-        tagline: "Spreads bruts dès 0.0 pip, cinq plateformes, neuf entités agréées",
-        regulator: "FCA · ASIC · CySEC · DFSA · BaFin · SCB · CMA",
-        licence: "DFSA F004356, Pepperstone Financial Services (DIFC) Ltd · entités du groupe sous FCA, ASIC, CySEC, BaFin, SCB, CMA",
-        founded: "2010, Melbourne",
-        minDeposit: "$0 · $10 par carte",
-        platforms: ["Plateforme Pepperstone", "TradingView", "MT5", "MT4", "cTrader"],
-        spreads: [{ value: "0.0 Razor · 1.0 Standard" }, { value: "dès 0.08 Razor" }, { value: "dès 0.4" }],
-        commission: "Razor : $3.50 par lot et par côté sur le forex et l'or · Standard : aucune (hors CFD sur actions)",
-        leverage: "1:30 pour les particuliers (FCA, ASIC, CySEC, DFSA) · jusqu'à 1:500 SCB · 1:1000 SCB Pro",
-        funding: ["Visa / Mastercard", "Apple Pay", "Google Pay", "PayPal", "Skrill", "Neteller", "Virement bancaire", "Crypto"],
-        withdrawalTime: "Jusqu'à 1 jour ouvré",
-        languages: "24h/24 5j/7 multilingue, 18 h le week-end · pas de service en turc",
-        bestFor: "Traders actifs sur le forex et l'or en spreads bruts ; traders algorithmiques sur MT5, cTrader ou TradingView",
-        pros: [
-          "Compte Razor : spreads dès 0.0 pip avec une commission fixe de $3.50 par lot et par côté",
-          "Taux d'exécution de 99.59 % sans intervention d'un dealing desk",
-          "Plus de 1,350 marchés : forex, indices, matières premières, actions, ETF et CFD sur cryptos",
-          "Dépôts gratuits ; retraits par carte, portefeuille électronique et crypto traités sous un jour ouvré",
-          "Régulé dans sept juridictions, fonds des clients ségrégués dans des banques de premier rang",
-        ],
-        cons: [
-          "Effet de levier pour les particuliers plafonné à 1:30 sous les entités FCA, ASIC, CySEC et DFSA",
-          "Les retraits par virement international coûtent $20 et peuvent prendre jusqu'à 7 jours ouvrés",
-          "CFD uniquement : vous ne détenez jamais l'action ou la crypto sous-jacente",
-        ],
-        steps: [
-          "Ouvrez le lien d'affiliation et cliquez sur Join now. Inscrivez-vous avec votre e-mail et obtenez un compte démo gratuit.",
-          "Répondez aux questions d'adéquation (environ 5 minutes).",
-          "Vérifiez votre identité : pièce d'identité officielle et justificatif de domicile.",
-          "Approvisionnez dès $10 par carte, Apple Pay, PayPal ou portefeuille électronique. Le virement bancaire n'a pas de minimum.",
-          "Choisissez Razor ou Standard, puis connectez-vous sur MT5, cTrader, TradingView ou l'application Pepperstone.",
-        ],
-        summary:
-          "Fondé à Melbourne en 2010, Pepperstone est l'un des plus grands courtiers CFD en volume : plus de 900,000 comptes, environ 1,000 milliards de dollars de volume de trading mensuel et neuf entités agréées auprès de la FCA, de l'ASIC, de la CySEC, de la DFSA, de la BaFin, de la SCB et de la CMA. Je détiens un compte Standard auprès de l'entité de Dubaï régulée par la DFSA et je l'utilise pour le trading discrétionnaire de l'or.",
-        faq: [
-          {
-            q: "Razor ou Standard : quel compte choisir ?",
-            a: "Razor pour le forex et l'or si vous tradez activement : spreads bruts dès 0.0 pip plus $3.50 par lot et par côté. Standard si vous préférez tout intégrer dans le spread : dès 1.0 pip sur EUR/USD, sans commission sauf sur les CFD sur actions. Les deux donnent accès aux mêmes 1,350+ marchés.",
-          },
-          {
-            q: "Quel est le dépôt minimum ?",
-            a: "Il n'y a pas de minimum pour ouvrir le compte. Les dépôts par carte, Apple Pay, Google Pay, PayPal, Skrill et Neteller commencent à $10 ; les virements bancaires domestiques n'ont pas de minimum. Les dépôts sont gratuits.",
-          },
-          {
-            q: "Quel est le délai des retraits ?",
-            a: "Cartes, portefeuilles électroniques et crypto sont traités sous un jour ouvré et sont gratuits. Les virements bancaires internationaux coûtent $20 et peuvent prendre jusqu'à 7 jours ouvrés.",
-          },
-          {
-            q: "Pepperstone est-il régulé ?",
-            a: "Oui. Les entités du groupe sont agréées par la FCA (Royaume-Uni), l'ASIC (Australie), la CySEC (Chypre), la DFSA (Dubaï), la BaFin (Allemagne), la SCB (Bahamas) et la CMA (Kenya). Les fonds des clients sont conservés sur des comptes ségrégués dans des banques de premier rang et les clients particuliers bénéficient d'une protection contre le solde négatif.",
-          },
-          {
-            q: "De quelle entité dépendra mon compte ?",
-            a: "Via mon lien, vous vous inscrivez auprès de Pepperstone Financial Services (DIFC) Limited, l'entité de Dubaï régulée par la DFSA. L'effet de levier pour les particuliers est plafonné à 1:30, les fonds des clients sont ségrégués et les clients particuliers bénéficient d'une protection contre le solde négatif. Les clients professionnels peuvent demander un levier plus élevé.",
-          },
-          {
-            q: "Un lien d'affiliation modifie-t-il mes frais ?",
-            a: "Non. Les spreads et commissions sont identiques, que vous vous inscriviez directement ou via mon lien. Le courtier paie ma commission sur ses propres revenus.",
-          },
-        ],
-      },
-      {
-        tagline: "Tarification brute dès 0.0 pip avec $3 par côté, MT4/MT5 et TradingView",
-        regulator: "FCA · CySEC · FSA Seychelles · FSCA",
-        licence: "FCA 717270 · CySEC 278/15 · FSA SD008 · FSCA FSP 49464 · bureau de représentation DFSA F007663",
-        founded: "2014, Londres",
-        minDeposit: "$100",
-        platforms: ["MT4", "MT5", "TradingView", "Tickmill Trader", "Tickmill App"],
-        spreads: [{ value: "0.0 Raw · 1.6 Classic" }, { value: "dès 0.08 Raw" }, { value: "dès 0.39" }],
-        commission: "Raw : $3 par lot et par côté (MT4/MT5), $3.50 sur TradingView · Classic : aucune · indices et actions : aucune",
-        leverage: "1:30 pour les particuliers (FCA, CySEC) · jusqu'à 1:1000 sous Tickmill Ltd (Seychelles) · pro 1:500",
-        funding: ["Virement bancaire", "Visa / Mastercard", "Skrill", "Neteller", "UnionPay", "Crypto"],
-        withdrawalTime: "Traité sous 1 jour ouvré",
-        languages: "Lun–ven 07:00–16:00 GMT, 14 langues · pas de service en turc",
-        bestFor: "Traders forex et or sensibles aux coûts, scalpeurs et utilisateurs d'EA qui veulent une tarification brute à $3 par côté",
-        pros: [
-          "Compte Raw : spreads 0.0 pip avec $3 par lot et par côté, classé n°1 pour les commissions et frais par ForexBrokers.com 2021–2024",
-          "Entités FCA, CySEC, FSA Seychelles et FSCA ; couverture FSCS et ICF pour les clients britanniques et européens",
-          "Comptes ségrégués dans des banques de premier rang, protection contre le solde négatif et assurance Lloyd's pour les soldes de $20k à $1m",
-          "Minimum de $100, aucuns frais de dépôt ou de retrait, frais bancaires remboursés sur les virements supérieurs à $5,000",
-          "Toutes les stratégies autorisées (scalping, hedging, EA), VPS gratuit, intégration TradingView",
-        ],
-        cons: [
-          "Levier 1:1000 uniquement sous l'entité des Seychelles ; les clients particuliers britanniques et européens sont plafonnés à 1:30",
-          "Les spreads du compte Classic démarrent à 1.6 pip, larges par rapport au Raw",
-          "Pas de site ni de service client en turc ; USD/TRY, EUR/TRY et GBP/TRY sont en clôture uniquement",
-        ],
-        steps: [
-          "Inscription : renseignez nom, pays, type de client et e-mail sur my.tickmill.com/sign-up pour créer votre Espace client ; si le champ Introducing Broker est vide, saisissez le code IB IB82498200",
-          "Vérification : connectez-vous à l'Espace client et téléchargez un justificatif d'identité et un justificatif de domicile",
-          "Création du compte : une fois les documents approuvés, ouvrez un compte réel en choisissant Classic, Raw ou TradingView Raw, la devise de base (USD/EUR/GBP/ZAR) et le levier",
-          "Dépôt : sélectionnez un moyen de paiement (virement bancaire, carte, Skrill, Neteller, UnionPay, crypto) et approvisionnez dès $100 ; la plupart des méthodes sont créditées instantanément",
-          "Trading : téléchargez MT4/MT5, Tickmill Trader ou connectez TradingView avec vos identifiants de compte et commencez à trader",
-        ],
-        summary:
-          "Tickmill Group a été fondé en 2014 par Ingmar et Illimar Mattus et a son siège à Londres, avec des entités régulées au Royaume-Uni (FCA 717270), à Chypre (CySEC 278/15), aux Seychelles (FSA SD008) et en Afrique du Sud (FSCA FSP 49464). Le groupe déclare 1.3 million de comptes enregistrés, plus de 900 millions de transactions et environ 350 milliards de dollars de volume mensuel moyen, et a remporté plus de 60 récompenses sectorielles. C'est ici que je fais tourner le compte papier NUUK Trend Ensemble et la démo intraday, et l'une des trois places utilisées pour les comptes gérés MAM.",
-        faq: [
-          {
-            q: "Quels types de comptes Tickmill propose-t-il ?",
-            a: "Trois comptes CFD : Classic (spreads dès 1.6 pip, sans commission), Raw (spreads dès 0.0 pip, $3 par lot et par côté, MT4/MT5) et TradingView Raw / Tickmill Trader (0.0 pip, $3.50 par côté). Tous démarrent à $100, autorisent 0.01 lot et toute stratégie, et peuvent être convertis en compte sans swap. Tickmill UK propose également un compte Futures ($1,000) et un compte multi-actifs IBKR.",
-          },
-          {
-            q: "Quel est le dépôt minimum chez Tickmill ?",
-            a: "$100 (ou l'équivalent en EUR/GBP) pour tous les comptes CFD ; les comptes en ZAR ont un minimum inférieur. Le retrait minimum est de $25. Tickmill ne facture aucuns frais de dépôt ou de retrait et rembourse les frais bancaires sur les virements supérieurs à $5,000.",
-          },
-          {
-            q: "Combien de temps prennent les retraits chez Tickmill ?",
-            a: "Les demandes de retrait sont traitées sous un jour ouvré. Le délai de réception dépend de la méthode : portefeuilles électroniques et crypto généralement de l'instantané à 48 heures, cartes jusqu'à 8 jours ouvrés, virements bancaires 2 à 7 jours ouvrés. Les fonds retournent d'abord vers le moyen de dépôt d'origine (les dépôts par carte reviennent sur la carte, les profits par virement ou portefeuille électronique).",
-          },
-          {
-            q: "Tickmill est-il régulé et les fonds des clients sont-ils protégés ?",
-            a: "Oui. Tickmill UK Ltd est agréé par la FCA (717270), Tickmill Europe Ltd est agréé par la CySEC (278/15), Tickmill Ltd est un négociant en valeurs mobilières agréé par la FSA des Seychelles (SD008) et Tickmill South Africa est agréé par la FSCA (FSP 49464) ; Tickmill UK dispose également d'un bureau de représentation DFSA (F007663). Les fonds des clients sont ségrégués dans des banques de premier rang, la protection contre le solde négatif s'applique, les clients britanniques bénéficient de la couverture FSCS jusqu'à £120,000, les clients européens de la couverture ICF jusqu'à €20,000, et les soldes compris entre $20,000 et $1,000,000 sont assurés auprès de Lloyd's.",
-          },
-          {
-            q: "Quel effet de levier Tickmill propose-t-il ?",
-            a: "Jusqu'à 1:1000 sur le forex et les métaux sous Tickmill Ltd (Seychelles) via un levier dynamique, avec 1:200 sur les principales cryptos, 1:100 sur les indices et 1:20 sur les actions. Sous Tickmill Europe, les clients particuliers sont limités à 1:30 et les clients professionnels sur option jusqu'à 1:500 ; les clients particuliers de Tickmill UK sont également plafonnés à 1:30.",
-          },
-        ],
-      },
-      {
-        tagline: "Banque d'investissement danoise avec plus de 71,000 instruments sur un seul compte",
-        regulator: "FSA danoise · FCA · FINMA · MAS · ASIC · SFC · JFSA",
-        licence: "Licence bancaire FSA danoise 1149 (Saxo Bank A/S) · bureau de représentation au DIFC régulé par la DFSA",
-        founded: "1992, Copenhague",
-        minDeposit: "Aucun (Classic) · $5,000 sur le site EAU",
-        platforms: ["SaxoTraderGO", "SaxoTraderPRO", "SaxoInvestor", "TradingView", "OpenAPI / FIX"],
-        spreads: [{ value: "dès 1.0 Classic · 0.7 VIP" }, { value: "dès 34 cents" }, { value: "dès 0.7" }],
-        commission: "CFD forex et indices : spread uniquement · actions US 0.08 % (min $1), 0.03 % VIP · options dès $0.75, futures dès $1",
-        leverage: "1:30 pour les particuliers (plafonds de type ESMA) · marge réduite pour les professionnels sur option",
-        funding: ["Virement bancaire", "SEPA Instant", "Carte (selon le pays)", "Wise / Revolut après le premier dépôt"],
-        withdrawalTime: "Traitement le jour même, 1 à 5 jours ouvrés jusqu'à votre banque",
-        languages: "Téléphone, chat et e-mail 24h/24 5j/7 ; bureau à Dubaï · application en 23 langues dont le turc, pas de service en turc",
-        bestFor: "Investisseurs multi-actifs qui veulent une garde de niveau bancaire plus le trading forex et CFD sous un seul identifiant",
-        pros: [
-          "Banque danoise agréée avec statut SIFI ; liquidités couvertes jusqu'à EUR 100,000 par la garantie des dépôts danoise",
-          "Plus de 71,000 instruments : 23,000+ actions sur 50+ bourses, 8,200+ ETF, 5,200 obligations, futures, options et 185+ paires de devises",
-          "Tarification par paliers de volume : EUR/USD de 1.0 à 0.7 pip, actions US de 0.08 % à 0.03 %, CFD sur indices sans commission",
-          "Plateformes propriétaires SaxoTraderGO/PRO et SaxoInvestor plus OpenAPI, FIX et TradingView",
-          "Aucuns frais d'inactivité ni de plateforme ; dépôts et retraits gratuits côté Saxo",
-        ],
-        cons: [
-          "Droits de garde de 0.15 % à 0.09 % par an sur les actions, ETF et obligations dans la plupart des régions",
-          "Les paliers Platinum et VIP démarrent à EUR 200k et EUR 1M ; le site EAU demande $5,000 pour ouvrir un compte Classic",
-          "Pas de compte sans swap ; la présence à Dubaï est un bureau de représentation, les clients des EAU contractent donc avec Saxo Bank A/S au Danemark",
-        ],
-        steps: [
-          "Créez votre compte en ligne sur home.saxo/accounts (18 ans et plus ; numéro d'identification national et fiscal, passeport/carte d'identité, selfie ; justificatif de domicile sur demande)",
-          "Faites-vous vérifier – la plupart des demandes sont approuvées numériquement en quelques minutes, sinon sous 2 jours ouvrés",
-          "Connectez-vous à SaxoTraderGO ou SaxoInvestor et approvisionnez le compte – le premier dépôt doit provenir d'un compte bancaire à votre nom dans votre pays de résidence",
-          "Déposez le montant du palier dans les 30 jours si vous souhaitez la tarification Platinum (EUR 200k+) ou VIP (EUR 1M+)",
-          "Passez votre premier ordre – une démo de 20 jours avec USD 100,000 de fonds simulés est disponible pour vous entraîner",
-        ],
-        summary:
-          "Saxo Bank A/S est une banque dont le siège est à Copenhague, agréée par la FSA danoise (licence 1149), désignée établissement d'importance systémique en 2023 et, depuis mars 2026, détenue majoritairement par le groupe J. Safra Sarasin. Fondée en 1992, elle sert plus de 1.5 million de clients dans plus de 180 pays avec plus de 150 milliards EUR d'actifs clients. Aux EAU, elle exploite un bureau de représentation régulé par la DFSA ; les contrats clients sont conclus avec Saxo Bank A/S au Danemark. J'y détiens mon portefeuille multi-actifs, et c'est l'une des trois places utilisées pour les comptes gérés.",
-        faq: [
-          {
-            q: "Que sont les paliers Classic, Platinum et VIP et comment y accéder ?",
-            a: "Classic est le palier par défaut. Platinum exige un dépôt de EUR 200,000+ (USD 250,000+ sur le site EAU) ou un volume de trading défini ; VIP exige EUR 1,000,000+ (USD 1,250,000+) ou du volume. Les paliers supérieurs bénéficient de spreads et de commissions réduits et d'un support prioritaire ; Saxo Elite s'adresse aux clients au-delà d'environ EUR 5 millions d'actifs.",
-          },
-          {
-            q: "Y a-t-il un dépôt minimum ?",
-            a: "Le site international n'indique aucun montant minimum pour un compte Classic, mais le site EAU/MENA mentionne un financement minimum de USD 5,000. Les dépôts de palier doivent être effectués dans les 30 premiers jours pour accéder à Platinum ou VIP.",
-          },
-          {
-            q: "Quels frais Saxo facture-t-il au-delà des spreads et commissions ?",
-            a: "Des droits de garde de 0.15 % (Classic), 0.12 % (Platinum) ou 0.09 % (VIP) par an sur les actions, ETF/ETC et obligations dans la plupart des régions (plus TVA pour les résidents de l'UE), une conversion de devises jusqu'à 0.25 %, des majorations de rollover FX de 0.50 à 0.75 %, et aucuns frais d'inactivité, de plateforme, de dépôt ou de retrait.",
-          },
-          {
-            q: "Qui régule Saxo et est-ce une véritable banque ?",
-            a: "Saxo Bank A/S est une banque danoise pleinement agréée, supervisée par la FSA danoise (licence n° 1149) et classée SIFI. Les entités du groupe sont régulées par la FCA, la FINMA, la MAS, l'ASIC, la SFC et la JFSA. À Dubaï, Saxo Bank A/S exploite un bureau de représentation régulé par la DFSA ; l'ancienne licence de Saxo Bank (Dubai) Ltd (F001014) a été retirée en 2017.",
-          },
-          {
-            q: "Que puis-je trader ?",
-            a: "Plus de 71,000 instruments : 23,000+ actions sur 50+ bourses, 8,200+ ETF, 5,200 obligations, fonds communs de placement, 185+ paires de devises, options FX, CFD sur indices/actions/matières premières, 250+ futures, 3,100+ options cotées et FX/ETP sur cryptos.",
-          },
-        ],
-      },
-      {
-        tagline: "CFD sans commission avec TradingView, MT4/MT5 et plus de 5,500 marchés",
-        regulator: "FCA · CySEC · ASIC · SCB · SCA (EAU)",
-        licence: "FCA 793714 · CySEC 319/17 · ASIC AFSL 513393 · SCB SIA-F245 · EAU 20200000176 (Capital Com MENA, Dubaï)",
-        founded: "2016, Londres",
-        minDeposit: "$20 par carte · €50 par virement",
-        platforms: ["Web et application Capital.com", "TradingView", "MT4", "MT5", "API"],
-        spreads: [{ value: "dès ~0.7 (dynamique)" }, { value: "dès ~0.5 (dynamique)" }, { value: "dès ~0.6" }],
-        commission: "Aucune sur les CFD, spread uniquement · financement overnight 4 % p.a. ± taux de référence · conversion de devises 0.7 % (0.5 % pro)",
-        leverage: "1:30 pour les particuliers dans toutes les entités · jusqu'à 1:500 professionnel",
-        funding: ["Visa / Mastercard", "Apple Pay", "Google Pay", "Virement bancaire", "PayPal (UE/AU)", "Skrill", "Neteller", "Lean (EAU)"],
-        withdrawalTime: "Traité sous 24 h, 91 % en moins de 5 minutes",
-        languages: "24h/24 7j/7 en anglais, 10+ langues aux heures ouvrées · turc non confirmé officiellement",
-        bestFor: "Traders particuliers et MENA qui veulent l'exécution via TradingView et un dépôt d'entrée faible",
-        pros: [
-          "Zéro commission de trading et aucuns frais de dépôt, de retrait ou d'inactivité",
-          "Régulé par la FCA, la CySEC, l'ASIC, la SCB et la SCA des EAU ; fonds des clients ségrégués et protection contre le solde négatif",
-          "Connexion native à TradingView plus MT4, MT5, plateforme web et mobile propriétaire et une API",
-          "Dépôt minimum de $20 ; 91 % des retraits traités en moins de 5 minutes",
-          "Comptes sans swap pour les clients MENA et un compte professionnel avec levier 1:500 et remises sur spread",
-        ],
-        cons: [
-          "Spreads dynamiques, non fixes : EUR/USD ~0.7 pip et or ~0.5 sont des valeurs typiques, pas des minimums garantis",
-          "Pas de compte à spread brut ni à commission",
-          "Le financement overnight de 4 % plus taux de référence rend les positions à levier sur plusieurs jours relativement coûteuses ; conversion de devises de 0.7 % pour les particuliers",
-        ],
-        steps: [
-          "Cliquez sur « Open account » sur capital.com ou téléchargez l'application iOS/Android ; choisissez votre pays de résidence",
-          "Inscrivez-vous avec votre e-mail (ou Google/Apple), définissez un mot de passe, acceptez les conditions et confirmez votre e-mail via le lien reçu",
-          "Vérifiez votre identité : téléchargez une pièce d'identité valide, un selfie en direct et un justificatif de domicile sur demande (examen généralement sous 24 heures)",
-          "Approvisionnez le compte par carte, Apple/Google Pay, virement bancaire ou méthode locale — minimum $10–20 par carte, €50 par virement",
-          "Choisissez CFD, sans swap ou (si éligible) passez à un compte Professionnel, puis tradez sur la plateforme web, l'application, TradingView, MT4 ou MT5",
-        ],
-        summary:
-          "Capital.com est un courtier CFD privé fondé en 2016 par Viktor Prokopenya, avec plus de 880,000 comptes actifs et plus de 5,500 instruments sur les actions, indices, forex, matières premières et cryptos. Le volume de trading des clients a dépassé 1,700 milliards de dollars en 2024 et 1,500 milliards au premier semestre 2025, plus de la moitié provenant du Moyen-Orient. Son entité de Dubaï, Capital Com MENA Securities Trading, est agréée par la Securities and Commodities Authority des EAU. J'y conserve un compte CFD personnel pour le trading d'indices.",
-        faq: [
-          {
-            q: "Capital.com est-il régulé et les fonds des clients sont-ils protégés ?",
-            a: "Oui. Capital Com (UK) Ltd est régulé par la FCA (793714), Capital Com SV Investments Ltd est agréé par la CySEC (319/17), Capital Com Australia Pty Ltd détient l'AFSL ASIC 513393, Capital Com Online Investments Ltd est agréé par la Securities Commission des Bahamas (SIA-F245) et Capital Com MENA Securities Trading L.L.C. est agréé à Dubaï par la SCA/CMA des EAU (20200000176). Les fonds des clients particuliers sont conservés sur des comptes ségrégués et la protection contre le solde négatif s'applique.",
-          },
-          {
-            q: "Quel est le dépôt minimum et y a-t-il des frais de dépôt ou de retrait ?",
-            a: "Le minimum indiqué est de 10 USD/EUR/GBP pour les cartes et Apple Pay sur le site international (20 dans le centre d'aide et pour les clients des EAU), et de €50 pour les virements. Capital.com ne facture aucuns frais de dépôt, de retrait ou d'inactivité ; votre banque ou prestataire de paiement peut appliquer les siens.",
-          },
-          {
-            q: "Quel est le délai des retraits ?",
-            a: "Capital.com indique traiter toutes les demandes de retrait sous 24 heures, et 91 % en moins de 5 minutes. Les fonds peuvent ensuite mettre jusqu'à 5 jours ouvrés pour apparaître sur votre carte ou votre compte bancaire. Les retraits reviennent vers le moyen de dépôt d'origine ; le retrait minimum est de 20 USD/EUR/GBP par carte.",
-          },
-          {
-            q: "Quel effet de levier puis-je obtenir ?",
-            a: "Les clients particuliers obtiennent jusqu'à 1:30 sur les principales paires forex, 1:20 sur l'or et les principaux indices, 1:10 sur les autres matières premières et indices, 1:5 sur les actions et 1:2 sur les cryptos. Les clients éligibles peuvent passer à un compte Professionnel avec jusqu'à 1:500 sur les principales paires forex, les indices, l'or et le pétrole, 1:100 sur les cryptos et 1:33 sur les principales actions, plus des remises sur spread de 5 à 20 % selon le volume mensuel.",
-          },
-          {
-            q: "Capital.com propose-t-il des comptes sans swap (islamiques) et le trading via TradingView ?",
-            a: "Oui. Les comptes sans swap sont disponibles pour les clients des EAU, d'Arabie saoudite, du Qatar, du Koweït, de Bahreïn, d'Oman, de Jordanie, d'Égypte, du Liban, de Tunisie, d'Algérie et du Maroc — clôturez vos positions ouvertes et contactez support@capital.com pour basculer. Capital.com est un courtier officiel TradingView, vous pouvez donc connecter votre compte et passer des ordres directement depuis les graphiques TradingView, en plus de MT4, MT5, de la plateforme web et de l'application.",
-          },
-        ],
-      },
-      {
-        tagline: "Application régulée par la SPK : BIST sans commission, actions US à $1.50 l'ordre",
-        regulator: "SPK (Türkiye) · membre de Borsa İstanbul",
-        licence: "Certificat de courtage SPK K-024 (31 mai 2022) · membre BIST depuis 2021 · actifs US sous SIPC",
-        founded: "2020, Istanbul",
-        minDeposit: "Aucun · actions fractionnées dès $1",
-        platforms: ["Application Midas (iOS, Android)", "Plateforme web Atlas"],
-        spreads: [{ value: "0 % de commission" }, { value: "$1.50 par ordre" }, { value: "Aucune commission Midas" }],
-        commission: "Actions BIST 0 % · actions US $1.50 fixe, actions européennes €1.50 par ordre · options US $1.50 par contrat · VIOP 0.01–0.05 %",
-        leverage: "Aucun sur les actions (au comptant) · prêts sur marge BIST à 48.5–66.5 % p.a.",
-        funding: ["Virement bancaire en TRY (EFT / FAST)", "Virement bancaire en USD ou EUR", "12 banques partenaires avec crédit instantané"],
-        withdrawalTime: "Quelques minutes vers les banques partenaires ; USD sous $50k en quelques minutes",
-        languages: "Application en turc et en anglais · support et site en turc uniquement",
-        bestFor: "Investisseurs résidant en Türkiye qui veulent les actions BIST, US et européennes dans une seule application à bas coût",
-        pros: [
-          "Zéro commission sur Borsa İstanbul, sans frais de compte, de garde ni de compensation",
-          "$1.50 fixe par ordre US, actions fractionnées dès $1 et données en temps réel gratuites",
-          "Courtier agréé par la SPK ; titres BIST au Central Registry Agency, titres US sous protection SIPC",
-          "Dépôts et retraits en quelques minutes via 12 banques partenaires, sans frais de virement Midas",
-          "Un seul compte pour les actions BIST, US et européennes, les options US, les futures VIOP, les fonds TEFAS et les certificats or",
-        ],
-        cons: [
-          "Résidents de Türkiye uniquement ; pas de compte pour les non-résidents ni pour les résidents fiscaux à l'étranger",
-          "Pas de CFD ni de forex à effet de levier ; les prêts sur marge BIST portent des intérêts élevés en TRY",
-          "Support et site en turc uniquement ; conversion TRY vers USD au taux propre de Midas plutôt qu'à un tarif publié",
-        ],
-        steps: [
-          "Téléchargez l'application Midas sur l'App Store ou Google Play et inscrivez-vous avec votre numéro de mobile",
-          "Vérifiez votre identité avec une carte d'identité turque à puce, une carte bleue ou une carte d'identité pour étrangers ; vous devez avoir 18 ans et plus et résider en Türkiye sans obligations fiscales à l'étranger",
-          "Complétez la demande dans l'application et signez électroniquement les conventions de compte d'investissement ; la procédure prend environ 5 minutes",
-          "Approvisionnez le compte par virement bancaire en TRY ou USD (depuis n'importe quelle banque ; les virements des banques partenaires sont crédités en environ 2 minutes)",
-          "Achetez votre première action : convertissez TRY en USD dans l'application si nécessaire et passez un ordre sur des actions BIST, US ou européennes dès $1/€1",
-        ],
-        summary:
-          "Midas Menkul Değerler A.Ş. est un courtier d'Istanbul agréé par la SPK, fondé en 2020 par Egem Eraslan et détenu à 100 % par Midas Finansal Teknolojiler A.Ş. Il déclarait environ 4 millions d'utilisateurs et un volume de trading mensuel approchant 20 milliards de dollars en mai 2026, et a levé plus de 140 millions de dollars, dont une série B de 80 millions de dollars menée par QED Investors en août 2025. C'est la place que j'utilise pour les actions BIST et US, et l'une des trois places utilisées pour les comptes gérés.",
-        faq: [
-          {
-            q: "Qui peut ouvrir un compte Midas ?",
-            a: "Les adultes titulaires d'une carte d'identité turque à puce, d'une carte bleue ou d'une carte d'identité turque pour étrangers, résidant en Türkiye et non résidents fiscaux ailleurs. Des comptes enfant et société sont également disponibles pour les titulaires d'une carte à puce turque résidant en Türkiye. Les non-résidents ne peuvent pas ouvrir de compte.",
-          },
-          {
-            q: "Que facture Midas ?",
-            a: "Les ordres sur actions BIST sont sans commission, sans frais de compte, de garde ni de compensation. Les ordres sur actions US coûtent $1.50 fixe et les ordres sur actions européennes €1.50 fixe par ordre. Les options US sont à $1.50 par contrat pour les 500 premiers contrats du mois. Les ordres sur fonds TEFAS ne portent aucune commission Midas. Les dépôts et retraits sont gratuits côté Midas.",
-          },
-          {
-            q: "Puis-je trader des actions US et comment sont-elles protégées ?",
-            a: "Oui. Midas donne accès aux actions NYSE, NASDAQ et OTC, aux ETF cotés aux États-Unis et aux options US, avec des actions fractionnées dès $1 et des dividendes versés en USD. Les titres sont détenus à votre nom auprès de dépositaires agréés par la SEC et couverts par l'assurance SIPC jusqu'à $150 millions ($75 millions en titres plus $75 millions en espèces) selon le site Midas.",
-          },
-          {
-            q: "Comment fonctionne la conversion de devises ?",
-            a: "Vous pouvez déposer des USD directement ou convertir des TRY en USD ou EUR dans l'application 24h/24 et 7j/7 (paires USD/TRY et EUR/TRY) à partir de votre solde en espèces ; les fonds convertis sont généralement disponibles immédiatement pour trader. Midas applique son propre taux et ne publie pas de commission de conversion distincte.",
-          },
-          {
-            q: "Quel est le délai des retraits ?",
-            a: "Les retraits vers les 12 banques partenaires de Midas arrivent en quelques minutes. Les retraits en TRY vers d'autres banques arrivent en quelques minutes dans les limites FAST (montants plus élevés le jour ouvré suivant). Les retraits en USD inférieurs à $50,000 prennent quelques minutes et ceux de $50,000 à $200,000 environ une heure aux heures ouvrées. Midas ne facture aucuns frais de retrait ; des frais SWIFT de banques tierces peuvent s'appliquer aux virements USD hors banques partenaires.",
-          },
-        ],
-      },
-      {
-        tagline: "Courtier FCA et CNMV qui transforme un track record en DARWIN investissable",
-        regulator: "FCA · CNMV · FSA Seychelles",
-        licence: "FCA 586466 · CNMV 311 · FSA SD171",
-        founded: "2012, Londres",
-        minDeposit: "€500 · €1,000 d'equity pour créer un DARWIN",
-        platforms: ["MT4", "MT5", "TradingView", "DXtrade", "FIX / API DARWIN", "Interactive Brokers TWS"],
-        spreads: [{ value: "0.2–0.3 + $2.5 par lot" }, { value: "~0.4 + 0.0025 %" }, { value: "~0.6 + $0.275 par contrat" }],
-        commission: "Forex $2.50 par lot et par ordre · indices $2.75 par contrat · matières premières 0.0025 % · CFD sur actions $0.02 par action · remises jusqu'à 40 %",
-        leverage: "1:30 pour les particuliers (FCA, CNMV) · jusqu'à 1:200 professionnel",
-        funding: ["Virement bancaire", "Visa / Mastercard", "Skrill"],
-        withdrawalTime: "1 à 3 jours ouvrés",
-        languages: "Lun–jeu 08:00–17:00 UTC, e-mail et téléphone · site en EN, ES, FR, DE, ZH · pas de turc",
-        bestFor: "Traders systématiques qui veulent monétiser un track record vérifié grâce au capital d'investisseurs et aux allocations DarwinIA",
-        pros: [
-          "Double régulation FCA et CNMV avec protection FSCS (£85k) et FOGAIN (€100k), fonds sur des comptes ségrégués de premier rang",
-          "Percevez 15 % de commission de performance sur le capital des investisseurs sans détenir votre propre agrément de gestion d'actifs",
-          "DarwinIA finance les meilleures stratégies à hauteur de €30k à €500k par mois ; plus de €11.5M versés aux traders à ce jour",
-          "Tarification interbancaire brute, EUR/USD autour de 0.2–0.3 pip plus $2.50 par lot, avec remises talent et volume jusqu'à 40 %",
-          "MT4, MT5, TradingView, DXtrade, API FIX et DARWIN, plus actions, futures et ETF via Interactive Brokers",
-        ],
-        cons: [
-          "Pas de compte sans swap, pas de support en turc, et support uniquement du lundi au jeudi de 08:00 à 17:00 UTC",
-          "Dépôt minimum de €500, €1,000 d'equity pour créer un DARWIN, plafonds à vie sur les dépôts par carte et Skrill",
-          "Levier pour les particuliers plafonné à 1:30 ; le statut professionnel le relève mais fait perdre la couverture FSCS",
-        ],
-        steps: [
-          "Inscrivez-vous sur darwinex.com/register avec nom d'utilisateur, e-mail, mot de passe et pays de résidence fiscale",
-          "Complétez l'onboarding MiFID : questionnaire de données personnelles et questionnaire de connaissances financières/solvabilité",
-          "Téléchargez vos justificatifs d'identité et de domicile ; le statut de la demande est envoyé par e-mail sous 1 jour ouvré",
-          "Approvisionnez votre Darwinex Wallet (min €/$/£500 par virement bancaire, carte ou Skrill) et transférez au moins 500 vers un compte de trading réel",
-          "Tradez sur MT4/MT5, TradingView, DXtrade ou IBKR ; après environ un mois (ou instantanément avec un track record importé), créez votre DARWIN et participez à DarwinIA",
-        ],
-        summary:
-          "Darwinex est le nom commercial de Tradeslide Trading Tech Ltd (Londres, 2012 ; agréé FCA depuis 2014) et de Sapiens Markets EU (CNMV, Madrid, 2022), qui opère à la fois comme courtier et comme gestionnaire d'actifs régulé. Un DARWIN encapsule la stratégie d'un trader sous forme d'indice investissable à risque géré : les investisseurs paient 1.2 % de frais de gestion et 20 % de commission de performance, dont 15 % reviennent au trader. La plateforme déclare plus de 3,000 DARWIN, environ 580 millions de dollars investis et des clients dans plus de 80 pays. C'est là que les systèmes NUUK sont packagés pour le capital d'investisseurs tiers.",
-        faq: [
-          {
-            q: "Qu'est-ce qu'un DARWIN ?",
-            a: "Un DARWIN est une stratégie de trading packagée par Darwinex sous forme d'indice géré avec son propre ticker et une cotation qui démarre à 100. Il réplique les entrées et sorties du trader sous un moteur de risque indépendant (cible de VaR mensuelle de 3.25 à 6.5 %) sans divulguer les positions ouvertes, de sorte que les investisseurs peuvent l'acheter et que le trader perçoit des commissions de performance sous l'agrément de gestion d'actifs de Darwinex.",
-          },
-          {
-            q: "Quelle est la différence entre Darwinex Zero et un compte réel Darwinex ?",
-            a: "Darwinex Zero est un abonnement (€45/mois, €35/mois en annuel, €30/mois sur un plan de 3 ans ; €50 pour les futures) qui donne un compte MT4/MT5 en capital virtuel pour construire un track record vérifié et participer à DarwinIA avec 15 % de commissions de performance réelles, sans capital de trading à risque. Un compte réel Darwinex n'a pas d'abonnement, utilise votre propre argent (€500 minimum) et donne accès au capital des investisseurs dès le premier jour ; un track record Zero peut être migré vers un compte réel.",
-          },
-          {
-            q: "Quels frais paient les investisseurs et comment la commission de performance est-elle répartie ?",
-            a: "Les investisseurs paient des frais de gestion de 1.2 % p.a. à Darwinex et une commission de performance de 20 % sur les profits nets, calculée trimestriellement sur un high-water mark. Sur ces 20 %, 15 % sont versés au fournisseur du DARWIN (le trader) et 5 % sont conservés par Darwinex. Les allocations DarwinIA versent également au trader 15 % des profits générés.",
-          },
-          {
-            q: "Quel est le dépôt minimum ?",
-            a: "Le premier dépôt est de €/$/£500 pour les comptes individuels et joints et de 10,000 pour les comptes société ; les dépôts suivants sont de 100 minimum (500 par virement bancaire). La création d'un DARWIN exige €1,000 d'equity et la participation à DarwinIA exige $1,000 d'equity maintenus tout au long du mois. Les investisseurs peuvent commencer dès €200 (€10,000 pour le Darwinex INDX).",
-          },
-          {
-            q: "Comment Darwinex est-il régulé ?",
-            a: "Tradeslide Trading Tech Ltd est autorisé et régulé par la FCA britannique (FRN 586466, société n° 08061368) en tant que courtier et gestionnaire d'actifs, avec une protection FSCS jusqu'à £85,000. Sapiens Markets EU Sociedad de Valores SA est régulé par la CNMV espagnole (n° 311) avec une couverture FOGAIN jusqu'à €100,000. Tradeslide Global Ltd détient une licence de la FSA des Seychelles (SD171). Les fonds des clients sont conservés sur des comptes ségrégués auprès de banques britanniques de premier rang.",
-          },
-        ],
       },
     ],
   },
@@ -1024,7 +655,7 @@ export const fr: ContentOverride = {
   },
   money: {
     "metaTitle": "Comment nous gagnons de l’argent",
-    "metaDescription": "NUUK se rémunère en négociant son propre capital, par des frais de gestion et de performance sur les portefeuilles gérés, par des partenariats avec des courtiers et par des abonnements à la recherche. Chaque frais est expliqué.",
+    "metaDescription": "NUUK se rémunère en négociant son propre capital, par des frais de gestion et de performance sur les portefeuilles gérés, par le partenariat avec broker et par des abonnements à la recherche. Chaque frais est expliqué.",
     "kicker": "Comment nous gagnons de l’argent",
     "title": "Nous gagnons quand vous gagnez. Notre capital passe en premier.",
     "lead": "NUUK n’est pas un courtier et ne prend pas la contrepartie de vos ordres. Nos revenus proviennent de quatre sources transparentes, et la plus importante est le trading que nous menons aussi pour vous.",
@@ -1063,10 +694,10 @@ export const fr: ContentOverride = {
         "how": "Prélevés par le courtier sur votre compte et visibles sur chaque relevé"
       },
       {
-        "title": "Partenariats avec des courtiers",
-        "share": "Rétrocessions d’apporteur d’affaires (IB)",
-        "body": "Lorsque vous ouvrez un compte chez un courtier partenaire via NUUK, le courtier nous reverse une part du spread ou de la commission qu’il perçoit. Vos conditions de trading sont identiques à celles d’un client direct. La liste complète des partenaires et des conditions figure dans notre information IB.",
-        "how": "Payées par le courtier, jamais ajoutées à vos coûts"
+        "title": "Partenariat broker",
+        "share": "Rétrocessions partenaires",
+        "body": "Lorsque vous ouvrez un compte chez broker via NUUK, broker nous reverse une part du spread ou de la commission qu’elle perçoit. Vos conditions de trading sont identiques à celles d’un client direct. Les conditions figurent dans notre information IB.",
+        "how": "Payées par broker, jamais ajoutées à vos coûts"
       },
       {
         "title": "Recherche et formation",
@@ -1085,22 +716,22 @@ export const fr: ContentOverride = {
       "Détenir votre argent ou disposer d’un droit de retrait sur votre compte",
       "Trader contre vous ou vendre votre flux d’ordres",
       "Facturer des frais de performance sur des gains latents ou sur des bénéfices inférieurs au plus-haut historique",
-      "Être payés pour recommander un courtier plutôt qu’un autre au-delà de la rétrocession déclarée"
+      "Percevoir de broker des paiements non déclarés au-delà de la rétrocession déclarée"
     ],
     "riskTitle": "La gestion du risque est le modèle économique",
-    "riskLead": "Les frais n’ont de sens que si le capital survit. Ces limites s’appliquent à nos propres comptes et à chaque mandat que nous gérons.",
+    "riskLead": "Les frais n’ont de sens que si le capital survit ; le risque passe donc en premier.",
     "risk": [
       {
-        "title": "Risque fixe par position",
-        "body": "Chaque position est dimensionnée sur un montant de risque fixe, 300 USD par trade sur GANN Live, avec un stop fixé par ATR(14) × 1,5 avant l’entrée."
+        "title": "Risque maîtrisé",
+        "body": "Chaque position est dimensionnée en tenant compte du risque."
       },
       {
-        "title": "Limite de perte quotidienne",
-        "body": "Le trading s’arrête pour la journée dès que la limite de perte quotidienne du mandat est atteinte. Le système ne peut pas la contourner."
+        "title": "Limites de risque",
+        "body": "Les limites de risque sont convenues par écrit avec vous avant de commencer."
       },
       {
         "title": "Mandat de drawdown maximal",
-        "body": "Chaque mandat fixe un drawdown maximal. L’atteindre met le compte en pause et déclenche une revue avec vous avant toute reprise."
+        "body": "Chaque mandat fixe un drawdown maximal convenu par écrit avec vous."
       },
       {
         "title": "Revue hebdomadaire réel contre attendu",
@@ -1115,7 +746,7 @@ export const fr: ContentOverride = {
       },
       {
         "q": "Les rétrocessions IB sont-elles un conflit d’intérêts ?",
-        "a": "Elles peuvent l’être, c’est pourquoi elles sont déclarées. Nous recommandons les courtiers selon la régulation, l’exécution et les conditions adaptées à votre profil, et chaque partenaire figure avec ses conditions dans l’information IB. Vos conditions de trading ne changent jamais parce que vous venez par nous."
+        "a": "Elles peuvent l’être, c’est pourquoi elles sont déclarées. broker est le seul courtier avec lequel NUUK travaille, et les conditions de ce partenariat figurent dans l’information IB. Vos conditions de trading ne changent jamais parce que vous venez par nous."
       },
       {
         "q": "Comment le plus-haut historique est-il calculé ?",
@@ -1145,8 +776,8 @@ export const fr: ContentOverride = {
     "metaDescription": "Où les clients des comptes gérés se connectent, ce que NUUK rapporte chaque mois et comment demander l’accès.",
     "kicker": "Espace investisseur",
     "title": "Votre compte, votre accès, vos rapports",
-    "lead": "Les comptes gérés sont chez le courtier, à votre nom. Connectez-vous au portail client du courtier pour les relevés en temps réel ; NUUK ajoute le rapport mensuel et la revue trimestrielle.",
-    "portalsTitle": "Portails clients des courtiers",
+    "lead": "Les comptes gérés sont chez le courtier, à votre nom. Connectez-vous au portail client broker pour les relevés en temps réel ; NUUK ajoute le rapport mensuel et la revue trimestrielle.",
+    "portalsTitle": "Portail client broker",
     "portalLabel": "Portail client",
     "reportsTitle": "Ce que vous recevez de NUUK",
     "reports": [
@@ -1190,34 +821,9 @@ export const fr: ContentOverride = {
     ],
     "portals": [
       {
-        "slug": "pepperstone",
-        "name": "Pepperstone",
-        "href": "https://secure.pepperstone.com/"
-      },
-      {
-        "slug": "tickmill",
-        "name": "Tickmill",
-        "href": "https://my.tickmill.com/"
-      },
-      {
-        "slug": "saxo",
-        "name": "Saxo Bank",
-        "href": "https://www.saxotrader.com/"
-      },
-      {
-        "slug": "capital-com",
-        "name": "Capital.com",
-        "href": "https://capital.com/trading/platform/"
-      },
-      {
-        "slug": "midas",
-        "name": "Midas",
-        "href": "https://www.getmidas.com/"
-      },
-      {
-        "slug": "darwinex",
-        "name": "Darwinex",
-        "href": "https://www.darwinex.com/login"
+        "slug": "broker",
+        "name": "broker Group",
+        "href": "https://broker/fr/account/login"
       }
     ]
   },
@@ -1242,7 +848,7 @@ export const fr: ContentOverride = {
         "name": "Trésorerie d’un family office, Dubaï",
         "profile": "Un family office détenant 500 000 USD de trésorerie devant rester liquide sous 60 jours.",
         "objective": "Préserver le capital d’abord ; drawdown maximal de 8 %.",
-        "structure": "Un compte PAMM dédié chez Saxo Bank au nom du family office, géré sous mandat écrit.",
+        "structure": "Un compte PAMM dédié chez broker au nom du family office, géré sous mandat écrit.",
         "mandate": [
           "Instruments : majeures forex, or, CFD sur indices US et UE",
           "Exposition brute maximale 3× les fonds propres, limite de perte quotidienne 1 %",
@@ -1257,7 +863,7 @@ export const fr: ContentOverride = {
         "name": "Trader autonome, Istanbul",
         "profile": "Un ingénieur qui trade le forex seul depuis trois ans avec 5 000 USD et veut les systèmes sans les faire tourner.",
         "objective": "Exposition systématique aux systèmes NUUK, sans frais de gestion, avec sortie rapide possible.",
-        "structure": "MAM mutualisé chez Tickmill : son propre compte, à son nom, alloué au pool.",
+        "structure": "MAM mutualisé chez broker : son propre compte, à son nom, alloué au pool.",
         "mandate": [
           "Mêmes systèmes et limites de risque que le capital propre de NUUK",
           "Risque fixe de 300 USD par trade sur GANN Live, à l’échelle du pool",
@@ -1280,7 +886,7 @@ export const fr: ContentOverride = {
         ],
         "fees": "Aucun frais pour elle ni ses élèves ; le revenu provient de la rétrocession du courtier, déclarée dans l’information IB.",
         "rows": [],
-        "note": "La rétrocession dépend du barème de chaque courtier et du volume de ses élèves ; aucun chiffre n’est donc indiqué ici. Les conditions sont convenues par écrit avant le premier client présenté."
+        "note": "La rétrocession dépend du barème de broker et du volume de ses élèves ; aucun chiffre n’est donc indiqué ici. Les conditions sont convenues par écrit avant le premier client présenté."
       }
     ]
   },
@@ -1305,7 +911,7 @@ export const fr: ContentOverride = {
       email: "E-mail",
       emailPlaceholder: "vous@entreprise.com",
       topic: "Sujet",
-      topics: ["Compte géré", "Choix d'un courtier", "Signaux et rapports", "Formation", "Systèmes IA", "Autre"],
+      topics: ["Compte géré", "Compte broker", "Signaux et rapports", "Formation", "Systèmes IA", "Autre"],
       message: "Message",
       messagePlaceholder: "Comment pouvons-nous vous aider ?",
       submit: "Envoyer",
@@ -1324,18 +930,18 @@ export const fr: ContentOverride = {
         "Avant de trader, vous devez tenir compte de vos objectifs d'investissement, de votre niveau d'expérience et de votre appétence au risque, et ne jamais engager de capital que vous ne pouvez pas vous permettre de perdre. En cas de doute, demandez conseil à un conseiller financier indépendant et agréé dans votre juridiction.",
         "Les performances passées de tout portefeuille, modèle, stratégie, service de signaux ou système de trading présenté sur ce site ne constituent pas un indicateur fiable des résultats futurs. Un track record décrit ce qui s'est passé, pas ce qui se passera. Les résultats issus de backtests, de simulations ou de trading papier présentent des limites intrinsèques : ils sont établis a posteriori, n'impliquent aucun risque financier et peuvent ne pas refléter l'impact du slippage, de la liquidité ou des coûts d'exécution.",
         "Rien sur ce site ne constitue un conseil en investissement personnalisé, une recommandation personnalisée, ni une offre ou une sollicitation d'achat ou de vente d'un quelconque instrument financier. Le contenu est un commentaire général de marché et un contenu pédagogique qui ne tient pas compte de votre situation financière, de vos objectifs ni de vos besoins.",
-        "Les comptes gérés fonctionnent dans le propre compte du client chez un courtier partenaire, dans le cadre de la structure MAM ou PAMM et du cadre réglementaire de ce courtier. NUUK détient uniquement une autorisation de trading et n'assure jamais la garde des fonds des clients. Les frais, les périodes de blocage et les mandats de risque sont définis dans un accord écrit avant tout début de trading.",
-        "Les liens vers les courtiers sur ce site sont des liens d'affiliation. NUUK peut percevoir une commission du courtier lorsque vous ouvrez et approvisionnez un compte via ces liens ; cela ne modifie pas les spreads ni les frais que vous payez, et vous restez libre d'ouvrir un compte directement auprès de n'importe quel courtier.",
+        "Les comptes gérés fonctionnent dans le propre compte du client chez broker, dans le cadre de sa structure MAM ou PAMM et de son cadre réglementaire. NUUK détient uniquement une autorisation de trading et n'assure jamais la garde des fonds des clients. Les frais, les périodes de blocage et les mandats de risque sont définis dans un accord écrit avant tout début de trading.",
+        "Les liens vers les courtiers sur ce site sont des liens d'affiliation. NUUK peut percevoir une commission du courtier lorsque vous ouvrez et approvisionnez un compte via ces liens ; cela ne modifie pas les spreads ni les frais que vous payez. Un compte broker est requis pour utiliser les services d'investissement de NUUK.",
         "NUUK Quant opère depuis le Dubai International Financial Centre, Dubaï, Émirats arabes unis. Les services ne sont proposés que là où la loi et la réglementation applicables le permettent ; leur disponibilité dépend de votre pays de résidence. Rien sur ce site ne s'adresse à une personne située dans une juridiction où une telle diffusion serait contraire à la législation locale.",
       ],
     },
     "ib-disclosure": {
       title: "Information sur l'activité d'apporteur d'affaires (IB)",
       body: [
-        "NUUK agit en tant que partenaire apporteur d'affaires (IB) pour les courtiers présentés sur ce site. Lorsque vous ouvrez et approvisionnez un compte via un lien d'affiliation, le courtier verse une commission calculée sur votre volume de trading.",
-        "Cette commission est payée par le courtier et n'augmente pas les spreads, commissions ou frais que vous payez. Les fiches des courtiers sont rédigées de manière indépendante ; un courtier ne peut pas payer pour modifier une évaluation ou un point faible mentionné.",
-        "Vous êtes libre d'ouvrir un compte directement auprès de n'importe quel courtier. Le lien d'affiliation est facultatif.",
-        "Partenaires actuels : broker Group, Pepperstone, Tickmill, Saxo Bank, Capital.com, Midas et Darwinex dans le cadre d'accords d'apporteur d'affaires. Tickmill, Saxo Bank et Midas exploitent en outre les structures MAM/PAMM utilisées pour les comptes gérés, dans le cadre d'accords de gestion de portefeuille distincts.",
+        "NUUK est le partenaire de solutions de broker Group pour la Türkiye. Lorsque vous ouvrez et approvisionnez un compte via un lien d'affiliation, broker verse une commission calculée sur votre volume de trading.",
+        "Cette commission est payée par le courtier et n'augmente pas les spreads, commissions ou frais que vous payez. Les informations sur le courtier présentées sur ce site proviennent des pages publiques de broker.",
+        "Les nouveaux investisseurs NUUK doivent ouvrir un compte broker. L'infrastructure institutionnelle de NUUK est fournie par broker LP, et NUUK propose l'infrastructure de broker aux courtiers du monde entier sous l'ombrelle NUUK.",
+        "NUUK travaille uniquement avec broker Group. broker exploite également les structures MAM/PAMM utilisées pour les comptes gérés.",
       ],
     },
     privacy: {
@@ -1346,7 +952,7 @@ export const fr: ContentOverride = {
         "Données collectées automatiquement. Nous utilisons Google Analytics 4 avec anonymisation des adresses IP pour comprendre comment le site est utilisé : pages consultées, localisation approximative, type d'appareil et boutons cliqués (par exemple un lien vers un courtier ou une offre). Ces données sont agrégées et ne vous identifient pas nominativement. Vous pouvez les bloquer via un paramètre de votre navigateur ou un bloqueur de publicités.",
         "Cookies et analyse des visiteurs. Google Analytics peut déposer des cookies pour distinguer les sessions. Apollo.io enregistre les visites de pages et, lorsque la visite provient d'un réseau d'entreprise, peut identifier la société derrière l'adresse IP ; il enrichit également les adresses e-mail professionnelles saisies dans nos formulaires avec des données d'entreprise publiquement disponibles. Les deux peuvent déposer des cookies. Les sites tiers que vous ouvrez depuis nos liens (courtiers, WhatsApp, réseaux sociaux) appliquent leurs propres politiques. Les cotations en direct de ce site sont des widgets TradingView intégrés, chargés depuis les serveurs de TradingView, qui peuvent déposer leurs propres cookies selon la politique de confidentialité de TradingView. Vous pouvez bloquer tout cela avec une extension de navigateur ou en désactivant les scripts tiers ; le site fonctionne sans eux.",
         "Pourquoi nous traitons les données. Pour répondre à votre demande, pour fournir les services que vous avez sollicités (comptes gérés, signaux, formation), pour respecter nos obligations légales et réglementaires, et pour améliorer le site. La base juridique est votre consentement, l'exécution d'un contrat conclu avec vous, ou notre intérêt légitime à exploiter notre activité.",
-        "Partage. Nous ne vendons pas de données personnelles. Nous ne les partageons qu'avec les prestataires nécessaires au fonctionnement du site et des communications (hébergement, e-mail, analytics), avec les courtiers partenaires lorsque vous nous demandez de vous présenter, et avec les autorités lorsque la loi l'exige.",
+        "Partage. Nous ne vendons pas de données personnelles. Nous ne les partageons qu'avec les prestataires nécessaires au fonctionnement du site et des communications (hébergement, e-mail, analytics), avec broker lorsque vous nous demandez de vous présenter, et avec les autorités lorsque la loi l'exige.",
         "Conservation et sécurité. Les données de contact sont conservées aussi longtemps que nécessaire pour traiter la demande et jusqu'à cinq ans lorsqu'une relation d'affaires s'ensuit, conformément aux obligations réglementaires de conservation. Les données sont stockées sur des systèmes à accès contrôlé.",
         "Vos droits. Vous pouvez demander quelles données nous détenons à votre sujet, en demander la rectification ou la suppression, vous opposer au traitement ou retirer votre consentement à tout moment en écrivant à info@nuukquant.com. Si vous résidez dans l'UE, au Royaume-Uni ou au DIFC, vous avez également le droit d'introduire une réclamation auprès de votre autorité de protection des données.",
       ],
@@ -1370,9 +976,9 @@ export const fr: ContentOverride = {
     title: "Prêt à commencer ?",
     body: "Quatre étapes du premier appel au premier trade. La plupart des gens sont opérationnels en une semaine.",
     steps: [
-      { title: "Réserver un appel", body: "30 minutes pour décider quel service vous convient : courtier, signaux, compte géré ou formation." },
-      { title: "Ouvrir un compte de courtage", body: "À votre nom, chez un courtier partenaire. La vérification prend environ 10 minutes avec une pièce d'identité et un justificatif de domicile." },
-      {"title": "Financer et connecter", "body": "Financez votre compte courtier : à partir de 250 USD pour les signaux WhatsApp, 1 000 USD pour NUUK AI - Premium, 250 000 USD pour un mandat dédié. Connectez-le à la structure choisie."},
+      { title: "Réserver un appel", body: "30 minutes pour décider quel service vous convient : signaux, compte géré ou formation." },
+      { title: "Ouvrir un compte broker", body: "Obligatoire pour chaque investisseur NUUK, à votre nom. La vérification prend environ 10 minutes avec une pièce d'identité et un justificatif de domicile." },
+      {"title": "Financer et connecter", "body": "Financez votre compte broker : à partir de 250 USD pour les signaux WhatsApp, 1 000 USD pour NUUK AI - Premium, 250 000 USD pour un mandat dédié. Connectez-le à la structure choisie."},
       { title: "Commencer à trader", body: "Suivez le plan, examinez les résultats chaque mois et ne prenez jamais un trade que vous ne pouvez pas expliquer." },
     ],
     cta: { label: "Réserver un appel" },
@@ -1391,21 +997,21 @@ export const fr: ContentOverride = {
 
   systems: [
     {
-      method: "Niveaux de Gann + dimensionnement des positions par ATR(14)",
+      method: "Niveaux de Gann",
       riskProfile: "Modéré",
-      summary: "Système or et argent : entrées sur les niveaux prix-temps de Gann, chaque position dimensionnée pour un risque fixe de USD 300 avec des stops ATR(14). Aucun trade n'est placé sans stop ; la couche d'exécution le rejette.",
+      summary: "Système or et argent fondé sur les niveaux prix-temps de Gann.",
       stats: [
         {
           "label": "En direct depuis",
           "value": "2026"
         },
         {
-          "label": "Risque par trade",
-          "value": "300 USD"
+          "label": "Instruments",
+          "value": "XAU/USD, XAG/USD"
         },
         {
-          "label": "Règle de stop",
-          "value": "ATR(14) × 1,5"
+          "label": "Unité de temps",
+          "value": "H1 / H4"
         }
       ],
     },
@@ -1414,7 +1020,7 @@ export const fr: ContentOverride = {
       assetClass: "Or, argent, indices US et européens",
       method: "Momentum de séries temporelles + Donchian + croisement de moyennes mobiles, en ensemble",
       riskProfile: "Modéré",
-      summary: "Ensemble de suivi de tendance quotidien sur les CFD de métaux et d'indices. Testé en walk-forward de 2010 à 2026, swap et commissions inclus ; tourne comme compte papier chez Tickmill depuis juillet 2026.",
+      summary: "Ensemble de suivi de tendance quotidien sur les CFD de métaux et d'indices. Testé en walk-forward de 2010 à 2026, swap et commissions inclus ; fonctionne en portefeuille modèle depuis juillet 2026.",
       stats: [
         { label: "Forward test depuis" },
         { label: "Sharpe du backtest" },
@@ -1428,7 +1034,7 @@ export const fr: ContentOverride = {
       stats: [
         { label: "Statut", value: "Démo, phase de validation papier" },
         { label: "Lancement prévu", value: "Après 200 trades papier" },
-        { label: "Place", value: "Tickmill MT4/MT5" },
+        { label: "Place", value: "Portefeuille modèle · MT4/MT5" },
       ],
     },
   ],
@@ -1472,7 +1078,7 @@ export const fr: ContentOverride = {
       ]
     },
     {
-      name: "Portefeuille personnel — Saxo Bank",
+      name: "Portefeuille personnel",
       source: "Relevé de courtier",
       updated: "Mensuel",
       stats: [

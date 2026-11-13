@@ -9,10 +9,10 @@ import type { ContentOverride } from "@/i18n";
 export const tr: ContentOverride = {
   meta: {
     "title": "NUUK | Yapay Zekâ Destekli Yatırım ve Portföy Yönetimi, Dubai",
-    "description": "NUUK, DIFC (Dubai) merkezli yapay zekâ destekli bir yatırım kuruluşudur: algoritmik işlem sistemleri, portföy yönetimi, broker ortaklığı, araştırma ve sinyal hizmetleri, yatırımcı eğitimi."
+    "description": "NUUK, DIFC (Dubai) merkezli yapay zekâ destekli bir yatırım kuruluşudur: algoritmik işlem sistemleri, portföy yönetimi, araştırma ve sinyal hizmetleri, yatırımcı eğitimi."
   },
   brand: {
-    "role": "Algoritmik işlem · Portföy yönetimi · broker Türkiye çözüm ortağı",
+    "role": "Algoritmik işlem · Portföy yönetimi",
     "office": "Dubai Uluslararası Finans Merkezi (DIFC), Dubai, BAE"
   },
   ui: {
@@ -49,7 +49,7 @@ export const tr: ContentOverride = {
     "since": "Başlangıç",
     "source": "Kaynak",
     "openAccount": "Hesap Açın",
-    "compare": "broker'ı inceleyin",
+    "compare": "",
     "subscribe": "Abone Olun",
     "register": "Kayıt Olun",
     "requestDemo": "Demo Talep Edin",
@@ -59,9 +59,9 @@ export const tr: ContentOverride = {
     "whatsapp": "WhatsApp",
     "whatsappChannel": "WhatsApp grubu",
     "partnerPopup": {
-      "title": "NUUK × broker Group stratejik ortaklığı",
-      "alt": "NUUK, broker Group'un Türkiye çözüm ortağı oldu",
-      "cta": "broker'ı inceleyin",
+      "title": "",
+      "alt": "",
+      "cta": "",
       "close": "Kapat"
     },
     "cookie": {
@@ -105,9 +105,6 @@ export const tr: ContentOverride = {
           "label": "Portföy Yönetimi"
         },
         {
-          "label": "broker Ortaklığı"
-        },
-        {
           "label": "Araştırma ve Sinyaller"
         },
         {
@@ -116,9 +113,6 @@ export const tr: ContentOverride = {
         { "label": "Ücretsiz AI Sinyaller", "href": "/free-signals/" },
         { "label": "NUUK Uygulaması ve Üyelik" }
       ]
-    },
-    {
-      "label": "broker"
     },
     {
       "label": "Performans"
@@ -144,9 +138,6 @@ export const tr: ContentOverride = {
         {
           "label": "Risk Bildirimi"
         },
-        {
-          "label": "Tanıtım Aracısı (IB) Bildirimi"
-        },
         { "label": "Yatırımcı Portalı" },
         { "label": "Vaka Çalışmaları" },
       ]
@@ -155,9 +146,6 @@ export const tr: ContentOverride = {
   legalLinks: [
     {
       "label": "Risk Bildirimi"
-    },
-    {
-      "label": "IB Bildirimi"
     },
     {
       "label": "Gizlilik Politikası"
@@ -177,13 +165,12 @@ export const tr: ContentOverride = {
       "title": "Piyasalarda disiplinli, sistematik yaklaşım.",
       "lead": "NUUK, yapay zekâ destekli sistematik işlem stratejileri geliştirir; bunları önce kendi sermayesiyle çalıştırır, yatırımcı portföylerini yönetir ve yatırımcılara kendi başlarına işlem yapmayı öğretir. Sitedeki her rakam kaynağını ve yöntemini belirtir.",
       "primary": {
-        "label": "broker Hesabı Açın"
+        "label": "Hesap Açın"
       },
       "secondary": {
         "label": "Görüşme Talep Edin"
       },
       "trustLine": [
-        "broker Group'un Türkiye çözüm ortağı",
         "Her sistemde kendi sermayemiz",
         "DIFC, Dubai merkezli"
       ],
@@ -199,10 +186,6 @@ export const tr: ContentOverride = {
         {
           "value": "3,000+",
           "label": "webinar ve seminerlerde eğitim verilen yatırımcı"
-        },
-        {
-          "value": "1",
-          "label": "her NUUK yatırımcısı için tek aracı kurum: broker Group"
         }
       ],
       "pressTitle": "Aracı Kurum Ortağı"
@@ -225,7 +208,7 @@ export const tr: ContentOverride = {
     "promo": {
       "kicker": "Portföy yönetimi",
       "title": "Hesap sizin adınıza. İşlem yetkisi NUUK'ta. Limitler yazılı.",
-      "body": "Sermaye hiçbir aşamada müşterinin adından çıkmaz. broker'ta kendi adınıza hesap açarsınız; NUUK yalnızca işlem yetkisi alır ve yazılı risk mandası toplam pozisyon ile günlük zarar limitini belirler.",
+      "body": "Sermaye hiçbir aşamada müşterinin adından çıkmaz. Aracı kurumda kendi adınıza hesap açarsınız; NUUK yalnızca işlem yetkisi alır ve yazılı risk mandası toplam pozisyon ile günlük zarar limitini belirler.",
       "figure": "300+",
       "figureLabel": "yönetilen hesap; her biri müşterinin kendi aracı kurum hesabında. Saklama hiçbir zaman el değiştirmez.",
       "cta": {
@@ -234,7 +217,7 @@ export const tr: ContentOverride = {
     },
     "postsLead": "Makro, FX, emtia, endeksler, kripto varlıklar ve algoritmik işlem. Beş dakikada okunacak biçimde hazırlanır.",
     "pillarsTitle": "Hizmet alanları",
-    "pillarsLead": "Beş hizmet alanı, tek ilke: sermaye her zaman müşterinin kendi hesabında kalır.",
+    "pillarsLead": "Dört hizmet alanı, tek ilke: sermaye her zaman müşterinin kendi hesabında kalır.",
     "pillars": [
       {
         "title": "Algoritmik İşlem Sistemleri",
@@ -250,11 +233,6 @@ export const tr: ContentOverride = {
         "title": "Portföy Yönetimi",
         "body": "Sermaye müşterinin kendi aracı kurum hesabında kalır; işlemler yazılı risk mandası ve performans ücreti esasıyla yürütülür.",
         "who": "Profesyonel yönetim isteyen yatırımcılar için"
-      },
-      {
-        "title": "broker Ortaklığı",
-        "body": "NUUK, broker Group'un Türkiye çözüm ortağıdır. Koşullar, düzenleme ve adım adım hesap açma rehberi tek yerde.",
-        "who": "NUUK ile hesap açan herkes için"
       },
       {
         "title": "Araştırma, Sinyal ve Eğitim",
@@ -274,10 +252,10 @@ export const tr: ContentOverride = {
     },
     "brokers": {
       "kicker": "Aracı kurum ortağı",
-      "title": "NUUK, broker ile çalışıyor",
-      "lead": "NUUK, broker Group'un Türkiye çözüm ortağıdır ve her NUUK yatırımcısı hesabını broker'ta açar. Kartta düzenleyici otorite, spread'ler ve para yatırma/çekme koşulları yer alır.",
+      "title": "Hesap her zaman sizin adınıza",
+      "lead": "Her NUUK yatırımcısı hesabını aracı kurumda kendi adına açar. Düzenleyici otoriteyi, spread'leri ve para yatırma/çekme koşullarını hesap açmadan önce birlikte gözden geçiririz.",
       "cta": {
-        "label": "NUUK × broker"
+        "label": "Bize ulaşın"
       }
     },
     "systems": {
@@ -333,14 +311,10 @@ export const tr: ContentOverride = {
       {
         "value": "3",
         "label": "canlı sistem; 87 strateji varyantı test edildi"
-      },
-      {
-        "value": "1",
-        "label": "aracı kurum ortağı: broker Group"
       }
     ],
     "activitiesTitle": "NUUK ne yapar",
-    "activitiesLead": "Beş faaliyet alanı ve hepsinden geçen tek kural: müşteri sermayesi her zaman müşterinin kendi hesabında kalır.",
+    "activitiesLead": "Dört faaliyet alanı ve hepsinden geçen tek kural: müşteri sermayesi her zaman müşterinin kendi hesabında kalır.",
     "activities": [
       {
         "title": "Algoritmik işlem sistemleri",
@@ -349,10 +323,6 @@ export const tr: ContentOverride = {
       {
         "title": "Portföy yönetimi",
         "body": "MAM/PAMM yapılarıyla müşterinin kendi aracı kurum hesabında yönetilen portföyler; yazılı risk mandası, yönetim ücreti ve net kâr üzerinden performans ücreti."
-      },
-      {
-        "title": "broker ortaklığı",
-        "body": "NUUK, broker Group'un Türkiye çözüm ortağıdır. Yatırımcı hesapları ve kurumsal operasyonlar broker üzerinden yürür; NUUK'un kurumsal altyapısını broker LP sağlar."
       },
       {
         "title": "Araştırma ve sinyaller",
@@ -383,7 +353,7 @@ export const tr: ContentOverride = {
       {
         "year": "2025",
         "title": "NUUK, Dubai",
-        "body": "Dubai Uluslararası Finans Merkezi'nde yapay zekâ destekli bir yatırım kuruluşu olarak kurulur: sistemler, portföy yönetimi, broker ortaklığı, araştırma ve eğitim."
+        "body": "Dubai Uluslararası Finans Merkezi'nde yapay zekâ destekli bir yatırım kuruluşu olarak kurulur: sistemler, portföy yönetimi, araştırma ve eğitim."
       },
       {
         "year": "2026",
@@ -393,7 +363,7 @@ export const tr: ContentOverride = {
       {
         "year": "Bugün",
         "title": "Çok dilli bir masa",
-        "body": "Yatırımcı paneli, broker ortaklığı ve İstanbul'dan Körfez'e yatırımcılara altı dilde hizmet veren bir site."
+        "body": "Yatırımcı paneli ve İstanbul'dan Körfez'e yatırımcılara altı dilde hizmet veren bir site."
       }
     ],
     "principlesTitle": "NUUK nasıl çalışır",
@@ -471,7 +441,7 @@ export const tr: ContentOverride = {
     "faq": [
       {
         "q": "Sistemleri kendi hesabımda çalıştırabilir miyim?",
-        "a": "Evet, broker hesabınızla. Kopya işlem yapabilir, broker'taki MAM/PAMM yapısına katılabilir ya da sinyal kanalını takip ederek işlemleri kendiniz gerçekleştirebilirsiniz. Her durumda hesap sizin adınıza kalır."
+        "a": "Evet, kendi adınıza açılan aracı kurum hesabınızla. Kopya işlem yapabilir, aracı kurumdaki MAM/PAMM yapısına katılabilir ya da sinyal kanalını takip ederek işlemleri kendiniz gerçekleştirebilirsiniz. Her durumda hesap sizin adınıza kalır."
       },
       {
         "q": "Minimum sermaye ne kadardır?",
@@ -489,7 +459,7 @@ export const tr: ContentOverride = {
     "metaDescription": "NUUK'un kendi portföyünün ve işlem sistemlerinin performansı; her rakamın kaynağı ve yöntemiyle.",
     "kicker": "Performans kaydı",
     "title": "Her rakam, kaynağıyla",
-    "lead": "Yatırımcı hesapları broker'ta tutulur. Bu sayfadaki sonuçlar NUUK Model portföy hesabına aittir; bu hesap yatırımcı hesaplarından ayrıdır. Her rakam nereden geldiğini ve nasıl hesaplandığını belirtir. Geçmiş performans gelecekteki sonuçların garantisi değildir.",
+    "lead": "Yatırımcı hesapları aracı kurumda, yatırımcının kendi adına tutulur. Bu sayfadaki sonuçlar NUUK Model portföy hesabına aittir; bu hesap yatırımcı hesaplarından ayrıdır. Her rakam nereden geldiğini ve nasıl hesaplandığını belirtir. Geçmiş performans gelecekteki sonuçların garantisi değildir.",
     "disclaimer": "Geçmiş performans gelecekteki sonuçların göstergesi değildir. Aksi belirtilmedikçe rakamlar işlem maliyetleri düşülmüş, performans ücreti düşülmemiş hâldedir.",
     "methodologyTitle": "Rakamların okunması",
     "methodology": [
@@ -514,7 +484,7 @@ export const tr: ContentOverride = {
     "metaDescription": "Portföy yönetimi nasıl çalışır: sermaye müşterinin kendi aracı kurum hesabında kalır ve yazılı risk limitleri dâhilinde yönetilir.",
     "kicker": "Portföy yönetimi",
     "title": "Hesap sizin adınıza. İşlem yetkisi NUUK'ta. Limitler yazılı.",
-    "lead": "Sermaye hiçbir aşamada müşterinin adından çıkmaz. broker'ta kendi adınıza hesap açar ve yönetilen yapıya bağlarsınız; NUUK işlemleri yazılı risk mandası dâhilinde yürütür.",
+    "lead": "Sermaye hiçbir aşamada müşterinin adından çıkmaz. Aracı kurumda kendi adınıza hesap açar ve yönetilen yapıya bağlarsınız; NUUK işlemleri yazılı risk mandası dâhilinde yürütür.",
     "cta": {
       "label": "Tanışma Görüşmesi Talep Edin"
     },
@@ -526,7 +496,7 @@ export const tr: ContentOverride = {
       },
       {
         "title": "Hesap kurulumu",
-        "body": "broker'ta kendi adınıza hesap açar ve fonlarsınız. NUUK yalnızca işlem yetkisi alır; para çekme yetkisi hiçbir zaman devredilmez."
+        "body": "Aracı kurumda kendi adınıza hesap açar ve fonlarsınız. NUUK yalnızca işlem yetkisi alır; para çekme yetkisi hiçbir zaman devredilmez."
       },
       {
         "title": "Risk mandası",
@@ -542,11 +512,11 @@ export const tr: ContentOverride = {
       {
         "name": "WhatsApp Sinyalleri",
         "tagline": "Sinyaller size gelir, işlemi siz açarsınız",
-        "minimum": "250 USD (broker'ta kendi hesabınız)",
+        "minimum": "250 USD (aracı kurumdaki kendi hesabınız)",
         "managementFee": "Aylık 49 USD AI üyelik ücreti",
         "performanceFee": "Yok",
         "lockup": "Yok; istediğiniz zaman ayrılırsınız",
-        "structure": "Kendi broker hesabınız; sinyaller WhatsApp'tan gelir",
+        "structure": "Aracı kurumdaki kendi hesabınız; sinyaller WhatsApp'tan gelir",
         "forWhom": "Küçük bakiyeyle başlayıp işlemi kendi eliyle açmak isteyenler",
         "join": "Katıl",
         "joinText": "Merhaba. Sinyal programına katılmak istiyorum."
@@ -558,7 +528,7 @@ export const tr: ContentOverride = {
         "managementFee": "Aylık 99 USD",
         "performanceFee": "Haftalık net kâr üzerinden %25",
         "lockup": "30 gün; ardından dilediğiniz zaman çekebilirsiniz",
-        "structure": "broker'ta MAM / kopya işlem havuzu",
+        "structure": "Aracı kurumda MAM / kopya işlem havuzu",
         "forWhom": "Sistemleri kendisi çalıştırmak istemeyen bireysel yatırımcılar",
         "join": "Katıl",
         "joinText": "Merhaba. NUUK AI - Premium programına katılmak istiyorum."
@@ -570,7 +540,7 @@ export const tr: ContentOverride = {
         "managementFee": "Aylık 1.000 USD (minimum tutarda yıllık yaklaşık %4,8; üzerinde oransal olarak düşer)",
         "performanceFee": "Yüksek su işaretinin (high-water mark) üzerindeki kârın %25'i",
         "lockup": "30 gün önceden bildirim",
-        "structure": "broker'ta PAMM ya da ayrı yönetilen hesap",
+        "structure": "Aracı kurumda PAMM ya da ayrı yönetilen hesap",
         "forWhom": "Aile ofisleri, kurumsal hazineler ve profesyonel yatırımcılar",
         "join": "Katıl",
         "joinText": "Merhaba. Özel hesap açmak istiyorum."
@@ -615,151 +585,67 @@ export const tr: ContentOverride = {
       "Önümüzdeki 3 ay içinde ihtiyaç duyulacak sermaye",
       "Sabit veya garantili getiri bekleyen yatırımcılar"
     ],
-    "compliance": "NUUK Quant, Dubai Uluslararası Finans Merkezi'nde faaliyet göstermektedir. Yönetilen hesaplar, broker'ın kendi MAM/PAMM yapısı üzerinden ve onun düzenleyici çerçevesi dâhilinde çalışır: NUUK yalnızca işlem yetkisine sahiptir; saklama veya para çekme yetkisi hiçbir zaman NUUK'a geçmez. Bugün yönetilen 300'ün üzerindeki hesap havuz MAM yapısındadır; özel mandalar bireysel olarak açılır."
+    "compliance": "NUUK Quant, Dubai Uluslararası Finans Merkezi'nde faaliyet göstermektedir. Yönetilen hesaplar, aracı kurumun kendi MAM/PAMM yapısı üzerinden ve onun düzenleyici çerçevesi dâhilinde çalışır: NUUK yalnızca işlem yetkisine sahiptir; saklama veya para çekme yetkisi hiçbir zaman NUUK'a geçmez. Bugün yönetilen 300'ün üzerindeki hesap havuz MAM yapısındadır; özel mandalar bireysel olarak açılır."
   },
 
   brokers: {
-    metaTitle: "NUUK × broker",
-    metaDescription: "NUUK, broker Group'un Türkiye çözüm ortağıdır. Düzenleyici otorite, spread'ler, para yatırma, platformlar, kurumsal likidite ve adım adım hesap açma.",
-    kicker: "NUUK × broker",
-    title: "Her NUUK yatırımcısı için tek aracı kurum: broker",
-    lead: "NUUK, broker Group'un Türkiye çözüm ortağıdır. Yatırımcı hesapları ve kurumsal operasyonlar broker üzerinden yürür; her yeni yatırımcı hesabını broker'ta açar.",
-    disclosure: "Bu sayfadaki bağlantılar yönlendirme (referral) bağlantılarıdır. Bu bağlantılar üzerinden hesap açıp fonlamanız hâlinde NUUK aracı kurumdan komisyon elde eder. Bu durum ödediğiniz spread veya komisyonları değiştirmez.",
+    metaTitle: "",
+    metaDescription: "",
+    kicker: "",
+    title: "",
+    lead: "",
+    disclosure: "",
     hub: {
-      kicker: "NUUK × broker",
-      title: "NUUK, broker Group'un Türkiye çözüm ortağıdır",
-      points: [
-        { title: "Türkiye çözüm ortağı", body: "NUUK ve broker Group, Türkiye'de çözüm ortağı olarak birlikte çalışır." },
-        { title: "Her yatırımcı için tek aracı kurum", body: "Tüm NUUK yatırımcılarının hesabı broker'tadır. Yatırımcı işlemleri ve kurumsal operasyonlar broker üzerinden yürür." },
-        { title: "broker hesabı zorunlu", body: "NUUK ile çalışmak için yeni yatırımcıların broker hesabı açması gerekir." },
-        { title: "broker LP altyapısı", body: "NUUK'un kurumsal altyapısını broker LP sağlar." },
-        { title: "Dünya genelindeki aracı kurumlar için", body: "NUUK, broker'ın altyapısını NUUK çatısı altında global aracı kurumlara sunar." },
-      ],
-      modelNote: "Performans sayfasındaki sonuçlar NUUK Model portföy hesabına aittir; bu hesap yatırımcı hesaplarından ayrıdır.",
-      openAccount: "broker Hesabı Açın",
-      openAccountHref: "https://broker/tr/account/live-account?lp=23&salesid=6069752926",
-      lp: "broker LP",
-      lpHref: "https://broker/en/partnership/institutional-liquidity-offering",
+      kicker: "",
+      title: "",
+      points: [],
+      modelNote: "",
+      openAccount: "",
+      openAccountHref: "",
+      lp: "",
+      lpHref: "",
     },
-    compareTitle: "Karşılaştırma tablosu",
+    compareTitle: "",
     partner: {
-      "kicker": "Kurumsal",
-      "title": "NUUK çatısı altında, global aracı kurumlar için broker altyapısı",
-      "body": "NUUK, broker'ın altyapısını NUUK çatısı altında dünya genelindeki aracı kurumlara sunar. Aracı kurumlar, tanıtım ortakları ve eğitmenler; broker LP likiditesi, her ay ödenen şeffaf komisyon paylaşımı ve Türkçe, Arapça, İngilizce hesap açma ve KYC desteğiyle bizimle çalışabilir. Koşullar yazılı olarak belirlenir.",
-      "points": [
-        "Aylık ödenen şeffaf komisyon paylaşımı",
-        "Üç dilde hesap açma ve KYC desteği",
-        "broker LP kurumsal likiditesi"
-      ],
+      "kicker": "",
+      "title": "",
+      "body": "",
+      "points": [],
       "cta": {
-        "label": "NUUK ile görüşün"
+        "label": ""
       }
     },
     cardLabels: {
-      "contactNote": "{broker} nezdindeki hesaplar, ortaklık anlaşmamız kapsamında NUUK aracılığıyla açılır. Bizimle iletişime geçin; hesap açılışını birlikte yürütelim. Aşağıdaki adımlar aracı kurumun sizden isteyeceklerini gösterir.",
-      "regulator": "Düzenleyici otorite",
-      "licence": "Lisans",
-      "founded": "Kuruluş",
-      "minDeposit": "Minimum yatırım",
-      "platforms": "Platformlar",
-      "spreads": "Tipik spread'ler",
-      "commission": "Komisyon",
-      "leverage": "Maksimum kaldıraç",
-      "funding": "Para yatırma",
-      "withdrawal": "Para çekme süresi",
-      "islamic": "Swap-free (İslami) hesap",
-      "languages": "Müşteri desteği",
-      "bestFor": "Uygun profil",
-      "pros": "Güçlü yönler",
-      "cons": "Dikkat edilmesi gerekenler",
-      "steps": "Hesap açma adımları",
-      "yes": "Evet",
-      "no": "Hayır",
-      "profile": "Tam profil",
-      "allBrokers": "NUUK × broker",
-      "atAGlance": "Özet",
-      "conditions": "İşlem koşulları",
-      "about": "Aracı kurum hakkında",
-      "website": "Resmî web sitesi",
-      "faq": "Sık sorulan sorular",
-      "openWith": "Fonlanmış bir hesaba beş adımda:",
-      "verifyNote": "Koşullar 8 Eylül 2026 tarihinde aracı kurumun web sitesinden doğrulanmıştır. Fonlama öncesinde güncel değerleri kontrol ediniz."
+      "contactNote": "",
+      "regulator": "",
+      "licence": "",
+      "founded": "",
+      "minDeposit": "",
+      "platforms": "",
+      "spreads": "",
+      "commission": "",
+      "leverage": "",
+      "funding": "",
+      "withdrawal": "",
+      "islamic": "",
+      "languages": "",
+      "bestFor": "",
+      "pros": "",
+      "cons": "",
+      "steps": "",
+      "yes": "",
+      "no": "",
+      "profile": "",
+      "allBrokers": "",
+      "atAGlance": "",
+      "conditions": "",
+      "about": "",
+      "website": "",
+      "faq": "",
+      "openWith": "",
+      "verifyNote": ""
     },
-    list: [
-      {
-        "referralHref": "https://broker/tr/account/live-account?lp=23&salesid=6069752926",
-        "ctaNote": "NUUK, broker Group'un Türkiye çözüm ortağıdır. CFD'ler karmaşık araçlardır ve kaldıraç nedeniyle hızla para kaybetme riski yüksektir; yalnızca kaybetmeyi göze alabileceğiniz parayla işlem yapın.",
-        "tagline": "NUUK'un Türkiye çözüm ortağı: FX, metaller, endeksler, hisseler ve kripto tek hesapta",
-        "founded": "2005, Kaliforniya",
-        "minDeposit": "$50 Standard · $1.000 Pro · $10.000 ECN",
-        "spreads": [
-          {
-            "value": "Standard'da 1,5 · Pro'da 0,8 · ECN'de 0,0'dan itibaren"
-          },
-          {
-            "value": "canlı platformdan kontrol edin"
-          }
-        ],
-        "commission": "Standard ve Pro: yok, maliyet spread'in içinde · ECN: lot başına alınır, güncel oranı kontrol edin",
-        "leverage": "1:1000'e kadar (offshore kuruluş) · CySEC ve ASIC altında bireysel müşteride 1:30",
-        "funding": [
-          "Visa / Mastercard",
-          "Banka havalesi",
-          "SEPA",
-          "Skrill",
-          "Neteller",
-          "Kripto (BTC, USDT)"
-        ],
-        "withdrawalTime": "broker müşteri alanından talep edilir; süre yönteme göre değişir",
-        "languages": "7/24 çok dilli destek · NUUK üzerinden Türkçe hesap açılışı",
-        "bestFor": "FX, altın, endeks, hisse ve kriptoyu tek düzenlenmiş hesapta toplamak ve hesap açılışını Türkçe yürütmek isteyen Türkiye'deki yatırımcılar",
-        "pros": [
-          "FX, metaller, endeksler, hisseler ve kriptoda 20.000'den fazla enstrüman tek hesapta (şirket verisi)",
-          "Grup şirketleri ASIC, CySEC, MAS, BaFin, CIMA ve BAE Sermaye Piyasası Kurumu başta olmak üzere birçok otoritenin lisansıyla çalışıyor",
-          "Düşük giriş: Standard 50 dolardan başlıyor; ECN'de spread 0,0 pipten",
-          "MT4, MT5 ve TradingView tabanlı broker-Plus",
-          "Kart, banka, SEPA ve kripto ile fonlama; kart ve kripto yatırımları anında hesapta"
-        ],
-        "cons": [
-          "1:1000 kaldıraç yalnızca offshore kuruluşta geçerli; AB ve Avustralya'daki bireysel müşteriler 1:30 ile sınırlı",
-          "Hangi kuruluş altında hesap açılacağı ülkenize göre değişir; fonlamadan önce müşteri sözleşmesini okuyun"
-        ],
-        "steps": [
-          "Bu sayfadaki bağlantıyla kayıt formunu açın; hesap açılışı boyunca Türkçe destekle yanınızdayız.",
-          "Adınız, e-postanız, telefonunuz ve ülkenizle kaydolun, doğrulama kodunu onaylayın.",
-          "broker müşteri alanına kimlik belgenizi ve adres belgenizi yükleyin.",
-          "Hesap türünü (Standard, Pro veya ECN) ve platformu (MT4 veya MT5) seçin.",
-          "Kart, banka havalesi, SEPA veya kriptoyla fonlayın; giriş yapıp işleme başlayın."
-        ],
-        "summary": "broker Group 2005'te Kaliforniya'da kuruldu. Bugün 100 ülkede 2 milyondan fazla müşteri, yaklaşık 35 milyar dolarlık günlük işlem hacmi ve 322 milyon doları aşan ödenmiş sermaye bildiriyor. Grup şirketleri ASIC, CySEC, MAS, BaFin, CIMA, BAE Sermaye Piyasası Kurumu ve diğer otoritelerden lisanslı. Ekim 2026'dan bu yana NUUK, broker Group'un Türkiye çözüm ortağı: hesabı sizinle birlikte açıyor, Türkçe destek veriyoruz.",
-        "faq": [
-          {
-            "q": "NUUK–broker ortaklığı benim için ne anlama geliyor?",
-            "a": "NUUK, broker Group'un Türkiye çözüm ortağıdır. Her NUUK yatırımcısının hesabı broker'tadır ve yeni yatırımcıların da burada hesap açması gerekir. Hesabı broker'ta kendi adınıza açarsınız; NUUK hesap açılışını Türkçe yürütür, araştırma ve eğitim sağlar. NUUK paranızı hiçbir zaman teslim almaz."
-          },
-          {
-            "q": "Minimum yatırım ne kadar?",
-            "a": "Standard hesapta 50 dolar, Pro'da 1.000 dolar, ECN'de 10.000 dolar."
-          },
-          {
-            "q": "broker düzenlenmiş bir kurum mu?",
-            "a": "Evet, ayrı grup şirketleri üzerinden: ASIC AFSL 416279, CySEC 430/23, MAS CMS101174, CIMA 1811316, BAE Sermaye Piyasası Kurumu 20200000031 ve diğerleri. Müşteri koruması ve azami kaldıraç, hesabınızın açıldığı kuruluşa göre değişir."
-          },
-          {
-            "q": "İslami hesap var mı?",
-            "a": "Evet. Uygun ülkelerde talep üzerine swap'sız hesap açılabiliyor."
-          },
-          {
-            "q": "NUUK benim hesabımdan kazanıyor mu?",
-            "a": "Evet. Çözüm ortağı olarak NUUK'a ödemeyi broker kendi gelirinden yapar. Bu sizin ödediğiniz spread veya komisyonu değiştirmez."
-          },
-          {
-            "q": "broker'ta hesap açmak zorunda mıyım?",
-            "a": "Evet. Her yeni NUUK yatırımcısının broker hesabı olması gerekir. Hesap sizin adınıza açılır; NUUK paranızı hiçbir zaman teslim almaz."
-          }
-        ]
-      },
-    ],
+    list: [],
   },
 
   freeSignals: {
@@ -840,7 +726,7 @@ export const tr: ContentOverride = {
       { "q": "Forex fiyatlarını ne belirler?", "a": "Fiyatlar; faiz kararları, enflasyon ve büyüme verileri gibi ekonomik göstergelerden, merkez bankası açıklamalarından, jeopolitik gelişmelerden ve piyasanın genel beklentisinden etkilenir." },
       { "q": "Kaldıraç nedir?", "a": "Kaldıraç, küçük bir teminatla daha büyük pozisyon taşımanıza imkân verir. Kazancı büyüttüğü kadar zararı da büyütür; yatırdığınız tutarın tamamını kaybetmenize yol açabilir. Bu yüzden dikkatle kullanılması gerekir." },
       { "q": "Forex indikatörleri ne işe yarar?", "a": "İndikatörler, fiyat ve hacim verilerini işleyerek piyasadaki eğilimleri okumanıza yardımcı olur. Kesin sonuç vermezler; karar verirken başvurduğunuz girdilerden yalnızca biridir." },
-      { "q": "Forex brokeri nedir?", "a": "Broker, bireysel ve kurumsal yatırımcıların forex piyasasına erişmesini sağlayan aracı kurumdur. Seçim tamamen size aittir; kurumun bulunduğunuz ülkede yetkili bir otorite tarafından denetlenip denetlenmediğini mutlaka kontrol edin. NUUK, broker Group ile çalışır; ayrıntılar broker sayfasında." },
+      { "q": "Forex brokeri nedir?", "a": "Broker, bireysel ve kurumsal yatırımcıların forex piyasasına erişmesini sağlayan aracı kurumdur. Seçim tamamen size aittir; kurumun bulunduğunuz ülkede yetkili bir otorite tarafından denetlenip denetlenmediğini mutlaka kontrol edin." },
       { "q": "Pip nedir?", "a": "Pip, bir paritenin standart en küçük fiyat hareketidir. Alış-satış farkını (spread) ölçmek, işlem maliyetini hesaplamak ve kâr-zarar takibi yapmak için kullanılır." },
       { "q": "Forex stratejisi nedir?", "a": "Strateji, bir işleme ne zaman girip ne zaman çıkacağınızı belirleyen kurallar bütünüdür. İyi bir strateji, hangi durumda işlem yapmayacağınızı da tanımlar ve risk yönetimini içerir." },
       { "q": "Forex'e nasıl başlanır?", "a": "Önce piyasanın nasıl işlediğini öğrenin, ardından gerçek para koymadan demo hesapta pratik yapın. Bu süreçte günlük sinyalleri ve piyasa yorumlarını takip etmek için ücretsiz WhatsApp grubumuza katılabilirsiniz." },
@@ -978,7 +864,7 @@ export const tr: ContentOverride = {
       emailHint: "Premium, NUUK uygulamasında bu adrese açılır.",
       funding: "Fonlamayı düşündüğün tutar (USD)",
       fundingPh: "örn. 5000",
-      fundingHint: "Sana uygun broker hesabını önerebilmemiz için. Fonlamayı kendi adına açılan aracı kurum hesabına sen yaparsın; NUUK müşteri parası tutmaz.",
+      fundingHint: "Sana uygun aracı kurum hesabını önerebilmemiz için. Fonlamayı kendi adına açılan aracı kurum hesabına sen yaparsın; NUUK müşteri parası tutmaz.",
       consent: "{privacy} okudum; başvuru bilgilerimin NUUK tarafından işlenmesini kabul ediyorum.",
       consentPremium: "{privacy} ve {terms} okudum; başvuru bilgilerimin NUUK tarafından işlenmesini kabul ediyorum.",
       privacy: "Gizlilik politikasını",
@@ -1075,7 +961,7 @@ export const tr: ContentOverride = {
       copy_demo_paper: "Demo MT5 / paper hesaplara otomatik kopya",
       risk_panel: "Hesap başına risk paneli",
       execution_reports: "Yürütme raporları",
-      broker_partner: "broker'ta gerçek hesap",
+      broker_partner: "Aracı kurumda gerçek hesap",
       priority_support: "Öncelikli destek",
     },
     stepsTitle: "Nasıl işler",
@@ -1098,7 +984,7 @@ export const tr: ContentOverride = {
       },
       {
         q: "Fonlama tutarını neden soruyorsunuz?",
-        a: "Sana uygun broker hesap türünü önerebilmek için. Fonlamayı her zaman kendi adına açılan aracı kurum hesabına yaparsın; NUUK yatırım parası kabul etmez ve tutmaz.",
+        a: "Sana uygun aracı kurum hesap türünü önerebilmek için. Fonlamayı her zaman kendi adına açılan aracı kurum hesabına yaparsın; NUUK yatırım parası kabul etmez ve tutmaz.",
       },
       {
         q: "Premium otomatik yenilenir mi?",
@@ -1112,7 +998,7 @@ export const tr: ContentOverride = {
     fine: [
       "Sinyaller ve analizler genel piyasa yorumudur, kişisel yatırım tavsiyesi değildir.",
       "Geçmiş performans gelecek sonuçların garantisi değildir. Kaldıraçlı ürünler yüksek kayıp riski taşır.",
-      "Uygulama içi otomatik kopya demo ve paper hesaplar içindir. Gerçek hesap kopyası yalnızca broker üzerinden yapılır.",
+      "Uygulama içi otomatik kopya demo ve paper hesaplar içindir. Gerçek hesap kopyası yalnızca aracı kurum üzerinden yapılır.",
     ],
     legalTitle: "Şartlar ve politikalar",
     legal: [{ label: "Abonelik şartları" }, { label: "Kullanım koşulları" }, { label: "Gizlilik politikası" }, { label: "Risk bildirimi" }],
@@ -1230,7 +1116,7 @@ export const tr: ContentOverride = {
   },
   money: {
     "metaTitle": "Nasıl Para Kazanıyoruz",
-    "metaDescription": "NUUK gelirini kendi sermayesiyle yaptığı işlemlerden, yönettiği portföylerdeki yönetim ve performans ücretlerinden, broker ortaklığımızdan ve araştırma aboneliklerinden elde eder. Her ücret açıklanmıştır.",
+    "metaDescription": "NUUK gelirini kendi sermayesiyle yaptığı işlemlerden, yönettiği portföylerdeki yönetim ve performans ücretlerinden ve araştırma aboneliklerinden elde eder. Her ücret açıklanmıştır.",
     "kicker": "Nasıl Para Kazanıyoruz",
     "title": "Siz kazandığınızda kazanırız. Önce kendi sermayemiz.",
     "lead": "NUUK bir aracı kurum değildir ve işlemlerinizin karşı tarafında yer almaz. Gelirimiz dört şeffaf kaynaktan gelir; en büyüğü, sizin için de çalıştırdığımız aynı işlemlerdir.",
@@ -1269,12 +1155,6 @@ export const tr: ContentOverride = {
         "how": "Aracı kurum tarafından hesabınızdan kesilir ve her ekstrede görünür"
       },
       {
-        "title": "broker ortaklığı",
-        "share": "Ortaklık iadeleri",
-        "body": "NUUK üzerinden broker'ta hesap açtığınızda broker, kazandığı spread veya komisyonun bir bölümünü bize öder. İşlem koşullarınız doğrudan müşteriyle birebir aynıdır. Şartlar IB bildirimimizdedir.",
-        "how": "broker öder; maliyetlerinize asla eklenmez"
-      },
-      {
         "title": "Araştırma ve eğitim",
         "share": "Abonelikler ve atölyeler",
         "body": "Aylık 750, 1.000 ve 5.000 USD'lik sinyal ve araştırma planları ile ücretli atölyeler ve kurumsal eğitimler. Haftalık webinarlar ücretsiz kalır.",
@@ -1290,8 +1170,7 @@ export const tr: ContentOverride = {
       "Spread, komisyon veya swap üzerine marj eklemek",
       "Paranızı tutmak ya da hesabınızda para çekme yetkisine sahip olmak",
       "Size karşı işlem yapmak veya emir akışınızı satmak",
-      "Gerçekleşmemiş kazançlardan ya da en yüksek değer seviyesinin altındaki kârdan performans ücreti almak",
-      "Açıklanan iade dışında broker'tan gizli ödeme almak"
+      "Gerçekleşmemiş kazançlardan ya da en yüksek değer seviyesinin altındaki kârdan performans ücreti almak"
     ],
     "riskTitle": "Risk yönetimi iş modelinin kendisidir",
     "riskLead": "Ücretler ancak sermaye ayakta kalırsa işe yarar; bu yüzden önce risk gelir.",
@@ -1320,8 +1199,8 @@ export const tr: ContentOverride = {
         "a": "Yalnız aylık yönetim ücreti, o da imzadan önce açıklanır. NUUK AI - Premium'da performans ücreti haftalık net kâr üzerinden alınır; zararla kapanan haftada performans ücreti yoktur. Özel hesapta zarar telafi edilene kadar performans ücreti alınmaz."
       },
       {
-        "q": "IB iadeleri bir çıkar çatışması mı?",
-        "a": "Olabilir; bu yüzden açıklanır. NUUK'un çalıştığı tek aracı kurum broker'tır; bu ortaklığın şartları IB bildiriminde yer alır. Bizim üzerimizden geldiğiniz için işlem koşullarınız asla değişmez."
+        "q": "Burada bir çıkar çatışması var mı?",
+        "a": "NUUK'un aldığı her ücret bu sayfada yazılıdır. Hesabınız aracı kurumda kendi adınıza açılır ve NUUK müşteri parasını hiçbir zaman elinde tutmaz."
       },
       {
         "q": "En yüksek değer seviyesi nasıl hesaplanır?",
@@ -1351,8 +1230,8 @@ export const tr: ContentOverride = {
     "metaDescription": "Yönetilen hesap müşterileri nereden giriş yapar, NUUK her ay ne raporlar ve erişim nasıl talep edilir.",
     "kicker": "Yatırımcı Portalı",
     "title": "Hesabınız, girişiniz, raporlarınız",
-    "lead": "Yönetilen hesaplar aracı kurumda, kendi adınıza tutulur. Gerçek zamanlı ekstre için broker müşteri portalına giriş yapın; NUUK aylık raporu ve üç aylık değerlendirmeyi ekler.",
-    "portalsTitle": "broker müşteri portalı",
+    "lead": "Yönetilen hesaplar aracı kurumda, kendi adınıza tutulur. Gerçek zamanlı ekstre için aracı kurumun müşteri portalına giriş yapın; NUUK aylık raporu ve üç aylık değerlendirmeyi ekler.",
+    "portalsTitle": "Aracı kurum müşteri portalı",
     "portalLabel": "Müşteri portalı",
     "reportsTitle": "NUUK'tan ne alırsınız",
     "reports": [
@@ -1394,13 +1273,7 @@ export const tr: ContentOverride = {
         "a": "Aracı kurum ekstresinde ayrı kalemler olarak ve aylık raporda özet halinde."
       }
     ],
-    "portals": [
-      {
-        "slug": "broker",
-        "name": "broker Group",
-        "href": "https://broker/tr/account/login"
-      }
-    ]
+    "portals": []
   },
   caseStudies: {
     "metaTitle": "Vaka Çalışmaları",
@@ -1423,7 +1296,7 @@ export const tr: ContentOverride = {
         "name": "Aile ofisi hazinesi, Dubai",
         "profile": "60 gün içinde likit kalması gereken 500.000 USD hazine nakdi tutan tek aileli bir ofis.",
         "objective": "Önce sermayeyi koru; maksimum %8 düşüş.",
-        "structure": "broker'ta ofisin kendi adına özel PAMM hesabı; yazılı yetki belgesiyle işlem.",
+        "structure": "Aracı kurumda ofisin kendi adına özel PAMM hesabı; yazılı yetki belgesiyle işlem.",
         "mandate": [
           "Enstrümanlar: ana FX pariteleri, altın, ABD ve AB endeks CFD'leri",
           "Maksimum brüt maruziyet özkaynağın 3 katı, günlük zarar limiti %1",
@@ -1438,7 +1311,7 @@ export const tr: ContentOverride = {
         "name": "Kendi işlem yapan yatırımcı, İstanbul",
         "profile": "Üç yıldır 5.000 USD ile kendi başına FX işlemi yapan ve sistemleri çalıştırmadan kullanmak isteyen bir mühendis.",
         "objective": "NUUK sistemlerine sistematik maruziyet, yönetim ücreti yok, hızlı çıkış imkânı.",
-        "structure": "broker'ta havuz MAM: kendi adına kendi hesabı, havuza tahsisli.",
+        "structure": "Aracı kurumda havuz MAM: kendi adına kendi hesabı, havuza tahsisli.",
         "mandate": [
           "NUUK'un kendi sermayesiyle aynı sistemler ve risk limitleri",
           "GANN Live'da işlem başına sabit 300 USD risk, havuz büyüklüğüne ölçeklenir",
@@ -1451,17 +1324,17 @@ export const tr: ContentOverride = {
       {
         "name": "Kitlesi olan eğitmen, Riyad",
         "profile": "2.000 öğrencisi olan ve zaten gayriresmî olarak aracı kurum öneren bir işlem eğitmeni.",
-        "objective": "Önerileri aracı kurum olmadan ve müşteri parasına dokunmadan şeffaf biçimde gelire dönüştürmek.",
-        "structure": "NUUK ana tanıtıcı ortak anlaşması: öğrencileri NUUK'un ortak linkleriyle hesap açar; iade onunla paylaşılır.",
+        "objective": "Öğrencilerine hesap açılışında şeffaf bir yol sunmak ve müşteri parasına hiç dokunmamak.",
+        "structure": "Yazılı iş birliği anlaşması: öğrencileri hesaplarını aracı kurumda kendi adlarına açar; NUUK eğitim ve hesap açılışı desteği verir.",
         "mandate": [
-          "Yazılı iade paylaşımı; aylık ödeme ve müşteri bazında döküm",
-          "Arapça ve İngilizce broker hesap açılışı ve KYC rehberliği",
-          "Yeniden kullanabileceği broker materyali ve ekonomik takvim",
-          "Öğrencilere açıklama: iadeyi aracı kurum öder, koşullar değişmez"
+          "Yazılı iş birliği şartları; aylık rapor ve müşteri bazında döküm",
+          "Arapça ve İngilizce hesap açılışı ve KYC rehberliği",
+          "Yeniden kullanabileceği eğitim materyali ve ekonomik takvim",
+          "Öğrencilere açık bilgilendirme: hesap ve para her zaman öğrencinin kendi adına kalır"
         ],
-        "fees": "Ona veya öğrencilerine ücret yok; gelir, IB bildiriminde açıklanan aracı kurum iadesinden gelir.",
+        "fees": "Ona veya öğrencilerine ücret yok; şartlar yazılı olarak belirlenir.",
         "rows": [],
-        "note": "İade, broker'ın tarifesine ve öğrencilerin hacmine bağlıdır; bu yüzden burada rakam gösterilmez. Şartlar ilk müşteri tanıtılmadan önce yazılı olarak kararlaştırılır."
+        "note": "Şartlar ilk müşteri tanıtılmadan önce yazılı olarak kararlaştırılır."
       }
     ]
   },
@@ -1725,7 +1598,6 @@ export const tr: ContentOverride = {
       "topic": "Konu",
       "topics": [
         "Portföy yönetimi",
-        "broker hesabı",
         "Araştırma ve sinyaller",
         "Eğitim",
         "Algoritmik sistemler",
@@ -1749,19 +1621,13 @@ export const tr: ContentOverride = {
         "İşlem yapmadan önce yatırım hedeflerinizi, deneyim düzeyinizi ve risk iştahınızı değerlendirmeli, kaybetmeyi göze alamayacağınız sermayeyi asla riske atmamalısınız. Herhangi bir tereddüdünüz varsa bulunduğunuz ülkede bağımsız, lisanslı bir finansal danışmandan görüş alın.",
         "Bu web sitesinde gösterilen herhangi bir portföy, model, strateji, sinyal hizmeti veya işlem sisteminin geçmiş performansı, gelecekteki sonuçların güvenilir bir göstergesi değildir. Performans geçmişleri ne olacağını değil, ne olduğunu anlatır. Geriye dönük test, simülasyon veya kâğıt üstü (paper trading) sonuçlarının doğal sınırlamaları vardır: geriye dönük bakışla hazırlanır, finansal risk içermez ve kayma (slippage), likidite veya emir gerçekleştirme maliyetlerinin etkisini yansıtmayabilir.",
         "Bu web sitesindeki hiçbir içerik kişisel yatırım tavsiyesi, kişisel öneri ya da herhangi bir finansal aracı alma veya satma teklifi ya da daveti niteliği taşımaz. İçerik genel piyasa yorumu ve eğitim amaçlıdır; mali durumunuzu, hedeflerinizi veya ihtiyaçlarınızı dikkate almaz.",
-        "Yönetilen hesaplar, müşterinin broker'taki kendi hesabının içinde, broker'ın MAM veya PAMM yapısı ve düzenleyici çerçevesi altında çalışır. NUUK yalnızca işlem yetkisine sahiptir ve müşteri fonlarının saklamasını hiçbir zaman üstlenmez. Ücretler, kilit süreleri ve risk yetki belgeleri, herhangi bir işlem başlamadan önce yazılı bir sözleşmede belirlenir.",
-        "Bu web sitesindeki aracı kurum bağlantıları yönlendirme (referral) bağlantılarıdır. Bunlar üzerinden hesap açıp fonladığınızda NUUK aracı kurumdan komisyon alabilir; bu durum ödediğiniz spread'leri veya ücretleri değiştirmez. NUUK'un yatırımcı hizmetlerinden yararlanmak için broker hesabı gerekir.",
+        "Yönetilen hesaplar, müşterinin aracı kurumdaki kendi hesabının içinde, aracı kurumun MAM veya PAMM yapısı ve düzenleyici çerçevesi altında çalışır. NUUK yalnızca işlem yetkisine sahiptir ve müşteri fonlarının saklamasını hiçbir zaman üstlenmez. Ücretler, kilit süreleri ve risk yetki belgeleri, herhangi bir işlem başlamadan önce yazılı bir sözleşmede belirlenir.",
         "NUUK Quant, Dubai Uluslararası Finans Merkezi, Dubai, Birleşik Arap Emirlikleri'nden faaliyet gösterir. Hizmetler yalnızca geçerli yasa ve düzenlemelerin izin verdiği yerlerde sunulur; erişilebilirlik ikamet ettiğiniz ülkeye bağlıdır. Bu web sitesindeki hiçbir içerik, böyle bir dağıtımın yerel yasalara aykırı olacağı bir yargı bölgesindeki kişilere yönelik değildir.",
       ],
     },
     "ib-disclosure": {
       title: "Tanıtım aracısı (IB) bildirimi",
-      body: [
-        "NUUK, broker Group'un Türkiye çözüm ortağıdır. Bir yönlendirme bağlantısı üzerinden hesap açıp fonladığınızda broker, işlem hacminize dayalı bir komisyon öder.",
-        "Bu komisyon aracı kurum tarafından ödenir ve ödediğiniz spread'leri, komisyonları veya ücretleri artırmaz. Bu web sitesindeki aracı kurum bilgileri broker'ın herkese açık sayfalarından alınmıştır.",
-        "Yeni NUUK yatırımcılarının broker hesabı açması zorunludur. NUUK'un kurumsal altyapısını broker LP sağlar; NUUK, broker'ın altyapısını NUUK çatısı altında dünya genelindeki aracı kurumlara sunar.",
-        "NUUK yalnızca broker Group ile çalışır. broker, yönetilen hesaplar için kullanılan MAM/PAMM yapılarını da işletir.",
-      ],
+      body: [],
     },
     privacy: {
       title: "Gizlilik politikası",
@@ -1772,7 +1638,7 @@ export const tr: ContentOverride = {
         "Otomatik olarak toplanan veriler. Sitenin nasıl kullanıldığını anlamak için IP anonimleştirmeli Google Analytics 4 kullanırız: görüntülenen sayfalar, yaklaşık konum, cihaz türü ve hangi düğmelere tıklandığı (örneğin bir aracı kurum bağlantısı veya bir plan). Bu veriler toplu hâldedir ve sizi isim olarak tanımlamaz. Tarayıcı ayarı veya reklam engelleyici ile engelleyebilirsiniz.",
         "Çerezler ve ziyaretçi analitiği. Google Analytics oturumları ayırt etmek için çerez ayarlayabilir. Apollo.io sayfa ziyaretlerini kaydeder ve ziyaret bir kurumsal ağdan geliyorsa IP adresinin arkasındaki şirketi tanımlayabilir; ayrıca formlarımıza girilen kurumsal e-posta adreslerini kamuya açık şirket verileriyle zenginleştirir. Reklamlarımızın etkisini ölçmek için Meta Pixel kullanırız: sayfa görüntülemelerini ve WhatsApp grubumuza giden tıklamaları Meta Platforms'a (Facebook/Instagram) iletir; Meta bu verileri kendi gizlilik politikası kapsamında işler ve yurt dışında saklayabilir. Hepsi çerez bırakabilir. Bağlantılarımızdan açtığınız üçüncü taraf siteler (aracı kurumlar, WhatsApp, sosyal ağlar) kendi politikalarını uygular. Bu sitedeki canlı piyasa kotasyonları gömülü TradingView bileşenleridir; TradingView sunucularından yüklenir ve TradingView'ın gizlilik politikası kapsamında kendi çerezlerini bırakabilir. Bunların tümünü bir tarayıcı eklentisiyle veya üçüncü taraf betikleri kapatarak engelleyebilirsiniz; site bunlar olmadan da çalışır.",
         "Verileri neden işliyoruz? Talebinizi yanıtlamak, istediğiniz hizmetleri sunmak (yönetilen hesaplar, sinyaller, eğitim), yasal ve düzenleyici yükümlülükleri yerine getirmek ve web sitesini geliştirmek için. Hukuki dayanak, rızanız, sizinle yapılan bir sözleşmenin ifası veya işi yürütmedeki meşru menfaatimizdir.",
-        "Paylaşım. Kişisel verileri satmayız. Yalnızca web sitesini ve iletişimi yürütmek için gereken hizmet sağlayıcılarla (barındırma, e-posta, analitik), sizi tanıtmamızı istediğinizde broker'la ve yasaların gerektirdiği durumlarda yetkili makamlarla paylaşırız.",
+        "Paylaşım. Kişisel verileri satmayız. Yalnızca web sitesini ve iletişimi yürütmek için gereken hizmet sağlayıcılarla (barındırma, e-posta, analitik), sizi tanıtmamızı istediğinizde ilgili aracı kurumla ve yasaların gerektirdiği durumlarda yetkili makamlarla paylaşırız.",
         "Saklama ve güvenlik. Talep verileri, talebin işlenmesi için gerektiği sürece ve bir iş ilişkisi kurulması hâlinde düzenleyici kayıt tutma yükümlülüklerine uygun olarak beş yıla kadar saklanır. Veriler erişim kontrollü sistemlerde tutulur.",
         "Haklarınız. info@nuukquant.com adresine yazarak hakkınızda hangi verileri tuttuğumuzu sorabilir, düzeltilmesini veya silinmesini isteyebilir, işlemeye itiraz edebilir veya rızanızı istediğiniz zaman geri çekebilirsiniz. AB, Birleşik Krallık veya DIFC'de bulunuyorsanız veri koruma otoritenize şikâyette bulunma hakkına da sahipsiniz.",
       ],
@@ -1784,7 +1650,7 @@ export const tr: ContentOverride = {
         "Yalnızca bilgilendirme. Bu web sitesinin içeriği genel piyasa yorumu ve eğitim amaçlıdır. Kişisel yatırım tavsiyesi, kişisel öneri ya da herhangi bir finansal aracı alma veya satma teklifi ya da daveti değildir. Kendi yatırım kararlarınızdan ve herhangi bir hizmetin ikamet ettiğiniz ülkede size sunulup sunulamayacağını teyit etmekten siz sorumlusunuz.",
         "Garanti yok. İşlem yapmak önemli ölçüde risk içerir; risk bildirimine bakın. Geçmiş performans, geriye dönük testler ve kâğıt üstü (paper) sonuçlar gelecekteki sonuçların garantisi değildir. Doğrulama bekliyor veya temsili olarak işaretlenen rakamlar doğrulanmış performans verisi değildir.",
         "Hizmetler. Yönetilen hesaplar, sinyal abonelikleri, mentorluk ve etkinlikler; ücretleri, kapsamı, iptali ve risk limitlerini belirleyen ayrı yazılı sözleşmeler kapsamında sunulur. Farklılık olması hâlinde bu sözleşmeler web sitesine göre önceliklidir.",
-        "Üçüncü taraf bağlantıları. Aracı kurumlara, platformlara ve sosyal ağlara verilen bağlantılar kontrolümüz dışındaki sitelere yönlendirir. Yönlendirme bağlantıları IB bildirimi sayfasında açıklanmıştır. Üçüncü taraf sitelerin içeriğinden, erişilebilirliğinden veya koşullarından sorumlu değiliz.",
+        "Üçüncü taraf bağlantıları. Aracı kurumlara, platformlara ve sosyal ağlara verilen bağlantılar kontrolümüz dışındaki sitelere yönlendirir. Üçüncü taraf sitelerin içeriğinden, erişilebilirliğinden veya koşullarından sorumlu değiliz.",
         "Fikrî mülkiyet. Bu web sitesindeki metinler, grafikler, logolar, çizelgeler ve sistem açıklamaları NUUK'a veya lisans verenlerine aittir. Sayfaları kişisel kullanım için görüntüleyebilir ve yazdırabilirsiniz; diğer her türlü çoğaltma yazılı izin gerektirir. Aracı kurum adları ve logoları ilgili sahiplerinin mülkiyetindedir ve yalnızca tanımlama amacıyla kullanılır.",
         "Sorumluluk. Web sitesi olduğu gibi sunulur. Yasaların izin verdiği ölçüde NUUK, işlem zararları, veri kaybı veya hizmet kesintisi dâhil olmak üzere web sitesinin kullanımından veya içeriğine dayanılmasından kaynaklanan her türlü zarara ilişkin sorumluluğu reddeder.",
         "Değişiklikler ve uygulanacak hukuk. Bu koşulları ve web sitesini istediğimiz zaman değiştirebiliriz; güncel sürüm her zaman burada yayımlanır. Bu koşullar Dubai Uluslararası Finans Merkezi'nde geçerli yasalara tabidir ve uyuşmazlıklar DIFC Mahkemelerinin yargı yetkisindedir.",
@@ -1802,7 +1668,7 @@ export const tr: ContentOverride = {
         "Süre ve yenileme. Her ödeme, onay tarihinden itibaren bir aylık Premium dönemini kapsar. Kripto ödemeler otomatik yenilenmez: dönem bitmeden size hatırlatma göndeririz; yeniden ödeme yapılmazsa hesap ücretsiz özelliklere döner.",
         "İade. Doğrulanmış bir dönem için yapılan ödemeler, kısmi aylar dâhil, yürürlükteki mevzuat gerektirmedikçe iade edilmez. Kripto iadelerinde ağ ücretleri ve kur farkları alıcıya yansıtılabilir.",
         "Fiyat değişiklikleri. Üyelik fiyatını değiştirebiliriz. Yeni fiyat, bir sonraki döneminiz başlamadan en az 30 gün önce e-postayla bildirilir.",
-        "Üyeliğin kapsamı. Uygulama özelliklerine erişim: piyasalar, takvim ve haberler, akademi, anlık Masa sinyalleri ve analizleri, fiyat alarmları ve demo MT5 veya paper hesaplara otomatik kopya. Sinyaller ve analizler genel piyasa yorumudur, kişisel yatırım tavsiyesi değildir. Uygulama içi otomatik kopya demo ve paper hesaplar içindir; gerçek hesap kopyası yalnızca broker üzerinden, onun kendi sözleşmeleriyle yapılır. Geçmiş performans gelecek sonuçların garantisi değildir; kaldıraçlı ürünler yüksek risk içerir.",
+        "Üyeliğin kapsamı. Uygulama özelliklerine erişim: piyasalar, takvim ve haberler, akademi, anlık Masa sinyalleri ve analizleri, fiyat alarmları ve demo MT5 veya paper hesaplara otomatik kopya. Sinyaller ve analizler genel piyasa yorumudur, kişisel yatırım tavsiyesi değildir. Uygulama içi otomatik kopya demo ve paper hesaplar içindir; gerçek hesap kopyası yalnızca aracı kurum üzerinden, onun kendi sözleşmeleriyle yapılır. Geçmiş performans gelecek sonuçların garantisi değildir; kaldıraçlı ürünler yüksek risk içerir.",
         "İletişim. Ödeme veya üyelikle ilgili sorular, başvuru numaranızla birlikte: info@nuukquant.com.",
       ],
     },
@@ -1817,12 +1683,12 @@ export const tr: ContentOverride = {
         "body": "Uygun hizmetin belirlenmesi için 30 dakika: sinyaller, portföy yönetimi veya eğitim."
       },
       {
-        "title": "broker hesabı açın",
+        "title": "Aracı kurum hesabı açın",
         "body": "Her NUUK yatırımcısı için zorunlu; hesap kendi adınıza açılır. Kimlik ve ikametgâh belgesiyle doğrulama yaklaşık 10 dakika sürer."
       },
       {
         "title": "Fonlayın ve bağlayın",
-        "body": "broker hesabınızı fonlayın: WhatsApp sinyalleri için 250 USD'den, NUUK AI - Premium için 1.000 USD'den, özel manda için 250.000 USD'den itibaren. Ardından seçtiğiniz yapıya bağlayın."
+        "body": "Aracı kurum hesabınızı fonlayın: WhatsApp sinyalleri için 250 USD'den, NUUK AI - Premium için 1.000 USD'den, özel manda için 250.000 USD'den itibaren. Ardından seçtiğiniz yapıya bağlayın."
       },
       {
         "title": "İşleme başlayın",
@@ -1839,7 +1705,7 @@ export const tr: ContentOverride = {
     "riskTitle": "Risk uyarısı",
     "legal1": "Dubai Uluslararası Finans Merkezi merkezli, yapay zekâ destekli bir yatırım ve portföy yönetimi kuruluşu olan NUUK Quant'ın ticari unvanıdır. Hizmetler, mevzuatın izin verdiği ülkelerde profesyonel ve kurumsal müşterilere sunulur; erişilebilirlik bulunduğunuz ülkeye ve ilgili düzenlemelere bağlıdır.",
     "legal2": "Bu web sitesindeki içerik genel piyasa yorumu ve eğitim amaçlıdır. Kişisel yatırım tavsiyesi değildir; herhangi bir finansal araç veya hizmetin alım ya da satımına yönelik teklif veya davet niteliği taşımaz.",
-    "ib": "Bu web sitesindeki aracı kurum bağlantıları yönlendirme (referral) bağlantılarıdır. Bu bağlantılar üzerinden hesap açıp fonlamanız hâlinde NUUK komisyon elde edebilir; bu durum ödediğiniz ücretleri değiştirmez.",
+    "ib": "Hesabınızı aracı kurumda kendi adınıza açarsınız; NUUK müşteri parası tutmaz.",
     "risk": "İşlem yapmak önemli ölçüde risk içerir ve başlangıç sermayenizi aşan zararlarla sonuçlanabilir. Geçmiş performans gelecekteki sonuçların göstergesi değildir."
   },
 

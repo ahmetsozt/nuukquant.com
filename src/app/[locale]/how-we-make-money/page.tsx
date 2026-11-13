@@ -69,11 +69,6 @@ export default async function HowWeMakeMoneyPage({ params }: { params: LocalePar
               </li>
             ))}
           </ol>
-          <p className="mt-6">
-            <Link href={p.ibLink.href} className="inline-flex items-center gap-1 text-[14px] font-semibold text-primary hover:underline">
-              {p.ibLink.label} <Icon name="arrow-up-right" size={14} />
-            </Link>
-          </p>
         </div>
       </section>
 

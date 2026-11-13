@@ -9,7 +9,7 @@ import { seo } from "@/lib/seo";
 type Params = Promise<{ locale: string; slug: string }>;
 
 export function generateStaticParams() {
-  return locales.flatMap((locale) => Object.keys(en.legal).map((slug) => ({ locale, slug })));
+  return locales.flatMap((locale) => Object.keys(en.legal).filter((slug) => slug !== "ib-disclosure").map((slug) => ({ locale, slug })));
 }
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
@@ -22,6 +22,6 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 export default async function LegalPage({ params }: { params: Params }) {
   const { locale, c } = await resolve(params);
   const { slug } = await params;
-  if (!(slug in c.legal)) notFound();
+  if (!(slug in c.legal) || slug === "ib-disclosure") notFound();
   return <LegalDoc c={c} locale={locale} slug={slug as LegalKey} />;
 }

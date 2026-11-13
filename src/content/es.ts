@@ -11,17 +11,17 @@ export const es: ContentOverride = {
   meta: {
     title: "NUUK — Trading basado en IA y gestión de carteras, Dubái",
     description:
-      "NUUK es una empresa de trading basada en IA con sede en el DIFC, Dubái: sistemas de trading algorítmico, cuentas gestionadas, la alianza con broker, investigación, señales y formación para inversores.",
+      "NUUK es una empresa de trading basada en IA con sede en el DIFC, Dubái: sistemas de trading algorítmico, cuentas gestionadas, investigación, señales y formación para inversores.",
   },
   brand: {
-    role: "Trading algorítmico · Gestión de carteras · Socio de soluciones de broker para Türkiye",
+    role: "Trading algorítmico · Gestión de carteras",
     office: "Dubai International Financial Centre (DIFC), Dubái, EAU",
   },
   ui: {
     "partnerPopup": {
-      "title": "Alianza estratégica NUUK × broker Group",
-      "alt": "NUUK se convierte en socio de broker Group en Turquía",
-      "cta": "Ver broker",
+      "title": "",
+      "alt": "",
+      "cta": "",
       "close": "Cerrar"
     },
     investorLogin: "Acceso inversores",
@@ -57,7 +57,7 @@ export const es: ContentOverride = {
     since: "Desde",
     source: "Fuente",
     openAccount: "Abrir cuenta",
-    compare: "Ver broker",
+    compare: "",
     subscribe: "Suscribirse",
     register: "Inscribirse",
     requestDemo: "Solicitar una demo",
@@ -80,12 +80,10 @@ export const es: ContentOverride = {
         { label: "Sistemas de trading con IA" },
         { label: "Historial verificado" },
         { label: "Cuentas gestionadas" },
-        { label: "Alianza con broker" },
         { label: "Señales e informes" },
         { label: "Formación" },
       ],
     },
-    { label: "broker" },
     { label: "Historial verificado" },
     { label: "Masterclass" },
     { label: "Análisis", items: [{ label: "Notas de mercado" }, { label: "Calendario económico" }] },
@@ -96,7 +94,6 @@ export const es: ContentOverride = {
         { label: "Cómo ganamos dinero" },
         { label: "Contacto" },
         { label: "Advertencia de riesgo" },
-        { label: "Declaración de IB" },
         { label: "Portal del inversor" },
         { label: "Casos prácticos" },
       ],
@@ -104,7 +101,6 @@ export const es: ContentOverride = {
   ],
   legalLinks: [
     { label: "Advertencia de riesgo" },
-    { label: "Declaración de IB" },
     { label: "Privacidad" },
     { label: "Términos" },
   ],
@@ -117,16 +113,15 @@ export const es: ContentOverride = {
       title: "Los mercados, leídos con disciplina.",
       lead:
         "NUUK diseña sistemas de trading basados en IA, los opera primero con su propio capital, gestiona cuentas de inversores y enseña a los inversores a operar de forma autónoma. Cada cifra de este sitio indica su fuente y su método.",
-      primary: { label: "Abrir una cuenta broker" },
+      primary: { label: "Abrir una cuenta en un bróker" },
       secondary: { label: "Reservar una llamada" },
-      trustLine: ["Socio de soluciones de broker Group para Türkiye", "Capital propio en cada sistema", "Con sede en el DIFC, Dubái"],
+      trustLine: ["Capital propio en cada sistema", "Con sede en el DIFC, Dubái"],
       trust: [
         { label: "años de experiencia en mesas de negociación entre Estambul y Londres detrás de la firma" },
         {"label": "variantes de estrategia sometidas a backtest desde 2026; tres en producción, documentadas en la página de trading con IA"},
         { label: "inversores formados en webinars y seminarios" },
-        { label: "bróker para cada inversor de NUUK: broker Group" },
       ],
-      pressTitle: "Bróker asociado",
+      pressTitle: "Bróker",
     },
     markets: {
       "kicker": "Precios en vivo",
@@ -146,18 +141,17 @@ export const es: ContentOverride = {
     promo: {
       kicker: "Cuentas gestionadas",
       title: "Su cuenta. La ejecución de NUUK. Límites de riesgo por escrito.",
-      body: "El capital nunca sale de su nombre. Usted abre una cuenta en broker, NUUK recibe únicamente permiso de negociación y un mandato escrito limita la exposición y la pérdida diaria.",
+      body: "El capital nunca sale de su nombre. Usted abre una cuenta en el bróker, NUUK recibe únicamente permiso de negociación y un mandato escrito limita la exposición y la pérdida diaria.",
       figureLabel: "cuentas gestionadas, todas ellas dentro de la propia cuenta de bróker del cliente. La custodia nunca se transfiere.",
       cta: { label: "Cómo funciona" },
     },
     postsLead: "Macro, FX, materias primas, índices, cripto e IA aplicada al trading. Escrito para leerse en cinco minutos.",
-    pillarsTitle: "Cinco formas de trabajar juntos",
-    pillarsLead: "Cinco servicios, una regla: el capital permanece siempre en la propia cuenta del cliente.",
+    pillarsTitle: "Cuatro formas de trabajar juntos",
+    pillarsLead: "Cuatro servicios, una regla: el capital permanece siempre en la propia cuenta del cliente.",
     pillars: [
       { title: "Sistemas de trading con IA", body: "Algoritmos propios programados, probados y ejecutados en vivo en FX, índices, materias primas y activos digitales.", who: "Para asignadores de capital e inversores técnicos" },
       { title: "Historial", body: "Los resultados de la cartera propia de NUUK y de los sistemas, netos de costes, con la fuente y el método de cada cifra.", who: "Para quien esté decidiendo si confiar en NUUK" },
       { title: "Cuentas gestionadas", body: "Su capital permanece en su propia cuenta de bróker. NUUK la opera bajo límites de riesgo acordados y una comisión de éxito.", who: "Para inversores que prefieren delegar la ejecución" },
-      { title: "Alianza con broker", body: "NUUK es el socio de soluciones de broker Group para Türkiye. Condiciones, regulación y la guía paso a paso para abrir cuenta, en un solo lugar.", who: "Para todos los que abren una cuenta con NUUK" },
       { title: "Señales, informes y formación", body: "Notas diarias, informes semanales, ideas de trading con el razonamiento completo y webinars en vivo que enseñan el método.", who: "Para traders que quieren aprender y mantenerse informados" },
     ],
     record: {
@@ -169,10 +163,10 @@ export const es: ContentOverride = {
       cta: { label: "Ver el historial completo" },
     },
     brokers: {
-      kicker: "Bróker asociado",
-      title: "NUUK trabaja con broker",
-      lead: "NUUK es el socio de soluciones de broker Group para Türkiye, y todo inversor de NUUK abre su cuenta allí. La tarjeta muestra regulación, spreads y condiciones de depósito.",
-      cta: { label: "NUUK × broker" },
+      kicker: "Bróker",
+      title: "Su cuenta permanece en el bróker",
+      lead: "Cada inversor de NUUK mantiene una cuenta de bróker a su propio nombre. NUUK nunca custodia el dinero de los clientes; pregúntenos cómo se abre la cuenta.",
+      cta: { label: "Contacto" },
     },
     systems: {
       kicker: "Trading con IA",
@@ -221,14 +215,10 @@ export const es: ContentOverride = {
       {
         "value": "3",
         "label": "sistemas en producción, 87 variantes de estrategia probadas"
-      },
-      {
-        "value": "1",
-        "label": "bróker asociado: broker Group"
       }
     ],
     "activitiesTitle": "Qué hace NUUK",
-    "activitiesLead": "Cinco actividades y una regla que las atraviesa todas: el capital del cliente permanece en su propia cuenta.",
+    "activitiesLead": "Cuatro actividades y una regla que las atraviesa todas: el capital del cliente permanece en su propia cuenta.",
     "activities": [
       {
         "title": "Sistemas de trading algorítmico",
@@ -237,10 +227,6 @@ export const es: ContentOverride = {
       {
         "title": "Gestión de carteras",
         "body": "Cuentas gestionadas dentro de la propia cuenta de bróker del cliente mediante estructuras MAM/PAMM, bajo un mandato de riesgo por escrito, una comisión de gestión y una comisión de éxito sobre el beneficio neto."
-      },
-      {
-        "title": "Alianza con broker",
-        "body": "NUUK es el socio de soluciones de broker Group para Türkiye. Las cuentas de los inversores y las operaciones corporativas pasan por broker, y la infraestructura institucional de NUUK la aporta broker LP."
       },
       {
         "title": "Investigación y señales",
@@ -271,7 +257,7 @@ export const es: ContentOverride = {
       {
         "year": "2025",
         "title": "NUUK, Dubái",
-        "body": "Fundación en el Dubai International Financial Centre como empresa de trading basada en IA: sistemas, cuentas gestionadas, la alianza con broker, investigación y formación."
+        "body": "Fundación en el Dubai International Financial Centre como empresa de trading basada en IA: sistemas, cuentas gestionadas, investigación y formación."
       },
       {
         "year": "2026",
@@ -281,7 +267,7 @@ export const es: ContentOverride = {
       {
         "year": "Hoy",
         "title": "Una mesa multilingüe",
-        "body": "Un portal del inversor, la alianza con broker y un sitio en seis idiomas al servicio de inversores desde Estambul hasta el Golfo."
+        "body": "Un portal del inversor y un sitio en seis idiomas al servicio de inversores desde Estambul hasta el Golfo."
       }
     ],
     "principlesTitle": "Cómo trabaja NUUK",
@@ -340,7 +326,7 @@ export const es: ContentOverride = {
     ],
     faqTitle: "Preguntas frecuentes",
     faq: [
-      { q: "¿Puedo ejecutar un sistema en mi propia cuenta?", a: "Sí, en una cuenta broker. Puede hacer copy trading, unirse a una estructura MAM/PAMM en broker, o seguir el canal de señales y ejecutar usted mismo. En todos los casos la cuenta permanece a su nombre." },
+      { q: "¿Puedo ejecutar un sistema en mi propia cuenta?", a: "Sí, en una cuenta de bróker a su propio nombre. Puede hacer copy trading, unirse a una estructura MAM/PAMM en el bróker, o seguir el canal de señales y ejecutar usted mismo. En todos los casos la cuenta permanece a su nombre." },
       { q: "¿Cuál es el capital mínimo?", a: "250 USD para las señales de WhatsApp y 1.000 USD para NUUK AI - Premium. Las cuentas gestionadas MAM/PAMM parten de la asignación mínima indicada en la página de cuentas gestionadas." },
       { q: "¿Comparte el código?", a: "No. El código sigue siendo propietario. NUUK publica la metodología, las reglas de riesgo y los resultados, cada uno con su fuente." },
     ],
@@ -351,7 +337,7 @@ export const es: ContentOverride = {
     metaDescription: "Rendimiento de la cartera propia de NUUK y de sus sistemas de trading, con la fuente y el método de cada cifra.",
     kicker: "Historial verificado",
     title: "Cada cifra, con su fuente",
-    lead: "Las cuentas de los inversores se mantienen en broker. Los resultados de esta página pertenecen a la cartera modelo de NUUK, una cuenta distinta de las cuentas de los inversores. Cada cifra indica de dónde procede y cómo se calcula. El rendimiento pasado no garantiza resultados futuros.",
+    lead: "Las cuentas de los inversores se mantienen en el bróker. Los resultados de esta página pertenecen a la cartera modelo de NUUK, una cuenta distinta de las cuentas de los inversores. Cada cifra indica de dónde procede y cómo se calcula. El rendimiento pasado no garantiza resultados futuros.",
     disclaimer: "Los resultados pasados no garantizan resultados futuros. Las cifras son netas de costes de negociación y brutas de cualquier comisión de éxito, salvo que se indique lo contrario.",
     methodologyTitle: "Cómo leer estas cifras",
     methodology: [
@@ -367,12 +353,12 @@ export const es: ContentOverride = {
     metaDescription: "Cómo funcionan las cuentas gestionadas: su capital permanece en su propia cuenta de bróker, operado bajo límites de riesgo acordados.",
     kicker: "Cuentas gestionadas",
     title: "Su cuenta. La ejecución de NUUK. Límites acordados.",
-    lead: "El capital nunca sale de su nombre. Usted abre una cuenta en broker, la conecta a la estructura gestionada y NUUK la opera dentro de un mandato de riesgo por escrito.",
+    lead: "El capital nunca sale de su nombre. Usted abre una cuenta en el bróker, la conecta a la estructura gestionada y NUUK la opera dentro de un mandato de riesgo por escrito.",
     cta: { label: "Solicitar una llamada introductoria" },
     howTitle: "Cómo funciona",
     how: [
       { title: "Llamada de descubrimiento", body: "Hablamos de objetivos, horizonte, necesidades de liquidez y cuánto drawdown puede tolerar realmente." },
-      { title: "Apertura de la cuenta", body: "Usted abre una cuenta en broker a su propio nombre y la financia. NUUK recibe únicamente permiso de negociación, nunca derechos de retiro." },
+      { title: "Apertura de la cuenta", body: "Usted abre una cuenta en el bróker a su propio nombre y la financia. NUUK recibe únicamente permiso de negociación, nunca derechos de retiro." },
       { title: "Mandato de riesgo", body: "Los límites de riesgo se acuerdan en un mandato escrito." },
       { title: "Informes", body: "Usted ve cada operación en tiempo real en su propia cuenta, además de un informe mensual y una llamada de revisión trimestral." },
     ],
@@ -381,11 +367,11 @@ export const es: ContentOverride = {
       {
         "name": "Señales por WhatsApp",
         "tagline": "Las señales le llegan; usted abre las operaciones",
-        "minimum": "250 USD (su propia cuenta en broker)",
+        "minimum": "250 USD (una cuenta de bróker a su propio nombre)",
         "managementFee": "49 USD al mes por la membresía de IA",
         "performanceFee": "Ninguna",
         "lockup": "Ninguno; puede salir cuando quiera",
-        "structure": "Su propia cuenta broker; las señales llegan por WhatsApp",
+        "structure": "Una cuenta de bróker a su propio nombre; las señales llegan por WhatsApp",
         "forWhom": "Quienes empiezan con un saldo pequeño y quieren operar ellos mismos",
         "join": "Unirse",
         "joinText": "Hola. Quiero unirme al programa de señales."
@@ -397,7 +383,7 @@ export const es: ContentOverride = {
         "managementFee": "99 USD al mes",
         "performanceFee": "25% del beneficio neto semanal",
         "lockup": "30 días; después, retiro en cualquier momento",
-        "structure": "Pool MAM / copy trading en broker",
+        "structure": "Pool MAM / copy trading en el bróker",
         "forWhom": "Inversores autónomos que quieren los sistemas sin operarlos",
         "join": "Unirse",
         "joinText": "Hola. Quiero unirme al programa NUUK AI - Premium."
@@ -409,7 +395,7 @@ export const es: ContentOverride = {
         "managementFee": "1.000 USD al mes (cerca del 4,8% anual en el mínimo; proporcionalmente menos por encima)",
         "performanceFee": "25% de los beneficios por encima del high-water mark",
         "lockup": "Preaviso de 30 días",
-        "structure": "PAMM o cuenta gestionada por separado en broker",
+        "structure": "PAMM o cuenta gestionada por separado en el bróker",
         "forWhom": "Family offices, tesorerías corporativas e inversores profesionales",
         "join": "Unirse",
         "joinText": "Hola. Quiero abrir una cuenta dedicada."
@@ -446,124 +432,67 @@ export const es: ContentOverride = {
     fit: ["Inversores que quieren ejecución profesional sin renunciar a la custodia", "Family offices que buscan una asignación satélite a estrategias sistemáticas", "Empresarios con saldos de tesorería inactivos"],
     notFitTitle: "Para quién no es",
     notFit: ["Quien no pueda tolerar un drawdown del 20%", "Capital que se necesite en menos de 3 meses", "Quien espere rentabilidades fijas o garantizadas"],
-    compliance: "NUUK Quant opera desde el Dubai International Financial Centre. Las cuentas gestionadas funcionan a través de la estructura MAM/PAMM propia de broker y bajo su marco regulatorio: NUUK solo tiene permiso de trading, nunca custodia ni derechos de retiro. Las más de 300 cuentas gestionadas hoy están en el pool MAM; los mandatos dedicados se abren individualmente.",
+    compliance: "NUUK Quant opera desde el Dubai International Financial Centre. Las cuentas gestionadas funcionan a través de la estructura MAM/PAMM propia del bróker y bajo su marco regulatorio: NUUK solo tiene permiso de trading, nunca custodia ni derechos de retiro. Las más de 300 cuentas gestionadas hoy están en el pool MAM; los mandatos dedicados se abren individualmente.",
   },
 
   brokers: {
-    metaTitle: "NUUK × broker",
-    metaDescription: "NUUK es el socio de soluciones de broker Group para Türkiye. Regulación, spreads, métodos de depósito, plataformas, liquidez institucional y apertura de cuenta paso a paso.",
-    kicker: "NUUK × broker",
-    title: "Un solo bróker para todo inversor de NUUK: broker",
-    lead: "NUUK es el socio de soluciones de broker Group para Türkiye. Las cuentas de los inversores y las operaciones corporativas pasan por broker, y todo inversor nuevo abre allí su cuenta.",
-    disclosure: "Los enlaces de esta página son enlaces de referido. Si abre y financia una cuenta a través de ellos, NUUK recibe una comisión del bróker. Esto no modifica los spreads ni las comisiones que usted paga.",
+    metaTitle: "",
+    metaDescription: "",
+    kicker: "",
+    title: "",
+    lead: "",
+    disclosure: "",
     hub: {
-      kicker: "NUUK × broker",
-      title: "NUUK es el socio de soluciones de broker Group para Türkiye",
-      points: [
-        { title: "Socio de soluciones para Türkiye", body: "NUUK y broker Group trabajan juntos como socios de soluciones para Türkiye." },
-        { title: "Un solo bróker para todo inversor", body: "Todos los inversores de NUUK tienen su cuenta en broker. La operativa de los inversores y las operaciones corporativas pasan por broker." },
-        { title: "Cuenta broker obligatoria", body: "Los inversores nuevos deben abrir una cuenta broker para trabajar con NUUK." },
-        { title: "Infraestructura de broker LP", body: "La infraestructura institucional de NUUK la aporta broker LP." },
-        { title: "Para brókeres de todo el mundo", body: "NUUK ofrece la infraestructura de broker a brókeres globales bajo el paraguas de NUUK." },
-      ],
-      modelNote: "Los resultados de la página de historial pertenecen a la cartera modelo de NUUK, una cuenta distinta de las cuentas de los inversores.",
-      openAccount: "Abrir una cuenta broker",
-      openAccountHref: "https://broker/es/account/live-account?lp=23&salesid=6069752926",
-      lp: "broker LP",
-      lpHref: "https://broker/en/partnership/institutional-liquidity-offering",
+      kicker: "",
+      title: "",
+      points: [],
+      modelNote: "",
+      openAccount: "",
+      openAccountHref: "",
+      lp: "",
+      lpHref: "",
     },
-    compareTitle: "Comparativa",
+    compareTitle: "",
     partner: {
-      "kicker": "Institucional",
-      "title": "Infraestructura broker para brókeres globales, bajo NUUK",
-      "body": "NUUK ofrece la infraestructura de broker a brókeres de todo el mundo bajo el paraguas de NUUK. Brókeres, introductores y formadores pueden trabajar con nosotros sobre la liquidez de broker LP, un reparto de rebates transparente pagado cada mes y apoyo en la apertura de cuenta y el KYC en turco, árabe e inglés. Las condiciones se acuerdan por escrito.",
-      "points": [
-        "Reparto de rebates transparente, pagado mensualmente",
-        "Apoyo en apertura de cuenta y KYC en tres idiomas",
-        "Liquidez institucional de broker LP"
-      ],
+      "kicker": "",
+      "title": "",
+      "body": "",
+      "points": [],
       "cta": {
-        "label": "Hablar con NUUK"
+        "label": ""
       }
     },
     cardLabels: {
-      contactNote: "Las cuentas en {broker} se abren a través de NUUK en virtud de nuestro acuerdo de colaboración. Contáctenos y le acompañaremos en la apertura; los pasos siguientes muestran lo que le pedirá el bróker.",
-      regulator: "Regulador",
-      licence: "Licencia",
-      founded: "Fundado",
-      minDeposit: "Depósito mínimo",
-      platforms: "Plataformas",
-      spreads: "Spreads típicos",
-      commission: "Comisión",
-      leverage: "Apalancamiento máximo",
-      funding: "Métodos de depósito",
-      withdrawal: "Plazo de retiro",
-      islamic: "Cuenta islámica",
-      languages: "Atención al cliente",
-      bestFor: "Ideal para",
-      pros: "Puntos fuertes",
-      cons: "A tener en cuenta",
-      steps: "Cómo abrir una cuenta",
-      yes: "Sí",
-      no: "No",
-      profile: "Perfil completo",
-      allBrokers: "NUUK × broker",
-      atAGlance: "De un vistazo",
-      conditions: "Condiciones de negociación",
-      about: "Sobre el bróker",
-      website: "Sitio web oficial",
-      faq: "Preguntas frecuentes",
-      openWith: "Cinco pasos hasta una cuenta financiada en",
-      verifyNote: "Condiciones verificadas en el sitio web del bróker el 8 de septiembre de 2026. Compruebe siempre las cifras vigentes antes de depositar.",
+      contactNote: "",
+      regulator: "",
+      licence: "",
+      founded: "",
+      minDeposit: "",
+      platforms: "",
+      spreads: "",
+      commission: "",
+      leverage: "",
+      funding: "",
+      withdrawal: "",
+      islamic: "",
+      languages: "",
+      bestFor: "",
+      pros: "",
+      cons: "",
+      steps: "",
+      yes: "",
+      no: "",
+      profile: "",
+      allBrokers: "",
+      atAGlance: "",
+      conditions: "",
+      about: "",
+      website: "",
+      faq: "",
+      openWith: "",
+      verifyNote: "",
     },
-    list: [
-      {
-        "referralHref": "https://broker/es/account/live-account?lp=23&salesid=6069752926",
-        "ctaNote": "NUUK es el socio de soluciones de broker Group para Türkiye. Los CFD son instrumentos complejos y conllevan un alto riesgo de perder dinero rápidamente debido al apalancamiento; opere solo con dinero que pueda permitirse perder.",
-        "tagline": "Socio de soluciones de NUUK para Türkiye: FX, metales, índices, acciones y cripto en una sola cuenta",
-        "founded": "2005, California",
-        "spreads": [
-          {
-            "value": "desde 1,5 Standard · 0,8 Pro · 0,0 ECN"
-          },
-          {
-            "value": "consulte la plataforma en vivo"
-          }
-        ],
-        "commission": "Standard y Pro: sin comisión, el coste va en el spread · ECN: por lote, consulte la tarifa vigente",
-        "leverage": "hasta 1:1000 (entidad offshore) · 1:30 para minoristas bajo CySEC y ASIC",
-        "withdrawalTime": "Se solicita en el área de clientes broker; el plazo depende del método",
-        "languages": "Soporte multilingüe 24/7 · apertura en turco a través de NUUK",
-        "bestFor": "Inversores en Turquía que quieren una sola cuenta regulada para FX, oro, índices, acciones y cripto, con la apertura en turco",
-        "summary": "broker Group se fundó en California en 2005 y hoy declara más de 2 millones de clientes en 100 países, un volumen diario de unos 35.000 millones de dólares y más de 322 millones de dólares de capital desembolsado. Sus entidades están autorizadas por ASIC, CySEC, MAS, BaFin, CIMA, la Autoridad del Mercado de Capitales de los EAU y otras. Desde octubre de 2026 NUUK es el socio de soluciones de broker Group para Türkiye.",
-        "faq": [
-          {
-            "q": "¿Qué significa para mí la alianza NUUK–broker?",
-            "a": "NUUK es el socio de soluciones de broker Group para Türkiye. Todo inversor de NUUK tiene su cuenta en broker, y los inversores nuevos deben abrir una. Usted abre la cuenta a su nombre en broker; NUUK le acompaña en turco y aporta análisis y formación. NUUK nunca custodia su dinero."
-          },
-          {
-            "q": "¿Cuál es el depósito mínimo?",
-            "a": "50 $ en Standard, 1.000 $ en Pro y 10.000 $ en ECN."
-          },
-          {
-            "q": "¿Está regulada broker?",
-            "a": "Sí, a través de entidades separadas: ASIC AFSL 416279, CySEC 430/23, MAS CMS101174, CIMA 1811316 y otras. La protección y el apalancamiento máximo dependen de la entidad que abra su cuenta."
-          },
-          {
-            "q": "¿Hay cuenta islámica?",
-            "a": "Sí, hay una cuenta sin swap disponible bajo solicitud en países elegibles."
-          },
-          {
-            "q": "¿Gana NUUK con mi cuenta?",
-            "a": "Sí. Como socio de soluciones, NUUK cobra de broker, que le paga de sus propios ingresos. Sus spreads y comisiones no cambian."
-          },
-          {
-            "q": "¿Tengo que abrir una cuenta en broker?",
-            "a": "Sí. Toda persona que se incorpora como inversor de NUUK debe abrir una cuenta broker. La cuenta está a su nombre y NUUK nunca custodia su dinero."
-          }
-        ]
-      },
-    ],
+    list: [],
   },
 
   signals: {
@@ -653,10 +582,10 @@ export const es: ContentOverride = {
   },
   money: {
     "metaTitle": "Cómo ganamos dinero",
-    "metaDescription": "NUUK obtiene ingresos operando con su propio capital, con comisiones de gestión y de éxito sobre las carteras gestionadas, con nuestra alianza con broker y con suscripciones de análisis. Cada comisión, explicada.",
+    "metaDescription": "NUUK obtiene ingresos operando con su propio capital, con comisiones de gestión y de éxito sobre las carteras gestionadas y con suscripciones de análisis. Cada comisión, explicada.",
     "kicker": "Cómo ganamos dinero",
     "title": "Ganamos cuando usted gana. Nuestro capital va primero.",
-    "lead": "NUUK no es un bróker y no toma la contraparte de sus operaciones. Nuestros ingresos proceden de cuatro fuentes transparentes, y la mayor es la misma operativa que gestionamos para usted.",
+    "lead": "NUUK no es un bróker y no toma la contraparte de sus operaciones. Nuestros ingresos proceden de tres fuentes transparentes, y la mayor es la misma operativa que gestionamos para usted.",
     "principlesTitle": "Cuatro principios detrás de cada comisión",
     "principles": [
       {
@@ -692,12 +621,6 @@ export const es: ContentOverride = {
         "how": "Las deduce el bróker de su cuenta y aparecen en cada extracto"
       },
       {
-        "title": "Alianza con broker",
-        "share": "Retrocesiones de socio",
-        "body": "Cuando abre una cuenta en broker a través de NUUK, broker nos paga una parte del spread o de la comisión que obtiene. Sus condiciones de operativa son idénticas a las de un cliente directo. Las condiciones están en nuestra declaración de IB.",
-        "how": "Las paga broker; nunca se añaden a sus costes"
-      },
-      {
         "title": "Análisis y formación",
         "share": "Suscripciones y talleres",
         "body": "Planes de señales y análisis por 750, 1.000 y 5.000 USD al mes, además de talleres de pago y formación corporativa. Los webinarios semanales siguen siendo gratuitos.",
@@ -713,8 +636,7 @@ export const es: ContentOverride = {
       "Recargar spreads, comisiones o swaps",
       "Custodiar su dinero o tener derecho de retirada sobre su cuenta",
       "Operar en su contra o vender su flujo de órdenes",
-      "Cobrar comisión de éxito sobre ganancias no realizadas o sobre beneficios por debajo del máximo histórico",
-      "Aceptar pagos no declarados de broker más allá de la retrocesión declarada"
+      "Cobrar comisión de éxito sobre ganancias no realizadas o sobre beneficios por debajo del máximo histórico"
     ],
     "riskTitle": "La gestión del riesgo es el modelo de negocio",
     "riskLead": "Las comisiones solo funcionan si el capital sobrevive; por eso el riesgo va primero.",
@@ -743,8 +665,8 @@ export const es: ContentOverride = {
         "a": "Solo la comisión de gestión mensual, comunicada antes de firmar. NUUK AI - Premium cobra la comisión de éxito sobre el beneficio neto semanal, así que una semana con pérdidas no paga comisión de éxito. La cuenta dedicada no paga comisión de éxito hasta recuperar la pérdida."
       },
       {
-        "q": "¿Las retrocesiones de IB son un conflicto de interés?",
-        "a": "Pueden serlo, por eso se declaran. broker es el único bróker con el que trabaja NUUK, y las condiciones de esa alianza figuran en la declaración de IB. Sus condiciones de operativa nunca cambian por venir a través de nosotros."
+        "q": "¿Existe algún conflicto de interés?",
+        "a": "Todas las comisiones que cobra NUUK figuran en esta página. Su cuenta está en el bróker, a su propio nombre, y NUUK nunca custodia el dinero de los clientes."
       },
       {
         "q": "¿Cómo se calcula el máximo histórico?",
@@ -774,8 +696,8 @@ export const es: ContentOverride = {
     "metaDescription": "Dónde inician sesión los clientes de cuentas gestionadas, qué informa NUUK cada mes y cómo solicitar acceso.",
     "kicker": "Portal del inversor",
     "title": "Su cuenta, su acceso, sus informes",
-    "lead": "Las cuentas gestionadas están en el bróker, a su nombre. Inicie sesión en el portal de clientes de broker para extractos en tiempo real; NUUK añade el informe mensual y la revisión trimestral.",
-    "portalsTitle": "Portal de clientes de broker",
+    "lead": "Las cuentas gestionadas están en el bróker, a su nombre. Inicie sesión en el portal de clientes de su bróker para ver los extractos en tiempo real; NUUK añade el informe mensual y la revisión trimestral.",
+    "portalsTitle": "Portal de clientes del bróker",
     "portalLabel": "Portal de clientes",
     "reportsTitle": "Lo que recibe de NUUK",
     "reports": [
@@ -817,13 +739,7 @@ export const es: ContentOverride = {
         "a": "En el extracto del bróker, como partidas separadas, y se recogen en el informe mensual."
       }
     ],
-    "portals": [
-      {
-        "slug": "broker",
-        "name": "broker Group",
-        "href": "https://broker/es/account/login"
-      }
-    ]
+    "portals": []
   },
   caseStudies: {
     "metaTitle": "Casos prácticos",
@@ -846,7 +762,7 @@ export const es: ContentOverride = {
         "name": "Tesorería de un family office, Dubái",
         "profile": "Un family office con 500.000 USD de tesorería que debe seguir siendo líquida en 60 días.",
         "objective": "Preservar el capital primero; drawdown máximo del 8%.",
-        "structure": "Una cuenta PAMM dedicada en broker a nombre del family office, operada bajo mandato escrito.",
+        "structure": "Una cuenta PAMM dedicada en el bróker a nombre del family office, operada bajo mandato escrito.",
         "mandate": [
           "Instrumentos: pares mayores de forex, oro, CFD sobre índices de EE. UU. y la UE",
           "Exposición bruta máxima 3× el patrimonio, límite de pérdida diaria del 1%",
@@ -861,7 +777,7 @@ export const es: ContentOverride = {
         "name": "Trader autónomo, Estambul",
         "profile": "Un ingeniero que opera forex por su cuenta desde hace tres años con 5.000 USD y quiere los sistemas sin ejecutarlos.",
         "objective": "Exposición sistemática a los sistemas NUUK, sin comisión de gestión y con salida rápida.",
-        "structure": "MAM agrupado en broker: su propia cuenta, a su nombre, asignada al pool.",
+        "structure": "MAM agrupado en el bróker: su propia cuenta, a su nombre, asignada al pool.",
         "mandate": [
           "Los mismos sistemas y límites de riesgo que el capital propio de NUUK",
           "Riesgo fijo de 300 USD por operación en GANN Live, escalado al tamaño del pool",
@@ -874,17 +790,17 @@ export const es: ContentOverride = {
       {
         "name": "Formadora con audiencia, Riad",
         "profile": "Una formadora de trading con 2.000 alumnos que ya recomienda brókeres de manera informal.",
-        "objective": "Monetizar las recomendaciones con transparencia sin convertirse en bróker ni manejar dinero de clientes.",
-        "structure": "Acuerdo de introductor principal con NUUK: sus alumnos abren cuentas con los enlaces de socios de NUUK; la retrocesión se reparte con ella.",
+        "objective": "Ofrecer a sus alumnos análisis y una estructura clara sin convertirse en bróker ni manejar dinero de clientes.",
+        "structure": "Acuerdo de formación por escrito con NUUK: sus alumnos abren cuentas de bróker a su propio nombre y usan los análisis y webinars de NUUK.",
         "mandate": [
-          "Reparto de retrocesión por escrito, pagado mensualmente con un extracto por cliente",
-          "Orientación de apertura de cuenta broker y KYC en árabe e inglés",
+          "Condiciones por escrito, acordadas antes de que se incorpore el primer alumno",
+          "Orientación sobre la apertura de cuenta y el KYC en árabe e inglés",
           "Material comparativo y calendario económico reutilizables",
-          "Información a los alumnos: la retrocesión la paga broker y las condiciones no cambian"
+          "Aviso claro a los alumnos: las cuentas siguen a su propio nombre en el bróker"
         ],
-        "fees": "Sin coste para ella ni para sus alumnos; el ingreso procede de la retrocesión del bróker, declarada en la declaración de IB.",
+        "fees": "Sin coste para ella ni para sus alumnos.",
         "rows": [],
-        "note": "La retrocesión depende de la tarifa de cada bróker y del volumen de sus alumnos, por lo que aquí no se muestra cifra. Las condiciones se acuerdan por escrito antes de presentar al primer cliente."
+        "note": "Las condiciones se acuerdan por escrito antes de presentar al primer cliente."
       }
     ]
   },
@@ -909,7 +825,7 @@ export const es: ContentOverride = {
       email: "Correo electrónico",
       emailPlaceholder: "usted@empresa.com",
       topic: "Asunto",
-      topics: ["Cuenta gestionada", "Cuenta broker", "Señales e informes", "Formación", "Sistemas de IA", "Otro"],
+      topics: ["Cuenta gestionada", "Señales e informes", "Formación", "Sistemas de IA", "Otro"],
       message: "Mensaje",
       messagePlaceholder: "¿En qué podemos ayudarle?",
       submit: "Enviar",
@@ -928,19 +844,13 @@ export const es: ContentOverride = {
         "Antes de operar debe considerar sus objetivos de inversión, su nivel de experiencia y su apetito por el riesgo, y nunca comprometer capital que no pueda permitirse perder. En caso de duda, solicite asesoramiento a un asesor financiero independiente y autorizado en su jurisdicción.",
         "El rendimiento pasado de cualquier cartera, modelo, estrategia, servicio de señales o sistema de trading mostrado en este sitio web no es un indicador fiable de resultados futuros. Los historiales describen lo que ocurrió, no lo que ocurrirá. Los resultados de backtesting, simulados o de paper trading tienen limitaciones inherentes: se elaboran con conocimiento retrospectivo, no implican riesgo financiero y pueden no reflejar el impacto del deslizamiento, la liquidez o los costes de ejecución.",
         "Nada de lo publicado en este sitio web constituye asesoramiento de inversión personalizado, una recomendación personal ni una oferta o solicitud de compra o venta de ningún instrumento financiero. El contenido es comentario general de mercado y material educativo, y no tiene en cuenta su situación financiera, sus objetivos ni sus necesidades.",
-        "Las cuentas gestionadas operan dentro de la propia cuenta del cliente en broker, bajo su estructura MAM o PAMM y su marco regulatorio. NUUK dispone únicamente de permiso de negociación y nunca asume la custodia de los fondos de los clientes. Las comisiones, los periodos de permanencia y los mandatos de riesgo se establecen en un acuerdo escrito antes de que comience cualquier operativa.",
-        "Los enlaces a broker de este sitio web son enlaces de referido. NUUK puede recibir una comisión de broker cuando usted abre y financia una cuenta a través de ellos; esto no modifica los spreads ni las comisiones que usted paga. Para usar los servicios para inversores de NUUK se requiere una cuenta broker.",
+        "Las cuentas gestionadas operan dentro de la propia cuenta del cliente en el bróker, bajo su estructura MAM o PAMM y su marco regulatorio. NUUK dispone únicamente de permiso de negociación y nunca asume la custodia de los fondos de los clientes. Las comisiones, los periodos de permanencia y los mandatos de riesgo se establecen en un acuerdo escrito antes de que comience cualquier operativa.",
         "NUUK Quant opera desde el Dubai International Financial Centre, Dubái, Emiratos Árabes Unidos. Los servicios se ofrecen únicamente donde lo permitan la legislación y la regulación aplicables; la disponibilidad depende de su país de residencia. Nada de lo publicado en este sitio web está dirigido a ninguna persona en una jurisdicción donde dicha distribución sea contraria a la legislación local.",
       ],
     },
     "ib-disclosure": {
       title: "Declaración de introductor de negocio (IB)",
-      body: [
-        "NUUK es el socio de soluciones de broker Group para Türkiye. Cuando usted abre y financia una cuenta a través de un enlace de referido, broker paga una comisión basada en su volumen de negociación.",
-        "Esta comisión la paga el bróker y no aumenta los spreads, comisiones ni gastos que usted paga. La información sobre el bróker de este sitio web procede de las páginas públicas de broker.",
-        "Los nuevos inversores de NUUK deben abrir una cuenta broker. La infraestructura institucional de NUUK la aporta broker LP, y NUUK ofrece la infraestructura de broker a brókeres de todo el mundo bajo el paraguas de NUUK.",
-        "NUUK trabaja únicamente con broker Group. broker opera además las estructuras MAM/PAMM utilizadas para las cuentas gestionadas.",
-      ],
+      body: [],
     },
     privacy: {
       title: "Política de privacidad",
@@ -950,7 +860,7 @@ export const es: ContentOverride = {
         "Datos recopilados automáticamente. Utilizamos Google Analytics 4 con anonimización de IP para entender cómo se usa el sitio: páginas vistas, ubicación aproximada, tipo de dispositivo y qué botones se pulsan (por ejemplo, un enlace de bróker o un plan). Estos datos están agregados y no le identifican por su nombre. Puede bloquearlos mediante una configuración del navegador o un bloqueador de anuncios.",
         "Cookies y analítica de visitantes. Google Analytics puede instalar cookies para distinguir sesiones. Apollo.io registra las visitas a las páginas y, cuando la visita procede de una red corporativa, puede identificar la empresa detrás de la dirección IP; además enriquece las direcciones de correo profesionales introducidas en nuestros formularios con datos de empresa disponibles públicamente. Ambos pueden instalar cookies. Los sitios de terceros que abra desde nuestros enlaces (brókeres, WhatsApp, redes sociales) aplican sus propias políticas. Las cotizaciones en directo de este sitio son widgets de TradingView incrustados, que se cargan desde los servidores de TradingView y pueden instalar sus propias cookies según la política de privacidad de TradingView. Puede bloquear todo esto con una extensión del navegador o desactivando los scripts de terceros; el sitio funciona sin ellos.",
         "Por qué tratamos los datos. Para responder a su consulta, para prestar los servicios que ha solicitado (cuentas gestionadas, señales, formación), para cumplir obligaciones legales y regulatorias, y para mejorar el sitio web. La base legal es su consentimiento, la ejecución de un acuerdo con usted o nuestro interés legítimo en gestionar el negocio.",
-        "Cesión de datos. No vendemos datos personales. Solo los compartimos con los proveedores de servicios necesarios para operar el sitio web y las comunicaciones (alojamiento, correo electrónico, analítica), con broker cuando usted nos pide que le presentemos, y con las autoridades cuando la ley lo exija.",
+        "Cesión de datos. No vendemos datos personales. Solo los compartimos con los proveedores de servicios necesarios para operar el sitio web y las comunicaciones (alojamiento, correo electrónico, analítica), con el bróker cuando usted nos pide que le presentemos, y con las autoridades cuando la ley lo exija.",
         "Conservación y seguridad. Los datos de las consultas se conservan durante el tiempo necesario para atender la solicitud y hasta cinco años cuando se establece una relación comercial, de acuerdo con las obligaciones regulatorias de conservación de registros. Los datos se almacenan en sistemas con control de acceso.",
         "Sus derechos. Puede solicitar qué datos tenemos sobre usted, pedir que se corrijan o eliminen, oponerse al tratamiento o retirar su consentimiento en cualquier momento escribiendo a info@nuukquant.com. Si reside en la UE, el Reino Unido o el DIFC, también tiene derecho a presentar una reclamación ante su autoridad de protección de datos.",
       ],
@@ -962,7 +872,7 @@ export const es: ContentOverride = {
         "Solo información. El contenido de este sitio web es comentario general de mercado y material educativo. No constituye asesoramiento de inversión personalizado, una recomendación personal ni una oferta o solicitud de compra o venta de ningún instrumento financiero. Usted es responsable de sus propias decisiones de inversión y de confirmar que cualquier servicio está disponible para usted en su país de residencia.",
         "Sin garantía. Operar implica un riesgo sustancial; consulte la advertencia de riesgo. Los resultados pasados, los backtests y los resultados en paper trading no garantizan resultados futuros. Las cifras marcadas como pendientes o ilustrativas no son datos de rendimiento verificados.",
         "Servicios. Las cuentas gestionadas, las suscripciones a señales, la mentoría y los eventos se prestan bajo acuerdos escritos separados que establecen comisiones, alcance, cancelación y límites de riesgo. Dichos acuerdos prevalecen sobre este sitio web en caso de discrepancia.",
-        "Enlaces de terceros. Los enlaces a brókeres, plataformas y redes sociales conducen a sitios que no controlamos. Los enlaces de referido se declaran en la página de declaración de IB. No somos responsables del contenido, la disponibilidad ni las condiciones de los sitios de terceros.",
+        "Enlaces de terceros. Los enlaces a brókeres, plataformas y redes sociales conducen a sitios que no controlamos. No somos responsables del contenido, la disponibilidad ni las condiciones de los sitios de terceros.",
         "Propiedad intelectual. Los textos, gráficos, logotipos, gráficos de datos y descripciones de sistemas de este sitio web pertenecen a NUUK o a sus licenciantes. Puede ver e imprimir páginas para uso personal; cualquier otra reproducción requiere autorización por escrito. Los nombres y logotipos de los brókeres son propiedad de sus respectivos titulares y se utilizan únicamente con fines identificativos.",
         "Responsabilidad. El sitio web se ofrece tal cual. En la medida en que lo permita la ley, NUUK excluye toda responsabilidad por cualquier pérdida derivada del uso del sitio web o de la confianza en su contenido, incluidas pérdidas de trading, pérdida de datos o interrupción del servicio.",
         "Modificaciones y ley aplicable. Podemos modificar estos términos y el sitio web en cualquier momento; la versión vigente se publica siempre aquí. Estos términos se rigen por la legislación aplicable en el Dubai International Financial Centre, y las controversias quedan sometidas a la jurisdicción de los Tribunales del DIFC.",
@@ -975,8 +885,8 @@ export const es: ContentOverride = {
     body: "Cuatro pasos desde la primera llamada hasta la primera operación. La mayoría de las personas está operativa en una semana.",
     steps: [
       { title: "Reserve una llamada", body: "30 minutos para decidir qué servicio encaja: señales, cuenta gestionada o formación." },
-      { title: "Abra una cuenta broker", body: "Obligatoria para todo inversor de NUUK, a su propio nombre. La verificación tarda unos 10 minutos con documento de identidad y comprobante de domicilio." },
-      {"title": "Financiar y conectar", "body": "Financie su cuenta broker: desde 250 USD para las señales de WhatsApp, 1.000 USD para NUUK AI - Premium y 250.000 USD para un mandato dedicado. Conéctela a la estructura elegida."},
+      { title: "Abra una cuenta en un bróker", body: "A su propio nombre. La verificación tarda unos 10 minutos con documento de identidad y comprobante de domicilio." },
+      {"title": "Financiar y conectar", "body": "Financie su cuenta de bróker: desde 250 USD para las señales de WhatsApp, 1.000 USD para NUUK AI - Premium y 250.000 USD para un mandato dedicado. Conéctela a la estructura elegida."},
       { title: "Empiece a operar", body: "Siga el plan, revise los resultados cada mes y nunca abra una operación que no pueda explicar." },
     ],
     cta: { label: "Reservar una llamada" },
@@ -989,7 +899,7 @@ export const es: ContentOverride = {
       "es el nombre comercial de NUUK Quant, empresa de trading basada en IA y gestión de carteras con sede en el Dubai International Financial Centre. Los servicios se ofrecen a clientes profesionales e institucionales donde esté permitido; la disponibilidad depende de su jurisdicción y de la regulación aplicable.",
     legal2:
       "El contenido de este sitio web es comentario general de mercado y material educativo. No constituye asesoramiento de inversión personalizado ni una oferta o solicitud de compra o venta de ningún instrumento financiero o servicio.",
-    ib: "Los enlaces a broker de este sitio web son enlaces de referido. NUUK puede recibir una comisión cuando usted abre y financia una cuenta a través de ellos; esto no modifica las comisiones que usted paga.",
+    ib: "Las cuentas de bróker se abren a su propio nombre y se aplican las comisiones y condiciones del propio bróker. NUUK nunca custodia el dinero de los clientes.",
     risk: "Operar implica un riesgo sustancial y puede generar pérdidas superiores a su inversión inicial. Los resultados pasados no garantizan resultados futuros.",
   },
 

@@ -24,6 +24,7 @@ export default async function InvestorsPage({ params }: { params: LocaleParams }
     <>
       <PageIntro tone="dark" kicker={p.kicker} title={p.title} body={p.lead} crumbs={[{ label: c.ui.home, href: localeHome }, { label: p.kicker }]} />
 
+      {p.portals.length > 0 && (
       <section className="section-pad bg-white" aria-label={p.portalsTitle}>
         <div className="container-x">
           <SectionHead title={p.portalsTitle} />
@@ -54,6 +55,7 @@ export default async function InvestorsPage({ params }: { params: LocaleParams }
           </ul>
         </div>
       </section>
+      )}
 
       <section className="section-pad bg-fog" aria-label={p.reportsTitle}>
         <div className="container-x">

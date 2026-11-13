@@ -52,7 +52,6 @@
     // Kitap: NUUK Quant – The Systematic Trader's Field Guide (TR + EN), tek seferlik (USD).
     book: Object.freeze({ price: 29.99 }),
     // Satın alma düğmeleri bu WhatsApp hattına, hazır mesajla açılır; USDT cüzdan adresi orada paylaşılır.
-    whatsapp: '971586884464',
     // Kitap örneği formu iletişim bilgisini buraya kaydeder (yerelde test hub'ı http://localhost:8798 kullanılır).
     hubUrl: 'https://hub.nuukquant.com',
     buyMessages: Object.freeze(BUY_MESSAGES[lang]),

@@ -49,12 +49,12 @@
     });
   }
 
-  /** Satın alma bağlantıları: WhatsApp'ı ürüne göre hazır mesajla açar. */
+  /** Satın alma bağlantıları: e-postayı ürüne göre hazır mesajla açar. */
   function setupBuyLinks() {
     document.querySelectorAll('[data-buy]').forEach((link) => {
       const message = cfg.buyMessages[link.dataset.buy];
       if (!message) return;
-      link.href = `https://wa.me/${cfg.whatsapp}?text=${encodeURIComponent(message)}`;
+      link.href = `mailto:info@nuukquant.com?subject=${encodeURIComponent('NUUK Masterclass')}&body=${encodeURIComponent(message)}`;
     });
   }
 

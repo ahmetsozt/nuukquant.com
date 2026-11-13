@@ -808,13 +808,12 @@ export const fr: ContentOverride = {
   },
   contact: {
     metaTitle: "Contact",
-    metaDescription: "Réservez un appel, écrivez sur WhatsApp, ou envoyez une demande.",
+    metaDescription: "Réservez un appel ou envoyez une demande.",
     kicker: "Contact",
     title: "Parlons-en",
     lead: "Choisissez le canal qui vous convient. Les demandes institutionnelles et professionnelles reçoivent une réponse sous un jour ouvré.",
     channels: [
       { title: "Réserver un appel", body: "30 minutes, en visio ou par téléphone. Réponse sous un jour ouvré.", cta: "Demander un appel" },
-      { title: "WhatsApp", body: "Questions rapides et échange de documents.", cta: "Écrire" },
       { title: "WhatsApp", body: "Canal de signaux et communauté.", cta: "Rejoindre" },
     ],
     formTitle: "Envoyer une demande",

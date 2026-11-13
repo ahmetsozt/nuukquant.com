@@ -70,8 +70,6 @@
   const formError = form.querySelector('[data-form-error]');
   const submit = form.querySelector('button[type="submit"]');
   const success = dialog.querySelector('[data-sample-success]');
-  const waLink = dialog.querySelector('[data-sample-wa]');
-  const WA_REDIRECT_MS = 1200;
   let edition = cfg.lang;
 
   function setFieldError(name, message) {
@@ -101,12 +99,6 @@
     }
     formError.textContent = /onay|consent/i.test(code) ? TEXT.consent : TEXT.generic;
     formError.hidden = false;
-  }
-
-  /** Seçilen baskıya göre hazır mesajla WhatsApp adresi. */
-  function whatsappUrl() {
-    const text = cfg.buyMessages.sample[edition] || cfg.buyMessages.sample[cfg.lang];
-    return `https://wa.me/${cfg.whatsapp}?text=${encodeURIComponent(text)}`;
   }
 
   /** Boş alanları gönderimden önce yakalar; biçim kuralları hub'da. */
@@ -157,12 +149,8 @@
         showServerError(payload && payload.error, payload && payload.data && payload.data.suggestion);
         return;
       }
-      const wa = whatsappUrl();
-      waLink.href = wa;
       form.hidden = true;
       success.hidden = false;
-      // Mesajın senin numarana düşmesi için WhatsApp'ı kendiliğinden aç; açılmazsa düğme duruyor.
-      setTimeout(() => window.location.assign(wa), WA_REDIRECT_MS);
     } catch (err) {
       formError.textContent = (err && err.user) || TEXT.network;
       formError.hidden = false;

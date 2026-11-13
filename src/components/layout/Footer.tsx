@@ -36,11 +36,6 @@ export default function Footer({ c, locale }: { c: SiteContent; locale: Locale }
                   {brand.email}
                 </a>
               </li>
-              <li>
-                <a href={brand.phoneHref} className="hover:text-white" dir="ltr">
-                  {brand.phone}
-                </a>
-              </li>
               <li className="leading-6">{brand.office}</li>
             </ul>
           </div>

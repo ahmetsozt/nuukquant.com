@@ -41,10 +41,6 @@ export default async function ContactPage({ params }: { params: LocaleParams }) 
                 {brand.email}
               </a>
               <br />
-              <a href={brand.phoneHref} className="hover:text-ink" dir="ltr">
-                {brand.phone}
-              </a>
-              <br />
               <Fill text={brand.office} />
             </div>
           </div>

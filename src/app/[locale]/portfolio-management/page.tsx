@@ -4,7 +4,6 @@ import CtaBand from "@/components/sections/CtaBand";
 import SectionHead from "@/components/ui/SectionHead";
 import Fill from "@/components/ui/Fill";
 import Icon from "@/components/ui/Icon";
-import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 import { resolve, type LocaleParams } from "@/lib/page";
 import { seo } from "@/lib/seo";
 
@@ -58,14 +57,11 @@ export default async function ManagedPage({ params }: { params: LocaleParams }) 
                 </dl>
                 <div className="mt-auto pt-7">
                 <a
-                  href={`${c.brand.whatsapp}?text=${encodeURIComponent(t.joinText)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-event="whatsapp_click"
+                  href={`mailto:info@nuukquant.com?subject=${encodeURIComponent(t.name)}&body=${encodeURIComponent(t.joinText)}`}
+                  data-event="tier_email_click"
                   data-label={`tier:${t.name}`}
-                  className="inline-flex items-center gap-2.5 rounded-full bg-[#25d366] px-6 py-3 text-[15px] font-semibold text-white shadow-[0_10px_24px_-10px_rgba(37,211,102,0.7)] transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25d366]/50"
+                  className="inline-flex items-center gap-2.5 rounded-full bg-primary px-6 py-3 text-[15px] font-semibold text-white transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
                 >
-                  <WhatsAppIcon size={20} />
                   {t.join}
                 </a>
                 </div>

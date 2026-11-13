@@ -38,7 +38,6 @@ export default function Header({ c, locale }: { c: SiteContent; locale: Locale }
   const homeHref = locale === "en" ? "/" : `/${locale}/`;
   const quick = [
     { label: c.ui.whatsappChannel, href: c.brand.whatsappChannel },
-    { label: c.ui.whatsapp, href: c.brand.whatsapp },
   ];
 
   useEffect(() => {

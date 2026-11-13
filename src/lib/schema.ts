@@ -20,7 +20,7 @@ export function organizationSchema(c: SiteContent) {
     foundingDate: "2025",
     slogan: c.home.hero.title,
     email: c.brand.email,
-    telephone: c.brand.phone,
+    telephone: c.brand.phone || undefined,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Dubai International Financial Centre",
@@ -34,11 +34,11 @@ export function organizationSchema(c: SiteContent) {
         "@type": "ContactPoint",
         contactType: "sales",
         email: c.brand.email,
-        telephone: c.brand.phone,
+        telephone: c.brand.phone || undefined,
         availableLanguage: ["English", "Turkish", "Arabic", "Russian", "French", "Spanish"],
       },
     ],
-    sameAs: [c.brand.whatsappChannel, c.brand.whatsapp, ...c.socials.map((s) => s.href)].filter(Boolean),
+    sameAs: [c.brand.whatsappChannel, ...c.socials.map((s) => s.href)].filter(Boolean),
   };
 }
 

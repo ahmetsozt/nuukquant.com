@@ -1565,7 +1565,7 @@ export const tr: ContentOverride = {
   },
   contact: {
     "metaTitle": "İletişim",
-    "metaDescription": "Görüşme talep edin, WhatsApp üzerinden ulaşın ya da bilgi talebi gönderin.",
+    "metaDescription": "Görüşme talep edin ya da bilgi talebi gönderin.",
     "kicker": "İletişim",
     "title": "Bize ulaşın",
     "lead": "Size uygun kanalı seçin. Kurumsal ve profesyonel talepler bir iş günü içinde yanıtlanır.",
@@ -1574,11 +1574,6 @@ export const tr: ContentOverride = {
         "title": "Görüşme talep edin",
         "body": "30 dakika, görüntülü veya telefonla. Bir iş günü içinde dönüş.",
         "cta": "Görüşme Talep Edin"
-      },
-      {
-        "title": "WhatsApp",
-        "body": "Kısa sorular ve belge paylaşımı.",
-        "cta": "Mesaj Gönderin"
       },
       {
         "title": "WhatsApp grubu",

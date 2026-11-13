@@ -41,7 +41,7 @@ export function GET() {
     "- Founded: 2025, Dubai International Financial Centre",
     "- Experience behind the firm: 17 years on Istanbul and London dealing desks",
     "- Services: algorithmic trading systems, managed accounts (MAM/PAMM), research and signals, investor education",
-    `- Contact: ${en.brand.email} · ${en.brand.phone}`,
+    `- Contact: ${en.brand.email}`,
     `- Languages: ${locales.join(", ")}`,
     "- Reporting rule: every published figure states its source (live account, paper trading or backtest) and its method",
     "",

@@ -806,13 +806,12 @@ export const es: ContentOverride = {
   },
   contact: {
     metaTitle: "Contacto",
-    metaDescription: "Reserve una llamada, escriba por WhatsApp, o envíe una consulta.",
+    metaDescription: "Reserve una llamada o envíe una consulta.",
     kicker: "Contacto",
     title: "Hablemos",
     lead: "Elija el canal que más le convenga. Las consultas institucionales y profesionales se responden en un día hábil.",
     channels: [
       { title: "Reservar una llamada", body: "30 minutos, por vídeo o teléfono. Respuesta en un día hábil.", cta: "Solicitar una llamada" },
-      { title: "WhatsApp", body: "Preguntas rápidas e intercambio de documentos.", cta: "Enviar mensaje" },
       { title: "Grupo de WhatsApp", body: "Canal de señales y comunidad.", cta: "Unirse" },
     ],
     formTitle: "Enviar una consulta",

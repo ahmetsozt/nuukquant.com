@@ -1,4 +1,4 @@
-import { en, type SiteContent } from "@/content/en";
+import { en, type NavLink, type SiteContent } from "@/content/en";
 import { tr } from "@/content/tr";
 import { ar } from "@/content/ar";
 import { ru } from "@/content/ru";
@@ -39,11 +39,22 @@ export const trRootAliases: Readonly<Record<string, string>> = {
 };
 
 /**
- * Turkish pages that exist only at a root URL and have no /{locale}/ copy
- * (src/app/antrenman/). The language switcher keeps Turkish on the page and
- * sends every other language to its home page instead of a 404.
+ * NUUK Game lives at one root URL per language (src/app/game/ and
+ * src/app/antrenman/) and has no /{locale}/ copy. The language switcher moves
+ * between the two and sends every other language to its home page instead of a 404.
  */
-export const trOnlyRootPages: readonly string[] = ["/antrenman/"];
+export const gamePaths = { en: "/game/", tr: "/antrenman/" } as const satisfies Partial<Record<Locale, string>>;
+type GameLocale = keyof typeof gamePaths;
+
+function isGameLocale(locale: Locale): locale is GameLocale {
+  return locale in gamePaths;
+}
+
+/** Language of a NUUK Game URL ("/antrenman/" → "tr"), or null for any other path. */
+function gameLocale(path: string): GameLocale | null {
+  const hit = Object.entries(gamePaths).find(([, gamePath]) => gamePath === path);
+  return hit ? (hit[0] as GameLocale) : null;
+}
 
 /** Locale-less path for a Turkish root alias ("/uyelik/" → "/membership/"), or null. */
 function aliasTarget(path: string): string | null {
@@ -59,12 +70,12 @@ export function localePath(locale: Locale, href: string): string {
   return `/${locale}${href === "/" ? "/" : href}`;
 }
 
-/** Locale of a pathname, counting the Turkish root aliases and Turkish-only root pages as Turkish. */
+/** Locale of a pathname, counting the Turkish root aliases as Turkish and each NUUK Game URL as its own language. */
 export function localeFromPath(pathname: string): Locale {
   const first = pathname.split("/").filter(Boolean)[0] ?? "";
   if (isLocale(first)) return first;
   const normalised = `/${pathname.split("/").filter(Boolean).join("/")}/`;
-  return aliasTarget(normalised) || trOnlyRootPages.includes(normalised) ? "tr" : defaultLocale;
+  return aliasTarget(normalised) ? "tr" : (gameLocale(normalised) ?? defaultLocale);
 }
 
 /** Swap the locale segment of a pathname (used by the language switcher). */
@@ -72,7 +83,7 @@ export function switchLocale(pathname: string, to: Locale): string {
   const parts = pathname.split("/").filter(Boolean);
   if (parts.length && isLocale(parts[0])) parts.shift();
   const rest = parts.length ? `/${parts.join("/")}/` : "/";
-  if (trOnlyRootPages.includes(rest)) return to === "tr" ? rest : localePath(to, "/");
+  if (gameLocale(rest)) return isGameLocale(to) ? gamePaths[to] : localePath(to, "/");
   return localePath(to, aliasTarget(rest) ?? rest);
 }
 
@@ -113,6 +124,19 @@ function prefixHrefs<T>(value: T, locale: Locale, key?: string): T {
 }
 
 const overrides: Record<Locale, ContentOverride> = { en: {}, tr, ar, ru, fr, es };
+const GAME_NAV_LABEL = "NUUK Game";
+
+/**
+ * Adds NUUK Game to the first menu group in the languages that have the page.
+ * It joins after the locale prefix is applied, because the page has no /{locale}/ copy.
+ */
+function withGameNav(content: SiteContent, locale: Locale): SiteContent {
+  if (!isGameLocale(locale) || content.nav.length === 0) return content;
+  const item: NavLink = { label: GAME_NAV_LABEL, href: gamePaths[locale] };
+  const [first, ...rest] = content.nav;
+  return { ...content, nav: [{ ...first, items: [...first.items, item] }, ...rest] };
+}
+
 const cache = new Map<Locale, SiteContent>();
 
 /** Localised content with internal links already prefixed for the locale. */
@@ -120,7 +144,7 @@ export function getContent(locale: Locale): SiteContent {
   const hit = cache.get(locale);
   if (hit) return hit;
   const merged = merge(en, overrides[locale]);
-  const out = prefixHrefs(merged, locale);
+  const out = withGameNav(prefixHrefs(merged, locale), locale);
   cache.set(locale, out);
   return out;
 }

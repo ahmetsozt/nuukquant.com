@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { en } from "@/content/en";
-import { locales } from "@/i18n";
+import { gamePaths, locales } from "@/i18n";
 import { pageUrl, SITE } from "@/lib/seo";
 
 export const dynamic = "force-static";
@@ -37,8 +37,8 @@ const PAGES = [
 const MASTERCLASS = { tr: `${SITE}/masterclass/`, en: `${SITE}/masterclass/en/` } as const;
 /** Turkish free-signals record at the short URL (src/app/free-signals/). */
 const FREE_SIGNALS_RECORD = `${SITE}/free-signals/`;
-/** Turkish trainer game at the short URL (src/app/antrenman/). */
-const TRAINER = `${SITE}/antrenman/`;
+/** NUUK Game: English at /game/ (src/app/game/), Turkish at /antrenman/ (src/app/antrenman/). */
+const GAME = { en: `${SITE}${gamePaths.en}`, tr: `${SITE}${gamePaths.tr}` } as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -51,8 +51,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: { languages: { tr: MASTERCLASS.tr, en: MASTERCLASS.en, "x-default": MASTERCLASS.tr } },
   }));
   const record = { url: FREE_SIGNALS_RECORD, lastModified: now, changeFrequency: "daily" as const, priority: 0.8 };
-  const trainer = { url: TRAINER, lastModified: now, changeFrequency: "monthly" as const, priority: 0.6 };
-  return [record, trainer, ...masterclass, ...PAGES.flatMap((page) =>
+  const game = (["en", "tr"] as const).map((lang) => ({
+    url: GAME[lang],
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+    alternates: { languages: { en: GAME.en, tr: GAME.tr, "x-default": GAME.en } },
+  }));
+  return [record, ...game, ...masterclass, ...PAGES.flatMap((page) =>
     locales.map((locale) => ({
       url: url(locale, page),
       lastModified: now,

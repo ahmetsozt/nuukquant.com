@@ -1,5 +1,6 @@
 import { advance, createChart, createRound, enterableSetup, readTheme } from "./engine";
 import { describe } from "./view";
+import { getStrings, patternName, type GameLang } from "./strings";
 import type { Game } from "./session";
 import type { Hold, HudView, RoundState } from "./types";
 
@@ -14,13 +15,15 @@ const sameView = (a: HudView | null, b: HudView): boolean => a !== null && (Obje
  */
 export function runRound(options: {
   game: Game;
+  lang: GameLang;
   canvas: HTMLCanvasElement;
   getHold: () => Hold;
   onView: (view: HudView) => void;
   onDone: (state: RoundState) => void;
 }): () => void {
-  const { game, canvas, getHold, onView, onDone } = options;
-  const chart = createChart(canvas, readTheme());
+  const { game, lang, canvas, getHold, onView, onDone } = options;
+  const t = getStrings(lang);
+  const chart = createChart(canvas, readTheme(), t.chart);
   let state = createRound(game.range);
   let lastTime: number | null = null;
   let lastView: HudView | null = null;
@@ -31,12 +34,13 @@ export function runRound(options: {
     lastTime = now;
     state = advance(game.ctx, state, dt * game.ctx.cfg.BARS_PER_SECOND, getHold());
     const active = state.pos ? null : enterableSetup(game.ctx, state);
-    const view = describe(game.ctx, state, active);
+    const view = describe(game.ctx, state, active, lang);
     if (!sameView(lastView, view)) {
       lastView = view;
       onView(view);
     }
-    chart.draw({ candles: game.ctx.candles, setups: game.ctx.setups, state, active });
+    const activeName = active ? patternName(t, active.kind, active.dir) : null;
+    chart.draw({ candles: game.ctx.candles, setups: game.ctx.setups, state, active, activeName });
     if (state.done) {
       onDone(state);
       return;

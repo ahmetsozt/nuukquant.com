@@ -84,8 +84,11 @@ function marker(g, x, y, dir) {
   g.fill();
 }
 
-/** Kapanmis setuplar kucuk ucgenle, girise acik olan adi ve stop cizgisiyle gosterilir. */
-export function drawSetups(g, frame, scene, theme) {
+/**
+ * Kapanmis setuplar kucuk ucgenle, girise acik olan adi ve stop cizgisiyle gosterilir.
+ * Ad `scene.activeName` ile, etiketler `labels` ile oyuncunun dilinde gelir.
+ */
+export function drawSetups(g, frame, scene, theme, labels) {
   const shown = scene.setups.filter((setup) => setup.at >= frame.first && setup.at < frame.last);
   for (const setup of shown) {
     const candle = scene.candles[setup.at];
@@ -101,9 +104,9 @@ export function drawSetups(g, frame, scene, theme) {
     g.textAlign = 'center';
     g.fillStyle = theme.cyan;
     const labelX = Math.min(frame.plotW - 70, Math.max(70, x));
-    g.fillText(setup.name, labelX, tipY + setup.dir * 24);
+    g.fillText(scene.activeName ?? '', labelX, tipY + setup.dir * 24);
     hLine(g, x, frame.plotW, frame.yOf(setup.stop), theme.down, [4, 4]);
-    gutterTag(g, frame, theme, frame.yOf(setup.stop), 'STOP', theme.down);
+    gutterTag(g, frame, theme, frame.yOf(setup.stop), labels.stop, theme.down);
   }
 }
 
@@ -135,7 +138,7 @@ export function drawRides(g, frame, rides, theme) {
 }
 
 /** Acik pozisyon: giris, stop ve hedef cizgileri ile kar / zarar bolgesi. */
-export function drawPosition(g, frame, pos, theme) {
+export function drawPosition(g, frame, pos, theme, labels) {
   if (!pos) return;
   const x0 = Math.max(0, frame.xOfK(pos.entryK));
   const yEntry = frame.yOf(pos.entry);
@@ -148,8 +151,8 @@ export function drawPosition(g, frame, pos, theme) {
   hLine(g, x0, frame.plotW, yEntry, theme.ink, [2, 3]);
   hLine(g, x0, frame.plotW, frame.yOf(pos.stop), theme.down);
   hLine(g, x0, frame.plotW, frame.yOf(pos.target), theme.up);
-  gutterTag(g, frame, theme, frame.yOf(pos.stop), 'STOP', theme.down);
-  gutterTag(g, frame, theme, frame.yOf(pos.target), '+2R', theme.up);
+  gutterTag(g, frame, theme, frame.yOf(pos.stop), labels.stop, theme.down);
+  gutterTag(g, frame, theme, frame.yOf(pos.target), labels.target, theme.up);
 }
 
 export function drawPriceTag(g, frame, theme) {

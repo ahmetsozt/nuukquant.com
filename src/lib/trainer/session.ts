@@ -1,23 +1,30 @@
 import { CONFIG, dayNumber, formatR, hashString, mechanicalOutcomes, pickRound, summarize, type RoundContext } from "./engine";
 import { loadManifest, loadSet, type MarketSet } from "./data";
-import type { Outcome, Ride, RoundState, Summary } from "./types";
+import { getStrings, type GameLang, type TrainerStrings } from "./strings";
+import type { Outcome, Ride, RoundState, Summary, Timeframe } from "./types";
+import { gamePaths } from "@/i18n";
+import { SITE } from "@/lib/seo";
 
+/** One key per day for every language: the daily result is the same game on both pages. */
 const STORAGE_PREFIX = "nuuk-trainer:daily:";
-export const DISCLAIMER = "Eğitim simülasyonudur, yatırım tavsiyesi değildir.";
 
-export interface Game {
+/** The chart of a round, before it is labelled for a language. */
+interface Round {
   daily: boolean;
   date: string;
-  label: string;
   set: MarketSet;
   ctx: RoundContext;
   range: { startK: number; endK: number };
 }
 
+export interface Game extends Round {
+  label: string;
+}
+
 export interface RoundResult {
   label: string;
   note: string;
-  chart: { sym: string; tfLabel: string; fromT: number; toT: number };
+  chart: { sym: string; tf: Timeframe; fromT: number; toT: number };
   summary: Summary;
   rides: readonly Ride[];
   outcomes: Outcome[];
@@ -37,7 +44,7 @@ function randomSeed(): number {
 }
 
 /** Picks a market and a 150-bar window. The daily seed gives everyone the same chart. */
-export async function createGame(daily: boolean): Promise<Game> {
+async function loadRound(daily: boolean): Promise<Round> {
   const date = todayUtc();
   const seed = daily ? hashString(date) : randomSeed();
   const manifest = await loadManifest();
@@ -46,11 +53,22 @@ export async function createGame(daily: boolean): Promise<Game> {
   return {
     daily,
     date,
-    label: daily ? `Günün grafiği #${dailyNumber(date)}` : "Serbest antrenman",
     set,
     ctx: { candles: set.candles, setups: set.setups, cfg: CONFIG },
     range: { startK: pick.startK, endK: pick.endK },
   };
+}
+
+/** Name of the daily round; without a date (static HTML) the number is left out. */
+export function dailyLabel(lang: GameLang, date: string): string {
+  const { session } = getStrings(lang);
+  return date ? session.dailyLabel(dailyNumber(date)) : session.dailyLabelPlain;
+}
+
+/** A round ready to play, named in the player's language. The chart itself does not depend on it. */
+export async function createGame(daily: boolean, lang: GameLang): Promise<Game> {
+  const round = await loadRound(daily);
+  return { ...round, label: daily ? dailyLabel(lang, round.date) : getStrings(lang).session.freeLabel };
 }
 
 /**
@@ -60,7 +78,7 @@ export async function createGame(daily: boolean): Promise<Game> {
  * and shows the error there.
  */
 export function warmDailyGame(): void {
-  createGame(true).catch(() => undefined);
+  loadRound(true).catch(() => undefined);
 }
 
 /** Raw stored value for the day, or null. Storage can be blocked; the game still runs. */
@@ -88,11 +106,10 @@ export function parseDaily(raw: string | null): DailyRecord | null {
 
 type SaveStatus = "saved" | "exists" | "unavailable";
 
-const DAILY_NOTES: Readonly<Record<SaveStatus, string>> = {
-  saved: "",
-  exists: "Bu tur tekrar oyunuydu. Günün kayıtlı sonucu ilk oynadığın turdur.",
-  unavailable: "Tarayıcın kayıt tutmaya izin vermediği için bu sonuç saklanmadı.",
-};
+function dailyNote(t: TrainerStrings, status: SaveStatus): string {
+  if (status === "exists") return t.session.replayNote;
+  return status === "unavailable" ? t.session.unsavedNote : "";
+}
 
 /** Keeps only the first result of the day; storage may be blocked (private browsing). */
 function saveDailyOnce(date: string, summary: Summary): SaveStatus {
@@ -105,22 +122,23 @@ function saveDailyOnce(date: string, summary: Summary): SaveStatus {
   }
 }
 
-export function buildResult(game: Game, state: RoundState): RoundResult {
+export function buildResult(game: Game, state: RoundState, lang: GameLang): RoundResult {
+  const t = getStrings(lang);
   const summary = summarize(state.rides);
-  const note = game.daily ? DAILY_NOTES[saveDailyOnce(game.date, summary)] : "";
+  const note = game.daily ? dailyNote(t, saveDailyOnce(game.date, summary)) : "";
   const discipline = summary.discipline === null ? "—" : `${summary.discipline}/100`;
   return {
     label: game.label,
     note,
     chart: {
       sym: `${game.set.sym}/USD`,
-      tfLabel: game.set.tfLabel,
+      tf: game.set.tf,
       fromT: game.ctx.candles[game.range.startK].t,
       toT: game.ctx.candles[game.range.endK].t,
     },
     summary,
     rides: state.rides,
     outcomes: mechanicalOutcomes(game.ctx, game.range.startK, game.range.endK),
-    shareText: `NUUK Antrenman · ${game.label}\nToplam: ${formatR(summary.totalR)} · Disiplin: ${discipline}\n${DISCLAIMER}\nhttps://www.nuukquant.com/antrenman/`,
+    shareText: t.session.shareText({ label: game.label, total: formatR(summary.totalR), discipline, url: `${SITE}${gamePaths[lang]}` }),
   };
 }

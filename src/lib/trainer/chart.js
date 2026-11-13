@@ -81,8 +81,9 @@ function buildFrame(scene, size) {
 /**
  * @param {HTMLCanvasElement} canvas
  * @param {ReturnType<typeof readTheme>} theme
+ * @param {{ stop: string, target: string }} labels tuvale yazilan sabit etiketler, oyuncunun dilinde
  */
-export function createChart(canvas, theme) {
+export function createChart(canvas, theme, labels) {
   const g = canvas.getContext('2d');
   if (!g) throw new Error('Tuval desteklenmiyor');
   let size = { w: 0, h: 0 };
@@ -98,16 +99,16 @@ export function createChart(canvas, theme) {
   observer.observe(canvas);
   resize();
 
-  /** @param {{ candles: object[], setups: object[], state: object, active: object | null }} scene */
+  /** @param {{ candles: object[], setups: object[], state: object, active: object | null, activeName: string | null }} scene */
   const draw = (scene) => {
     if (size.w < RIGHT_GUTTER * 2 || size.h < PAD_TOP * 4) return;
     const frame = buildFrame(scene, size);
     g.clearRect(0, 0, size.w, size.h);
     drawGrid(g, frame, theme);
     drawCandles(g, frame, theme);
-    drawSetups(g, frame, scene, theme);
+    drawSetups(g, frame, scene, theme, labels);
     drawRides(g, frame, scene.state.rides, theme);
-    drawPosition(g, frame, scene.state.pos, theme);
+    drawPosition(g, frame, scene.state.pos, theme, labels);
     drawPriceTag(g, frame, theme);
   };
 

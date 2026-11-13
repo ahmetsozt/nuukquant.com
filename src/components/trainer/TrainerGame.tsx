@@ -7,8 +7,9 @@ import TrainerResults from "@/components/trainer/TrainerResults";
 import { useHold } from "@/components/trainer/useHold";
 import { formatR } from "@/lib/trainer/engine";
 import { runRound } from "@/lib/trainer/loop";
-import { buildResult, createGame, dailyNumber, parseDaily, readDailyRaw, todayUtc, warmDailyGame, type Game, type RoundResult } from "@/lib/trainer/session";
-import { IDLE_VIEW } from "@/lib/trainer/view";
+import { buildResult, createGame, dailyLabel, parseDaily, readDailyRaw, todayUtc, warmDailyGame, type Game, type RoundResult } from "@/lib/trainer/session";
+import { getStrings, type GameLang } from "@/lib/trainer/strings";
+import { idleView } from "@/lib/trainer/view";
 import type { HudView } from "@/lib/trainer/types";
 
 type Phase = "idle" | "loading" | "playing" | "done" | "error";
@@ -22,16 +23,17 @@ function Overlay({ children }: { children: React.ReactNode }) {
 }
 
 /**
- * NUUK Antrenman: a 60-second rule drill on recorded candles. Hold LONG or SHORT
+ * NUUK Game: a 60-second rule drill on recorded candles. Hold LONG or SHORT
  * to ride, let go to close; the stop and the 2R target close the ride on their own.
  */
-export default function TrainerGame() {
+export default function TrainerGame({ lang }: { lang: GameLang }) {
+  const t = getStrings(lang);
   // The date and the saved result exist only in the browser; the static HTML renders without them.
   const today = useSyncExternalStore(noSubscription, readToday, () => "");
   const saved = parseDaily(useSyncExternalStore(noSubscription, readSaved, () => null));
 
   const [phase, setPhase] = useState<Phase>("idle");
-  const [view, setView] = useState<HudView>(IDLE_VIEW);
+  const [view, setView] = useState<HudView>(idleView(lang));
   const [game, setGame] = useState<Game | null>(null);
   const [result, setResult] = useState<RoundResult | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -39,28 +41,31 @@ export default function TrainerGame() {
   const hasPlayed = useRef(false);
   const { getHold, bind } = useHold(phase === "playing");
 
-  const begin = useCallback((next: Game) => {
-    hasPlayed.current = true;
-    setResult(null);
-    setView(IDLE_VIEW);
-    setGame(next);
-    setPhase("playing");
-    // Bring the whole board (score, chart, keys) into view so a phone shows all of it.
-    const isCalm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    requestAnimationFrame(() => boardRef.current?.scrollIntoView({ block: "start", behavior: isCalm ? "auto" : "smooth" }));
-  }, []);
+  const begin = useCallback(
+    (next: Game) => {
+      hasPlayed.current = true;
+      setResult(null);
+      setView(idleView(lang));
+      setGame(next);
+      setPhase("playing");
+      // Bring the whole board (score, chart, keys) into view so a phone shows all of it.
+      const isCalm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      requestAnimationFrame(() => boardRef.current?.scrollIntoView({ block: "start", behavior: isCalm ? "auto" : "smooth" }));
+    },
+    [lang],
+  );
 
   const startNew = useCallback(
     async (daily: boolean) => {
       setPhase("loading");
       try {
-        begin(await createGame(daily));
+        begin(await createGame(daily, lang));
       } catch (error) {
         console.error("Trainer data failed to load", error);
         setPhase("error");
       }
     },
-    [begin],
+    [begin, lang],
   );
 
   useEffect(() => {
@@ -68,15 +73,16 @@ export default function TrainerGame() {
     if (phase !== "playing" || !game || !canvas) return;
     return runRound({
       game,
+      lang,
       canvas,
       getHold,
       onView: setView,
       onDone: (state) => {
-        setResult(buildResult(game, state));
+        setResult(buildResult(game, state, lang));
         setPhase("done");
       },
     });
-  }, [phase, game, getHold]);
+  }, [phase, game, getHold, lang]);
 
   useEffect(warmDailyGame, []);
 
@@ -91,52 +97,47 @@ export default function TrainerGame() {
 
   const quit = useCallback(() => {
     setPhase("idle");
-    setView(IDLE_VIEW);
-  }, []);
+    setView(idleView(lang));
+  }, [lang]);
 
-  const dailyLabel = today ? `Günün grafiği #${dailyNumber(today)}` : "Günün grafiği";
   const isDone = phase === "done" && result !== null;
 
   return (
     <div>
       <div ref={boardRef} className={`scroll-mt-[calc(var(--header-h)+0.75rem)] ${isDone ? "hidden" : ""}`}>
-        <TrainerBoard view={view} canvasRef={canvasRef} bind={bind} isPlaying={phase === "playing"} label={game && phase === "playing" ? game.label : "60 saniyelik tur"} onQuit={quit}>
+        <TrainerBoard view={view} canvasRef={canvasRef} bind={bind} isPlaying={phase === "playing"} label={game && phase === "playing" ? game.label : t.board.idleLabel} lang={lang} onQuit={quit}>
           {phase === "idle" && (
             <Overlay>
-              <p className="max-w-[420px] text-[16px] leading-6 text-soft">Herkes aynı grafiği oynar ya da rastgele bir grafikte serbest çalışırsın. Piyasa ve tarih tur bitince açıklanır.</p>
+              <p className="max-w-[420px] text-[16px] leading-6 text-soft">{t.game.intro}</p>
               <div className="flex flex-wrap justify-center gap-3">
                 <Button onClick={() => startNew(true)} event="trainer_action" eventLabel="start_daily">
-                  {dailyLabel}
+                  {dailyLabel(lang, today)}
                 </Button>
                 <Button onClick={() => startNew(false)} variant="outline" event="trainer_action" eventLabel="start_free">
-                  Serbest antrenman
+                  {t.session.freeLabel}
                 </Button>
               </div>
-              {saved && (
-                <p className="text-[13px] text-soft/80">
-                  Bugünkü sonucun: {formatR(saved.totalR)} · disiplin {saved.discipline ?? "—"}. Tekrar oynayabilirsin, ilk sonuç kayıtlı kalır.
-                </p>
-              )}
+              {saved && <p className="text-[13px] text-soft/80">{t.game.saved(formatR(saved.totalR), String(saved.discipline ?? "—"))}</p>}
             </Overlay>
           )}
           {phase === "loading" && (
             <Overlay>
               <p role="status" className="text-[16px] text-soft">
-                Grafik yükleniyor…
+                {t.game.loading}
               </p>
             </Overlay>
           )}
           {phase === "error" && (
             <Overlay>
               <p role="alert" className="max-w-[420px] text-[16px] leading-6 text-soft">
-                Grafik verisi yüklenemedi. Bağlantını kontrol edip tekrar dene.
+                {t.game.error}
               </p>
-              <Button onClick={() => startNew(false)}>Tekrar dene</Button>
+              <Button onClick={() => startNew(false)}>{t.game.retry}</Button>
             </Overlay>
           )}
         </TrainerBoard>
       </div>
-      {isDone && game && <TrainerResults result={result} onReplay={() => begin(game)} onNew={() => startNew(false)} />}
+      {isDone && game && <TrainerResults result={result} lang={lang} onReplay={() => begin(game)} onNew={() => startNew(false)} />}
     </div>
   );
 }

@@ -5,13 +5,13 @@
  */
 import { CONFIG } from "./config.js";
 import { priceAt as priceAtJs, toCandles } from "./candles.js";
-import { detectSetups, PATTERNS as PATTERNS_JS } from "./patterns.js";
+import { detectSetups } from "./patterns.js";
 import { rAt as rAtJs } from "./position.js";
 import { advance as advanceJs, createRound as createRoundJs, enterableSetup as enterableSetupJs, mechanicalOutcomes as mechanicalOutcomesJs } from "./round.js";
 import { formatR as formatRJs, summarize as summarizeJs, summarizeOutcomes as summarizeOutcomesJs } from "./scoring.js";
 import { dayNumber as dayNumberJs, hashString as hashStringJs, pickRound as pickRoundJs } from "./daily.js";
 import { createChart as createChartJs, readTheme as readThemeJs } from "./chart.js";
-import type { Candle, ChartScene, Hold, Outcome, OutcomeCounts, PatternKind, Position, Ride, RoundState, Setup, Summary } from "./types";
+import type { Candle, ChartLabels, ChartScene, Hold, Outcome, OutcomeCounts, Position, Ride, RoundState, Setup, Summary } from "./types";
 
 export { CONFIG };
 export type TrainerConfig = typeof CONFIG;
@@ -34,8 +34,6 @@ export interface Chart {
   destroy: () => void;
 }
 
-export const PATTERNS = PATTERNS_JS as Readonly<Record<PatternKind, { names: string[]; lesson: string }>>;
-
 export const parseCandles = toCandles as (rows: unknown) => Candle[];
 export const priceAt = priceAtJs as (candles: Candle[], k: number) => number;
 export const findSetups = detectSetups as (candles: Candle[], cfg: TrainerConfig) => Setup[];
@@ -55,4 +53,4 @@ export const dayNumber = dayNumberJs as (date: string, epoch: string) => number;
 export const pickRound = pickRoundJs as (sets: ReadonlyArray<{ candles: Candle[]; setups: Setup[] }>, seed: number, cfg: TrainerConfig) => RoundPick;
 
 export const readTheme = readThemeJs as () => Readonly<Record<string, string>>;
-export const createChart = createChartJs as (canvas: HTMLCanvasElement, theme: Readonly<Record<string, string>>) => Chart;
+export const createChart = createChartJs as (canvas: HTMLCanvasElement, theme: Readonly<Record<string, string>>, labels: ChartLabels) => Chart;

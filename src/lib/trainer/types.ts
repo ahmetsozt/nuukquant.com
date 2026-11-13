@@ -6,6 +6,8 @@ export type Hold = Dir | 0;
 export type Sign = "1" | "-1" | "0";
 export type PatternKind = "star" | "engulfing" | "hammer";
 export type ExitReason = "stop" | "target" | "manual" | "time";
+/** Candle size of a market pack, as written in public/trainer/manifest.json. */
+export type Timeframe = "5m" | "15m" | "1h";
 
 export interface Candle {
   t: number;
@@ -104,4 +106,12 @@ export interface ChartScene {
   setups: Setup[];
   state: RoundState;
   active: Setup | null;
+  /** Name drawn next to the setup open for entry, already in the player's language. */
+  activeName: string | null;
+}
+
+/** Fixed text the chart canvas draws, in the player's language. */
+export interface ChartLabels {
+  stop: string;
+  target: string;
 }

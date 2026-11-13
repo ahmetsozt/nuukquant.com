@@ -12,6 +12,7 @@ import BrokersPreview from "@/components/home/BrokersPreview";
 import SystemsPreview from "@/components/home/SystemsPreview";
 import SignalPreview from "@/components/home/SignalPreview";
 import EducationPreview from "@/components/home/EducationPreview";
+import GameTeaser from "@/components/home/GameTeaser";
 import LatestPosts from "@/components/home/LatestPosts";
 import CtaBand from "@/components/sections/CtaBand";
 
@@ -30,6 +31,8 @@ export default function HomeSections({ c, locale }: { c: SiteContent; locale: Lo
       <SystemsPreview c={c} />
       <SignalPreview c={c} />
       <EducationPreview c={c} />
+      {/* NUUK Game exists in English and Turkish only, so only those home pages link to it. */}
+      {(locale === "en" || locale === "tr") && <GameTeaser lang={locale} />}
       <LatestPosts c={c} />
       <CtaBand c={c} />
     </>

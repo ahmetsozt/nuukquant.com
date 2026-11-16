@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { IBM_Plex_Sans_Arabic, Manrope } from "next/font/google";
 import Reveal from "@/components/ui/Reveal";
 import AuthRedirect from "@/components/layout/AuthRedirect";
@@ -106,6 +107,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ViewCounter />
         <Consent labels={cookieLabels} />
         <AuthRedirect />
+        {/* Counterscale: cerezsiz site analitigi (kendi Cloudflare hesabimizda) */}
+        <Script
+          id="counterscale-script"
+          data-site-id="nuukquant.com"
+          src="https://counterscale.ph-yi-g.workers.dev/tracker.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

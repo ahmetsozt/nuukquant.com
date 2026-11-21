@@ -70,7 +70,7 @@ function fmt(lang: Lang) {
 }
 
 function StatusPill({ status, label }: { status: Status; label: string }) {
-  return <span className={`inline-flex rounded-pill px-2.5 py-0.5 text-[12px] font-semibold whitespace-nowrap ${STATUS_TONE[status]}`}>{label}</span>;
+  return <span className={`inline-flex rounded-md px-2.5 py-0.5 text-[12px] font-semibold whitespace-nowrap ${STATUS_TONE[status]}`}>{label}</span>;
 }
 
 function LiveCard({ s, t, f }: { s: Signal; t: (typeof COPY)[Lang]; f: ReturnType<typeof fmt> }) {
@@ -83,8 +83,8 @@ function LiveCard({ s, t, f }: { s: Signal; t: (typeof COPY)[Lang]; f: ReturnTyp
   return (
     <li className="relative overflow-hidden rounded-card-sm bg-ink p-6 text-white ring-1 ring-white/10">
       <div className="flex items-center justify-between gap-3">
-        <p className="num text-[22px] font-bold">{s.symbol}</p>
-        <span className="rounded-pill bg-cyan px-3 py-1 text-[11.5px] font-bold tracking-wide text-navy-deep uppercase">{s.side}</span>
+        <p className="num text-[22px] font-semibold">{s.symbol}</p>
+        <span className="rounded-md bg-cyan px-3 py-1 text-[11.5px] font-semibold text-navy-deep">{s.side}</span>
       </div>
       <dl className="mt-4 grid grid-cols-4 gap-2 border-y border-white/10 py-3">
         {cells.map(([k, v, tone]) => (
@@ -143,7 +143,7 @@ export default function SignalRecord({ lang }: { lang: Lang }) {
             {tiles.map(([v, k]) => (
               <div key={k} className="flex flex-col-reverse rounded-card bg-white p-6 ring-1 ring-black/5">
                 <dt className="mt-1 text-[13px] text-muted">{k}</dt>
-                <dd className="num text-[30px] font-bold text-ink tabular-nums">{v}</dd>
+                <dd className="num text-[30px] font-semibold text-ink tabular-nums">{v}</dd>
               </div>
             ))}
           </dl>
@@ -151,7 +151,7 @@ export default function SignalRecord({ lang }: { lang: Lang }) {
           <div className="mt-8 overflow-x-auto rounded-card bg-white p-5 ring-1 ring-black/5 md:p-6">
             <table className="w-full min-w-[760px] text-[14px]">
               <thead>
-                <tr className="border-b border-black/5 text-[11.5px] uppercase tracking-wide text-muted">
+                <tr className="border-b border-black/5 text-[11.5px] text-muted">
                   <th className="py-2 text-start font-semibold">{t.cols.date}</th>
                   <th className="py-2 text-start font-semibold">{t.cols.symbol}</th>
                   <th className="py-2 text-start font-semibold">{t.cols.side}</th>
@@ -166,8 +166,8 @@ export default function SignalRecord({ lang }: { lang: Lang }) {
                 {signals.map((s) => (
                   <tr key={s.id} className="border-b border-black/5 last:border-0 hover:bg-fog-2">
                     <td className="py-2.5 text-body whitespace-nowrap">{f.day(s.publishedAt)}</td>
-                    <td className="py-2.5 font-bold text-ink">{s.symbol}</td>
-                    <td className="py-2.5 text-[12.5px] font-semibold tracking-wide text-body">{s.side}</td>
+                    <td className="py-2.5 font-semibold text-ink">{s.symbol}</td>
+                    <td className="py-2.5 text-[12.5px] font-semibold text-body">{s.side}</td>
                     <td className="num py-2.5 text-end tabular-nums">{f.price(s.entry, s.digits)}</td>
                     <td className="num py-2.5 text-end tabular-nums text-down">{f.price(s.stop, s.digits)}</td>
                     <td className="num py-2.5 text-end tabular-nums text-up">{f.price(s.target, s.digits)}</td>

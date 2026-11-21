@@ -14,7 +14,7 @@ export default function BrokerLogo({ slug, name, height = 32, className = "" }: 
   return (
     <span
       style={{ height, minWidth: height, fontSize: Math.round(height * 0.4) }}
-      className={`inline-flex items-center justify-center rounded-xl bg-ink px-2.5 font-bold tracking-wider text-white ${className}`}
+      className={`inline-flex items-center justify-center rounded-xl bg-ink px-2.5 font-semiboldr text-white ${className}`}
       aria-label={name}
     >
       {initials}

@@ -44,7 +44,7 @@ export default function RecordStrip({ c }: { c: SiteContent }) {
             {featured.stats.map((s) => (
               <div key={s.label}>
                 <dt className="text-[12.5px] text-body">{s.label}</dt>
-                <dd className={`num mt-1 text-[28px] font-bold ${/\d/.test(s.value) ? toneClass[s.tone ?? "neutral"] : "text-muted"}`}>
+                <dd className={`num mt-1 text-[28px] font-semibold ${/\d/.test(s.value) ? toneClass[s.tone ?? "neutral"] : "text-muted"}`}>
                   <Fill text={s.value} />
                 </dd>
               </div>

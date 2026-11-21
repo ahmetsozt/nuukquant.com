@@ -16,7 +16,7 @@ export function curvePoints(j: Journal): number[] {
 export function JournalLabel({ t, f, j, dark = false }: { t: JournalCopy; f: JournalFormat; j: Journal; dark?: boolean }) {
   return (
     <div className={`flex flex-wrap items-center gap-x-4 gap-y-2 text-[12.5px] ${dark ? "text-white/70" : "text-muted"}`}>
-      <span className="inline-flex items-center gap-1.5 rounded-pill bg-[#fff4d6] px-3 py-1 text-[12px] font-semibold text-[#8a5a00] ring-1 ring-[#f0d48a]">
+      <span className="inline-flex items-center gap-1.5 rounded-md bg-[#fff4d6] px-3 py-1 text-[12px] font-semibold text-[#8a5a00] ring-1 ring-[#f0d48a]">
         <span className="h-1.5 w-1.5 rounded-full bg-[#d69e00]" aria-hidden="true" />
         {t.label}
       </span>
@@ -51,8 +51,8 @@ export default function DeskJournal({ locale }: { locale: Locale }) {
 
         <figure className="rv mt-6 rounded-card bg-white p-5 ring-1 ring-black/5 md:p-7">
           <figcaption className="flex flex-wrap items-baseline justify-between gap-3">
-            <span className="text-[17px] font-bold text-ink">{t.curveTitle}</span>
-            <span className="num text-[14px] font-bold tabular-nums text-up">{f.pct(j.summary.twrPct, 2)}</span>
+            <span className="text-[17px] font-semibold text-ink">{t.curveTitle}</span>
+            <span className="num text-[14px] font-semibold tabular-nums text-up">{f.pct(j.summary.twrPct, 2)}</span>
           </figcaption>
           <div dir="ltr">
             <EquityChart data={curvePoints(j)} endLabel={f.pct(j.summary.twrPct, 1)} className="mt-4 h-[220px] w-full md:h-[300px]" />

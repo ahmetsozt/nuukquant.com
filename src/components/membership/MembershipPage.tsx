@@ -33,7 +33,7 @@ export function MembershipSteps({ steps }: { steps: { title: string; body: strin
     <ol className="mt-10 grid gap-5 md:grid-cols-3">
       {steps.map((s, i) => (
         <li key={s.title} className="rv rounded-card-sm bg-fog p-7">
-          <span className="num flex size-10 items-center justify-center rounded-full bg-primary text-[15px] font-bold text-white">{i + 1}</span>
+          <span className="num flex size-10 items-center justify-center rounded-full bg-primary text-[15px] font-semibold text-white">{i + 1}</span>
           <h3 className="mt-5 text-[19px]">{s.title}</h3>
           <p className="mt-2 text-[15px] leading-6 text-body">{s.body}</p>
         </li>
@@ -103,7 +103,7 @@ export default function MembershipPage({ c, locale }: { c: SiteContent; locale: 
           <ul className="flex flex-wrap gap-2.5">
             {m.legal.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="inline-flex rounded-pill border-[1.5px] border-line px-4 py-2 text-[14px] font-semibold text-ink transition-colors hover:border-ink">
+                <Link href={l.href} className="inline-flex rounded-md border-[1.5px] border-line px-4 py-2 text-[14px] font-semibold text-ink transition-colors hover:border-ink">
                   {l.label}
                 </Link>
               </li>

@@ -34,12 +34,6 @@ export default function EquityChart({ data, className = "", endLabel, textScale 
   const label = endLabel ?? `${endPct >= 0 ? "+" : ""}${endPct.toFixed(1)}%`;
   return (
     <svg viewBox={`0 0 ${w} ${h}`} className={className} preserveAspectRatio="none" aria-hidden="true">
-      <defs>
-        <linearGradient id="eq-area" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#0165fa" stopOpacity="0.28" />
-          <stop offset="1" stopColor="#0165fa" stopOpacity="0" />
-        </linearGradient>
-      </defs>
       {grid.map((p) => {
         const gy = y(base * (1 + p / 100));
         return (
@@ -51,13 +45,12 @@ export default function EquityChart({ data, className = "", endLabel, textScale 
           </g>
         );
       })}
-      <path d={area} fill="url(#eq-area)" />
-      <path d={line} fill="none" stroke="#0165fa" strokeWidth="2.5" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
-      <circle cx={ex} cy={ey} r="6" fill="#0165fa" />
-      <circle cx={ex} cy={ey} r="6" fill="none" stroke="#0165fa" strokeOpacity="0.35" strokeWidth="10" />
+      <path d={area} fill="#0165fa" fillOpacity="0.06" />
+      <path d={line} fill="none" stroke="#0165fa" strokeWidth="2" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
+      <circle cx={ex} cy={ey} r="4.5" fill="#0165fa" stroke="#fff" strokeWidth="2" />
       <g transform={`translate(${ex - (label.length * 7.4 + 18) * t - 14}, ${Math.max(ey - 34 * t, 6)})`}>
-        <rect x="0" y="0" width={(label.length * 7.4 + 18) * t} height={24 * t} rx={12 * t} fill="#0a0a0a" />
-        <text x={9 * t} y={16 * t} fontSize={12.5 * t} fontWeight="700" fill="#fff" fontFamily="inherit">
+        <rect x="0" y="0" width={(label.length * 7.4 + 18) * t} height={24 * t} rx={6 * t} fill="#0a0a0a" />
+        <text x={9 * t} y={16 * t} fontSize={12.5 * t} fontWeight="500" fill="#fff" fontFamily="inherit">
           {label}
         </text>
       </g>

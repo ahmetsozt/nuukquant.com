@@ -25,7 +25,7 @@ export default async function ApplyPage({ params }: { params: LocaleParams }) {
             <ol className="space-y-3">
               {p.steps.map((s, i) => (
                 <li key={s} className="flex items-center gap-3 rounded-card-sm bg-white px-5 py-4 text-[15px] font-semibold text-ink shadow-card">
-                  <span className="flex size-8 flex-none items-center justify-center rounded-full bg-primary text-[13px] text-white">{i + 1}</span>
+                  <span className="flex size-8 flex-none items-center justify-center rounded-md text-[13px] font-medium text-ink ring-1 ring-black/10">{i + 1}</span>
                   {s}
                 </li>
               ))}

@@ -110,10 +110,10 @@ export const es: ContentOverride = {
       visualTag: "Trading algorítmico · Gestión de carteras",
       visualAlt: "Monoplaza de Fórmula 1 con los colores de NUUK en un estudio oscuro",
       kicker: "Empresa de trading basada en IA · DIFC, Dubái",
-      title: "Los mercados, leídos con disciplina.",
+      title: "Sistemas de trading con IA, probados primero con capital propio",
       lead:
         "NUUK diseña sistemas de trading basados en IA, los opera primero con su propio capital, gestiona cuentas de inversores y enseña a los inversores a operar de forma autónoma. Cada cifra de este sitio indica su fuente y su método.",
-      primary: { label: "Abrir una cuenta en un bróker" },
+      primary: { label: "Unirse al grupo de WhatsApp" },
       secondary: { label: "Reservar una llamada" },
       trustLine: ["Capital propio en cada sistema", "Con sede en el DIFC, Dubái"],
       trust: [
@@ -373,8 +373,7 @@ export const es: ContentOverride = {
         "lockup": "Ninguno; puede salir cuando quiera",
         "structure": "Una cuenta de bróker a su propio nombre; las señales llegan por WhatsApp",
         "forWhom": "Quienes empiezan con un saldo pequeño y quieren operar ellos mismos",
-        "join": "Unirse",
-        "joinText": "Hola. Quiero unirme al programa de señales."
+        "join": "Unirse"
       },
       {
         "name": "NUUK AI - Premium",
@@ -385,8 +384,7 @@ export const es: ContentOverride = {
         "lockup": "30 días; después, retiro en cualquier momento",
         "structure": "Pool MAM / copy trading en el bróker",
         "forWhom": "Inversores autónomos que quieren los sistemas sin operarlos",
-        "join": "Unirse",
-        "joinText": "Hola. Quiero unirme al programa NUUK AI - Premium."
+        "join": "Unirse"
       },
       {
         "name": "Cuenta dedicada",
@@ -397,8 +395,7 @@ export const es: ContentOverride = {
         "lockup": "Preaviso de 30 días",
         "structure": "PAMM o cuenta gestionada por separado en el bróker",
         "forWhom": "Family offices, tesorerías corporativas e inversores profesionales",
-        "join": "Unirse",
-        "joinText": "Hola. Quiero abrir una cuenta dedicada."
+        "join": "Unirse"
       }
     ],
     tierLabels: {
@@ -881,14 +878,14 @@ export const es: ContentOverride = {
 
   ctaBand: {
     title: "¿Listo para empezar?",
-    body: "Cuatro pasos desde la primera llamada hasta la primera operación. La mayoría de las personas está operativa en una semana.",
+    body: "Cuatro pasos desde su primer mensaje hasta un plan propio. El primero es gratuito.",
     steps: [
-      { title: "Reserve una llamada", body: "30 minutos para decidir qué servicio encaja: señales, cuenta gestionada o formación." },
-      { title: "Abra una cuenta en un bróker", body: "A su propio nombre. La verificación tarda unos 10 minutos con documento de identidad y comprobante de domicilio." },
-      {"title": "Financiar y conectar", "body": "Financie su cuenta de bróker: desde 250 USD para las señales de WhatsApp, 1.000 USD para NUUK AI - Premium y 250.000 USD para un mandato dedicado. Conéctela a la estructura elegida."},
-      { title: "Empiece a operar", body: "Siga el plan, revise los resultados cada mes y nunca abra una operación que no pueda explicar." },
+      { title: "Únase al grupo de WhatsApp", body: "Gratis. El pulso diario del mercado, el calendario económico y la cartera modelo de la mesa, cada día de mercado." },
+      { title: "Siga a la mesa", body: "Lea las notas durante unas semanas y compárelas con el diario de la mesa antes de decidir nada." },
+      { title: "Elija su camino", body: "Quédese en el grupo gratuito, pase a Premium o aprenda el método en la Masterclass." },
+      { title: "Opere con sus propias reglas", body: "Siga el plan, revise los resultados cada mes y nunca abra una operación que no pueda explicar." },
     ],
-    cta: { label: "Reservar una llamada" },
+    cta: { label: "Unirse al grupo de WhatsApp" },
   },
 
   footer: {

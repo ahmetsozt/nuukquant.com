@@ -69,15 +69,15 @@ function PlanCard({
     >
       <div className="flex flex-wrap items-center gap-2">
         <h3 className={`text-[22px] ${dark ? "text-white" : ""}`}>{name}</h3>
-        {badge && <span className="rounded-pill bg-cyan px-3 py-1 text-[12px] font-semibold text-navy-deep">{badge}</span>}
+        {badge && <span className="rounded-md bg-cyan px-3 py-1 text-[12px] font-semibold text-navy-deep">{badge}</span>}
       </div>
       <p className={`mt-1 text-[14.5px] ${dark ? "text-soft" : "text-body"}`}>{tagline}</p>
       <p className="mt-6 flex items-baseline gap-2">
-        <span className={`num text-[44px] leading-none font-bold ${dark ? "text-white" : "text-ink"}`}>{price}</span>
+        <span className={`num text-[44px] leading-none font-semibold ${dark ? "text-white" : "text-ink"}`}>{price}</span>
         <span className={`text-[13px] ${dark ? "text-soft" : "text-muted"}`}>{priceNote}</span>
       </p>
       {promo && (
-        <p className={`mt-4 inline-flex self-start items-center gap-2 rounded-pill px-3.5 py-1.5 text-[13.5px] font-semibold ${dark ? "bg-cyan text-navy-deep" : "bg-tint text-primary"}`}>
+        <p className={`mt-4 inline-flex self-start items-center gap-2 rounded-md px-3.5 py-1.5 text-[13.5px] font-semibold ${dark ? "bg-cyan text-navy-deep" : "bg-tint text-primary"}`}>
           <Icon name="calendar" size={15} className="flex-none" />
           {promo}
         </p>

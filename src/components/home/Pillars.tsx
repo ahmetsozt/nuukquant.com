@@ -12,7 +12,7 @@ export default function Pillars({ c }: { c: SiteContent }) {
           {c.home.pillars.map((p) => (
             <li key={p.title} className="rv">
               <Link href={p.href} className="group flex h-full flex-col rounded-card bg-white p-7 shadow-card transition hover:-translate-y-1 hover:shadow-hover">
-                <span className="flex size-12 items-center justify-center rounded-full bg-tint text-primary">
+                <span className="flex size-12 items-center justify-center rounded-md bg-fog text-body ring-1 ring-black/5">
                   <Icon name={p.icon as IconName} size={22} />
                 </span>
                 <h3 className="mt-6 text-[19px] leading-snug">{p.title}</h3>

@@ -10,7 +10,7 @@ export default function EventCard({ e, c }: { e: Event; c: SiteContent }) {
   return (
     <article className="rv grid gap-6 rounded-card bg-white p-7 shadow-card ring-1 ring-black/5 lg:grid-cols-12 lg:items-center">
       <div className="flex items-center gap-4 lg:col-span-3">
-        <span className="flex size-12 flex-none items-center justify-center rounded-full bg-tint text-primary">
+        <span className="flex size-12 flex-none items-center justify-center rounded-md bg-fog text-body ring-1 ring-black/5">
           <Icon name="calendar" size={22} />
         </span>
         <div>

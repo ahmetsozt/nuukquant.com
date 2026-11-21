@@ -43,8 +43,8 @@ export default function JournalCalendar({
         return (
           <figure key={`${year}-${month}`} className="rv rounded-card bg-white p-5 ring-1 ring-black/5 md:p-6">
             <figcaption className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
-              <span className="text-[17px] font-bold capitalize text-ink">{title}</span>
-              <span className={`num text-[14px] font-bold tabular-nums ${monthNet >= 0 ? "text-up" : "text-down"}`}>
+              <span className="text-[17px] font-semibold capitalize text-ink">{title}</span>
+              <span className={`num text-[14px] font-semibold tabular-nums ${monthNet >= 0 ? "text-up" : "text-down"}`}>
                 {f.money(monthNet)} · {f.pct(monthPct, 1)}
               </span>
             </figcaption>
@@ -52,7 +52,7 @@ export default function JournalCalendar({
               <thead>
                 <tr>
                   {t.weekdays.map((w) => (
-                    <th key={w} scope="col" className="pb-1 text-center text-[11px] font-semibold uppercase tracking-wide text-muted">
+                    <th key={w} scope="col" className="pb-1 text-center text-[11px] font-semibold text-muted">
                       {w}
                     </th>
                   ))}
@@ -86,8 +86,8 @@ export default function JournalCalendar({
                             style={{ background: cellTone(day, peak) }}
                           >
                             <span className="text-[11px] font-semibold text-ink/70">{dom}</span>
-                            <span dir="ltr" className="num truncate text-[10.5px] font-bold leading-tight tabular-nums text-ink sm:hidden">{f.tiny(day.net)}</span>
-                            <span dir="ltr" className="num hidden truncate text-[11.5px] font-bold leading-tight tabular-nums text-ink sm:block md:text-[12.5px]">{f.cellMoney(day.net)}</span>
+                            <span dir="ltr" className="num truncate text-[10.5px] font-semibold leading-tight tabular-nums text-ink sm:hidden">{f.tiny(day.net)}</span>
+                            <span dir="ltr" className="num hidden truncate text-[11.5px] font-semibold leading-tight tabular-nums text-ink sm:block md:text-[12.5px]">{f.cellMoney(day.net)}</span>
                             {!compact && (
                               <span dir="ltr" className={`num hidden truncate text-[10.5px] tabular-nums sm:block ${day.net >= 0 ? "text-up" : "text-down"}`}>{f.pct(day.retPct, 1)}</span>
                             )}

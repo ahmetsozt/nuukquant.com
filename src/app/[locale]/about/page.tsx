@@ -45,7 +45,7 @@ export default async function AboutPage({ params }: { params: LocaleParams }) {
         <div className="container-x grid gap-px py-2 sm:grid-cols-2 lg:grid-cols-4">
           {a.facts.map((f) => (
             <div key={f.label} className="rv px-2 py-8 lg:py-10">
-              <p className="num text-[44px] leading-none font-extrabold text-white lg:text-[56px]">
+              <p className="num text-[44px] leading-none font-medium text-white lg:text-[56px]">
                 <Fill text={f.value} />
               </p>
               <p className="mt-3 max-w-[260px] text-[14px] leading-5 text-soft">
@@ -85,7 +85,7 @@ export default async function AboutPage({ params }: { params: LocaleParams }) {
           <ol className="relative space-y-5 lg:col-span-8">
             {a.timeline.map((t, i) => (
               <li key={i} className="rv flex gap-5 rounded-card bg-white p-7 shadow-card ring-1 ring-black/5">
-                <span className="num flex h-8 min-w-[64px] flex-none items-center justify-center rounded-full bg-primary px-3 text-[13px] font-bold text-white">
+                <span className="num flex h-8 min-w-[64px] flex-none items-center justify-center rounded-full bg-primary px-3 text-[13px] font-semibold text-white">
                   <Fill text={t.year} />
                 </span>
                 <div>
@@ -108,7 +108,7 @@ export default async function AboutPage({ params }: { params: LocaleParams }) {
           <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {a.principles.map((p, i) => (
               <li key={p.title} className="rv rounded-card bg-navy p-7 text-white ring-1 ring-white/10">
-                <span className="flex size-8 items-center justify-center rounded-full bg-primary text-[13px] font-bold text-white">{i + 1}</span>
+                <span className="flex size-8 items-center justify-center rounded-md text-[13px] font-medium text-ink ring-1 ring-black/10">{i + 1}</span>
                 <h3 className="mt-5 text-[19px] text-white">{p.title}</h3>
                 <p className="mt-2 text-[14.5px] leading-6 text-soft">{p.body}</p>
               </li>
@@ -123,7 +123,7 @@ export default async function AboutPage({ params }: { params: LocaleParams }) {
             <SectionHead title={a.focusTitle} />
             <ul className="mt-8 flex flex-wrap gap-2">
               {a.focus.map((f) => (
-                <li key={f} className="rounded-pill bg-fog px-4 py-1.5 text-[14px] font-semibold text-ink ring-1 ring-black/5">
+                <li key={f} className="rounded-md bg-fog px-4 py-1.5 text-[14px] font-semibold text-ink ring-1 ring-black/5">
                   {f}
                 </li>
               ))}

@@ -37,7 +37,7 @@ export default function DailyPnl({ c }: { c: SiteContent }) {
           <p className="kicker">{t.kicker}</p>
           <p className="mt-1 flex flex-wrap items-baseline gap-x-3 gap-y-1">
             <span className="text-[14px] text-muted">{t.today}</span>
-            <span className={`text-[30px] font-extrabold tabular-nums ${up ? "text-up" : "text-down"}`}>
+            <span className={`text-[30px] font-medium tabular-nums ${up ? "text-up" : "text-down"}`}>
               {up ? "+" : ""}
               {fmt.format(last.closedPnl)}
             </span>

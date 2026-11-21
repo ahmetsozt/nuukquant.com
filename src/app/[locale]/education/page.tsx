@@ -39,8 +39,8 @@ export default async function EducationPage({ params }: { params: LocaleParams }
             {p.curriculum.map((lvl, i) => (
               <li key={lvl.level} className="rv rounded-card bg-navy p-7 ring-1 ring-white/10">
                 <div className="flex items-center gap-3">
-                  <span className="flex size-8 flex-none items-center justify-center rounded-full bg-primary text-[13px] font-bold text-white">{i + 1}</span>
-                  <p className="text-[12px] font-semibold tracking-wider text-cyan uppercase">{lvl.level}</p>
+                  <span className="flex size-8 flex-none items-center justify-center rounded-md text-[13px] font-medium text-ink ring-1 ring-black/10">{i + 1}</span>
+                  <p className="text-[12px] font-semiboldr text-cyan">{lvl.level}</p>
                 </div>
                 <h3 className="mt-5 text-[20px] text-white">{lvl.title}</h3>
                 <ul className="mt-4 space-y-1.5 text-[14px] text-soft">

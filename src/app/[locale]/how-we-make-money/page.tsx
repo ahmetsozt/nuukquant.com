@@ -34,7 +34,7 @@ export default async function HowWeMakeMoneyPage({ params }: { params: LocalePar
                 <span className="flex size-11 items-center justify-center rounded-full bg-primary text-white">
                   <Icon name={PRINCIPLE_ICONS[i] ?? "check"} size={20} />
                 </span>
-                <h3 className="mt-5 text-[18px] font-bold text-ink">{it.title}</h3>
+                <h3 className="mt-5 text-[18px] font-semibold text-ink">{it.title}</h3>
                 <p className="mt-2 text-[14.5px] leading-6 text-body">{it.body}</p>
               </li>
             ))}
@@ -51,15 +51,15 @@ export default async function HowWeMakeMoneyPage({ params }: { params: LocalePar
               <li key={s.title} className="rv flex flex-col rounded-card bg-white p-7 shadow-card lg:p-9">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-center gap-4">
-                    <span className="flex size-11 flex-none items-center justify-center rounded-full bg-tint text-primary">
+                    <span className="flex size-11 flex-none items-center justify-center rounded-md bg-fog text-body ring-1 ring-black/5">
                       <Icon name={STREAM_ICONS[i] ?? "check"} size={20} />
                     </span>
                     <div>
                       <p className="kicker text-primary">0{i + 1}</p>
-                      <h3 className="text-[20px] font-bold text-ink">{s.title}</h3>
+                      <h3 className="text-[20px] font-semibold text-ink">{s.title}</h3>
                     </div>
                   </div>
-                  <span className="hidden rounded-pill bg-ink px-3 py-1 text-[11.5px] font-semibold text-white sm:inline-block">{s.share}</span>
+                  <span className="hidden rounded-md bg-ink px-3 py-1 text-[11.5px] font-semibold text-white sm:inline-block">{s.share}</span>
                 </div>
                 <p className="mt-5 text-[15px] leading-7 text-body">{s.body}</p>
                 <p className="mt-auto border-t border-black/10 pt-4 text-[13px] text-muted">
@@ -81,7 +81,7 @@ export default async function HowWeMakeMoneyPage({ params }: { params: LocalePar
             {p.examples.map((ex) => (
               <div key={ex.name} className="rv overflow-hidden rounded-card border border-black/10">
                 <div className="bg-ink px-7 py-5 text-white">
-                  <p className="text-[18px] font-bold">{ex.name}</p>
+                  <p className="text-[18px] font-semibold">{ex.name}</p>
                   <p className="mt-0.5 text-[13px] text-white/70">{ex.basis}</p>
                 </div>
                 <table className="w-full text-[14.5px]">
@@ -91,7 +91,7 @@ export default async function HowWeMakeMoneyPage({ params }: { params: LocalePar
                       return (
                         <tr key={label} className={`border-t border-black/5 ${i === ex.rows.length - 2 ? "bg-tint" : ""}`}>
                           <td className={`px-7 py-3.5 ${last ? "font-semibold text-ink" : "text-body"}`}>{label}</td>
-                          <td className={`px-7 py-3.5 text-end tabular-nums ${last ? "font-bold text-ink" : "font-semibold text-ink"}`}>{value}</td>
+                          <td className={`px-7 py-3.5 text-end tabular-nums ${last ? "font-semibold text-ink" : "font-semibold text-ink"}`}>{value}</td>
                         </tr>
                       );
                     })}
@@ -125,7 +125,7 @@ export default async function HowWeMakeMoneyPage({ params }: { params: LocalePar
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">
               {p.risk.map((r) => (
                 <li key={r.title} className="rounded-card-sm border border-white/10 bg-white/5 p-6">
-                  <h3 className="text-[16px] font-bold text-white">{r.title}</h3>
+                  <h3 className="text-[16px] font-semibold text-white">{r.title}</h3>
                   <p className="mt-2 text-[14px] leading-6 text-white/75">{r.body}</p>
                 </li>
               ))}

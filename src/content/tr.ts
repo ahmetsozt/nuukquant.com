@@ -162,13 +162,13 @@ export const tr: ContentOverride = {
       "visualTag": "Algoritmik İşlem · Portföy Yönetimi",
       "visualAlt": "Karanlık stüdyoda NUUK renklerinde Formula 1 aracı",
       "kicker": "Yapay zekâ destekli yatırım kuruluşu · DIFC, Dubai",
-      "title": "Piyasalarda disiplinli, sistematik yaklaşım.",
+      "title": "Yapay zekâ sistemlerimiz önce kendi sermayemizle işlem yapar",
       "lead": "NUUK, yapay zekâ destekli sistematik işlem stratejileri geliştirir; bunları önce kendi sermayesiyle çalıştırır, yatırımcı portföylerini yönetir ve yatırımcılara kendi başlarına işlem yapmayı öğretir. Sitedeki her rakam kaynağını ve yöntemini belirtir.",
       "primary": {
-        "label": "Hesap Açın"
+        "label": "WhatsApp grubuna katıl"
       },
       "secondary": {
-        "label": "Görüşme Talep Edin"
+        "label": "Görüşme talep et"
       },
       "trustLine": [
         "Her sistemde kendi sermayemiz",
@@ -519,7 +519,7 @@ export const tr: ContentOverride = {
         "structure": "Aracı kurumdaki kendi hesabınız; sinyaller WhatsApp'tan gelir",
         "forWhom": "Küçük bakiyeyle başlayıp işlemi kendi eliyle açmak isteyenler",
         "join": "Katıl",
-        "joinText": "Merhaba. Sinyal programına katılmak istiyorum."
+        "joinText": "Merhaba, WhatsApp sinyal grubuna katılmak istiyorum."
       },
       {
         "name": "NUUK AI - Premium",
@@ -531,7 +531,7 @@ export const tr: ContentOverride = {
         "structure": "Aracı kurumda MAM / kopya işlem havuzu",
         "forWhom": "Sistemleri kendisi çalıştırmak istemeyen bireysel yatırımcılar",
         "join": "Katıl",
-        "joinText": "Merhaba. NUUK AI - Premium programına katılmak istiyorum."
+        "joinText": "Merhaba, NUUK AI - Premium grubuna katılmak istiyorum."
       },
       {
         "name": "Özel Hesap",
@@ -543,7 +543,7 @@ export const tr: ContentOverride = {
         "structure": "Aracı kurumda PAMM ya da ayrı yönetilen hesap",
         "forWhom": "Aile ofisleri, kurumsal hazineler ve profesyonel yatırımcılar",
         "join": "Katıl",
-        "joinText": "Merhaba. Özel hesap açmak istiyorum."
+        "joinText": "Merhaba, Dedicated Account grubuna katılmak istiyorum."
       }
     ],
     "tierLabels": {
@@ -1671,27 +1671,27 @@ export const tr: ContentOverride = {
 
   ctaBand: {
     "title": "Başlamaya hazır mısınız?",
-    "body": "İlk görüşmeden ilk işleme dört adım. Kurulum çoğunlukla bir hafta içinde tamamlanır.",
+    "body": "İlk mesajdan kendi planınıza dört adım. İlki ücretsiz.",
     "steps": [
       {
-        "title": "Görüşme talep edin",
-        "body": "Uygun hizmetin belirlenmesi için 30 dakika: sinyaller, portföy yönetimi veya eğitim."
+        "title": "WhatsApp grubuna katılın",
+        "body": "Ücretsiz. Günlük piyasa nabzı, ekonomik takvim ve masanın model portföyü her işlem günü grupta paylaşılır."
       },
       {
-        "title": "Aracı kurum hesabı açın",
-        "body": "Her NUUK yatırımcısı için zorunlu; hesap kendi adınıza açılır. Kimlik ve ikametgâh belgesiyle doğrulama yaklaşık 10 dakika sürer."
+        "title": "Masayı izleyin",
+        "body": "Karar vermeden önce notları birkaç hafta okuyun, masa günlüğüyle karşılaştırın."
       },
       {
-        "title": "Fonlayın ve bağlayın",
-        "body": "Aracı kurum hesabınızı fonlayın: WhatsApp sinyalleri için 250 USD'den, NUUK AI - Premium için 1.000 USD'den, özel manda için 250.000 USD'den itibaren. Ardından seçtiğiniz yapıya bağlayın."
+        "title": "Yolunuzu seçin",
+        "body": "Ücretsiz grupta kalın, Premium'a geçin ya da yöntemi Masterclass'ta öğrenin."
       },
       {
-        "title": "İşleme başlayın",
+        "title": "Kendi kurallarınızla işlem yapın",
         "body": "Planı uygulayın, sonuçları aylık değerlendirin ve gerekçesini açıklayamadığınız hiçbir işleme girmeyin."
       }
     ],
     "cta": {
-      "label": "Görüşme Talep Edin"
+      "label": "WhatsApp grubuna katılın"
     }
   },
 

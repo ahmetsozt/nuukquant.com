@@ -54,9 +54,9 @@ export default function StoreBadges({ labels, size = "md", className = "" }: { l
             {s.glyph(!s.url)}
             <span className="flex flex-col text-start leading-none">
               {s.url ? (
-                <span className="text-[10.5px] font-medium tracking-[0.02em] opacity-80">{s.pre}</span>
+                <span className="text-[10.5px] font-medium opacity-80">{s.pre}</span>
               ) : (
-                <span className="text-[10.5px] font-semibold tracking-[0.04em] text-cyan uppercase">{labels.soon}</span>
+                <span className="text-[10.5px] font-semibold text-cyan">{labels.soon}</span>
               )}
               <span className={`mt-1 font-semibold tracking-[-0.01em] ${nameSize}`}>{s.name}</span>
             </span>

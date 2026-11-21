@@ -36,7 +36,7 @@ export default async function EconomicCalendarPage({ params }: { params: LocaleP
           </div>
           <aside className="lg:col-span-4">
             <div className="rounded-card bg-fog p-7 lg:p-8">
-              <h2 className="text-[20px] font-bold text-ink">{p.tipsTitle}</h2>
+              <h2 className="text-[20px] font-semibold text-ink">{p.tipsTitle}</h2>
               <ul className="mt-5 space-y-4">
                 {p.tips.map((t) => (
                   <li key={t} className="flex gap-3 text-[14.5px] leading-6 text-body">

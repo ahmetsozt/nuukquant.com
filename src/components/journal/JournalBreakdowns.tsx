@@ -7,11 +7,11 @@ function BySymbol({ j, t, f }: { j: DeskJournal; t: JournalCopy; f: JournalForma
   const c = t.symbolCols;
   return (
     <figure className="rv rounded-card bg-white p-5 ring-1 ring-black/5 md:p-6">
-      <figcaption className="text-[17px] font-bold text-ink">{t.bySymbolTitle}</figcaption>
+      <figcaption className="text-[17px] font-semibold text-ink">{t.bySymbolTitle}</figcaption>
       <div className="mt-4 overflow-x-auto">
         <table className="w-full min-w-[420px] text-[14px]">
           <thead>
-            <tr className="border-b border-black/5 text-[11.5px] uppercase tracking-wide text-muted">
+            <tr className="border-b border-black/5 text-[11.5px] text-muted">
               <th className="py-2 text-start font-semibold">{c.symbol}</th>
               <th className="py-2 text-end font-semibold">{c.trades}</th>
               <th className="py-2 text-end font-semibold">{c.net}</th>
@@ -22,7 +22,7 @@ function BySymbol({ j, t, f }: { j: DeskJournal; t: JournalCopy; f: JournalForma
           <tbody>
             {j.bySymbol.map((s) => (
               <tr key={s.symbol} className="border-b border-black/5 last:border-0 hover:bg-fog-2">
-                <td className="py-2.5 font-bold text-ink">{s.symbol}</td>
+                <td className="py-2.5 font-semibold text-ink">{s.symbol}</td>
                 <td className="num py-2.5 text-end tabular-nums">{f.int(s.trades)}</td>
                 <td className={`num py-2.5 text-end font-semibold tabular-nums ${s.net >= 0 ? "text-up" : "text-down"}`}>{f.money(s.net)}</td>
                 <td className="num py-2.5 text-end tabular-nums">{f.pct(s.winRate * 100, 1, false)}</td>
@@ -42,7 +42,7 @@ function ByHour({ j, t, f }: { j: DeskJournal; t: JournalCopy; f: JournalFormat 
   const peak = Math.max(...j.byHour.map((h) => Math.abs(h.net)), 1);
   return (
     <figure className="rv rounded-card bg-white p-5 ring-1 ring-black/5 md:p-6">
-      <figcaption className="text-[17px] font-bold text-ink">{t.byHourTitle}</figcaption>
+      <figcaption className="text-[17px] font-semibold text-ink">{t.byHourTitle}</figcaption>
       <div dir="ltr" className="mt-5 flex items-end gap-[3px]" style={{ height: HOUR_CHART_HEIGHT }} aria-hidden="true">
         {j.byHour.map((h) => (
           <span
@@ -67,14 +67,14 @@ function ByDuration({ j, t, f }: { j: DeskJournal; t: JournalCopy; f: JournalFor
   const peak = Math.max(...j.byDuration.map((d) => Math.abs(d.net)), 1);
   return (
     <figure className="rv rounded-card bg-white p-5 ring-1 ring-black/5 md:p-6">
-      <figcaption className="text-[17px] font-bold text-ink">{t.byDurationTitle}</figcaption>
+      <figcaption className="text-[17px] font-semibold text-ink">{t.byDurationTitle}</figcaption>
       <ul className="mt-4 space-y-3">
         {j.byDuration.map((d) => (
           <li key={d.bucket}>
             <div className="flex items-baseline justify-between gap-3 text-[13.5px]">
               <span className="font-semibold text-ink">{t.durations[d.bucket] ?? d.bucket}</span>
               <span className="num tabular-nums text-body">
-                <span className={`font-bold ${d.net >= 0 ? "text-up" : "text-down"}`}>{f.money(d.net)}</span> · {f.pct(d.winRate * 100, 0, false)} · {f.int(d.trades)} {t.tradesWord}
+                <span className={`font-semibold ${d.net >= 0 ? "text-up" : "text-down"}`}>{f.money(d.net)}</span> · {f.pct(d.winRate * 100, 0, false)} · {f.int(d.trades)} {t.tradesWord}
               </span>
             </div>
             <div className="mt-1.5 h-2 rounded-full bg-fog">

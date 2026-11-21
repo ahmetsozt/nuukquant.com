@@ -37,7 +37,7 @@ export default function DeskJournalTeaser({ locale }: { locale: Locale }) {
         </div>
         <div className="mt-6 grid gap-6 lg:grid-cols-[1.4fr_1fr]">
           <figure className="rv rounded-card bg-fog-2 p-5 ring-1 ring-black/5 md:p-6">
-            <figcaption className="text-[17px] font-bold text-ink">{t.curveTitle}</figcaption>
+            <figcaption className="text-[17px] font-semibold text-ink">{t.curveTitle}</figcaption>
             <div dir="ltr">
               <EquityChart data={curvePoints(j)} endLabel={f.pct(j.summary.twrPct, 1)} className="mt-4 h-[200px] w-full md:h-[260px]" />
             </div>

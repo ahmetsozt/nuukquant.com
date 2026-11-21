@@ -83,7 +83,7 @@ export const en = {
     phone: "",
     phoneHref: "",
     whatsapp: "",
-    whatsappChannel: "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6",
+    whatsappChannel: "https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3",
     calendly: "mailto:info@nuukquant.com?subject=Call%20request",
     office: "Dubai International Financial Centre (DIFC), Dubai, UAE",
   },
@@ -215,10 +215,10 @@ export const en = {
       visualTag: "Algorithmic trading · Portfolio management",
       visualAlt: "NUUK-liveried Formula 1 car in a dark studio",
       kicker: "AI-engineered trading company · DIFC, Dubai",
-      title: "Markets, read with discipline.",
+      title: "AI trading systems, run on our own capital first",
       lead:
         "NUUK builds AI-driven trading systems, runs them on its own capital first, manages investor accounts and teaches investors to trade for themselves. Every figure on this site states its source and its method.",
-      primary: { label: "Open a broker account", href: "/contact-us/" },
+      primary: { label: "Join the WhatsApp group", href: "https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3" },
       secondary: { label: "Book a call", href: "/contact-us/" },
       trustLine: ["Own capital in every system", "Based in DIFC, Dubai"],
       trust: [
@@ -483,7 +483,7 @@ export const en = {
         "structure": "A broker account in your own name; signals arrive on WhatsApp",
         "forWhom": "People starting with a small balance who want to place the trades themselves",
         "join": "Join",
-        "joinText": "Hello. I'd like to join the signals programme."
+        "joinText": "Hello, I'd like to join the WhatsApp Signals group."
       },
       {
         "name": "NUUK AI - Premium",
@@ -495,7 +495,7 @@ export const en = {
         "structure": "MAM / copy-trading pool at the broker",
         "forWhom": "Self-directed investors who want the systems without running them",
         "join": "Join",
-        "joinText": "Hello. I'd like to join the NUUK AI - Premium programme."
+        "joinText": "Hello, I'd like to join the NUUK AI - Premium group."
       },
       {
         "name": "Dedicated account",
@@ -507,7 +507,7 @@ export const en = {
         "structure": "PAMM or separately managed account at the broker",
         "forWhom": "Family offices, business treasuries and professional investors",
         "join": "Join",
-        "joinText": "Hello. I'd like to open a dedicated account."
+        "joinText": "Hello, I'd like to join the Dedicated Account group."
       }
     ],
     tierLabels: {
@@ -612,7 +612,7 @@ export const en = {
     kicker: "Free signals",
     title: "Free daily AI forex signals for better-informed trading",
     lead: "Currency pairs, indices and commodities, scanned by NUUK's algorithmic systems and published free in our WhatsApp group. Every idea carries its entry, target and stop so you can judge it against your own plan.",
-    cta: { label: "Join the free group", href: "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6" },
+    cta: { label: "Join the free group", href: "https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3" },
     secondary: { label: "How the algorithms work", href: "/ai-trading/" },
     instruments: [
       { code: "EUR", name: "EUR/USD" },
@@ -953,7 +953,7 @@ export const en = {
         "language": "English",
         "price": "Free",
         "seats": "100",
-        "href": "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6"
+        "href": "https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3"
       },
       {
         "date": "2026-10-10",
@@ -981,12 +981,12 @@ export const en = {
       {
         "date": "2026-06",
         "title": "Position sizing with ATR: the USD 300 rule",
-        "href": "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6"
+        "href": "https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3"
       },
       {
         "date": "2026-07",
         "title": "Why most intraday systems fail after costs",
-        "href": "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6"
+        "href": "https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3"
       }
     ],
   },
@@ -1010,7 +1010,7 @@ export const en = {
         "category": "Macro",
         "date": "2026-09-07",
         "tone": "stocks",
-        "href": "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6"
+        "href": "https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3"
       },
       {
         "title": "Gold at 4,400: the level that decides the next leg",
@@ -1018,7 +1018,7 @@ export const en = {
         "category": "Commodities",
         "date": "2026-09-06",
         "tone": "metals",
-        "href": "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6"
+        "href": "https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3"
       },
       {
         "title": "AUD strength in 2026: carry, copper and the RBA",
@@ -1026,7 +1026,7 @@ export const en = {
         "category": "FX",
         "date": "2026-09-04",
         "tone": "currencies",
-        "href": "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6"
+        "href": "https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3"
       },
       {
         "title": "Why our intraday ensemble stays in paper mode",
@@ -1034,7 +1034,7 @@ export const en = {
         "category": "AI",
         "date": "2026-09-02",
         "tone": "crypto",
-        "href": "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6"
+        "href": "https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3"
       }
     ],
   },
@@ -1506,7 +1506,7 @@ export const en = {
     lead: "Choose the channel that suits you. Institutional and professional enquiries are answered within one business day.",
     channels: [
       { title: "Book a call", body: "30 minutes, video or phone. Reply within one business day.", cta: "Request a call", href: "mailto:info@nuukquant.com?subject=Call%20request" },
-      { title: "WhatsApp group", body: "Signals group and community.", cta: "Join", href: "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6" },
+      { title: "WhatsApp group", body: "Signals group and community.", cta: "Join", href: "https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3" },
     ],
     formTitle: "Send an enquiry",
     form: {
@@ -1592,14 +1592,14 @@ export const en = {
 
   ctaBand: {
     title: "Ready to start?",
-    body: "Four steps from first call to first trade. Most people are set up within a week.",
+    body: "Four steps from your first message to a plan of your own. The first one is free.",
     steps: [
-      { title: "Book a call", body: "30 minutes to decide which service fits: signals, managed account or education." },
-      { title: "Open a broker account", body: "Every NUUK investor opens one in their own name. Verification takes about 10 minutes with ID and proof of address." },
-      { title: "Fund and connect", body: "Fund your broker account: from USD 250 for the WhatsApp signals, USD 1,000 for NUUK AI - Premium, USD 250,000 for a dedicated mandate. Connect it to the structure you chose." },
-      { title: "Start trading", body: "Follow the plan, review results monthly, and never take a trade you cannot explain." },
+      { title: "Join the WhatsApp group", body: "Free. The daily market pulse, the economic calendar and the desk's model portfolio, posted every trading day." },
+      { title: "Follow the desk", body: "Read the notes for a few weeks and compare them with the desk journal before you decide anything." },
+      { title: "Choose your path", body: "Stay in the free group, move up to Premium, or learn the method in the Masterclass." },
+      { title: "Trade by your own rules", body: "Follow the plan, review results monthly, and never take a trade you cannot explain." },
     ],
-    cta: { label: "Book a call", href: "/contact-us/" },
+    cta: { label: "Join the WhatsApp group", href: "https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3" },
   },
 
   footer: {
@@ -1784,7 +1784,7 @@ export const en = {
     {
       name: "Signal log — closed ideas",
       source: "WhatsApp group",
-      verifiedHref: "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6",
+      verifiedHref: "https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3",
       status: "pending",
       since: "2025",
       updated: "Monthly",

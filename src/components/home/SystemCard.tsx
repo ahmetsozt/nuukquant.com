@@ -10,12 +10,12 @@ export default function SystemCard({ s, c }: { s: TradingSystem; c: SiteContent 
       {s.perf && (
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 opacity-70 transition-opacity group-hover:opacity-100">
           <Sparkline data={s.series} className="h-full w-full" stroke={dim ? "#6b7280" : "#00d3f3"} />
-          <span className="num absolute end-5 bottom-4 rounded-pill bg-cyan px-2.5 py-1 text-[11px] font-bold text-navy-deep">{s.perf}</span>
+          <span className="num absolute end-5 bottom-4 rounded-md bg-cyan px-2.5 py-1 text-[11px] font-semibold text-navy-deep">{s.perf}</span>
         </div>
       )}
       <div className="relative flex items-start justify-between gap-3">
         <div>
-          <p className="num text-[12px] font-semibold tracking-wider text-cyan uppercase">
+          <p className="num text-[12px] font-semiboldr text-cyan">
             {s.assetClass} · {s.timeframe}
           </p>
           <h3 className="mt-2 text-[21px] leading-snug text-white">

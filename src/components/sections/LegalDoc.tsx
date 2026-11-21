@@ -18,7 +18,7 @@ export default function LegalDoc({ c, locale, slug }: { c: SiteContent; locale: 
       <section className="section-pad bg-white">
         <div className="container-x max-w-[820px]">
           {isDraft && (
-            <p role="note" className="mb-5 inline-flex rounded-pill bg-[#fff4d6] px-3 py-1 text-[12px] font-semibold text-[#8a5b00]">
+            <p role="note" className="mb-5 inline-flex rounded-md bg-[#fff4d6] px-3 py-1 text-[12px] font-semibold text-[#8a5b00]">
               {DRAFT_LABEL[locale] ?? DRAFT_LABEL.en}
             </p>
           )}

@@ -4,6 +4,7 @@ import CtaBand from "@/components/sections/CtaBand";
 import SectionHead from "@/components/ui/SectionHead";
 import Fill from "@/components/ui/Fill";
 import Icon from "@/components/ui/Icon";
+import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 import { resolve, type LocaleParams } from "@/lib/page";
 import { seo } from "@/lib/seo";
 
@@ -26,7 +27,7 @@ export default async function ManagedPage({ params }: { params: LocaleParams }) 
           <ol className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {p.how.map((h, i) => (
               <li key={h.step} className="rv rounded-card bg-fog p-7">
-                <span className="flex size-8 items-center justify-center rounded-full bg-primary text-[13px] font-bold text-white">{i + 1}</span>
+                <span className="flex size-8 items-center justify-center rounded-md text-[13px] font-medium text-ink ring-1 ring-black/10">{i + 1}</span>
                 <h3 className="mt-5 text-[18px]">{h.title}</h3>
                 <p className="mt-2 text-[14.5px] leading-6 text-body">{h.body}</p>
               </li>
@@ -57,11 +58,14 @@ export default async function ManagedPage({ params }: { params: LocaleParams }) 
                 </dl>
                 <div className="mt-auto pt-7">
                 <a
-                  href={`mailto:info@nuukquant.com?subject=${encodeURIComponent(t.name)}&body=${encodeURIComponent(t.joinText)}`}
-                  data-event="tier_email_click"
+                  href={`https://wa.me/971586884464?text=${encodeURIComponent(t.joinText)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-event="whatsapp_click"
                   data-label={`tier:${t.name}`}
-                  className="inline-flex items-center gap-2.5 rounded-full bg-primary px-6 py-3 text-[15px] font-semibold text-white transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+                  className="inline-flex items-center gap-2.5 rounded-[10px] bg-[#25d366] px-6 py-3 text-[15px] font-medium text-white transition-colors duration-200 hover:bg-[#1fb857] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25d366]/50"
                 >
+                  <WhatsAppIcon size={20} />
                   {t.join}
                 </a>
                 </div>

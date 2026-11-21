@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { SiteContent } from "@/content/en";
 import type { Locale } from "@/i18n";
-import Logo, { LogoMark } from "@/components/ui/Logo";
+import Logo from "@/components/ui/Logo";
 import Icon from "@/components/ui/Icon";
 import Fill from "@/components/ui/Fill";
 import StoreBadges from "@/components/ui/StoreBadges";
@@ -11,7 +11,6 @@ export default function Footer({ c, locale }: { c: SiteContent; locale: Locale }
   const columns = c.nav.filter((g) => g.items.length);
   return (
     <footer className="relative overflow-hidden bg-ink pt-16 pb-10 text-soft">
-      <LogoMark className="pointer-events-none absolute -end-16 -bottom-20 text-white opacity-[0.05]" size={460} />
       <div className="container-x relative">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {columns.map((group) => (
@@ -64,7 +63,7 @@ export default function Footer({ c, locale }: { c: SiteContent; locale: Locale }
             <ul className="flex gap-2">
               {c.socials.map((s) => (
                 <li key={s.label}>
-                  <a href={s.href.startsWith("[") ? "#" : s.href} aria-label={s.label} className="flex size-8 items-center justify-center rounded-full bg-primary text-white hover:bg-primary-dark">
+                  <a href={s.href.startsWith("[") ? "#" : s.href} aria-label={s.label} className="flex size-8 items-center justify-center rounded-md bg-white/10 text-white hover:bg-white/20">
                     <Icon name={s.icon as "in" | "x" | "yt" | "ig"} size={15} />
                   </a>
                 </li>

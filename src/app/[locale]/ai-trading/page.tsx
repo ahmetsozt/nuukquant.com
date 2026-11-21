@@ -36,7 +36,7 @@ export default async function AiTradingPage({ params }: { params: LocaleParams }
           <ol className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
             {p.method.map((m, i) => (
               <li key={m.step} className="rv rounded-card bg-fog p-7">
-                <span className="flex size-8 items-center justify-center rounded-full bg-primary text-[13px] font-bold text-white">{i + 1}</span>
+                <span className="flex size-8 items-center justify-center rounded-md text-[13px] font-medium text-ink ring-1 ring-black/10">{i + 1}</span>
                 <h3 className="mt-5 text-[18px]">{m.title}</h3>
                 <p className="mt-2 text-[14px] leading-6 text-body">{m.body}</p>
               </li>

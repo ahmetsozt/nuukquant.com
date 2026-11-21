@@ -13,14 +13,13 @@ export function SignalSample({ c }: { c: SiteContent }) {
   ];
   return (
     <div className="relative overflow-hidden rounded-card bg-ink p-7 text-white ring-1 ring-white/10">
-      <div className="blob absolute -end-16 -top-16 size-56 bg-primary/40 blur-2xl" aria-hidden="true" />
       <div className="relative flex items-center justify-between">
         <p className="num text-[13px] text-soft/80">
           <Fill text={s.date} />
         </p>
-        <span className="rounded-pill bg-cyan px-3 py-1 text-[12px] font-bold text-navy-deep uppercase">{s.direction}</span>
+        <span className="rounded-md bg-cyan px-3 py-1 text-[12px] font-semibold text-navy-deep">{s.direction}</span>
       </div>
-      <p className="num relative mt-4 text-[32px] font-bold text-white">{s.instrument}</p>
+      <p className="num relative mt-4 text-[32px] font-semibold text-white">{s.instrument}</p>
       <dl className="relative mt-4 grid grid-cols-4 gap-3 border-y border-white/10 py-4">
         {cells.map(([k, v]) => (
           <div key={k}>

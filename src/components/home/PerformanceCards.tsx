@@ -29,7 +29,7 @@ export function PerformanceCardView({ card, c }: { card: PerformanceCard; c: Sit
         {card.stats.map((s) => (
           <div key={s.label}>
             <dt className="text-[12px] text-muted">{s.label}</dt>
-            <dd className={`num mt-1 text-[20px] font-bold ${/\d/.test(s.value) ? toneClass[s.tone ?? "neutral"] : "text-muted"}`}>
+            <dd className={`num mt-1 text-[20px] font-semibold ${/\d/.test(s.value) ? toneClass[s.tone ?? "neutral"] : "text-muted"}`}>
               <Fill text={s.value} />
             </dd>
           </div>

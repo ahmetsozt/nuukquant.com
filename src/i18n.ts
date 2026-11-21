@@ -137,13 +137,48 @@ function withGameNav(content: SiteContent, locale: Locale): SiteContent {
   return { ...content, nav: [{ ...first, items: [...first.items, item] }, ...rest] };
 }
 
+/**
+ * WhatsApp group links per language. Turkish pages show only the Turkish group;
+ * every other language shows only the English group. en.ts carries the English
+ * link and getContent swaps it on Turkish pages, so no locale can leak the other.
+ */
+export const WHATSAPP_GROUP = {
+  en: "https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3",
+  tr: "https://chat.whatsapp.com/KNWkPZ1BNbw8XcCFRh6eu6",
+} as const;
+
+export function whatsappGroup(locale: Locale): string {
+  return locale === "tr" ? WHATSAPP_GROUP.tr : WHATSAPP_GROUP.en;
+}
+
+function swapGroupLink<T>(value: T, from: string, to: string): T {
+  if (typeof value === "string") return (value.split(from).join(to)) as T;
+  if (Array.isArray(value)) return value.map((v) => swapGroupLink(v, from, to)) as T;
+  if (value && typeof value === "object") {
+    const out: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(value as Record<string, unknown>)) out[k] = swapGroupLink(v, from, to);
+    return out as T;
+  }
+  return value;
+}
+
+/**
+ * Content with every WhatsApp group link blanked. The branded 404 is embedded in
+ * every page's payload, so it must not carry either language's group link; its
+ * header picks the right group from the URL instead.
+ */
+export function withoutGroupLinks(c: SiteContent): SiteContent {
+  return swapGroupLink(swapGroupLink(c, WHATSAPP_GROUP.en, ""), WHATSAPP_GROUP.tr, "");
+}
+
 const cache = new Map<Locale, SiteContent>();
 
 /** Localised content with internal links already prefixed for the locale. */
 export function getContent(locale: Locale): SiteContent {
   const hit = cache.get(locale);
   if (hit) return hit;
-  const merged = merge(en, overrides[locale]);
+  const base = merge(en, overrides[locale]);
+  const merged = locale === "tr" ? swapGroupLink(base, WHATSAPP_GROUP.en, WHATSAPP_GROUP.tr) : swapGroupLink(base, WHATSAPP_GROUP.tr, WHATSAPP_GROUP.en);
   const out = withGameNav(prefixHrefs(merged, locale), locale);
   cache.set(locale, out);
   return out;

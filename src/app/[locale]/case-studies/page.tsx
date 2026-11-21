@@ -24,10 +24,10 @@ export default async function CaseStudiesPage({ params }: { params: LocaleParams
             <article key={it.name} className="rv overflow-hidden rounded-card border border-black/10">
               <header className="flex flex-wrap items-center justify-between gap-4 bg-ink px-7 py-6 text-white lg:px-10">
                 <div className="flex items-center gap-4">
-                  <span className="flex size-10 items-center justify-center rounded-full bg-primary text-[14px] font-bold">0{i + 1}</span>
-                  <h2 className="text-[22px] font-bold leading-tight text-white lg:text-[26px]">{it.name}</h2>
+                  <span className="flex size-10 items-center justify-center rounded-full bg-primary text-[14px] font-semibold">0{i + 1}</span>
+                  <h2 className="text-[22px] font-semibold leading-tight text-white lg:text-[26px]">{it.name}</h2>
                 </div>
-                <span className="rounded-pill border border-cyan/60 px-3 py-1 text-[11.5px] font-semibold uppercase tracking-wide text-cyan">{p.badge}</span>
+                <span className="rounded-md border border-cyan/60 px-3 py-1 text-[11.5px] font-semibold text-cyan">{p.badge}</span>
               </header>
               <div className="grid gap-10 px-7 py-8 lg:grid-cols-12 lg:px-10 lg:py-10">
                 <div className="space-y-6 lg:col-span-7">
@@ -63,7 +63,7 @@ export default async function CaseStudiesPage({ params }: { params: LocaleParams
                       <table className="w-full text-[14px]">
                         <tbody>
                           {it.rows.map(([label, value], j) => (
-                            <tr key={label} className={`border-t border-black/5 ${j === it.rows.length - 1 ? "bg-tint font-bold text-ink" : "text-body"}`}>
+                            <tr key={label} className={`border-t border-black/5 ${j === it.rows.length - 1 ? "bg-tint font-semibold text-ink" : "text-body"}`}>
                               <td className="px-6 py-3">{label}</td>
                               <td className="px-6 py-3 text-end tabular-nums font-semibold text-ink">{value}</td>
                             </tr>

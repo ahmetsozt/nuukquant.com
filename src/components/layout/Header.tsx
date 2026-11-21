@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { SiteContent } from "@/content/en";
-import { localeNames, localePath, locales, switchLocale, type Locale } from "@/i18n";
+import { localeFromPath, localeNames, localePath, locales, switchLocale, whatsappGroup, type Locale } from "@/i18n";
 import Logo from "@/components/ui/Logo";
 import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
@@ -34,10 +34,10 @@ function LanguageMenu({ locale }: { locale: Locale }) {
 export default function Header({ c, locale }: { c: SiteContent; locale: Locale }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname() || "/";
-  const contactHref = c.ctaBand.cta.href;
+  const contactHref = c.home.hero.secondary.href;
   const homeHref = locale === "en" ? "/" : `/${locale}/`;
   const quick = [
-    { label: c.ui.whatsappChannel, href: c.brand.whatsappChannel },
+    { label: c.ui.whatsappChannel, href: c.brand.whatsappChannel || whatsappGroup(localeFromPath(pathname)) },
   ];
 
   useEffect(() => {
@@ -56,9 +56,9 @@ export default function Header({ c, locale }: { c: SiteContent; locale: Locale }
   return (
     <>
       {/* Risk warning bar */}
-      <div className="bg-tint text-ink">
-        <p className="container-x py-2.5 text-[12.5px] leading-5">
-          {c.ui.riskBar.pre} <strong>{c.ui.riskBar.strong}</strong> {c.ui.riskBar.post}
+      <div className="border-b border-white/10 bg-ink text-soft">
+        <p className="container-x py-2 text-[12.5px] leading-5">
+          {c.ui.riskBar.pre} <strong className="font-medium text-white">{c.ui.riskBar.strong}</strong> {c.ui.riskBar.post}
         </p>
       </div>
 
@@ -94,7 +94,7 @@ export default function Header({ c, locale }: { c: SiteContent; locale: Locale }
             <ul className="flex h-full items-center gap-1">
               {c.nav.map((group) => (
                 <li key={group.label} className="group/menu relative flex h-full items-center">
-                  <Link href={group.href} className="rounded-pill px-2.5 py-2 xl:px-3.5 text-[14px] font-medium whitespace-nowrap text-white/85 transition-colors hover:bg-white/10 hover:text-white">
+                  <Link href={group.href} className="rounded-md px-2.5 py-2 xl:px-3.5 text-[14px] font-medium whitespace-nowrap text-white/85 transition-colors hover:bg-white/10 hover:text-white">
                     {group.label}
                   </Link>
                   {group.items.length > 0 && (

@@ -144,25 +144,25 @@ export default function PaymentView({ m, hub, membershipHref }: { m: Copy; hub: 
             {p.cryptoOnly}
           </p>
           {promo && (
-            <p className="mt-4 inline-flex items-center gap-2 rounded-pill bg-cyan px-3.5 py-1.5 text-[13.5px] font-semibold text-navy-deep">
+            <p className="mt-4 inline-flex items-center gap-2 rounded-md bg-cyan px-3.5 py-1.5 text-[13.5px] font-semibold text-navy-deep">
               <Icon name="calendar" size={15} className="flex-none" />
               {m.promo}
             </p>
           )}
           <dl className="mt-6 grid gap-5 sm:grid-cols-3">
             <div>
-              <dt className="text-[12px] tracking-wider text-soft/70 uppercase">{p.amount}</dt>
-              <dd className="num mt-1 text-[30px] font-bold">
+              <dt className="text-[12px]r text-soft/70">{p.amount}</dt>
+              <dd className="num mt-1 text-[30px] font-semibold">
                 {p.amountValue.replace("{price}", price)}
                 {promo && <s className="mt-1 block text-[15px] font-semibold text-soft/70">{p.amountValue.replace("{price}", String(info.priceUsd))}</s>}
               </dd>
             </div>
             <div>
-              <dt className="text-[12px] tracking-wider text-soft/70 uppercase">{p.ref}</dt>
-              <dd className="num mt-1 text-[20px] font-bold">{info.ref}</dd>
+              <dt className="text-[12px]r text-soft/70">{p.ref}</dt>
+              <dd className="num mt-1 text-[20px] font-semibold">{info.ref}</dd>
             </div>
             <div>
-              <dt className="text-[12px] tracking-wider text-soft/70 uppercase">{p.status}</dt>
+              <dt className="text-[12px]r text-soft/70">{p.status}</dt>
               <dd className={`mt-1 text-[15px] font-semibold ${paid ? "text-up" : reported ? "text-cyan" : "text-white"}`}>{p.statuses[info.status as keyof typeof p.statuses] ?? info.status}</dd>
             </div>
           </dl>
@@ -187,7 +187,7 @@ export default function PaymentView({ m, hub, membershipHref }: { m: Copy; hub: 
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={svgDataUrl(w.qrSvg)} alt={p.qrAlt.replace("{network}", w.network)} width={148} height={148} className="rounded-xl bg-white p-2" />
                     <div className="min-w-0">
-                      <p className="text-[13px] font-semibold tracking-wider text-primary uppercase">
+                      <p className="text-[13px] font-semiboldr text-primary">
                         {w.asset} · {p.network}: {w.network}
                       </p>
                       <p className="num mt-2 text-[14.5px] leading-6 break-all text-ink select-all">{w.address}</p>

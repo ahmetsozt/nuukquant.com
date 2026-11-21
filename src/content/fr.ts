@@ -112,10 +112,10 @@ export const fr: ContentOverride = {
       visualTag: "Trading algorithmique · Gestion de portefeuille",
       visualAlt: "Monoplace de Formule 1 aux couleurs NUUK dans un studio sombre",
       kicker: "Société de trading pilotée par l'IA · DIFC, Dubaï",
-      title: "Les marchés, lus avec discipline.",
+      title: "Des systèmes de trading IA, d'abord engagés sur notre propre capital",
       lead:
         "NUUK conçoit des systèmes de trading pilotés par l'IA, les exploite d'abord sur son propre capital, gère des comptes d'investisseurs et apprend aux investisseurs à trader par eux-mêmes. Chaque chiffre de ce site indique sa source et sa méthode.",
-      primary: { label: "Ouvrir un compte de courtage" },
+      primary: { label: "Rejoindre le groupe WhatsApp" },
       secondary: { label: "Réserver un appel" },
       trustLine: ["Notre capital dans chaque système", "Basé au DIFC, à Dubaï"],
       trust: [
@@ -375,8 +375,7 @@ export const fr: ContentOverride = {
         "lockup": "Aucun ; vous partez quand vous voulez",
         "structure": "Votre propre compte de courtage ; les signaux arrivent sur WhatsApp",
         "forWhom": "Ceux qui démarrent avec un petit solde et veulent passer les ordres eux-mêmes",
-        "join": "Rejoindre",
-        "joinText": "Bonjour. Je souhaite rejoindre le programme de signaux."
+        "join": "Rejoindre"
       },
       {
         "name": "NUUK AI - Premium",
@@ -387,8 +386,7 @@ export const fr: ContentOverride = {
         "lockup": "30 jours, puis retrait à tout moment",
         "structure": "Pool MAM / copy trading chez le courtier",
         "forWhom": "Investisseurs autonomes qui veulent les systèmes sans les piloter",
-        "join": "Rejoindre",
-        "joinText": "Bonjour. Je souhaite rejoindre le programme NUUK AI - Premium."
+        "join": "Rejoindre"
       },
       {
         "name": "Compte dédié",
@@ -399,8 +397,7 @@ export const fr: ContentOverride = {
         "lockup": "Préavis de 30 jours",
         "structure": "PAMM ou compte géré séparément chez le courtier",
         "forWhom": "Family offices, trésoreries d'entreprise et investisseurs professionnels",
-        "join": "Rejoindre",
-        "joinText": "Bonjour. Je souhaite ouvrir un compte dédié."
+        "join": "Rejoindre"
       }
     ],
     tierLabels: {
@@ -883,14 +880,14 @@ export const fr: ContentOverride = {
 
   ctaBand: {
     title: "Prêt à commencer ?",
-    body: "Quatre étapes du premier appel au premier trade. La plupart des gens sont opérationnels en une semaine.",
+    body: "Quatre étapes de votre premier message à un plan qui vous appartient. La première est gratuite.",
     steps: [
-      { title: "Réserver un appel", body: "30 minutes pour décider quel service vous convient : signaux, compte géré ou formation." },
-      { title: "Ouvrir un compte de courtage", body: "Le compte est ouvert à votre nom chez le courtier. La vérification prend environ 10 minutes avec une pièce d'identité et un justificatif de domicile." },
-      {"title": "Financer et connecter", "body": "Financez votre compte de courtage : à partir de 250 USD pour les signaux WhatsApp, 1 000 USD pour NUUK AI - Premium, 250 000 USD pour un mandat dédié. Connectez-le à la structure choisie."},
-      { title: "Commencer à trader", body: "Suivez le plan, examinez les résultats chaque mois et ne prenez jamais un trade que vous ne pouvez pas expliquer." },
+      { title: "Rejoindre le groupe WhatsApp", body: "Gratuit. Le pouls quotidien du marché, le calendrier économique et le portefeuille modèle du desk, chaque jour de marché." },
+      { title: "Suivre le desk", body: "Lisez les notes pendant quelques semaines et comparez-les au journal du desk avant de décider quoi que ce soit." },
+      { title: "Choisir votre voie", body: "Restez dans le groupe gratuit, passez à Premium ou apprenez la méthode dans la Masterclass." },
+      { title: "Trader selon vos règles", body: "Suivez le plan, examinez les résultats chaque mois et ne prenez jamais un trade que vous ne pouvez pas expliquer." },
     ],
-    cta: { label: "Réserver un appel" },
+    cta: { label: "Rejoindre le groupe WhatsApp" },
   },
 
   footer: {

@@ -14,7 +14,7 @@ export default function NotFoundBody({ labels }: { labels: Record<string, Labels
     <section className="section-pad bg-hero text-white">
       <div className="container-x grid gap-10 lg:grid-cols-12 lg:items-center">
         <div className="lg:col-span-7">
-          <p className="num text-[96px] leading-none font-extrabold text-primary lg:text-[140px]">404</p>
+          <p className="num text-[96px] leading-none font-medium text-primary lg:text-[140px]">404</p>
           <h1 className="h1-display mt-4 text-white">{t.title}</h1>
           <p className="mt-5 max-w-[560px] text-[17px] leading-7 text-soft">{t.body}</p>
           <div className="mt-8">

@@ -64,10 +64,10 @@ export default function Consent({ labels }: { labels: Record<string, Labels> }) 
             </Link>
           </p>
           <div className="mt-3 flex flex-none gap-2 sm:mt-0">
-            <button type="button" onClick={() => choose("denied")} className="rounded-pill border border-white/30 px-4 py-2 text-[13px] font-semibold hover:bg-white/10">
+            <button type="button" onClick={() => choose("denied")} className="rounded-md border border-white/30 px-4 py-2 text-[13px] font-semibold hover:bg-white/10">
               {t.reject}
             </button>
-            <button type="button" onClick={() => choose("granted")} className="rounded-pill bg-primary px-4 py-2 text-[13px] font-semibold text-white hover:bg-primary-dark">
+            <button type="button" onClick={() => choose("granted")} className="rounded-md bg-primary px-4 py-2 text-[13px] font-semibold text-white hover:bg-primary-dark">
               {t.accept}
             </button>
           </div>

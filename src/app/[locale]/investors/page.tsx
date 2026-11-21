@@ -42,11 +42,11 @@ export default async function InvestorsPage({ params }: { params: LocaleParams }
                   <div className="flex items-center gap-4">
                     <BrokerLogo slug={b.slug} name={b.name} height={26} className="max-w-[120px]" />
                     <div>
-                      <p className="text-[16px] font-bold text-ink">{b.name}</p>
+                      <p className="text-[16px] font-semibold text-ink">{b.name}</p>
                       <p className="text-[13px] text-muted">{p.portalLabel}</p>
                     </div>
                   </div>
-                  <span className="flex size-10 flex-none items-center justify-center rounded-full bg-tint text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                  <span className="flex size-10 flex-none items-center justify-center rounded-md bg-fog text-body ring-1 ring-black/5 transition-colors group-hover:bg-primary group-hover:text-white">
                     <Icon name="arrow-up-right" size={16} />
                   </span>
                 </a>
@@ -66,7 +66,7 @@ export default async function InvestorsPage({ params }: { params: LocaleParams }
                 <span className="flex size-11 items-center justify-center rounded-full bg-primary text-white">
                   <Icon name={REPORT_ICONS[i] ?? "check"} size={20} />
                 </span>
-                <h3 className="mt-5 text-[18px] font-bold text-ink">{r.title}</h3>
+                <h3 className="mt-5 text-[18px] font-semibold text-ink">{r.title}</h3>
                 <p className="mt-2 text-[14.5px] leading-6 text-body">{r.body}</p>
               </li>
             ))}
@@ -78,7 +78,7 @@ export default async function InvestorsPage({ params }: { params: LocaleParams }
         <div className="container-x">
           <div className="grid items-center gap-8 rounded-card bg-ink p-8 text-white lg:grid-cols-12 lg:p-12">
             <div className="lg:col-span-8">
-              <h2 className="text-[26px] font-bold leading-tight lg:text-[32px]">{p.accessTitle}</h2>
+              <h2 className="text-[26px] font-semibold leading-tight lg:text-[32px]">{p.accessTitle}</h2>
               <p className="mt-3 text-[15.5px] leading-7 text-white/75">{p.accessBody}</p>
             </div>
             <div className="flex flex-wrap gap-3 lg:col-span-4 lg:justify-end">

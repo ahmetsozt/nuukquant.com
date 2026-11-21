@@ -1,8 +1,8 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import Button from "@/components/ui/Button";
-import Blob from "@/components/ui/Blob";
 import Fill from "@/components/ui/Fill";
+import { noDot } from "@/lib/text";
 import JsonLd from "@/components/seo/JsonLd";
 import { breadcrumbSchema } from "@/lib/schema";
 
@@ -36,10 +36,10 @@ export default function PageIntro({
     <>
       <section className={`relative overflow-hidden ${dark ? "bg-hero text-white" : "bg-fog"}`} aria-labelledby="page-heading">
         <div className="container-x grid gap-10 pt-12 pb-14 lg:grid-cols-12 lg:items-center lg:gap-8 lg:pt-20 lg:pb-20">
-          <div className="lg:col-span-6">
+          <div className={visual ? "lg:col-span-6" : "lg:col-span-8"}>
             {kicker && <p className={`kicker mb-4 ${dark ? "text-cyan" : ""}`}>{kicker}</p>}
             <h1 id="page-heading" className={`h1-display max-w-[720px] ${dark ? "text-white" : ""}`}>
-              <Fill text={title} />
+              <Fill text={noDot(title)} />
             </h1>
             {body && (
               <p className={`mt-6 max-w-[560px] text-[17px] leading-[1.55] ${dark ? "text-soft" : "text-body"}`}>
@@ -62,9 +62,11 @@ export default function PageIntro({
             )}
             {children}
           </div>
-          <div className="lg:col-span-6">
-            <div className="mx-auto aspect-[5/4] w-full max-w-[400px] lg:max-w-[560px]">{visual ?? <Blob tone={dark ? "dark" : "light"} className="h-full w-full" />}</div>
-          </div>
+          {visual && (
+            <div className="lg:col-span-6">
+              <div className="mx-auto aspect-[5/4] w-full max-w-[400px] lg:max-w-[560px]">{visual}</div>
+            </div>
+          )}
         </div>
       </section>
       {crumbs && crumbs.length > 0 && <JsonLd data={breadcrumbSchema(crumbs)} />}

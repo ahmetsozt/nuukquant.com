@@ -15,7 +15,7 @@ export default function NotFound() {
     }),
   );
   return (
-    <Shell locale="en">
+    <Shell locale="en" noGroupLinks>
       <NotFoundBody labels={labels} />
     </Shell>
   );

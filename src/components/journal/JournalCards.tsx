@@ -31,8 +31,8 @@ export default function JournalCards({ cards, limit }: { cards: Card[]; limit?: 
           key={c.label}
           className={`rv rounded-card p-5 ring-1 transition-shadow duration-200 hover:shadow-card ${c.hero ? "bg-ink text-white ring-ink" : "bg-white ring-black/5"}`}
         >
-          <dt className={`text-[12px] font-semibold uppercase tracking-[0.08em] ${c.hero ? "text-white/60" : "text-muted"}`}>{c.label}</dt>
-          <dd className={`num mt-2 text-[26px] font-extrabold leading-none tabular-nums md:text-[30px] ${c.hero ? "text-[#5ee0b8]" : toneClass[c.tone]}`}>{c.value}</dd>
+          <dt className={`text-[12px] font-semibold ${c.hero ? "text-white/60" : "text-muted"}`}>{c.label}</dt>
+          <dd className={`num mt-2 text-[26px] font-medium leading-none tabular-nums md:text-[30px] ${c.hero ? "text-[#5ee0b8]" : toneClass[c.tone]}`}>{c.value}</dd>
           <dd className={`mt-2 text-[12.5px] ${c.hero ? "text-white/60" : "text-muted"}`}>{c.hint}</dd>
         </div>
       ))}

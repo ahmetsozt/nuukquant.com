@@ -1,4 +1,5 @@
 import Fill from "@/components/ui/Fill";
+import { noDot } from "@/lib/text";
 
 /**
  * Section heading. `split` puts the title on the left and the lead on the right,
@@ -28,9 +29,9 @@ export default function SectionHead({
   ) : null;
   const titleEl = (
     <>
-      {kicker && <p className={`kicker mb-4 ${dark ? "text-cyan" : ""}`}>{kicker}</p>}
+      {kicker && <p className={`kicker mb-3 ${dark ? "text-cyan" : ""}`}>{kicker}</p>}
       <h2 className={`h2-section rv ${dark ? "text-white" : ""}`}>
-        <Fill text={title} />
+        <Fill text={noDot(title)} />
       </h2>
     </>
   );

@@ -5,7 +5,7 @@ type Variant = "primary" | "cyan" | "outline" | "outline-dark" | "ghost" | "head
 type Size = "md" | "sm";
 
 const base =
-  "btn inline-flex items-center justify-center gap-2 rounded-pill font-semibold whitespace-nowrap transition-[background-color,border-color,color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50";
+  "btn inline-flex items-center justify-center gap-2 rounded-[10px] font-medium whitespace-nowrap transition-[background-color,border-color,color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50";
 
 const sizes: Record<Size, string> = {
   md: "px-6 py-4 text-[16px] leading-none",
@@ -14,9 +14,9 @@ const sizes: Record<Size, string> = {
 
 const variants: Record<Variant, string> = {
   primary: "bg-primary text-white hover:bg-primary-dark",
-  cyan: "bg-cyan text-navy-deep hover:bg-[#3ddff7]",
-  outline: "border-[1.5px] border-white text-white hover:bg-white hover:text-ink",
-  "outline-dark": "border-[1.5px] border-ink text-ink hover:bg-ink hover:text-white",
+  cyan: "bg-white text-ink hover:bg-fog",
+  outline: "border border-white/25 text-white hover:border-white/60",
+  "outline-dark": "border border-ink/20 text-ink hover:border-ink/50",
   ghost: "text-body hover:text-ink",
   header: "bg-primary text-white hover:bg-primary-dark",
 };

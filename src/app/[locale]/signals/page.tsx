@@ -66,7 +66,7 @@ export default async function SignalsPage({ params }: { params: LocaleParams }) 
               <li key={plan.name} className={`rv flex flex-col rounded-card p-7 ${plan.highlight ? "bg-ink text-white ring-0" : "bg-white text-ink shadow-card ring-1 ring-black/5"}`}>
                 <h3 className={`text-[20px] ${plan.highlight ? "text-white" : ""}`}>{plan.name}</h3>
                 <p className="mt-4 flex items-baseline gap-2">
-                  <span className={`num text-[36px] font-bold ${plan.highlight ? "text-white" : "text-ink"}`}>
+                  <span className={`num text-[36px] font-semibold ${plan.highlight ? "text-white" : "text-ink"}`}>
                     <Fill text={plan.price} />
                   </span>
                   <span className={`text-[13px] ${plan.highlight ? "text-soft" : "text-muted"}`}>{plan.period}</span>

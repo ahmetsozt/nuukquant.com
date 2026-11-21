@@ -4,11 +4,11 @@ import Footer from "@/components/layout/Footer";
 import HtmlLang from "@/components/layout/HtmlLang";
 import JsonLd from "@/components/seo/JsonLd";
 import { organizationSchema, websiteSchema } from "@/lib/schema";
-import { dir, getContent, type Locale } from "@/i18n";
+import { dir, getContent, withoutGroupLinks, type Locale } from "@/i18n";
 
 /** Locale-aware page frame: risk bar, header, footer and text direction. */
-export default function Shell({ locale, children }: { locale: Locale; children: ReactNode }) {
-  const c = getContent(locale);
+export default function Shell({ locale, children, noGroupLinks = false }: { locale: Locale; children: ReactNode; noGroupLinks?: boolean }) {
+  const c = noGroupLinks ? withoutGroupLinks(getContent(locale)) : getContent(locale);
   const direction = dir(locale);
   return (
     <div dir={direction} className={direction === "rtl" ? "font-sans" : undefined}>

@@ -4,8 +4,8 @@ import { useState } from "react";
 import { en, type SiteContent } from "@/content/en";
 import PostCard from "@/components/home/PostCard";
 
-const tabActive = "rounded-pill bg-ink px-4 py-2 text-[14px] font-semibold text-white";
-const tabIdle = "rounded-pill bg-fog px-4 py-2 text-[14px] font-semibold text-body hover:bg-tint hover:text-primary";
+const tabActive = "rounded-md bg-ink px-4 py-2 text-[14px] font-semibold text-white";
+const tabIdle = "rounded-md bg-fog px-4 py-2 text-[14px] font-semibold text-body hover:bg-tint hover:text-primary";
 
 export default function InsightsList({ c }: { c: SiteContent }) {
   const [tab, setTab] = useState(0);

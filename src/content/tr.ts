@@ -1,4 +1,5 @@
 import type { ContentOverride } from "@/i18n";
+import { logSince, signalLog } from "@/data/facts";
 
 /**
  * Türkçe içerik. Yalnızca çevrilen alanlar yer alır; eksik anahtarlar İngilizceye düşer
@@ -181,7 +182,7 @@ export const tr: ContentOverride = {
         },
         {
           "value": "87",
-          "label": "2026'dan bu yana geriye dönük testten geçirilen strateji varyantı; üçü üretimde ve algoritmik sistemler sayfasında belgelenmiş durumda"
+          "label": "2026'dan bu yana geriye dönük testten geçirilen strateji varyantı; biri canlı, biri testte, biri geliştirmede ve algoritmik sistemler sayfasında belgelenmiş durumda"
         },
         {
           "value": "3,000+",
@@ -309,8 +310,8 @@ export const tr: ContentOverride = {
         "label": "yıllık İstanbul–Londra işlem masası tecrübesi"
       },
       {
-        "value": "3",
-        "label": "canlı sistem; 87 strateji varyantı test edildi"
+        "value": "1",
+        "label": "canlı sistem; biri testte, biri geliştirmede; 87 strateji varyantı test edildi"
       }
     ],
     "activitiesTitle": "NUUK ne yapar",
@@ -358,7 +359,7 @@ export const tr: ContentOverride = {
       {
         "year": "2026",
         "title": "Canlı sistemler",
-        "body": "87 strateji varyantı test edildi; üçü üretimde. GANN NUUK Trader AI, Model portföy olarak çalışıyor; sonuçları performans sayfasında."
+        "body": "87 strateji varyantı test edildi; biri canlı, biri testte, biri geliştirmede. GANN NUUK Trader AI, Model portföy olarak çalışıyor; sonuçları performans sayfasında."
       },
       {
         "year": "Bugün",
@@ -513,7 +514,7 @@ export const tr: ContentOverride = {
         "name": "WhatsApp Sinyalleri",
         "tagline": "Sinyaller size gelir, işlemi siz açarsınız",
         "minimum": "250 USD (aracı kurumdaki kendi hesabınız)",
-        "managementFee": "Aylık 49 USD AI üyelik ücreti",
+        "managementFee": "Yok; WhatsApp grubu ücretsiz",
         "performanceFee": "Yok",
         "lockup": "Yok; istediğiniz zaman ayrılırsınız",
         "structure": "Aracı kurumdaki kendi hesabınız; sinyaller WhatsApp'tan gelir",
@@ -795,7 +796,7 @@ export const tr: ContentOverride = {
       {
         "name": "Mentorluk",
         "price": "$5,000",
-        "period": "üç aylık",
+        "period": "aylık",
         "features": [
           "Sinyaller planının tamamı",
           "İki haftada bir birebir değerlendirme",
@@ -806,7 +807,7 @@ export const tr: ContentOverride = {
       }
     ],
     "performanceTitle": "Sinyal performansı",
-    "performanceNote": "Kapanan fikirler her ay giriş, çıkış ve sonuç bilgisiyle WhatsApp grubunda kayıt altına alınır. Bugüne kadarki kurum içi kayıt: kapanan fikirlerin %87'si zarar durdur seviyesinden önce hedefe ulaşmıştır. Kaydın bağımsız doğrulaması sürmektedir.",
+    "performanceNote": `Her sinyal giriş, stop, hedef ve sonuç bilgisiyle ücretsiz sinyaller sayfasında herkese açık kaydedilir. ${logSince("tr-TR")} tarihinden bu yana açık kayıtta isabet oranı %${signalLog.hitRate} (tetiklenen ${signalLog.triggered} sinyal; hedef stoptan önce geldi).`,
     "disclaimer": "Sinyaller eğitim içeriği ve genel piyasa yorumu niteliğindedir. Kişisel yatırım tavsiyesi değildir ve bireysel koşullarınızı dikkate almaz."
   },
 
@@ -1119,7 +1120,7 @@ export const tr: ContentOverride = {
     "metaDescription": "NUUK gelirini kendi sermayesiyle yaptığı işlemlerden, yönettiği portföylerdeki yönetim ve performans ücretlerinden ve araştırma aboneliklerinden elde eder. Her ücret açıklanmıştır.",
     "kicker": "Nasıl Para Kazanıyoruz",
     "title": "Siz kazandığınızda kazanırız. Önce kendi sermayemiz.",
-    "lead": "NUUK bir aracı kurum değildir ve işlemlerinizin karşı tarafında yer almaz. Gelirimiz dört şeffaf kaynaktan gelir; en büyüğü, sizin için de çalıştırdığımız aynı işlemlerdir.",
+    "lead": "NUUK bir aracı kurum değildir ve işlemlerinizin karşı tarafında yer almaz. Gelirimiz üç şeffaf kaynaktan gelir; en büyüğü, sizin için de çalıştırdığımız aynı işlemlerdir.",
     "principlesTitle": "Her ücretin arkasındaki dört ilke",
     "principles": [
       {
@@ -1128,7 +1129,7 @@ export const tr: ContentOverride = {
       },
       {
         "title": "Net kâr üzerinden ücret",
-        "body": "Performans ücreti yalnızca hesabınızın en yüksek değer seviyesinin (high-water mark) üzerindeki gerçekleşmiş kârdan alınır. Zarar telafi edilmeden yeniden kazanmayız."
+        "body": "Özel hesaplarda performans ücreti yalnız hesabın en yüksek değer seviyesinin (high-water mark) üzerindeki gerçekleşmiş kârdan alınır; zarar telafi edilmeden yeniden kazanmayız. NUUK AI - Premium'da ücret, her haftanın net kârının %25'idir."
       },
       {
         "title": "Gizli hiçbir şey yok",
@@ -1151,7 +1152,7 @@ export const tr: ContentOverride = {
       {
         "title": "Portföy yönetimi",
         "share": "Yönetim ve performans ücretleri",
-        "body": "Üç yapı. WhatsApp sinyallerinde performans ücreti yoktur, yalnız aylık 49 USD AI üyelik ücreti alınır. NUUK AI - Premium'da (1.000 USD'den itibaren) aylık 99 USD yönetim ücreti ve haftalık net kâr üzerinden %25 performans ücreti alınır. Özel hesapta (250.000 USD'den itibaren) aylık 1.000 USD yönetim ücreti ve yönetim ücreti düşüldükten sonra en yüksek değer seviyesinin üzerindeki kârın %25'i alınır.",
+        "body": "Üç yapı. WhatsApp sinyal grubu ücretsizdir; abonelik ve performans ücreti yoktur. NUUK AI - Premium'da (1.000 USD'den itibaren) aylık 99 USD yönetim ücreti ve haftalık net kâr üzerinden %25 performans ücreti alınır. Özel hesapta (250.000 USD'den itibaren) aylık 1.000 USD yönetim ücreti ve yönetim ücreti düşüldükten sonra en yüksek değer seviyesinin üzerindeki kârın %25'i alınır.",
         "how": "Aracı kurum tarafından hesabınızdan kesilir ve her ekstrede görünür"
       },
       {
@@ -1170,7 +1171,7 @@ export const tr: ContentOverride = {
       "Spread, komisyon veya swap üzerine marj eklemek",
       "Paranızı tutmak ya da hesabınızda para çekme yetkisine sahip olmak",
       "Size karşı işlem yapmak veya emir akışınızı satmak",
-      "Gerçekleşmemiş kazançlardan ya da en yüksek değer seviyesinin altındaki kârdan performans ücreti almak"
+      "Gerçekleşmemiş kazançlardan performans ücreti almak"
     ],
     "riskTitle": "Risk yönetimi iş modelinin kendisidir",
     "riskLead": "Ücretler ancak sermaye ayakta kalırsa işe yarar; bu yüzden önce risk gelir.",
@@ -1826,16 +1827,16 @@ export const tr: ContentOverride = {
     },
     {
       name: "Sinyal kaydı — kapanan fikirler",
-      source: "WhatsApp grubu",
-      updated: "Aylık",
+      source: "Ücretsiz sinyaller sayfasındaki açık kayıt",
+      updated: signalLog.updated,
       stats: [
         {
           "label": "Kazanma oranı",
-          "value": "87%"
+          "value": `%${signalLog.hitRate}`
         },
         {
-          "label": "Aylık fikir",
-          "value": "100+"
+          "label": "Tetiklenen sinyal",
+          "value": String(signalLog.triggered)
         },
         {
           "label": "Kanal",
@@ -1843,7 +1844,7 @@ export const tr: ContentOverride = {
         },
         {
           "label": "Kayıt",
-          "value": "Aylık"
+          "value": "Açık"
         }
       ],
     },

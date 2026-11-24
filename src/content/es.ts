@@ -1,4 +1,5 @@
 import type { ContentOverride } from "@/i18n";
+import { logSince, signalLog } from "@/data/facts";
 
 /**
  * Spanish (neutral international) overrides. Deep-merged onto src/content/en.ts:
@@ -78,13 +79,13 @@ export const es: ContentOverride = {
       label: "Servicios",
       items: [
         { label: "Sistemas de trading con IA" },
-        { label: "Historial verificado" },
+        { label: "Historial de resultados" },
         { label: "Cuentas gestionadas" },
         { label: "Señales e informes" },
         { label: "Formación" },
       ],
     },
-    { label: "Historial verificado" },
+    { label: "Historial de resultados" },
     { label: "Masterclass" },
     { label: "Análisis", items: [{ label: "Notas de mercado" }, { label: "Calendario económico" }] },
     {
@@ -118,7 +119,7 @@ export const es: ContentOverride = {
       trustLine: ["Capital propio en cada sistema", "Con sede en el DIFC, Dubái"],
       trust: [
         { label: "años de experiencia en mesas de negociación entre Estambul y Londres detrás de la firma" },
-        {"label": "variantes de estrategia sometidas a backtest desde 2026; tres en producción, documentadas en la página de trading con IA"},
+        {"label": "variantes de estrategia sometidas a backtest desde 2026; uno en producción, uno en pruebas y uno en desarrollo, documentadas en la página de trading con IA"},
         { label: "inversores formados en webinars y seminarios" },
       ],
       pressTitle: "Bróker",
@@ -155,7 +156,7 @@ export const es: ContentOverride = {
       { title: "Señales, informes y formación", body: "Notas diarias, informes semanales, ideas de trading con el razonamiento completo y webinars en vivo que enseñan el método.", who: "Para traders que quieren aprender y mantenerse informados" },
     ],
     record: {
-      kicker: "Historial verificado",
+      kicker: "Historial de resultados",
       title: "Los resultados, con el método detrás",
       lead: "Los resultados se presentan netos de costes de operativa. Cada cifra indica su fuente: cuenta real, paper trading o backtest.",
       featuredLabel: "Curva de capital",
@@ -213,8 +214,8 @@ export const es: ContentOverride = {
         "label": "años de experiencia en mesas de Estambul y Londres detrás de la firma"
       },
       {
-        "value": "3",
-        "label": "sistemas en producción, 87 variantes de estrategia probadas"
+        "value": "1",
+        "label": "sistema en producción; otro en pruebas y uno en desarrollo; 87 variantes de estrategia probadas"
       }
     ],
     "activitiesTitle": "Qué hace NUUK",
@@ -262,7 +263,7 @@ export const es: ContentOverride = {
       {
         "year": "2026",
         "title": "Sistemas en producción",
-        "body": "87 variantes de estrategia sometidas a backtesting, tres en producción. GANN NUUK Trader AI opera como cartera modelo y se publica en la página de resultados."
+        "body": "87 variantes de estrategia sometidas a backtesting, uno en producción, uno en pruebas y uno en desarrollo. GANN NUUK Trader AI opera como cartera modelo y se publica en la página de resultados."
       },
       {
         "year": "Hoy",
@@ -333,9 +334,9 @@ export const es: ContentOverride = {
   },
 
   trackRecord: {
-    metaTitle: "Historial verificado",
+    metaTitle: "Historial de resultados",
     metaDescription: "Rendimiento de la cartera propia de NUUK y de sus sistemas de trading, con la fuente y el método de cada cifra.",
-    kicker: "Historial verificado",
+    kicker: "Historial de resultados",
     title: "Cada cifra, con su fuente",
     lead: "Las cuentas de los inversores se mantienen en el bróker. Los resultados de esta página pertenecen a la cartera modelo de NUUK, una cuenta distinta de las cuentas de los inversores. Cada cifra indica de dónde procede y cómo se calcula. El rendimiento pasado no garantiza resultados futuros.",
     disclaimer: "Los resultados pasados no garantizan resultados futuros. Las cifras son netas de costes de negociación y brutas de cualquier comisión de éxito, salvo que se indique lo contrario.",
@@ -368,7 +369,7 @@ export const es: ContentOverride = {
         "name": "Señales por WhatsApp",
         "tagline": "Las señales le llegan; usted abre las operaciones",
         "minimum": "250 USD (una cuenta de bróker a su propio nombre)",
-        "managementFee": "49 USD al mes por la membresía de IA",
+        "managementFee": "Ninguna; el grupo de WhatsApp es gratuito",
         "performanceFee": "Ninguna",
         "lockup": "Ninguno; puede salir cuando quiera",
         "structure": "Una cuenta de bróker a su propio nombre; las señales llegan por WhatsApp",
@@ -513,7 +514,7 @@ export const es: ContentOverride = {
       { name: "Mentoría", period: "por trimestre", features: ["Todo lo incluido en Señales", "Revisión individual quincenal", "Feedback sobre la cartera", "Acceso prioritario a los webinars"], cta: "Solicitar" },
     ],
     performanceTitle: "Rendimiento de las señales",
-    performanceNote: "Las ideas cerradas se registran mensualmente con entrada, salida y resultado en el grupo de WhatsApp. Registro interno hasta la fecha: el 87% de las ideas cerradas alcanzó el objetivo antes que el stop. La verificación independiente del registro está en curso.",
+    performanceNote: `Cada señal se registra públicamente en la página de señales gratuitas con entrada, stop, objetivo y resultado. Registro público desde el ${logSince("es-ES")}: el ${signalLog.hitRate}% de las ${signalLog.triggered} señales activadas alcanzó el objetivo antes que el stop.`,
     disclaimer: "Las señales son contenido educativo y comentario general de mercado. No constituyen asesoramiento de inversión personalizado y no tienen en cuenta sus circunstancias.",
   },
 
@@ -591,7 +592,7 @@ export const es: ContentOverride = {
       },
       {
         "title": "Cobro sobre el beneficio neto",
-        "body": "La comisión de éxito se aplica solo al beneficio realizado por encima del máximo histórico (high-water mark) de su cuenta. Las pérdidas deben recuperarse antes de que volvamos a cobrar."
+        "body": "En las cuentas dedicadas, la comisión de éxito se aplica solo al beneficio realizado por encima del máximo histórico (high-water mark), así que las pérdidas se recuperan antes de que volvamos a cobrar. NUUK AI - Premium cobra el 25% del beneficio neto de cada semana."
       },
       {
         "title": "Nada oculto",
@@ -614,7 +615,7 @@ export const es: ContentOverride = {
       {
         "title": "Gestión de carteras",
         "share": "Comisiones de gestión y de éxito",
-        "body": "Tres estructuras. Las señales de WhatsApp no cobran comisión de rendimiento, solo 49 USD al mes por la membresía de IA. NUUK AI - Premium (desde 1.000 USD) cobra 99 USD al mes más un 25% del beneficio neto semanal. La cuenta dedicada (desde 250.000 USD) cobra 1.000 USD al mes más un 25% sobre los beneficios por encima del máximo histórico, después de la comisión de gestión.",
+        "body": "Tres estructuras. El grupo de señales de WhatsApp es gratuito, sin suscripción ni comisión de rendimiento. NUUK AI - Premium (desde 1.000 USD) cobra 99 USD al mes más un 25% del beneficio neto semanal. La cuenta dedicada (desde 250.000 USD) cobra 1.000 USD al mes más un 25% sobre los beneficios por encima del máximo histórico, después de la comisión de gestión.",
         "how": "Las deduce el bróker de su cuenta y aparecen en cada extracto"
       },
       {
@@ -633,7 +634,7 @@ export const es: ContentOverride = {
       "Recargar spreads, comisiones o swaps",
       "Custodiar su dinero o tener derecho de retirada sobre su cuenta",
       "Operar en su contra o vender su flujo de órdenes",
-      "Cobrar comisión de éxito sobre ganancias no realizadas o sobre beneficios por debajo del máximo histórico"
+      "Cobrar comisión de éxito sobre ganancias no realizadas"
     ],
     "riskTitle": "La gestión del riesgo es el modelo de negocio",
     "riskLead": "Las comisiones solo funcionan si el capital sobrevive; por eso el riesgo va primero.",
@@ -1034,16 +1035,16 @@ export const es: ContentOverride = {
     },
     {
       name: "Registro de señales — ideas cerradas",
-      source: "Grupo de WhatsApp",
-      updated: "Mensual",
+      source: "Registro público en la página de señales gratuitas",
+      updated: signalLog.updated,
       stats: [
         {
           "label": "Tasa de acierto",
-          "value": "87%"
+          "value": `${signalLog.hitRate}%`
         },
         {
-          "label": "Ideas al mes",
-          "value": "100+"
+          "label": "Señales activadas",
+          "value": String(signalLog.triggered)
         },
         {
           "label": "Canal",
@@ -1051,7 +1052,7 @@ export const es: ContentOverride = {
         },
         {
           "label": "Registro",
-          "value": "Mensual"
+          "value": "Público"
         }
       ],
     },

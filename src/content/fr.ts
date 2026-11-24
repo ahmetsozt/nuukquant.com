@@ -1,4 +1,5 @@
 import type { ContentOverride } from "@/i18n";
+import { logSince, signalLog } from "@/data/facts";
 
 /**
  * French overrides. Deep-merged onto src/content/en.ts: objects merge by key,
@@ -120,7 +121,7 @@ export const fr: ContentOverride = {
       trustLine: ["Notre capital dans chaque système", "Basé au DIFC, à Dubaï"],
       trust: [
         { label: "années d'expérience de desk entre Istanbul et Londres derrière la société" },
-        {"label": "variantes de stratégies back-testées depuis 2026 ; trois en production, documentées sur la page trading IA"},
+        {"label": "variantes de stratégies back-testées depuis 2026 ; un en production, un en test et un en développement, documentées sur la page trading IA"},
         { label: "investisseurs formés lors de webinaires et de séminaires" },
       ],
       pressTitle: "Courtier",
@@ -215,8 +216,8 @@ export const fr: ContentOverride = {
         "label": "années d'expérience de desk entre Istanbul et Londres"
       },
       {
-        "value": "3",
-        "label": "systèmes en production, 87 variantes de stratégies testées"
+        "value": "1",
+        "label": "système en production ; un autre en test, un en développement ; 87 variantes de stratégies testées"
       }
     ],
     "activitiesTitle": "Ce que fait NUUK",
@@ -264,7 +265,7 @@ export const fr: ContentOverride = {
       {
         "year": "2026",
         "title": "Systèmes en production",
-        "body": "87 variantes de stratégies back-testées, trois en production. GANN NUUK Trader AI fonctionne en portefeuille modèle et figure sur la page de performance."
+        "body": "87 variantes de stratégies back-testées, un en production, un en test et un en développement. GANN NUUK Trader AI fonctionne en portefeuille modèle et figure sur la page de performance."
       },
       {
         "year": "Aujourd'hui",
@@ -370,7 +371,7 @@ export const fr: ContentOverride = {
         "name": "Signaux WhatsApp",
         "tagline": "Les signaux vous parviennent ; vous passez les ordres",
         "minimum": "250 USD (votre propre compte de courtage)",
-        "managementFee": "49 USD par mois pour l'abonnement IA",
+        "managementFee": "Aucun ; le groupe WhatsApp est gratuit",
         "performanceFee": "Aucuns",
         "lockup": "Aucun ; vous partez quand vous voulez",
         "structure": "Votre propre compte de courtage ; les signaux arrivent sur WhatsApp",
@@ -515,7 +516,7 @@ export const fr: ContentOverride = {
       { name: "Mentorat", period: "par trimestre", features: ["Tout ce qui est inclus dans Signaux", "Revue individuelle toutes les deux semaines", "Retour sur votre portefeuille", "Accès prioritaire aux webinaires"], cta: "Postuler" },
     ],
     performanceTitle: "Performance des signaux",
-    performanceNote: "Les idées clôturées sont consignées chaque mois avec entrée, sortie et résultat dans le groupe WhatsApp. Journal interne à ce jour : 87 % des idées clôturées ont atteint l'objectif avant le stop. La vérification indépendante du journal est en cours.",
+    performanceNote: `Chaque signal est consigné publiquement sur la page des signaux gratuits avec entrée, stop, objectif et résultat. Journal public depuis le ${logSince("fr-FR")} : ${signalLog.hitRate} % des ${signalLog.triggered} signaux déclenchés ont atteint l'objectif avant le stop.`,
     disclaimer: "Les signaux sont un contenu pédagogique et un commentaire général de marché. Ils ne constituent pas un conseil en investissement personnalisé et ne tiennent pas compte de votre situation.",
   },
 
@@ -584,7 +585,7 @@ export const fr: ContentOverride = {
     "metaDescription": "NUUK se rémunère en négociant son propre capital, par des frais de gestion et de performance sur les portefeuilles gérés et par des abonnements à la recherche. Chaque frais est expliqué.",
     "kicker": "Comment nous gagnons de l’argent",
     "title": "Nous gagnons quand vous gagnez. Notre capital passe en premier.",
-    "lead": "NUUK n’est pas un courtier et ne prend pas la contrepartie de vos ordres. Nos revenus proviennent de quatre sources transparentes, et la plus importante est le trading que nous menons aussi pour vous.",
+    "lead": "NUUK n’est pas un courtier et ne prend pas la contrepartie de vos ordres. Nos revenus proviennent de trois sources transparentes, et la plus importante est le trading que nous menons aussi pour vous.",
     "principlesTitle": "Quatre principes derrière chaque frais",
     "principles": [
       {
@@ -593,7 +594,7 @@ export const fr: ContentOverride = {
       },
       {
         "title": "Rémunérés sur le bénéfice net",
-        "body": "Les frais de performance ne s’appliquent qu’au bénéfice réalisé au-dessus du plus-haut historique (high-water mark) de votre compte. Les pertes doivent être récupérées avant que nous gagnions à nouveau."
+        "body": "Sur les comptes dédiés, les frais de performance ne s’appliquent qu’au bénéfice réalisé au-dessus du plus-haut historique (high-water mark) : les pertes doivent être récupérées avant que nous gagnions à nouveau. NUUK AI - Premium prélève 25 % du bénéfice net de chaque semaine."
       },
       {
         "title": "Rien de caché",
@@ -616,7 +617,7 @@ export const fr: ContentOverride = {
       {
         "title": "Gestion de portefeuille",
         "share": "Frais de gestion et de performance",
-        "body": "Trois structures. Les signaux WhatsApp ne facturent aucune commission de performance, seulement 49 USD par mois pour l'abonnement IA. NUUK AI - Premium (à partir de 1 000 USD) facture 99 USD par mois plus 25 % du bénéfice net hebdomadaire. Le compte dédié (à partir de 250 000 USD) facture 1 000 USD par mois plus 25 % des bénéfices au-dessus du plus-haut historique, après frais de gestion.",
+        "body": "Trois structures. Le groupe de signaux WhatsApp est gratuit, sans abonnement ni commission de performance. NUUK AI - Premium (à partir de 1 000 USD) facture 99 USD par mois plus 25 % du bénéfice net hebdomadaire. Le compte dédié (à partir de 250 000 USD) facture 1 000 USD par mois plus 25 % des bénéfices au-dessus du plus-haut historique, après frais de gestion.",
         "how": "Prélevés par le courtier sur votre compte et visibles sur chaque relevé"
       },
       {
@@ -635,7 +636,7 @@ export const fr: ContentOverride = {
       "Majorer les spreads, commissions ou swaps",
       "Détenir votre argent ou disposer d’un droit de retrait sur votre compte",
       "Trader contre vous ou vendre votre flux d’ordres",
-      "Facturer des frais de performance sur des gains latents ou sur des bénéfices inférieurs au plus-haut historique"
+      "Facturer des frais de performance sur des gains latents"
     ],
     "riskTitle": "La gestion du risque est le modèle économique",
     "riskLead": "Les frais n’ont de sens que si le capital survit ; le risque passe donc en premier.",
@@ -1031,16 +1032,16 @@ export const fr: ContentOverride = {
     },
     {
       name: "Journal des signaux — idées clôturées",
-      source: "Groupe WhatsApp",
-      updated: "Mensuel",
+      source: "Journal public, page des signaux gratuits",
+      updated: signalLog.updated,
       stats: [
         {
           "label": "Taux de réussite",
-          "value": "87%"
+          "value": `${signalLog.hitRate} %`
         },
         {
-          "label": "Idées par mois",
-          "value": "100+"
+          "label": "Signaux déclenchés",
+          "value": String(signalLog.triggered)
         },
         {
           "label": "Canal",
@@ -1048,7 +1049,7 @@ export const fr: ContentOverride = {
         },
         {
           "label": "Journal",
-          "value": "Mensuel"
+          "value": "Public"
         }
       ],
     },

@@ -1,3 +1,4 @@
+import { logSince, signalLog } from "@/data/facts";
 /**
  * Single source of truth for all site copy. Other locales override parts of this
  * object (see src/i18n.ts). Anything marked "[FILL]" is a placeholder waiting for
@@ -223,7 +224,7 @@ export const en = {
       trustLine: ["Own capital in every system", "Based in DIFC, Dubai"],
       trust: [
         { value: "17", label: "years of Istanbul–London dealing-desk experience behind the firm" },
-        { value: "87", label: "strategy variants back-tested since 2026; three in production, documented on the AI trading page" },
+        { value: "87", label: "strategy variants back-tested since 2026; one live, one in testing and one in development, documented on the AI trading page" },
         { value: "3,000+", label: "investors trained in webinars and seminars" },
       ],
       pressTitle: "Broker",
@@ -322,8 +323,8 @@ export const en = {
         "label": "years of Istanbul–London desk experience behind the firm"
       },
       {
-        "value": "3",
-        "label": "systems in production, 87 strategy variants tested"
+        "value": "1",
+        "label": "system live; one more in testing, one in development; 87 strategy variants tested"
       },
     ],
     "activitiesTitle": "What NUUK does",
@@ -371,7 +372,7 @@ export const en = {
       {
         "year": "2026",
         "title": "Systems in production",
-        "body": "87 strategy variants back-tested, three in production. GANN NUUK Trader AI runs as a model portfolio and is reported on the track-record page."
+        "body": "87 strategy variants back-tested, one live, one in testing and one in development. GANN NUUK Trader AI runs as a model portfolio and is reported on the track-record page."
       },
       {
         "year": "Today",
@@ -477,7 +478,7 @@ export const en = {
         "name": "WhatsApp signals",
         "tagline": "The signals reach you; you place the trades",
         "minimum": "USD 250 (a broker account in your own name)",
-        "managementFee": "USD 49 per month for the AI membership",
+        "managementFee": "None; the WhatsApp group is free",
         "performanceFee": "None",
         "lockup": "None; leave whenever you like",
         "structure": "A broker account in your own name; signals arrive on WhatsApp",
@@ -716,10 +717,10 @@ export const en = {
     plans: [
       { slug: "reports", name: "Reports", price: "$750", period: "per month", features: ["Daily macro note", "Weekly report", "Archive access"], cta: "Subscribe", highlight: false },
       { slug: "signals", name: "Signals", price: "$1,000", period: "per month", features: ["Everything in Reports", "Trade ideas with reasoning", "Live updates on WhatsApp", "Monthly performance sheet"], cta: "Subscribe", highlight: true },
-      { slug: "mentorship", name: "Mentorship", price: "$5,000", period: "per quarter", features: ["Everything in Signals", "Fortnightly 1:1 review", "Portfolio feedback", "Priority access to webinars"], cta: "Apply", highlight: false },
+      { slug: "mentorship", name: "Mentorship", price: "$5,000", period: "per month", features: ["Everything in Signals", "Fortnightly 1:1 review", "Portfolio feedback", "Priority access to webinars"], cta: "Apply", highlight: false },
     ],
     performanceTitle: "Signal performance",
-    performanceNote: "Closed ideas are logged monthly with entry, exit and result in the WhatsApp group. Internal log to date: 87% of closed ideas reached target before stop. Independent verification of the log is in progress.",
+    performanceNote: `Every signal is logged in public on the free-signals page with entry, stop, target and result. Public log since ${logSince("en-GB")}: ${signalLog.hitRate}% of ${signalLog.triggered} triggered signals reached target before stop.`,
     disclaimer: "Signals are educational content and general market commentary. They are not personal investment advice and do not take your circumstances into account.",
   },
 
@@ -1054,7 +1055,7 @@ export const en = {
     "metaDescription": "NUUK earns from trading its own capital, from management and performance fees on managed portfolios and from research subscriptions. Every fee explained.",
     "kicker": "How we make money",
     "title": "We earn when you earn. Our own capital goes first.",
-    "lead": "NUUK is not a broker and does not take the other side of your trades. Our income comes from four transparent sources, and the largest of them is the same trading we run for you.",
+    "lead": "NUUK is not a broker and does not take the other side of your trades. Our income comes from three transparent sources, and the largest of them is the same trading we run for you.",
     "principlesTitle": "Four principles behind every fee",
     "principles": [
       {
@@ -1063,7 +1064,7 @@ export const en = {
       },
       {
         "title": "Paid on net profit",
-        "body": "Performance fees are charged only on realised profit above your account's high-water mark. Losses have to be recovered before we earn again."
+        "body": "On dedicated accounts, performance fees are charged only on realised profit above the high-water mark, so losses are recovered before we earn again. NUUK AI - Premium charges 25% of each week's net profit."
       },
       {
         "title": "Nothing hidden",
@@ -1086,7 +1087,7 @@ export const en = {
       {
         "title": "Portfolio management",
         "share": "Management and performance fees",
-        "body": "Three structures. The WhatsApp signals charge no performance fee, only USD 49 per month for the AI membership. NUUK AI - Premium (from USD 1,000) charges USD 99 per month plus 25% of weekly net profit. The dedicated account (from USD 250,000) charges USD 1,000 per month plus 25% of profits above the high-water mark, after the management fee.",
+        "body": "Three structures. The WhatsApp signals group is free, with no subscription and no performance fee. NUUK AI - Premium (from USD 1,000) charges USD 99 per month plus 25% of weekly net profit. The dedicated account (from USD 250,000) charges USD 1,000 per month plus 25% of profits above the high-water mark, after the management fee.",
         "how": "Deducted by the broker from your account and shown on every statement"
       },
       {
@@ -1105,7 +1106,7 @@ export const en = {
       "Mark up spreads, commissions or swaps",
       "Hold your money or have withdrawal rights on your account",
       "Trade against you or sell your order flow",
-      "Charge a performance fee on unrealised gains or on profits below the high-water mark"
+      "Charge a performance fee on unrealised gains"
     ],
     "riskTitle": "Risk management is the business model",
     "riskLead": "Fees only work if capital survives, so risk comes first.",
@@ -1783,20 +1784,20 @@ export const en = {
     },
     {
       name: "Signal log — closed ideas",
-      source: "WhatsApp group",
-      verifiedHref: "https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3",
+      source: "Public log on the free-signals page",
+      verifiedHref: "",
       status: "pending",
-      since: "2025",
-      updated: "Monthly",
+      since: signalLog.since,
+      updated: signalLog.updated,
       stats: [
         {
           "label": "Win rate",
-          "value": "87%",
+          "value": `${signalLog.hitRate}%`,
           "tone": "up"
         },
         {
-          "label": "Ideas per month",
-          "value": "100+",
+          "label": "Triggered signals",
+          "value": String(signalLog.triggered),
           "tone": "neutral"
         },
         {
@@ -1806,7 +1807,7 @@ export const en = {
         },
         {
           "label": "Log",
-          "value": "Monthly",
+          "value": "Public",
           "tone": "neutral"
         }
       ],

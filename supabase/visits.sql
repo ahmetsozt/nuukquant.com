@@ -73,17 +73,24 @@ grant execute on function public.record_view(text, text, text, text, text, int) 
 
 -- Yöneticinin baktığı özetler. Günlük ziyaret, en çok okunan sayfalar ve
 -- siteye trafik gönderen kaynaklar; hepsi aynı tablodan türüyor.
-create or replace view public.site_views_daily as
+-- security_invoker = on: görünüm, sorgulayan rolün (ör. anon) haklarıyla çalışır,
+-- böylece site_views'in "yalnız admin okur" (site_views_admin) RLS'i görünümler
+-- üzerinden de uygulanır. Bu olmadan görünüm sahibinin (postgres) haklarıyla
+-- çalışıp RLS'i atlardı ve toplu ziyaret verisi anonime açık olurdu.
+create or replace view public.site_views_daily
+  with (security_invoker = on) as
 select site, (seen_at at time zone 'Europe/Istanbul')::date as gun, count(*) as ziyaret
 from public.site_views
 group by 1, 2;
 
-create or replace view public.site_views_pages as
+create or replace view public.site_views_pages
+  with (security_invoker = on) as
 select site, path, count(*) as ziyaret, max(seen_at) as son
 from public.site_views
 group by 1, 2;
 
-create or replace view public.site_views_sources as
+create or replace view public.site_views_sources
+  with (security_invoker = on) as
 select site, coalesce(ref_host, '(doğrudan)') as kaynak, count(*) as ziyaret
 from public.site_views
 group by 1, 2;

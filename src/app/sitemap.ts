@@ -16,7 +16,7 @@ const PAGES = [
   "how-we-make-money/",
   "insights/",
   "investors/",
-  "portal/",
+  // portal/ is noindex (member area), so it stays out of the sitemap.
   "apply/",
   "case-studies/",
   "legal/risk-disclosure/",

@@ -1,6 +1,6 @@
 import { en } from "@/content/en";
-import { locales } from "@/i18n";
-import { SITE } from "@/lib/seo";
+import { localeNames, locales } from "@/i18n";
+import { pageUrl, SITE } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
@@ -47,11 +47,11 @@ export function GET() {
     "",
     "## Pages",
     "",
-    ...GUIDE.map((g) => `- [${g.label}](${SITE}/${g.path}): ${g.note}`),
+    ...GUIDE.map((g) => `- [${g.label}](${pageUrl("en", g.path)}): ${g.note}`),
     "",
     "## Other languages",
     "",
-    ...locales.filter((l) => l !== "en").map((l) => `- ${l}: ${SITE}/${l}/`),
+    ...locales.filter((l) => l !== "en").map((l) => `- [${localeNames[l]}](${pageUrl(l, "")}): ${l} home page`),
     "",
     "## Machine-readable",
     "",

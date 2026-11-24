@@ -56,18 +56,19 @@ export default function Consent({ labels }: { labels: Record<string, Labels> }) 
         </>
       )}
       {state === "unknown" && (
-        <div role="dialog" aria-live="polite" aria-label={t.more} className="fixed inset-x-3 bottom-3 z-[70] mx-auto max-w-[720px] rounded-2xl bg-ink p-4 text-white shadow-menu ring-1 ring-white/10 sm:flex sm:items-center sm:gap-4 sm:p-5">
-          <p className="text-[13.5px] leading-5 text-soft">
+        // Compact strip on phones so it never covers the hero CTA; full card from sm up.
+        <div role="dialog" aria-live="polite" aria-label={t.more} className="fixed inset-x-2 bottom-2 z-[70] mx-auto flex max-w-[720px] items-center gap-2 rounded-xl bg-ink px-3 py-1.5 text-white shadow-menu ring-1 ring-white/10 sm:inset-x-3 sm:bottom-3 sm:gap-4 sm:rounded-2xl sm:p-5">
+          <p className="min-w-0 flex-1 text-[12px] leading-[15px] text-soft sm:text-[13.5px] sm:leading-5">
             {t.text}{" "}
             <Link href={t.href} className="underline underline-offset-2 hover:text-white">
               {t.more}
             </Link>
           </p>
-          <div className="mt-3 flex flex-none gap-2 sm:mt-0">
-            <button type="button" onClick={() => choose("denied")} className="rounded-md border border-white/30 px-4 py-2 text-[13px] font-semibold hover:bg-white/10">
+          <div className="flex flex-none gap-2">
+            <button type="button" onClick={() => choose("denied")} className="min-h-9 rounded-md border border-white/30 px-3 text-[13px] font-semibold hover:bg-white/10 sm:min-h-10 sm:px-4">
               {t.reject}
             </button>
-            <button type="button" onClick={() => choose("granted")} className="rounded-md bg-primary px-4 py-2 text-[13px] font-semibold text-white hover:bg-primary-dark">
+            <button type="button" onClick={() => choose("granted")} className="min-h-9 rounded-md bg-primary px-3 text-[13px] font-semibold text-white hover:bg-primary-dark sm:min-h-10 sm:px-4">
               {t.accept}
             </button>
           </div>

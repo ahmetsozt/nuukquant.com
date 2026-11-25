@@ -1,0 +1,7 @@
+{
+  "schema": "nuuk.daily-pnl.v1",
+  "currency": "USD",
+  "account": "NUUK proprietary desk (MT5)",
+  "updated": null,
+  "days": []
+}

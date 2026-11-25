@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "createdAt": "2026-11-10T12:10:55.171Z",
+  "source": "Hyperliquid candleSnapshot",
+  "sets": [
+    {
+      "sym": "BTC",
+      "tf": "1h",
+      "file": "btc-1h.json",
+      "bars": 4900,
+      "from": 1776672000,
+      "to": 1794308400,
+      "gaps": 0
+    },
+    {
+      "sym": "ETH",
+      "tf": "1h",
+      "file": "eth-1h.json",
+      "bars": 4900,
+      "from": 1776672000,
+      "to": 1794308400,
+      "gaps": 0
+    },
+    {
+      "sym": "SOL",
+      "tf": "1h",
+      "file": "sol-1h.json",
+      "bars": 4900,
+      "from": 1776672000,
+      "to": 1794308400,
+      "gaps": 0
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NUUK — Market notes</title>
+    <link>https://www.nuukquant.com/insights/</link>
+    <atom:link href="https://www.nuukquant.com/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Market commentary on macro, FX, commodities, indices, crypto and AI in trading.</description>
+    <language>en</language>
+    <lastBuildDate>Wed, 25 Nov 2026 08:39:29 GMT</lastBuildDate>
+    <item>
+      <title>22 free signals, 12 never triggered: what our record shows</title>
+      <link>https://www.nuukquant.com/free-signals/</link>
+      <guid isPermaLink="false">2026-11-25-22 free signals, 12 never triggered: what our record shows</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <category>AI</category>
+      <description>Since 21 October: 6 targets, 4 stops and 12 entries never reached. A 60% hit rate on triggered signals and +5.15R in total. We publish the misses too.</description>
+    </item>
+    <item>
+      <title>A December Fed hike is priced in. The minutes explain why</title>
+      <link>https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3</link>
+      <guid isPermaLink="false">2026-11-25-A December Fed hike is priced in. The minutes explain why</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Macro</category>
+      <description>October payrolls came in at 165K against 65K expected and core CPI rose 0.3%. The minutes show some officials already wanted a hike, and Waller floated 50 bp.</description>
+    </item>
+    <item>
+      <title>Gold gives back $600 in two weeks</title>
+      <link>https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3</link>
+      <guid isPermaLink="false">2026-11-25-Gold gives back $600 in two weeks</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Commodities</category>
+      <description>From $4,134 on 9 November to near $3,530: a stronger dollar and December hike bets pushed gold to 14-month lows. The levels the desk is watching now.</description>
+    </item>
+    <item>
+      <title>AUD: rate hikes cannot hold up a weakening economy</title>
+      <link>https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3</link>
+      <guid isPermaLink="false">2026-11-25-AUD: rate hikes cannot hold up a weakening economy</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <category>FX</category>
+      <description>The RBA lifted rates to 4.85% on a 6–3 vote. Then unemployment jumped to 4.9% and inflation hit 4.9%. The Aussie has lost 6.5% in a month.</description>
+    </item>
+    <item>
+      <title>Bitcoin near $59K: a hack, a hike and an AI selloff</title>
+      <link>https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3</link>
+      <guid isPermaLink="false">2026-11-25-Bitcoin near $59K: a hack, a hike and an AI selloff</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Crypto</category>
+      <description>The month opened with a $6.3B Binance hack. Fed hike bets and the AI-stock selloff then took bitcoin to its lowest level in more than two years on 21 November.</description>
+    </item>
+    <item>
+      <title>September hikes: what a Fed move means for gold and the dollar</title>
+      <link>https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3</link>
+      <guid isPermaLink="false">2026-09-07-September hikes: what a Fed move means for gold and the dollar</guid>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 GMT</pubDate>
+      <category>Macro</category>
+      <description>Markets price hikes from the Fed, RBA and BoJ this month. Where the surprise risk sits and how the desk positions ahead of CPI.</description>
+    </item>
+    <item>
+      <title>Gold at 4,400: the level that decides the next leg</title>
+      <link>https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3</link>
+      <guid isPermaLink="false">2026-09-06-Gold at 4,400: the level that decides the next leg</guid>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 GMT</pubDate>
+      <category>Commodities</category>
+      <description>Payrolls capped the bounce. Why 4,400 is the line between bulls and bears, and the two data prints that settle it.</description>
+    </item>
+    <item>
+      <title>AUD strength in 2026: carry, copper and the RBA</title>
+      <link>https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3</link>
+      <guid isPermaLink="false">2026-09-04-AUD strength in 2026: carry, copper and the RBA</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 GMT</pubDate>
+      <category>FX</category>
+      <description>The Australian dollar is the strongest G10 currency this year. What is driving it and where the trade still has room.</description>
+    </item>
+    <item>
+      <title>Why our intraday ensemble stays in paper mode</title>
+      <link>https://chat.whatsapp.com/FoPe3XGYWyDFJniNiZA1q3</link>
+      <guid isPermaLink="false">2026-09-02-Why our intraday ensemble stays in paper mode</guid>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <category>AI</category>
+      <description>Hourly bars, retail costs, no edge. The walk-forward result behind the decision to keep intraday systems off live capital.</description>
+    </item>
+  </channel>
+</rss>
